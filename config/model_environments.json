@@ -1,0 +1,43 @@
+{
+  "quick_workflow": {
+    "python": "3.12.14",
+    "dependency_file": "requirements.txt",
+    "loads_fitted_pickle": false
+  },
+  "primary_recovery_models": {
+    "python": "3.11.7",
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "scipy": "1.11.4",
+    "scikit-learn": "1.2.2",
+    "threadpoolctl": "2.2.0",
+    "model_count": 10,
+    "historical_module_names": {
+      "__main__": [
+        "Transform",
+        "Basis",
+        "IntervalHazard"
+      ]
+    }
+  },
+  "observation_scenario_models": {
+    "python": "3.13.7",
+    "numpy": "2.2.0",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "scipy": null,
+    "threadpoolctl": null,
+    "model_count": 30,
+    "historical_module_names": {
+      "fit_policies_v6": [
+        "Transform",
+        "Basis",
+        "IntervalHazard"
+      ]
+    }
+  },
+  "null_means": "historical version not recorded; current versions are not substituted",
+  "pickle_usage": "Archived trusted scientific models only; not loaded by quick notebooks. Direct deserialization is not a verified workflow.",
+  "historical_class_implementation": "src.analysis.recovery_frozen",
+  "load_constraint": "Matching dependencies are not sufficient for direct pickle.load: historical class-module names must also be restored or mapped to the corresponding scientific class implementations. No validated legacy-pickle loader is supplied. These 40 files are archived fitted models; the quick workflow uses saved predictions and fixed draws instead."
+}

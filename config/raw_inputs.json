@@ -1,0 +1,1396 @@
+{
+  "schema_version": 1,
+  "ibtracs": {
+    "version": "v04r01",
+    "file": "ibtracs.ALL.list.v04r01.csv",
+    "sha256": "85d421e69e6e963ae4e6025d3e270d8c3e5edf81b981fa06bc7b753aa62fc5a3",
+    "bytes": 331329717,
+    "doi": "10.25921/82ty-9e16",
+    "source": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+    "year_basis": "framework genesis on the full track",
+    "genesis_years": [
+      1982,
+      2023
+    ],
+    "wind_field": "USA_WIND",
+    "wind_unit": "kt; 1-minute sustained",
+    "positions": [
+      "LAT",
+      "LON"
+    ],
+    "status": [
+      "USA_STATUS",
+      "NATURE"
+    ],
+    "track_type": "MAIN or missing",
+    "synoptic_utc_hours": [
+      0,
+      6,
+      12,
+      18
+    ],
+    "lifecycle_parameters": {
+      "genesis_wind": 35.0,
+      "genesis_lat_limit": 40.0,
+      "min_lifecycle_points": 5,
+      "min_peak_gain": 15.0,
+      "min_stage_duration_hours": 6.0,
+      "min_wind_valid_fraction": 0.8,
+      "max_gap_hours": 12.0,
+      "escalation_progress": 0.25,
+      "maturity_progress": 0.9,
+      "escalation_rate_threshold": 10.0,
+      "resolution_rate_threshold": 10.0,
+      "ri_threshold": 30.0,
+      "rw_threshold": 30.0,
+      "reintensification_threshold": 10.0
+    },
+    "frozen_sid_table": "source_data/lifecycle/analysis_per_SID_main_window.csv.gz",
+    "frozen_record_table": "source_data/lifecycle/analysis_records.csv.gz"
+  },
+  "era5": {
+    "root_env": "FLTCCF_ERA5_ROOT",
+    "pressure_level_doi": "10.24381/cds.bd0915c6",
+    "single_level_doi": "10.24381/cds.adbb2d47",
+    "pressure_level_source": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels",
+    "single_level_source": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+    "archive_sampling_hours": 6,
+    "source_utc_hours": [
+      0,
+      6,
+      12,
+      18
+    ],
+    "grid_degrees": 0.25,
+    "analysis_years": [
+      1982,
+      2023
+    ],
+    "climatology_years": [
+      1991,
+      2020
+    ],
+    "time_selection": "exact UTC; no nearest-time substitution",
+    "pressure_mask": "finite surface pressure >= level pressure in Pa at the same grid cell and UTC",
+    "scalar_annulus_km": [
+      200,
+      800
+    ],
+    "outer_endpoint": "exclusive",
+    "minimum_original_area_fraction": 0.9,
+    "groups": {
+      "environment": [
+        "sp",
+        "sst",
+        "msl",
+        "u200",
+        "v200",
+        "u500",
+        "v500",
+        "u700",
+        "v700",
+        "u850",
+        "v850",
+        "r500",
+        "r700",
+        "d200",
+        "w500",
+        "vo850"
+      ],
+      "moisture_budget": [
+        "sp",
+        "q600",
+        "q700",
+        "q850",
+        "u700",
+        "v700",
+        "w700",
+        "u850",
+        "v850",
+        "d850"
+      ],
+      "boundary_exchange": [
+        "sp",
+        "q500",
+        "u500",
+        "v500",
+        "q600",
+        "u600",
+        "v600",
+        "q700",
+        "u700",
+        "v700",
+        "q850",
+        "u850",
+        "v850",
+        "q925",
+        "u925",
+        "v925"
+      ],
+      "pi_profile": [
+        "sp",
+        "sst",
+        "msl",
+        "t1000",
+        "q1000",
+        "t925",
+        "q925",
+        "t850",
+        "q850",
+        "t700",
+        "q700",
+        "t600",
+        "q600",
+        "t500",
+        "q500",
+        "t400",
+        "q400",
+        "t300",
+        "q300",
+        "t250",
+        "q250",
+        "t200",
+        "q200",
+        "t150",
+        "q150",
+        "t100",
+        "q100",
+        "t50",
+        "q50"
+      ],
+      "entropy600": [
+        "sp",
+        "t600",
+        "q600"
+      ],
+      "surface_processes": [
+        "sst",
+        "lsm",
+        "slhf",
+        "sshf",
+        "tp",
+        "tcwv"
+      ],
+      "spatial_environment": [
+        "sp",
+        "q700",
+        "r700",
+        "u700",
+        "v700",
+        "z200",
+        "z500",
+        "u200",
+        "v200",
+        "u850",
+        "v850"
+      ],
+      "rh_time_region": [
+        "sp",
+        "q500",
+        "t500",
+        "q700",
+        "t700"
+      ]
+    },
+    "fields": {
+      "d200": {
+        "file": "Divergence-200hpa-1980-2025.nc",
+        "variable": "d",
+        "pressure_level_hpa": 200.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "s^-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "d850": {
+        "file": "Divergence-850hpa-1980-2025.nc",
+        "variable": "d",
+        "pressure_level_hpa": 850.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "s^-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "lsm": {
+        "file": "Land-sea mask.nc",
+        "variable": "lsm",
+        "pressure_level_hpa": null,
+        "time_variable": "valid_time",
+        "time_units": "seconds since 1970-01-01",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "(0 - 1)",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "msl": {
+        "file": "Mean-sea-level-pressure-1980-2025.nc",
+        "variable": "msl",
+        "pressure_level_hpa": null,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "Pa",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q100": {
+        "file": "Specific-humidity-100hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 100.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q1000": {
+        "file": "Specific-humidity-1000hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 1000.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q150": {
+        "file": "Specific-humidity-150hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 150.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q200": {
+        "file": "Specific-humidity-200hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 200.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q250": {
+        "file": "Specific-humidity-250hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 250.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q300": {
+        "file": "Specific-humidity-300hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 300.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q400": {
+        "file": "Specific-humidity-400hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 400.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q50": {
+        "file": "Specific-humidity-50hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 50.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q500": {
+        "file": "Specific-humidity-500hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 500.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q600": {
+        "file": "Specific-humidity-600hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 600.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q700": {
+        "file": "Specific-humidity-700hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 700.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q850": {
+        "file": "Specific-humidity-850hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 850.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "q925": {
+        "file": "Specific-humidity-925hpa-1980-2025.nc",
+        "variable": "q",
+        "pressure_level_hpa": 925.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg kg**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "r500": {
+        "file": "Relative-humidity-500hpa-1980-2025.nc",
+        "variable": "r",
+        "pressure_level_hpa": 500.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "%",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "r700": {
+        "file": "Relative-humidity-700hpa-1980-2025.nc",
+        "variable": "r",
+        "pressure_level_hpa": 700.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "%",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "slhf": {
+        "file": "Surface-latent-heat-flux-1980-2025.nc",
+        "variable": "slhf",
+        "pressure_level_hpa": null,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "J m**-2",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "sp": {
+        "file": "Surface-pressure-1980-2025.nc",
+        "variable": "sp",
+        "pressure_level_hpa": null,
+        "time_variable": "valid_time",
+        "time_units": "seconds since 1970-01-01",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "Pa",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "sshf": {
+        "file": "Surface-sensible-heat-flux-1980-2025.nc",
+        "variable": "sshf",
+        "pressure_level_hpa": null,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "J m**-2",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "sst": {
+        "file": "Sea-surface-temperature-1980-2025.nc",
+        "variable": "sst",
+        "pressure_level_hpa": null,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t100": {
+        "file": "Temperature-100hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 100.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t1000": {
+        "file": "Temperature-1000hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 1000.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t150": {
+        "file": "Temperature-150hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 150.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t200": {
+        "file": "Temperature-200hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 200.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t250": {
+        "file": "Temperature-250hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 250.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t300": {
+        "file": "Temperature-300hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 300.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t400": {
+        "file": "Temperature-400hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 400.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t50": {
+        "file": "Temperature-50hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 50.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t500": {
+        "file": "Temperature-500hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 500.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t600": {
+        "file": "Temperature-600hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 600.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t700": {
+        "file": "Temperature-700hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 700.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t850": {
+        "file": "Temperature-850hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 850.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "t925": {
+        "file": "Temperature-925hpa-1980-2025.nc",
+        "variable": "t",
+        "pressure_level_hpa": 925.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "K",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "tcwv": {
+        "file": "Total-column-water-vapour-1980-2025.nc",
+        "variable": "tcwv",
+        "pressure_level_hpa": null,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "kg m**-2",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "tp": {
+        "file": "Total-precipitation-1980-2025.nc",
+        "variable": "tp",
+        "pressure_level_hpa": null,
+        "time_variable": "valid_time",
+        "time_units": "seconds since 1970-01-01",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "valid_time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "u200": {
+        "file": "U-component-of-wind-200hpa-1980-2025.nc",
+        "variable": "u",
+        "pressure_level_hpa": 200.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "u500": {
+        "file": "U-component-of-wind-500hpa-1980-2025.nc",
+        "variable": "u",
+        "pressure_level_hpa": 500.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "u600": {
+        "file": "U-component-of-wind-600hpa-1980-2025.nc",
+        "variable": "u",
+        "pressure_level_hpa": 600.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "u700": {
+        "file": "U-component-of-wind-700hpa-1980-2025.nc",
+        "variable": "u",
+        "pressure_level_hpa": 700.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "u850": {
+        "file": "U-component-of-wind-850hpa-1980-2025.nc",
+        "variable": "u",
+        "pressure_level_hpa": 850.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "u925": {
+        "file": "U-component-of-wind-925hpa-1980-2025.nc",
+        "variable": "u",
+        "pressure_level_hpa": 925.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "v200": {
+        "file": "V-component-of-wind-200hpa-1980-2025.nc",
+        "variable": "v",
+        "pressure_level_hpa": 200.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "v500": {
+        "file": "V-component-of-wind-500hpa-1980-2025.nc",
+        "variable": "v",
+        "pressure_level_hpa": 500.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "v600": {
+        "file": "V-component-of-wind-600hpa-1980-2025.nc",
+        "variable": "v",
+        "pressure_level_hpa": 600.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "v700": {
+        "file": "V-component-of-wind-700hpa-1980-2025.nc",
+        "variable": "v",
+        "pressure_level_hpa": 700.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "v850": {
+        "file": "V-component-of-wind-850hpa-1980-2025.nc",
+        "variable": "v",
+        "pressure_level_hpa": 850.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "v925": {
+        "file": "V-component-of-wind-925hpa-1980-2025.nc",
+        "variable": "v",
+        "pressure_level_hpa": 925.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "vo850": {
+        "file": "Vorticity-(relative)-850hpa-1980-2025.nc",
+        "variable": "vo",
+        "pressure_level_hpa": 850.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "w500": {
+        "file": "Vertical-velocity-500hpa-1980-2025.nc",
+        "variable": "w",
+        "pressure_level_hpa": 500.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "Pa s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "w700": {
+        "file": "Vertical-velocity-700hpa-1980-2025.nc",
+        "variable": "w",
+        "pressure_level_hpa": 700.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "Pa s**-1",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "z200": {
+        "file": "Geopotential-200hpa-1980-2025.nc",
+        "variable": "z",
+        "pressure_level_hpa": 200.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m**2 s**-2",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      },
+      "z500": {
+        "file": "Geopotential-500hpa-1980-2025.nc",
+        "variable": "z",
+        "pressure_level_hpa": 500.0,
+        "time_variable": "time",
+        "time_units": "hours since 1980-01-01 00:00:00",
+        "calendar": "proleptic_gregorian",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "units": "m**2 s**-2",
+        "latitude_variable": "latitude",
+        "longitude_variable": "longitude",
+        "latitude_order": "descending",
+        "longitude_range": "0..359.75",
+        "latitude_resolution_deg": 0.25,
+        "longitude_resolution_deg": 0.25
+      }
+    }
+  },
+  "pi": {
+    "native_profile_hpa": [
+      1000,
+      925,
+      850,
+      700,
+      600,
+      500,
+      400,
+      300,
+      250,
+      200,
+      150,
+      100,
+      50
+    ],
+    "derived_level_hpa": 70,
+    "derived_from_hpa": [
+      100,
+      50
+    ],
+    "primary_interpolation": "T and q values linear in log pressure on joint native support; not log humidity",
+    "fixed_sensitivity": "linear pressure",
+    "required_profile": "all original 13 levels plus derived70; unsupported lower layers are not removed",
+    "upper_endpoint_hpa": 50,
+    "surface_inputs": [
+      "SST_K",
+      "msl_Pa"
+    ],
+    "tcpyPI_version": "1.4.2",
+    "tcpyPI_commit": "872dcf42667818fe889bd3fb5a7952076be666e5",
+    "parameters": {
+      "CKCD": 0.9,
+      "ascent_flag": 1,
+      "diss_flag": 1,
+      "V_reduc": 0.8,
+      "ptop": 50.0,
+      "miss_handle": 1
+    },
+    "acceptance": "all evaluated CAPE paths and supported interior outflow boundary; physical failures remain missing",
+    "default_execution": "tcpyPI supported pure Python; TCPYPI_DISABLE_NUMBA=1 unless caller explicitly overrides before import"
+  },
+  "transport": {
+    "pressure_hpa": [
+      500,
+      600,
+      700,
+      850,
+      925
+    ],
+    "pressure_intervals_hpa": [
+      [
+        500,
+        600
+      ],
+      [
+        600,
+        700
+      ],
+      [
+        700,
+        850
+      ],
+      [
+        850,
+        925
+      ]
+    ],
+    "boundary_radius_km": 300,
+    "inner_radius_km": 100,
+    "pre_lags_h": [
+      -24,
+      -18,
+      -12,
+      -6,
+      0
+    ],
+    "post_lags_h": [
+      0,
+      6,
+      12,
+      18,
+      24
+    ],
+    "omega925_required": false
+  },
+  "accumulations": {
+    "slhf_and_sshf": "ERA5 one-hour accumulated J m-2; upward W m-2 = -value/3600",
+    "tp": "ERA5 one-hour accumulation in m; multiply1000 for mm per sampled hour",
+    "sampling_interval_h": 6,
+    "continuous_6h_budget": false
+  },
+  "masks": {
+    "sst": "Natural Earth 1:10m physical-land complement on the original annulus",
+    "surface_flux": "ERA5 static land-sea mask <0.5",
+    "natural_earth_source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-land/"
+  },
+  "execution_scope": "Executable raw lifecycle, native pressure-level annuli, RH four-combination, moving-boundary exchange, PI prepared-profile and 700-hPa budget functions are provided. Limited cases were compared to frozen values; complete raw archive-to-manuscript execution was not run. Full raw PI native-profile and surface-mask assembly remains caller supplied."
+}
