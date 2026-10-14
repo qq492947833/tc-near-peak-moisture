@@ -9,7 +9,17 @@ ROOT=Path(__file__).absolute().parents[1]
 DATA=ROOT/'source_data/transport'
 def rd(p): return pd.read_csv(p,keep_default_na=False,na_values=['','NaN','nan'])
 def eq(a,b,rtol=1e-11,atol=.1):
+    a,b=np.asarray(a),np.asarray(b)
+    assert a.shape==b.shape, 'Comparison shapes differ'
+    assert np.array_equal(np.isnan(a),np.isnan(b)), 'NaN support differs'
+    assert not np.isinf(a).any() and not np.isinf(b).any()
     np.testing.assert_allclose(a,b,rtol=rtol,atol=atol,equal_nan=True)
+
+def check_draw(bank):
+    sid,indices=bank['sid'],bank['indices']
+    assert sid.ndim==1 and len(np.unique(sid))==len(sid)
+    assert indices.shape==(2000,len(sid)) and np.issubdtype(indices.dtype,np.integer)
+    assert (indices>=0).all() and (indices<len(sid)).all()
 def departures(out):
     out=Path(out);out.mkdir(parents=True,exist_ok=True)
     events=rd(DATA/'event_identity_current117.csv')
@@ -45,6 +55,21 @@ def t1(out):
     out=Path(out);out.mkdir(parents=True,exist_ok=True)
     t=rd(DATA/'t1/T1_event_UTC_columns.csv')
     ids=rd(DATA/'event_identity_current117.csv')
+    missing=rd(DATA/'t1/T1_missing_centres.csv')
+    assert ids.event_id.is_unique
+    keys=['event_id','lag_h']
+    assert not t.duplicated(keys).any() and not missing.duplicated(keys).any()
+    present=set(t[keys].itertuples(index=False,name=None))
+    absent=set(missing[keys].itertuples(index=False,name=None))
+    expected={(event,lag) for event in ids.event_id for lag in range(-24,25,6)}
+    assert not present&absent and present|absent==expected
+    identity=ids.set_index('event_id')
+    for frame in [t,missing]:
+        matched=identity.loc[frame.event_id]
+        assert np.array_equal(frame.sid,matched.sid)
+        assert np.array_equal(frame.event_class,matched.event_class)
+        assert np.array_equal(pd.to_datetime(frame.t0,utc=True),pd.to_datetime(matched.t0,utc=True))
+    assert np.array_equal(pd.to_datetime(t.UTC,utc=True),pd.to_datetime(t.t0,utc=True)+pd.to_timedelta(t.lag_h,unit='h'))
     result=[]
     for row in ids.itertuples():
         z=t[t.event_id.eq(row.event_id)].set_index('lag_h')
@@ -78,15 +103,35 @@ def t1(out):
     # T3 uses a shared fixed SID draw for every complete radial/budget quantity.
     c=rd(DATA/'t1/T3_common_support_event_values.csv')
     draw=np.load(DATA/'t1/T3_joint_bootstrap.npz');rows=[]
+    check_draw(draw)
     reference=rd(DATA/'t1/T3_summary.csv')
+    support=rd(DATA/'t1/support_by_SID.csv')
+    assert len(set(draw['sid']))==len(draw['sid'])==80
+    assert set(draw['sid'])==set(support.loc[support.T3_common,'sid'])
+    assert reference.metric.is_unique and set(c.metric)==set(reference.metric)
+    assert not c.duplicated(['sid','metric']).any()
+    # Float64 CSV values and <=80-term means; humidity tolerances are in g kg-1.
+    tolerances={'kg':.1,'g kg-1':1e-10}
     for (metric,units),d in c.groupby(['metric','units']):
+        assert set(d.sid)==set(draw['sid'])
+        ref=reference[reference.metric.eq(metric)].iloc[0]
+        assert units==ref.units and units in tolerances
+        atol=tolerances[units]
         v=d.set_index('sid').reindex(draw['sid'])[['internal','final']].to_numpy(float)
+        eq(d.set_index('sid').loc[draw['sid'],'difference'].to_numpy(float),v[:,0]-v[:,1],atol=atol)
+        if units=='kg':
+            original=pairs[pairs.metric.eq(metric)].set_index('sid').loc[draw['sid'],['internal','final']].to_numpy(float)
+            eq(v,original,atol=atol)
+        else:
+            assert np.isfinite(v).all(), 'T3 humidity requires complete paired support'
         good=np.isfinite(v).all(1);dd=v[good,0]-v[good,1]
+        assert int(good.sum())==ref.n
+        eq(v[good].mean(0),[ref.internal,ref.final],atol=atol)
         row={'metric':metric,'units':units,'n':int(good.sum()),'difference':dd.mean()}
-        ref=reference[reference.metric.eq(metric)].iloc[0];eq(row['difference'],ref.difference)
+        eq(row['difference'],ref.difference,atol=atol)
         if good.all():
             q=np.quantile((v[draw['indices'],0]-v[draw['indices'],1]).mean(1),[.025,.975])
-            eq(q,[ref.low,ref.high]);row.update(low=q[0],high=q[1],interval_rebuilt=True)
+            eq(q,[ref.low,ref.high],atol=atol);row.update(low=q[0],high=q[1],interval_rebuilt=True)
         else:
             supported=d.set_index('sid').loc[np.asarray(draw['sid'])[good]]
             banks=[]
@@ -95,10 +140,11 @@ def t1(out):
                 if set(bank['sid'])==set(supported.index):banks.append(bank)
             assert banks, 'Original subset draw identity is required'
             bank=banks[0]
+            check_draw(bank)
             assert all(np.array_equal(z['indices'],bank['indices']) and np.array_equal(z['sid'],bank['sid']) for z in banks)
             sv=supported.loc[bank['sid'],['internal','final']].to_numpy(float)
             q=np.quantile((sv[bank['indices'],0]-sv[bank['indices'],1]).mean(1),[.025,.975])
-            eq(q,[ref.low,ref.high]);row.update(low=q[0],high=q[1],interval_rebuilt=True)
+            eq(q,[ref.low,ref.high],atol=atol);row.update(low=q[0],high=q[1],interval_rebuilt=True)
 
         rows.append(row)
     pd.DataFrame(rows).to_csv(out/'T3_summary.csv',index=False)

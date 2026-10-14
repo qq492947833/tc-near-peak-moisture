@@ -2,6 +2,8 @@
 
 Analysis notebooks and source data for stage-resolved tropical cyclone environments, temporary and final departures from near-peak intensity, and lifecycle timing. The figure mapping follows the npj Climate and Atmospheric Science manuscript: Figures 1–9 and Supplementary Figures 1–26.
 
+Code version: [v1.0.1](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v1.0.1). Processed inputs remain the unchanged [v1.0.0 data asset](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v1.0.0/source_data.zip); their identities are in `data_manifest.json`.
+
 ## Run
 
 Use Python 3.12 and a short local checkout path on Windows.
@@ -15,6 +17,8 @@ python run_notebooks.py
 ```
 
 The versioned `source_data.zip` asset contains the processed inputs. `fetch_data.py` verifies its checksum and every member against `data_manifest.json` before extraction; `--archive source_data.zip` uses a local download. Outputs go to `outputs/`. Each notebook starts a fresh kernel. Notebook 07 draws all 35 figures at 600 dpi from numerical inputs and the editable synthesis geometry. `figure_map.csv` links each panel to its function and inputs.
+
+After fetching the inputs, run `python -m unittest discover -s tests -v` for unit-sensitive transport checks. T3 comparisons use `rtol=1e-11` with `atol=1e-10` for g kg−1 and `atol=0.1` for kg; event identities, native time slots, units and missing-value support must match exactly.
 
 | Notebook | Calculation |
 |---|---|

@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
-  "release": "v1.0.0",
+  "release": "v1.0.1",
+  "data_release": "v1.0.0",
   "asset": {
     "name": "source_data.zip",
     "url": "https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v1.0.0/source_data.zip",
