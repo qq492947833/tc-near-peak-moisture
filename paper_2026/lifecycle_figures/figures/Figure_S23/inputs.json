@@ -1,0 +1,32 @@
+{
+  "../individual/common_prepost_four_cells.csv": {
+    "relative_path": "inputs/../individual/common_prepost_four_cells.csv",
+    "sha256": "00a2fde68bcd322b1a18de4cdb3f4af43ae2b67e19c595f23dac33c2e2e9e2a1",
+    "original_path": "common_prepost_four_cells.csv",
+    "bytes": 85128
+  },
+  "../individual/common_prepost_paired_change_contrasts.csv": {
+    "relative_path": "inputs/../individual/common_prepost_paired_change_contrasts.csv",
+    "sha256": "0cee23b428470cea69e53c1c68f1d0c0d4059fb2fd9dbc5a64ceb019ae6386d4",
+    "original_path": "common_prepost_paired_change_contrasts.csv",
+    "bytes": 97694
+  },
+  "../individual/common_prepost_support.csv": {
+    "relative_path": "inputs/../individual/common_prepost_support.csv",
+    "sha256": "17263c12ceef9cd88c5d9aabaffc27d70ba1e097435291469a49d6b70358a6ee",
+    "original_path": "common_prepost_support.csv",
+    "bytes": 21362
+  },
+  "direct/common_prepost.csv": {
+    "relative_path": "inputs/direct/common_prepost.csv",
+    "sha256": "8ce19045298c38facf39d36697962ff1db498f16fd1c57395c978ec36a1e8b87",
+    "original_path": "common_prepost.csv",
+    "bytes": 15159
+  },
+  "direct/paired_flux_components.csv": {
+    "relative_path": "inputs/direct/paired_flux_components.csv",
+    "sha256": "60900e8f316aae29a83d1bb98a7beb4be5e3282d0b37092de2a71b847884c811",
+    "original_path": "paired_flux_components.csv",
+    "bytes": 5727
+  }
+}

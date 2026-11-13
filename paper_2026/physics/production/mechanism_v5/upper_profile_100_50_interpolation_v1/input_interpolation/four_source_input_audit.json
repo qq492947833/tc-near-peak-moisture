@@ -1,0 +1,218 @@
+{
+  "started_utc": "2026-10-08T19:25:31.660350+00:00",
+  "finished_utc": "2026-10-08T19:25:35.258732+00:00",
+  "catalog": "${MECHANISM_V5}/config/available_variable_map_v5.json",
+  "catalog_sha256": "4694a83afa13ff9eda866377672297a05ccd311c3ae86c977e9f7c8084b5cf86",
+  "files": [
+    {
+      "key": "t100",
+      "identity": {
+        "path": "${RAW_ERA5}/Temperature-100hpa-1980-2025.nc",
+        "size": 91861016558
+      },
+      "variable": "t",
+      "variable_attributes": {
+        "_FillValue": null,
+        "units": "K",
+        "standard_name": "air_temperature",
+        "long_name": "Temperature",
+        "GRIB_paramId": 130,
+        "GRIB_stepType": "instant",
+        "pressure_level_hpa": 100.0
+      },
+      "global_attributes": {
+        "merge_version": "rebuild-20260909-v1",
+        "merge_run_id": "rebuild-20260909-133149",
+        "merge_group": "t-100hpa",
+        "history": "2026-09-10T18:13:30+08:00 lossless time concatenation; no physical transformations"
+      },
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "first_UTC": "1980-01-01 00:00:00",
+      "last_UTC": "2025-12-31 18:00:00",
+      "n_times": 67208,
+      "time_step_hours": 6,
+      "needed_PI_UTC": 28920,
+      "exact_needed_UTC_present": 28920,
+      "missing_needed_UTC": [],
+      "grid_shape": [
+        721,
+        1440
+      ],
+      "latitude_extent": [
+        90.0,
+        -90.0
+      ],
+      "longitude_extent": [
+        0.0,
+        359.75
+      ],
+      "grid_degrees": 0.25,
+      "axis_sha256": {
+        "latitude": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4",
+        "longitude": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de",
+        "time": "0f71f7a74a11689b64a5b976f1a9283a488f01f0b62c93352382e5a27570b871"
+      },
+      "mask_policy": "netCDF _FillValue auto-mask decoded as NaN; native cached fields retain same-cell same-UTC SP support; interpolation additionally joint finite T>0 and 0<=q<1 for both endpoints",
+      "raw_gridded_values_read": 0
+    },
+    {
+      "key": "t50",
+      "identity": {
+        "path": "${RAW_ERA5}/Temperature-50hpa-1980-2025.nc",
+        "size": 90673788237
+      },
+      "variable": "t",
+      "variable_attributes": {
+        "_FillValue": null,
+        "units": "K",
+        "standard_name": "air_temperature",
+        "long_name": "Temperature",
+        "GRIB_paramId": 130,
+        "GRIB_stepType": "instant",
+        "pressure_level_hpa": 50.0
+      },
+      "global_attributes": {
+        "merge_version": "rebuild-20260909-v1",
+        "merge_run_id": "rebuild-20260909-133149",
+        "merge_group": "t-50hpa",
+        "history": "2026-09-11T06:45:09+08:00 lossless time concatenation; no physical transformations"
+      },
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "first_UTC": "1980-01-01 00:00:00",
+      "last_UTC": "2025-12-31 18:00:00",
+      "n_times": 67208,
+      "time_step_hours": 6,
+      "needed_PI_UTC": 28920,
+      "exact_needed_UTC_present": 28920,
+      "missing_needed_UTC": [],
+      "grid_shape": [
+        721,
+        1440
+      ],
+      "latitude_extent": [
+        90.0,
+        -90.0
+      ],
+      "longitude_extent": [
+        0.0,
+        359.75
+      ],
+      "grid_degrees": 0.25,
+      "axis_sha256": {
+        "latitude": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4",
+        "longitude": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de",
+        "time": "0f71f7a74a11689b64a5b976f1a9283a488f01f0b62c93352382e5a27570b871"
+      },
+      "mask_policy": "netCDF _FillValue auto-mask decoded as NaN; native cached fields retain same-cell same-UTC SP support; interpolation additionally joint finite T>0 and 0<=q<1 for both endpoints",
+      "raw_gridded_values_read": 0
+    },
+    {
+      "key": "q100",
+      "identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-100hpa-1980-2025.nc",
+        "size": 85177262444
+      },
+      "variable": "q",
+      "variable_attributes": {
+        "_FillValue": null,
+        "units": "kg kg**-1",
+        "standard_name": "specific_humidity",
+        "long_name": "Specific humidity",
+        "GRIB_paramId": 133,
+        "GRIB_stepType": "instant",
+        "pressure_level_hpa": 100.0
+      },
+      "global_attributes": {
+        "merge_version": "rebuild-20260909-v1",
+        "merge_run_id": "rebuild-20260909-133149",
+        "merge_group": "q-100hpa",
+        "history": "2026-09-09T17:15:03+08:00 lossless time concatenation; no physical transformations"
+      },
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "first_UTC": "1980-01-01 00:00:00",
+      "last_UTC": "2025-12-31 18:00:00",
+      "n_times": 67208,
+      "time_step_hours": 6,
+      "needed_PI_UTC": 28920,
+      "exact_needed_UTC_present": 28920,
+      "missing_needed_UTC": [],
+      "grid_shape": [
+        721,
+        1440
+      ],
+      "latitude_extent": [
+        90.0,
+        -90.0
+      ],
+      "longitude_extent": [
+        0.0,
+        359.75
+      ],
+      "grid_degrees": 0.25,
+      "axis_sha256": {
+        "latitude": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4",
+        "longitude": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de",
+        "time": "0f71f7a74a11689b64a5b976f1a9283a488f01f0b62c93352382e5a27570b871"
+      },
+      "mask_policy": "netCDF _FillValue auto-mask decoded as NaN; native cached fields retain same-cell same-UTC SP support; interpolation additionally joint finite T>0 and 0<=q<1 for both endpoints",
+      "raw_gridded_values_read": 0
+    },
+    {
+      "key": "q50",
+      "identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-50hpa-1980-2025.nc",
+        "size": 81843887758
+      },
+      "variable": "q",
+      "variable_attributes": {
+        "_FillValue": null,
+        "units": "kg kg**-1",
+        "standard_name": "specific_humidity",
+        "long_name": "Specific humidity",
+        "GRIB_paramId": 133,
+        "GRIB_stepType": "instant",
+        "pressure_level_hpa": 50.0
+      },
+      "global_attributes": {
+        "merge_version": "rebuild-20260909-v1",
+        "merge_run_id": "rebuild-20260909-133149",
+        "merge_group": "q-50hpa",
+        "history": "2026-09-10T03:57:16+08:00 lossless time concatenation; no physical transformations"
+      },
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "first_UTC": "1980-01-01 00:00:00",
+      "last_UTC": "2025-12-31 18:00:00",
+      "n_times": 67208,
+      "time_step_hours": 6,
+      "needed_PI_UTC": 28920,
+      "exact_needed_UTC_present": 28920,
+      "missing_needed_UTC": [],
+      "grid_shape": [
+        721,
+        1440
+      ],
+      "latitude_extent": [
+        90.0,
+        -90.0
+      ],
+      "longitude_extent": [
+        0.0,
+        359.75
+      ],
+      "grid_degrees": 0.25,
+      "axis_sha256": {
+        "latitude": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4",
+        "longitude": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de",
+        "time": "0f71f7a74a11689b64a5b976f1a9283a488f01f0b62c93352382e5a27570b871"
+      },
+      "mask_policy": "netCDF _FillValue auto-mask decoded as NaN; native cached fields retain same-cell same-UTC SP support; interpolation additionally joint finite T>0 and 0<=q<1 for both endpoints",
+      "raw_gridded_values_read": 0
+    }
+  ],
+  "scope": "Only registered four file headers/full coordinate axes, no full nc hash and no gridded data read",
+  "native70_found": false
+}

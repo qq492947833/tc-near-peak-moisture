@@ -1,0 +1,43 @@
+{
+  "figure_id": "Figure_S30",
+  "type": "supplementary",
+  "entry_function": "fig23",
+  "legacy_identity": "SI_regional_return_context",
+  "family": "late",
+  "aliases": {
+    "coastline/ne_110m_coastline.shp": "inputs/a1f8285d0e_ne_110m_coastline.shp",
+    "geography/G1_genesis_basin_recurrence.csv": "inputs/bbb1e631ae_G1_genesis_basin_recurrence.csv",
+    "geography/G3_departure_risk_SID_source.csv": "inputs/fdf02e0947_G3_departure_risk_SID_source.csv",
+    "geography/G3_region_policy_estimates.csv": "inputs/9038797474_G3_region_policy_estimates.csv",
+    "geography/G3_region_policy_support.csv": "inputs/02c56440b3_G3_region_policy_support.csv",
+    "geography/general_reintensification_main_episode_sources.csv": "inputs/a001ca831a_general_reintensification_master_episode_sources.csv",
+    "geography/geographic_grid_counts_5_and_10deg.csv": "inputs/1aeff2a152_geographic_grid_counts_5_and_10deg.csv"
+  },
+  "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables.",
+  "baseline": {
+    "label": "Figure_S30",
+    "source": "Figure_S23.png",
+    "sha256": "0122f447c9a63db397b8bfce0da9989cf22c56ecfdcd4e243eb0bec654498f84",
+    "pixels": [
+      6377,
+      7440
+    ],
+    "display_inches": [
+      6.496062992125984,
+      7.5789096675415575
+    ],
+    "effective_dpi": 981.6715151515151
+  },
+  "source_code": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

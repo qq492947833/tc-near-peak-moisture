@@ -1,0 +1,37 @@
+{
+  "figure_id": "Figure_S09",
+  "type": "supplementary",
+  "entry_function": "fig16",
+  "legacy_identity": "FigS16",
+  "family": "late_original",
+  "aliases": {
+    "thematic/fig6_regions.csv": "inputs/77c6f12c3b_fig6_regions.csv"
+  },
+  "caption": "Supplementary Fig. 9 | Shear-relative moisture and circulation before paired departures. a,b, Temporary-minus-final contrasts in 700-hPa specific humidity (g kg⁻¹; a) and cyclonic tangential wind (m s⁻¹; b) in four 90° sectors of the 100–300 and 300–800 km annuli. Colour represents sector means, with separate scales for the two variables. The upward-pointing deep-shear vector  defines downshear above, upshear below and left/right relative to the vector. Each sector is centred on one of these four directions relative to . Sector departures are measured from native-area azimuthal means within 50 km radial bins, separately from seasonal anomalies. Total, azimuthal mean and departure share valid cells; cyclonic wind is positive in both hemispheres. Orientation uses mean pre-event deep shear of at least 2 m s⁻¹. Pre-means require three of the four −24-to−6 h observations, retaining 103 paired cyclones. Table S5g gives all 16 means, 95% percentiles from 2,000 paired-cyclone resamples and counts. Sector comparisons are descriptive. Fig. 5 gives the annular pre-event states and subsequent processes.",
+  "baseline": {
+    "label": "Figure_S09",
+    "source": "Figure_S27.png",
+    "sha256": "3652647272f227b206767538e740ae74551acb8187175ada7c830b32994ecf8d",
+    "pixels": [
+      6377,
+      3968
+    ],
+    "display_inches": [
+      6.496062992125984,
+      4.04208552055993
+    ],
+    "effective_dpi": 981.6714613822254
+  },
+  "source_code": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "figure_id": "Figure_S14",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/direct/pressure_components.csv"
+      ],
+      "fields": {
+        "direct/pressure_components.csv": [
+          "cohort",
+          "window",
+          "factor",
+          "kind",
+          "layer",
+          "sector",
+          "units",
+          "quantity",
+          "n",
+          "finite_n",
+          "estimate",
+          "low",
+          "high",
+          "status",
+          "bootstrap",
+          "interval",
+          "sign"
+        ]
+      },
+      "filter": [
+        "d = d[d.cohort.eq('original_post80') & d.window.eq('0_24h') & d.factor.eq(1) & d.sector.eq('all') & d.layer.isin(LAYERS)]",
+        "z = d[d.kind.eq(kind) & d.quantity.isin(cols)]"
+      ],
+      "sample_scope": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+      "units": {
+        "x": "",
+        "y": "Discrete pressure interval (hPa)",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              1.052279446926488,
+              1.0001800566574353,
+              0.052099390269052734
+            ],
+            [
+              1.5554494074961402,
+              1.5239567736403823,
+              0.03149263385575785
+            ],
+            [
+              4.848619002762293,
+              4.733470705307341,
+              0.11514829745495285
+            ],
+            [
+              5.106541358172502,
+              5.109268568006615,
+              -0.0027272098341143557
+            ]
+          ],
+          "vmin": -5.109268568006615,
+          "vmax": 5.109268568006615,
+          "norm": "Normalize",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+      "weights": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/pressure_components.csv": "8ae053ffddf0b6a4b63fcf45f13c8ac3001fd6325674219ead1ab268b35025ac"
+        },
+        "original_plot_source": "si_closeout_18_22_26.py",
+        "original_plot_source_sha256": "abe6057632bd4c2e4a8bfa22dfb23a41054fec08b30e3028f85019371af6cd11"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "All values are discrete interval-integrated mass, not density or a continuous profile; transform=identity",
+          "source_key": "direct/pressure_components.csv",
+          "fields": [
+            "cohort",
+            "window",
+            "factor",
+            "kind",
+            "layer",
+            "sector",
+            "units",
+            "quantity",
+            "n",
+            "finite_n",
+            "estimate",
+            "low",
+            "high",
+            "status",
+            "bootstrap",
+            "interval",
+            "sign",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 12,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "5ab6c6db960350c41e0c825a9d960df889abe9112e4a6b8fe332673021892e76"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/direct/pressure_components.csv"
+      ],
+      "fields": {
+        "direct/pressure_components.csv": [
+          "cohort",
+          "window",
+          "factor",
+          "kind",
+          "layer",
+          "sector",
+          "units",
+          "quantity",
+          "n",
+          "finite_n",
+          "estimate",
+          "low",
+          "high",
+          "status",
+          "bootstrap",
+          "interval",
+          "sign"
+        ]
+      },
+      "filter": [
+        "d = d[d.cohort.eq('original_post80') & d.window.eq('0_24h') & d.factor.eq(1) & d.sector.eq('all') & d.layer.isin(LAYERS)]",
+        "z = d[d.kind.eq(kind) & d.quantity.isin(cols)]"
+      ],
+      "sample_scope": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              1.0832027985440176,
+              1.1689851394971444,
+              -0.08578234095312681
+            ],
+            [
+              1.3872758337008277,
+              1.550547781479408,
+              -0.16327194777858045
+            ],
+            [
+              3.1856773077845055,
+              3.593243667706717,
+              -0.4075663599222121
+            ],
+            [
+              1.8769283626257274,
+              2.1846541665771237,
+              -0.3077258039513957
+            ]
+          ],
+          "vmin": -5.109268568006615,
+          "vmax": 5.109268568006615,
+          "norm": "Normalize",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+      "weights": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/pressure_components.csv": "8ae053ffddf0b6a4b63fcf45f13c8ac3001fd6325674219ead1ab268b35025ac"
+        },
+        "original_plot_source": "si_closeout_18_22_26.py",
+        "original_plot_source_sha256": "abe6057632bd4c2e4a8bfa22dfb23a41054fec08b30e3028f85019371af6cd11"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "All values are discrete interval-integrated mass, not density or a continuous profile; transform=identity",
+          "source_key": "direct/pressure_components.csv",
+          "fields": [
+            "cohort",
+            "window",
+            "factor",
+            "kind",
+            "layer",
+            "sector",
+            "units",
+            "quantity",
+            "n",
+            "finite_n",
+            "estimate",
+            "low",
+            "high",
+            "status",
+            "bootstrap",
+            "interval",
+            "sign",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 12,
+          "saved_selected_table": "panel_b_1.csv",
+          "sha256": "bd0163917afb40339e5791e6ac2e7cefc6a555a3bf3deabd5e084ef1d7565e1c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/direct/pressure_components.csv"
+      ],
+      "fields": {
+        "direct/pressure_components.csv": [
+          "cohort",
+          "window",
+          "factor",
+          "kind",
+          "layer",
+          "sector",
+          "units",
+          "quantity",
+          "n",
+          "finite_n",
+          "estimate",
+          "low",
+          "high",
+          "status",
+          "bootstrap",
+          "interval",
+          "sign"
+        ]
+      },
+      "filter": [
+        "d = d[d.cohort.eq('original_post80') & d.window.eq('0_24h') & d.factor.eq(1) & d.sector.eq('all') & d.layer.isin(LAYERS)]",
+        "z = d[d.kind.eq(kind) & d.quantity.isin(cols)]"
+      ],
+      "sample_scope": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              -0.030923351617529765,
+              -0.1688050828397093,
+              0.1378817312221795
+            ],
+            [
+              0.16817357379531273,
+              -0.026591007839025585,
+              0.1947645816343383
+            ],
+            [
+              1.6629416949777875,
+              1.1402270376006225,
+              0.5227146573771648
+            ],
+            [
+              3.2296129955467734,
+              2.9246144014294924,
+              0.3049985941172814
+            ]
+          ],
+          "vmin": -5.109268568006615,
+          "vmax": 5.109268568006615,
+          "norm": "Normalize",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+      "weights": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/pressure_components.csv": "8ae053ffddf0b6a4b63fcf45f13c8ac3001fd6325674219ead1ab268b35025ac"
+        },
+        "original_plot_source": "si_closeout_18_22_26.py",
+        "original_plot_source_sha256": "abe6057632bd4c2e4a8bfa22dfb23a41054fec08b30e3028f85019371af6cd11"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "All values are discrete interval-integrated mass, not density or a continuous profile; transform=identity",
+          "source_key": "direct/pressure_components.csv",
+          "fields": [
+            "cohort",
+            "window",
+            "factor",
+            "kind",
+            "layer",
+            "sector",
+            "units",
+            "quantity",
+            "n",
+            "finite_n",
+            "estimate",
+            "low",
+            "high",
+            "status",
+            "bootstrap",
+            "interval",
+            "sign",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 12,
+          "saved_selected_table": "panel_c_2.csv",
+          "sha256": "74e6580c5c60d7d8435286a13ed7b7cea34b96ad8f05a54aad365eb5f8b37484"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "direct/pressure_components.csv",
+      "relative_path": "inputs/direct/pressure_components.csv",
+      "sha256": "8ae053ffddf0b6a4b63fcf45f13c8ac3001fd6325674219ead1ab268b35025ac",
+      "original_path": "pressure_components.csv",
+      "bytes": 46361
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S14.png",
+      "sha256": "63ccd55a94d211e1faedaf77b46f0d7d5cf06535739a080911150d0c54e40aba"
+    },
+    "tiff": {
+      "path": "Figure_S14.tiff",
+      "sha256": "eb5226ec3d92cfe2a46d22980f230d29947c101f0345420aa9181603e5327d95"
+    },
+    "pdf": {
+      "path": "Figure_S14.pdf",
+      "sha256": "be5a82bf5b490940734e9f716bd102d9a8b99a1c93f6b85777b9d38410d9980c"
+    },
+    "svg": {
+      "path": "Figure_S14.svg",
+      "sha256": "5e76217fe3e6e40ebec7d01a91cadd952007ae936d3b21fd90f2fee6d2e9a40b"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S14",
+      "returncode": 0,
+      "elapsed_s": 12.87,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 351.496062992126
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              66.33070866141733,
+              115.99370078740156,
+              188.75807765408635,
+              302.2866141732283
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              50.33070866141734,
+              314.2866141732283
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              218.14064621232694,
+              115.99370078740156,
+              340.56801520499596,
+              302.2866141732283
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              202.1406462123269,
+              314.2866141732283
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              369.9505837632365,
+              115.99370078740156,
+              492.37795275590554,
+              302.2866141732283
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 2,
+            "col_stop": 3,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              353.9505837632366,
+              314.2866141732283
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ],
+        "column_groups": [],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6714194839195
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S14",
+      "source": "Figure_S06.png",
+      "sha256": "63ccd55a94d211e1faedaf77b46f0d7d5cf06535739a080911150d0c54e40aba",
+      "pixels": [
+        6377,
+        4393
+      ],
+      "display_inches": [
+        6.496062992125984,
+        4.475020778652668
+      ],
+      "effective_dpi": 981.6714194839195
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 14 | Pressure-interval contributions to inward and outward water-vapour exchange. a–c, Gross inward, gross outward and net inward exchange, respectively. Each matrix gives temporary- and final-departure means and their paired temporary-minus-final contrast for the four native pressure intervals spanning 500–925 hPa. All cells use the same 80 cyclones, moving 300 km boundary and 0–24 h window. Values are masses integrated within each interval (10¹² kg); the intervals have unequal widths and are not a continuous pressure profile. All three matrices share a zero-centred colour scale in 10¹² kg. Net inward exchange equals gross inward minus gross outward exchange. Both classes have net outward point means at 500–600 hPa despite positive layer-integrated mean net input. Table S6g2 gives all 36 estimates and ordinary 95% paired-SID percentiles from 2,000 resamples.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "28d0287021b704a914e645adf6ec76d3b55f750169cae95c4fc430ec834a014d",
+      "run.py": "dede438679e54cbd379918431ff4475afd32fa1accfbe3de8bdf4535bb95e19a"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

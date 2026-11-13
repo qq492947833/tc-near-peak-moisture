@@ -1,0 +1,13 @@
+{
+  "figure_id": "Figure_04",
+  "function": "fig3",
+  "arguments": [
+    900
+  ],
+  "original_source": "matrix_main_original.py",
+  "original_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f",
+  "text_replacements": {
+    "PI headroom": "PI − V",
+    "ΔHeadroom (m s⁻¹)": "Δ(PI − V) (m s⁻¹)"
+  }
+}

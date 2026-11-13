@@ -1,0 +1,786 @@
+{
+  "figure_id": "Figure_S05",
+  "type": "supplementary",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\377293ea07_A3_SID_loss_bank.csv"
+      ],
+      "fields": [
+        "sid",
+        "response",
+        "method",
+        "mse",
+        "mae",
+        "fold"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'b_c', loss, 'saved_sid_loss')",
+        "entry_function": "s6",
+        "selected_rows": "panels\\00_b_c_saved_sid_loss.csv",
+        "selected_rows_sha256": "5ae652a533e3cdba11a3baf470089349dfb429d197b19b62c6069b736455927a"
+      },
+      "sample_scope": {
+        "distinct_observed_SIDs": 2290
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "normalization": {
+        "executed_entry": "s6",
+        "role": "saved_sid_loss",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "difference_direction": {
+        "role": "saved_sid_loss",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/05f152b893_A3_paired_contrasts.csv",
+            "sha256": "05f152b89313778fcd1ed6849d1d4bb0908ff19a482963d6fd83f26eaed4feef",
+            "original_path": "A3_paired_contrasts.csv",
+            "logical_keys": [
+              "framework/A3_paired_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/377293ea07_A3_SID_loss_bank.csv",
+            "sha256": "377293ea07a4acbbd10562ea3da5097e788f845f3060570ec40c380e3a772855",
+            "original_path": "A3_SID_loss_bank.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_SID_loss_bank.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fa8ac90599_A3_aggregate_losses.csv",
+            "sha256": "fa8ac905990704ac61f15c40766318d1d9c683d5b490d84a929b2d5bf6fea482",
+            "original_path": "A3_aggregate_losses.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_aggregate_losses.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "5ae652a533e3cdba11a3baf470089349dfb429d197b19b62c6069b736455927a"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs\\377293ea07_A3_SID_loss_bank.csv"
+      ],
+      "fields": [
+        "sid",
+        "response",
+        "method",
+        "mse",
+        "mae",
+        "fold"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'b_c', loss, 'saved_sid_loss')",
+        "entry_function": "s6",
+        "selected_rows": "panels\\00_b_c_saved_sid_loss.csv",
+        "selected_rows_sha256": "5ae652a533e3cdba11a3baf470089349dfb429d197b19b62c6069b736455927a"
+      },
+      "sample_scope": {
+        "distinct_observed_SIDs": 2290
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "normalization": {
+        "executed_entry": "s6",
+        "role": "saved_sid_loss",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "difference_direction": {
+        "role": "saved_sid_loss",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/05f152b893_A3_paired_contrasts.csv",
+            "sha256": "05f152b89313778fcd1ed6849d1d4bb0908ff19a482963d6fd83f26eaed4feef",
+            "original_path": "A3_paired_contrasts.csv",
+            "logical_keys": [
+              "framework/A3_paired_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/377293ea07_A3_SID_loss_bank.csv",
+            "sha256": "377293ea07a4acbbd10562ea3da5097e788f845f3060570ec40c380e3a772855",
+            "original_path": "A3_SID_loss_bank.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_SID_loss_bank.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fa8ac90599_A3_aggregate_losses.csv",
+            "sha256": "fa8ac905990704ac61f15c40766318d1d9c683d5b490d84a929b2d5bf6fea482",
+            "original_path": "A3_aggregate_losses.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_aggregate_losses.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "5ae652a533e3cdba11a3baf470089349dfb429d197b19b62c6069b736455927a"
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs\\05f152b893_A3_paired_contrasts.csv"
+      ],
+      "fields": [
+        "response",
+        "contrast",
+        "sid_n",
+        "row_n",
+        "delta_mse",
+        "ci_low",
+        "ci_high",
+        "delta_rmse",
+        "rmse_ci_low",
+        "rmse_ci_high",
+        "delta_mae",
+        "B",
+        "fixed_OOF"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'd_e', contr, 'frozen_rmse_contrasts')",
+        "entry_function": "s6",
+        "selected_rows": "panels\\01_d_e_frozen_rmse_contrasts.csv",
+        "selected_rows_sha256": "68f56093af51d7b797d076f5e277a96e9fcbae65614a8cfa61c720f38825e26b"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "normalization": {
+        "executed_entry": "s6",
+        "role": "frozen_rmse_contrasts",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "difference_direction": {
+        "role": "frozen_rmse_contrasts",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "rmse_ci_low",
+          "rmse_ci_high"
+        ],
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/05f152b893_A3_paired_contrasts.csv",
+            "sha256": "05f152b89313778fcd1ed6849d1d4bb0908ff19a482963d6fd83f26eaed4feef",
+            "original_path": "A3_paired_contrasts.csv",
+            "logical_keys": [
+              "framework/A3_paired_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/377293ea07_A3_SID_loss_bank.csv",
+            "sha256": "377293ea07a4acbbd10562ea3da5097e788f845f3060570ec40c380e3a772855",
+            "original_path": "A3_SID_loss_bank.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_SID_loss_bank.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fa8ac90599_A3_aggregate_losses.csv",
+            "sha256": "fa8ac905990704ac61f15c40766318d1d9c683d5b490d84a929b2d5bf6fea482",
+            "original_path": "A3_aggregate_losses.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_aggregate_losses.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "68f56093af51d7b797d076f5e277a96e9fcbae65614a8cfa61c720f38825e26b"
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs\\05f152b893_A3_paired_contrasts.csv"
+      ],
+      "fields": [
+        "response",
+        "contrast",
+        "sid_n",
+        "row_n",
+        "delta_mse",
+        "ci_low",
+        "ci_high",
+        "delta_rmse",
+        "rmse_ci_low",
+        "rmse_ci_high",
+        "delta_mae",
+        "B",
+        "fixed_OOF"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'd_e', contr, 'frozen_rmse_contrasts')",
+        "entry_function": "s6",
+        "selected_rows": "panels\\01_d_e_frozen_rmse_contrasts.csv",
+        "selected_rows_sha256": "68f56093af51d7b797d076f5e277a96e9fcbae65614a8cfa61c720f38825e26b"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "normalization": {
+        "executed_entry": "s6",
+        "role": "frozen_rmse_contrasts",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "difference_direction": {
+        "role": "frozen_rmse_contrasts",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "rmse_ci_low",
+          "rmse_ci_high"
+        ],
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/05f152b893_A3_paired_contrasts.csv",
+            "sha256": "05f152b89313778fcd1ed6849d1d4bb0908ff19a482963d6fd83f26eaed4feef",
+            "original_path": "A3_paired_contrasts.csv",
+            "logical_keys": [
+              "framework/A3_paired_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/377293ea07_A3_SID_loss_bank.csv",
+            "sha256": "377293ea07a4acbbd10562ea3da5097e788f845f3060570ec40c380e3a772855",
+            "original_path": "A3_SID_loss_bank.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_SID_loss_bank.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fa8ac90599_A3_aggregate_losses.csv",
+            "sha256": "fa8ac905990704ac61f15c40766318d1d9c683d5b490d84a929b2d5bf6fea482",
+            "original_path": "A3_aggregate_losses.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_aggregate_losses.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "68f56093af51d7b797d076f5e277a96e9fcbae65614a8cfa61c720f38825e26b"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\fa8ac90599_A3_aggregate_losses.csv"
+      ],
+      "fields": [
+        "response",
+        "method",
+        "sid_n",
+        "row_n",
+        "mse",
+        "rmse",
+        "mae"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'b_e', agg, 'saved_aggregate_losses')",
+        "entry_function": "s6",
+        "selected_rows": "panels\\02_b_e_saved_aggregate_losses.csv",
+        "selected_rows_sha256": "f59558b588fdc32fc5327676c8fc97e191d394f85fb6c707cb050aea4f005124"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "normalization": {
+        "executed_entry": "s6",
+        "role": "saved_aggregate_losses",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "difference_direction": {
+        "role": "saved_aggregate_losses",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/05f152b893_A3_paired_contrasts.csv",
+            "sha256": "05f152b89313778fcd1ed6849d1d4bb0908ff19a482963d6fd83f26eaed4feef",
+            "original_path": "A3_paired_contrasts.csv",
+            "logical_keys": [
+              "framework/A3_paired_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/377293ea07_A3_SID_loss_bank.csv",
+            "sha256": "377293ea07a4acbbd10562ea3da5097e788f845f3060570ec40c380e3a772855",
+            "original_path": "A3_SID_loss_bank.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_SID_loss_bank.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fa8ac90599_A3_aggregate_losses.csv",
+            "sha256": "fa8ac905990704ac61f15c40766318d1d9c683d5b490d84a929b2d5bf6fea482",
+            "original_path": "A3_aggregate_losses.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_aggregate_losses.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "f59558b588fdc32fc5327676c8fc97e191d394f85fb6c707cb050aea4f005124"
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs\\fa8ac90599_A3_aggregate_losses.csv"
+      ],
+      "fields": [
+        "response",
+        "method",
+        "sid_n",
+        "row_n",
+        "mse",
+        "rmse",
+        "mae"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'b_e', agg, 'saved_aggregate_losses')",
+        "entry_function": "s6",
+        "selected_rows": "panels\\02_b_e_saved_aggregate_losses.csv",
+        "selected_rows_sha256": "f59558b588fdc32fc5327676c8fc97e191d394f85fb6c707cb050aea4f005124"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "normalization": {
+        "executed_entry": "s6",
+        "role": "saved_aggregate_losses",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "difference_direction": {
+        "role": "saved_aggregate_losses",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/05f152b893_A3_paired_contrasts.csv",
+            "sha256": "05f152b89313778fcd1ed6849d1d4bb0908ff19a482963d6fd83f26eaed4feef",
+            "original_path": "A3_paired_contrasts.csv",
+            "logical_keys": [
+              "framework/A3_paired_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/377293ea07_A3_SID_loss_bank.csv",
+            "sha256": "377293ea07a4acbbd10562ea3da5097e788f845f3060570ec40c380e3a772855",
+            "original_path": "A3_SID_loss_bank.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_SID_loss_bank.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fa8ac90599_A3_aggregate_losses.csv",
+            "sha256": "fa8ac905990704ac61f15c40766318d1d9c683d5b490d84a929b2d5bf6fea482",
+            "original_path": "A3_aggregate_losses.csv",
+            "logical_keys": [
+              "03_Work/v62/framework/A3_aggregate_losses.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "f59558b588fdc32fc5327676c8fc97e191d394f85fb6c707cb050aea4f005124"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/05f152b893_A3_paired_contrasts.csv",
+      "sha256": "05f152b89313778fcd1ed6849d1d4bb0908ff19a482963d6fd83f26eaed4feef",
+      "original_path": "A3_paired_contrasts.csv",
+      "logical_keys": [
+        "framework/A3_paired_contrasts.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/377293ea07_A3_SID_loss_bank.csv",
+      "sha256": "377293ea07a4acbbd10562ea3da5097e788f845f3060570ec40c380e3a772855",
+      "original_path": "A3_SID_loss_bank.csv",
+      "logical_keys": [
+        "03_Work/v62/framework/A3_SID_loss_bank.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/fa8ac90599_A3_aggregate_losses.csv",
+      "sha256": "fa8ac905990704ac61f15c40766318d1d9c683d5b490d84a929b2d5bf6fea482",
+      "original_path": "A3_aggregate_losses.csv",
+      "logical_keys": [
+        "03_Work/v62/framework/A3_aggregate_losses.csv"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S05",
+    "size_mm": [
+      180.0,
+      200.0
+    ],
+    "pixels": [
+      6377,
+      7086
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 981.6715133323455,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 7.3,
+    "files": {
+      "png": {
+        "path": "Figure_S05.png",
+        "sha256": "c9ab824863185e88303bc59317e5eda4bbeac411563410aedc503a8cd4a9b6aa"
+      },
+      "tiff": {
+        "path": "Figure_S05.tiff",
+        "sha256": "f1e4f52c7485ec8bab2ce71f0cd167bfd00f8c6366e46cd4d2ad59573b05c62b"
+      },
+      "pdf": {
+        "path": "Figure_S05.pdf",
+        "sha256": "f844785d11cf1305541e9289a82aed4301280d0f6667a51474ae9c3750e3b805"
+      },
+      "svg": {
+        "path": "Figure_S05.svg",
+        "sha256": "ba55aa0007f896dc20689ad56a0ef64b0c33c22acca19b3beca895a9dea9a45c"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 4,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 566.9291338582677
+        },
+        "panels": [
+          {
+            "id": "b",
+            "bbox_pt": [
+              66.33070866141733,
+              280.6115806336573,
+              244.91338582677167,
+              408.2317711723849
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              48.33070866141733,
+              420.23177117238487
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              316.3464566929134,
+              280.6115806336573,
+              494.9291338582678,
+              408.2317711723849
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              298.3464566929134,
+              420.23177117238487
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              66.33070866141733,
+              59.527559055118104,
+              244.91338582677167,
+              187.1477495938457
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              48.33070866141733,
+              199.1477495938457
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              316.3464566929134,
+              59.527559055118104,
+              494.9291338582678,
+              187.1477495938457
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              298.3464566929134,
+              199.1477495938457
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "b",
+              "c"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "d",
+              "e"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "b",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "c",
+              "e"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S05",
+    "source": "Figure_S04.png",
+    "sha256": "8f16858da7a93989a8bbd17c753bc6b3371a437079449cf21f8127550fb54808",
+    "pixels": [
+      6377,
+      7086
+    ],
+    "display_inches": [
+      6.496062992125984,
+      7.218300524934383
+    ],
+    "effective_dpi": 981.6715133323455
+  },
+  "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Res under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

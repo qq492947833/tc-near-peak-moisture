@@ -1,0 +1,811 @@
+grid_degrees,quantity,lon_left,lat_bottom,n_records,n_sid,known_return,unknown,risk_display_support,estimand
+5,G2_first,-180.0,-30.0,1,1,1,0,False,observed return-location count
+5,G2_first,-180.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,-170.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_first,-165.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,-160.0,-30.0,1,1,1,0,False,observed return-location count
+5,G2_first,-145.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,-140.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,-135.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_first,-130.0,15.0,2,2,2,0,False,observed return-location count
+5,G2_first,-125.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_first,-120.0,15.0,2,2,2,0,False,observed return-location count
+5,G2_first,-115.0,15.0,4,4,4,0,False,observed return-location count
+5,G2_first,-115.0,20.0,2,2,2,0,False,observed return-location count
+5,G2_first,-110.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,-100.0,10.0,2,2,2,0,False,observed return-location count
+5,G2_first,-100.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,-90.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,-90.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_first,-90.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_first,-90.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_first,-85.0,10.0,2,2,2,0,False,observed return-location count
+5,G2_first,-85.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,-80.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_first,-80.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_first,-70.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_first,-65.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,-65.0,20.0,4,4,4,0,False,observed return-location count
+5,G2_first,-65.0,40.0,1,1,1,0,False,observed return-location count
+5,G2_first,-60.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,-60.0,20.0,2,2,2,0,False,observed return-location count
+5,G2_first,-55.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,-55.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_first,-50.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_first,-45.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_first,-45.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_first,35.0,-25.0,1,1,1,0,False,observed return-location count
+5,G2_first,40.0,-30.0,1,1,1,0,False,observed return-location count
+5,G2_first,40.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,50.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,50.0,-15.0,1,1,1,0,False,observed return-location count
+5,G2_first,55.0,-30.0,1,1,1,0,False,observed return-location count
+5,G2_first,55.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_first,60.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,60.0,5.0,1,1,1,0,False,observed return-location count
+5,G2_first,65.0,-25.0,3,3,3,0,False,observed return-location count
+5,G2_first,65.0,-20.0,3,3,3,0,False,observed return-location count
+5,G2_first,70.0,-20.0,2,2,2,0,False,observed return-location count
+5,G2_first,75.0,-20.0,2,2,2,0,False,observed return-location count
+5,G2_first,80.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,85.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,90.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,90.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_first,105.0,-20.0,2,2,2,0,False,observed return-location count
+5,G2_first,105.0,15.0,4,4,4,0,False,observed return-location count
+5,G2_first,105.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_first,110.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,110.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_first,110.0,15.0,2,2,2,0,False,observed return-location count
+5,G2_first,110.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_first,115.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,120.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,120.0,10.0,2,2,2,0,False,observed return-location count
+5,G2_first,120.0,20.0,4,4,4,0,False,observed return-location count
+5,G2_first,120.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_first,125.0,-15.0,1,1,1,0,False,observed return-location count
+5,G2_first,125.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,125.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_first,130.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_first,130.0,15.0,2,2,2,0,False,observed return-location count
+5,G2_first,130.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_first,130.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_first,130.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_first,135.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,135.0,15.0,3,3,3,0,False,observed return-location count
+5,G2_first,135.0,20.0,4,4,4,0,False,observed return-location count
+5,G2_first,135.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_first,140.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_first,140.0,15.0,2,2,2,0,False,observed return-location count
+5,G2_first,140.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_first,145.0,10.0,2,2,2,0,False,observed return-location count
+5,G2_first,145.0,25.0,2,2,2,0,False,observed return-location count
+5,G2_first,150.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_first,155.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_first,165.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_first,165.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_first,175.0,-25.0,1,1,1,0,False,observed return-location count
+5,G2_first,175.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,-180.0,-30.0,1,1,1,0,False,observed return-location count
+5,G2_all,-180.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,-170.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_all,-165.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,-160.0,-30.0,1,1,1,0,False,observed return-location count
+5,G2_all,-145.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,-140.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,-135.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_all,-130.0,15.0,2,2,2,0,False,observed return-location count
+5,G2_all,-125.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,-120.0,15.0,2,2,2,0,False,observed return-location count
+5,G2_all,-115.0,15.0,4,4,4,0,False,observed return-location count
+5,G2_all,-115.0,20.0,2,2,2,0,False,observed return-location count
+5,G2_all,-110.0,15.0,3,2,3,0,False,observed return-location count
+5,G2_all,-100.0,10.0,2,2,2,0,False,observed return-location count
+5,G2_all,-100.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,-90.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,-90.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,-90.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_all,-90.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_all,-85.0,10.0,2,2,2,0,False,observed return-location count
+5,G2_all,-85.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,-80.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,-80.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_all,-75.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_all,-70.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,-70.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_all,-65.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,-65.0,20.0,4,4,4,0,False,observed return-location count
+5,G2_all,-65.0,40.0,1,1,1,0,False,observed return-location count
+5,G2_all,-60.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,-60.0,20.0,2,2,2,0,False,observed return-location count
+5,G2_all,-55.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,-55.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_all,-50.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_all,-45.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,-45.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_all,35.0,-25.0,1,1,1,0,False,observed return-location count
+5,G2_all,40.0,-30.0,1,1,1,0,False,observed return-location count
+5,G2_all,40.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,50.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,50.0,-15.0,1,1,1,0,False,observed return-location count
+5,G2_all,55.0,-30.0,1,1,1,0,False,observed return-location count
+5,G2_all,55.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,60.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,60.0,5.0,1,1,1,0,False,observed return-location count
+5,G2_all,65.0,-25.0,3,3,3,0,False,observed return-location count
+5,G2_all,65.0,-20.0,3,3,3,0,False,observed return-location count
+5,G2_all,70.0,-20.0,2,2,2,0,False,observed return-location count
+5,G2_all,75.0,-20.0,3,2,3,0,False,observed return-location count
+5,G2_all,80.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,85.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,90.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,90.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_all,105.0,-20.0,2,2,2,0,False,observed return-location count
+5,G2_all,105.0,15.0,4,4,4,0,False,observed return-location count
+5,G2_all,105.0,20.0,2,2,2,0,False,observed return-location count
+5,G2_all,110.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,110.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_all,110.0,15.0,2,2,2,0,False,observed return-location count
+5,G2_all,110.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,115.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,120.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,120.0,10.0,2,2,2,0,False,observed return-location count
+5,G2_all,120.0,20.0,5,4,5,0,False,observed return-location count
+5,G2_all,120.0,25.0,2,2,2,0,False,observed return-location count
+5,G2_all,125.0,-15.0,1,1,1,0,False,observed return-location count
+5,G2_all,125.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,125.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_all,130.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_all,130.0,15.0,2,2,2,0,False,observed return-location count
+5,G2_all,130.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,130.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_all,130.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_all,135.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,135.0,15.0,3,3,3,0,False,observed return-location count
+5,G2_all,135.0,20.0,4,4,4,0,False,observed return-location count
+5,G2_all,135.0,25.0,1,1,1,0,False,observed return-location count
+5,G2_all,135.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_all,140.0,10.0,1,1,1,0,False,observed return-location count
+5,G2_all,140.0,15.0,2,2,2,0,False,observed return-location count
+5,G2_all,140.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,145.0,10.0,2,2,2,0,False,observed return-location count
+5,G2_all,145.0,25.0,2,2,2,0,False,observed return-location count
+5,G2_all,150.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,155.0,-20.0,1,1,1,0,False,observed return-location count
+5,G2_all,160.0,20.0,1,1,1,0,False,observed return-location count
+5,G2_all,165.0,15.0,1,1,1,0,False,observed return-location count
+5,G2_all,165.0,30.0,1,1,1,0,False,observed return-location count
+5,G2_all,175.0,-25.0,1,1,1,0,False,observed return-location count
+5,G2_all,175.0,20.0,1,1,1,0,False,observed return-location count
+5,G3_risk,-180.0,-30.0,1,1,0,1,False,risk-start count
+5,G3_risk,-180.0,-25.0,8,8,0,6,False,risk-start count
+5,G3_risk,-180.0,-20.0,3,3,0,0,False,risk-start count
+5,G3_risk,-180.0,-15.0,2,2,0,0,False,risk-start count
+5,G3_risk,-180.0,10.0,1,1,0,0,False,risk-start count
+5,G3_risk,-180.0,15.0,1,1,0,0,False,risk-start count
+5,G3_risk,-180.0,20.0,1,1,1,0,False,risk-start count
+5,G3_risk,-175.0,-30.0,2,2,0,2,False,risk-start count
+5,G3_risk,-175.0,-25.0,5,5,0,4,False,risk-start count
+5,G3_risk,-175.0,-20.0,3,3,1,0,False,risk-start count
+5,G3_risk,-175.0,-15.0,5,5,3,1,False,risk-start count
+5,G3_risk,-175.0,5.0,2,2,0,0,False,risk-start count
+5,G3_risk,-175.0,15.0,3,3,0,1,False,risk-start count
+5,G3_risk,-175.0,30.0,1,1,0,1,False,risk-start count
+5,G3_risk,-170.0,-50.0,1,1,0,1,False,risk-start count
+5,G3_risk,-170.0,-30.0,1,1,0,1,False,risk-start count
+5,G3_risk,-170.0,-25.0,3,3,0,3,False,risk-start count
+5,G3_risk,-170.0,-20.0,7,7,1,1,False,risk-start count
+5,G3_risk,-170.0,-15.0,1,1,1,0,False,risk-start count
+5,G3_risk,-170.0,5.0,1,1,0,0,False,risk-start count
+5,G3_risk,-170.0,10.0,1,1,0,0,False,risk-start count
+5,G3_risk,-170.0,15.0,2,2,1,0,False,risk-start count
+5,G3_risk,-165.0,-35.0,1,1,0,1,False,risk-start count
+5,G3_risk,-165.0,-30.0,2,2,0,2,False,risk-start count
+5,G3_risk,-165.0,-25.0,3,3,1,1,False,risk-start count
+5,G3_risk,-165.0,-20.0,5,5,0,1,False,risk-start count
+5,G3_risk,-165.0,10.0,1,1,1,0,False,risk-start count
+5,G3_risk,-165.0,15.0,2,2,1,0,False,risk-start count
+5,G3_risk,-160.0,-30.0,1,1,0,1,False,risk-start count
+5,G3_risk,-160.0,-25.0,4,4,0,4,False,risk-start count
+5,G3_risk,-160.0,-20.0,1,1,0,0,False,risk-start count
+5,G3_risk,-160.0,-15.0,1,1,0,0,False,risk-start count
+5,G3_risk,-160.0,10.0,2,2,0,1,False,risk-start count
+5,G3_risk,-160.0,20.0,2,2,0,2,False,risk-start count
+5,G3_risk,-155.0,-25.0,2,2,0,2,False,risk-start count
+5,G3_risk,-155.0,-20.0,5,5,0,3,False,risk-start count
+5,G3_risk,-155.0,15.0,2,2,0,0,False,risk-start count
+5,G3_risk,-150.0,-25.0,2,2,0,2,False,risk-start count
+5,G3_risk,-150.0,-20.0,3,3,0,2,False,risk-start count
+5,G3_risk,-150.0,10.0,10,10,1,1,False,risk-start count
+5,G3_risk,-150.0,15.0,7,7,0,0,False,risk-start count
+5,G3_risk,-150.0,25.0,1,1,0,0,False,risk-start count
+5,G3_risk,-145.0,-30.0,2,2,0,0,False,risk-start count
+5,G3_risk,-145.0,10.0,6,6,1,0,False,risk-start count
+5,G3_risk,-145.0,15.0,8,8,0,2,False,risk-start count
+5,G3_risk,-140.0,-40.0,1,1,0,1,False,risk-start count
+5,G3_risk,-140.0,-30.0,2,2,0,2,False,risk-start count
+5,G3_risk,-140.0,-20.0,2,2,0,0,False,risk-start count
+5,G3_risk,-140.0,10.0,5,5,1,0,False,risk-start count
+5,G3_risk,-140.0,15.0,8,8,0,3,False,risk-start count
+5,G3_risk,-135.0,-30.0,1,1,0,1,False,risk-start count
+5,G3_risk,-135.0,10.0,5,5,0,0,False,risk-start count
+5,G3_risk,-135.0,15.0,13,13,0,0,False,risk-start count
+5,G3_risk,-130.0,10.0,6,6,2,0,False,risk-start count
+5,G3_risk,-130.0,15.0,27,27,1,2,False,risk-start count
+5,G3_risk,-130.0,20.0,2,2,0,0,False,risk-start count
+5,G3_risk,-125.0,10.0,20,20,6,2,True,risk-start count
+5,G3_risk,-125.0,15.0,33,33,6,2,True,risk-start count
+5,G3_risk,-125.0,20.0,6,6,0,3,False,risk-start count
+5,G3_risk,-120.0,10.0,8,8,1,1,False,risk-start count
+5,G3_risk,-120.0,15.0,52,52,1,8,False,risk-start count
+5,G3_risk,-120.0,20.0,22,22,1,4,False,risk-start count
+5,G3_risk,-115.0,10.0,8,8,2,0,False,risk-start count
+5,G3_risk,-115.0,15.0,61,61,5,2,True,risk-start count
+5,G3_risk,-115.0,20.0,30,30,2,7,False,risk-start count
+5,G3_risk,-115.0,25.0,3,3,0,2,False,risk-start count
+5,G3_risk,-110.0,10.0,11,11,4,0,False,risk-start count
+5,G3_risk,-110.0,15.0,33,33,5,3,True,risk-start count
+5,G3_risk,-110.0,20.0,2,2,0,0,False,risk-start count
+5,G3_risk,-105.0,10.0,6,6,2,0,False,risk-start count
+5,G3_risk,-100.0,10.0,3,3,1,1,False,risk-start count
+5,G3_risk,-100.0,25.0,5,5,0,0,False,risk-start count
+5,G3_risk,-100.0,30.0,1,1,0,1,False,risk-start count
+5,G3_risk,-95.0,10.0,2,2,2,0,False,risk-start count
+5,G3_risk,-95.0,15.0,4,4,0,1,False,risk-start count
+5,G3_risk,-95.0,20.0,1,1,1,0,False,risk-start count
+5,G3_risk,-95.0,25.0,5,5,0,0,False,risk-start count
+5,G3_risk,-95.0,30.0,5,5,0,3,False,risk-start count
+5,G3_risk,-90.0,10.0,1,1,0,1,False,risk-start count
+5,G3_risk,-90.0,15.0,16,16,4,6,False,risk-start count
+5,G3_risk,-90.0,20.0,5,5,1,0,False,risk-start count
+5,G3_risk,-90.0,25.0,11,11,1,2,False,risk-start count
+5,G3_risk,-90.0,30.0,8,8,1,2,False,risk-start count
+5,G3_risk,-85.0,10.0,8,8,2,4,False,risk-start count
+5,G3_risk,-85.0,15.0,4,4,0,0,False,risk-start count
+5,G3_risk,-85.0,20.0,4,4,3,1,False,risk-start count
+5,G3_risk,-85.0,25.0,10,10,2,2,False,risk-start count
+5,G3_risk,-85.0,30.0,5,5,0,1,False,risk-start count
+5,G3_risk,-80.0,10.0,2,2,1,0,False,risk-start count
+5,G3_risk,-80.0,20.0,5,5,2,0,False,risk-start count
+5,G3_risk,-80.0,25.0,6,6,1,1,False,risk-start count
+5,G3_risk,-80.0,30.0,3,3,0,0,False,risk-start count
+5,G3_risk,-80.0,35.0,3,3,0,2,False,risk-start count
+5,G3_risk,-75.0,10.0,4,4,3,0,False,risk-start count
+5,G3_risk,-75.0,15.0,5,5,1,0,False,risk-start count
+5,G3_risk,-75.0,20.0,5,5,5,0,False,risk-start count
+5,G3_risk,-75.0,25.0,2,2,1,0,False,risk-start count
+5,G3_risk,-75.0,30.0,5,5,1,0,False,risk-start count
+5,G3_risk,-75.0,35.0,4,4,0,2,False,risk-start count
+5,G3_risk,-75.0,40.0,1,1,0,0,False,risk-start count
+5,G3_risk,-70.0,10.0,3,3,0,1,False,risk-start count
+5,G3_risk,-70.0,15.0,5,5,2,1,False,risk-start count
+5,G3_risk,-70.0,20.0,4,4,3,0,False,risk-start count
+5,G3_risk,-70.0,25.0,6,6,0,2,False,risk-start count
+5,G3_risk,-70.0,30.0,3,3,0,0,False,risk-start count
+5,G3_risk,-70.0,35.0,3,3,0,1,False,risk-start count
+5,G3_risk,-70.0,40.0,1,1,0,1,False,risk-start count
+5,G3_risk,-65.0,10.0,3,3,0,1,False,risk-start count
+5,G3_risk,-65.0,15.0,9,9,2,0,False,risk-start count
+5,G3_risk,-65.0,20.0,7,7,4,1,False,risk-start count
+5,G3_risk,-65.0,25.0,6,6,2,0,False,risk-start count
+5,G3_risk,-65.0,30.0,5,5,0,1,False,risk-start count
+5,G3_risk,-65.0,35.0,2,2,0,2,False,risk-start count
+5,G3_risk,-65.0,40.0,2,2,0,1,False,risk-start count
+5,G3_risk,-65.0,45.0,1,1,0,1,False,risk-start count
+5,G3_risk,-60.0,10.0,2,2,0,2,False,risk-start count
+5,G3_risk,-60.0,15.0,8,8,3,1,False,risk-start count
+5,G3_risk,-60.0,20.0,8,8,3,0,False,risk-start count
+5,G3_risk,-60.0,25.0,4,4,0,1,False,risk-start count
+5,G3_risk,-60.0,30.0,10,10,1,0,False,risk-start count
+5,G3_risk,-60.0,40.0,4,4,0,3,False,risk-start count
+5,G3_risk,-55.0,10.0,2,2,1,0,False,risk-start count
+5,G3_risk,-55.0,15.0,5,5,3,0,False,risk-start count
+5,G3_risk,-55.0,20.0,3,3,0,0,False,risk-start count
+5,G3_risk,-55.0,30.0,6,6,1,2,False,risk-start count
+5,G3_risk,-55.0,35.0,1,1,0,0,False,risk-start count
+5,G3_risk,-55.0,40.0,1,1,0,1,False,risk-start count
+5,G3_risk,-50.0,5.0,1,1,0,0,False,risk-start count
+5,G3_risk,-50.0,10.0,5,5,0,1,False,risk-start count
+5,G3_risk,-50.0,15.0,4,4,1,0,False,risk-start count
+5,G3_risk,-50.0,20.0,5,5,1,0,False,risk-start count
+5,G3_risk,-50.0,25.0,2,2,1,0,False,risk-start count
+5,G3_risk,-50.0,30.0,2,2,1,0,False,risk-start count
+5,G3_risk,-50.0,35.0,1,1,0,1,False,risk-start count
+5,G3_risk,-50.0,40.0,3,3,0,0,False,risk-start count
+5,G3_risk,-45.0,10.0,3,3,0,0,False,risk-start count
+5,G3_risk,-45.0,15.0,6,6,1,0,False,risk-start count
+5,G3_risk,-45.0,20.0,1,1,0,0,False,risk-start count
+5,G3_risk,-45.0,30.0,4,4,1,0,False,risk-start count
+5,G3_risk,-45.0,35.0,3,3,1,0,False,risk-start count
+5,G3_risk,-45.0,40.0,2,2,0,1,False,risk-start count
+5,G3_risk,-40.0,10.0,1,1,0,0,False,risk-start count
+5,G3_risk,-40.0,15.0,4,4,0,0,False,risk-start count
+5,G3_risk,-40.0,20.0,3,3,1,0,False,risk-start count
+5,G3_risk,-40.0,25.0,1,1,1,0,False,risk-start count
+5,G3_risk,-40.0,35.0,1,1,0,1,False,risk-start count
+5,G3_risk,-40.0,40.0,1,1,0,1,False,risk-start count
+5,G3_risk,-35.0,10.0,6,6,0,0,False,risk-start count
+5,G3_risk,-35.0,15.0,3,3,0,0,False,risk-start count
+5,G3_risk,-35.0,20.0,1,1,0,1,False,risk-start count
+5,G3_risk,-35.0,25.0,2,2,0,0,False,risk-start count
+5,G3_risk,-35.0,30.0,3,3,2,0,False,risk-start count
+5,G3_risk,-35.0,35.0,3,3,0,2,False,risk-start count
+5,G3_risk,-30.0,10.0,1,1,0,0,False,risk-start count
+5,G3_risk,-30.0,20.0,2,2,0,0,False,risk-start count
+5,G3_risk,-30.0,35.0,1,1,0,0,False,risk-start count
+5,G3_risk,-25.0,15.0,1,1,0,0,False,risk-start count
+5,G3_risk,-25.0,20.0,2,2,0,1,False,risk-start count
+5,G3_risk,-20.0,45.0,2,2,0,2,False,risk-start count
+5,G3_risk,30.0,-20.0,1,1,0,1,False,risk-start count
+5,G3_risk,35.0,-30.0,3,3,0,1,False,risk-start count
+5,G3_risk,35.0,-25.0,3,3,0,1,False,risk-start count
+5,G3_risk,35.0,-20.0,5,5,1,2,False,risk-start count
+5,G3_risk,40.0,-35.0,1,1,0,1,False,risk-start count
+5,G3_risk,40.0,-30.0,1,1,0,0,False,risk-start count
+5,G3_risk,40.0,-25.0,12,12,1,3,False,risk-start count
+5,G3_risk,40.0,-20.0,4,4,1,1,False,risk-start count
+5,G3_risk,40.0,-15.0,2,2,0,1,False,risk-start count
+5,G3_risk,45.0,-40.0,1,1,0,1,False,risk-start count
+5,G3_risk,45.0,-25.0,5,5,0,1,False,risk-start count
+5,G3_risk,45.0,-20.0,6,6,0,1,False,risk-start count
+5,G3_risk,45.0,-15.0,4,4,1,0,False,risk-start count
+5,G3_risk,45.0,-10.0,1,1,0,0,False,risk-start count
+5,G3_risk,50.0,-25.0,5,5,0,1,False,risk-start count
+5,G3_risk,50.0,-20.0,8,8,1,0,False,risk-start count
+5,G3_risk,50.0,-15.0,8,8,1,0,False,risk-start count
+5,G3_risk,50.0,-10.0,1,1,0,0,False,risk-start count
+5,G3_risk,50.0,10.0,4,4,0,2,False,risk-start count
+5,G3_risk,50.0,15.0,2,2,0,2,False,risk-start count
+5,G3_risk,55.0,-30.0,4,4,0,4,False,risk-start count
+5,G3_risk,55.0,-25.0,8,8,0,3,False,risk-start count
+5,G3_risk,55.0,-20.0,11,11,3,1,False,risk-start count
+5,G3_risk,55.0,-15.0,7,7,1,1,False,risk-start count
+5,G3_risk,55.0,-10.0,1,1,0,1,False,risk-start count
+5,G3_risk,55.0,5.0,1,1,0,0,False,risk-start count
+5,G3_risk,55.0,10.0,1,1,0,0,False,risk-start count
+5,G3_risk,55.0,15.0,2,2,0,1,False,risk-start count
+5,G3_risk,55.0,20.0,1,1,1,0,False,risk-start count
+5,G3_risk,60.0,-30.0,2,2,0,1,False,risk-start count
+5,G3_risk,60.0,-25.0,4,4,0,1,False,risk-start count
+5,G3_risk,60.0,-20.0,11,11,3,0,False,risk-start count
+5,G3_risk,60.0,-15.0,6,6,3,1,False,risk-start count
+5,G3_risk,60.0,0.0,1,1,1,0,False,risk-start count
+5,G3_risk,60.0,10.0,1,1,0,0,False,risk-start count
+5,G3_risk,60.0,15.0,4,4,0,1,False,risk-start count
+5,G3_risk,60.0,20.0,3,3,0,1,False,risk-start count
+5,G3_risk,65.0,-35.0,1,1,0,1,False,risk-start count
+5,G3_risk,65.0,-30.0,1,1,0,1,False,risk-start count
+5,G3_risk,65.0,-25.0,5,5,1,1,False,risk-start count
+5,G3_risk,65.0,-20.0,15,15,1,1,False,risk-start count
+5,G3_risk,65.0,-15.0,8,8,2,2,False,risk-start count
+5,G3_risk,65.0,10.0,3,3,1,0,False,risk-start count
+5,G3_risk,65.0,15.0,2,2,1,0,False,risk-start count
+5,G3_risk,65.0,20.0,4,4,0,3,False,risk-start count
+5,G3_risk,70.0,-30.0,1,1,0,1,False,risk-start count
+5,G3_risk,70.0,-25.0,8,8,0,2,False,risk-start count
+5,G3_risk,70.0,-20.0,9,9,3,0,False,risk-start count
+5,G3_risk,70.0,-15.0,5,5,1,0,False,risk-start count
+5,G3_risk,70.0,-10.0,2,2,0,0,False,risk-start count
+5,G3_risk,70.0,10.0,1,1,1,0,False,risk-start count
+5,G3_risk,70.0,15.0,3,3,0,2,False,risk-start count
+5,G3_risk,70.0,20.0,3,3,0,2,False,risk-start count
+5,G3_risk,75.0,-25.0,6,6,0,1,False,risk-start count
+5,G3_risk,75.0,-20.0,16,16,1,2,False,risk-start count
+5,G3_risk,75.0,-15.0,9,9,1,0,False,risk-start count
+5,G3_risk,75.0,-10.0,1,1,0,0,False,risk-start count
+5,G3_risk,75.0,10.0,6,6,0,2,False,risk-start count
+5,G3_risk,80.0,-30.0,1,1,0,1,False,risk-start count
+5,G3_risk,80.0,-25.0,5,5,0,1,False,risk-start count
+5,G3_risk,80.0,-20.0,9,9,1,3,False,risk-start count
+5,G3_risk,80.0,-15.0,6,6,2,0,False,risk-start count
+5,G3_risk,80.0,5.0,1,1,0,1,False,risk-start count
+5,G3_risk,80.0,10.0,10,10,1,7,False,risk-start count
+5,G3_risk,80.0,15.0,12,12,1,11,False,risk-start count
+5,G3_risk,85.0,-25.0,1,1,0,0,False,risk-start count
+5,G3_risk,85.0,-20.0,7,7,1,3,False,risk-start count
+5,G3_risk,85.0,-15.0,11,11,3,2,False,risk-start count
+5,G3_risk,85.0,-10.0,1,1,0,0,False,risk-start count
+5,G3_risk,85.0,10.0,6,6,3,1,False,risk-start count
+5,G3_risk,85.0,15.0,4,4,1,2,False,risk-start count
+5,G3_risk,85.0,20.0,4,4,0,3,False,risk-start count
+5,G3_risk,90.0,-20.0,12,12,1,7,False,risk-start count
+5,G3_risk,90.0,-15.0,3,3,3,0,False,risk-start count
+5,G3_risk,90.0,15.0,4,4,0,4,False,risk-start count
+5,G3_risk,90.0,20.0,5,5,0,5,False,risk-start count
+5,G3_risk,95.0,-20.0,6,6,0,1,False,risk-start count
+5,G3_risk,95.0,-15.0,7,7,0,1,False,risk-start count
+5,G3_risk,95.0,5.0,1,1,0,0,False,risk-start count
+5,G3_risk,95.0,10.0,1,1,1,0,False,risk-start count
+5,G3_risk,100.0,-25.0,1,1,0,0,False,risk-start count
+5,G3_risk,100.0,-20.0,7,7,0,3,False,risk-start count
+5,G3_risk,100.0,-15.0,3,3,1,1,False,risk-start count
+5,G3_risk,100.0,5.0,1,1,1,0,False,risk-start count
+5,G3_risk,100.0,10.0,1,1,0,0,False,risk-start count
+5,G3_risk,100.0,15.0,1,1,0,1,False,risk-start count
+5,G3_risk,105.0,-30.0,4,4,0,2,False,risk-start count
+5,G3_risk,105.0,-25.0,8,8,0,3,False,risk-start count
+5,G3_risk,105.0,-20.0,7,7,1,1,False,risk-start count
+5,G3_risk,105.0,-15.0,2,2,1,0,False,risk-start count
+5,G3_risk,105.0,5.0,1,1,0,0,False,risk-start count
+5,G3_risk,105.0,10.0,4,4,0,4,False,risk-start count
+5,G3_risk,105.0,15.0,23,23,0,19,False,risk-start count
+5,G3_risk,105.0,20.0,5,5,1,4,False,risk-start count
+5,G3_risk,110.0,-25.0,5,5,0,3,False,risk-start count
+5,G3_risk,110.0,-20.0,16,16,2,4,False,risk-start count
+5,G3_risk,110.0,-15.0,4,4,0,1,False,risk-start count
+5,G3_risk,110.0,5.0,5,5,1,1,False,risk-start count
+5,G3_risk,110.0,10.0,7,7,0,4,False,risk-start count
+5,G3_risk,110.0,15.0,14,14,5,4,False,risk-start count
+5,G3_risk,110.0,20.0,32,32,1,29,False,risk-start count
+5,G3_risk,115.0,-25.0,14,14,0,11,False,risk-start count
+5,G3_risk,115.0,-20.0,19,19,2,7,False,risk-start count
+5,G3_risk,115.0,-15.0,3,3,0,0,False,risk-start count
+5,G3_risk,115.0,10.0,3,3,1,0,False,risk-start count
+5,G3_risk,115.0,15.0,16,16,6,1,False,risk-start count
+5,G3_risk,115.0,20.0,24,24,1,15,False,risk-start count
+5,G3_risk,115.0,25.0,3,3,0,3,False,risk-start count
+5,G3_risk,120.0,-25.0,8,8,0,7,False,risk-start count
+5,G3_risk,120.0,-20.0,7,7,0,3,False,risk-start count
+5,G3_risk,120.0,-15.0,4,4,0,2,False,risk-start count
+5,G3_risk,120.0,5.0,1,1,0,0,False,risk-start count
+5,G3_risk,120.0,10.0,37,37,8,3,True,risk-start count
+5,G3_risk,120.0,15.0,49,49,8,2,True,risk-start count
+5,G3_risk,120.0,20.0,46,46,3,21,False,risk-start count
+5,G3_risk,120.0,25.0,19,19,1,9,False,risk-start count
+5,G3_risk,120.0,30.0,5,5,0,4,False,risk-start count
+5,G3_risk,120.0,35.0,2,2,0,2,False,risk-start count
+5,G3_risk,125.0,-15.0,5,5,1,1,False,risk-start count
+5,G3_risk,125.0,-10.0,1,1,0,1,False,risk-start count
+5,G3_risk,125.0,5.0,2,2,0,0,False,risk-start count
+5,G3_risk,125.0,10.0,12,12,2,0,False,risk-start count
+5,G3_risk,125.0,15.0,24,24,8,1,True,risk-start count
+5,G3_risk,125.0,20.0,28,28,8,7,True,risk-start count
+5,G3_risk,125.0,25.0,24,24,3,10,False,risk-start count
+5,G3_risk,125.0,30.0,12,12,0,8,False,risk-start count
+5,G3_risk,125.0,35.0,2,2,0,1,False,risk-start count
+5,G3_risk,130.0,-15.0,3,3,1,1,False,risk-start count
+5,G3_risk,130.0,10.0,10,10,5,1,False,risk-start count
+5,G3_risk,130.0,15.0,17,17,1,4,False,risk-start count
+5,G3_risk,130.0,20.0,23,23,3,2,False,risk-start count
+5,G3_risk,130.0,25.0,14,14,3,5,False,risk-start count
+5,G3_risk,130.0,30.0,17,17,0,11,False,risk-start count
+5,G3_risk,135.0,-20.0,3,3,0,3,False,risk-start count
+5,G3_risk,135.0,-15.0,4,4,1,2,False,risk-start count
+5,G3_risk,135.0,5.0,2,2,0,0,False,risk-start count
+5,G3_risk,135.0,10.0,9,9,2,1,False,risk-start count
+5,G3_risk,135.0,15.0,20,20,4,2,False,risk-start count
+5,G3_risk,135.0,20.0,22,22,8,3,True,risk-start count
+5,G3_risk,135.0,25.0,13,13,2,2,False,risk-start count
+5,G3_risk,135.0,30.0,10,10,1,6,False,risk-start count
+5,G3_risk,135.0,35.0,2,2,0,2,False,risk-start count
+5,G3_risk,140.0,-20.0,3,3,0,1,False,risk-start count
+5,G3_risk,140.0,-15.0,5,5,1,1,False,risk-start count
+5,G3_risk,140.0,10.0,2,2,2,0,False,risk-start count
+5,G3_risk,140.0,15.0,8,8,3,1,False,risk-start count
+5,G3_risk,140.0,20.0,18,18,0,3,False,risk-start count
+5,G3_risk,140.0,25.0,17,17,2,3,False,risk-start count
+5,G3_risk,140.0,30.0,8,8,0,6,False,risk-start count
+5,G3_risk,140.0,35.0,1,1,0,1,False,risk-start count
+5,G3_risk,145.0,-25.0,1,1,0,1,False,risk-start count
+5,G3_risk,145.0,-20.0,8,8,0,5,False,risk-start count
+5,G3_risk,145.0,-15.0,9,9,1,2,False,risk-start count
+5,G3_risk,145.0,0.0,1,1,1,0,False,risk-start count
+5,G3_risk,145.0,5.0,2,2,1,1,False,risk-start count
+5,G3_risk,145.0,10.0,7,7,3,0,False,risk-start count
+5,G3_risk,145.0,15.0,8,8,3,0,False,risk-start count
+5,G3_risk,145.0,20.0,8,8,0,1,False,risk-start count
+5,G3_risk,145.0,25.0,12,12,2,2,False,risk-start count
+5,G3_risk,145.0,30.0,6,6,0,4,False,risk-start count
+5,G3_risk,145.0,35.0,5,5,0,5,False,risk-start count
+5,G3_risk,150.0,-25.0,2,2,0,0,False,risk-start count
+5,G3_risk,150.0,-20.0,7,7,0,0,False,risk-start count
+5,G3_risk,150.0,-15.0,2,2,0,0,False,risk-start count
+5,G3_risk,150.0,5.0,3,3,2,0,False,risk-start count
+5,G3_risk,150.0,10.0,4,4,1,1,False,risk-start count
+5,G3_risk,150.0,15.0,5,5,2,1,False,risk-start count
+5,G3_risk,150.0,20.0,6,6,1,2,False,risk-start count
+5,G3_risk,150.0,25.0,8,8,1,3,False,risk-start count
+5,G3_risk,150.0,30.0,3,3,0,0,False,risk-start count
+5,G3_risk,150.0,35.0,2,2,0,2,False,risk-start count
+5,G3_risk,150.0,40.0,1,1,0,1,False,risk-start count
+5,G3_risk,155.0,-25.0,10,10,0,2,False,risk-start count
+5,G3_risk,155.0,-20.0,7,7,0,1,False,risk-start count
+5,G3_risk,155.0,-15.0,2,2,1,0,False,risk-start count
+5,G3_risk,155.0,5.0,1,1,0,0,False,risk-start count
+5,G3_risk,155.0,10.0,3,3,0,1,False,risk-start count
+5,G3_risk,155.0,15.0,1,1,0,0,False,risk-start count
+5,G3_risk,155.0,20.0,6,6,0,1,False,risk-start count
+5,G3_risk,155.0,25.0,7,7,0,3,False,risk-start count
+5,G3_risk,155.0,30.0,2,2,0,1,False,risk-start count
+5,G3_risk,155.0,35.0,6,6,0,6,False,risk-start count
+5,G3_risk,160.0,-30.0,2,2,0,2,False,risk-start count
+5,G3_risk,160.0,-25.0,11,11,0,5,False,risk-start count
+5,G3_risk,160.0,-20.0,14,14,1,5,False,risk-start count
+5,G3_risk,160.0,-15.0,5,5,1,0,False,risk-start count
+5,G3_risk,160.0,-10.0,1,1,1,0,False,risk-start count
+5,G3_risk,160.0,5.0,2,2,1,0,False,risk-start count
+5,G3_risk,160.0,20.0,1,1,0,0,False,risk-start count
+5,G3_risk,160.0,25.0,3,3,1,1,False,risk-start count
+5,G3_risk,160.0,30.0,2,2,0,1,False,risk-start count
+5,G3_risk,165.0,-30.0,1,1,0,1,False,risk-start count
+5,G3_risk,165.0,-25.0,10,10,0,7,False,risk-start count
+5,G3_risk,165.0,-20.0,14,14,1,1,False,risk-start count
+5,G3_risk,165.0,-15.0,2,2,1,0,False,risk-start count
+5,G3_risk,165.0,20.0,1,1,0,0,False,risk-start count
+5,G3_risk,165.0,25.0,2,2,0,0,False,risk-start count
+5,G3_risk,165.0,30.0,3,3,1,1,False,risk-start count
+5,G3_risk,165.0,35.0,1,1,0,1,False,risk-start count
+5,G3_risk,170.0,-30.0,2,2,0,2,False,risk-start count
+5,G3_risk,170.0,-25.0,9,9,0,3,False,risk-start count
+5,G3_risk,170.0,-20.0,4,4,0,0,False,risk-start count
+5,G3_risk,170.0,-15.0,2,2,0,1,False,risk-start count
+5,G3_risk,170.0,15.0,2,2,0,0,False,risk-start count
+5,G3_risk,170.0,25.0,2,2,1,1,False,risk-start count
+5,G3_risk,170.0,30.0,1,1,0,0,False,risk-start count
+5,G3_risk,175.0,-30.0,1,1,0,0,False,risk-start count
+5,G3_risk,175.0,-25.0,9,9,2,3,False,risk-start count
+5,G3_risk,175.0,-20.0,10,10,2,2,False,risk-start count
+5,G3_risk,175.0,-15.0,1,1,0,0,False,risk-start count
+5,G3_risk,175.0,10.0,1,1,1,0,False,risk-start count
+5,G3_risk,175.0,15.0,2,2,1,0,False,risk-start count
+10,G2_first,-180.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_first,-180.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_first,-170.0,10.0,2,2,2,0,False,observed return-location count
+10,G2_first,-160.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_first,-150.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_first,-140.0,10.0,2,2,2,0,False,observed return-location count
+10,G2_first,-130.0,10.0,2,2,2,0,False,observed return-location count
+10,G2_first,-130.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_first,-120.0,10.0,6,6,6,0,False,observed return-location count
+10,G2_first,-120.0,20.0,2,2,2,0,False,observed return-location count
+10,G2_first,-110.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_first,-100.0,10.0,3,3,3,0,False,observed return-location count
+10,G2_first,-90.0,10.0,4,4,4,0,False,observed return-location count
+10,G2_first,-90.0,20.0,2,2,2,0,False,observed return-location count
+10,G2_first,-90.0,30.0,1,1,1,0,False,observed return-location count
+10,G2_first,-80.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_first,-80.0,30.0,1,1,1,0,False,observed return-location count
+10,G2_first,-70.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_first,-70.0,20.0,5,5,5,0,False,observed return-location count
+10,G2_first,-70.0,40.0,1,1,1,0,False,observed return-location count
+10,G2_first,-60.0,10.0,2,2,2,0,False,observed return-location count
+10,G2_first,-60.0,20.0,2,2,2,0,False,observed return-location count
+10,G2_first,-60.0,30.0,1,1,1,0,False,observed return-location count
+10,G2_first,-50.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_first,-50.0,30.0,2,2,2,0,False,observed return-location count
+10,G2_first,30.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_first,40.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_first,40.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_first,50.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_first,50.0,-20.0,2,2,2,0,False,observed return-location count
+10,G2_first,50.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_first,60.0,-30.0,3,3,3,0,False,observed return-location count
+10,G2_first,60.0,-20.0,4,4,4,0,False,observed return-location count
+10,G2_first,60.0,0.0,1,1,1,0,False,observed return-location count
+10,G2_first,70.0,-20.0,4,4,4,0,False,observed return-location count
+10,G2_first,80.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_first,80.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_first,90.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_first,90.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_first,100.0,-20.0,2,2,2,0,False,observed return-location count
+10,G2_first,100.0,10.0,4,4,4,0,False,observed return-location count
+10,G2_first,100.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_first,110.0,-20.0,2,2,2,0,False,observed return-location count
+10,G2_first,110.0,10.0,3,3,3,0,False,observed return-location count
+10,G2_first,110.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_first,120.0,-20.0,2,2,2,0,False,observed return-location count
+10,G2_first,120.0,10.0,3,3,3,0,False,observed return-location count
+10,G2_first,120.0,20.0,6,6,6,0,False,observed return-location count
+10,G2_first,130.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_first,130.0,10.0,6,6,6,0,False,observed return-location count
+10,G2_first,130.0,20.0,7,7,7,0,False,observed return-location count
+10,G2_first,130.0,30.0,1,1,1,0,False,observed return-location count
+10,G2_first,140.0,10.0,5,5,5,0,False,observed return-location count
+10,G2_first,140.0,20.0,3,3,3,0,False,observed return-location count
+10,G2_first,150.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_first,150.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_first,160.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_first,160.0,30.0,1,1,1,0,False,observed return-location count
+10,G2_first,170.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_first,170.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_all,-180.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_all,-180.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_all,-170.0,10.0,2,2,2,0,False,observed return-location count
+10,G2_all,-160.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_all,-150.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_all,-140.0,10.0,2,2,2,0,False,observed return-location count
+10,G2_all,-130.0,10.0,2,2,2,0,False,observed return-location count
+10,G2_all,-130.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_all,-120.0,10.0,6,6,6,0,False,observed return-location count
+10,G2_all,-120.0,20.0,2,2,2,0,False,observed return-location count
+10,G2_all,-110.0,10.0,3,2,3,0,False,observed return-location count
+10,G2_all,-100.0,10.0,3,3,3,0,False,observed return-location count
+10,G2_all,-90.0,10.0,4,4,4,0,False,observed return-location count
+10,G2_all,-90.0,20.0,2,2,2,0,False,observed return-location count
+10,G2_all,-90.0,30.0,1,1,1,0,False,observed return-location count
+10,G2_all,-80.0,20.0,2,2,2,0,False,observed return-location count
+10,G2_all,-80.0,30.0,1,1,1,0,False,observed return-location count
+10,G2_all,-70.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_all,-70.0,20.0,6,5,6,0,False,observed return-location count
+10,G2_all,-70.0,40.0,1,1,1,0,False,observed return-location count
+10,G2_all,-60.0,10.0,2,2,2,0,False,observed return-location count
+10,G2_all,-60.0,20.0,2,2,2,0,False,observed return-location count
+10,G2_all,-60.0,30.0,1,1,1,0,False,observed return-location count
+10,G2_all,-50.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_all,-50.0,30.0,2,2,2,0,False,observed return-location count
+10,G2_all,30.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_all,40.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_all,40.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_all,50.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_all,50.0,-20.0,2,2,2,0,False,observed return-location count
+10,G2_all,50.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_all,60.0,-30.0,3,3,3,0,False,observed return-location count
+10,G2_all,60.0,-20.0,4,4,4,0,False,observed return-location count
+10,G2_all,60.0,0.0,1,1,1,0,False,observed return-location count
+10,G2_all,70.0,-20.0,5,4,5,0,False,observed return-location count
+10,G2_all,80.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_all,80.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_all,90.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_all,90.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_all,100.0,-20.0,2,2,2,0,False,observed return-location count
+10,G2_all,100.0,10.0,4,4,4,0,False,observed return-location count
+10,G2_all,100.0,20.0,2,2,2,0,False,observed return-location count
+10,G2_all,110.0,-20.0,2,2,2,0,False,observed return-location count
+10,G2_all,110.0,10.0,3,3,3,0,False,observed return-location count
+10,G2_all,110.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_all,120.0,-20.0,2,2,2,0,False,observed return-location count
+10,G2_all,120.0,10.0,3,3,3,0,False,observed return-location count
+10,G2_all,120.0,20.0,8,7,8,0,False,observed return-location count
+10,G2_all,130.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_all,130.0,10.0,6,6,6,0,False,observed return-location count
+10,G2_all,130.0,20.0,7,7,7,0,False,observed return-location count
+10,G2_all,130.0,30.0,2,2,2,0,False,observed return-location count
+10,G2_all,140.0,10.0,5,5,5,0,False,observed return-location count
+10,G2_all,140.0,20.0,3,3,3,0,False,observed return-location count
+10,G2_all,150.0,-20.0,1,1,1,0,False,observed return-location count
+10,G2_all,150.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_all,160.0,10.0,1,1,1,0,False,observed return-location count
+10,G2_all,160.0,20.0,1,1,1,0,False,observed return-location count
+10,G2_all,160.0,30.0,1,1,1,0,False,observed return-location count
+10,G2_all,170.0,-30.0,1,1,1,0,False,observed return-location count
+10,G2_all,170.0,20.0,1,1,1,0,False,observed return-location count
+10,G3_risk,-180.0,-30.0,16,16,0,13,False,risk-start count
+10,G3_risk,-180.0,-20.0,13,13,4,1,False,risk-start count
+10,G3_risk,-180.0,0.0,2,2,0,0,False,risk-start count
+10,G3_risk,-180.0,10.0,5,5,0,1,False,risk-start count
+10,G3_risk,-180.0,20.0,1,1,1,0,False,risk-start count
+10,G3_risk,-180.0,30.0,1,1,0,1,False,risk-start count
+10,G3_risk,-170.0,-50.0,1,1,0,1,False,risk-start count
+10,G3_risk,-170.0,-40.0,1,1,0,1,False,risk-start count
+10,G3_risk,-170.0,-30.0,9,9,1,7,False,risk-start count
+10,G3_risk,-170.0,-20.0,13,13,2,2,False,risk-start count
+10,G3_risk,-170.0,0.0,1,1,0,0,False,risk-start count
+10,G3_risk,-170.0,10.0,6,6,3,0,False,risk-start count
+10,G3_risk,-160.0,-30.0,7,7,0,7,False,risk-start count
+10,G3_risk,-160.0,-20.0,7,7,0,3,False,risk-start count
+10,G3_risk,-160.0,10.0,4,4,0,1,False,risk-start count
+10,G3_risk,-160.0,20.0,2,2,0,2,False,risk-start count
+10,G3_risk,-150.0,-30.0,4,4,0,2,False,risk-start count
+10,G3_risk,-150.0,-20.0,3,3,0,2,False,risk-start count
+10,G3_risk,-150.0,10.0,31,31,2,3,False,risk-start count
+10,G3_risk,-150.0,20.0,1,1,0,0,False,risk-start count
+10,G3_risk,-140.0,-40.0,1,1,0,1,False,risk-start count
+10,G3_risk,-140.0,-30.0,3,3,0,3,False,risk-start count
+10,G3_risk,-140.0,-20.0,2,2,0,0,False,risk-start count
+10,G3_risk,-140.0,10.0,31,31,1,3,False,risk-start count
+10,G3_risk,-130.0,10.0,86,86,15,6,True,risk-start count
+10,G3_risk,-130.0,20.0,8,8,0,3,False,risk-start count
+10,G3_risk,-120.0,10.0,129,129,9,11,True,risk-start count
+10,G3_risk,-120.0,20.0,55,55,3,13,False,risk-start count
+10,G3_risk,-110.0,10.0,50,50,11,3,True,risk-start count
+10,G3_risk,-110.0,20.0,2,2,0,0,False,risk-start count
+10,G3_risk,-100.0,10.0,9,9,3,2,False,risk-start count
+10,G3_risk,-100.0,20.0,11,11,1,0,False,risk-start count
+10,G3_risk,-100.0,30.0,6,6,0,4,False,risk-start count
+10,G3_risk,-90.0,10.0,29,29,6,11,True,risk-start count
+10,G3_risk,-90.0,20.0,30,30,7,5,True,risk-start count
+10,G3_risk,-90.0,30.0,13,13,1,3,False,risk-start count
+10,G3_risk,-80.0,10.0,11,11,5,0,False,risk-start count
+10,G3_risk,-80.0,20.0,18,18,9,1,False,risk-start count
+10,G3_risk,-80.0,30.0,15,15,1,4,False,risk-start count
+10,G3_risk,-80.0,40.0,1,1,0,0,False,risk-start count
+10,G3_risk,-70.0,10.0,20,20,4,3,False,risk-start count
+10,G3_risk,-70.0,20.0,23,23,9,3,True,risk-start count
+10,G3_risk,-70.0,30.0,13,13,0,4,False,risk-start count
+10,G3_risk,-70.0,40.0,4,4,0,3,False,risk-start count
+10,G3_risk,-60.0,10.0,17,17,7,3,False,risk-start count
+10,G3_risk,-60.0,20.0,15,15,3,1,False,risk-start count
+10,G3_risk,-60.0,30.0,17,17,2,2,False,risk-start count
+10,G3_risk,-60.0,40.0,5,5,0,4,False,risk-start count
+10,G3_risk,-50.0,0.0,1,1,0,0,False,risk-start count
+10,G3_risk,-50.0,10.0,18,18,2,1,False,risk-start count
+10,G3_risk,-50.0,20.0,8,8,2,0,False,risk-start count
+10,G3_risk,-50.0,30.0,10,10,3,1,False,risk-start count
+10,G3_risk,-50.0,40.0,5,5,0,1,False,risk-start count
+10,G3_risk,-40.0,10.0,14,14,0,0,False,risk-start count
+10,G3_risk,-40.0,20.0,7,7,2,1,False,risk-start count
+10,G3_risk,-40.0,30.0,7,7,2,3,False,risk-start count
+10,G3_risk,-40.0,40.0,1,1,0,1,False,risk-start count
+10,G3_risk,-30.0,10.0,2,2,0,0,False,risk-start count
+10,G3_risk,-30.0,20.0,4,4,0,1,False,risk-start count
+10,G3_risk,-30.0,30.0,1,1,0,0,False,risk-start count
+10,G3_risk,-20.0,40.0,2,2,0,2,False,risk-start count
+10,G3_risk,30.0,-30.0,6,6,0,2,False,risk-start count
+10,G3_risk,30.0,-20.0,6,6,1,3,False,risk-start count
+10,G3_risk,40.0,-40.0,2,2,0,2,False,risk-start count
+10,G3_risk,40.0,-30.0,18,18,1,4,False,risk-start count
+10,G3_risk,40.0,-20.0,16,16,2,3,False,risk-start count
+10,G3_risk,40.0,-10.0,1,1,0,0,False,risk-start count
+10,G3_risk,50.0,-30.0,17,17,0,8,False,risk-start count
+10,G3_risk,50.0,-20.0,34,34,6,2,True,risk-start count
+10,G3_risk,50.0,-10.0,2,2,0,1,False,risk-start count
+10,G3_risk,50.0,0.0,1,1,0,0,False,risk-start count
+10,G3_risk,50.0,10.0,9,9,0,5,False,risk-start count
+10,G3_risk,50.0,20.0,1,1,1,0,False,risk-start count
+10,G3_risk,60.0,-40.0,1,1,0,1,False,risk-start count
+10,G3_risk,60.0,-30.0,12,12,1,4,False,risk-start count
+10,G3_risk,60.0,-20.0,40,40,9,4,True,risk-start count
+10,G3_risk,60.0,0.0,1,1,1,0,False,risk-start count
+10,G3_risk,60.0,10.0,10,10,2,1,False,risk-start count
+10,G3_risk,60.0,20.0,7,7,0,4,False,risk-start count
+10,G3_risk,70.0,-30.0,15,15,0,4,False,risk-start count
+10,G3_risk,70.0,-20.0,39,39,6,2,True,risk-start count
+10,G3_risk,70.0,-10.0,3,3,0,0,False,risk-start count
+10,G3_risk,70.0,10.0,10,10,1,4,False,risk-start count
+10,G3_risk,70.0,20.0,3,3,0,2,False,risk-start count
+10,G3_risk,80.0,-30.0,7,7,0,2,False,risk-start count
+10,G3_risk,80.0,-20.0,33,33,7,8,True,risk-start count
+10,G3_risk,80.0,-10.0,1,1,0,0,False,risk-start count
+10,G3_risk,80.0,0.0,1,1,0,1,False,risk-start count
+10,G3_risk,80.0,10.0,32,32,6,21,True,risk-start count
+10,G3_risk,80.0,20.0,4,4,0,3,False,risk-start count
+10,G3_risk,90.0,-20.0,28,28,4,9,False,risk-start count
+10,G3_risk,90.0,0.0,1,1,0,0,False,risk-start count
+10,G3_risk,90.0,10.0,5,5,1,4,False,risk-start count
+10,G3_risk,90.0,20.0,5,5,0,5,False,risk-start count
+10,G3_risk,100.0,-30.0,13,13,0,5,False,risk-start count
+10,G3_risk,100.0,-20.0,19,19,3,5,False,risk-start count
+10,G3_risk,100.0,0.0,2,2,1,0,False,risk-start count
+10,G3_risk,100.0,10.0,29,29,0,24,False,risk-start count
+10,G3_risk,100.0,20.0,5,5,1,4,False,risk-start count
+10,G3_risk,110.0,-30.0,19,19,0,14,False,risk-start count
+10,G3_risk,110.0,-20.0,42,42,4,12,False,risk-start count
+10,G3_risk,110.0,0.0,5,5,1,1,False,risk-start count
+10,G3_risk,110.0,10.0,40,40,12,9,True,risk-start count
+10,G3_risk,110.0,20.0,59,59,2,47,False,risk-start count
+10,G3_risk,120.0,-30.0,8,8,0,7,False,risk-start count
+10,G3_risk,120.0,-20.0,16,16,1,6,False,risk-start count
+10,G3_risk,120.0,-10.0,1,1,0,1,False,risk-start count
+10,G3_risk,120.0,0.0,3,3,0,0,False,risk-start count
+10,G3_risk,120.0,10.0,122,122,26,6,True,risk-start count
+10,G3_risk,120.0,20.0,117,117,15,47,True,risk-start count
+10,G3_risk,120.0,30.0,21,21,0,15,False,risk-start count
+10,G3_risk,130.0,-20.0,10,10,2,6,False,risk-start count
+10,G3_risk,130.0,0.0,2,2,0,0,False,risk-start count
+10,G3_risk,130.0,10.0,56,56,12,8,True,risk-start count
+10,G3_risk,130.0,20.0,72,72,16,12,True,risk-start count
+10,G3_risk,130.0,30.0,29,29,1,19,False,risk-start count
+10,G3_risk,140.0,-30.0,1,1,0,1,False,risk-start count
+10,G3_risk,140.0,-20.0,25,25,2,9,False,risk-start count
+10,G3_risk,140.0,0.0,3,3,2,1,False,risk-start count
+10,G3_risk,140.0,10.0,25,25,11,1,True,risk-start count
+10,G3_risk,140.0,20.0,55,55,4,9,False,risk-start count
+10,G3_risk,140.0,30.0,20,20,0,16,False,risk-start count
+10,G3_risk,150.0,-30.0,12,12,0,2,False,risk-start count
+10,G3_risk,150.0,-20.0,18,18,1,1,False,risk-start count
+10,G3_risk,150.0,0.0,4,4,2,0,False,risk-start count
+10,G3_risk,150.0,10.0,13,13,3,3,False,risk-start count
+10,G3_risk,150.0,20.0,27,27,2,9,False,risk-start count
+10,G3_risk,150.0,30.0,13,13,0,9,False,risk-start count
+10,G3_risk,150.0,40.0,1,1,0,1,False,risk-start count
+10,G3_risk,160.0,-30.0,24,24,0,15,False,risk-start count
+10,G3_risk,160.0,-20.0,35,35,4,6,False,risk-start count
+10,G3_risk,160.0,-10.0,1,1,1,0,False,risk-start count
+10,G3_risk,160.0,0.0,2,2,1,0,False,risk-start count
+10,G3_risk,160.0,20.0,7,7,1,1,False,risk-start count
+10,G3_risk,160.0,30.0,6,6,1,3,False,risk-start count
+10,G3_risk,170.0,-30.0,21,21,2,8,False,risk-start count
+10,G3_risk,170.0,-20.0,17,17,2,3,False,risk-start count
+10,G3_risk,170.0,10.0,5,5,2,0,False,risk-start count
+10,G3_risk,170.0,20.0,2,2,1,1,False,risk-start count
+10,G3_risk,170.0,30.0,1,1,0,0,False,risk-start count

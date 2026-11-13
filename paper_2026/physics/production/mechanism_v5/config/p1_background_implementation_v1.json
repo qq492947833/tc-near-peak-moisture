@@ -1,0 +1,32 @@
+{
+  "version": "P1_background_implementation_v1",
+  "created": "2026-10-08T16:21:27.293611+00:00",
+  "before_real_adjusted_effect_fitting": true,
+  "source_spec": "analysis_spec_v5.json:P1.background_standardization",
+  "population": "current117 SID; each process paired premean has common 3/4 lags; complete background required only for adjusted comparison",
+  "contrast": "internal minus final",
+  "outcomes": "same nine prespecified P1/P2 premean processes; no new environmental metric or p/q family",
+  "covariates": [
+    "intercept",
+    "latitude",
+    "sin(longitude)",
+    "cos(longitude)",
+    "sin(month)",
+    "cos(month)",
+    "wind_t0_kt",
+    "log1p(age_h)",
+    "delta_v24_backward",
+    "land_contact",
+    "basin_genesis dummies"
+  ],
+  "fit": "reuse p4_p5_analysis_v5.phase_standardization: unpenalized support logit after scaled-SVD nuisance reduction; both paired members must have propensity0.1–0.9; joint-hull witness by represented basin; pooled additive outcome regression over empirical support; no SID fixed effect; target-rowspace check",
+  "inference": "2000 paired SID draws seed510082026; refit support and outcome in every draw, retain all failures, no topup; descriptive percentileCI only, no new P or q",
+  "three_results": [
+    "raw all valid pairs",
+    "raw same supported pairs",
+    "background-standardized same supported pairs"
+  ],
+  "interpretation": "retrospective background-standardized environment comparison; empirical joint hull intersection only diagnostic, does not establish causal positivity or fully identical states",
+  "failure": "insufficient/no joint support or nonestimable target => not estimated with exact reason, not fill or loosen thresholds",
+  "code_reuse": "existing P4/P5 phase standardization implementation already synthetic-tested; wrapper to be independently checked before observed fit"
+}

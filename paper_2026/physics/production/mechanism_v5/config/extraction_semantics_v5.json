@@ -1,0 +1,142 @@
+{
+  "version": "v5.1_shared_native_extraction_1",
+  "frozen_by": "root task decision 2026-10-08; same existing scientific scope",
+  "scalar_annulus_km": [
+    200,
+    800
+  ],
+  "outer_endpoint": "exclusive",
+  "native_halo_cells": 1,
+  "min_valid_fraction": 0.9,
+  "pressure_mask": "finite SP>=pressure_hPa*100, identical UTC/native grid; original geometric annulus remains denominator",
+  "sst": {
+    "domain": "NaturalEarth10m physical-land complement",
+    "shapefile": "ne_10m_land.shp",
+    "denominator": "original annulus intersect fixed ocean mask",
+    "minimum_valid_fraction": 0.9,
+    "geometry_fraction_reported": true,
+    "applies_to": "all v5 center_kind consistently",
+    "old_track_comparison": "not asserted identical to historical NaturalEarth110m track SST"
+  },
+  "flux": {
+    "primary_domain": "ERA5 static lsm<0.5",
+    "denominator": "original annulus intersect ERA5 ocean mask",
+    "descriptive_counterpart": "all original annulus",
+    "upward_conversion": "-raw_J_m-2 / 3600 seconds",
+    "accumulation_duration_h": 1,
+    "sampling_interval_h": 6
+  },
+  "precipitation": {
+    "raw_unit": "m",
+    "rate": "raw*1000 mm h-1",
+    "accumulation_duration_h": 1,
+    "endpoint": "validUTC",
+    "sampling_interval_h": 6,
+    "no_continuous_budget": true
+  },
+  "profile": {
+    "pressure_hpa": [
+      1000,
+      925,
+      850,
+      700,
+      600,
+      500,
+      400,
+      300,
+      250,
+      200,
+      150,
+      100,
+      50
+    ],
+    "units": {
+      "temperature": "K",
+      "specific_humidity": "kg kg-1"
+    },
+    "domain": "original atmospheric annulus with perlevel SP QC",
+    "aggregation": "perlevel area means of T and q on SAME joint native T/q support; separate original pervariablecoverage retained"
+  },
+  "map": {
+    "radius_km": 1500,
+    "fields": [
+      "q700",
+      "r700",
+      "u700",
+      "v700",
+      "z200",
+      "u200",
+      "v200",
+      "u850",
+      "v850"
+    ],
+    "grid": "original native latitude/longitude; not interpolated",
+    "derivatives_before_transforms": true
+  },
+  "temporal_q": {
+    "offset_h": [
+      -6,
+      6
+    ],
+    "fixed_position": "exactly same physical native grid coordinates",
+    "dt_seconds": 43200,
+    "moving_tendency": "fixed time tendency + c_east*dqdx + c_north*dqdy",
+    "vertical": "-omega700 * nonuniform derivative(q600,q700,q850) at700hPa; pressuresPa",
+    "residual": "moving_tendency-horizontal_storm_relative_advection-vertical_advection",
+    "common_support_required_for_budget_closure": true
+  },
+  "variable_sets": {
+    "baseline_exposure": [
+      "sst",
+      "u200",
+      "v200",
+      "u850",
+      "v850",
+      "r500",
+      "r700",
+      "d200",
+      "w500",
+      "vo850"
+    ],
+    "SST_for_displacement": [
+      "sst"
+    ],
+    "full_process": "core plus layered winds, q600/700/850,w700,d850,z200/z500,msl,slhf/sshf,tp,tcwv; profiles/maps only explicitflags"
+  },
+  "source_implementation_refs": [
+    "../src/extract_v2.py:169-185",
+    "../src/extract_v2.py:275-290",
+    "../review_completion_v3_2/scripts/sp_qc_v3_2.py:130-150"
+  ],
+  "no_implicit_fallback": true,
+  "no_fit_or_bootstrap": true,
+  "entropy600": {
+    "definition": "compute entropy600_fields on native T600/q600 andsameUTC samecellSP before averaging",
+    "core_saturated_radius_km": [
+      0,
+      100
+    ],
+    "environment_actual_radius_km": [
+      100,
+      300
+    ],
+    "min_original_area_fraction": 0.9,
+    "source": "src/thermodynamics_v5.py"
+  },
+  "resources": {
+    "shards": 4,
+    "partition": "canonical actualUTC/float.hex location, retaining original geometry_key",
+    "module_order": [
+      "P1",
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "CPU_BLAS_threads_per_worker": 1,
+    "max_open": 64,
+    "variable_chunk_cache_MiB": 16,
+    "RSS_stop_after_checkpoint_GiB": 8,
+    "cache_concurrency": "OS byte-range lock per atomiccache item, includes overlaps from t\u00b16; process exit releases lock",
+    "no_gpu": true
+  }
+}

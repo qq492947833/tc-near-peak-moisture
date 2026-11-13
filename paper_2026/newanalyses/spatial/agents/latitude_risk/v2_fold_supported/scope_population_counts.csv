@@ -1,0 +1,19 @@
+scope,hemisphere,n_sid,observed_return48,known_complete_nonreturn48,unknown48,outcome
+main2340,NH,1697,248,977,472,scheduled 48h return after first historical-threshold departure
+main2340,SH,643,66,374,203,scheduled 48h return after first historical-threshold departure
+main2340,ALL,2340,314,1351,675,scheduled 48h return after first historical-threshold departure
+accepted2231,NH,1588,243,938,407,scheduled 48h return after first historical-threshold departure
+accepted2231,SH,643,66,374,203,scheduled 48h return after first historical-threshold departure
+accepted2231,ALL,2231,309,1312,610,scheduled 48h return after first historical-threshold departure
+environment1256,NH,872,160,586,126,scheduled 48h return after first historical-threshold departure
+environment1256,SH,384,46,239,99,scheduled 48h return after first historical-threshold departure
+environment1256,ALL,1256,206,825,225,scheduled 48h return after first historical-threshold departure
+training1245,NH,861,157,580,124,scheduled 48h return after first historical-threshold departure
+training1245,SH,384,46,239,99,scheduled 48h return after first historical-threshold departure
+training1245,ALL,1245,203,819,223,scheduled 48h return after first historical-threshold departure
+common406,NH,252,39,184,29,scheduled 48h return after first historical-threshold departure
+common406,SH,154,15,108,31,scheduled 48h return after first historical-threshold departure
+common406,ALL,406,54,292,60,scheduled 48h return after first historical-threshold departure
+fold_supported322,NH,202,30,151,21,scheduled 48h return after first historical-threshold departure
+fold_supported322,SH,120,12,86,22,scheduled 48h return after first historical-threshold departure
+fold_supported322,ALL,322,42,237,43,scheduled 48h return after first historical-threshold departure

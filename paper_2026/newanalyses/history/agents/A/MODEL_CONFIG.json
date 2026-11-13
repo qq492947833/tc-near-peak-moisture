@@ -1,0 +1,55 @@
+{
+  "seed": 2026110901,
+  "bootstrap_replicates": 2000,
+  "block_years": 3,
+  "bootstrap": "Circular moving blocks of global genesis years, same selected years for all basins; resample entire SIDs within each selected year; retain all recurrent observations of each SID together",
+  "sensitivity_block_years": [
+    1,
+    5
+  ],
+  "sensitivity_replicates": 500,
+  "models": [
+    "raw empirical proportion",
+    "ridge logistic basin + season + year + initial state",
+    "same model plus RH, shear, SST"
+  ],
+  "state_variables": [
+    "season_sin",
+    "season_cos",
+    "year_decade",
+    "abs_lat",
+    "wind_kt",
+    "age_h",
+    "motion_past6h_ms",
+    "past24_land_contact"
+  ],
+  "environment_variables": [
+    "X3_mid_rh_pct",
+    "X2_shear_ms",
+    "X1_sst_c"
+  ],
+  "continuous_penalty": 1,
+  "intercept_penalty": 0,
+  "basin_penalty": 0.16,
+  "basin_regularization_reason": "Unpenalized basin pilot failed at a separated resample; weak Normal(0,2.5^2) contrast penalty added before completing any inference; no resamples dropped",
+  "standardization_target": "pooled observed common-support SID covariate distribution, bootstrap reweighted",
+  "support": "complete covariates in NA EP WP SI, trimmed to intersection of within-basin 1st-99th percentile intervals for prespecified continuous covariates",
+  "reference": "first observed downcross after first-LMI anchored near-peak window; all exposures at that time, outcomes strictly later",
+  "outcome": "at least one qualifying subsequent return within the recorded lifecycle, not a fixed-48h outcome",
+  "followup": "observed-lifecycle probability does not identify the probability beyond record termination; risk intervals stop at first missing interval in each departure episode; no extrapolation",
+  "diagnostics": {
+    "n": 953,
+    "events": 61,
+    "n_parameters": 15,
+    "condition_number": 94.25739893818748,
+    "max_abs_standardized_coefficient": 2.3233126371548725,
+    "brier": 0.0571448492111539,
+    "iterations": [
+      7,
+      7
+    ],
+    "bootstrap_failed": 0,
+    "raw_yearly_outcome_lag1_autocorrelation": 0.17314547328562974
+  },
+  "support_mode": "overlap"
+}

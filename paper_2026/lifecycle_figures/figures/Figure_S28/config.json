@@ -1,0 +1,8 @@
+{
+  "figure_id": "Figure_S20",
+  "function": "build",
+  "arguments": [],
+  "text_replacements": {},
+  "original_source": "plot_rise_moisture_process.py",
+  "original_source_sha256": "d213e87886e2e5c2b845725a2845c679bf272384f156170df263a6ff1ba462a2"
+}

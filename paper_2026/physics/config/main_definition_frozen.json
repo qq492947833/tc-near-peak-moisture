@@ -1,0 +1,33 @@
+{
+  "status": "FROZEN_SINGLE_RETROSPECTIVE_MASTER_COHORT",
+  "study_genesis_years": [
+    1982,
+    2023
+  ],
+  "main_sid_n": 2340,
+  "main_sid_path": "inputs/main_sid.txt",
+  "main_sid_sha256": "0b4c4308543fb4e7f5f32911d6b654a5fc4e720b8617fc53ce46a59b2c117b37",
+  "intersection": [
+    "current wind-quality and four-stage support",
+    "existing published F/C5/R90C common legal-interval support",
+    "first eligible historical-threshold departure"
+  ],
+  "common_support_field": "new_durations.main_complete",
+  "common_support_decision": "Retain the accepted published common comparison support including C5/R90C; the two pure-RUF-only extra SIDs remain excluded for the existing wider common-window missing observation. No new support rule is introduced.",
+  "cross_year_observations": "Retain complete lifecycle and existing follow-up; no calendar-end truncation",
+  "no_complete_48h_admission_gate": true,
+  "event_threshold": "Vg+0.90*(maximum observed pre-departure wind minus Vg), fixed throughout original follow-up",
+  "E_definition": "Last observed progress 0.25 crossing before unchanged first-LMI-anchored maturity onset; no forward-24h gain gate or fallback",
+  "M_display_mapping": "Maturity, existing stage_code=3; F remains the existing span/window representation, not a fifth stage",
+  "Resolution": "Starts at existing final near-peak exit; does not imply physical disappearance",
+  "diagnostic_support": "Each analysis uses its valid subset within this single master SID list and reports its actual SID/event/pair count",
+  "authorization": "Current user unified-cohort instruction; root delegated freeze and isolated recomputation after complete handoff attachment reading",
+  "display_labels": {
+    "D": "Development",
+    "E": "Intensification",
+    "F": "Mature / near-peak persistence",
+    "Res": "Decay",
+    "final": "decay event",
+    "internal": "temporary departure"
+  }
+}

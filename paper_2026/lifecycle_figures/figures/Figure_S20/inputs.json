@@ -1,0 +1,32 @@
+{
+  "03_Work/v6/physics/spatial_centered_null_full_family_B199999.csv": {
+    "relative_path": "inputs/03_Work/v6/physics/spatial_centered_null_full_family_B199999.csv",
+    "sha256": "44a10703ac3315949260f1c08f5c4a089f0009710c9892cc018b884a487cd034",
+    "original_path": "source_ref:project/03_Work/v6/physics/spatial_centered_null_full_family_B199999.csv",
+    "bytes": 1325400
+  },
+  "04_Data_and_Code/github_ready/source_values/accepted_v51/p1_spatial_v1/r02/map_source_data.csv": {
+    "relative_path": "inputs/04_Data_and_Code/github_ready/source_values/accepted_v51/p1_spatial_v1/r02/map_source_data.csv",
+    "sha256": "228863ce3997b7fac14699bf85b1a57b7ceec1c53188b0f448386219f5b23006",
+    "original_path": "source_ref:project/04_Data_and_Code/github_ready/source_values/accepted_v51/p1_spatial_v1/r02/map_source_data.csv",
+    "bytes": 3560577
+  },
+  "spatial/current117_fixed_pre_shear_anomaly_common_paired_composites.npz": {
+    "relative_path": "inputs/spatial/current117_fixed_pre_shear_anomaly_common_paired_composites.npz",
+    "sha256": "534ccddd4cfcd2c68de0bc74c55791302c187bd1eeb92eed3f34ea604169dfa4",
+    "original_path": "current117_fixed_pre_shear_anomaly_common_paired_composites.npz",
+    "bytes": 1084348
+  },
+  "spatial/current117_fixed_pre_shear_raw_common_paired_composites.npz": {
+    "relative_path": "inputs/spatial/current117_fixed_pre_shear_raw_common_paired_composites.npz",
+    "sha256": "36cea9a500a87b8c949a82f49d43f0bcbc829a6b3a2272c3d325bd7a7cc24733",
+    "original_path": "current117_fixed_pre_shear_raw_common_paired_composites.npz",
+    "bytes": 1072007
+  },
+  "spatial/geometry.npz": {
+    "relative_path": "inputs/spatial/geometry.npz",
+    "sha256": "90cb38027c28a54e2fd5fc21758d415a76f82e064f155b3ac2c7ff6d4392a404",
+    "original_path": "geometry.npz",
+    "bytes": 983
+  }
+}

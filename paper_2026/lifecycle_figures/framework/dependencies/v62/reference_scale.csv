@@ -1,0 +1,7 @@
+variable,reference_id,reference_mean,reference_sd,reference_n_sid,reference_population,sst_limit
+X1_sst_c,lifecycle_sid_equal_QC90_110m_v3,27.650980423524025,1.154838785638014,2368,all track; duration-weighted within SID; equal SID across lifecycle; fixed across every Fig6 panel,same 110m ocean denominator after SST-only legacy repair
+X2_shear_ms,lifecycle_sid_equal_QC90_110m_v3,8.314617171036902,2.9891749245052903,2368,all track; duration-weighted within SID; equal SID across lifecycle; fixed across every Fig6 panel,
+X3_mid_rh_pct,lifecycle_sid_equal_QC90_110m_v3,59.61332249197627,8.899048086442766,2368,all track; duration-weighted within SID; equal SID across lifecycle; fixed across every Fig6 panel,
+X4_d200_1e5s,lifecycle_sid_equal_QC90_110m_v3,0.5152689772295784,0.3563633318162815,2368,all track; duration-weighted within SID; equal SID across lifecycle; fixed across every Fig6 panel,
+X5_minus_omega500_pa_s,lifecycle_sid_equal_QC90_110m_v3,0.06249812142665117,0.0470444134638222,2368,all track; duration-weighted within SID; equal SID across lifecycle; fixed across every Fig6 panel,
+X6_signed_vo850_1e5s,lifecycle_sid_equal_QC90_110m_v3,0.3347219534918959,0.6680148943026758,2368,all track; duration-weighted within SID; equal SID across lifecycle; fixed across every Fig6 panel,

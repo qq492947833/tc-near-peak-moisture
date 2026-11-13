@@ -1,0 +1,713 @@
+{
+  "status": "READY_PROCESSED_STATISTICAL_REPLAY",
+  "scope": "Six fixed departure outcomes with prespecified sensitivities; 48 fixed rise jobs. Processed-input statistical replay only.",
+  "departure": {
+    "rows": 37908,
+    "candidate_SID": 117,
+    "candidate_events": 234,
+    "diagnostics": 6,
+    "configurations": 3,
+    "lags": 9,
+    "completion_sha256": "c188017225e232e84f6bcc311725973165f5dc1f4da5115f2320f1d7f7cccc76",
+    "source_parquet_identities": [
+      {
+        "sid": "1982005S10105",
+        "regional_sha256": "51a1ed5891a6073919462553e0074f0e5e4b6f381159472fd9f3ebc857b06b1c"
+      },
+      {
+        "sid": "1982257N17140",
+        "regional_sha256": "dec28f03ca2547a1d5ebce044f661b08d5f79cb11a96ec063b0e15993f74aaef"
+      },
+      {
+        "sid": "1982272N11156",
+        "regional_sha256": "675674de870b1530bf1ffb2c206718512978c10b68b13f7d04d11a3540caee94"
+      },
+      {
+        "sid": "1983281N12256",
+        "regional_sha256": "c75ce6b403506992a5b7641a4d5017321d0d6df8108b42f2c7403dd487a95ab0"
+      },
+      {
+        "sid": "1984214N12143",
+        "regional_sha256": "f195141804088805cc75df4605e49f75d1eb70cbb10ce7fe191da7ad2d82e27d"
+      },
+      {
+        "sid": "1984259N19245",
+        "regional_sha256": "109433df27827f5836f502b35682d467dbf83b67f3450c050dc408c3ca6a9a1c"
+      },
+      {
+        "sid": "1984317N04164",
+        "regional_sha256": "e3ef5888ac33efe19d807e16faaf4d4cedcfd643b126fac11927700f8536e7ac"
+      },
+      {
+        "sid": "1985210N14257",
+        "regional_sha256": "0b5f3fd97ae3ed2860c18a42f42c35746cbc6927f8fc32427a6f6e1905012f09"
+      },
+      {
+        "sid": "1985259N12262",
+        "regional_sha256": "e0742f27d44b4089e4336556295d0e6ef3927c0f8cb7e587d2d8a4e48f02e3cf"
+      },
+      {
+        "sid": "1985268N16126",
+        "regional_sha256": "7fbd3e05e7f0f4ac5a13dc85fa6f9d6d1790f6ac1a3bc9a5dbf39c5f03e79b73"
+      },
+      {
+        "sid": "1987058S10173",
+        "regional_sha256": "51ec399cbe6d1978b5031ee78538f742f2158b431b6a48707f1f7ad4b87a523c"
+      },
+      {
+        "sid": "1987200N04191",
+        "regional_sha256": "3546a5b543d84ad29645f14f4179a9c4b28b4a9bc30bbb11d4fff783f22d56e5"
+      },
+      {
+        "sid": "1987263N10241",
+        "regional_sha256": "4a150f215d2eaa776c4d7aee2dd5fbf3b486382d4704bc0110be11cde92174cf"
+      },
+      {
+        "sid": "1988005N03174",
+        "regional_sha256": "69f3f51adef017d7b3f3ec9b70fd7eb8c97b12b5a95f36d01d7ea31a4b0a1031"
+      },
+      {
+        "sid": "1988242N12215",
+        "regional_sha256": "966ab9130133497bbe2cc8646768d606b8a0dbdb29cdc66feb2f9dc400923bdb"
+      },
+      {
+        "sid": "1988310S08100",
+        "regional_sha256": "14e4919a49b303ce4786b4b257a18a56624544e7211f52cdfc20bfd2eda74ec1"
+      },
+      {
+        "sid": "1989201N11145",
+        "regional_sha256": "722a59f93a0b9b5267914770497ed0146b6ba8a78e2a00e6e218583069f3ae91"
+      },
+      {
+        "sid": "1989254N13340",
+        "regional_sha256": "d26a748d36385dfcc6d350c1a94a63f42d7e5c2fef86de1b8100ae0a092a281d"
+      },
+      {
+        "sid": "1990012S12131",
+        "regional_sha256": "9b0647644bbea26f2018f910071fa52005f9000b3fcf58152994952588ee2aae"
+      },
+      {
+        "sid": "1990187N13258",
+        "regional_sha256": "3410aaf8f917989677fd6f5cbee16c58185246ad9dceaa4f674853fede245fc6"
+      },
+      {
+        "sid": "1990247N07337",
+        "regional_sha256": "a4fee4d3f03264d574783b45b6e81a798b8415804d4f5dc7afe5841af9610461"
+      },
+      {
+        "sid": "1990289N22300",
+        "regional_sha256": "bb5bb48e87685615db7c64f1c7ae10a1ebf4d0fd65ff6700b0703b6b31a441fe"
+      },
+      {
+        "sid": "1992197N11266",
+        "regional_sha256": "d56251a0b85f33660885d6de0eb050fcb7fadaa0ff3d20b8858e3eefcc6210f0"
+      },
+      {
+        "sid": "1992298N10188",
+        "regional_sha256": "88aeffc98734633f0d0a6776bd8dc6efe68515448704e5ff9bf111d31cb96ee5"
+      },
+      {
+        "sid": "1993064N03174",
+        "regional_sha256": "c5b50f8b81f6bd4eb5dcacdcf250a11728933367339512c71cfede800fc93284"
+      },
+      {
+        "sid": "1993360S04171",
+        "regional_sha256": "e951a194aa170ac1004d5fe105f48c0d5efc9df0d1019aa5fa6782d892a50e6e"
+      },
+      {
+        "sid": "1994012S09075",
+        "regional_sha256": "00473206081c24eea21f1435e82c1cac490528c32aaaa213bc9771f5e5a7a0f6"
+      },
+      {
+        "sid": "1994153N19113",
+        "regional_sha256": "b084891e1d264fbb3acec6841afc84474f8198dee624100e1099de92dbf6912e"
+      },
+      {
+        "sid": "1995032S10074",
+        "regional_sha256": "50b2fa472963307b3ad086fe3550b18b45196462258532705dbbbd0a98d47035"
+      },
+      {
+        "sid": "1995241N11333",
+        "regional_sha256": "14c57b6dff4a6ef9e22f853a7a84f45232502996033d7b7a5cc367c7b87380fd"
+      },
+      {
+        "sid": "1995270N10322",
+        "regional_sha256": "277e953917617b2cb164fafa0bc9d89221b9642af66955eaaeeffd042157ad6c"
+      },
+      {
+        "sid": "1996207N12297",
+        "regional_sha256": "8861a8fabffdd6e889903774500c88d1302a6777c1393d26cbc0f49e1504c5d7"
+      },
+      {
+        "sid": "1996233N12340",
+        "regional_sha256": "6a73cca9ff26bb2c20d09f4b8186206e9da5bf4b54c729a4702701b076d5d718"
+      },
+      {
+        "sid": "1996260N19107",
+        "regional_sha256": "e687869d40a4111bacbeef3db6a51e050b7cee4b3e0e701125c0c79ab0be89a0"
+      },
+      {
+        "sid": "1996261N08184",
+        "regional_sha256": "9592bddecb1e7aae898b5e6c89b488b2338a570dda94a695d07f2487946acde9"
+      },
+      {
+        "sid": "1997198N27267",
+        "regional_sha256": "efec42696e0d8d8ef37db3b9aaa9c3e13c7947196b3d14a7e7809d91d4d14da9"
+      },
+      {
+        "sid": "1997284N04179",
+        "regional_sha256": "ac1c37baf2066dcabe63623d96875ffe679856b66a120daee1fc1e151c0882f5"
+      },
+      {
+        "sid": "1997298N06140",
+        "regional_sha256": "3d3d4d27025d169aff32d308d55f227d30ad0bba804c899c339c6eb0cea4747b"
+      },
+      {
+        "sid": "1997299N07169",
+        "regional_sha256": "d9ed6ba0d007630bf1a47a0d2ec0ab66ad961458d0f24de7293a69a50e2426da"
+      },
+      {
+        "sid": "1998022S15125",
+        "regional_sha256": "6b43bef70622ef5094ce9df00681978722f2eb2a19ae7b6ae276d188a050030f"
+      },
+      {
+        "sid": "1998203N11253",
+        "regional_sha256": "029a143a720778f4aaeb40f20b1989311bd7532b4ead602063725773433523f1"
+      },
+      {
+        "sid": "1998236N13326",
+        "regional_sha256": "7db01e1c76f2857b7a3d32980980f0033c0d6334e6a86a8e851643788a2e3ab7"
+      },
+      {
+        "sid": "1999255N13336",
+        "regional_sha256": "4a05c82d63483a29595235f9d931f85970f600ea9561957242d30cb2253994a0"
+      },
+      {
+        "sid": "2000023S15172",
+        "regional_sha256": "dcfbc1617aa6fc0b0052af308000c2c07e727790c7223ca298dbb9e6e5d1d00b"
+      },
+      {
+        "sid": "2000205N10260",
+        "regional_sha256": "c49a51b61b689aebf9c7d629a8be2843ddc91f6b1bb70c3a9faf583eda90709c"
+      },
+      {
+        "sid": "2000248N18126",
+        "regional_sha256": "e6e490347db222dcc5571fe59e33f17dc4ba1f87460c80974706a964e3c5526f"
+      },
+      {
+        "sid": "2000260N15308",
+        "regional_sha256": "b8c0ba986e5b750ecaca4fb576574173da55051ede48bb95e92d22a7b7b1e558"
+      },
+      {
+        "sid": "2000277N15257",
+        "regional_sha256": "bc6e3055517cb1bb1b21c6812457ddf62a1000da9f869cb791f1b6e4668e7e37"
+      },
+      {
+        "sid": "2001212N10158",
+        "regional_sha256": "69195d9108c3f9f6de0307dd99e147d7487e9cef88bccd22b62d4becb4fd7a84"
+      },
+      {
+        "sid": "2001227N13323",
+        "regional_sha256": "76b33611028e6464a799716a88f27d1eb2af7fe7c2eaf6be23f378934d65373d"
+      },
+      {
+        "sid": "2002122S07063",
+        "regional_sha256": "64555368550dfe45fee4daf9192b4eb3c3d40f01a9401621be1a1c075545f60c"
+      },
+      {
+        "sid": "2002237N10202",
+        "regional_sha256": "5b004430e50302a63437004fe624920a928df1d9b4d62b6ee34955dc5cf850ff"
+      },
+      {
+        "sid": "2002297N09206",
+        "regional_sha256": "a1001e2788643e3e5f65b18e5a76a0b23bce17cc76fa030d97e8abb1414d0229"
+      },
+      {
+        "sid": "2003098N03159",
+        "regional_sha256": "2e914f7b4a6c15b3d87d0ca1d08a4d7aeeb899f4474431110af2244f8ca8819f"
+      },
+      {
+        "sid": "2003249N14329",
+        "regional_sha256": "ac11e1434d7b76fd997daf5506aaaaf7f84e0697e4a8e35b9b52b12310386d59"
+      },
+      {
+        "sid": "2003316N11141",
+        "regional_sha256": "1565bcc0737174c9e4f9bb79a55c1e1d5fdde74e0dee0466b82500da0fca1f5a"
+      },
+      {
+        "sid": "2003338S09065",
+        "regional_sha256": "ce2293c9121d527895ea986362329d55630b543544ac388eb33e405f3615d51e"
+      },
+      {
+        "sid": "2004072S11146",
+        "regional_sha256": "5e534310beb58277ccb06c7b41ed0e6d07c056a737a4a84cccea1184a09693f4"
+      },
+      {
+        "sid": "2004093N07154",
+        "regional_sha256": "41a88078f7f079bd32a3ae2c8f93a94ecf963af4c811289734818858cf0b7f71"
+      },
+      {
+        "sid": "2004230N09172",
+        "regional_sha256": "63b695cbe886b4bbcebf2dd78aafbb0d3e38a6f0a45b5505b8825a1508eafe19"
+      },
+      {
+        "sid": "2004239N11171",
+        "regional_sha256": "6d7707ece4f0d5d4a2ebf97101b637f653af089521e9de510f7363b6c4dd2cf3"
+      },
+      {
+        "sid": "2004247N10332",
+        "regional_sha256": "a18703bec605b5f6b658d9d991db3e714c38dcecb4e7b34e7fcf65d1145c8bb6"
+      },
+      {
+        "sid": "2004332N02072",
+        "regional_sha256": "9ee6f2556c39019d52e3c2e7caa1513efe262bc42394de8b60cb71852b06f4c0"
+      },
+      {
+        "sid": "2005063S12141",
+        "regional_sha256": "381bc6fa60be94809b215e4bbc5f33ff3b7ee964cee8361241b73c8d3ec0c277"
+      },
+      {
+        "sid": "2005186N12299",
+        "regional_sha256": "4fde0da83d7ce72b42a1cb37ba6205a79217e97484305cc0377b0cc0527e815b"
+      },
+      {
+        "sid": "2005249N26281",
+        "regional_sha256": "2f8d92e7d89b2d3e9ad0832493a9f4dbe7d73831a8017a983c13a4c2cb2aa398"
+      },
+      {
+        "sid": "2005364N24324",
+        "regional_sha256": "a48acaf2951af0c5f126047baef4b44222b5ac16c314e98039ac28036633ece1"
+      },
+      {
+        "sid": "2006203N12257",
+        "regional_sha256": "e432d0f3d6cc8075bcc8e5879da5b1c6952ea1d2848f8731a4f6814850df286f"
+      },
+      {
+        "sid": "2006340N08142",
+        "regional_sha256": "282c93760b91784cdbdd1ec3dd04c36407484f73e83374d29cb2287467be1b6d"
+      },
+      {
+        "sid": "2007085S11085",
+        "regional_sha256": "11b66968cc86b5f57283c97a4e5f1ad121d58aadf3af2efc8bd950826f778e44"
+      },
+      {
+        "sid": "2007240N17153",
+        "regional_sha256": "8e6e649e0800568dc45657c1e00e6737ba15817a14a3d049b3d039fccc7ff0c2"
+      },
+      {
+        "sid": "2007244N12303",
+        "regional_sha256": "d8a9fb7da717423baf07e4cc18488ff2ed4ec5271817a1d87ce2e580f96350f0"
+      },
+      {
+        "sid": "2009227N12328",
+        "regional_sha256": "e17911b30bbf8ffce1ba7c51086262b9f25d273479fbd1e6927bf9287c7e0533"
+      },
+      {
+        "sid": "2009325N06148",
+        "regional_sha256": "c999fbdc1360f609e6b50acc9687d5e159c9733debcaef6a248a2e58415b62bc"
+      },
+      {
+        "sid": "2012018S16041",
+        "regional_sha256": "4ef26c66248ad9f6037ca5182aa577126410716b3b0f8e5e816e1dd76bcc29eb"
+      },
+      {
+        "sid": "2012337S06089",
+        "regional_sha256": "982288b742f983688c4a89f37cbe223b6721f15a8cd8ab87e5bdb738d2f576e6"
+      },
+      {
+        "sid": "2013093S08074",
+        "regional_sha256": "6f0dcda08aee5ccea9e42a70bacb7a40c9b239f765abe9ca55b41181449d7fb1"
+      },
+      {
+        "sid": "2013269N15118",
+        "regional_sha256": "df38b867e7e781a09097691a90480b878ff34420ec175a01d621e9538583903b"
+      },
+      {
+        "sid": "2014356S08101",
+        "regional_sha256": "d1761693de3cb54dd3c540ce5668dc2cb54bbf288906021c913eb34e34b7baeb"
+      },
+      {
+        "sid": "2015009S19054",
+        "regional_sha256": "5b9470940b284e28d2755f65e594b38e26c3f3ee81a6f58663bf65d7a6e54f16"
+      },
+      {
+        "sid": "2015092S18074",
+        "regional_sha256": "cfa0b87cfb8cf1b95b5824dd5d0de4d6f361652dd715d452e9f016dab24ad72c"
+      },
+      {
+        "sid": "2015188N08194",
+        "regional_sha256": "c8d78d81facd6f70ab395b68e5293ed2fbe60c8a565de2320e8c1d36b095da29"
+      },
+      {
+        "sid": "2015226N12151",
+        "regional_sha256": "5929c506a4c7d8861fd8b40d1339e773c257d77c9ad6cf624b14c7c1a11d76dc"
+      },
+      {
+        "sid": "2015238N10255",
+        "regional_sha256": "66eba79bce2a2d3a961c892007df6d0ff1ccfda87c9a3c12ce2e1882b12e379f"
+      },
+      {
+        "sid": "2015344N07145",
+        "regional_sha256": "bd0e5467b9c9af798bc86785c6c645b28b4e151bd60253ff87b4cd84a2d229fd"
+      },
+      {
+        "sid": "2016197N14256",
+        "regional_sha256": "a941c5dc85494538adcd8d7a4cac58d4f122222d01ecf391a5b3bd3573a7af68"
+      },
+      {
+        "sid": "2016235N11341",
+        "regional_sha256": "0e99147eb64a022132a37ef892688c77752d18006c544d6d5801c2c9bbe2fe41"
+      },
+      {
+        "sid": "2016256N12146",
+        "regional_sha256": "e3abfecc3d1a4d933306c19611283391047dc90ff43d9e94db966a0cf2bc45b5"
+      },
+      {
+        "sid": "2017242N16333",
+        "regional_sha256": "6053936481a14f6dd575c8038ba29e359248ddce5cce2054f1fec46edeac9f58"
+      },
+      {
+        "sid": "2018025S09080",
+        "regional_sha256": "afc401d65dde21176de9e4dea0f4d91448bd6b3248110ea447e654963811f965"
+      },
+      {
+        "sid": "2018227N11145",
+        "regional_sha256": "ab822bcd6dce918fb64d15952e11b110f7cfb3fb3686adf133eaefe58ebcfdff"
+      },
+      {
+        "sid": "2018294N08161",
+        "regional_sha256": "60fae0998c9bb653f255e53270227dc20e51f7e64d945c09a767af1f676d6d4d"
+      },
+      {
+        "sid": "2018324N04156",
+        "regional_sha256": "5bfab30eca505ed232870298eada4ac43367cd0a842f5ebd098aac6efe86f614"
+      },
+      {
+        "sid": "2018334S09156",
+        "regional_sha256": "6dfc3175331993c1f71209de48d88a3cc699b1e99ddf150c490bbf0d2c9f4449"
+      },
+      {
+        "sid": "2019001S10162",
+        "regional_sha256": "e8b585aeb56da0f383874caf50480ceb41161c67340c506cf71eae6bbba61ef5"
+      },
+      {
+        "sid": "2019050N05163",
+        "regional_sha256": "5a0c76c37456f3d6a2c6fdf5b8d10702e86868259669a0c918375fb515102af8"
+      },
+      {
+        "sid": "2019078S13066",
+        "regional_sha256": "3b68543be9c72bcce13f1f86b3605d65f428f560104d5552518ecf360ed79bd4"
+      },
+      {
+        "sid": "2019336S06055",
+        "regional_sha256": "3aaf9fc4ab32907dd0a08947fa9038d35714cbeee72fcd0234d39cf459192d2f"
+      },
+      {
+        "sid": "2020053S12119",
+        "regional_sha256": "e22fb6c3381b9a35e8def39f33a23324a7326294db762cbfc481ea7ec55fe930"
+      },
+      {
+        "sid": "2020154N19269",
+        "regional_sha256": "7a06f1c6582db7f868a7b3e43dc0deb796267fdda9f50f0aa52ce4844d5e4f73"
+      },
+      {
+        "sid": "2020277N21141",
+        "regional_sha256": "907be8a9d66e0a3504839e98b6c3dcebd45cc7a54277cb628aeb9fdb462931aa"
+      },
+      {
+        "sid": "2020303N05149",
+        "regional_sha256": "bed0ab8bdbf6e39db8429df9f9f24f20460198984befd5aec22353f0de953240"
+      },
+      {
+        "sid": "2020366S12073",
+        "regional_sha256": "5f7029796b3870858cd936c5af3fc9ac7126ffc1d428ce1e96195366a7ead2f2"
+      },
+      {
+        "sid": "2021029S16171",
+        "regional_sha256": "921a540cd709c53732d693df133e8014d82b6a43523cb6df37aad975dcb63d94"
+      },
+      {
+        "sid": "2021053S13128",
+        "regional_sha256": "19ac625349b7bae882fb5c4d4f350605d2827edc77a72d2c42805c264e8d7d35"
+      },
+      {
+        "sid": "2021062S14064",
+        "regional_sha256": "9b55f13ee1b0d4bcb1df84525b01e38625df829f3f6b0ec474fc43a86d21e748"
+      },
+      {
+        "sid": "2021248N11131",
+        "regional_sha256": "b35a72fd50fccd626b2d8d1cdffc5b649e6b13bdc23747e80a35bc9aeb5b9748"
+      },
+      {
+        "sid": "2021266N10327",
+        "regional_sha256": "991ab3073fe4bc8c55f69e78a62b8cd57e5386e654dd8f0968bf31c792ea3ae8"
+      },
+      {
+        "sid": "2021267N18094",
+        "regional_sha256": "35d471973ea81b117f5138180c500e28a3846c96bebc893a88e18e7eb81208f1"
+      },
+      {
+        "sid": "2021282N16165",
+        "regional_sha256": "2dfaa3621696077c807e466ef214f7e24af678161b104864f0b3e144cf070d7d"
+      },
+      {
+        "sid": "2021346N05145",
+        "regional_sha256": "cdfc07651821f4cb9f985feda3814a24c639a45438112b328510c85038ff1f79"
+      },
+      {
+        "sid": "2022126N07095",
+        "regional_sha256": "e6525b40bc936bb21c9334ebd64a6e78cc16fb3455fbd3b0b4a46002ac6a5d53"
+      },
+      {
+        "sid": "2023213N14257",
+        "regional_sha256": "acc5b9bf8826003339dcd44b8a3d560ec899c2e6c3abe80a7982e54383688908"
+      },
+      {
+        "sid": "2023228N12259",
+        "regional_sha256": "72cb42455051b19d11a2d8ea570618568fc9d9b8453a69ec00832b77c66c5584"
+      },
+      {
+        "sid": "2023266N16323",
+        "regional_sha256": "29f141f35b94ffa2a48b31006fc87d570bd20f1434e4d7bf06c0a1da706c8a85"
+      },
+      {
+        "sid": "2023271N14144",
+        "regional_sha256": "abe93c228be0c57e8439315596c1183e6cd2866ae70657d1f9df4c36d035399b"
+      },
+      {
+        "sid": "2023302N10267",
+        "regional_sha256": "8e06fbc9b155dd5baa041d085bafe76d01f1e9e3654fe8e85d832d11e0ae5a1a"
+      }
+    ]
+  },
+  "rise": {
+    "candidate_SID": 123,
+    "candidate_events": 133,
+    "requests": 2646,
+    "selected_jobs": 48,
+    "source_groups": 18,
+    "completion_sha256": "195495de19445f641936da751cbf7f743490a40ccfabe4fe8e5d6e59ec2aa2cf",
+    "processed_matrix_sha256": "b68c7d81e156e6ff3232f7937897f10a68e819bc078edaf782b0b8e39367b666"
+  },
+  "production_code_sha256": {
+    "mwt_paired_statistics.py": "d94365a8cd782ef4f083d22786031d7369bd9899ed1cf2ea7d8363a9e96b393f",
+    "mwt_motion_intensity_sensitivity.py": "9d43cd2648162b675fbfc821bc374dbabdc923a8709ccec633ebcd169cac1418",
+    "run_mwt_statistics.py": "db5ad8ee7f1492fb4045a0096de51c56d87e5e2d69910a35b235044150b0630a",
+    "Rise_Event_Statistics.py": "40937c7348657938946a410d6a99035f335b082c924f873c243b47ea0ee84763",
+    "mwt_rise_statistics_driver.py": "e92b0468ffce215e811249027f90b2153e8df5f6903004d037c4aef1e870c26f"
+  },
+  "files": [
+    {
+      "relative_path": "README.txt",
+      "bytes": 1767,
+      "sha256": "4c3ad70ae359050040b4fa0725929cb587567e5d9d1819045cc81e17d8ee60dc"
+    },
+    {
+      "relative_path": "config/replay.json",
+      "bytes": 2275,
+      "sha256": "59aa26601ddc7d96a23e12c8bde38610ab3d2c8ce1330f98ef9e9840c1e1f523"
+    },
+    {
+      "relative_path": "inputs/departure/centres.csv",
+      "bytes": 1191540,
+      "sha256": "f8ccd874fbc4b66461cb1ad5ebac469500c7fe5c8c63211ea4ea8c7b7128ec1c"
+    },
+    {
+      "relative_path": "inputs/departure/events.csv",
+      "bytes": 82892,
+      "sha256": "918367439a2e70509bea03ba8a81d54a501dfa869bc5205143cd68b046b43d61"
+    },
+    {
+      "relative_path": "inputs/departure/regional_values.parquet",
+      "bytes": 381662,
+      "sha256": "760702d2c5985f10f407541e1e6794d2fa1e78dbf9023e0d68600bae255d9941"
+    },
+    {
+      "relative_path": "inputs/rise/events.parquet",
+      "bytes": 55526,
+      "sha256": "59d691495aa97b8c4663a48fd41a446f6b8b601821c17ba4cdf492d63e2ad352"
+    },
+    {
+      "relative_path": "inputs/rise/intervals.parquet",
+      "bytes": 118431,
+      "sha256": "f3a329c8084de0e0596634fd162233eb7e7140e843e7d3c7f556362a39fb7789"
+    },
+    {
+      "relative_path": "inputs/rise/jobs.json",
+      "bytes": 22415,
+      "sha256": "010f5e606b86d7aa062df54e46f05677f0f7d1a3d63925892d5788f94f898122"
+    },
+    {
+      "relative_path": "inputs/rise/pairs.parquet",
+      "bytes": 53258,
+      "sha256": "9f9b74a59a2adda8d3ea29131ef44cc30fbff24ad426cc5814ac774f6eb83b21"
+    },
+    {
+      "relative_path": "inputs/rise/request_values.h5",
+      "bytes": 563194,
+      "sha256": "95dccfaadcb555e75cd732d5692e1bb5b705915861a86621e44ae53b527a4570"
+    },
+    {
+      "relative_path": "inputs/rise/requests.parquet",
+      "bytes": 303210,
+      "sha256": "44780b6bef037a560432f508bd86af8f431ea8e94f88ea04370e257e4e5ff039"
+    },
+    {
+      "relative_path": "inputs/rise/roles.parquet",
+      "bytes": 64788,
+      "sha256": "1a2b4245d1a4af9c1d8b2c2012db07432dac2e9eb776131d4d63ea6ce164aae0"
+    },
+    {
+      "relative_path": "reference_results/departure/SID_pre_support.parquet",
+      "bytes": 9330,
+      "sha256": "208dd8f48ae789a0ca443ec03081222d5702817e055db07d94cc9c4761ddb7da"
+    },
+    {
+      "relative_path": "reference_results/departure/baseline_pairs.parquet",
+      "bytes": 13225,
+      "sha256": "9211a1a30ee7ddc0cb55e3225e6143cacde5886952aef0fb512e15db83ad4de2"
+    },
+    {
+      "relative_path": "reference_results/departure/baseline_summary.parquet",
+      "bytes": 6720,
+      "sha256": "88b2f46f326a15ed44da27c5b906c77ac225165880b8b06463f1f7194d6fc672"
+    },
+    {
+      "relative_path": "reference_results/departure/coverage_n_by_time.parquet",
+      "bytes": 7323,
+      "sha256": "2215a7fc20f092bd7f3353e455cae6a72b89845d132f0397b8ac51bd4b66d168"
+    },
+    {
+      "relative_path": "reference_results/departure/coverage_pre_counts.parquet",
+      "bytes": 5760,
+      "sha256": "fd8307346c2b980fea0da0184b8c1d09055d9959e7812ef0e11850eb34cc96a0"
+    },
+    {
+      "relative_path": "reference_results/departure/effects.parquet",
+      "bytes": 24538,
+      "sha256": "fa788e38bfc4bc751d3020a417227a0b9198a429598c3aa28bb2cb8ee3375a2b"
+    },
+    {
+      "relative_path": "reference_results/departure/motion_intensity_SID_inputs.parquet",
+      "bytes": 15732,
+      "sha256": "14ffeac744c3ac318e44792508d12e7cadb9f2c196b76920d9c1252890e49b4c"
+    },
+    {
+      "relative_path": "reference_results/departure/motion_intensity_draws.parquet",
+      "bytes": 367515,
+      "sha256": "e5e9c90d7e33f865fac5286505a517cb5b4f1bf525e727c64e98af63fe4935d4"
+    },
+    {
+      "relative_path": "reference_results/departure/motion_intensity_summary.parquet",
+      "bytes": 15809,
+      "sha256": "e66357f24f7d1369e2f16ef16a459e30f450ed1f8775b4309610b8434d0e5fdf"
+    },
+    {
+      "relative_path": "reference_results/departure/paired_bootstrap.h5",
+      "bytes": 4378193,
+      "sha256": "fc1c1a278283af627ff37d3b2f9c9bbd90939dc0ff699a08404471050b23be01"
+    },
+    {
+      "relative_path": "reference_results/departure/primary_family.parquet",
+      "bytes": 11502,
+      "sha256": "851a603283f4975aa545bfb50a47442742227ea80ca084054b3dbf3bcb2f68d2"
+    },
+    {
+      "relative_path": "reference_results/departure/sensitivities.parquet",
+      "bytes": 10360,
+      "sha256": "08028aa2fe3c8122b99cab628017333464f855d846fc1f4e93b87cb27fe19898"
+    },
+    {
+      "relative_path": "reference_results/departure/sensitivity_pairs.parquet",
+      "bytes": 43038,
+      "sha256": "2407471ff5caa5f6ce1e61a1f3a6f74fddc3cf55d0f761779fdb422de0733390"
+    },
+    {
+      "relative_path": "reference_results/departure/sid_pre_pairs.parquet",
+      "bytes": 70563,
+      "sha256": "a6c2364ee7a4798c9b8ea886bd928e3abfdada87831ab65491ce0267391c5dd0"
+    },
+    {
+      "relative_path": "reference_results/rise/bootstrap_draws.h5",
+      "bytes": 37709056,
+      "sha256": "3c2e9cc1f0f62b19e2dadc77804ecad87519fcc4e6ef6932232ca5b46a0574c4"
+    },
+    {
+      "relative_path": "reference_results/rise/bootstrap_membership.parquet",
+      "bytes": 47130,
+      "sha256": "a18a33bc2ef79ba8fc2f1ee991e8306ac575839a4655561562764aa94a46dcd7"
+    },
+    {
+      "relative_path": "reference_results/rise/coverage.parquet",
+      "bytes": 21102,
+      "sha256": "20e2525f9d91c63ae87c83b549e4298303c6e85a96e2e48ea73656978c49a3bf"
+    },
+    {
+      "relative_path": "reference_results/rise/event_estimates.parquet",
+      "bytes": 429854,
+      "sha256": "5a9165a3c0526b2197fd4916a2b279ef906939d61eb72114d64169f93fc7cd1d"
+    },
+    {
+      "relative_path": "reference_results/rise/matched_bins.parquet",
+      "bytes": 177642,
+      "sha256": "bf2f099a91ba5f6271b176f0ff6c0067922fee9c37e73b94cc0ce97bc7b93045"
+    },
+    {
+      "relative_path": "reference_results/rise/request_support.parquet",
+      "bytes": 47083,
+      "sha256": "7cd5e5079c4b6c1d162c7e69e1c394de447c63ba7ae28c933f9fafb4bcb30782"
+    },
+    {
+      "relative_path": "reference_results/rise/sid_estimates.parquet",
+      "bytes": 397516,
+      "sha256": "18a644ff6374c3687656929f3f9940a1fa91fbde7dacf7d3f467176670df1f3d"
+    },
+    {
+      "relative_path": "reference_results/rise/summary.parquet",
+      "bytes": 40134,
+      "sha256": "9c25717b4d21eca37d60365c08dba828d600748c72365ecc98d938cf03d260e7"
+    },
+    {
+      "relative_path": "reference_results/rise/time_sid.parquet",
+      "bytes": 386817,
+      "sha256": "b95df091fff50d4890d76dd5a86ad4ee9eee92b4f7fcfcb13101f30c67424c30"
+    },
+    {
+      "relative_path": "reference_results/rise/time_summary.parquet",
+      "bytes": 21860,
+      "sha256": "7eaa22407e2f567bc02f2650b02fd17c020ab605fd375fcaccf5c35dd20a9df7"
+    },
+    {
+      "relative_path": "reproduce.py",
+      "bytes": 12167,
+      "sha256": "1a436dcdbb3f80704f8640606637c851196b78bea5514a4c712d439d837a36c0"
+    },
+    {
+      "relative_path": "src/Rise_Event_Statistics.py",
+      "bytes": 9118,
+      "sha256": "40937c7348657938946a410d6a99035f335b082c924f873c243b47ea0ee84763"
+    },
+    {
+      "relative_path": "src/mwt_motion_intensity_sensitivity.py",
+      "bytes": 7915,
+      "sha256": "9d43cd2648162b675fbfc821bc374dbabdc923a8709ccec633ebcd169cac1418"
+    },
+    {
+      "relative_path": "src/mwt_paired_statistics.py",
+      "bytes": 11984,
+      "sha256": "d94365a8cd782ef4f083d22786031d7369bd9899ed1cf2ea7d8363a9e96b393f"
+    },
+    {
+      "relative_path": "src/mwt_rise_statistics_driver.py",
+      "bytes": 22054,
+      "sha256": "e92b0468ffce215e811249027f90b2153e8df5f6903004d037c4aef1e870c26f"
+    },
+    {
+      "relative_path": "src/run_mwt_statistics.py",
+      "bytes": 23349,
+      "sha256": "db5ad8ee7f1492fb4045a0096de51c56d87e5e2d69910a35b235044150b0630a"
+    }
+  ],
+  "assembled_UTC": "2026-10-23T13:59:07.030482+00:00",
+  "license": "No new license is granted by this package; retain the applicable existing author and third-party terms."
+}

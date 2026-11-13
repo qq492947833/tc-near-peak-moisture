@@ -1,0 +1,557 @@
+{
+  "figure_id": "Figure_S20",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/RISE_MOISTURE_PROCESS_states_source.csv"
+      ],
+      "fields": {
+        "states": [
+          "sid",
+          "matched_Resolution",
+          "matched_rise",
+          "radial",
+          "panel"
+        ]
+      },
+      "filter": [
+        "d = states[states.metric.eq('q700') & states.radial.eq(radial) & states.estimand.isin(['matched_rise', 'matched_Resolution'])]",
+        "ax = axs[0, col]",
+        "pair = pairs[radial]",
+        "ax = axs[1, col]",
+        "row = summary[summary.metric.eq(metric) & summary.radial.eq(radial) & summary.estimand.eq('rise_rate_integral') & summary['sample'].eq('all_events')]",
+        "row = row.iloc[0]"
+      ],
+      "sample_scope": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "units": {
+        "x": "Resolution specific humidity (g kg$^{-1}$)",
+        "y": "Rise specific humidity (g kg$^{-1}$)",
+        "title": "Matched winds · 100–300 km"
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "weights": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "states": "eacbc04bc376a19040c66afc59edbeb39d16ed2c26f518267936ecb939729a2b"
+        },
+        "original_plot_source": "plot_rise_moisture_process.py",
+        "original_plot_source_sha256": "d213e87886e2e5c2b845725a2845c679bf272384f156170df263a6ff1ba462a2"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a_b",
+          "role": "Actual same-SID matched-wind states",
+          "source_key": null,
+          "fields": [
+            "sid",
+            "matched_Resolution",
+            "matched_rise",
+            "radial",
+            "panel"
+          ],
+          "selected_rows": 216,
+          "saved_selected_table": "panel_a_b_0.csv",
+          "sha256": "eacbc04bc376a19040c66afc59edbeb39d16ed2c26f518267936ecb939729a2b"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/RISE_MOISTURE_PROCESS_states_source.csv"
+      ],
+      "fields": {
+        "states": [
+          "sid",
+          "matched_Resolution",
+          "matched_rise",
+          "radial",
+          "panel"
+        ]
+      },
+      "filter": [
+        "d = states[states.metric.eq('q700') & states.radial.eq(radial) & states.estimand.isin(['matched_rise', 'matched_Resolution'])]",
+        "ax = axs[0, col]",
+        "pair = pairs[radial]",
+        "ax = axs[1, col]",
+        "row = summary[summary.metric.eq(metric) & summary.radial.eq(radial) & summary.estimand.eq('rise_rate_integral') & summary['sample'].eq('all_events')]",
+        "row = row.iloc[0]"
+      ],
+      "sample_scope": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "units": {
+        "x": "Resolution specific humidity (g kg$^{-1}$)",
+        "y": "Rise specific humidity (g kg$^{-1}$)",
+        "title": "Matched winds · 300–800 km"
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "weights": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "states": "eacbc04bc376a19040c66afc59edbeb39d16ed2c26f518267936ecb939729a2b"
+        },
+        "original_plot_source": "plot_rise_moisture_process.py",
+        "original_plot_source_sha256": "d213e87886e2e5c2b845725a2845c679bf272384f156170df263a6ff1ba462a2"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a_b",
+          "role": "Actual same-SID matched-wind states",
+          "source_key": null,
+          "fields": [
+            "sid",
+            "matched_Resolution",
+            "matched_rise",
+            "radial",
+            "panel"
+          ],
+          "selected_rows": 216,
+          "saved_selected_table": "panel_a_b_0.csv",
+          "sha256": "eacbc04bc376a19040c66afc59edbeb39d16ed2c26f518267936ecb939729a2b"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/RISE_MOISTURE_PROCESS_integrals_source.csv"
+      ],
+      "fields": {
+        "integrals": [
+          "estimand",
+          "sample",
+          "units",
+          "n_events",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel"
+        ]
+      },
+      "filter": [
+        "d = states[states.metric.eq('q700') & states.radial.eq(radial) & states.estimand.isin(['matched_rise', 'matched_Resolution'])]",
+        "ax = axs[0, col]",
+        "pair = pairs[radial]",
+        "ax = axs[1, col]",
+        "row = summary[summary.metric.eq(metric) & summary.radial.eq(radial) & summary.estimand.eq('rise_rate_integral') & summary['sample'].eq('all_events')]",
+        "row = row.iloc[0]"
+      ],
+      "sample_scope": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "units": {
+        "x": "",
+        "y": "Integrated diagnosed rate (g kg$^{-1}$)",
+        "title": "Rise integrals · 100–300 km"
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "weights": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "integrals": "6c4cffaa4d2f30ef27963c457580e1e638d15f0356cc8a1d550b05cef9adfa05"
+        },
+        "original_plot_source": "plot_rise_moisture_process.py",
+        "original_plot_source_sha256": "d213e87886e2e5c2b845725a2845c679bf272384f156170df263a6ff1ba462a2"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c_d",
+          "role": "Saved actual-ascent diagnosed integrals and percentile intervals",
+          "source_key": null,
+          "fields": [
+            "estimand",
+            "sample",
+            "units",
+            "n_events",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 8,
+          "saved_selected_table": "panel_c_d_1.csv",
+          "sha256": "691dd112e8df915744ecbc890b92ea65d054f00306e1c4687b6dbb5e7f1baafd"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/RISE_MOISTURE_PROCESS_integrals_source.csv"
+      ],
+      "fields": {
+        "integrals": [
+          "estimand",
+          "sample",
+          "units",
+          "n_events",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel"
+        ]
+      },
+      "filter": [
+        "d = states[states.metric.eq('q700') & states.radial.eq(radial) & states.estimand.isin(['matched_rise', 'matched_Resolution'])]",
+        "ax = axs[0, col]",
+        "pair = pairs[radial]",
+        "ax = axs[1, col]",
+        "row = summary[summary.metric.eq(metric) & summary.radial.eq(radial) & summary.estimand.eq('rise_rate_integral') & summary['sample'].eq('all_events')]",
+        "row = row.iloc[0]"
+      ],
+      "sample_scope": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "units": {
+        "x": "",
+        "y": "Integrated diagnosed rate (g kg$^{-1}$)",
+        "title": "Rise integrals · 300–800 km"
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "weights": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "integrals": "6c4cffaa4d2f30ef27963c457580e1e638d15f0356cc8a1d550b05cef9adfa05"
+        },
+        "original_plot_source": "plot_rise_moisture_process.py",
+        "original_plot_source_sha256": "d213e87886e2e5c2b845725a2845c679bf272384f156170df263a6ff1ba462a2"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c_d",
+          "role": "Saved actual-ascent diagnosed integrals and percentile intervals",
+          "source_key": null,
+          "fields": [
+            "estimand",
+            "sample",
+            "units",
+            "n_events",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 8,
+          "saved_selected_table": "panel_c_d_1.csv",
+          "sha256": "691dd112e8df915744ecbc890b92ea65d054f00306e1c4687b6dbb5e7f1baafd"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "states",
+      "relative_path": "inputs/RISE_MOISTURE_PROCESS_states_source.csv",
+      "sha256": "eacbc04bc376a19040c66afc59edbeb39d16ed2c26f518267936ecb939729a2b",
+      "original_path": "RISE_MOISTURE_PROCESS_states_source.csv",
+      "bytes": 13177
+    },
+    {
+      "key": "integrals",
+      "relative_path": "inputs/RISE_MOISTURE_PROCESS_integrals_source.csv",
+      "sha256": "6c4cffaa4d2f30ef27963c457580e1e638d15f0356cc8a1d550b05cef9adfa05",
+      "original_path": "RISE_MOISTURE_PROCESS_integrals_source.csv",
+      "bytes": 1135
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S20.png",
+      "sha256": "864d1ebec5f21de646ba2a7a1049709c64ef8016a90dbebc6d495281b765b783"
+    },
+    "tiff": {
+      "path": "Figure_S20.tiff",
+      "sha256": "64ed394d97c77a7c9b1199871ccd8e3ae7ee799978595079f502b58d9a185802"
+    },
+    "pdf": {
+      "path": "Figure_S20.pdf",
+      "sha256": "3896bb71ed7dc4f8880ac39637546131968022475e2c0e5dba1753717a18a3b1"
+    },
+    "svg": {
+      "path": "Figure_S20.svg",
+      "sha256": "51bd10049397994eb679a256efa3ccae6900b62decefec7052cc26edf6e233c0"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S20",
+      "returncode": 0,
+      "elapsed_s": 10.23,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 4,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 442.2047244094488
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              58.67716535433072,
+              274.31205423646367,
+              243.8261736270308,
+              413.4614173228346
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              23.498853782517703,
+              423.8976195543124
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              312.33130668792984,
+              274.31205423646367,
+              497.4803149606299,
+              413.4614173228346
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              277.15299511611687,
+              423.8976195543124
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              58.67716535433072,
+              53.06456692913385,
+              243.8261736270308,
+              192.21393001550481
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              23.498853782517703,
+              202.65013224698265
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              312.33130668792984,
+              53.06456692913385,
+              497.4803149606299,
+              192.21393001550481
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              277.15299511611687,
+              202.65013224698265
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6715900244121
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S20",
+      "source": "Figure_S12.png",
+      "sha256": "29a67b4899b9da168d2c5b0d08d42037cac4b27f134091918829c3ebb1500b46",
+      "pixels": [
+        6377,
+        5527
+      ],
+      "display_inches": [
+        6.496062992125984,
+        5.6301924759405075
+      ],
+      "effective_dpi": 981.6715151515151
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 20 | Moisture states and diagnosed processes during the rise to near-peak intensity. a,b, Specific humidity at 700 hPa in the 100–300 km and 300–800 km annuli, respectively. Each point is one cyclone: jointly observed 10 kt bins are averaged within each event, then events within SID. The 108 same-SID pairs compare rise and Resolution states on shared wind ranges; dashed lines indicate equal humidity. c,d, Horizontal and vertical advection, residual and moving-frame tendency integrated over the actual trough-to-return intervals. Bars are equal-SID means after averaging events within SID, with percentile 95% intervals from 2,000 SID resamples. Complete common process records retain 122 cyclones in c and 121 in d. Positive vertical contributions are opposed by horizontal advection and the residual. The outlined tendency is the diagnostic sum of the three coloured terms, not an additional input. These rate integrals and observed endpoint changes have distinct spatial and temporal sampling; Tables S8b,e,g retain endpoint changes, all process integrals and matched contrasts. Table S8j gives the first-return sensitivity of the integrals.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "cbfd2d4f12997b52cde2cea4b17799be8a56372b5cfce1ddd701bd19017c2bf7",
+      "run.py": "ec771a916707eafa7a7627f84d5b5222bb8827b3d432a4b332863115ab47db34"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

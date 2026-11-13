@@ -1,0 +1,50 @@
+{
+  "version": "v5.1.p1_spatial.2_paired_lag_support",
+  "frozen_utc": "2026-10-08T15:19:19.804155+00:00",
+  "scientific_effects_not_yet_computed": true,
+  "cohorts": [
+    "current117",
+    "candidate123"
+  ],
+  "primary_frame": "fixed_pre_shear",
+  "primary_representation": "anomaly",
+  "comparison": "internal minus final",
+  "summaries": [
+    "pre_fixed_minus24_minus6",
+    "minus24_fixed",
+    "zero_actual",
+    "plus24_actual"
+  ],
+  "hemispheres": [
+    "NH",
+    "SH"
+  ],
+  "cross_hemisphere_pairs": "retain SID/source, exclude from within-hemisphere paired maps; report separately",
+  "grid": {
+    "projection": "spherical AEQD",
+    "sphere_radius_m": 6371008.8,
+    "spacing_km": 100,
+    "domain_radius_km": 1500,
+    "display_cells": 709
+  },
+  "scalars": [
+    "q700_gkg",
+    "z200_m"
+  ],
+  "family_size_per_scalar": 5672,
+  "family_definition": "4 summaries x2 hemispheres x709 fixed display cells per scalar; missing tests stay in nominal 5672; only current117 primary. candidate123 has descriptive intervals, no additional P/q family.",
+  "raw_common_and_unrotated": "descriptive effect/interval views; no extra P/q; raw-only wider support kept separately",
+  "raw_common_time_support": "Before averaging, raw requires joint finite lag support of both events; raw_common and anomaly require the same joint lag support across raw/anomaly and both events, at least3/4. Individual event3/4 is insufficient.",
+  "direction": "pre fixed-center area-mean shear, at least3/4 supported slots, vector magnitude>=2m/s; no lag-specific realignment",
+  "motion": "raw fixed-center uses fixed t0 storm motion; raw actual-track uses request simultaneous motion; anomalies (u-c)-(Uclim-c) cancel same motion",
+  "bootstrap_draws": 2000,
+  "seed": 510081234,
+  "minimum_original_n_for_inference": 10,
+  "bootstrap_unit": "SID carrying both events and allfields/summaries; common indices reused across views",
+  "inferential_display": "P/q only primary anomaly rotated maps; no significance-selected grid or field",
+  "technical_correction_utc": "2026-10-08T17:01:02.673378+00:00",
+  "source_configuration": "${MECHANISM_V5}/config/p1_spatial_inference_v5.json",
+  "source_configuration_sha256": "fbdd4de1dad6b2c9e3e8b98ae43bff6dcb51bfce072a2130e9df5239248c10fa",
+  "pre_lag_cache": "Preserve raw/anomaly arrays for each of -24,-18,-12,-6 in versioned event cache; write paired lag masks/counts to perSID output; legacy means cannot reconstruct these masks.",
+  "unchanged": "Cohorts, input fields, times, geometry, rotation, minimum10, seed510081234,2000draws, nominal5672 per scalar all unchanged."
+}

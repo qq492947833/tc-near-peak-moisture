@@ -1,0 +1,18 @@
+{
+  "figure_id": "Figure_S11",
+  "function": "fig14",
+  "arguments": [],
+  "original_source": "si141723_prior_snapshot.py",
+  "original_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58",
+  "text_replacements": {},
+  "add_colourbar": {
+    "panel": "f",
+    "cax": [
+      0.665,
+      0.033,
+      0.235,
+      0.01
+    ],
+    "unit": "m s⁻¹"
+  }
+}

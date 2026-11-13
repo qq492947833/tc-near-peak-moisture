@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0",
+  "figure_id": "Figure_S04",
+  "type": "frozen scientific statistical plot",
+  "status": "SEALED_ACTUAL_RENDER_AND_LOCAL_QA_COMPLETE",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "input/raw_stage_summary.csv"
+      ],
+      "filter": "variable=X3_mid_rh_pct; stages D,E,F,Res",
+      "units": "percent RH",
+      "normalization": "native units, no normalization",
+      "difference_direction": "none",
+      "weights": "Frozen SID-stage means on observed200–800km environment",
+      "CI_source": "Saved95%2000 SID-bootstrap intervals",
+      "sample_scope": "Exact row-specific counts retained in frozen CSV; see selected-row inventory.",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/raw_stage_summary.csv": [
+          "variable",
+          "unit",
+          "stage",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_sid",
+          "covered_h",
+          "legal_h",
+          "mean_temporal_coverage",
+          "min_temporal_coverage",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized",
+          "ci_provenance",
+          "original_bootstrap_seed"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "input/raw_stage_summary.csv"
+      ],
+      "filter": "variable=X2_shear_ms; stages D,E,F,Res",
+      "units": "m s-1",
+      "normalization": "native units",
+      "difference_direction": "none",
+      "weights": "Frozen SID-stage means",
+      "CI_source": "Saved95%2000 SID-bootstrap intervals",
+      "sample_scope": "Exact row-specific counts retained in frozen CSV; see selected-row inventory.",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/raw_stage_summary.csv": [
+          "variable",
+          "unit",
+          "stage",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_sid",
+          "covered_h",
+          "legal_h",
+          "mean_temporal_coverage",
+          "min_temporal_coverage",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized",
+          "ci_provenance",
+          "original_bootstrap_seed"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "input/A2_paired_contrasts.csv"
+      ],
+      "filter": "variable=X3_mid_rh_pct; all4 controlled framework contrasts",
+      "units": "RH percentage points",
+      "normalization": "native units",
+      "difference_direction": "D−pooledDE; E−pooledDE; F−R; Res−postRtail",
+      "weights": "Within-SID common observed support",
+      "CI_source": "Saved95%2000 SID-bootstrap intervals",
+      "sample_scope": "2340,2340,2340,2337 paired SIDs",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/A2_paired_contrasts.csv": [
+          "contrast",
+          "variable",
+          "n_paired_sid",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "zero_difference_sid",
+          "B",
+          "failed_draws"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "input/A2_paired_contrasts.csv"
+      ],
+      "filter": "variable=X2_shear_ms; all4 controlled framework contrasts",
+      "units": "m s-1",
+      "normalization": "native units",
+      "difference_direction": "D−pooledDE; E−pooledDE; F−R; Res−postRtail",
+      "weights": "Within-SID common observed support",
+      "CI_source": "Saved95%2000 SID-bootstrap intervals",
+      "sample_scope": "2266,2263,2242,2250 paired SIDs",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/A2_paired_contrasts.csv": [
+          "contrast",
+          "variable",
+          "n_paired_sid",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "zero_difference_sid",
+          "B",
+          "failed_draws"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "input/raw_stage_summary.csv",
+      "sha256": "2971aaf41062a3d40a1b8744605bf33a760dd8b372497513bb230313415c6d0e",
+      "original_path": "raw_stage_summary.csv"
+    },
+    {
+      "relative_path": "input/A2_paired_contrasts.csv",
+      "sha256": "5f97e9163d316933cc5d18434cde3ddfd9bd650af62b86db06739a119af74b4f",
+      "original_path": "A2_paired_contrasts.csv"
+    },
+    {
+      "relative_path": "input/manuscript_figures.json",
+      "sha256": "0ca88f8a5bb681a9e9869aaccc30795c1823ffcb246ed3a42d092e8cc34d4880",
+      "original_path": "manuscript_figures_original.json"
+    }
+  ],
+  "entrypoint": "run.py --output-dir <directory>",
+  "code": [
+    {
+      "relative_path": "run.py",
+      "sha256": "2cbc0769f578d187a3824cbf5ec33190b5ccdaf4b9be754c004f27e76563c1f0"
+    },
+    {
+      "relative_path": "code/plot.py",
+      "sha256": "b70e030e7bfb95b4bf8cbd12d9863e91fd6cf96a17e8cd2a0e6313fa8c2d1725"
+    },
+    {
+      "relative_path": "config.json",
+      "sha256": "ed323c79e79f73997eb5835c9297029136f56774b3d04beafbec4bd5d480d3a8"
+    },
+    {
+      "relative_path": "code/bootstrap.py",
+      "sha256": "bd9eaabcb7c305c8d63e1d894d19bc58cbba23072102159a1dd9b6306d28039b"
+    }
+  ],
+  "outputs": {
+    "png": {
+      "relative_path": "Figure_S04.png",
+      "sha256": "a095d6387e5b60a41955b274b66c1fafce9e33cce32852a891bd4343259b2b51"
+    },
+    "tiff": {
+      "relative_path": "Figure_S04.tiff",
+      "sha256": "c41b73e6e62121f609c0a7272d6129b1c0210f118d59776ae095660683776df4"
+    },
+    "pdf": {
+      "relative_path": "Figure_S04.pdf",
+      "sha256": "770c2c5f914de1a6feda571f4e46c262e7384f2d588cab32b42478d007526e4c"
+    },
+    "svg": {
+      "relative_path": "Figure_S04.svg",
+      "sha256": "472bd30752f9d056896c87808c234e33adbfbcde73ad9f847d0156569c5455f5"
+    }
+  },
+  "size_mm": [
+    180.33999999999997,
+    133.35
+  ],
+  "pixels": [
+    6390,
+    4725
+  ],
+  "dpi": [
+    899.9982,
+    899.9982
+  ],
+  "effective_dpi_at_prior_document_size": 983.6726200260731,
+  "QA": {
+    "alignment": "PASS",
+    "pdf_text": "PASS",
+    "collision_raw": {
+      "fail": 0,
+      "warn": 0,
+      "contained_fill_overlays": 0,
+      "contained_image_overlays": 0
+    },
+    "source_static_raw": {
+      "ready": false,
+      "strict": false,
+      "counts": {
+        "PASS": 19,
+        "WARN": 1,
+        "FAIL": 1
+      }
+    },
+    "resolved_findings": "rebuilt/qa/resolved_audit_findings.json",
+    "scientific_comparison": "rebuilt/qa/scientific_comparison.json",
+    "visual_review": "rebuilt/qa/visual_review.json",
+    "png_tiff_pixels_identical": true,
+    "baseline_comparison": {
+      "method": "Source AST and frozen input identity; numeric objects exported before writing; raster comparison is QA only",
+      "baseline_size": [
+        6390,
+        4725
+      ],
+      "rebuilt_size": [
+        6390,
+        4725
+      ],
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "mean_absolute_channel_difference": 0.0
+    },
+    "central_cold_rebuild": "pending root"
+  },
+  "provenance": {
+    "no_generative_image_calls": true,
+    "no_AI_image_asset": true,
+    "no_raster_plot_input": true,
+    "no_raster_tracing": true,
+    "no_overlay_or_superresolution": true,
+    "drawing_origin": "Executable native Python plotting functions and frozen numerical tables; coastline vector data only for main1. Original reference PNG accessed only after all scientific exports for comparison.",
+    "source_history": "provenance/input_manifest.json and original plotting source archived under provenance; source-path references are audit metadata only, never runtime dependencies.",
+    "statistics": "No bootstrap, model, significance or confidence-interval computation executed; CDF sorting and fixed-SD display division only."
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2"
+  }
+}

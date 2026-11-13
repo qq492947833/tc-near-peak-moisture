@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0",
+  "figure_id": "Figure_03",
+  "type": "frozen scientific statistical plot",
+  "status": "SEALED_ACTUAL_RENDER_AND_LOCAL_QA_COMPLETE",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "input/fig3_background.csv"
+      ],
+      "filter": "field=q700; window=-24_0; components raw_change,climate_change,anomaly_change; both boundaries",
+      "units": "g kg-1",
+      "normalization": "none",
+      "difference_direction": "end minus start over preceding24h",
+      "weights": "Frozen SID-equal boundary means",
+      "CI_source": "No intervals drawn; original lo/hi retained in CSV",
+      "sample_scope": "Exact row-specific counts retained in frozen CSV; see selected-row inventory.",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/fig3_background.csv": [
+          "boundary",
+          "field",
+          "units",
+          "window",
+          "component",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "input/fig3_rh.csv"
+      ],
+      "filter": "scope=primary25; 700/500hPa; time_q_contribution,time_T_contribution,domain_symmetric,fixed_support_endpoint_change; both boundaries",
+      "units": "RH percentage points",
+      "normalization": "none; support_change must have point/limits exactly0",
+      "difference_direction": "transition24h endpoint change, contribution signs retained",
+      "weights": "Frozen boundary/domain decomposition on common observed support",
+      "CI_source": "No intervals drawn; original ci_low/ci_high retained",
+      "sample_scope": "Exact row-specific counts retained in frozen CSV; see selected-row inventory.",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/fig3_rh.csv": [
+          "boundary",
+          "level_hpa",
+          "scope",
+          "variable",
+          "units",
+          "n_sid",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "B_valid"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "input/fig3_transport.csv"
+      ],
+      "filter": "estimand=integral_minus24_0; horizontal_advection,vertical_advection,residual,moving_tendency",
+      "units": "g kg-1",
+      "normalization": "none",
+      "difference_direction": "signed integrated moving-frame moisture tendency",
+      "weights": "Frozen SID boundary aggregate",
+      "CI_source": "No intervals drawn; original lo/hi retained",
+      "sample_scope": "Exact row-specific counts retained in frozen CSV; see selected-row inventory.",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/fig3_transport.csv": [
+          "boundary",
+          "field",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "input/fig3_PI.csv"
+      ],
+      "filter": "components PI,minus_V,headroom; both boundaries",
+      "units": "m s-1",
+      "normalization": "none",
+      "difference_direction": "delta(PI-V)=deltaPI-deltaV",
+      "weights": "Frozen matched valid SID aggregate",
+      "CI_source": "No intervals drawn; original lo/hi retained",
+      "sample_scope": "Exact row-specific counts retained in frozen CSV; see selected-row inventory.",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/fig3_PI.csv": [
+          "boundary",
+          "component",
+          "units",
+          "window",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "input/fig3_transport.csv"
+      ],
+      "filter": "field=q850_MFC; estimand lag_* sorted numeric -24…24; both boundaries",
+      "units": "g kg-1 day-1",
+      "normalization": "none",
+      "difference_direction": "signed moisture-flux convergence",
+      "weights": "Frozen SID mean at each valid lag",
+      "CI_source": "Frozen pointwise95% SID-bootstrap lo/hi; no smoothing or new resampling",
+      "sample_scope": "Exact row-specific counts retained in frozen CSV; see selected-row inventory.",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/fig3_transport.csv": [
+          "boundary",
+          "field",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "input/fig3_background.csv",
+      "sha256": "f0ebf485d1622fed2db7468185a83da032b18ccafce66d5d715582348b7725ba",
+      "original_path": "fig3_background.csv"
+    },
+    {
+      "relative_path": "input/fig3_rh.csv",
+      "sha256": "e7ae65ecc8afab5d9cc32803475a0f6f139f6c6b20b988c852d169f74af3a174",
+      "original_path": "fig3_rh.csv"
+    },
+    {
+      "relative_path": "input/fig3_transport.csv",
+      "sha256": "4503bc8b6b80f35c35bfc0c580267c29bcfcce44967d5a22fb867c12bc860f8b",
+      "original_path": "fig3_transport.csv"
+    },
+    {
+      "relative_path": "input/fig3_PI.csv",
+      "sha256": "6fbceb53d3802652bd58c0a10450d70114fb0d315337d58834d8f417f96ad8ad",
+      "original_path": "fig3_PI.csv"
+    }
+  ],
+  "entrypoint": "run.py --output-dir <directory>",
+  "code": [
+    {
+      "relative_path": "run.py",
+      "sha256": "2cbc0769f578d187a3824cbf5ec33190b5ccdaf4b9be754c004f27e76563c1f0"
+    },
+    {
+      "relative_path": "code/plot.py",
+      "sha256": "7c99a549e0b7d27f81e93675edd590e098373cc7089c9ac8655d253ee9e71b51"
+    },
+    {
+      "relative_path": "config.json",
+      "sha256": "99357084152a518318d455a0330b97c890e3cae09102635dcc1f1247e7e1f590"
+    },
+    {
+      "relative_path": "code/bootstrap.py",
+      "sha256": "bd9eaabcb7c305c8d63e1d894d19bc58cbba23072102159a1dd9b6306d28039b"
+    }
+  ],
+  "outputs": {
+    "png": {
+      "relative_path": "Figure_03.png",
+      "sha256": "286ce42120f8ca3204ff552759428e16d06d3712530288402f5783c5c37e3996"
+    },
+    "tiff": {
+      "relative_path": "Figure_03.tiff",
+      "sha256": "8691b18f56e4cef432b292d7102a1404edd242f8c6ec431fedecb49075039df3"
+    },
+    "pdf": {
+      "relative_path": "Figure_03.pdf",
+      "sha256": "eed0950e861555106344bae8e17af7fb3a1e8ee21bb39fe5640f585a9c694d3a"
+    },
+    "svg": {
+      "relative_path": "Figure_03.svg",
+      "sha256": "d7d381aff0ca03a19dd8679b285db0abd8ddca862eff1e2d44a60485e2498fae"
+    }
+  },
+  "size_mm": [
+    180.0,
+    180.0
+  ],
+  "pixels": [
+    6377,
+    6377
+  ],
+  "dpi": [
+    899.9982,
+    899.9982
+  ],
+  "effective_dpi_at_prior_document_size": 981.6715151515151,
+  "QA": {
+    "alignment": "PASS",
+    "pdf_text": "PASS",
+    "collision_raw": {
+      "fail": 0,
+      "warn": 0,
+      "contained_fill_overlays": 74,
+      "contained_image_overlays": 0
+    },
+    "source_static_raw": {
+      "ready": false,
+      "strict": false,
+      "counts": {
+        "PASS": 20,
+        "WARN": 0,
+        "FAIL": 1
+      }
+    },
+    "resolved_findings": "rebuilt/qa/resolved_audit_findings.json",
+    "scientific_comparison": "rebuilt/qa/scientific_comparison.json",
+    "visual_review": "rebuilt/qa/visual_review.json",
+    "png_tiff_pixels_identical": true,
+    "baseline_comparison": {
+      "method": "Source AST and frozen input identity; numeric objects exported before writing; raster comparison is QA only",
+      "baseline_size": [
+        6377,
+        6377
+      ],
+      "rebuilt_size": [
+        6377,
+        6377
+      ],
+      "pixel_identical": false,
+      "different_pixel_count": 501691,
+      "mean_absolute_channel_difference": 1.9212476637088653
+    },
+    "central_cold_rebuild": "pending root"
+  },
+  "provenance": {
+    "no_generative_image_calls": true,
+    "no_AI_image_asset": true,
+    "no_raster_plot_input": true,
+    "no_raster_tracing": true,
+    "no_overlay_or_superresolution": true,
+    "drawing_origin": "Executable native Python plotting functions and frozen numerical tables; coastline vector data only for main1. Original reference PNG accessed only after all scientific exports for comparison.",
+    "source_history": "provenance/input_manifest.json and original plotting source archived under provenance; source-path references are audit metadata only, never runtime dependencies.",
+    "statistics": "No bootstrap, model, significance or confidence-interval computation executed; CDF sorting and fixed-SD display division only."
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2"
+  }
+}

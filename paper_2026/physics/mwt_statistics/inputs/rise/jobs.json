@@ -1,0 +1,932 @@
+[
+  {
+    "group_id": "g0168",
+    "metric": "KE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j0168",
+    "support_mode": "native_diagnostic",
+    "source_group_ids": [
+      "g0168"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g0402",
+    "metric": "APE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j0402",
+    "support_mode": "native_diagnostic",
+    "source_group_ids": [
+      "g0402"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g3534",
+    "metric": "C_A_to_K",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "conversion",
+    "integrate_rate": true,
+    "job_id": "j3534",
+    "support_mode": "native_diagnostic",
+    "source_group_ids": [
+      "g3534"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g3750",
+    "metric": "vertical_input_K_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3750",
+    "support_mode": "native_diagnostic",
+    "source_group_ids": [
+      "g3750"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g3786",
+    "metric": "vertical_input_A_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3786",
+    "support_mode": "native_diagnostic",
+    "source_group_ids": [
+      "g3786"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g3822",
+    "metric": "vertical_input_P_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3822",
+    "support_mode": "native_diagnostic",
+    "source_group_ids": [
+      "g3822"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g0168",
+    "metric": "KE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3834",
+    "support_mode": "joint_primary_six",
+    "source_group_ids": [
+      "g0168",
+      "g0402",
+      "g3534",
+      "g3750",
+      "g3786",
+      "g3822"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g0402",
+    "metric": "APE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3835",
+    "support_mode": "joint_primary_six",
+    "source_group_ids": [
+      "g0402",
+      "g0168",
+      "g3534",
+      "g3750",
+      "g3786",
+      "g3822"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g3534",
+    "metric": "C_A_to_K",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "conversion",
+    "integrate_rate": true,
+    "job_id": "j3836",
+    "support_mode": "joint_primary_six",
+    "source_group_ids": [
+      "g3534",
+      "g0168",
+      "g0402",
+      "g3750",
+      "g3786",
+      "g3822"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g3750",
+    "metric": "vertical_input_K_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3837",
+    "support_mode": "joint_primary_six",
+    "source_group_ids": [
+      "g3750",
+      "g0168",
+      "g0402",
+      "g3534",
+      "g3786",
+      "g3822"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g3786",
+    "metric": "vertical_input_A_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3838",
+    "support_mode": "joint_primary_six",
+    "source_group_ids": [
+      "g3786",
+      "g0168",
+      "g0402",
+      "g3534",
+      "g3750",
+      "g3822"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g3822",
+    "metric": "vertical_input_P_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3839",
+    "support_mode": "joint_primary_six",
+    "source_group_ids": [
+      "g3822",
+      "g0168",
+      "g0402",
+      "g3534",
+      "g3750",
+      "g3786"
+    ],
+    "comparison_role": "value",
+    "comparison_id": ""
+  },
+  {
+    "group_id": "g0168",
+    "metric": "KE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3840",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0168",
+      "g0169"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g0169",
+    "metric": "KE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "shift16d",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3841",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0168",
+      "g0169"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g0168",
+    "metric": "KE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3842",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0168",
+      "g0169"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g0168",
+    "metric": "KE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3843",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0168",
+      "g0172"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g0172",
+    "metric": "KE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_500",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3844",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0168",
+      "g0172"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g0168",
+    "metric": "KE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3845",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0168",
+      "g0172"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g0402",
+    "metric": "APE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3846",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0402",
+      "g0403"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g0403",
+    "metric": "APE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "shift16d",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3847",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0402",
+      "g0403"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g0402",
+    "metric": "APE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3848",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0402",
+      "g0403"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g0402",
+    "metric": "APE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3849",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0402",
+      "g0406"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g0406",
+    "metric": "APE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_500",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3850",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0402",
+      "g0406"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g0402",
+    "metric": "APE",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "J kg-1",
+    "category": "storage",
+    "integrate_rate": false,
+    "job_id": "j3851",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g0402",
+      "g0406"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3534",
+    "metric": "C_A_to_K",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "conversion",
+    "integrate_rate": true,
+    "job_id": "j3852",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3534",
+      "g3535"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3535",
+    "metric": "C_A_to_K",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "shift16d",
+    "units": "W kg-1",
+    "category": "conversion",
+    "integrate_rate": true,
+    "job_id": "j3853",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3534",
+      "g3535"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3534",
+    "metric": "C_A_to_K",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "conversion",
+    "integrate_rate": true,
+    "job_id": "j3854",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3534",
+      "g3535"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3534",
+    "metric": "C_A_to_K",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "conversion",
+    "integrate_rate": true,
+    "job_id": "j3855",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3534",
+      "g3538"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3538",
+    "metric": "C_A_to_K",
+    "level": "700",
+    "window": 1,
+    "region": "r0_500",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "conversion",
+    "integrate_rate": true,
+    "job_id": "j3856",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3534",
+      "g3538"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3534",
+    "metric": "C_A_to_K",
+    "level": "700",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "conversion",
+    "integrate_rate": true,
+    "job_id": "j3857",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3534",
+      "g3538"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3750",
+    "metric": "vertical_input_K_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3858",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3750",
+      "g3751"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3751",
+    "metric": "vertical_input_K_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "shift16d",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3859",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3750",
+      "g3751"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3750",
+    "metric": "vertical_input_K_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3860",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3750",
+      "g3751"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3750",
+    "metric": "vertical_input_K_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3861",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3750",
+      "g3754"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3754",
+    "metric": "vertical_input_K_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_500",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3862",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3750",
+      "g3754"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3750",
+    "metric": "vertical_input_K_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3863",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3750",
+      "g3754"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3786",
+    "metric": "vertical_input_A_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3864",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3786",
+      "g3787"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3787",
+    "metric": "vertical_input_A_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "shift16d",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3865",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3786",
+      "g3787"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3786",
+    "metric": "vertical_input_A_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3866",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3786",
+      "g3787"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3786",
+    "metric": "vertical_input_A_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3867",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3786",
+      "g3790"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3790",
+    "metric": "vertical_input_A_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_500",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3868",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3786",
+      "g3790"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3786",
+    "metric": "vertical_input_A_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3869",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3786",
+      "g3790"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3822",
+    "metric": "vertical_input_P_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3870",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3822",
+      "g3823"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3823",
+    "metric": "vertical_input_P_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "shift16d",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3871",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3822",
+      "g3823"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3822",
+    "metric": "vertical_input_P_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3872",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3822",
+      "g3823"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "input_shift16d_minus_main"
+  },
+  {
+    "group_id": "g3822",
+    "metric": "vertical_input_P_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3873",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3822",
+      "g3826"
+    ],
+    "comparison_role": "reference",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3826",
+    "metric": "vertical_input_P_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_500",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3874",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3822",
+      "g3826"
+    ],
+    "comparison_role": "alternative",
+    "comparison_id": "radius500_minus300"
+  },
+  {
+    "group_id": "g3822",
+    "metric": "vertical_input_P_Wkg",
+    "level": "500-850",
+    "window": 1,
+    "region": "r0_300",
+    "scheme": "main",
+    "units": "W kg-1",
+    "category": "space transport",
+    "integrate_rate": true,
+    "job_id": "j3875",
+    "support_mode": "paired_configuration_common",
+    "source_group_ids": [
+      "g3822",
+      "g3826"
+    ],
+    "comparison_role": "difference",
+    "comparison_id": "radius500_minus300"
+  }
+]

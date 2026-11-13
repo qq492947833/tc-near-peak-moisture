@@ -1,0 +1,11 @@
+{
+  "reason": "Independent integrity review correctly identified that nested M1/M2 differences and a fixed-joint state/environment check do not isolate the exact requested environment-only distribution comparison.",
+  "recorded_before_new_estimand_calculation": true,
+  "model": "Same already-fitted M2 coefficients in each point/bootstrap calculation; no outcome model refits or variable selection",
+  "actual": "For each supported SID retain its observed calendar year, first-departure state vector and observed joint RH/shear/SST vector; compute M2 prediction",
+  "fixed_environment": "For the same SID retain exactly its observed year and state; average M2 predictions over the entire same-basin all-period empirical joint RH/shear/SST reference distribution, giving equal mass to observed basin-years and equal mass to SIDs within each reference year. The reference distribution is fixed across target years, not fixed to a different basin. RH/shear/SST vectors remain intact.",
+  "trend": "Average each prediction over the same observed target basin-year SIDs, then regress annual predicted probability against continuous calendar year with equal-year weights; report pp/decade and actual-minus-fixed trend with paired95% bootstrap intervals",
+  "bootstrap": "Reuse all saved M2 coefficient draws and reconstruct exactly their original synchronous3-year global-block plus SID weights from seed2026110903. Reweight the fixed reference distribution within each draw, while keeping it constant over target years in that draw.",
+  "support_warning": "Combining actual states with reference environment vectors may create unobserved joint combinations even when every marginal value lies in the approved support. Quantify the weighted share of combinations beyond the same-basin observed joint Mahalanobis99th percentile and maximum. This remains a model-based environmental standardization diagnostic; it does not identify a causal mediation effect. No causal contribution is claimed from a nominal interval alone.",
+  "test_family": "Four same-model environment-only trend contrasts, BH, distinct from the prior nested-model sensitivity family"
+}

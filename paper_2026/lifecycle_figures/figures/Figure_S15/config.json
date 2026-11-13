@@ -1,0 +1,10 @@
+{
+  "figure_id": "Figure_05",
+  "function": "fig4",
+  "arguments": [
+    900
+  ],
+  "original_source": "main1_6.py",
+  "original_source_sha256": "631da5535a02129d2b82af69670a49c413776f12c6b07362f6f511b3c62aa8d0",
+  "text_replacements": {}
+}

@@ -1,0 +1,11 @@
+{
+  "figure_id": "Figure_S10",
+  "function": "s13",
+  "arguments": [],
+  "original_source": "si1_13_redraw.py",
+  "original_source_sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+  "text_replacements": {
+    "PI headroom": "PI − V",
+    "ΔHeadroom (m s⁻¹)": "Δ(PI − V) (m s⁻¹)"
+  }
+}

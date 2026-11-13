@@ -1,0 +1,564 @@
+{
+  "figure_id": "Figure_07",
+  "type": "main",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/direct/paired_flux_components.csv"
+      ],
+      "fields": {
+        "direct/paired_flux_components.csv": [
+          "cohort",
+          "window",
+          "factor",
+          "kind",
+          "layer",
+          "sector",
+          "units",
+          "quantity",
+          "n",
+          "finite_n",
+          "estimate",
+          "low",
+          "high",
+          "status",
+          "bootstrap",
+          "interval",
+          "sign"
+        ]
+      },
+      "filter": [
+        "q = individuals[individuals.kind.eq(row.kind)]",
+        "q = individuals[individuals.kind.eq(kind)]",
+        "f = four[four.kind.eq(kind) & four.window.eq(win)].set_index('sid').loc[q.index]"
+      ],
+      "sample_scope": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+      "units": {
+        "x": "",
+        "y": "Temporary − final\n(10¹² kg)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+      "weights": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/paired_flux_components.csv": "60900e8f316aae29a83d1bb98a7beb4be5e3282d0b37092de2a71b847884c811"
+        },
+        "original_plot_source": "main1_6.py",
+        "original_plot_source_sha256": "631da5535a02129d2b82af69670a49c413776f12c6b07362f6f511b3c62aa8d0"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "All seven saved original and nested components retained in complete estimate table; transform=kg / 10^12",
+          "source_key": "direct/paired_flux_components.csv",
+          "fields": [
+            "cohort",
+            "window",
+            "factor",
+            "kind",
+            "layer",
+            "sector",
+            "units",
+            "quantity",
+            "n",
+            "finite_n",
+            "estimate",
+            "low",
+            "high",
+            "status",
+            "bootstrap",
+            "interval",
+            "sign",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 7,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "14a5762bf3ea6834a10ebc76d63ee04431cf2d16252855461d95761e5b4d7fdf"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": [
+        "inputs/../individual/common_prepost_four_cells.csv",
+        "inputs/../individual/common_prepost_support.csv"
+      ]
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/../individual/common_prepost_paired_change_contrasts.csv"
+      ],
+      "fields": {
+        "../individual/common_prepost_paired_change_contrasts.csv": [
+          "sid",
+          "kind",
+          "units",
+          "temporary_pre",
+          "temporary_post",
+          "final_pre",
+          "final_post",
+          "temporary_change",
+          "final_change",
+          "D_pre",
+          "D_post",
+          "Theta",
+          "humidity_pre",
+          "humidity_post",
+          "humidity_change",
+          "relative_motion_pre",
+          "relative_motion_post",
+          "relative_motion_change",
+          "absolute_normal_wind_pre",
+          "absolute_normal_wind_post",
+          "absolute_normal_wind_change",
+          "boundary_normal_motion_pre",
+          "boundary_normal_motion_post",
+          "boundary_normal_motion_change"
+        ]
+      },
+      "filter": [
+        "q = individuals[individuals.kind.eq(row.kind)]",
+        "q = individuals[individuals.kind.eq(kind)]",
+        "f = four[four.kind.eq(kind) & four.window.eq(win)].set_index('sid').loc[q.index]"
+      ],
+      "sample_scope": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+      "units": {
+        "x": "Pre-event contrast (10¹² kg)",
+        "y": "Post-event contrast (10¹² kg)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+      "weights": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "../individual/common_prepost_paired_change_contrasts.csv": "0cee23b428470cea69e53c1c68f1d0c0d4059fb2fd9dbc5a64ceb019ae6386d4"
+        },
+        "original_plot_source": "main1_6.py",
+        "original_plot_source_sha256": "631da5535a02129d2b82af69670a49c413776f12c6b07362f6f511b3c62aa8d0"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "One actual original SID per point; pre/post temporary-minus-final contrasts; no fitting or generated observations; transform=kg / 10^12",
+          "source_key": "../individual/common_prepost_paired_change_contrasts.csv",
+          "fields": [
+            "sid",
+            "kind",
+            "units",
+            "temporary_pre",
+            "temporary_post",
+            "final_pre",
+            "final_post",
+            "temporary_change",
+            "final_change",
+            "D_pre",
+            "D_post",
+            "Theta",
+            "humidity_pre",
+            "humidity_post",
+            "humidity_change",
+            "relative_motion_pre",
+            "relative_motion_post",
+            "relative_motion_change",
+            "absolute_normal_wind_pre",
+            "absolute_normal_wind_post",
+            "absolute_normal_wind_change",
+            "boundary_normal_motion_pre",
+            "boundary_normal_motion_post",
+            "boundary_normal_motion_change",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 78,
+          "saved_selected_table": "panel_b_1.csv",
+          "sha256": "ecfba1e16f7fd81b34e37932ea6cec5fa20dad483bf4422221f5181c1ca2a476"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": [
+        "inputs/../individual/common_prepost_four_cells.csv",
+        "inputs/../individual/common_prepost_support.csv"
+      ]
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/../individual/common_prepost_paired_change_contrasts.csv"
+      ],
+      "fields": {
+        "../individual/common_prepost_paired_change_contrasts.csv": [
+          "sid",
+          "kind",
+          "units",
+          "temporary_pre",
+          "temporary_post",
+          "final_pre",
+          "final_post",
+          "temporary_change",
+          "final_change",
+          "D_pre",
+          "D_post",
+          "Theta",
+          "humidity_pre",
+          "humidity_post",
+          "humidity_change",
+          "relative_motion_pre",
+          "relative_motion_post",
+          "relative_motion_change",
+          "absolute_normal_wind_pre",
+          "absolute_normal_wind_post",
+          "absolute_normal_wind_change",
+          "boundary_normal_motion_pre",
+          "boundary_normal_motion_post",
+          "boundary_normal_motion_change"
+        ]
+      },
+      "filter": [
+        "q = individuals[individuals.kind.eq(row.kind)]",
+        "q = individuals[individuals.kind.eq(kind)]",
+        "f = four[four.kind.eq(kind) & four.window.eq(win)].set_index('sid').loc[q.index]"
+      ],
+      "sample_scope": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+      "units": {
+        "x": "Pre-event contrast (10¹² kg)",
+        "y": "Post-event contrast (10¹² kg)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+      "weights": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "../individual/common_prepost_paired_change_contrasts.csv": "0cee23b428470cea69e53c1c68f1d0c0d4059fb2fd9dbc5a64ceb019ae6386d4"
+        },
+        "original_plot_source": "main1_6.py",
+        "original_plot_source_sha256": "631da5535a02129d2b82af69670a49c413776f12c6b07362f6f511b3c62aa8d0"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "One actual original SID per point; pre/post temporary-minus-final contrasts; no fitting or generated observations; transform=kg / 10^12",
+          "source_key": "../individual/common_prepost_paired_change_contrasts.csv",
+          "fields": [
+            "sid",
+            "kind",
+            "units",
+            "temporary_pre",
+            "temporary_post",
+            "final_pre",
+            "final_post",
+            "temporary_change",
+            "final_change",
+            "D_pre",
+            "D_post",
+            "Theta",
+            "humidity_pre",
+            "humidity_post",
+            "humidity_change",
+            "relative_motion_pre",
+            "relative_motion_post",
+            "relative_motion_change",
+            "absolute_normal_wind_pre",
+            "absolute_normal_wind_post",
+            "absolute_normal_wind_change",
+            "boundary_normal_motion_pre",
+            "boundary_normal_motion_post",
+            "boundary_normal_motion_change",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 78,
+          "saved_selected_table": "panel_c_2.csv",
+          "sha256": "f1919adaf56115309017470fa3234b1bfe750785748fb4912c1848d41680f9e0"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": [
+        "inputs/../individual/common_prepost_four_cells.csv",
+        "inputs/../individual/common_prepost_support.csv"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "key": "../individual/common_prepost_four_cells.csv",
+      "relative_path": "inputs/../individual/common_prepost_four_cells.csv",
+      "sha256": "00a2fde68bcd322b1a18de4cdb3f4af43ae2b67e19c595f23dac33c2e2e9e2a1",
+      "original_path": "common_prepost_four_cells.csv",
+      "bytes": 85128
+    },
+    {
+      "key": "../individual/common_prepost_paired_change_contrasts.csv",
+      "relative_path": "inputs/../individual/common_prepost_paired_change_contrasts.csv",
+      "sha256": "0cee23b428470cea69e53c1c68f1d0c0d4059fb2fd9dbc5a64ceb019ae6386d4",
+      "original_path": "common_prepost_paired_change_contrasts.csv",
+      "bytes": 97694
+    },
+    {
+      "key": "../individual/common_prepost_support.csv",
+      "relative_path": "inputs/../individual/common_prepost_support.csv",
+      "sha256": "17263c12ceef9cd88c5d9aabaffc27d70ba1e097435291469a49d6b70358a6ee",
+      "original_path": "common_prepost_support.csv",
+      "bytes": 21362
+    },
+    {
+      "key": "direct/common_prepost.csv",
+      "relative_path": "inputs/direct/common_prepost.csv",
+      "sha256": "8ce19045298c38facf39d36697962ff1db498f16fd1c57395c978ec36a1e8b87",
+      "original_path": "common_prepost.csv",
+      "bytes": 15159
+    },
+    {
+      "key": "direct/paired_flux_components.csv",
+      "relative_path": "inputs/direct/paired_flux_components.csv",
+      "sha256": "60900e8f316aae29a83d1bb98a7beb4be5e3282d0b37092de2a71b847884c811",
+      "original_path": "paired_flux_components.csv",
+      "bytes": 5727
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_07.png",
+      "sha256": "60e2326bcad9b4ad77e8abd7289e4d8b551a69a847a1762ed6e210dc4617166d"
+    },
+    "tiff": {
+      "path": "Figure_07.tiff",
+      "sha256": "b2855511735b216661cddb8908c085936f630b7e6d42005e8b7abec6eed46bd4"
+    },
+    "pdf": {
+      "path": "Figure_07.pdf",
+      "sha256": "eab24fbfcc8b025a6f7b1e82c84ad7f599143f0b67cbff496bb1a2e0c25094e3"
+    },
+    "svg": {
+      "path": "Figure_07.svg",
+      "sha256": "223508fac768557a0fc6cb2c1db4da023b6691e552dda695a60fc51d33cf58af"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_07",
+      "returncode": 0,
+      "elapsed_s": 9.93,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 3,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 425.1968503937008
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              61.22834645669292,
+              278.8304845352978,
+              494.92913385826773,
+              391.18110236220474
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 2,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              41.22834645669292,
+              403.18110236220474
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              61.22834645669292,
+              42.51968503937012,
+              237.52947954676398,
+              192.3205088085794
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              41.22834645669292,
+              204.3205088085794
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              318.62800076819667,
+              42.51968503937012,
+              494.92913385826773,
+              192.3205088085794
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              298.6280007681966,
+              204.3205088085794
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "b",
+              "c"
+            ]
+          }
+        ],
+        "column_groups": [],
+        "boundary_groups": [
+          {
+            "id": "inferred-shared-left-1",
+            "edge": "left",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-shared-right-1",
+            "edge": "right",
+            "panels": [
+              "a",
+              "c"
+            ]
+          }
+        ],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6714664802636
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_07",
+      "source": "Figure_07.png",
+      "sha256": "60e2326bcad9b4ad77e8abd7289e4d8b551a69a847a1762ed6e210dc4617166d",
+      "pixels": [
+        6377,
+        5314
+      ],
+      "display_inches": [
+        6.496062992125984,
+        5.413216316710411
+      ],
+      "effective_dpi": 981.6714664802636
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Fig. 7 | Outward-exchange components and cyclone-level changes across the departure window. a, Specific-humidity and relative-normal-motion contributions to the 0–24 h outward-exchange difference on the original 80 pairs; their sum is the total temporary-minus-final contrast. Bars show means and the original 95% paired-cyclone intervals. b,c, Each point is one of the 78 cyclones with complete −24 to +24 h support, showing its temporary-minus-final contrast before and after departure for gross outward (b) and net inward exchange (c). The dashed line denotes equal pre- and post-event contrasts; no trend is fitted. Both events and both windows retain the same cyclone identity. The direct mean post-minus-pre changes are −0.279 [−1.053, 0.484] and 0.057 [−0.613, 0.721] × 10¹² kg, respectively. Table S6c,e,f retains the full component, window and change estimates with their original confidence intervals.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "0a59270ee86faa826a5ddbdf85a2a6f2fa069843eed0d91664b559ce16ba74c8",
+      "run.py": "dede438679e54cbd379918431ff4475afd32fa1accfbe3de8bdf4535bb95e19a"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

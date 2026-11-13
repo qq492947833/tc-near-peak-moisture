@@ -1,0 +1,376 @@
+{
+  "figure_id": "Figure_S25",
+  "type": "supplementary",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\788d3f6f54_N2_contrasts.csv"
+      ],
+      "fields": [
+        "contrast",
+        "variable",
+        "beta",
+        "se",
+        "ci_low",
+        "ci_high",
+        "p",
+        "df",
+        "n_sid",
+        "rank",
+        "bootstrap_low",
+        "bootstrap_high",
+        "n_boot_valid",
+        "n_boot_failed",
+        "bootstrap_B",
+        "unit",
+        "q",
+        "family",
+        "reference_sd",
+        "beta_multiplicative_ratio_percent",
+        "ci_low_multiplicative_ratio_percent",
+        "ci_high_multiplicative_ratio_percent",
+        "bootstrap_low_multiplicative_ratio_percent",
+        "bootstrap_high_multiplicative_ratio_percent"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'a_b', d, 'all_primary_auxiliary_inference')",
+        "entry_function": "s7",
+        "selected_rows": "panels\\00_a_b_all_primary_auxiliary_inference.csv",
+        "selected_rows_sha256": "99a296475d6739f57498fd5593e2f913f0be235688d167d620298446a4ef0ae3"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2232
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes."
+      },
+      "normalization": {
+        "executed_entry": "s7",
+        "role": "all_primary_auxiliary_inference",
+        "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes."
+      },
+      "difference_direction": {
+        "role": "all_primary_auxiliary_inference",
+        "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "bootstrap_low",
+          "bootstrap_high",
+          "bootstrap_B",
+          "ci_low_multiplicative_ratio_percent",
+          "ci_high_multiplicative_ratio_percent",
+          "bootstrap_low_multiplicative_ratio_percent",
+          "bootstrap_high_multiplicative_ratio_percent"
+        ],
+        "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/788d3f6f54_N2_contrasts.csv",
+            "sha256": "788d3f6f54feee25e8c7ab1159d76e6e9b6ffac9339b5aa3696eba24969bb714",
+            "original_path": "N2_contrasts.csv",
+            "logical_keys": [
+              "FP0029"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "99a296475d6739f57498fd5593e2f913f0be235688d167d620298446a4ef0ae3"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\788d3f6f54_N2_contrasts.csv"
+      ],
+      "fields": [
+        "contrast",
+        "variable",
+        "beta",
+        "se",
+        "ci_low",
+        "ci_high",
+        "p",
+        "df",
+        "n_sid",
+        "rank",
+        "bootstrap_low",
+        "bootstrap_high",
+        "n_boot_valid",
+        "n_boot_failed",
+        "bootstrap_B",
+        "unit",
+        "q",
+        "family",
+        "reference_sd",
+        "beta_multiplicative_ratio_percent",
+        "ci_low_multiplicative_ratio_percent",
+        "ci_high_multiplicative_ratio_percent",
+        "bootstrap_low_multiplicative_ratio_percent",
+        "bootstrap_high_multiplicative_ratio_percent"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'a_b', d, 'all_primary_auxiliary_inference')",
+        "entry_function": "s7",
+        "selected_rows": "panels\\00_a_b_all_primary_auxiliary_inference.csv",
+        "selected_rows_sha256": "99a296475d6739f57498fd5593e2f913f0be235688d167d620298446a4ef0ae3"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2232
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes."
+      },
+      "normalization": {
+        "executed_entry": "s7",
+        "role": "all_primary_auxiliary_inference",
+        "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes."
+      },
+      "difference_direction": {
+        "role": "all_primary_auxiliary_inference",
+        "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "bootstrap_low",
+          "bootstrap_high",
+          "bootstrap_B",
+          "ci_low_multiplicative_ratio_percent",
+          "ci_high_multiplicative_ratio_percent",
+          "bootstrap_low_multiplicative_ratio_percent",
+          "bootstrap_high_multiplicative_ratio_percent"
+        ],
+        "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/788d3f6f54_N2_contrasts.csv",
+            "sha256": "788d3f6f54feee25e8c7ab1159d76e6e9b6ffac9339b5aa3696eba24969bb714",
+            "original_path": "N2_contrasts.csv",
+            "logical_keys": [
+              "FP0029"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "99a296475d6739f57498fd5593e2f913f0be235688d167d620298446a4ef0ae3"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/788d3f6f54_N2_contrasts.csv",
+      "sha256": "788d3f6f54feee25e8c7ab1159d76e6e9b6ffac9339b5aa3696eba24969bb714",
+      "original_path": "N2_contrasts.csv",
+      "logical_keys": [
+        "FP0029"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S25",
+    "size_mm": [
+      180.0,
+      98.0
+    ],
+    "pixels": [
+      6377,
+      3472
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 916.2266477118263,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 8.0,
+    "files": {
+      "png": {
+        "path": "Figure_S25.png",
+        "sha256": "aca9a7120bcbeac66ace2378956cdf0b17256d5a416ea02692aa60320e617314"
+      },
+      "tiff": {
+        "path": "Figure_S25.tiff",
+        "sha256": "f7e7aa9ea0764496953ac0460a694f32064a9555dd0cbec4532eab3ad5a9caef"
+      },
+      "pdf": {
+        "path": "Figure_S25.pdf",
+        "sha256": "2d3873ccd46a03d7816765f02024c5de28007352e06214887b0b04a41003e790"
+      },
+      "svg": {
+        "path": "Figure_S25.svg",
+        "sha256": "d73087119e2d0c7bba1fbe59f264ebcb510f4292a47a1b05afa6e437a35b8242"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 1,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 277.7952755905512
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              86.74015748031498,
+              63.89291338582678,
+              251.03622047244096,
+              227.79212598425198
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              68.74015748031498,
+              239.792125984252
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              333.18425196850393,
+              63.89291338582678,
+              497.48031496063,
+              227.79212598425198
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              315.184251968504,
+              239.792125984252
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          }
+        ],
+        "column_groups": [],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S25",
+    "source": "Figure_S21.png",
+    "sha256": "e45577bc039929d77f629f79bf7e37663bcb2c461ee1c425b542cfbc9fadbc69",
+    "pixels": [
+      6377,
+      3720
+    ],
+    "display_inches": [
+      6.496062992125984,
+      3.789455380577428
+    ],
+    "effective_dpi": 981.6714082626711
+  },
+  "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "scope": "Illustrative wind history only; not observed TC data",
+  "genesis_kt": 35,
+  "lmi_kt": 100,
+  "progress_E": 0.25,
+  "progress_F": 0.9,
+  "I025_kt": 51.25,
+  "I090_kt": 93.5,
+  "first_LMI_h": 42,
+  "valley_h": 54,
+  "valley_kt": 75,
+  "later_local_peak_h": 60,
+  "later_local_peak_kt": 96,
+  "episode_ranges_h": [
+    [
+      36,
+      42
+    ],
+    [
+      60,
+      66
+    ]
+  ],
+  "E_onset_h": 6,
+  "F_onset_h": 36,
+  "Decay_onset_h": 72,
+  "common_xlim": [
+    -8,
+    86
+  ],
+  "common_ylim": [
+    30,
+    137
+  ],
+  "common_xticks": [
+    0,
+    24,
+    48,
+    72
+  ],
+  "common_yticks": [
+    35,
+    60,
+    85,
+    100
+  ],
+  "csv_sha256": "34f52ac99fd9630976123bd2e5968825406100d6c23e29928335cd52523455d9",
+  "old_differences": {
+    "Figure1_valley_kt": 86,
+    "S1_valley_kt": 75,
+    "Figure1_ylim": [
+      30,
+      137
+    ],
+    "S1_ylim": [
+      30,
+      131
+    ],
+    "Figure1_yticks": [
+      35,
+      60,
+      85,
+      100
+    ],
+    "S1_yticks": [
+      35,
+      65,
+      100
+    ]
+  },
+  "scientific_threshold_or_TC_data_changed": false
+}

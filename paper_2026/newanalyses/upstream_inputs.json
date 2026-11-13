@@ -1,0 +1,42 @@
+[
+  {
+    "relative_path": "source_data/new_lifecycle_tracks.csv",
+    "sha256": "6aa74cd4e3751dd599398e7f5820a79e127b713478a66bb577f084519db86da6",
+    "bytes": 7749638,
+    "role": "Included frozen upstream processed table for input preparation from the existing lifecycle/environment outputs; this is not raw ERA5 or IBTrACS.",
+    "provided": true,
+    "public_path": "inputs/addendum/source_data/new_lifecycle_tracks.csv"
+  },
+  {
+    "relative_path": "source_data/new_intervals.csv",
+    "sha256": "d67d6d047973c5c16275aea14223c2c3642cacca876c9dd9108f686fcddffe5e",
+    "bytes": 14898369,
+    "role": "Included frozen upstream processed table for input preparation from the existing lifecycle/environment outputs; this is not raw ERA5 or IBTrACS.",
+    "provided": true,
+    "public_path": "inputs/addendum/source_data/new_intervals.csv"
+  },
+  {
+    "relative_path": "source_data/de_existing_sources/analysis_rows.csv",
+    "sha256": "a37365c66970e711492783cab21c91e593bb42f2acb2c6a128373cbd031f9d24",
+    "bytes": 52731424,
+    "role": "Included frozen upstream processed table for input preparation from the existing lifecycle/environment outputs; this is not raw ERA5 or IBTrACS.",
+    "provided": true,
+    "public_path": "inputs/addendum/source_data/de_existing_sources/analysis_rows.csv"
+  },
+  {
+    "relative_path": "source_data/de_existing_sources/track_sp_qc_relabelled.csv",
+    "sha256": "b392aa8a57c038e70ce5517c035e04ec554abda20f92fd3b142a594c936622d2",
+    "bytes": 44873288,
+    "role": "Included frozen upstream processed table for input preparation from the existing lifecycle/environment outputs; this is not raw ERA5 or IBTrACS.",
+    "provided": true,
+    "public_path": "inputs/addendum/source_data/de_existing_sources/track_sp_qc_relabelled.csv"
+  },
+  {
+    "relative_path": "unified_main_20261023_1642/statistics/h4_models/stage_entries_revised.csv",
+    "sha256": "5ebe1fa96299468015f286abe713d5f28f45c6e69dd7d2b4911d6cb6bab2fce7",
+    "bytes": 4669476,
+    "role": "Included frozen upstream processed table for input preparation from the existing lifecycle/environment outputs; this is not raw ERA5 or IBTrACS.",
+    "provided": true,
+    "public_path": "inputs/addendum/unified_main_20261023_1642/statistics/h4_models/stage_entries_revised.csv"
+  }
+]

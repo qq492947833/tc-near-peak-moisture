@@ -1,0 +1,800 @@
+{
+  "figure_id": "Figure_12",
+  "type": "main",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\9b2cabfa2d_paired_source_and_design.csv"
+      ],
+      "fields": [
+        "sid",
+        "pair_id",
+        "request_id_before",
+        "request_id_after",
+        "UTC_before",
+        "UTC_after",
+        "bin_index",
+        "bin_lower_kt",
+        "bin_upper_kt",
+        "source_pair_weight",
+        "A_signed",
+        "Tpre_h",
+        "Tpost_h",
+        "basin_genesis",
+        "delta_wind_kt",
+        "delta_latitude_deg",
+        "delta_longitude_deg",
+        "midpoint_latitude_deg",
+        "midpoint_longitude_deg",
+        "delta_age_h",
+        "midpoint_age_h",
+        "midpoint_season_sin",
+        "midpoint_season_cos",
+        "delta_motion_speed_ms",
+        "motion_background_available",
+        "process",
+        "units",
+        "value_before",
+        "value_after",
+        "difference_after_minus_before",
+        "process_pair_valid",
+        "background_pair_valid",
+        "source_before_complete",
+        "source_after_complete",
+        "source_before_complete_sha256",
+        "source_after_complete_sha256",
+        "valid_fraction_before",
+        "valid_fraction_after",
+        "QC_before",
+        "QC_after",
+        "W_before__intercept",
+        "W_after__intercept",
+        "W_before__wind_kt",
+        "W_after__wind_kt",
+        "W_before__log1p_age_h",
+        "W_after__log1p_age_h",
+        "W_before__latitude_deg",
+        "W_after__latitude_deg",
+        "W_before__longitude_sin",
+        "W_after__longitude_sin",
+        "W_before__longitude_cos",
+        "W_after__longitude_cos",
+        "W_before__month_sin",
+        "W_after__month_sin",
+        "W_before__month_cos",
+        "W_after__month_cos",
+        "W_before__past_motion_speed_ms",
+        "W_after__past_motion_speed_ms",
+        "W_before__ERA5_lsm_annulus_land_fraction",
+        "W_after__ERA5_lsm_annulus_land_fraction",
+        "W_before__basin_NA",
+        "W_after__basin_NA",
+        "W_before__basin_NI",
+        "W_after__basin_NI",
+        "W_before__basin_SI",
+        "W_after__basin_SI",
+        "W_before__basin_SP",
+        "W_after__basin_SP",
+        "W_before__basin_WP",
+        "W_after__basin_WP",
+        "X3_mid_rh_pct_value_pre",
+        "X3_mid_rh_pct_value_post",
+        "difference"
+      ],
+      "filter": {
+        "executed_code": "table('Fig8', 'a_b', x, 'raw_valid_intensity_pairs')",
+        "entry_function": "fig8",
+        "selected_rows": "panels\\00_a_b_raw_valid_intensity_pairs.csv",
+        "selected_rows_sha256": "673d1e2b070ef421a25f135de99302f6219df2717a48a2cb65b6b53e9596ce17"
+      },
+      "sample_scope": {
+        "distinct_observed_SIDs": 2327,
+        "distinct_pair_id": 8966
+      },
+      "units": [
+        "pp"
+      ],
+      "normalization": {
+        "executed_entry": "fig8",
+        "role": "raw_valid_intensity_pairs",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "difference_direction": {
+        "role": "raw_valid_intensity_pairs",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "bin_lower_kt",
+          "bin_upper_kt"
+        ],
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/9b2cabfa2d_paired_source_and_design.csv",
+            "sha256": "0246acbab13c203511edf1c02b21feee67e71775ee8542a53a5d8b7046f11b40",
+            "original_path": "paired_source_and_design.csv",
+            "logical_keys": [
+              "direct/statistics/p4_p5_models/jobs/P5__midRH/paired_source_and_design.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/05d7e9174b_P5_figure_rows.csv",
+            "sha256": "f80e04c25e61eb339b36f394d6b303130e3d45714d8d3e39fe53f26a06fad184",
+            "original_path": "P5_figure_rows.csv",
+            "logical_keys": [
+              "direct/statistics/p4_p5_models/P5_figure_rows.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "main7_9_layout_adapter.py",
+            "sha256": "9fc17dbdf233b10a820e26f5f4248f84b5298fab510290bad2e6a12db9be5424",
+            "archive": "provenance/main7_9_layout_adapter.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "673d1e2b070ef421a25f135de99302f6219df2717a48a2cb65b6b53e9596ce17"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\9b2cabfa2d_paired_source_and_design.csv"
+      ],
+      "fields": [
+        "sid",
+        "pair_id",
+        "request_id_before",
+        "request_id_after",
+        "UTC_before",
+        "UTC_after",
+        "bin_index",
+        "bin_lower_kt",
+        "bin_upper_kt",
+        "source_pair_weight",
+        "A_signed",
+        "Tpre_h",
+        "Tpost_h",
+        "basin_genesis",
+        "delta_wind_kt",
+        "delta_latitude_deg",
+        "delta_longitude_deg",
+        "midpoint_latitude_deg",
+        "midpoint_longitude_deg",
+        "delta_age_h",
+        "midpoint_age_h",
+        "midpoint_season_sin",
+        "midpoint_season_cos",
+        "delta_motion_speed_ms",
+        "motion_background_available",
+        "process",
+        "units",
+        "value_before",
+        "value_after",
+        "difference_after_minus_before",
+        "process_pair_valid",
+        "background_pair_valid",
+        "source_before_complete",
+        "source_after_complete",
+        "source_before_complete_sha256",
+        "source_after_complete_sha256",
+        "valid_fraction_before",
+        "valid_fraction_after",
+        "QC_before",
+        "QC_after",
+        "W_before__intercept",
+        "W_after__intercept",
+        "W_before__wind_kt",
+        "W_after__wind_kt",
+        "W_before__log1p_age_h",
+        "W_after__log1p_age_h",
+        "W_before__latitude_deg",
+        "W_after__latitude_deg",
+        "W_before__longitude_sin",
+        "W_after__longitude_sin",
+        "W_before__longitude_cos",
+        "W_after__longitude_cos",
+        "W_before__month_sin",
+        "W_after__month_sin",
+        "W_before__month_cos",
+        "W_after__month_cos",
+        "W_before__past_motion_speed_ms",
+        "W_after__past_motion_speed_ms",
+        "W_before__ERA5_lsm_annulus_land_fraction",
+        "W_after__ERA5_lsm_annulus_land_fraction",
+        "W_before__basin_NA",
+        "W_after__basin_NA",
+        "W_before__basin_NI",
+        "W_after__basin_NI",
+        "W_before__basin_SI",
+        "W_after__basin_SI",
+        "W_before__basin_SP",
+        "W_after__basin_SP",
+        "W_before__basin_WP",
+        "W_after__basin_WP",
+        "X3_mid_rh_pct_value_pre",
+        "X3_mid_rh_pct_value_post",
+        "difference"
+      ],
+      "filter": {
+        "executed_code": "table('Fig8', 'a_b', x, 'raw_valid_intensity_pairs')",
+        "entry_function": "fig8",
+        "selected_rows": "panels\\00_a_b_raw_valid_intensity_pairs.csv",
+        "selected_rows_sha256": "673d1e2b070ef421a25f135de99302f6219df2717a48a2cb65b6b53e9596ce17"
+      },
+      "sample_scope": {
+        "distinct_observed_SIDs": 2327,
+        "distinct_pair_id": 8966
+      },
+      "units": [
+        "pp"
+      ],
+      "normalization": {
+        "executed_entry": "fig8",
+        "role": "raw_valid_intensity_pairs",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "difference_direction": {
+        "role": "raw_valid_intensity_pairs",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "bin_lower_kt",
+          "bin_upper_kt"
+        ],
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/9b2cabfa2d_paired_source_and_design.csv",
+            "sha256": "0246acbab13c203511edf1c02b21feee67e71775ee8542a53a5d8b7046f11b40",
+            "original_path": "paired_source_and_design.csv",
+            "logical_keys": [
+              "direct/statistics/p4_p5_models/jobs/P5__midRH/paired_source_and_design.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/05d7e9174b_P5_figure_rows.csv",
+            "sha256": "f80e04c25e61eb339b36f394d6b303130e3d45714d8d3e39fe53f26a06fad184",
+            "original_path": "P5_figure_rows.csv",
+            "logical_keys": [
+              "direct/statistics/p4_p5_models/P5_figure_rows.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "main7_9_layout_adapter.py",
+            "sha256": "9fc17dbdf233b10a820e26f5f4248f84b5298fab510290bad2e6a12db9be5424",
+            "archive": "provenance/main7_9_layout_adapter.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "673d1e2b070ef421a25f135de99302f6219df2717a48a2cb65b6b53e9596ce17"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs\\05d7e9174b_P5_figure_rows.csv"
+      ],
+      "fields": [
+        "process",
+        "role",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "n_sid",
+        "n_pairs",
+        "units",
+        "p",
+        "q",
+        "family",
+        "display_status",
+        "valid_draws",
+        "failed_draws",
+        "source",
+        "source_sha256",
+        "interpretation"
+      ],
+      "filter": {
+        "executed_code": "table('Fig8', 'c_d', d, 'original_model_estimates')",
+        "entry_function": "fig8",
+        "selected_rows": "panels\\01_c_d_original_model_estimates.csv",
+        "selected_rows_sha256": "6ad03a3e231af22fdf94dde9612412d5298c274324488f6bb438b5dbbfa1184a"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2327,
+          2318,
+          1431,
+          2317,
+          1432,
+          2171,
+          2161,
+          1372,
+          2328,
+          2319,
+          1430,
+          1228,
+          1219,
+          813
+        ],
+        "n_pairs": [
+          8966,
+          8503,
+          2768,
+          8500,
+          2776,
+          8336,
+          7931,
+          2713,
+          8973,
+          8508,
+          2764,
+          4155,
+          3963,
+          1602
+        ],
+        "valid_draws": [
+          2000,
+          1983,
+          1988,
+          1955,
+          1981,
+          70
+        ]
+      },
+      "units": [
+        "g kg-1 day-1",
+        "m s-1",
+        "pp"
+      ],
+      "normalization": {
+        "executed_entry": "fig8",
+        "role": "original_model_estimates",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "difference_direction": {
+        "role": "original_model_estimates",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high"
+        ],
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/9b2cabfa2d_paired_source_and_design.csv",
+            "sha256": "0246acbab13c203511edf1c02b21feee67e71775ee8542a53a5d8b7046f11b40",
+            "original_path": "paired_source_and_design.csv",
+            "logical_keys": [
+              "direct/statistics/p4_p5_models/jobs/P5__midRH/paired_source_and_design.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/05d7e9174b_P5_figure_rows.csv",
+            "sha256": "f80e04c25e61eb339b36f394d6b303130e3d45714d8d3e39fe53f26a06fad184",
+            "original_path": "P5_figure_rows.csv",
+            "logical_keys": [
+              "direct/statistics/p4_p5_models/P5_figure_rows.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "main7_9_layout_adapter.py",
+            "sha256": "9fc17dbdf233b10a820e26f5f4248f84b5298fab510290bad2e6a12db9be5424",
+            "archive": "provenance/main7_9_layout_adapter.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "6ad03a3e231af22fdf94dde9612412d5298c274324488f6bb438b5dbbfa1184a"
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs\\05d7e9174b_P5_figure_rows.csv"
+      ],
+      "fields": [
+        "process",
+        "role",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "n_sid",
+        "n_pairs",
+        "units",
+        "p",
+        "q",
+        "family",
+        "display_status",
+        "valid_draws",
+        "failed_draws",
+        "source",
+        "source_sha256",
+        "interpretation"
+      ],
+      "filter": {
+        "executed_code": "table('Fig8', 'c_d', d, 'original_model_estimates')",
+        "entry_function": "fig8",
+        "selected_rows": "panels\\01_c_d_original_model_estimates.csv",
+        "selected_rows_sha256": "6ad03a3e231af22fdf94dde9612412d5298c274324488f6bb438b5dbbfa1184a"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2327,
+          2318,
+          1431,
+          2317,
+          1432,
+          2171,
+          2161,
+          1372,
+          2328,
+          2319,
+          1430,
+          1228,
+          1219,
+          813
+        ],
+        "n_pairs": [
+          8966,
+          8503,
+          2768,
+          8500,
+          2776,
+          8336,
+          7931,
+          2713,
+          8973,
+          8508,
+          2764,
+          4155,
+          3963,
+          1602
+        ],
+        "valid_draws": [
+          2000,
+          1983,
+          1988,
+          1955,
+          1981,
+          70
+        ]
+      },
+      "units": [
+        "g kg-1 day-1",
+        "m s-1",
+        "pp"
+      ],
+      "normalization": {
+        "executed_entry": "fig8",
+        "role": "original_model_estimates",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "difference_direction": {
+        "role": "original_model_estimates",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high"
+        ],
+        "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/9b2cabfa2d_paired_source_and_design.csv",
+            "sha256": "0246acbab13c203511edf1c02b21feee67e71775ee8542a53a5d8b7046f11b40",
+            "original_path": "paired_source_and_design.csv",
+            "logical_keys": [
+              "direct/statistics/p4_p5_models/jobs/P5__midRH/paired_source_and_design.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/05d7e9174b_P5_figure_rows.csv",
+            "sha256": "f80e04c25e61eb339b36f394d6b303130e3d45714d8d3e39fe53f26a06fad184",
+            "original_path": "P5_figure_rows.csv",
+            "logical_keys": [
+              "direct/statistics/p4_p5_models/P5_figure_rows.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "main7_9_layout_adapter.py",
+            "sha256": "9fc17dbdf233b10a820e26f5f4248f84b5298fab510290bad2e6a12db9be5424",
+            "archive": "provenance/main7_9_layout_adapter.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "6ad03a3e231af22fdf94dde9612412d5298c274324488f6bb438b5dbbfa1184a"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/9b2cabfa2d_paired_source_and_design.csv",
+      "sha256": "0246acbab13c203511edf1c02b21feee67e71775ee8542a53a5d8b7046f11b40",
+      "original_path": "paired_source_and_design.csv",
+      "logical_keys": [
+        "direct/statistics/p4_p5_models/jobs/P5__midRH/paired_source_and_design.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/05d7e9174b_P5_figure_rows.csv",
+      "sha256": "f80e04c25e61eb339b36f394d6b303130e3d45714d8d3e39fe53f26a06fad184",
+      "original_path": "P5_figure_rows.csv",
+      "logical_keys": [
+        "direct/statistics/p4_p5_models/P5_figure_rows.csv"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S23",
+    "size_mm": [
+      180.0,
+      181.0
+    ],
+    "pixels": [
+      6377,
+      6413
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 981.2106040169408,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 7.5,
+    "files": {
+      "png": {
+        "path": "Figure_S23.png",
+        "sha256": "c438100be0bd762d2f2b20120198ef60a45c93f4e209efbfa621cfbc87353276"
+      },
+      "tiff": {
+        "path": "Figure_S23.tiff",
+        "sha256": "c4475ba9173f161a8500f12d2abb2b2996e6bc818659f63b4c28dc82f07438d3"
+      },
+      "pdf": {
+        "path": "Figure_S23.pdf",
+        "sha256": "b07239ea42c2edb7d29c9dadd1a93a59a87604a625cb97916df1e6d94654b3de"
+      },
+      "svg": {
+        "path": "Figure_S23.svg",
+        "sha256": "f1382135e2483763be3369daaae49526db30ca39084798f2151c87cc4bb76dae"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 1
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 513.0708661417324
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              125.00787401574804,
+              286.30205112310733,
+              279.1417322834646,
+              451.5023622047245
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              110.00787401574806,
+              469.5023622047245
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              340.7952755905512,
+              286.30205112310733,
+              494.9291338582678,
+              451.5023622047245
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              325.7952755905513,
+              469.5023622047245
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              125.00787401574804,
+              41.04566929133857,
+              383.0924739058781,
+              209.549986594588
+            ],
+            "grid_id": "matplotlib-grid-2",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              110.00787401574806,
+              238.549986594588
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              408.9009338948911,
+              41.04566929133857,
+              494.9291338582678,
+              209.549986594588
+            ],
+            "grid_id": "matplotlib-grid-2",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              393.900933894891,
+              238.549986594588
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          }
+        ],
+        "column_groups": [],
+        "boundary_groups": [],
+        "exemptions": [
+          {
+            "panels": [
+              "c",
+              "d"
+            ],
+            "checks": [
+              "panel-width"
+            ],
+            "reason": "Three comparison columns versus one slope column."
+          }
+        ]
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "main7_9_layout_adapter.py",
+      "sha256": "9fc17dbdf233b10a820e26f5f4248f84b5298fab510290bad2e6a12db9be5424",
+      "archive": "provenance/main7_9_layout_adapter.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_12",
+    "source": "old_Figure11.png",
+    "sha256": "94907f397cf1d23d869dd7ea609c9826258fa694b9754b7cae1adba3659f548c",
+    "pixels": [
+      6375,
+      6414
+    ],
+    "display_inches": [
+      6.496062992125984,
+      6.535803805774278
+    ],
+    "effective_dpi": 981.3636073857257
+  },
+  "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

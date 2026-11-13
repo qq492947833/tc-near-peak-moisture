@@ -1,0 +1,27 @@
+{
+  "master": {
+    "path": "See SOURCE_MANIFEST.json and configured upstream inputs.",
+    "sha256": "3cd93730e1ef33d37a3537e5860bc7ccc251ce2a205352170e098a6f85f29716",
+    "bytes": 1971276
+  },
+  "events": {
+    "path": "See SOURCE_MANIFEST.json and configured upstream inputs.",
+    "sha256": "69dc4bad43c232b3360796a64a8a272c9c7cb5446ddae610b3d78009393ddc7f",
+    "bytes": 61118
+  },
+  "track": {
+    "path": "See SOURCE_MANIFEST.json and configured upstream inputs.",
+    "sha256": "6aa74cd4e3751dd599398e7f5820a79e127b713478a66bb577f084519db86da6",
+    "bytes": 7749638
+  },
+  "env": {
+    "path": "See SOURCE_MANIFEST.json and configured upstream inputs.",
+    "sha256": "b392aa8a57c038e70ce5517c035e04ec554abda20f92fd3b142a594c936622d2",
+    "bytes": 44873288
+  },
+  "intervals": {
+    "path": "See SOURCE_MANIFEST.json and configured upstream inputs.",
+    "sha256": "d67d6d047973c5c16275aea14223c2c3642cacca876c9dd9108f686fcddffe5e",
+    "bytes": 14898369
+  }
+}

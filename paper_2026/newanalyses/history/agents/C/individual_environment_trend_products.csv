@@ -1,0 +1,13 @@
+stage,variable,n_sid,hours_per_decade_contribution,ci_low,ci_high,p_boot,valid_draws,family
+D,X1_sst_c,1893,-0.18671210376447755,-0.67891626866683963,0.24016572041243681,0.36281859070464767,2000,descriptive individual environment products; no new hypothesis family
+D,X2_shear_ms,1893,0.049607196804664314,-0.2191768993260601,0.38273338205393903,0.68965517241379315,2000,descriptive individual environment products; no new hypothesis family
+D,X3_mid_rh_pct,1893,-0.051408400702773013,-0.24087276894233148,0.064914100867040359,0.45477261369315342,2000,descriptive individual environment products; no new hypothesis family
+E,X1_sst_c,1753,-0.078428379104794957,-0.47183428938416239,0.31777842721906741,0.73799582463465552,1915,descriptive individual environment products; no new hypothesis family
+E,X2_shear_ms,1753,0.020172151043632767,-0.043220375023845591,0.13390378700103231,0.55845511482254695,1915,descriptive individual environment products; no new hypothesis family
+E,X3_mid_rh_pct,1753,-0.0020637114418387953,-0.0903174640372299,0.06266289704679813,0.91336116910229648,1915,descriptive individual environment products; no new hypothesis family
+F,X1_sst_c,1754,0.12105931392363309,-0.054367680432439093,0.34482615786258713,0.20089955022488756,2000,descriptive individual environment products; no new hypothesis family
+F,X2_shear_ms,1754,-0.029514488829271199,-0.16828498902928907,0.072734462562880201,0.59070464767616193,2000,descriptive individual environment products; no new hypothesis family
+F,X3_mid_rh_pct,1754,-0.026658375315965828,-0.16936461323887075,0.074262556761103979,0.5977011494252874,2000,descriptive individual environment products; no new hypothesis family
+Res,X1_sst_c,1804,1.303226802807782,0.59890620574408304,2.2781918810102568,0.00099950024987506244,2000,descriptive individual environment products; no new hypothesis family
+Res,X2_shear_ms,1804,0.054094699455080032,-0.25957766359634804,0.42445821986041876,0.69765117441279356,2000,descriptive individual environment products; no new hypothesis family
+Res,X3_mid_rh_pct,1804,-0.13604217240088615,-0.509862863953641,0.076478623538227306,0.28085957021489255,2000,descriptive individual environment products; no new hypothesis family

@@ -1,0 +1,1028 @@
+{
+  "figure_id": "Figure_S21",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/recovery/cohort_recovered.csv"
+      ],
+      "fields": {
+        "recovery/cohort_recovered.csv": [
+          "event_id",
+          "sid",
+          "t0",
+          "source_line_number",
+          "eligible",
+          "exclusion_reason",
+          "genesis_UTC",
+          "genesis_source_line_number",
+          "genesis_year",
+          "genesis_wind_kt",
+          "genesis_lat",
+          "genesis_lon",
+          "basin_genesis",
+          "basin_t0",
+          "wind_t0_kt",
+          "wind_prev_kt",
+          "previous_UTC",
+          "previous_source_line_number",
+          "Vmax_past_kt",
+          "Vmax_past_first_UTC",
+          "Vmax_past_latest_source_UTC",
+          "Vref_kt",
+          "threshold_gap_kt",
+          "historical_gain_kt",
+          "lat",
+          "lon",
+          "age_h",
+          "delta_v6_backward_kt",
+          "delta_v24_backward_kt",
+          "delta_v12_backward_kt",
+          "prefix_n_records",
+          "prefix_wind_valid_fraction",
+          "prefix_max_finite_wind_gap_h",
+          "t0_state_class",
+          "t0_state_source",
+          "t0_USA_STATUS",
+          "t0_NATURE",
+          "agency_conflict_nature_mx",
+          "current_land_contact",
+          "past_land_contact",
+          "dist2land_km",
+          "current_pressure_hpa",
+          "motion_u_prev_ms",
+          "motion_v_prev_ms",
+          "motion_speed_prev_ms",
+          "month_sin",
+          "month_cos",
+          "lon_sin",
+          "lon_cos",
+          "baseline_max_source_UTC",
+          "raw_wind_no_interpolation",
+          "main_first_per_sid",
+          "all_nonoverlap96h",
+          "return48",
+          "return48_status",
+          "followup48_complete",
+          "followup48_finite_n",
+          "return48_first_observed_lag_h",
+          "return48_first_interval_lower_h",
+          "return48_first_interval_upper_h",
+          "return48_after_first_gap",
+          "return48_tropical_confirmed",
+          "followup48_other_state_n",
+          "followup48_unknown_state_n",
+          "censor48_first_lag_h",
+          "censor48_reason",
+          "return48_contiguous_event_lag_h",
+          "return96",
+          "return96_status",
+          "followup96_complete",
+          "followup96_finite_n",
+          "return96_first_observed_lag_h",
+          "return96_first_interval_lower_h",
+          "return96_first_interval_upper_h",
+          "return96_after_first_gap",
+          "return96_tropical_confirmed",
+          "followup96_other_state_n",
+          "followup96_unknown_state_n",
+          "censor96_first_lag_h",
+          "censor96_reason",
+          "return96_contiguous_event_lag_h",
+          "delta_v24_forward_kt",
+          "delta_v24_status",
+          "delta_v24_intermediate_gaps",
+          "log_age",
+          "shear200_850",
+          "midRH",
+          "t0_SST",
+          "t0_PIheadroom",
+          "past_shear",
+          "past_shear_valid_times",
+          "past_RH",
+          "past_RH_valid_times",
+          "past_SST",
+          "past_SST_valid_times",
+          "exposure_exclusion",
+          "fold",
+          "_source_i",
+          "recovery48",
+          "complete48",
+          "L_h",
+          "U_h",
+          "post_gap_return",
+          "first_gap_h",
+          "first_observed_return_h",
+          "delta24",
+          "tropical_return48",
+          "first_other_state_h",
+          "raw_record_after_first_gap",
+          "raw_valid_wind_after_first_gap",
+          "raw_track_last_UTC",
+          "track_ends_before48",
+          "raw_final_state",
+          "raw_final_status",
+          "raw_final_wind",
+          "missing_reasons",
+          "unscheduled_return_record_n",
+          "unscheduled_return_flags",
+          "known_physical_end",
+          "domain_departure_confirmed",
+          "file_truncation_confirmed"
+        ]
+      },
+      "filter": [
+        "g = pred[pred.policy.eq('shear200_850')]",
+        "d = d[d[k].eq(v)]",
+        "g = pred[pred.policy.eq(policy)]"
+      ],
+      "sample_scope": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "units": {
+        "x": "Departure cohort (cyclones)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "weights": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+        "saved_columns": [
+          "followup48_complete",
+          "followup48_finite_n",
+          "followup48_other_state_n",
+          "followup48_unknown_state_n",
+          "followup96_complete",
+          "followup96_finite_n",
+          "followup96_other_state_n",
+          "followup96_unknown_state_n",
+          "return48_first_interval_lower_h",
+          "return48_first_interval_upper_h",
+          "return96_first_interval_lower_h",
+          "return96_first_interval_upper_h"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/cohort_recovered.csv": "e7ddea9384ed5310dce627d20fda946d06564bc859b30e0ac4e1c85f2a346262"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "Exact count of source cohort; no missing-outcome reassignment; transform=identity",
+          "source_key": "recovery/cohort_recovered.csv",
+          "fields": [
+            "outcome",
+            "count"
+          ],
+          "selected_rows": 3,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "e2cb114f041915db556b966f7ae7e517ed22eed4a7c980f1b79e515d47ce26b5"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/recovery/point_predictions.csv"
+      ],
+      "fields": {
+        "recovery/point_predictions.csv": [
+          "event_id",
+          "sid",
+          "fold",
+          "policy",
+          "A",
+          "A_shift",
+          "covered",
+          "density_ratio",
+          "density_residual",
+          "density_sd",
+          "support_low",
+          "support_high",
+          "R48",
+          "Y48",
+          "g48",
+          "g48_shift",
+          "m48",
+          "m48_shift",
+          "R24",
+          "Y24",
+          "g24",
+          "g24_shift",
+          "m24",
+          "m24_shift",
+          "basin",
+          "ipcw48_uncapped",
+          "ipcw48",
+          "gcomp48",
+          "onestep48",
+          "ipw48",
+          "onestep48_uncapped",
+          "ipcw24_uncapped",
+          "ipcw24",
+          "gcomp24",
+          "onestep24",
+          "ipw24",
+          "onestep24_uncapped",
+          "benchmark_pastwind5_risk",
+          "benchmark_pastwind5_kt"
+        ]
+      },
+      "filter": [
+        "g = pred[pred.policy.eq('shear200_850')]",
+        "d = d[d[k].eq(v)]",
+        "g = pred[pred.policy.eq(policy)]"
+      ],
+      "sample_scope": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "units": {
+        "x": "OOF follow-up probability",
+        "y": "Density",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "weights": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+        "saved_columns": [
+          "support_high",
+          "support_low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/point_predictions.csv": "468883c9df89699c30723117715232e63f08f0f6880e0de234b26ee016047419"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "Same 15 bins as original; all observations retained; transform=identity",
+          "source_key": "recovery/point_predictions.csv",
+          "fields": [
+            "event_id",
+            "sid",
+            "fold",
+            "policy",
+            "A",
+            "A_shift",
+            "covered",
+            "density_ratio",
+            "density_residual",
+            "density_sd",
+            "support_low",
+            "support_high",
+            "R48",
+            "Y48",
+            "g48",
+            "g48_shift",
+            "m48",
+            "m48_shift",
+            "R24",
+            "Y24",
+            "g24",
+            "g24_shift",
+            "m24",
+            "m24_shift",
+            "basin",
+            "ipcw48_uncapped",
+            "ipcw48",
+            "gcomp48",
+            "onestep48",
+            "ipw48",
+            "onestep48_uncapped",
+            "ipcw24_uncapped",
+            "ipcw24",
+            "gcomp24",
+            "onestep24",
+            "ipw24",
+            "onestep24_uncapped",
+            "benchmark_pastwind5_risk",
+            "benchmark_pastwind5_kt",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 2231,
+          "saved_selected_table": "panel_b_1.csv",
+          "sha256": "3879727261f833a4e0b4f3c5de080f4eff68111b078f532578dc2ef1211c5052"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/recovery/calibration_deciles.csv"
+      ],
+      "fields": {
+        "recovery/calibration_deciles.csv": [
+          "policy",
+          "outcome",
+          "bin",
+          "n",
+          "predicted",
+          "observed"
+        ]
+      },
+      "filter": [
+        "g = pred[pred.policy.eq('shear200_850')]",
+        "d = d[d[k].eq(v)]",
+        "g = pred[pred.policy.eq(policy)]"
+      ],
+      "sample_scope": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "units": {
+        "x": "Predicted (%)",
+        "y": "Weighted observed (%)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "weights": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/calibration_deciles.csv": "5064f96f0ebe04e3e2e205cb2715375017b8b6b9f5c60c5f878a47326d017ec8"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "; transform=identity",
+          "source_key": "recovery/calibration_deciles.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "bin",
+            "n",
+            "predicted",
+            "observed",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 20,
+          "saved_selected_table": "panel_c_2.csv",
+          "sha256": "7b766b1e69b6ae8305f48ebc2b51dc7531deeb5011d0680c35528572582e329f"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/recovery/calibration_deciles.csv"
+      ],
+      "fields": {
+        "recovery/calibration_deciles.csv": [
+          "policy",
+          "outcome",
+          "bin",
+          "n",
+          "predicted",
+          "observed"
+        ]
+      },
+      "filter": [
+        "g = pred[pred.policy.eq('shear200_850')]",
+        "d = d[d[k].eq(v)]",
+        "g = pred[pred.policy.eq(policy)]"
+      ],
+      "sample_scope": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "units": {
+        "x": "Predicted change (kt)",
+        "y": "Weighted observed change (kt)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "weights": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/calibration_deciles.csv": "5064f96f0ebe04e3e2e205cb2715375017b8b6b9f5c60c5f878a47326d017ec8"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "d",
+          "role": "; transform=identity",
+          "source_key": "recovery/calibration_deciles.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "bin",
+            "n",
+            "predicted",
+            "observed",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 20,
+          "saved_selected_table": "panel_d_3.csv",
+          "sha256": "5e67e2c9fe4748e0077106f8f7379ecf8f66c106a0db35b231e9cdbbc5e93c9d"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/recovery/point_predictions.csv"
+      ],
+      "fields": {
+        "recovery/point_predictions.csv": [
+          "event_id",
+          "sid",
+          "fold",
+          "policy",
+          "A",
+          "A_shift",
+          "covered",
+          "density_ratio",
+          "density_residual",
+          "density_sd",
+          "support_low",
+          "support_high",
+          "R48",
+          "Y48",
+          "g48",
+          "g48_shift",
+          "m48",
+          "m48_shift",
+          "R24",
+          "Y24",
+          "g24",
+          "g24_shift",
+          "m24",
+          "m24_shift",
+          "basin",
+          "ipcw48_uncapped",
+          "ipcw48",
+          "gcomp48",
+          "onestep48",
+          "ipw48",
+          "onestep48_uncapped",
+          "ipcw24_uncapped",
+          "ipcw24",
+          "gcomp24",
+          "onestep24",
+          "ipw24",
+          "onestep24_uncapped",
+          "benchmark_pastwind5_risk",
+          "benchmark_pastwind5_kt"
+        ]
+      },
+      "filter": [
+        "g = pred[pred.policy.eq('shear200_850')]",
+        "d = d[d[k].eq(v)]",
+        "g = pred[pred.policy.eq(policy)]"
+      ],
+      "sample_scope": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "units": {
+        "x": "Uncapped observation weight",
+        "y": "Fraction at or above weight",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "weights": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+        "saved_columns": [
+          "support_high",
+          "support_low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/point_predictions.csv": "468883c9df89699c30723117715232e63f08f0f6880e0de234b26ee016047419"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "e",
+          "role": "Exact empirical survival values; no tail fit; transform=identity",
+          "source_key": "recovery/point_predictions.csv",
+          "fields": [
+            "event_id",
+            "sid",
+            "fold",
+            "policy",
+            "A",
+            "A_shift",
+            "covered",
+            "density_ratio",
+            "density_residual",
+            "density_sd",
+            "support_low",
+            "support_high",
+            "R48",
+            "Y48",
+            "g48",
+            "g48_shift",
+            "m48",
+            "m48_shift",
+            "R24",
+            "Y24",
+            "g24",
+            "g24_shift",
+            "m24",
+            "m24_shift",
+            "basin",
+            "ipcw48_uncapped",
+            "ipcw48",
+            "gcomp48",
+            "onestep48",
+            "ipw48",
+            "onestep48_uncapped",
+            "ipcw24_uncapped",
+            "ipcw24",
+            "gcomp24",
+            "onestep24",
+            "ipw24",
+            "onestep24_uncapped",
+            "benchmark_pastwind5_risk",
+            "benchmark_pastwind5_kt",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 4462,
+          "saved_selected_table": "panel_e_4.csv",
+          "sha256": "63a78ac8bdd475005d073897ab9ccda86bd1cde6f3102d336fed54c8df1ca33e"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/recovery/effects_with_CI.csv",
+        "inputs/recovery/nonsynoptic_sensitivity/point_estimates.csv"
+      ],
+      "fields": {
+        "recovery/effects_with_CI.csv": [
+          "policy",
+          "outcome",
+          "method",
+          "estimate",
+          "coverage",
+          "n",
+          "empirical_if_se",
+          "ci_low",
+          "ci_high",
+          "successful_draws"
+        ],
+        "recovery/nonsynoptic_sensitivity/point_estimates.csv": [
+          "policy",
+          "outcome",
+          "method",
+          "estimate",
+          "coverage",
+          "n",
+          "empirical_if_se"
+        ]
+      },
+      "filter": [
+        "g = pred[pred.policy.eq('shear200_850')]",
+        "d = d[d[k].eq(v)]",
+        "g = pred[pred.policy.eq(policy)]"
+      ],
+      "sample_scope": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "units": {
+        "x": "",
+        "y": "Recovery contrast (pp)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "weights": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+        "saved_columns": [
+          "ci_high",
+          "ci_low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/effects_with_CI.csv": "fb4a8fa3900ed79bb73c2fb25ed6a14a06097821f169e044edf498fe71bceb2e",
+          "recovery/nonsynoptic_sensitivity/point_estimates.csv": "dd40b3dfeec13f9924cbe57423360c44de1c5cc00878c166030cf24c25ca3b48"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "f",
+          "role": "; transform=identity",
+          "source_key": "recovery/effects_with_CI.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_f_5.csv",
+          "sha256": "9f027a5e365f4dfb89d46d2478c63d612aff6134298ea10b9563644c05657f4c"
+        },
+        {
+          "id": "f",
+          "role": "; transform=identity",
+          "source_key": "recovery/nonsynoptic_sensitivity/point_estimates.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_f_6.csv",
+          "sha256": "8e83267737e04f4bf5fe0add24d4cbec07ce05b5d6834c379fb457aecc1e9b85"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "recovery/calibration_deciles.csv",
+      "relative_path": "inputs/recovery/calibration_deciles.csv",
+      "sha256": "5064f96f0ebe04e3e2e205cb2715375017b8b6b9f5c60c5f878a47326d017ec8",
+      "original_path": "calibration_deciles.csv",
+      "bytes": 2398
+    },
+    {
+      "key": "recovery/cohort_recovered.csv",
+      "relative_path": "inputs/recovery/cohort_recovered.csv",
+      "sha256": "e7ddea9384ed5310dce627d20fda946d06564bc859b30e0ac4e1c85f2a346262",
+      "original_path": "cohort_recovered.csv",
+      "bytes": 2155137
+    },
+    {
+      "key": "recovery/effects_with_CI.csv",
+      "relative_path": "inputs/recovery/effects_with_CI.csv",
+      "sha256": "fb4a8fa3900ed79bb73c2fb25ed6a14a06097821f169e044edf498fe71bceb2e",
+      "original_path": "effects_with_CI.csv",
+      "bytes": 2289
+    },
+    {
+      "key": "recovery/nonsynoptic_sensitivity/point_estimates.csv",
+      "relative_path": "inputs/recovery/nonsynoptic_sensitivity/point_estimates.csv",
+      "sha256": "dd40b3dfeec13f9924cbe57423360c44de1c5cc00878c166030cf24c25ca3b48",
+      "original_path": "point_estimates.csv",
+      "bytes": 1566
+    },
+    {
+      "key": "recovery/point_predictions.csv",
+      "relative_path": "inputs/recovery/point_predictions.csv",
+      "sha256": "468883c9df89699c30723117715232e63f08f0f6880e0de234b26ee016047419",
+      "original_path": "point_predictions.csv",
+      "bytes": 2640234
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S21.png",
+      "sha256": "048d37c8064f84e623f636bcacfc0d2fa22d686aed5a2efad00ec9d375cb5d77"
+    },
+    "tiff": {
+      "path": "Figure_S21.tiff",
+      "sha256": "2fcac0caae35755c806bc4745aca6be45a742bb98e9cc341942c050ca1320c3a"
+    },
+    "pdf": {
+      "path": "Figure_S21.pdf",
+      "sha256": "0509666d11f39f0adc3042a3b8ca10d091bc35d1da9d65d722b00656020128a7"
+    },
+    "svg": {
+      "path": "Figure_S21.svg",
+      "sha256": "f4efea2547b839ba045bc5e695e57f00f05b10c0935e75e9d6da749ce9335d75"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S21",
+      "returncode": 0,
+      "elapsed_s": 13.25,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 581.1023622047244
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              71.43307086614175,
+              426.8553667633651,
+              236.50949513663738,
+              528.8031496062993
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              55.43307086614176,
+              540.8031496062993
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              327.30152848540996,
+              426.8553667633651,
+              492.37795275590554,
+              528.8031496062993
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              311.30152848540996,
+              540.8031496062993
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              71.43307086614175,
+              245.38831330294244,
+              236.50949513663738,
+              347.3360961458765
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              55.43307086614176,
+              359.3360961458765
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              327.30152848540996,
+              245.38831330294244,
+              492.37795275590554,
+              347.3360961458765
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              311.30152848540996,
+              359.3360961458765
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              71.43307086614175,
+              63.92125984251974,
+              236.50949513663738,
+              165.86904268545385
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              55.43307086614176,
+              177.86904268545382
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              327.30152848540996,
+              63.92125984251974,
+              492.37795275590554,
+              165.86904268545385
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              311.30152848540996,
+              177.86904268545382
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6714595172266
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S21",
+      "source": "Figure_S31.png",
+      "sha256": "a49208b03feed63097d1478b41d1c32a0eaeb1b7c39a359595c24dbd09e1cab4",
+      "pixels": [
+        6377,
+        7263
+      ],
+      "display_inches": [
+        6.496062992125984,
+        7.398605643044619
+      ],
+      "effective_dpi": 981.6714595172266
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 21 | Recovery-model support and diagnostic checks. a, Observed 48-hour outcomes in the 2,231 model-supported main-sample cyclones: 309 recorded returns, 1,312 complete nonreturns and 610 unknown outcomes. b, Out-of-fold follow-up probabilities by completeness status. c,d, Recovery and 24-hour wind-change calibration for the shear and humidity policies. e, Empirical upper tails of uncapped observation weights; the vertical line marks the existing cap of 20. f, G-formula and one-step point estimates using the standard synoptic reports (open circles) and the retained original-report sensitivity (filled squares). Unknown outcomes remain distinct from nonreturns. The observations represented in each diagnostic follow the original outcome-specific completeness rules.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "bff32154fbe1af53896b71aa9357d9a2e0b6ce77b33de141f3319e1c662ab284",
+      "run.py": "dede438679e54cbd379918431ff4475afd32fa1accfbe3de8bdf4535bb95e19a"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

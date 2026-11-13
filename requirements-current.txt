@@ -1,0 +1,26 @@
+# Validated scientific environment: Python 3.11.
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.11.4
+statsmodels==0.14.0
+scikit-learn==1.2.2
+threadpoolctl==2.2.0
+matplotlib==3.8.0
+Pillow==10.2.0
+xarray==2025.4.0
+pyarrow==14.0.2
+PyWavelets==1.5.0
+shapely==2.0.4
+PyMuPDF==1.28.2
+numba==0.59.0
+h5py==3.9.0
+psutil>=5.9,<8
+nbformat==5.9.2
+nbclient==0.8.0
+ipykernel>=6,<7
+# Native archive/optional map interfaces; not needed by saved-result validation.
+netCDF4>=1.6.5,<2
+h5netcdf>=1.2,<2
+pyshp>=2.3,<4
+cartopy==0.25.0
+pyproj==3.7.2

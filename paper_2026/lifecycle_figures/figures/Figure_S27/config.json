@@ -1,0 +1,11 @@
+{
+  "figure_id": "Figure_S19",
+  "function": "build",
+  "arguments": [],
+  "text_replacements": {
+    "PI headroom": "PI − V",
+    "Headroom (m s$^{-1}$)": "PI − V (m s$^{-1}$)"
+  },
+  "original_source": "plot_rise_environment_history.py",
+  "original_source_sha256": "4bfdca3887e92c374faf90fb5495c5f7475eb718810dfd3863ce46d72e208a19"
+}

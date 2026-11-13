@@ -1,0 +1,75 @@
+{
+  "schema": "upper_profile_candidate_configuration_v1",
+  "created_utc": "2026-10-08T19:36:23.803817+00:00",
+  "scientific_status": "CANDIDATE_NOT_PHYSICALLY_ACCEPTED",
+  "user_spec_sha256": "caaeaac7142978d1d43d11521eb48085295e9424a652b9545281537bc8bff042",
+  "old_config_readonly": "${MECHANISM_V5}/config/thermodynamic_estimand_v5.json",
+  "old_config_sha256": "fb90786b1ba02db9011f795fb7f91618de33c987850c36f1b9679f2a971e6b03",
+  "strict_policy_source": "${MECHANISM_V5}/p2_thermodynamic_repair_v5_1/src/thermodynamics_strict_v5_1.py",
+  "strict_policy_source_sha256": "f76763784f07f5cfa9656538072535b3dc05819bac5d4f3fe3a3beea2db9f464",
+  "conflict_resolution": "Old config unsupported_lowest_layer_prefix text is superseded for this independent candidate by the actual strict repair. Old activity-bound config is preserved, never changed here. No prefix removal, no low-level NaN fill.",
+  "profile_qc": {
+    "support_minimum": 0.9,
+    "area_denominator": "original geometric200<=r<800km annulus",
+    "SP": "sameUTC/nativegrid before layermeans",
+    "T_q_joint": true,
+    "required_T_K": "100<T<400 inherited strict PI domain",
+    "required_q_kgkg": "0<=q<0.1 inherited strict PI domain; validq=0 retained",
+    "70_support": "joint physical/finite endpoints of T100,T50,q100,q50 at exactsameUTC/nativegrid; neither independent marginal means nor reduced area denominator",
+    "missing_lower_layer": "preserve original level position and NA; disallow PI success",
+    "surface_support": "retain original SST/MSL support rules; no d2m/meanSP substitute"
+  },
+  "PI_parameters": {
+    "CKCD": 0.9,
+    "ascent_flag": 1,
+    "diss_flag": 1,
+    "V_reduc": 0.8,
+    "ptop": 50,
+    "miss_handle": 1,
+    "outflow_source": "cape_star"
+  },
+  "native_pressure_hpa": [
+    1000,
+    925,
+    850,
+    700,
+    600,
+    500,
+    400,
+    300,
+    250,
+    200,
+    150,
+    100,
+    50
+  ],
+  "candidate_pressure_hpa": [
+    1000,
+    925,
+    850,
+    700,
+    600,
+    500,
+    400,
+    300,
+    250,
+    200,
+    150,
+    100,
+    70,
+    50
+  ],
+  "derived_level_hpa": [
+    70
+  ],
+  "is_native_era5_70hpa": false,
+  "configurations": {
+    "A": "original13levels + originalexclusiveptop; diagnostic baseline",
+    "B": "native13 plus logp70 + originalexclusiveptop",
+    "C": "sameprofile as B + isolated minimal50endpointinclusive slice variant",
+    "D": "single fixedsensitivity: C endpoint handling with variable values linear inp at70"
+  },
+  "full_incremental_release": false,
+  "physical_gate": "Actual source/QC, executed reference and adapter checks, allrelevant CAPE path upper support, numerical sensitivity and independent integrity review; not IFLalone or file existence",
+  "runtime_active_dependencies_modified": false
+}

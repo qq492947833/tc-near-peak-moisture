@@ -1,0 +1,80 @@
+{
+  "schema_version": "v5.1.thermodynamic_estimand.2",
+  "frozen_utc": "2026-10-08T14:23:09.575844+00:00",
+  "authorization": "Root task instruction before real thermodynamic effect calculation; preserves signed algebra without outcome-based selection",
+  "pi_estimand": "PI_OF_ENVIRONMENTAL_AREA_MEAN_PROFILE",
+  "pi_region_km": [
+    200,
+    800
+  ],
+  "profile_qc": {
+    "sp": "same native grid and UTC before averaging; never annulus mean SP substitute",
+    "humidity": "specific humidity kg/kg; convert to mixing ratio only inside PI",
+    "T_q_joint_area_support": true,
+    "minimum_valid_area_fraction": 0.9,
+    "denominator": "original geometric annulus area",
+    "unsupported_lowest_layer_prefix": "may remove and record lowest valid pressure and actual grid gap summary",
+    "internal_support_gaps": "reject, no interpolation",
+    "top_pressure_hpa": 50,
+    "sst": "existing ocean denominator/support rule; no pressure-layer SP mask"
+  },
+  "pi_parameters": {
+    "CKCD": 0.9,
+    "ascent_flag": 1,
+    "diss_flag": 1,
+    "V_reduc": 0.8,
+    "ptop": 50,
+    "miss_handle": 1,
+    "outflow_source": "cape_star"
+  },
+  "thermal_margin": {
+    "formula": "PI - contemporaneous observed wind",
+    "units": "m/s",
+    "wind_conversion": "1 kt = 1852/3600 m/s",
+    "not_outcome_model": "No future wind/PI is introduced by this derived diagnostic",
+    "source_policy": {
+      "actual_track": "center_kind actual_track, explicit position_extrapolated False, finite observed wind; optional actual_track_point does not govern eligibility",
+      "fixed_t0": "Join P1 actual_track same SID and exact UTC; original request wind_kt is repeated t0 and retained only as original_request_wind_kt",
+      "missing_current_wind": "PI retained, headroom missing, no t0 fallback"
+    }
+  },
+  "entropy": {
+    "pressure_hpa": 600,
+    "core_saturated_region_km": [
+      0,
+      100
+    ],
+    "environment_actual_region_km": [
+      100,
+      300
+    ],
+    "calculate": "native grid entropy first; then area means",
+    "core_required": "T, same-grid SP",
+    "environment_required": "T,q,same-grid SP",
+    "denominator": "PI-state sea-air pseudoadiabatic entropy difference at final actual RMW PP; not eye PMIN",
+    "formula_reference": "Tang and Emanuel 2012 main Eq.3",
+    "Lvo_jkg": 2555000,
+    "cp_d_jkgk": 1005.7,
+    "Rd_jkgk": 287.04,
+    "Rv_jkgk": 461.5
+  },
+  "ventilation": {
+    "primary_name": "signed entropy–shear ventilation diagnostic",
+    "primary_column": "raw_signed_index",
+    "formula": "shear200_850 * chi600 / PI",
+    "chi600": "(core600_sat_mean - environment600_actual_mean) / PI_RMW_sea_air_entropy_difference",
+    "negative_entropy_deficit": "retain signed index and chi in primary source table and eligible pair; no truncation to zero and no silent exclusion",
+    "interpretation": "negative value is not adverse ventilation",
+    "standard_nonnegative_column": "ventilation_index",
+    "standard_domain_flag": "standard_ventilation_domain_valid",
+    "nonestimable": "nonpositive entropy denominator, PI failure/nonpositive PI, or missing required components/support",
+    "sample_rule": "signed_estimable governs signed diagnostic; standard-domain flag cannot exclude primary signed pairs"
+  },
+  "provenance": {
+    "thermodynamics_source_sha256": "76cb2a946408791b02587fd7580d2b1df891bddb27d4f2e38f3b274607f1f420",
+    "upstream_commit": "872dcf42667818fe889bd3fb5a7952076be666e5",
+    "temporal": "same UTC; no future 3-day PI substitution"
+  },
+  "wind_source_clarification_utc": "2026-10-08T14:35:20.966748+00:00",
+  "configuration_history": "thermodynamic_estimand_v5_before_wind_source_clarification.json retains prior signed-diagnostic configuration. This revision corrects request-field interpretation before effect fitting; no extraction input or scientific threshold change."
+}

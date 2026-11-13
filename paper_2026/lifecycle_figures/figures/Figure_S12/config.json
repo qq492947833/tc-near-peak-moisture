@@ -1,0 +1,42 @@
+{
+  "figure_id": "Figure_S07",
+  "type": "supplementary",
+  "entry_function": "s4",
+  "legacy_identity": "SI_recurrence_robustness",
+  "family": "early",
+  "aliases": {
+    "FP0059": "inputs/b71de6cef6_FP0059.csv",
+    "FP0065": "inputs/dba3d75863_FP0065.csv",
+    "FP0066": "inputs/d4ba662878_FP0066.csv",
+    "FP0238": "inputs/53a55f6d6e_duration_summaries.csv",
+    "FP0240": "inputs/74fcbbd46b_annual_slopes.csv",
+    "FP0242": "inputs/0fceed2577_leave_one_sid_influence.csv"
+  },
+  "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained.",
+  "baseline": {
+    "label": "Figure_S07",
+    "source": "Figure_S14.png",
+    "sha256": "d3061109b301dfeaa83a0f6bbf7f1dec243335c37637316d0220aef23df7653d",
+    "pixels": [
+      6377,
+      8433
+    ],
+    "display_inches": [
+      5.871599956255468,
+      7.7646544181977255
+    ],
+    "effective_dpi": 1086.075353823465
+  },
+  "source_code": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

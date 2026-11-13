@@ -1,0 +1,859 @@
+{
+  "figure_id": "Figure_S03",
+  "type": "supplementary",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\12d8cdbe19_main_durations.csv"
+      ],
+      "fields": [
+        "sid",
+        "name",
+        "config",
+        "genesis_year",
+        "basin_genesis",
+        "multi",
+        "near_lmi_episode_count",
+        "genesis_time",
+        "maturity_time",
+        "resolution_time",
+        "termination_time",
+        "lmi_time",
+        "lmi",
+        "genesis_wind",
+        "threshold90_kt",
+        "threshold5_kt",
+        "physical_main_complete",
+        "physical_main_reason",
+        "positive_legal_nearpeak_interval",
+        "six_complete",
+        "six_reason",
+        "R_start_equals_F",
+        "frozen_complete_common_window",
+        "main_complete",
+        "T_R_h",
+        "T_U_h",
+        "T_F_h",
+        "T_L_h",
+        "T_B_h",
+        "T_R_long_h",
+        "T_R5_h",
+        "T_U5_h",
+        "T_F5_h",
+        "later_interval_episode_n",
+        "later_max_episode_h",
+        "later_class",
+        "later_group",
+        "pre_maturity_near_h",
+        "U_fraction_F",
+        "L_fraction_U",
+        "period",
+        "common_window_missing_n",
+        "common_window_non6h_gap_n",
+        "common_window_first_UTC",
+        "common_window_last_UTC",
+        "anchored_legal_episode_n",
+        "full_lifecycle_legal_episode_n",
+        "anchored_legal_recurrent",
+        "full_lifecycle_legal_recurrent"
+      ],
+      "filter": {
+        "executed_code": "table(name, chr(97 + idx), q, 'individual_durations')",
+        "entry_function": "s3",
+        "selected_rows": "panels\\00_a_individual_durations.csv",
+        "selected_rows_sha256": "4607b65d5bf5eb775e9ec653f740eab4f2eae6000576d69bdbc819391f20c943"
+      },
+      "sample_scope": {
+        "distinct_observed_SIDs": 2340
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "normalization": {
+        "executed_entry": "s3",
+        "role": "individual_durations",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "difference_direction": {
+        "role": "individual_durations",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "thematic/fig2_duration.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/30b971e398_paired_difference_summary.csv",
+            "sha256": "30b971e398b7321cbec3aa1812e3406cafb0a89e0bf6146552aed34153cade6e",
+            "original_path": "paired_difference_summary.csv",
+            "logical_keys": [
+              "thematic/fig2_window.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/12d8cdbe19_main_durations.parquet",
+            "sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+            "original_path": "main_durations.parquet",
+            "logical_keys": [
+              "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/12d8cdbe19_main_durations.csv",
+            "sha256": "4607b65d5bf5eb775e9ec653f740eab4f2eae6000576d69bdbc819391f20c943",
+            "original_path": "main_durations.parquet",
+            "logical_keys": [
+              "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+            ],
+            "deterministic_extraction": "provenance/export_parquet_csv.py",
+            "parent_sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+            "transformation": "Parquet-to-CSV, exact numerical and boolean round-trip verified; no row filtering or aggregation"
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "4607b65d5bf5eb775e9ec653f740eab4f2eae6000576d69bdbc819391f20c943"
+    },
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\53a55f6d6e_duration_summaries.csv"
+      ],
+      "fields": [
+        "scope",
+        "metric",
+        "statistic",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "n_sid",
+        "unit",
+        "B_planned",
+        "B_valid",
+        "seed",
+        "estimand"
+      ],
+      "filter": {
+        "executed_code": "z = table(name, chr(97 + idx), summaries[summaries.scope.eq(scope) & summaries.metric.isin(keys)], 'original_summaries')",
+        "entry_function": "s3",
+        "selected_rows": "panels\\01_a_original_summaries.csv",
+        "selected_rows_sha256": "a80ce8e45a610fdf48c3cc1c1d98694b278830221019f75289ac2e2d13fd7ac7"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2340
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "normalization": {
+        "executed_entry": "s3",
+        "role": "original_summaries",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "difference_direction": {
+        "role": "original_summaries",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high"
+        ],
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "thematic/fig2_duration.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/30b971e398_paired_difference_summary.csv",
+            "sha256": "30b971e398b7321cbec3aa1812e3406cafb0a89e0bf6146552aed34153cade6e",
+            "original_path": "paired_difference_summary.csv",
+            "logical_keys": [
+              "thematic/fig2_window.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/12d8cdbe19_main_durations.parquet",
+            "sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+            "original_path": "main_durations.parquet",
+            "logical_keys": [
+              "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/12d8cdbe19_main_durations.csv",
+            "sha256": "4607b65d5bf5eb775e9ec653f740eab4f2eae6000576d69bdbc819391f20c943",
+            "original_path": "main_durations.parquet",
+            "logical_keys": [
+              "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+            ],
+            "deterministic_extraction": "provenance/export_parquet_csv.py",
+            "parent_sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+            "transformation": "Parquet-to-CSV, exact numerical and boolean round-trip verified; no row filtering or aggregation"
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "a80ce8e45a610fdf48c3cc1c1d98694b278830221019f75289ac2e2d13fd7ac7"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\12d8cdbe19_main_durations.csv"
+      ],
+      "fields": [
+        "sid",
+        "name",
+        "config",
+        "genesis_year",
+        "basin_genesis",
+        "multi",
+        "near_lmi_episode_count",
+        "genesis_time",
+        "maturity_time",
+        "resolution_time",
+        "termination_time",
+        "lmi_time",
+        "lmi",
+        "genesis_wind",
+        "threshold90_kt",
+        "threshold5_kt",
+        "physical_main_complete",
+        "physical_main_reason",
+        "positive_legal_nearpeak_interval",
+        "six_complete",
+        "six_reason",
+        "R_start_equals_F",
+        "frozen_complete_common_window",
+        "main_complete",
+        "T_R_h",
+        "T_U_h",
+        "T_F_h",
+        "T_L_h",
+        "T_B_h",
+        "T_R_long_h",
+        "T_R5_h",
+        "T_U5_h",
+        "T_F5_h",
+        "later_interval_episode_n",
+        "later_max_episode_h",
+        "later_class",
+        "later_group",
+        "pre_maturity_near_h",
+        "U_fraction_F",
+        "L_fraction_U",
+        "period",
+        "common_window_missing_n",
+        "common_window_non6h_gap_n",
+        "common_window_first_UTC",
+        "common_window_last_UTC",
+        "anchored_legal_episode_n",
+        "full_lifecycle_legal_episode_n",
+        "anchored_legal_recurrent",
+        "full_lifecycle_legal_recurrent"
+      ],
+      "filter": {
+        "executed_code": "table(name, chr(97 + idx), q, 'individual_durations')",
+        "entry_function": "s3",
+        "selected_rows": "panels\\02_b_individual_durations.csv",
+        "selected_rows_sha256": "f670f1aab5f98e7a7c19ae1c70fb522ac32dc79664ac8941f47165acff3cbc1e"
+      },
+      "sample_scope": {
+        "distinct_observed_SIDs": 123
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "normalization": {
+        "executed_entry": "s3",
+        "role": "individual_durations",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "difference_direction": {
+        "role": "individual_durations",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "thematic/fig2_duration.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/30b971e398_paired_difference_summary.csv",
+            "sha256": "30b971e398b7321cbec3aa1812e3406cafb0a89e0bf6146552aed34153cade6e",
+            "original_path": "paired_difference_summary.csv",
+            "logical_keys": [
+              "thematic/fig2_window.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/12d8cdbe19_main_durations.parquet",
+            "sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+            "original_path": "main_durations.parquet",
+            "logical_keys": [
+              "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/12d8cdbe19_main_durations.csv",
+            "sha256": "4607b65d5bf5eb775e9ec653f740eab4f2eae6000576d69bdbc819391f20c943",
+            "original_path": "main_durations.parquet",
+            "logical_keys": [
+              "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+            ],
+            "deterministic_extraction": "provenance/export_parquet_csv.py",
+            "parent_sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+            "transformation": "Parquet-to-CSV, exact numerical and boolean round-trip verified; no row filtering or aggregation"
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "f670f1aab5f98e7a7c19ae1c70fb522ac32dc79664ac8941f47165acff3cbc1e"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\53a55f6d6e_duration_summaries.csv"
+      ],
+      "fields": [
+        "scope",
+        "metric",
+        "statistic",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "n_sid",
+        "unit",
+        "B_planned",
+        "B_valid",
+        "seed",
+        "estimand"
+      ],
+      "filter": {
+        "executed_code": "z = table(name, chr(97 + idx), summaries[summaries.scope.eq(scope) & summaries.metric.isin(keys)], 'original_summaries')",
+        "entry_function": "s3",
+        "selected_rows": "panels\\03_b_original_summaries.csv",
+        "selected_rows_sha256": "2a38de5e443e37573ffe331a85e6d40bce0356107f20fc9777770b590a712bcb"
+      },
+      "sample_scope": {
+        "n_sid": [
+          123
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "normalization": {
+        "executed_entry": "s3",
+        "role": "original_summaries",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "difference_direction": {
+        "role": "original_summaries",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high"
+        ],
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "thematic/fig2_duration.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/30b971e398_paired_difference_summary.csv",
+            "sha256": "30b971e398b7321cbec3aa1812e3406cafb0a89e0bf6146552aed34153cade6e",
+            "original_path": "paired_difference_summary.csv",
+            "logical_keys": [
+              "thematic/fig2_window.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/12d8cdbe19_main_durations.parquet",
+            "sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+            "original_path": "main_durations.parquet",
+            "logical_keys": [
+              "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/12d8cdbe19_main_durations.csv",
+            "sha256": "4607b65d5bf5eb775e9ec653f740eab4f2eae6000576d69bdbc819391f20c943",
+            "original_path": "main_durations.parquet",
+            "logical_keys": [
+              "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+            ],
+            "deterministic_extraction": "provenance/export_parquet_csv.py",
+            "parent_sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+            "transformation": "Parquet-to-CSV, exact numerical and boolean round-trip verified; no row filtering or aggregation"
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "2a38de5e443e37573ffe331a85e6d40bce0356107f20fc9777770b590a712bcb"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs\\30b971e398_paired_difference_summary.csv"
+      ],
+      "fields": [
+        "scope",
+        "variable",
+        "contrast",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "estimate_sd",
+        "ci_low_sd",
+        "ci_high_sd",
+        "reference_sd",
+        "n_sid",
+        "n_sampling_frame",
+        "B_planned",
+        "B_valid",
+        "B_failed",
+        "min_draw_valid_n",
+        "max_draw_valid_n",
+        "unit",
+        "P",
+        "q",
+        "test_family",
+        "seed",
+        "estimand",
+        "selection_label"
+      ],
+      "filter": {
+        "executed_code": "q = table(name, 'c', w[w.scope.eq('main_multi')], 'recurrent_windows')",
+        "entry_function": "s3",
+        "selected_rows": "panels\\04_c_recurrent_windows.csv",
+        "selected_rows_sha256": "c3079dc190302ca278d08ffba806965aebc1b52e8c91bade73dfa89a2236856e"
+      },
+      "sample_scope": {
+        "n_sid": [
+          123,
+          121,
+          120
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "normalization": {
+        "executed_entry": "s3",
+        "role": "recurrent_windows",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "difference_direction": {
+        "role": "recurrent_windows",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "ci_low_sd",
+          "ci_high_sd"
+        ],
+        "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "thematic/fig2_duration.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/30b971e398_paired_difference_summary.csv",
+            "sha256": "30b971e398b7321cbec3aa1812e3406cafb0a89e0bf6146552aed34153cade6e",
+            "original_path": "paired_difference_summary.csv",
+            "logical_keys": [
+              "thematic/fig2_window.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/12d8cdbe19_main_durations.parquet",
+            "sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+            "original_path": "main_durations.parquet",
+            "logical_keys": [
+              "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/12d8cdbe19_main_durations.csv",
+            "sha256": "4607b65d5bf5eb775e9ec653f740eab4f2eae6000576d69bdbc819391f20c943",
+            "original_path": "main_durations.parquet",
+            "logical_keys": [
+              "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+            ],
+            "deterministic_extraction": "provenance/export_parquet_csv.py",
+            "parent_sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+            "transformation": "Parquet-to-CSV, exact numerical and boolean round-trip verified; no row filtering or aggregation"
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "c3079dc190302ca278d08ffba806965aebc1b52e8c91bade73dfa89a2236856e"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+      "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+      "original_path": "duration_summaries.csv",
+      "logical_keys": [
+        "thematic/fig2_duration.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/30b971e398_paired_difference_summary.csv",
+      "sha256": "30b971e398b7321cbec3aa1812e3406cafb0a89e0bf6146552aed34153cade6e",
+      "original_path": "paired_difference_summary.csv",
+      "logical_keys": [
+        "thematic/fig2_window.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/12d8cdbe19_main_durations.parquet",
+      "sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+      "original_path": "main_durations.parquet",
+      "logical_keys": [
+        "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/12d8cdbe19_main_durations.csv",
+      "sha256": "4607b65d5bf5eb775e9ec653f740eab4f2eae6000576d69bdbc819391f20c943",
+      "original_path": "main_durations.parquet",
+      "logical_keys": [
+        "04_Data_and_Code/github_ready/v67_review/baseline/M2_inputs/durations.csv"
+      ],
+      "deterministic_extraction": "provenance/export_parquet_csv.py",
+      "parent_sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04",
+      "transformation": "Parquet-to-CSV, exact numerical and boolean round-trip verified; no row filtering or aggregation"
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S03",
+    "size_mm": [
+      180.0,
+      175.0
+    ],
+    "pixels": [
+      6377,
+      6200
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 981.6715151515151,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 8.0,
+    "files": {
+      "png": {
+        "path": "Figure_S03.png",
+        "sha256": "c7f78f5a62d45f4359ac6454fcf4cc25b6db109abcd211fd1415463041b67a45"
+      },
+      "tiff": {
+        "path": "Figure_S03.tiff",
+        "sha256": "4307eaf1b8f8a1a5fb87f596383a4c3bf2a6703a1ea23ff0f0468dec13f368d1"
+      },
+      "pdf": {
+        "path": "Figure_S03.pdf",
+        "sha256": "1d25f8d6c312c1fe9422497fc47659febd4c0e05f43f3266aae1db7d0b9265de"
+      },
+      "svg": {
+        "path": "Figure_S03.svg",
+        "sha256": "ea32fb76f1675e0266b7c79bc5f603a2fe63b6052a4155b5fb4503d7cee69c5c"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 3,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 496.06299212598424
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              66.33070866141733,
+              309.22219809606526,
+              248.71301725582177,
+              451.4173228346457
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              48.33070866141733,
+              463.4173228346457
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              312.5468252638633,
+              309.22219809606526,
+              494.92913385826773,
+              451.4173228346457
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              294.5468252638633,
+              463.4173228346457
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              66.33070866141733,
+              59.527559055118104,
+              494.92913385826773,
+              218.78609876232812
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 2,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              48.33070866141733,
+              230.78609876232818
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          }
+        ],
+        "column_groups": [],
+        "boundary_groups": [
+          {
+            "id": "inferred-shared-left-1",
+            "edge": "left",
+            "panels": [
+              "a",
+              "c"
+            ]
+          },
+          {
+            "id": "inferred-shared-right-1",
+            "edge": "right",
+            "panels": [
+              "b",
+              "c"
+            ]
+          }
+        ],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S03",
+    "source": "Figure_S03.png",
+    "sha256": "5b6a6945b8d7709224fb863ee84176510ede8e2d49e1c8561134a23ec93f6953",
+    "pixels": [
+      6377,
+      6200
+    ],
+    "display_inches": [
+      6.496062992125984,
+      6.315757874015748
+    ],
+    "effective_dpi": 981.6715151515151
+  },
+  "caption": "Supplementary Fig. 3 | Duration and environmental differences among near-peak representations. a,b, Empirical cumulative distributions of cyclone-level covered durations over valid 6-h intervals in 2,340 main-sample histories (a), including the 123 recurrent cyclones shown separately in b. R is the continuous episode containing the first LMI; Longest is the longest episode in the anchored domain; U is the union of qualifying episodes from that onset; F encloses U. Later occupancy  and weakening bridges  satisfy . c, Paired whole-window environmental contrasts,  and , in recurrent cyclones (factor-specific n = 120–123). Only the averaging windows change; each cyclone's environmental record is fixed. These are differences between window means, distinct from means of isolated later-occupancy or bridge components. Factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Contrasts are divided by fixed lifecycle reference SDs. Duration curves use cyclone-level observations; means and their marginal intervals are reported in Table S1a. In c, columns show paired means and whiskers show marginal 95% percentile intervals from 2,000 paired SID resamples. Supplementary Fig. 33 gives whole-cohort and component-mean comparisons; Table S1b and figure sources provide native estimates, intervals, counts and reference parameters. Table S1a also reports means and intervals for the longest episode, later occupancy and bridges.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

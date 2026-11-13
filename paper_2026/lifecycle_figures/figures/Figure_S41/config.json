@@ -1,0 +1,38 @@
+{
+  "figure_id": "Figure_S32",
+  "type": "supplementary",
+  "entry_function": "fig25",
+  "legacy_identity": "SI_historical_environment_recovery",
+  "family": "late",
+  "aliases": {
+    "geography/environment_model_paired_comparisons.csv": "inputs/01cf8f3eba_environment_model_paired_comparisons.csv",
+    "geography/post_process_curves.csv": "inputs/792d8f683f_post_process_curves.csv"
+  },
+  "caption": "Supplementary Fig. 32 | Environmental information and SCS humidity after historical-threshold departure. a, Held-out interval-log-likelihood gains from adding dynamics, moisture, thermodynamics or all environmental variables to the common baseline on 1,281 main-sample cyclones. Error bars are paired 95% intervals; gains from separate additions are not additive contributions. b, Mean 700-hPa specific humidity in the 300–800 km annulus at 0, 6, 12, 18 and 24 hours after departure, with the existing pointwise 95% intervals. Complete five-time diagnostic support comprises 15 returning, 30 complete-nonreturning and 42 unknown-outcome cyclones. The full SCS departure subset contains 94 cyclones, including 49 with unknown outcomes; the seven without complete five-time humidity support are not reassigned as nonreturns.",
+  "baseline": {
+    "label": "Figure_S32",
+    "source": "Figure_S25.png",
+    "sha256": "b5a80b27d4fc53ade97fc71733b59f882f5050675cf39d48c95e2c829fdb0c18",
+    "pixels": [
+      6377,
+      4429
+    ],
+    "display_inches": [
+      6.496062992125984,
+      4.511692913385827
+    ],
+    "effective_dpi": 981.6714224630663
+  },
+  "source_code": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

@@ -1,0 +1,945 @@
+{
+  "figure_id": "Figure_04",
+  "type": "main",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/direct/fig5_trajectories.csv"
+      ],
+      "fields": {
+        "direct/fig5_trajectories.csv": [
+          "variable",
+          "lag_h",
+          "series",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "z = z[z.variable.eq('midRH')]",
+        "geo = z[z.model.eq('geographical')].iloc[0]",
+        "state = z[z.model.eq('geographical_state')].iloc[0]",
+        "col = {'internal': BLUE, 'final': ORANGE, 'difference': INK}[s]"
+      ],
+      "sample_scope": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "units": {
+        "x": "",
+        "y": "RH (%)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "weights": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/fig5_trajectories.csv": "ac2b5bbe44ded7cc3da39aa5f159c36507cf61a60a847bd7d5cf5a201cfee6a9"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "Absolute trajectory; transform=identity",
+          "source_key": "direct/fig5_trajectories.csv",
+          "fields": [
+            "variable",
+            "lag_h",
+            "series",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "535e4591cd14f1a3df8ec202cff449c4f25ea0f6ff30956c341e8dbff7721bf7"
+        },
+        {
+          "id": "a",
+          "role": "Absolute trajectory; transform=identity",
+          "source_key": "direct/fig5_trajectories.csv",
+          "fields": [
+            "variable",
+            "lag_h",
+            "series",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_a_1.csv",
+          "sha256": "a78080853b80bb32b490b6ca8f57a3a490768a37eba48271dcba8c82fb1a73f6"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/direct/fig5_trajectories.csv"
+      ],
+      "fields": {
+        "direct/fig5_trajectories.csv": [
+          "variable",
+          "lag_h",
+          "series",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "z = z[z.variable.eq('midRH')]",
+        "geo = z[z.model.eq('geographical')].iloc[0]",
+        "state = z[z.model.eq('geographical_state')].iloc[0]",
+        "col = {'internal': BLUE, 'final': ORANGE, 'difference': INK}[s]"
+      ],
+      "sample_scope": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "units": {
+        "x": "Time from departure (h)",
+        "y": "ΔRH (pp)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "weights": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/fig5_trajectories.csv": "ac2b5bbe44ded7cc3da39aa5f159c36507cf61a60a847bd7d5cf5a201cfee6a9"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "d",
+          "role": "Saved direct paired difference and its own interval; transform=identity",
+          "source_key": "direct/fig5_trajectories.csv",
+          "fields": [
+            "variable",
+            "lag_h",
+            "series",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_d_2.csv",
+          "sha256": "b5e7cb4b1edaaf550b9604b2ca41707346efb50e171ee23ed32972a7be6659f8"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/direct/fig5_trajectories.csv"
+      ],
+      "fields": {
+        "direct/fig5_trajectories.csv": [
+          "variable",
+          "lag_h",
+          "series",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "z = z[z.variable.eq('midRH')]",
+        "geo = z[z.model.eq('geographical')].iloc[0]",
+        "state = z[z.model.eq('geographical_state')].iloc[0]",
+        "col = {'internal': BLUE, 'final': ORANGE, 'difference': INK}[s]"
+      ],
+      "sample_scope": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "units": {
+        "x": "",
+        "y": "Shear (m s⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "weights": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/fig5_trajectories.csv": "ac2b5bbe44ded7cc3da39aa5f159c36507cf61a60a847bd7d5cf5a201cfee6a9"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "Absolute trajectory; transform=identity",
+          "source_key": "direct/fig5_trajectories.csv",
+          "fields": [
+            "variable",
+            "lag_h",
+            "series",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_b_3.csv",
+          "sha256": "28eacd1b40f607df9ceaf4cee60c343e4d072fdbadd96adb976f7fd50dd1f5d2"
+        },
+        {
+          "id": "b",
+          "role": "Absolute trajectory; transform=identity",
+          "source_key": "direct/fig5_trajectories.csv",
+          "fields": [
+            "variable",
+            "lag_h",
+            "series",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_b_4.csv",
+          "sha256": "445e0d717a93f835c0c10176bcee5723905a2428b0f88765730f7a433d7a7c1f"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/direct/fig5_trajectories.csv"
+      ],
+      "fields": {
+        "direct/fig5_trajectories.csv": [
+          "variable",
+          "lag_h",
+          "series",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "z = z[z.variable.eq('midRH')]",
+        "geo = z[z.model.eq('geographical')].iloc[0]",
+        "state = z[z.model.eq('geographical_state')].iloc[0]",
+        "col = {'internal': BLUE, 'final': ORANGE, 'difference': INK}[s]"
+      ],
+      "sample_scope": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "units": {
+        "x": "Time from departure (h)",
+        "y": "ΔShear (m s⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "weights": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/fig5_trajectories.csv": "ac2b5bbe44ded7cc3da39aa5f159c36507cf61a60a847bd7d5cf5a201cfee6a9"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "e",
+          "role": "Saved direct paired difference and its own interval; transform=identity",
+          "source_key": "direct/fig5_trajectories.csv",
+          "fields": [
+            "variable",
+            "lag_h",
+            "series",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_e_5.csv",
+          "sha256": "3aa9f0157a30c617be90e14230c516179d16be48d24a6a83522009f5bf17eff4"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/direct/fig5_trajectories.csv"
+      ],
+      "fields": {
+        "direct/fig5_trajectories.csv": [
+          "variable",
+          "lag_h",
+          "series",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "z = z[z.variable.eq('midRH')]",
+        "geo = z[z.model.eq('geographical')].iloc[0]",
+        "state = z[z.model.eq('geographical_state')].iloc[0]",
+        "col = {'internal': BLUE, 'final': ORANGE, 'difference': INK}[s]"
+      ],
+      "sample_scope": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "units": {
+        "x": "",
+        "y": "PI − V (m s⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "weights": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/fig5_trajectories.csv": "ac2b5bbe44ded7cc3da39aa5f159c36507cf61a60a847bd7d5cf5a201cfee6a9"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "Absolute trajectory; transform=identity",
+          "source_key": "direct/fig5_trajectories.csv",
+          "fields": [
+            "variable",
+            "lag_h",
+            "series",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_c_6.csv",
+          "sha256": "04ad803e87af916526fd10076ad51126eb4805e78269bf180c60b9d5923087f2"
+        },
+        {
+          "id": "c",
+          "role": "Absolute trajectory; transform=identity",
+          "source_key": "direct/fig5_trajectories.csv",
+          "fields": [
+            "variable",
+            "lag_h",
+            "series",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_c_7.csv",
+          "sha256": "1a9cf430418581ecdd2b0a057545d16cbeb6aaa3aa4f2e48c8548eac1fa6a7a1"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/direct/fig5_trajectories.csv"
+      ],
+      "fields": {
+        "direct/fig5_trajectories.csv": [
+          "variable",
+          "lag_h",
+          "series",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "z = z[z.variable.eq('midRH')]",
+        "geo = z[z.model.eq('geographical')].iloc[0]",
+        "state = z[z.model.eq('geographical_state')].iloc[0]",
+        "col = {'internal': BLUE, 'final': ORANGE, 'difference': INK}[s]"
+      ],
+      "sample_scope": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "units": {
+        "x": "Time from departure (h)",
+        "y": "Δ(PI − V) (m s⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "weights": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/fig5_trajectories.csv": "ac2b5bbe44ded7cc3da39aa5f159c36507cf61a60a847bd7d5cf5a201cfee6a9"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "f",
+          "role": "Saved direct paired difference and its own interval; transform=identity",
+          "source_key": "direct/fig5_trajectories.csv",
+          "fields": [
+            "variable",
+            "lag_h",
+            "series",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_f_8.csv",
+          "sha256": "9dbdd9a2bb46b05f245efdfddc6af1051ef6249f4b9bad9c7a31cf90aa7757a1"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "g",
+      "input_files": [
+        "inputs/direct/environmental_contrasts.csv"
+      ],
+      "fields": {
+        "direct/environmental_contrasts.csv": [
+          "coverage",
+          "model",
+          "variable",
+          "units",
+          "original_pairs",
+          "overlap_pairs",
+          "original_raw",
+          "original_lo",
+          "original_hi",
+          "overlap_raw",
+          "overlap_raw_lo",
+          "overlap_raw_hi",
+          "standardized",
+          "lo",
+          "hi",
+          "valid_draws",
+          "failed_draws",
+          "ESS_final",
+          "ESS_internal",
+          "max_abs_smd",
+          "point_converged"
+        ]
+      },
+      "filter": [
+        "z = z[z.variable.eq('midRH')]",
+        "geo = z[z.model.eq('geographical')].iloc[0]",
+        "state = z[z.model.eq('geographical_state')].iloc[0]",
+        "col = {'internal': BLUE, 'final': ORANGE, 'difference': INK}[s]"
+      ],
+      "sample_scope": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "units": {
+        "x": "",
+        "y": "Pre-event ΔRH\n(pp)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "weights": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/environmental_contrasts.csv": "311e12e8ea1d41fd8c3dd0ab01901ebda435b24298cc36fa43fcee1576797e84"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "g",
+          "role": "All original, restricted and adjusted means, CI, model/support fields preserved; transform=identity",
+          "source_key": "direct/environmental_contrasts.csv",
+          "fields": [
+            "coverage",
+            "model",
+            "variable",
+            "units",
+            "original_pairs",
+            "overlap_pairs",
+            "original_raw",
+            "original_lo",
+            "original_hi",
+            "overlap_raw",
+            "overlap_raw_lo",
+            "overlap_raw_hi",
+            "standardized",
+            "lo",
+            "hi",
+            "valid_draws",
+            "failed_draws",
+            "ESS_final",
+            "ESS_internal",
+            "max_abs_smd",
+            "point_converged",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 2,
+          "saved_selected_table": "panel_g_9.csv",
+          "sha256": "79b6f497fc89a49ad6b14bbc6c587471e935cd87f1dd2e946f1a4df626cf332e"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "direct/environmental_contrasts.csv",
+      "relative_path": "inputs/direct/environmental_contrasts.csv",
+      "sha256": "311e12e8ea1d41fd8c3dd0ab01901ebda435b24298cc36fa43fcee1576797e84",
+      "original_path": "environmental_contrasts.csv",
+      "bytes": 5810
+    },
+    {
+      "key": "direct/fig5_trajectories.csv",
+      "relative_path": "inputs/direct/fig5_trajectories.csv",
+      "sha256": "ac2b5bbe44ded7cc3da39aa5f159c36507cf61a60a847bd7d5cf5a201cfee6a9",
+      "original_path": "fig5_trajectories.csv",
+      "bytes": 6721
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_04.png",
+      "sha256": "be79e6f80d8c820f7854920f324b78fcb7874bc7c5fecdcd5f2529db0e8b4651"
+    },
+    "tiff": {
+      "path": "Figure_04.tiff",
+      "sha256": "f6003259ea3618e7cf246b8b7d84ba8187fad8262b669cc2a8f9865443bf94ae"
+    },
+    "pdf": {
+      "path": "Figure_04.pdf",
+      "sha256": "29256b816dc11d5dfb0cc7ec8ccb42e84521ffd16d7671680c3cd9f7263e8cb4"
+    },
+    "svg": {
+      "path": "Figure_04.svg",
+      "sha256": "c3a51e50495a0f636843b4210836fcce5b29ca775e295e92509754b7adfd5717"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_04",
+      "returncode": 0,
+      "elapsed_s": 12.52,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 9,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 501.732283464567
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              56.12598425196851,
+              331.0748125327433,
+              158.17322834645674,
+              444.92598425196854
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              36.12598425196852,
+              456.9259842519686
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              56.12598425196851,
+              186.34720304326413,
+              158.17322834645674,
+              268.32004668110636
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              36.12598425196852,
+              280.32004668110636
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              224.50393700787407,
+              331.0748125327433,
+              326.5511811023623,
+              444.92598425196854
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              204.5039370078741,
+              456.9259842519686
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              224.50393700787407,
+              186.34720304326413,
+              326.5511811023623,
+              268.32004668110636
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              204.5039370078741,
+              280.32004668110636
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              392.8818897637796,
+              331.0748125327433,
+              494.92913385826785,
+              444.92598425196854
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 2,
+            "col_stop": 3,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              372.8818897637796,
+              456.9259842519686
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              392.8818897637796,
+              186.34720304326413,
+              494.92913385826785,
+              268.32004668110636
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 2,
+            "col_stop": 3,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              372.8818897637796,
+              280.32004668110636
+            ]
+          },
+          {
+            "id": "g",
+            "bbox_pt": [
+              56.12598425196851,
+              78.05196850393702,
+              494.92913385826785,
+              123.59243719162713
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 3,
+            "panel_label": "g",
+            "panel_label_anchor_pt": [
+              36.12598425196852,
+              135.59243719162714
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b",
+              "c"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "d",
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "id": "inferred-column-3",
+            "panels": [
+              "c",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [
+          {
+            "id": "inferred-shared-left-1",
+            "edge": "left",
+            "panels": [
+              "a",
+              "d",
+              "g"
+            ]
+          },
+          {
+            "id": "inferred-shared-right-1",
+            "edge": "right",
+            "panels": [
+              "c",
+              "f",
+              "g"
+            ]
+          }
+        ],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      980.5818472217115
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_04",
+      "source": "old_Figure04.png",
+      "sha256": "fcfc55161d0efde60d26b897a0290dac9577971716f5d8d83b1204f451036d31",
+      "pixels": [
+        6375,
+        6276
+      ],
+      "display_inches": [
+        6.496062992125984,
+        6.395182633420823
+      ],
+      "effective_dpi": 981.3636363636364
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Fig. 4 | Environmental histories distinguish temporary from final departure. a–c, Mid-level relative humidity, deep-layer shear and PI − V around the paired departures. Blue and orange lines show the original class means; shading gives their saved 95% intervals. d–f, Direct temporary-minus-final contrasts with their own paired intervals, retaining the same time ordering. The vertical line marks departure. g, Pre-event RH contrasts before and after restriction to common measured support and adjustment for geography, season and cyclone state. The four tiles show means; Table S5b reports confidence intervals and sample sizes for the full-sample raw contrast and the two weighted contrasts. The original 117-pair estimate and the three 105-pair comparisons remain distinct. Pre-event means use at least three common observations from −24 to −6 h; the direct contrasts retain paired-SID uncertainty.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "final_layout.py": "ca9be327015a20d90a707734626dccddb746117b546b978c74e65fad4174a39e",
+      "render_source.py": "13a814a5697fdf3e30fe3e064533ca423b94ad05c6cd5df265203b0677eab75e",
+      "run.py": "c0f930fd858d8173795dd99ebfeb916bf5a249f62278ab262c72be672a326509"
+    },
+    "late_accepted_layout_sources": [
+      {
+        "original_path": "other_matrix_minimal_keys.py",
+        "relative_snapshot": "accepted_layout_source_1.txt",
+        "sha256": "f74a199c418c08a1e130e70ed1d729424623582d3c9c376cb6ca6e5a565c6fa1",
+        "executed_dependency": false
+      }
+    ],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

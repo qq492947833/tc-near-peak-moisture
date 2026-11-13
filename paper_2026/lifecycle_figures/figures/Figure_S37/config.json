@@ -1,0 +1,37 @@
+{
+  "figure_id": "Figure_S28",
+  "type": "supplementary",
+  "entry_function": "fig26",
+  "legacy_identity": "SI_asymmetry_environment",
+  "family": "late",
+  "aliases": {
+    "FP0177": "inputs/0d49224d67_effects.csv"
+  },
+  "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation.",
+  "baseline": {
+    "label": "Figure_S28",
+    "source": "Figure_S18.png",
+    "sha256": "bf808f6de16b76f7e87e897e26250afe5e8e90724347e7473f133758042afc3d",
+    "pixels": [
+      6377,
+      5846
+    ],
+    "display_inches": [
+      6.496062992125984,
+      5.955148731408574
+    ],
+    "effective_dpi": 981.6715151515151
+  },
+  "source_code": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

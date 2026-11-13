@@ -1,0 +1,468 @@
+{
+  "figure_id": "Figure_S15",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/direct/exchange_background80.csv"
+      ],
+      "fields": {
+        "direct/exchange_background80.csv": [
+          "model",
+          "metric",
+          "target",
+          "units",
+          "n_original",
+          "n_target",
+          "estimate",
+          "low",
+          "high",
+          "draw_attempts",
+          "valid_draws",
+          "failed_draws",
+          "interval_type",
+          "point_accepted"
+        ]
+      },
+      "filter": [
+        "d = d[d[k].eq(v)]",
+        "z = d[d.metric.eq('post_r300_' + kind)]"
+      ],
+      "sample_scope": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+      "units": {
+        "x": "Contrast (10¹² kg)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+      "weights": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/exchange_background80.csv": "dd31fb8764c6b9d5fa7a237c48cf4f7ce4d7e6929975f0327dce56c72abb3765"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "All four support/weighting targets and all CI retained; weighted estimates use refits; transform=identity",
+          "source_key": "direct/exchange_background80.csv",
+          "fields": [
+            "model",
+            "metric",
+            "target",
+            "units",
+            "n_original",
+            "n_target",
+            "estimate",
+            "low",
+            "high",
+            "draw_attempts",
+            "valid_draws",
+            "failed_draws",
+            "interval_type",
+            "point_accepted",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "a843aabb9ad52e3e2e2e8fda529dca7129e437f1a04f60ca47c0488f615e24f0"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/direct/exchange_background80.csv"
+      ],
+      "fields": {
+        "direct/exchange_background80.csv": [
+          "model",
+          "metric",
+          "target",
+          "units",
+          "n_original",
+          "n_target",
+          "estimate",
+          "low",
+          "high",
+          "draw_attempts",
+          "valid_draws",
+          "failed_draws",
+          "interval_type",
+          "point_accepted"
+        ]
+      },
+      "filter": [
+        "d = d[d[k].eq(v)]",
+        "z = d[d.metric.eq('post_r300_' + kind)]"
+      ],
+      "sample_scope": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+      "units": {
+        "x": "Contrast (10¹² kg)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+      "weights": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/exchange_background80.csv": "dd31fb8764c6b9d5fa7a237c48cf4f7ce4d7e6929975f0327dce56c72abb3765"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "All four support/weighting targets and all CI retained; weighted estimates use refits; transform=identity",
+          "source_key": "direct/exchange_background80.csv",
+          "fields": [
+            "model",
+            "metric",
+            "target",
+            "units",
+            "n_original",
+            "n_target",
+            "estimate",
+            "low",
+            "high",
+            "draw_attempts",
+            "valid_draws",
+            "failed_draws",
+            "interval_type",
+            "point_accepted",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_b_1.csv",
+          "sha256": "c45044759baf2597dde8712c821abadfac96f79970a7e9e7128706cbdbe6545f"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/direct/exchange_background80.csv"
+      ],
+      "fields": {
+        "direct/exchange_background80.csv": [
+          "model",
+          "metric",
+          "target",
+          "units",
+          "n_original",
+          "n_target",
+          "estimate",
+          "low",
+          "high",
+          "draw_attempts",
+          "valid_draws",
+          "failed_draws",
+          "interval_type",
+          "point_accepted"
+        ]
+      },
+      "filter": [
+        "d = d[d[k].eq(v)]",
+        "z = d[d.metric.eq('post_r300_' + kind)]"
+      ],
+      "sample_scope": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+      "units": {
+        "x": "Contrast (10¹² kg)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+      "weights": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/exchange_background80.csv": "dd31fb8764c6b9d5fa7a237c48cf4f7ce4d7e6929975f0327dce56c72abb3765"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "All four support/weighting targets and all CI retained; weighted estimates use refits; transform=identity",
+          "source_key": "direct/exchange_background80.csv",
+          "fields": [
+            "model",
+            "metric",
+            "target",
+            "units",
+            "n_original",
+            "n_target",
+            "estimate",
+            "low",
+            "high",
+            "draw_attempts",
+            "valid_draws",
+            "failed_draws",
+            "interval_type",
+            "point_accepted",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_c_2.csv",
+          "sha256": "b19c710300cf6742bdd18d60786895c501ad65880403c115ee9cacf4209aa211"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "direct/exchange_background80.csv",
+      "relative_path": "inputs/direct/exchange_background80.csv",
+      "sha256": "dd31fb8764c6b9d5fa7a237c48cf4f7ce4d7e6929975f0327dce56c72abb3765",
+      "original_path": "exchange_background80.csv",
+      "bytes": 3183
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S15.png",
+      "sha256": "8f34121474502e44274e64dbcb5c9297b2ba73162a1892a276efbec9524968bb"
+    },
+    "tiff": {
+      "path": "Figure_S15.tiff",
+      "sha256": "c4a3966c10cf5c144d4a6b72feba10fa367120184cac956242674375f4d136a8"
+    },
+    "pdf": {
+      "path": "Figure_S15.pdf",
+      "sha256": "e56ec9d166578bdd1616b8cf88c33dba59f58dc6c20474ddc08457ae6b9af9f9"
+    },
+    "svg": {
+      "path": "Figure_S15.svg",
+      "sha256": "f2c1504b9c425c5c2ed8212b76a4426b6d7f7fd8319a27832ceb4178e3bbf9c4"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S15",
+      "returncode": 0,
+      "elapsed_s": 10.09,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 297.6377952755906
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              122.45669291338584,
+              32.74015748031496,
+              229.99194286760664,
+              270.85039370078744
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              106.45669291338582,
+              282.8503937007875
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              253.64969785753527,
+              32.74015748031496,
+              361.1849478117561,
+              270.85039370078744
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              237.64969785753524,
+              282.8503937007875
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              384.8427028016847,
+              32.74015748031496,
+              492.3779527559055,
+              270.85039370078744
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 2,
+            "col_stop": 3,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              368.8427028016847,
+              282.8503937007875
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ],
+        "column_groups": [],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6714082626711
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S15",
+      "source": "Figure_S07.png",
+      "sha256": "8f34121474502e44274e64dbcb5c9297b2ba73162a1892a276efbec9524968bb",
+      "pixels": [
+        6377,
+        3720
+      ],
+      "display_inches": [
+        6.496062992125984,
+        3.789455380577428
+      ],
+      "effective_dpi": 981.6714082626711
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 15 | Boundary-exchange contrasts on comparable measured backgrounds. a–c, Temporary-minus-final differences in gross inward (a), gross outward (b) and net inward (c) exchange across the moving 300 km boundary over 0–24 h and 500–925 hPa, in 10¹² kg. The four rows separate the original 80-pair mean, the unweighted mean of 74 pairs with geographic support, and overlap-weighted estimates in those same 74 pairs for geography/season or additionally for measured event state. This separates sample restriction from background weighting. Points and whiskers show estimates and 95% paired-SID percentile intervals; weighted estimates use 2,000 fixed resampling attempts with model refits. All intervals, including those spanning zero, are retained.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "d085ed895a8a56325df9501889a86a0d9674cfcc79babbb392dca4c8deeab82e",
+      "run.py": "dede438679e54cbd379918431ff4475afd32fa1accfbe3de8bdf4535bb95e19a"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

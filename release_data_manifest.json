@@ -1,0 +1,1371 @@
+{
+  "version": "v2.0.0",
+  "assets": [
+    {
+      "name": "tc-near-peak-moisture-v2.0.0-processed_inputs.zip",
+      "url": "https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.0.0/tc-near-peak-moisture-v2.0.0-processed_inputs.zip",
+      "sha256": "8f8ee1db8dbf126e67b47d235c5f57ce3b8e3194a554cfe97397e3bee26f0bd7",
+      "bytes": 183021798,
+      "members": [
+        {
+          "path": "paper_2026/lifecycle_figures/framework/dependencies/temporal/tables/temporal_per_SID.csv",
+          "bytes": 5486227,
+          "sha256": "8d4b421f1013ed49953689e90cb12ce6bb58bd1f4d7ee27afbe0ad2ab3757104"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/dependencies/v62/framework/A1_YT_adapted_events.csv",
+          "bytes": 1053603,
+          "sha256": "36739b8e0d25c3b0d767e67f3d3c971325be7f045585641d96be5b6cafdbe195"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/dependencies/v62/framework/A1_YT_environment_perSID.parquet",
+          "bytes": 899039,
+          "sha256": "50d17f33dac4965d1b2cfe7973d5d9878210d6bb4e7a4412abbedbd75204ba1e"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/dependencies/v62/framework/A1_YT_evaluability.csv",
+          "bytes": 261876,
+          "sha256": "3b04b13b53214a68de2572cdd54ec127390d96ba85250208970da30b5810237f"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/dependencies/v62/framework/A1_YT_interval_assignments.parquet",
+          "bytes": 510267,
+          "sha256": "dead80b8f41e7e72cd7d6ffe1996ce5b70a32c8b56b7e3fc47497aa961208c63"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/dependencies/v62/framework/A2_full_evaluable_range.csv",
+          "bytes": 309277,
+          "sha256": "721f4f7965f95fa591a4544148ba64654237c76d327a93cdec4cb26d03ec485f"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_existing_sources/analysis_rows.parquet",
+          "bytes": 6214391,
+          "sha256": "eec085b21621a261d599deb33fd7c13155c17acde5b7fd68d5f11ff7dcbced2b"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_existing_sources/model_stage_sid.parquet",
+          "bytes": 6327982,
+          "sha256": "f0152a4fbfc77b4cc33d5441ebaabdbb90353f43f24b41675d47ea728062f88c"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_existing_sources/raw_stage_sid.parquet",
+          "bytes": 3053978,
+          "sha256": "306672c004481e5d31e20c2b2fd36fc278e56f1a4da3f32e9f3083299368ba87"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP085_PG15/observations.parquet",
+          "bytes": 476895,
+          "sha256": "526cb84e002c969ce4e2bbcefb7d58abfc496ae24a95b2b2f8d6f7c07aadf28d"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP085_PG15/QC.parquet",
+          "bytes": 711106,
+          "sha256": "0af0788815bb603a1cecf8c054de0c9fd1ec99366fd0fc43903ee820dfca2ee6"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP085_PG15/summary.parquet",
+          "bytes": 636566,
+          "sha256": "4386f7ea26b341294faac2b3d1cf9d77f95c5138ffa7c1d9aa7fad92bcc2ac81"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP085_PG20/observations.parquet",
+          "bytes": 457979,
+          "sha256": "62d8a4eaaf8eb8bcfe74e077bc9acf7d0c82d70d30b10e0c1b803b51c4332b53"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP085_PG20/QC.parquet",
+          "bytes": 673279,
+          "sha256": "3d5a9dbdee982212a68e5e415789e2cfda911dc64e2bfe6ec9ba7f141b715bf9"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP085_PG20/summary.parquet",
+          "bytes": 595069,
+          "sha256": "b458cef5079d899547c50cab24528a4ca7828fcf5ca8dce076adeb24f4027eb2"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP090_PG15/observations.parquet",
+          "bytes": 479310,
+          "sha256": "d2ab953215a5548d47d8314fc8d0500ee7908d4974950d69933b867cc7f1b45a"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP090_PG15/QC.parquet",
+          "bytes": 713189,
+          "sha256": "00c7930b37a8e7653ef34527c45741345c932f1656169f44591c99110df3023b"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP090_PG15/summary.parquet",
+          "bytes": 639193,
+          "sha256": "f738e4cad4778c9ca85764202377e657676f8b4315cd754b030597d835016f2c"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP090_PG20/observations.parquet",
+          "bytes": 459037,
+          "sha256": "01ae0f01771cd200f420518292b58802cb190e3e882e9c547a0991fc8ea86f91"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP090_PG20/QC.parquet",
+          "bytes": 675923,
+          "sha256": "9b059cfbf9c68f308e2c402069f40f07effb81baacf858088bf3a1d566a3c99d"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP090_PG20/summary.parquet",
+          "bytes": 597995,
+          "sha256": "e5604a607550891020b75728ec36eba08c55920123c7723133f0b5606b79acc3"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP095_PG15/observations.parquet",
+          "bytes": 481277,
+          "sha256": "c2b2e02218fa5aa43c5e4dfe6b48b1f1325edbdaf05e9bb79f991e7943b73183"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP095_PG15/QC.parquet",
+          "bytes": 714596,
+          "sha256": "549d95b08b0416cca5ee0644e46c1373ead168c46fd9cacb638b63b76418adb2"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP095_PG15/summary.parquet",
+          "bytes": 640642,
+          "sha256": "655105a1ed421b4e926c111e02d25335d5c1a29bb9aacda329d7995106bea4e2"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP095_PG20/observations.parquet",
+          "bytes": 459562,
+          "sha256": "a5cf84d15512a16763b0295e99ea6d99409c027708e8b4beb05f710de21590e2"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP095_PG20/QC.parquet",
+          "bytes": 677199,
+          "sha256": "72fca0cdd65b89241e93c1e310e632e975a1bdbb01a28a78cdd45447f499efb0"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP020_MP095_PG20/summary.parquet",
+          "bytes": 599220,
+          "sha256": "c36e5641d33e7e4422b438e573b0f6b579448e270bd5cde61770332b54ba4e59"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP085_PG15/observations.parquet",
+          "bytes": 477004,
+          "sha256": "843c4916da3cb0cd72abb4c2c36f0d82cd3c61976f69745206374e560687a342"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP085_PG15/QC.parquet",
+          "bytes": 710512,
+          "sha256": "f4fdb50627fd708f57f16fafed9160b7f60e482e41b18eb7ed426327e8376526"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP085_PG15/summary.parquet",
+          "bytes": 635935,
+          "sha256": "a82a72d48a343fe5b2abe09c761fb1c5e0889e17b29ef38c539e362dc7fe1ef4"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP085_PG20/observations.parquet",
+          "bytes": 457930,
+          "sha256": "ec428625ce9222b22bed9186c48795e1aac90f9affdd14a8bd28700a25eb921b"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP085_PG20/QC.parquet",
+          "bytes": 672680,
+          "sha256": "e3549a16cb2084e055a68ac23a2770d581c5c6fb4c3093fefef29e888d0a8db4"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP085_PG20/summary.parquet",
+          "bytes": 594475,
+          "sha256": "86392da6b0060ccb35399691fe4f29828b59bbc40efb87eab814c27e267fa4eb"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP090_PG15/observations.parquet",
+          "bytes": 478642,
+          "sha256": "f608bc633f6496cac56b6b6e754749e9e3993a9740bb96aea3dab9d1a5b5c045"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP090_PG15/QC.parquet",
+          "bytes": 718984,
+          "sha256": "a3d067474cb50545de05746889d12e88e735ea1787262d16b924282a53839343"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP090_PG15/summary.parquet",
+          "bytes": 638611,
+          "sha256": "0c9933d5aa89d7f0204a39b91847c747ace80e1ab0997bbe19323360cd049cda"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP090_PG20/observations.parquet",
+          "bytes": 458983,
+          "sha256": "70bb8eddb01a062c8b51c619d65caf83d121b474ea1ac621a01ef9e5ef5599af"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP090_PG20/QC.parquet",
+          "bytes": 675254,
+          "sha256": "1080dae896a9e043abc8d920ea8fb647bbdf28b7204081abada5a858259cd42c"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP090_PG20/summary.parquet",
+          "bytes": 597314,
+          "sha256": "aa196bef132f26fed407fe3ad9c31aa1e300e3d41e3697b7912e2dc14f05a102"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP095_PG15/observations.parquet",
+          "bytes": 481228,
+          "sha256": "43c8cf09b2ad1bd957663e72bf543ec5b468c5fa95a8bafad303a0d7ec243a33"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP095_PG15/QC.parquet",
+          "bytes": 713964,
+          "sha256": "6faf6aeb5c67405fd7fd5a5b5f04ca1f58f8193a23ec46f4db2f782fd372be16"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP095_PG15/summary.parquet",
+          "bytes": 640206,
+          "sha256": "e791176aee2f6abc40bcaaadb7361ca9107873a6d9c0c10b543aae341479f364"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP095_PG20/observations.parquet",
+          "bytes": 459606,
+          "sha256": "e0d69139f67fcc0105002bd464aea0b7f6d76969bc59434d26db303b2688473a"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP095_PG20/QC.parquet",
+          "bytes": 676586,
+          "sha256": "81ad09100c32f923b40ee46dce02f1ee117dca6ea74f014f506ef821731db4a2"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP025_MP095_PG20/summary.parquet",
+          "bytes": 598916,
+          "sha256": "abcdc0e895bb9ac42482bbb5c0be341575739ecc62d251088638232c8a4465bf"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP085_PG15/observations.parquet",
+          "bytes": 472834,
+          "sha256": "929755f87c1e5480172e58c34141a4d6bf815425bfaee9d11974f8629007b1ac"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP085_PG15/QC.parquet",
+          "bytes": 709258,
+          "sha256": "272aabd9cf62ab95962e841fb6af7760ae2a1082c8b295bd820ab74c64463c48"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP085_PG15/summary.parquet",
+          "bytes": 634401,
+          "sha256": "f3ac90d391de27dfb6076921c139e9b46900f508050a8a239de5ee813473c8a6"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP085_PG20/observations.parquet",
+          "bytes": 457633,
+          "sha256": "47c95d7fd1d6a8fa1d77efbc8102389f9ed1f086ce0f293c8bbe4f105b61b688"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP085_PG20/QC.parquet",
+          "bytes": 671507,
+          "sha256": "a32129ec11e2a07f5e368a61799c7da092f4eca26e38bf374b13de99a20f9795"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP085_PG20/summary.parquet",
+          "bytes": 592921,
+          "sha256": "dead60be762c533167a653f19271fba28ee95ddf9c0f3b6204fe5feaac3ebd40"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP090_PG15/observations.parquet",
+          "bytes": 476943,
+          "sha256": "219ecaecdd7771f6bc5dbfc2ac649c65b73e38568c673c10f97d701e5c50f765"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP090_PG15/QC.parquet",
+          "bytes": 711474,
+          "sha256": "f5fc5d7c4de1f5ac470bb6e68e395cca978298a5e1256c94d59d4df7a044bf7d"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP090_PG15/summary.parquet",
+          "bytes": 637301,
+          "sha256": "36d70a3a72d159bd5c97481431e54b2f305d6550f9109f95d1b0b624354eb3b6"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP090_PG20/observations.parquet",
+          "bytes": 457964,
+          "sha256": "cc68410b7a73eb89d2127316da694feeef71b1087b0fc1ec982ab07db44c5623"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP090_PG20/QC.parquet",
+          "bytes": 674167,
+          "sha256": "b5767374a12873495ac6d133e4c94239b8ef2f2092e3fee652c2abcc67416e1e"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP090_PG20/summary.parquet",
+          "bytes": 595823,
+          "sha256": "b388de39fa905273f2788b32df2b979bfed31079d53f9ed4013a0c7911fa829b"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP095_PG15/observations.parquet",
+          "bytes": 481392,
+          "sha256": "d875beb99a7b0bfdab1521a37d36c3c814d2f2c80aa09c11d67d4faf5535476c"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP095_PG15/QC.parquet",
+          "bytes": 712909,
+          "sha256": "7eecb313cc30c5b99db4fdf45738c46af974d56d0a552b00e4a28d4b042b0171"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP095_PG15/summary.parquet",
+          "bytes": 638937,
+          "sha256": "faef1da4524064c8e08c6f528e75456648ab5dc2b642e2821152c6d76e51e881"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP095_PG20/observations.parquet",
+          "bytes": 458194,
+          "sha256": "71d1fefbeb0c038365c28dd643c1eef57c77fd1c1acb7a26192eb6312e4cc1e0"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP095_PG20/QC.parquet",
+          "bytes": 675547,
+          "sha256": "fabde8194c1e9b66c27470b35ed120ffbfc6e5b66a7e0a3d86b6df491a340dde"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/de_threshold/EP030_MP095_PG20/summary.parquet",
+          "bytes": 597543,
+          "sha256": "8f166596e0fd1d4b52e10f3608ae0699d15c63da58af26bce12636813b25d915"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/new_return_events.parquet",
+          "bytes": 55526,
+          "sha256": "59d691495aa97b8c4663a48fd41a446f6b8b601821c17ba4cdf492d63e2ad352"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/old_main_SID.parquet",
+          "bytes": 624979,
+          "sha256": "e788f09bd5d801584f38a6c993b5d563224b2738ee4e4fccba4740f974c03387"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/source_data/preprocessed_candidate_tracks.parquet",
+          "bytes": 2150155,
+          "sha256": "5007a45228f7dcf181120fdc17af3616bbac6a0bd736b6a7917092bb43919ec2"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/unified/source_data/all_return_events.parquet",
+          "bytes": 55526,
+          "sha256": "59d691495aa97b8c4663a48fd41a446f6b8b601821c17ba4cdf492d63e2ad352"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/unified/source_data/historical_first_events_with_retained_outcomes.parquet",
+          "bytes": 426962,
+          "sha256": "a3c6cb0dddb4316211a77cd4016accfd02d26caac649efd0d45759b693e707a1"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/unified/source_data/main_durations.parquet",
+          "bytes": 247252,
+          "sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/unified/source_data/main_sid.parquet",
+          "bytes": 757654,
+          "sha256": "2af8d491cda5b12ca8c4e14b5e27eda605bcebadccd785325887c1180385d6bd"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/unified/statistics/stages/bootstrap_sid_multiplicities.npy",
+          "bytes": 9360128,
+          "sha256": "c5d36a8822c5192fd4daf4d4e1350a2574c8af15ed28aec9e7227ad33df15e1f"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/framework/unified/statistics/stages/model_stage_sid.parquet",
+          "bytes": 6270680,
+          "sha256": "3d47085df9b9959c969ba61fd013a82a59a14cf0e2e8df41c44b5dc5ca138f54"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/lifecycle/input/analysis_records_current.csv.gz",
+          "bytes": 1541035,
+          "sha256": "dd30e1bfea619656f525cdf339d12251d4c822d5f1410b2684ba67265e0b2dfa"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/lifecycle/input/historical_first_events_with_retained_outcomes.csv",
+          "bytes": 1632594,
+          "sha256": "61826c18c1481ac37819a3d8758c4c1e22655445f4403d52db414138e8c59e96"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/lifecycle/input/main_durations.csv",
+          "bytes": 849881,
+          "sha256": "c267c8ae790ae292e59430ea484ed83d53595d9d100ae1ffe934fac8136ae299"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/lifecycle/input/main_sid.csv",
+          "bytes": 1971276,
+          "sha256": "3cd93730e1ef33d37a3537e5860bc7ccc251ce2a205352170e098a6f85f29716"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/lifecycle/input/main_sid_eligibility_ledger.csv",
+          "bytes": 699602,
+          "sha256": "1bd67da2e314738cc8b20d67df0b34628a061df02eb44d8f8f81476883723e72"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/analysis_support_all_sid.csv",
+          "bytes": 2203696,
+          "sha256": "d6e6622f1d5fb6d1e1788a059ec309534cedcf823e8b4bd52730edc6e30ba5b8"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/bootstrap_draws.npz",
+          "bytes": 741223,
+          "sha256": "77cc3189ed6aabe0ddeff03fe5f3fa87196581ca5e1744d860bf207b08b1dbba"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/departure_episodes.csv",
+          "bytes": 345323,
+          "sha256": "4cebbaa4ed6179f406c9840ab27e7270e4a8d5fa7dd75c03425560e506cbd3e5"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/first_departure_reference.csv",
+          "bytes": 2073402,
+          "sha256": "ac27f9af344f0779898557440db4e3fd5873454d09280e1ca6cf458aa318e81a"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/risk_intervals_6h.csv",
+          "bytes": 3352133,
+          "sha256": "8f785943ca3b435b0c690865eab12bbced2a184d4ee86d99b6614a87211b9411"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/risk_status_sensitivity_draws.npy",
+          "bytes": 96128,
+          "sha256": "073497589b786d0b002e3844f934f8ea8c773f1ae2b15c5ddac7d97841448439"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/sensitivity_block1.npy",
+          "bytes": 48128,
+          "sha256": "64b8f3ec98fc3725c5bff40fcb6c0a3b799bc95888fe83c59c70b65a6c202432"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/sensitivity_block5.npy",
+          "bytes": 48128,
+          "sha256": "6c4e00c2da86d2cac67999ae07cdb80e4f8545188011955d36c863577add2dd5"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/sensitivity_complete/analysis_support_all_sid.csv",
+          "bytes": 2202755,
+          "sha256": "82577bc773b9a9f6b88eac629741ca8d0eb2fa79d733c6f664e071ded3c4465d"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/sensitivity_complete/bootstrap_draws.npz",
+          "bytes": 377342,
+          "sha256": "62799082b9b634f1371e6be14915d8ba8cae364971f3cc11caf09371cf9506e5"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/sensitivity_complete/sensitivity_block1.npy",
+          "bytes": 48128,
+          "sha256": "cdab12e9ba56fdddb182e8c8ab6c02a1c9bbe254ba9ce6b3168e30d9a1d2726b"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/sensitivity_complete/sensitivity_block5.npy",
+          "bytes": 48128,
+          "sha256": "eeb39205e08886d2e68412f7e0b90bd0a9ec636411e68fe7e9fb3df13438fac6"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/A/sid_denominators.csv",
+          "bytes": 298958,
+          "sha256": "67295203d579e8cc3e8ccf648e002e5dbbd0a3d57b11f0d1f3a2918adf733d26"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/B/composition_bootstrap_draws.npy",
+          "bytes": 240008,
+          "sha256": "0f33e3b65ffde7e483ed4fd41ac992e6191191f5ad6fd10389f17f5e86a9b445"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/B_env/block1_sensitivity_draws.npy",
+          "bytes": 48128,
+          "sha256": "0444cef6cdabccd1278f34de0a24c6f439a0d98e4f1b6b3ca3c83387a2642924"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/B_env/block5_sensitivity_draws.npy",
+          "bytes": 48128,
+          "sha256": "9b84c5771054097fdf43f4be6712675c507374ef6ad7f04813210ac0bdffae8b"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/B_env/bootstrap_draws.npz",
+          "bytes": 8566600,
+          "sha256": "be449770fc85a18e22275591cf7c3a6ec4deafe63f0d726bbea15f304c8dd2b0"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/B_env/environment_only_bootstrap_draws.npy",
+          "bytes": 192128,
+          "sha256": "5352c83fefd4c6de45fecd5b89a4f42b2555232d3ec850f86002f3a799a7f74e"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/B_env/sensitivity_temporal_overlap/bootstrap_draws.npz",
+          "bytes": 4279410,
+          "sha256": "d644678464ee82b57b4a7b88a747bb94e37b652555226c8f825ab12c574bb047"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/B_env/sensitivity_temporal_overlap/environment_only_bootstrap_draws.npy",
+          "bytes": 96128,
+          "sha256": "800dcafbcb98132d8711c70acb9c51ebb4ea214446be05e60697f32fefa4db6b"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/B_env/sensitivity_temporal_overlap/support_all_sid.csv",
+          "bytes": 2216465,
+          "sha256": "6272fa16958dc8855a549bd3a743d39a7debf297f3965fd8a6c56309e048d430"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/B_env/support_all_sid.csv",
+          "bytes": 2216797,
+          "sha256": "753f5e0db81a9b63ac1ed060c3f04908302e9129bfce96bc1e642a3d1564e977"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/common_support_D.csv",
+          "bytes": 972689,
+          "sha256": "9390c60a389b5ade0fc34bac6ae1d20dd71850dbaaaa50e54fc01670e58abf47"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/common_support_E.csv",
+          "bytes": 1012111,
+          "sha256": "c72765afec649ffcfbe777b0ffffdbbc58bb7eea7312b288f035b6f0649035ba"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/common_support_F.csv",
+          "bytes": 1020856,
+          "sha256": "2bcc4ebfebf482de0dce744cb69812303a02e6e705a5766e05d0250b56f86788"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/common_support_Res.csv",
+          "bytes": 1061092,
+          "sha256": "bba4cb2b1f5d9db9f4ef6455956077afc00a9874b231fcef7a4523e8dddf218c"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/design_D.csv",
+          "bytes": 753476,
+          "sha256": "b6c20fa18a9d9f63437b37c634f55d5ecbf058d7063091e81e4e8488bb2f5a89"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/design_E.csv",
+          "bytes": 765571,
+          "sha256": "ff85113528b835a9aedf2caba6ae50d4b1da33d555332a61259d459bc9cdf0c2"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/design_F.csv",
+          "bytes": 767935,
+          "sha256": "46e5e1cc728ffdcf17093bc703c7eef6fe9db00f53ba3fbb41c3dd31ac5637d6"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/design_Res.csv",
+          "bytes": 788391,
+          "sha256": "0fbf72377760be552c56d674d1824e8755847fa89c49f15b2b272b7b20196015"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/gamma_duration_draws_D.npy",
+          "bytes": 16128,
+          "sha256": "3decb26c60ff75455c58f0ba25862d54c7b4f30096b3c737bf76db81fcbe15e8"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/gamma_duration_draws_E.npy",
+          "bytes": 16128,
+          "sha256": "92677d17f53c2a18b584e2c97797856ea1d506ad88e8f6301181b66ad808a33e"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/gamma_duration_draws_F.npy",
+          "bytes": 16128,
+          "sha256": "a009d751bc248bcc464543059e4e43cefcf433a75fb6f61a1b7d344cfd9fcab2"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/gamma_duration_draws_Res.npy",
+          "bytes": 16128,
+          "sha256": "0f112d7b32590ca6349f6296eccd97d7f4db9e721daaacc5077486362445d03b"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/joint_year_sid_draws.npz",
+          "bytes": 1388504,
+          "sha256": "c7da3173605ebbb5f2be2664674a7e3ff92f2cba33e235a71088d1953500ae7b"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/model_bootstrap_D.npz",
+          "bytes": 767749,
+          "sha256": "92a274debb6a731652e769462b32e8466b836b931f165efb0997b4736fd06eff"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/model_bootstrap_E.npz",
+          "bytes": 804746,
+          "sha256": "7630fa7e99570c3dd42dab2018767225911ea5d474f6e9be29915d4a79b7aa51"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/model_bootstrap_F.npz",
+          "bytes": 796519,
+          "sha256": "b0a91bb89e244ddbe60bc0bf17135292c0b23aedc6a2e3b7ddf893a627ab7e2e"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/model_bootstrap_Res.npz",
+          "bytes": 1128757,
+          "sha256": "c02dc7efd64d15589e2154694552ebabdf75590ba046801442fd16df0ace692a"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/sensitivity_draws_D_complete_case_sensitivity.npz",
+          "bytes": 61511,
+          "sha256": "607180b37415c01e1e109fc321959f95fadedc421e6fc83d66250cb9c5087e31"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/sensitivity_draws_E_complete_case_sensitivity.npz",
+          "bytes": 60091,
+          "sha256": "2e065eb3bbea71d30adb9b63d1e23da66fb520b58a9b4ac79e6c601d5180d0e4"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/sensitivity_draws_F_complete_case_sensitivity.npz",
+          "bytes": 61119,
+          "sha256": "de64965c66ac52e85906b9542e339dbb2a940501033939c5f4d0c8ac1b2b214c"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/sensitivity_draws_Res_complete_case_sensitivity.npz",
+          "bytes": 60838,
+          "sha256": "6cd2f9253ebb72df84e56db0f7e005f0d72856200c3da215b63d302dd7c6a8e2"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/sensitivity_draws_Res_exclude_missing_wind_tail.npz",
+          "bytes": 61153,
+          "sha256": "c81cbc9f402730d839f2a9ab52805acf56a78d27bfa9cde9c4e2d71d44943828"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/stage_duration_coverage_sid.csv",
+          "bytes": 397522,
+          "sha256": "a72db8ce37d7d023082c9cb319577b0940d47769ce925eb5532abc52a8d8bb40"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/stage_entry_source_frozen.csv",
+          "bytes": 4825905,
+          "sha256": "5bab4b52186664192ee2e98685dfa73fce519fcb1a37d6edb41f117c896c395b"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/agents/C/support_sid_stage.csv",
+          "bytes": 358426,
+          "sha256": "0993e6ca01fff2885ac3ef18a7efe8ada266fac9061373df95a131ef07b3db73"
+        },
+        {
+          "path": "paper_2026/newanalyses/inputs/addendum/source_data/de_existing_sources/analysis_rows.csv",
+          "bytes": 52731424,
+          "sha256": "a37365c66970e711492783cab21c91e593bb42f2acb2c6a128373cbd031f9d24"
+        },
+        {
+          "path": "paper_2026/newanalyses/inputs/addendum/source_data/de_existing_sources/track_sp_qc_relabelled.csv",
+          "bytes": 44873288,
+          "sha256": "b392aa8a57c038e70ce5517c035e04ec554abda20f92fd3b142a594c936622d2"
+        },
+        {
+          "path": "paper_2026/newanalyses/inputs/addendum/source_data/new_intervals.csv",
+          "bytes": 14898369,
+          "sha256": "d67d6d047973c5c16275aea14223c2c3642cacca876c9dd9108f686fcddffe5e"
+        },
+        {
+          "path": "paper_2026/newanalyses/inputs/addendum/source_data/new_lifecycle_tracks.csv",
+          "bytes": 7749638,
+          "sha256": "6aa74cd4e3751dd599398e7f5820a79e127b713478a66bb577f084519db86da6"
+        },
+        {
+          "path": "paper_2026/newanalyses/inputs/addendum/unified_main_20261023_1642/recovery_refit/bootstrap_indices.npz",
+          "bytes": 4313039,
+          "sha256": "25a9b4a06a887bc0fc5fdcddcf37b04da919a1f421a70ac408f9f7e5e3ac6c17"
+        },
+        {
+          "path": "paper_2026/newanalyses/inputs/addendum/unified_main_20261023_1642/recovery_refit/cohort_recovered.csv",
+          "bytes": 2155137,
+          "sha256": "e7ddea9384ed5310dce627d20fda946d06564bc859b30e0ac4e1c85f2a346262"
+        },
+        {
+          "path": "paper_2026/newanalyses/inputs/addendum/unified_main_20261023_1642/source_data/main_durations.csv",
+          "bytes": 849881,
+          "sha256": "c267c8ae790ae292e59430ea484ed83d53595d9d100ae1ffe934fac8136ae299"
+        },
+        {
+          "path": "paper_2026/newanalyses/inputs/addendum/unified_main_20261023_1642/source_data/main_sid.csv",
+          "bytes": 1971276,
+          "sha256": "3cd93730e1ef33d37a3537e5860bc7ccc251ce2a205352170e098a6f85f29716"
+        },
+        {
+          "path": "paper_2026/newanalyses/inputs/addendum/unified_main_20261023_1642/statistics/h4_models/stage_entries_revised.csv",
+          "bytes": 4669476,
+          "sha256": "5ebe1fa96299468015f286abe713d5f28f45c6e69dd7d2b4911d6cb6bab2fce7"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/C_audit/F_sid_identity_endpoints_audit.csv",
+          "bytes": 347200,
+          "sha256": "d1c8271553c5f6fb06b9bdb899ae7acad75ffdd08577630f0328d09e7fef5d85"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/C_audit/joint_draw_identity.csv",
+          "bytes": 270936,
+          "sha256": "2eabbc8c6604ef8b164ea137a3b3e01c9da76edde9ff94fe86e97ce66d41a6fb"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/C_audit/paired_draw_identity_audit.csv",
+          "bytes": 1520205,
+          "sha256": "5582cac1c3f6606613e0d215d519b5013a775706c5e76ab7f9bbea477f60c9fa"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/latitude_risk/historical_risk_entry_return_locations.csv",
+          "bytes": 418277,
+          "sha256": "7519e3735923a00dc9f8ffec1fdac4804bc43785d0775efcebcaea8e3fa9dde1"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/latitude_risk/v2_fold_supported/frozen_analysis_inputs.csv",
+          "bytes": 341494,
+          "sha256": "60bb940f4cb26cc03413ed61647d6b6c63af57dd0cb1f528f483ff7d67a4d56c"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/latitude_risk/v2_fold_supported/NH_bootstrap_draws.jsonl",
+          "bytes": 3597448,
+          "sha256": "1e6ac859c6de56d07fe06e4881de3d8316f3d414ab2a2d6e07b2541a27077ce7"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/latitude_risk/v2_fold_supported/NH_bootstrap_reference_weights.npz",
+          "bytes": 73576,
+          "sha256": "495436dd5e3b6debdacd58e3d3cf7e5408a6ccf9ce5b26c73aec0dcaeab79b0c"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/latitude_risk/v2_fold_supported/paired_latitude_bootstrap_contrasts.csv",
+          "bytes": 354373,
+          "sha256": "59814d821df3af8a8894a1826b068a0e0cdf162b5028220abcfc9e730153d281"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/latitude_risk/v2_fold_supported/SH_bootstrap_draws.jsonl",
+          "bytes": 3606808,
+          "sha256": "45f8e01b6da210dc2a8f02e24bc373d160b59a9efdf8162cd5fe32910ea94cf0"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/latitude_risk/v2_fold_supported/SH_bootstrap_reference_weights.npz",
+          "bytes": 44155,
+          "sha256": "1c16c484f6a544987011c2309643d283c7d434de8da6a0e6112de2011015447c"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/agents/latitude_risk/v2_fold_supported/training_inputs.csv",
+          "bytes": 1348402,
+          "sha256": "eea0512f0de3767e183e3c4b7e65f0501bb604760eb43a469d268d520ad67c0c"
+        },
+        {
+          "path": "paper_2026/physics/direct_mwt/inputs/departure_centres.csv",
+          "bytes": 437974,
+          "sha256": "9d8c478b2554f8d8bb40ccab1cd544921d558d39be9b5d16c9dbc95dcaa824c8"
+        },
+        {
+          "path": "paper_2026/physics/direct_mwt/inputs/saved_coefficients_example.npz",
+          "bytes": 98721,
+          "sha256": "3493b52a1a3844b0cf861ce0deb105c9568d47b784aadb6a1d0c1524a2397b2e"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/inputs/departure/centres.csv",
+          "bytes": 1191540,
+          "sha256": "f8ccd874fbc4b66461cb1ad5ebac469500c7fe5c8c63211ea4ea8c7b7128ec1c"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/inputs/departure/regional_values.parquet",
+          "bytes": 381662,
+          "sha256": "760702d2c5985f10f407541e1e6794d2fa1e78dbf9023e0d68600bae255d9941"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/inputs/rise/events.parquet",
+          "bytes": 55526,
+          "sha256": "59d691495aa97b8c4663a48fd41a446f6b8b601821c17ba4cdf492d63e2ad352"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/inputs/rise/intervals.parquet",
+          "bytes": 118431,
+          "sha256": "f3a329c8084de0e0596634fd162233eb7e7140e843e7d3c7f556362a39fb7789"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/inputs/rise/pairs.parquet",
+          "bytes": 53258,
+          "sha256": "9f9b74a59a2adda8d3ea29131ef44cc30fbff24ad426cc5814ac774f6eb83b21"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/inputs/rise/request_values.h5",
+          "bytes": 563194,
+          "sha256": "95dccfaadcb555e75cd732d5692e1bb5b705915861a86621e44ae53b527a4570"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/inputs/rise/requests.parquet",
+          "bytes": 303210,
+          "sha256": "44780b6bef037a560432f508bd86af8f431ea8e94f88ea04370e257e4e5ff039"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/inputs/rise/roles.parquet",
+          "bytes": 64788,
+          "sha256": "1a2b4245d1a4af9c1d8b2c2012db07432dac2e9eb776131d4d63ea6ce164aae0"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/baseline_pairs.parquet",
+          "bytes": 13225,
+          "sha256": "9211a1a30ee7ddc0cb55e3225e6143cacde5886952aef0fb512e15db83ad4de2"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/baseline_summary.parquet",
+          "bytes": 6720,
+          "sha256": "88b2f46f326a15ed44da27c5b906c77ac225165880b8b06463f1f7194d6fc672"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/coverage_n_by_time.parquet",
+          "bytes": 7323,
+          "sha256": "2215a7fc20f092bd7f3353e455cae6a72b89845d132f0397b8ac51bd4b66d168"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/coverage_pre_counts.parquet",
+          "bytes": 5760,
+          "sha256": "fd8307346c2b980fea0da0184b8c1d09055d9959e7812ef0e11850eb34cc96a0"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/effects.parquet",
+          "bytes": 24538,
+          "sha256": "fa788e38bfc4bc751d3020a417227a0b9198a429598c3aa28bb2cb8ee3375a2b"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/motion_intensity_draws.parquet",
+          "bytes": 367515,
+          "sha256": "e5e9c90d7e33f865fac5286505a517cb5b4f1bf525e727c64e98af63fe4935d4"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/motion_intensity_SID_inputs.parquet",
+          "bytes": 15732,
+          "sha256": "14ffeac744c3ac318e44792508d12e7cadb9f2c196b76920d9c1252890e49b4c"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/motion_intensity_summary.parquet",
+          "bytes": 15809,
+          "sha256": "e66357f24f7d1369e2f16ef16a459e30f450ed1f8775b4309610b8434d0e5fdf"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/paired_bootstrap.h5",
+          "bytes": 4378193,
+          "sha256": "fc1c1a278283af627ff37d3b2f9c9bbd90939dc0ff699a08404471050b23be01"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/primary_family.parquet",
+          "bytes": 11502,
+          "sha256": "851a603283f4975aa545bfb50a47442742227ea80ca084054b3dbf3bcb2f68d2"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/sensitivities.parquet",
+          "bytes": 10360,
+          "sha256": "08028aa2fe3c8122b99cab628017333464f855d846fc1f4e93b87cb27fe19898"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/sensitivity_pairs.parquet",
+          "bytes": 43038,
+          "sha256": "2407471ff5caa5f6ce1e61a1f3a6f74fddc3cf55d0f761779fdb422de0733390"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/sid_pre_pairs.parquet",
+          "bytes": 70563,
+          "sha256": "a6c2364ee7a4798c9b8ea886bd928e3abfdada87831ab65491ce0267391c5dd0"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/departure/SID_pre_support.parquet",
+          "bytes": 9330,
+          "sha256": "208dd8f48ae789a0ca443ec03081222d5702817e055db07d94cc9c4761ddb7da"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/rise/bootstrap_draws.h5",
+          "bytes": 37709056,
+          "sha256": "3c2e9cc1f0f62b19e2dadc77804ecad87519fcc4e6ef6932232ca5b46a0574c4"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/rise/bootstrap_membership.parquet",
+          "bytes": 47130,
+          "sha256": "a18a33bc2ef79ba8fc2f1ee991e8306ac575839a4655561562764aa94a46dcd7"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/rise/coverage.parquet",
+          "bytes": 21102,
+          "sha256": "20e2525f9d91c63ae87c83b549e4298303c6e85a96e2e48ea73656978c49a3bf"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/rise/event_estimates.parquet",
+          "bytes": 429854,
+          "sha256": "5a9165a3c0526b2197fd4916a2b279ef906939d61eb72114d64169f93fc7cd1d"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/rise/matched_bins.parquet",
+          "bytes": 177642,
+          "sha256": "bf2f099a91ba5f6271b176f0ff6c0067922fee9c37e73b94cc0ce97bc7b93045"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/rise/request_support.parquet",
+          "bytes": 47083,
+          "sha256": "7cd5e5079c4b6c1d162c7e69e1c394de447c63ba7ae28c933f9fafb4bcb30782"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/rise/sid_estimates.parquet",
+          "bytes": 397516,
+          "sha256": "18a644ff6374c3687656929f3f9940a1fa91fbde7dacf7d3f467176670df1f3d"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/rise/summary.parquet",
+          "bytes": 40134,
+          "sha256": "9c25717b4d21eca37d60365c08dba828d600748c72365ecc98d938cf03d260e7"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/rise/time_sid.parquet",
+          "bytes": 386817,
+          "sha256": "b95df091fff50d4890d76dd5a86ad4ee9eee92b4f7fcfcb13101f30c67424c30"
+        },
+        {
+          "path": "paper_2026/physics/mwt_statistics/reference_results/rise/time_summary.parquet",
+          "bytes": 21860,
+          "sha256": "7eaa22407e2f567bc02f2650b02fd17c020ab605fd375fcaccf5c35dd20a9df7"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/inputs/year_block_draws.npz",
+          "bytes": 40711,
+          "sha256": "ccbf870754d23f1978f96dfd699e8bceb02d40db3f06ecc07ce4139112e7e1ba"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/results/A/annual_means.csv",
+          "bytes": 530862,
+          "sha256": "f8702a4db6bd16602a6e6d41cd136940beae8e4f347f5872505c5be164232c2e"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/results/A/membership.csv",
+          "bytes": 1510371,
+          "sha256": "ba974d77e28b07b3a7d095a60159a329adff1c03af933fe7bc6971bc7849cbc8"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/results/A/sid_draws_main_multi.npz",
+          "bytes": 183277,
+          "sha256": "ba40c2a4eb93c0040af1245e07e49ecc51db56035117416a80dba8f834b48ffd"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/results/B1/per_SID_component_environment.parquet",
+          "bytes": 978092,
+          "sha256": "7f72f06d028334819c22d86f1d36d644c444d2ba769c2b76c5bbe59e6de7886e"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/results/B1/per_SID_environment_contrasts.csv",
+          "bytes": 13270115,
+          "sha256": "5be88977dce612df20ced29e40a3029fcc2261537bcd96fa159b07e70cd6ad92"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/results/B1/scopes/main_multi/sid_bootstrap.npz",
+          "bytes": 277251,
+          "sha256": "23076a5a8dccb0889648582274946ccc173b06f3138ca47cc49a4ee879cc4d87"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/source_data/C2_four_groups_and_selection.csv",
+          "bytes": 293824,
+          "sha256": "559a760fb99ccede0e647e9590f6126cd2268cc809e16fc123e989f9447b64d6"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/source_data/durations.csv",
+          "bytes": 782051,
+          "sha256": "6848f76a5e3fb71a612db0a16335872390b4178dfa0b59fc147f739dad004884"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/source_data/durations_beta085.csv",
+          "bytes": 733783,
+          "sha256": "a2389a24e25793f59814e3074342461d97e85624862f96da4992bad99b5fbeb9"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/source_data/durations_beta095.csv",
+          "bytes": 736637,
+          "sha256": "4f08a6f8545e906813e76d1ef6adde7f4e76517b8eefdcac83dcc81173210fb9"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/representation_value_v4/source_data/durations_expanded.csv",
+          "bytes": 978194,
+          "sha256": "61a1eececde53ddd6cedc17bf77f8a17ffb7ede947e725939747abce5881108b"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/review_completion_v3_2/sources/stage_entries_sp_qc_v3_2.csv",
+          "bytes": 4196224,
+          "sha256": "f19068ce215b9cdadb5334496fae1fa742baf6805529717edcf1f0d92263ae7c"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/ERA5_environment_v1/run_20260920_215821/review_completion_v3_2/sources/stage_entry_hour_sources_sp_qc_v3_2.csv",
+          "bytes": 10926345,
+          "sha256": "acd5660f4bbe8870044ebde6238308ab9ef7f3d0f61ae82352b8dea8ede15743"
+        },
+        {
+          "path": "paper_2026/physics/production/legacy_project/v67_review_20261014/M2/per_interval.csv",
+          "bytes": 8522389,
+          "sha256": "e14da466d7a98f807e4b8784afe36f6ed7f681a26d9b689749d4409f01bd45f4"
+        },
+        {
+          "path": "paper_2026/physics/production/mechanism_v5/upper_profile_100_50_interpolation_v1/input_interpolation/source_coordinate_axes.npz",
+          "bytes": 386138,
+          "sha256": "20876ca34132c719dab82835a0897f0c77a253552f423b9113041626d494c2bf"
+        },
+        {
+          "path": "paper_2026/physics/production/mwt/addendum_20261023/unified_main_20261023_1642/source_data/main_durations.csv",
+          "bytes": 849881,
+          "sha256": "c267c8ae790ae292e59430ea484ed83d53595d9d100ae1ffe934fac8136ae299"
+        },
+        {
+          "path": "paper_2026/physics/production/mwt/addendum_20261023/unified_main_20261023_1642/source_data/main_sid.csv",
+          "bytes": 1971276,
+          "sha256": "3cd93730e1ef33d37a3537e5860bc7ccc251ce2a205352170e098a6f85f29716"
+        },
+        {
+          "path": "paper_2026/physics/production/mwt/source_data/centres_frozen.csv",
+          "bytes": 1191540,
+          "sha256": "f8ccd874fbc4b66461cb1ad5ebac469500c7fe5c8c63211ea4ea8c7b7128ec1c"
+        },
+        {
+          "path": "paper_2026/physics/recovery/bootstrap_draws.csv",
+          "bytes": 1568543,
+          "sha256": "103bd8c1943e5540c21b325d9bb3982c478a4598365066d534bc9ee23acaebe7"
+        },
+        {
+          "path": "paper_2026/physics/recovery/bootstrap_indices.npz",
+          "bytes": 4313039,
+          "sha256": "25a9b4a06a887bc0fc5fdcddcf37b04da919a1f421a70ac408f9f7e5e3ac6c17"
+        },
+        {
+          "path": "paper_2026/physics/recovery/cohort_recovered.csv",
+          "bytes": 2155137,
+          "sha256": "e7ddea9384ed5310dce627d20fda946d06564bc859b30e0ac4e1c85f2a346262"
+        },
+        {
+          "path": "paper_2026/physics/recovery/point_predictions.csv",
+          "bytes": 2640234,
+          "sha256": "468883c9df89699c30723117715232e63f08f0f6880e0de234b26ee016047419"
+        },
+        {
+          "path": "paper_2026/physics/recovery/raw_cohort_all_timestamps.csv",
+          "bytes": 19096294,
+          "sha256": "eea808df14ced28bd840074bbb9c79f67487425e72533dc67f8a68135772f259"
+        },
+        {
+          "path": "paper_2026/physics/recovery/training_observation_weights.csv",
+          "bytes": 4586601,
+          "sha256": "db7ca912c945f2d956e34f42c64b8d76d68e24f751c52520b01e831c1aa5be4c"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/inputs/legal_intervals.parquet",
+          "bytes": 1043936,
+          "sha256": "77caf443c35f8da72a449f6d44fabf90a88e2b92ce1e002a65c4a487d454b0be"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/inputs/return_events.parquet",
+          "bytes": 55526,
+          "sha256": "59d691495aa97b8c4663a48fd41a446f6b8b601821c17ba4cdf492d63e2ad352"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/inputs/rise_comparable_state_pairs.parquet",
+          "bytes": 53258,
+          "sha256": "9f9b74a59a2adda8d3ea29131ef44cc30fbff24ad426cc5814ac774f6eb83b21"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/inputs/rise_environment_points.parquet",
+          "bytes": 577515,
+          "sha256": "1028da7d50c711eade3812aa9fc909f761d5255ce3d3b8368998dbac5cc90a31"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/inputs/rise_point_roles.parquet",
+          "bytes": 64788,
+          "sha256": "1a2b4245d1a4af9c1d8b2c2012db07432dac2e9eb776131d4d63ea6ce164aae0"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/reference_results/environment/coverage.parquet",
+          "bytes": 15869,
+          "sha256": "065b0f898895175c80dbbb9796349a5a045bac9ed8bac52c0cd9273e55132c15"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/reference_results/environment/event_estimates.parquet",
+          "bytes": 263555,
+          "sha256": "d8f47a14af183be5e161963cb518f908106842914ea11d5b4defe96c7c6a2fe4"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/reference_results/environment/matched_bins.parquet",
+          "bytes": 111127,
+          "sha256": "c10787e63f1fded7a2d9207159255401f36fbb77fcf8d499abe5469f8a8390a1"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/reference_results/environment/sid_estimates.parquet",
+          "bytes": 240897,
+          "sha256": "96dfc2b48d51d12367fb37bcc701cc04a5b5624e4a36baa98142c01c341b66cb"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/reference_results/environment/summary.parquet",
+          "bytes": 27838,
+          "sha256": "f1cc3583e14fd72e19f266f82de4abe3541247cd980af00e6284a45ebc2f2aa1"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/reference_results/environment/time_sid.parquet",
+          "bytes": 232858,
+          "sha256": "819104649164398541bce43f07ed93c3bfaba6797a0c4303506d430f4fb1fa59"
+        },
+        {
+          "path": "paper_2026/physics/rise_environment/reference_results/environment/time_summary.parquet",
+          "bytes": 14193,
+          "sha256": "fd15f93ed00b62fde5bf13c8b5727d39c1aeb1afbd3314deb67366105418f6fb"
+        },
+        {
+          "path": "paper_2026/physics/water/hemisphere/regions_bootstrap.npz",
+          "bytes": 7136676,
+          "sha256": "4e3f1eb10264293e6b8599a013320c5c1badc03dd2646514b2734f737c7d28e4"
+        },
+        {
+          "path": "paper_2026/physics/water/hemisphere/selected_sector_SID_values.csv",
+          "bytes": 285040,
+          "sha256": "d2193c0bc36231df0c80c3ca1d1f4e11a23fb47ced91343072b558cd09ff2b44"
+        },
+        {
+          "path": "paper_2026/physics/water/p4/P4_background_SID_sources.csv",
+          "bytes": 7643047,
+          "sha256": "4da73a6166a2e802b76fc4dc8b4f010330c1127fb7d2dba6565326ff3110a6a9"
+        },
+        {
+          "path": "paper_2026/physics/water/p4/P4_transport_matched_windows_SID.csv",
+          "bytes": 5684768,
+          "sha256": "93fa8c806b0fbcbe22a7e544d94b98e0bfa8bc86deb6488399857c92f4157752"
+        },
+        {
+          "path": "paper_2026/physics/water/p4/P4_transport_SID_sources.csv",
+          "bytes": 22846959,
+          "sha256": "84dc34b07f46c47c98b4d337fe2e4fded78ca8cc272be3bd437c37443b1770d7"
+        },
+        {
+          "path": "paper_2026/physics/water/paired/centre_budget_SID_pairs.csv",
+          "bytes": 511978,
+          "sha256": "08f1d9905d2062792e1efe10e5d0a3d5f9a1a941a63312d011c4131606e29425"
+        },
+        {
+          "path": "paper_2026/physics/water/paired/centre_native_SID_sources.csv",
+          "bytes": 1217066,
+          "sha256": "92130fab202bc775babcc3b402784e0fc83e5a45d4f7d03cf291ffb33b62c3e6"
+        },
+        {
+          "path": "paper_2026/physics/water/paired/regions_common_SID_pairs.csv",
+          "bytes": 8775058,
+          "sha256": "5df005df29235c848df885b237ad5a20498add75d050683730c6d41ffe755b5b"
+        },
+        {
+          "path": "paper_2026/physics/water/paired/regions_outer_minus_inner_SID.csv",
+          "bytes": 3191716,
+          "sha256": "47493150174cc55a56013be0e08f24fafb584fc368747840933cc772c10496e1"
+        },
+        {
+          "path": "paper_2026/physics/water/rh/RH_fourway_with_original_same_SID.csv",
+          "bytes": 4072498,
+          "sha256": "9f06cdda59ca4a837d48c0f2634c4dd476b31443f2186cac1830b9a37141884b"
+        },
+        {
+          "path": "paper_2026/physics/water/rh/RH_matched_decomposition_SID.csv",
+          "bytes": 15159014,
+          "sha256": "c24aa5a7e0daace0b4f7840c7f8c1b6811161a9e15a67ec1f8bac24cabfa8efc"
+        }
+      ]
+    },
+    {
+      "name": "tc-near-peak-moisture-v2.0.0-figure_source_assets.zip",
+      "url": "https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.0.0/tc-near-peak-moisture-v2.0.0-figure_source_assets.zip",
+      "sha256": "d512a77f4aa528f6e49a61502672549fcbdcdfda310660576befaa78f378b0a9",
+      "bytes": 19121866,
+      "members": [
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_01/input/coastline/ne_110m_coastline.dbf",
+          "bytes": 3747,
+          "sha256": "ac7e59083a862bafc20b86d73595fdf2a7c0693a411cf3ba91910a5de9df9bc3"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_01/input/coastline/ne_110m_coastline.shp",
+          "bytes": 89652,
+          "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_01/input/coastline/ne_110m_coastline.shx",
+          "bytes": 1172,
+          "sha256": "53d8c141edfb7e05c59feecc7bb64b0e22bc2e282dfa1024d20ae54c3ef7b01e"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_01/input/main_sid.csv",
+          "bytes": 1971276,
+          "sha256": "3cd93730e1ef33d37a3537e5860bc7ccc251ce2a205352170e098a6f85f29716"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_05/inputs/full_timecourse_all_schemes_regions.csv",
+          "bytes": 10154131,
+          "sha256": "6b822e785a2ea1610b3ef254794dd1a04c855a59a011821f6cbc741935db384a"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S02/input/S2_a_duration.csv",
+          "bytes": 2063589,
+          "sha256": "aecb23dbdd35d985fa3ec830acd76259463bda54ad177eac0f9e8e517c6686ac"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S02/input/scientific_objects_baseline.json",
+          "bytes": 746032,
+          "sha256": "c8706f58f7ffb645d7fa57d610ce46c14f06ba3698fcfa6291c577437ea3cb93"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S04/input/scientific_objects_baseline.json",
+          "bytes": 722268,
+          "sha256": "18690f9462ab0f55db14ec044dd20297c0312b36dadb0054d3bd880570048b42"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S04/inputs/12d8cdbe19_main_durations.csv",
+          "bytes": 888625,
+          "sha256": "4607b65d5bf5eb775e9ec653f740eab4f2eae6000576d69bdbc819391f20c943"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S04/inputs/12d8cdbe19_main_durations.parquet",
+          "bytes": 247252,
+          "sha256": "12d8cdbe19d8d4e198c1628ff41f5b416414c0b0804e61e76603a22316d27a04"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S10/input/scientific_objects_baseline.json",
+          "bytes": 1425815,
+          "sha256": "f4134de840e8488f7d52777d3bdd805f4497c300b6f1841d0169bd69bb19e2d6"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S10/inputs/377293ea07_A3_SID_loss_bank.csv",
+          "bytes": 1832341,
+          "sha256": "377293ea07a4acbbd10562ea3da5097e788f845f3060570ec40c380e3a772855"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S12/input/scientific_objects_baseline.json",
+          "bytes": 632276,
+          "sha256": "a005df22c61519b07f245dbb4e6a881394bcb53c6984f900b0a0b9551e9aaf11"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S12/inputs/0fceed2577_leave_one_sid_influence.csv",
+          "bytes": 4400806,
+          "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S16/reference/scientific_objects.json",
+          "bytes": 410235,
+          "sha256": "c7dee1b39b6a1f6ebcb67fb0acc525b97a71508416eb3563e5966415d2a0de42"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S17/input/scientific_objects_baseline.json",
+          "bytes": 1100258,
+          "sha256": "65fb669adddb10f7204637d8ce2015c0aa577aa1bec55c7552a3d4658e521246"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S20/inputs/03_Work/v6/physics/spatial_centered_null_full_family_B199999.csv",
+          "bytes": 1325400,
+          "sha256": "44a10703ac3315949260f1c08f5c4a089f0009710c9892cc018b884a487cd034"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S20/inputs/04_Data_and_Code/github_ready/source_values/accepted_v51/p1_spatial_v1/r02/map_source_data.csv",
+          "bytes": 3560577,
+          "sha256": "228863ce3997b7fac14699bf85b1a57b7ceec1c53188b0f448386219f5b23006"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S20/inputs/spatial/current117_fixed_pre_shear_anomaly_common_paired_composites.npz",
+          "bytes": 1084348,
+          "sha256": "534ccddd4cfcd2c68de0bc74c55791302c187bd1eeb92eed3f34ea604169dfa4"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S20/inputs/spatial/current117_fixed_pre_shear_raw_common_paired_composites.npz",
+          "bytes": 1072007,
+          "sha256": "36cea9a500a87b8c949a82f49d43f0bcbc829a6b3a2272c3d325bd7a7cc24733"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S20/inputs/spatial/geometry.npz",
+          "bytes": 983,
+          "sha256": "90cb38027c28a54e2fd5fc21758d415a76f82e064f155b3ac2c7ff6d4392a404"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S20/reference/scientific_objects.json",
+          "bytes": 6553646,
+          "sha256": "b0e5f62e33b40cd7f462591fbaa4a576c3731c5a15481d211513701fe5dc1244"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S24/inputs/S10f_timepoint_n.csv",
+          "bytes": 1694496,
+          "sha256": "14c1a26ab48d91572c9f10eea8e5ddb06669e067bd3a266abcb2b9c64bf49706"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S25/inputs/full_pre_all_schemes_regions.csv",
+          "bytes": 1093552,
+          "sha256": "7f2edd05633ab1c54fef40f9534f89b13f2c6d60e1e16c0685d05b9101ae1ceb"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S26/inputs/S10c_common_support_direct_sensitivities.csv",
+          "bytes": 535358,
+          "sha256": "e8882a3174f04c8b92f42b86eccd021f2f51901d6eab2f473a33e790cd008efb"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S30/inputs/recovery/cohort_recovered.csv",
+          "bytes": 2155137,
+          "sha256": "e7ddea9384ed5310dce627d20fda946d06564bc859b30e0ac4e1c85f2a346262"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S30/inputs/recovery/point_predictions.csv",
+          "bytes": 2640234,
+          "sha256": "468883c9df89699c30723117715232e63f08f0f6880e0de234b26ee016047419"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S32/code/scientific_baseline.json",
+          "bytes": 329319,
+          "sha256": "7384f2b310e1e5e6b2826de81c8aa56076ce26572f2a69c90c203c19434810f9"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S32/inputs/9b2cabfa2d_paired_source_and_design.csv",
+          "bytes": 10078205,
+          "sha256": "0246acbab13c203511edf1c02b21feee67e71775ee8542a53a5d8b7046f11b40"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S39/code/scientific_baseline.json",
+          "bytes": 373603,
+          "sha256": "348fd12f452a3ce6a9eb31395fa07ff0c5082a3bd8841d6632524a0fb69aff25"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S39/inputs/a1f8285d0e_ne_110m_coastline.shp",
+          "bytes": 89652,
+          "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S39/inputs/coastline/ne_110m_coastline.dbf",
+          "bytes": 3747,
+          "sha256": "ac7e59083a862bafc20b86d73595fdf2a7c0693a411cf3ba91910a5de9df9bc3"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S39/inputs/coastline/ne_110m_coastline.shp",
+          "bytes": 89652,
+          "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S39/inputs/coastline/ne_110m_coastline.shx",
+          "bytes": 1172,
+          "sha256": "53d8c141edfb7e05c59feecc7bb64b0e22bc2e282dfa1024d20ae54c3ef7b01e"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/figures/Figure_S39/inputs/fdf02e0947_G3_departure_risk_SID_source.csv",
+          "bytes": 2370573,
+          "sha256": "fdf02e0947f5516a8fe6c9bcc82f485214730fffbc699868b43bb82ae22dc5d1"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/layout/backup/Figure_07.png",
+          "bytes": 668715,
+          "sha256": "b522d8116acb886004f30ce877999e8f13ff632eb073c7dcf2e62142e991aa41"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/layout/backup/Figure_S05.png",
+          "bytes": 848260,
+          "sha256": "0ad53af1beb40954ac944bf544639abf8a42021d33dfdf6aec6e913a5871fcdf"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/layout/backup/Figure_S06.png",
+          "bytes": 652290,
+          "sha256": "c62dd8f452b2abb19c0095f071246d0b8383e69078c4bb8db59ba0cac5c4300c"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/layout/backup/Figure_S07.png",
+          "bytes": 430190,
+          "sha256": "b3f980345f5241834d8c055b7f2002429cf6e777f1ccef335c0a1597f7e639d1"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/layout/backup/Figure_S08.png",
+          "bytes": 723824,
+          "sha256": "d625e5ce9e9755f1b8359a695867f07ef854eee2814d3188792a83dfe0f1fd8d"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/layout/backup/Figure_S31.png",
+          "bytes": 760722,
+          "sha256": "7a6676c87bebc1b58383477702a51822015001655c5d09aaaca0949dc25fa6eb"
+        },
+        {
+          "path": "paper_2026/lifecycle_figures/layout/provenance/Figure_LATITUDE.png",
+          "bytes": 652290,
+          "sha256": "c62dd8f452b2abb19c0095f071246d0b8383e69078c4bb8db59ba0cac5c4300c"
+        },
+        {
+          "path": "paper_2026/newanalyses/history/backup/Figure_07.png",
+          "bytes": 427967,
+          "sha256": "65ff178a1b6433d1619b37e851ed683deddacff1da73a720e7b546ee1deecfe6"
+        },
+        {
+          "path": "paper_2026/newanalyses/spatial/figures/LATITUDE/source_data/historical_risk_entry_return_locations.csv",
+          "bytes": 418277,
+          "sha256": "7519e3735923a00dc9f8ffec1fdac4804bc43785d0775efcebcaea8e3fa9dde1"
+        }
+      ]
+    }
+  ]
+}

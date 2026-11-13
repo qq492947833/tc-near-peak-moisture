@@ -1,0 +1,20 @@
+{
+  "recovery/MNAR_policy_response_sensitivity.csv": {
+    "relative_path": "inputs/recovery/MNAR_policy_response_sensitivity.csv",
+    "sha256": "bef589ec1804a1ad66cfac8f0e5094ef6841dfb19d2d9775fcccd0a569cd93fa",
+    "original_path": "MNAR_policy_response_sensitivity.csv",
+    "bytes": 2363
+  },
+  "recovery/MNAR_sensitivity.csv": {
+    "relative_path": "inputs/recovery/MNAR_sensitivity.csv",
+    "sha256": "4509d1206ccebc6063fc97e30da0afed76ee9d36fc7f17bca709fb9412987814",
+    "original_path": "MNAR_sensitivity.csv",
+    "bytes": 871
+  },
+  "recovery/physical_confounder_summary.csv": {
+    "relative_path": "inputs/recovery/physical_confounder_summary.csv",
+    "sha256": "f257a4a7cb17a28e5f64ca9904db9dc10371b08d92dba9746d87a465d6f52f52",
+    "original_path": "physical_confounder_summary.csv",
+    "bytes": 1411
+  }
+}

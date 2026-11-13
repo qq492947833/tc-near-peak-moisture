@@ -1,0 +1,392 @@
+{
+  "figure_id": "Figure_S28",
+  "type": "supplementary",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\0d49224d67_effects.csv"
+      ],
+      "fields": [
+        "window",
+        "support",
+        "outcome",
+        "variable",
+        "delta_sd",
+        "observed_delta_sd",
+        "n_sid",
+        "family_id",
+        "family_size",
+        "estimate",
+        "effect_1sd",
+        "p",
+        "ci_low",
+        "ci_high",
+        "design_rank",
+        "design_columns",
+        "removed_redundant",
+        "status",
+        "scaling_policy",
+        "covariance",
+        "bootstrap_B",
+        "bootstrap_successful",
+        "bootstrap_rank_failed",
+        "bootstrap_numeric_failed",
+        "bootstrap_requested",
+        "bootstrap_attempted",
+        "q"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig26",
+        "selected_rows": "panels\\00_a_All_36_original_estimates__outlines_are_original_BH_q___0_05__not_CI_classification.csv",
+        "selected_rows_sha256": "ebc571226164218dfcb2a3461916b37750d48b3dfa50ead5923d7dad88cde7c7"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2197,
+          1931,
+          2057,
+          1810
+        ],
+        "bootstrap_successful": [
+          2000
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation."
+      },
+      "normalization": {
+        "executed_entry": "fig26",
+        "role": "All 36 original estimates; outlines are original BH q < 0.05, not CI classification",
+        "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation."
+      },
+      "difference_direction": {
+        "role": "All 36 original estimates; outlines are original BH q < 0.05, not CI classification",
+        "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "bootstrap_B",
+          "bootstrap_successful",
+          "bootstrap_rank_failed",
+          "bootstrap_numeric_failed",
+          "bootstrap_requested",
+          "bootstrap_attempted"
+        ],
+        "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/0d49224d67_effects.csv",
+            "sha256": "0d49224d671373140a8285e8aaa54b15aa0ebaa931b7608e5a5fe96242988421",
+            "original_path": "effects.csv",
+            "logical_keys": [
+              "FP0177"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "ebc571226164218dfcb2a3461916b37750d48b3dfa50ead5923d7dad88cde7c7"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\0d49224d67_effects.csv"
+      ],
+      "fields": [
+        "window",
+        "support",
+        "outcome",
+        "variable",
+        "delta_sd",
+        "observed_delta_sd",
+        "n_sid",
+        "family_id",
+        "family_size",
+        "estimate",
+        "effect_1sd",
+        "p",
+        "ci_low",
+        "ci_high",
+        "design_rank",
+        "design_columns",
+        "removed_redundant",
+        "status",
+        "scaling_policy",
+        "covariance",
+        "bootstrap_B",
+        "bootstrap_successful",
+        "bootstrap_rank_failed",
+        "bootstrap_numeric_failed",
+        "bootstrap_requested",
+        "bootstrap_attempted",
+        "q"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig26",
+        "selected_rows": "panels\\01_b_All_36_original_estimates__outlines_are_original_BH_q___0_05__not_CI_classification.csv",
+        "selected_rows_sha256": "3793677bd1683ca750e538abbc49b1f087c5b59c7fc78a7acbf2ed9433d6bbe2"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2197,
+          1931,
+          2057,
+          1810
+        ],
+        "bootstrap_successful": [
+          2000
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation."
+      },
+      "normalization": {
+        "executed_entry": "fig26",
+        "role": "All 36 original estimates; outlines are original BH q < 0.05, not CI classification",
+        "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation."
+      },
+      "difference_direction": {
+        "role": "All 36 original estimates; outlines are original BH q < 0.05, not CI classification",
+        "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "bootstrap_B",
+          "bootstrap_successful",
+          "bootstrap_rank_failed",
+          "bootstrap_numeric_failed",
+          "bootstrap_requested",
+          "bootstrap_attempted"
+        ],
+        "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry A (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour bar showing change per fixed observed SD. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or A per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/0d49224d67_effects.csv",
+            "sha256": "0d49224d671373140a8285e8aaa54b15aa0ebaa931b7608e5a5fe96242988421",
+            "original_path": "effects.csv",
+            "logical_keys": [
+              "FP0177"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "3793677bd1683ca750e538abbc49b1f087c5b59c7fc78a7acbf2ed9433d6bbe2"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/0d49224d67_effects.csv",
+      "sha256": "0d49224d671373140a8285e8aaa54b15aa0ebaa931b7608e5a5fe96242988421",
+      "original_path": "effects.csv",
+      "logical_keys": [
+        "FP0177"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S28",
+    "size_mm": [
+      180.0,
+      150.0
+    ],
+    "pixels": [
+      6377,
+      5314
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 892.3370749705989,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 7.5,
+    "files": {
+      "png": {
+        "path": "Figure_S28.png",
+        "sha256": "0ba578ec92ee2d0970cccb9b5df4e74edc4fd32b7f9729fbc6bfb4b83cf4e505"
+      },
+      "tiff": {
+        "path": "Figure_S28.tiff",
+        "sha256": "5f12c39aa4878bfe1bf6030d6c7a0a4380508c9ee85f6fc649ac190c3358125e"
+      },
+      "pdf": {
+        "path": "Figure_S28.pdf",
+        "sha256": "7a9a10c94904a2e23b931ff1b47616473b1859534963922182c913f5007270e8"
+      },
+      "svg": {
+        "path": "Figure_S28.svg",
+        "sha256": "aa78902a23fa2ff737113b646847e0359a5d7e33ad57de9e4a9c196bbe01e963"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 1,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 425.1968503937008
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              86.74015748031498,
+              242.0655557590185,
+              492.37795275590554,
+              365.6692913385827
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              70.74015748031498,
+              396.6692913385827
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              86.74015748031498,
+              55.2755905511811,
+              492.37795275590554,
+              178.87932613074528
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              70.74015748031498,
+              209.8793261307453
+            ]
+          }
+        ],
+        "row_groups": [],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S28",
+    "source": "Figure_S18.png",
+    "sha256": "bf808f6de16b76f7e87e897e26250afe5e8e90724347e7473f133758042afc3d",
+    "pixels": [
+      6377,
+      5846
+    ],
+    "display_inches": [
+      6.496062992125984,
+      5.955148731408574
+    ],
+    "effective_dpi": 981.6715151515151
+  },
+  "caption": "Supplementary Fig. 28 | Environmental contrasts and lifecycle asymmetry across time windows. a,b, Associations of six environmental factors with signed A (a) and individual absolute asymmetry  (b). Matrix columns distinguish 12 h, primary 24 h and full-segment windows on window-specific and common-SID support. Both panels share a zero-centred colour scale. All 72 estimates are shown; model samples range from 1,810 to 2,197 cyclones. Values are changes in A or  per fixed observed SD of the post-minus-pre contrast. Outlined cells have BH q<0.05. Table S2k reports every estimate, marginal 95% SID-percentile interval from 2,000 draws, scale, count and P/q value. P values use HC1 covariance with a normal reference; BH adjustment covers twelve tests separately within each of six window-by-support families. A compares genesis-to-first-LMI and last-LMI-to-termination durations and excludes the intervening LMI span. These are conditional timing associations without an intervention interpretation.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

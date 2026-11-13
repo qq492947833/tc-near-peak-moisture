@@ -1,0 +1,86 @@
+{
+  "status": "COMPLETE_CORRECTED_STATISTICS_BOUND",
+  "accepted_version": "v2_fold_supported",
+  "complete_bootstrap_attempts_per_hemisphere": 1000,
+  "successful_draws": {
+    "NH": 1000,
+    "SH": 1000
+  },
+  "training_sid": 1245,
+  "reference_sid": 322,
+  "all_final_sources_hash_verified": true,
+  "sources": [
+    {
+      "snapshot": "source_data/event_latitude_ledger.csv",
+      "sha256": "564550801f72c3f8d2875e6b42ae6af29ac95c81a763aa28aaa3acd5d39b849c",
+      "bytes": 87585,
+      "source_filename": "event_latitude_ledger.csv"
+    },
+    {
+      "snapshot": "source_data/historical_risk_entry_return_locations.csv",
+      "sha256": "7519e3735923a00dc9f8ffec1fdac4804bc43785d0775efcebcaea8e3fa9dde1",
+      "bytes": 418277,
+      "source_filename": "historical_risk_entry_return_locations.csv"
+    },
+    {
+      "snapshot": "source_data/risk_FROZEN_CONFIG.json",
+      "sha256": "6d395544b74e4555de8987465fb217c6c827fb172a984c75732498b03cc325a1",
+      "bytes": 3707,
+      "source_filename": "FROZEN_CONFIG.json"
+    },
+    {
+      "snapshot": "source_data/v2_latitude_standardized_risks.csv",
+      "sha256": "101b73fcadd392373ebe5480a9b1f0291f2d1a31868bc70ecadd722177426a35",
+      "bytes": 2710,
+      "source_filename": "latitude_standardized_risks.csv"
+    },
+    {
+      "snapshot": "source_data/v2_scope_population_counts.csv",
+      "sha256": "f222a9df36d9ade790f56f60c761115d5f2be602174fb2ac131af4cdc4ab1659",
+      "bytes": 1831,
+      "source_filename": "scope_population_counts.csv"
+    },
+    {
+      "snapshot": "source_data/v2_analysis_outcome_support.csv",
+      "sha256": "883ba518489b0a1e33573405ab43dc679f9c9cc95b21dcce4ebf0a90f372eede",
+      "bytes": 261,
+      "source_filename": "analysis_outcome_support.csv"
+    },
+    {
+      "snapshot": "source_data/v2_latitude_probability_contrasts.csv",
+      "sha256": "e271cac1dc116ccfd89bbda69e47495bdba66bab093ee807f02e8022f943b65e",
+      "bytes": 2233,
+      "source_filename": "latitude_probability_contrasts.csv"
+    },
+    {
+      "snapshot": "source_data/v2_FROZEN_CONFIG.json",
+      "sha256": "523f090892834efdfe032a45ea4696fb7c4afd9ff8dad0efac626b3932e45345",
+      "bytes": 5251,
+      "source_filename": "FROZEN_CONFIG.json"
+    },
+    {
+      "snapshot": "source_data/v2_SUPPORT_RECEIPT.json",
+      "sha256": "d90f43ffc6b71cc0e048135035b31bec7bc446f91f39b02be7510b399f2ef2d1",
+      "bytes": 668,
+      "source_filename": "SUPPORT_RECEIPT.json"
+    },
+    {
+      "snapshot": "source_data/v2_NUMERIC_RECEIPT.json",
+      "sha256": "86a808810ed3d236df7d3ab89edeb7c50b71a5fcc6d79e0b64cbdf7460514096",
+      "bytes": 8256,
+      "source_filename": "NUMERIC_RECEIPT.json"
+    },
+    {
+      "snapshot": "source_data/v2_fold_support_membership_406.csv",
+      "sha256": "5cb181abc92ade20afb9db73453b23afabf8a60854d7084ef91f5fd52c002897",
+      "bytes": 15678,
+      "source_filename": "fold_support_membership_406.csv"
+    }
+  ],
+  "selected_primary_rows": 8,
+  "source_risk_rows": 24,
+  "selection_reason": "Only primary spline risks at the two prespecified latitude targets are requested; natural-risk baseline and linear functional-form sensitivity remain in the full source snapshot. No rows from either descriptive population are discarded.",
+  "render_x_offsets": 0,
+  "source_numeric_status": "V2_CORRECTED_TRAINING_COMPUTED_PENDING_INDEPENDENT_REVIEW",
+  "bound_utc": "2026-11-09T17:33:46.828150+00:00"
+}

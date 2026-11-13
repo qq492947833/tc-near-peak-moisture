@@ -1,0 +1,17 @@
+basin_genesis,period,n_sid,return_sid,n_years
+EP,P1,117,8,11
+EP,P2,74,4,11
+EP,P3,79,0,11
+EP,P4,70,4,9
+NA,P1,10,2,6
+NA,P2,23,4,9
+NA,P3,21,1,10
+NA,P4,17,1,8
+SI,P1,56,2,11
+SI,P2,91,3,11
+SI,P3,73,5,11
+SI,P4,55,6,9
+WP,P1,79,8,11
+WP,P2,81,4,10
+WP,P3,69,4,11
+WP,P4,38,5,9

@@ -1,0 +1,672 @@
+{
+  "figure_id": "Figure_06",
+  "type": "main",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/direct/paired_flux_components.csv"
+      ],
+      "fields": {
+        "direct/paired_flux_components.csv": [
+          "cohort",
+          "window",
+          "factor",
+          "kind",
+          "layer",
+          "sector",
+          "units",
+          "quantity",
+          "n",
+          "finite_n",
+          "estimate",
+          "low",
+          "high",
+          "status",
+          "bootstrap",
+          "interval",
+          "sign"
+        ]
+      },
+      "filter": [
+        "z = layers[layers.kind.eq('net') & layers.quantity.isin(['temporary', 'final'])]",
+        "z = z[z.metric.eq('post_r300_net')]"
+      ],
+      "sample_scope": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "weights": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/paired_flux_components.csv": "60900e8f316aae29a83d1bb98a7beb4be5e3282d0b37092de2a71b847884c811"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "Saved class means; arrow shaft width proportional to mean exchange; transform=kg / 10^12",
+          "source_key": "direct/paired_flux_components.csv",
+          "fields": [
+            "kind",
+            "cohort",
+            "window",
+            "factor",
+            "layer",
+            "sector",
+            "units",
+            "quantity",
+            "n",
+            "finite_n",
+            "estimate",
+            "low",
+            "high",
+            "status",
+            "bootstrap",
+            "interval",
+            "sign",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 3,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "c6b6f536accab82563bae16367a38a20a30f793894297f3e04a3c63d8798dea9"
+        },
+        {
+          "id": "a",
+          "role": "Saved class means; arrow shaft width proportional to mean exchange; transform=kg / 10^12",
+          "source_key": "direct/paired_flux_components.csv",
+          "fields": [
+            "kind",
+            "cohort",
+            "window",
+            "factor",
+            "layer",
+            "sector",
+            "units",
+            "quantity",
+            "n",
+            "finite_n",
+            "estimate",
+            "low",
+            "high",
+            "status",
+            "bootstrap",
+            "interval",
+            "sign",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 3,
+          "saved_selected_table": "panel_a_1.csv",
+          "sha256": "b3e4fd04e35befcd5176a36ae7951849ea32803fa2285b36f112ad268fe5afcd"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/direct/pressure_components.csv"
+      ],
+      "fields": {
+        "direct/pressure_components.csv": [
+          "cohort",
+          "window",
+          "factor",
+          "kind",
+          "layer",
+          "sector",
+          "units",
+          "quantity",
+          "n",
+          "finite_n",
+          "estimate",
+          "low",
+          "high",
+          "status",
+          "bootstrap",
+          "interval",
+          "sign"
+        ]
+      },
+      "filter": [
+        "z = layers[layers.kind.eq('net') & layers.quantity.isin(['temporary', 'final'])]",
+        "z = z[z.metric.eq('post_r300_net')]"
+      ],
+      "sample_scope": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "units": {
+        "x": "",
+        "y": "Pressure (hPa)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "weights": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/pressure_components.csv": "8ae053ffddf0b6a4b63fcf45f13c8ac3001fd6325674219ead1ab268b35025ac"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "Layer-integrated amount; unequal native pressure widths; no interpolation; transform=kg / 10^12",
+          "source_key": "direct/pressure_components.csv",
+          "fields": [
+            "cohort",
+            "window",
+            "factor",
+            "kind",
+            "layer",
+            "sector",
+            "units",
+            "quantity",
+            "n",
+            "finite_n",
+            "estimate",
+            "low",
+            "high",
+            "status",
+            "bootstrap",
+            "interval",
+            "sign",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 8,
+          "saved_selected_table": "panel_b_2.csv",
+          "sha256": "fe336161b483edf41a2892b99671b2db1edc842fc60a554c1e1638f41ba06270"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/direct/paired_flux_components.csv"
+      ],
+      "fields": {
+        "direct/paired_flux_components.csv": [
+          "cohort",
+          "window",
+          "factor",
+          "kind",
+          "layer",
+          "sector",
+          "units",
+          "quantity",
+          "n",
+          "finite_n",
+          "estimate",
+          "low",
+          "high",
+          "status",
+          "bootstrap",
+          "interval",
+          "sign"
+        ]
+      },
+      "filter": [
+        "z = layers[layers.kind.eq('net') & layers.quantity.isin(['temporary', 'final'])]",
+        "z = z[z.metric.eq('post_r300_net')]"
+      ],
+      "sample_scope": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "weights": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/paired_flux_components.csv": "60900e8f316aae29a83d1bb98a7beb4be5e3282d0b37092de2a71b847884c811"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "Saved direct differences and their original percentile intervals; transform=kg / 10^12",
+          "source_key": "direct/paired_flux_components.csv",
+          "fields": [
+            "kind",
+            "cohort",
+            "window",
+            "factor",
+            "layer",
+            "sector",
+            "units",
+            "quantity",
+            "n",
+            "finite_n",
+            "estimate",
+            "low",
+            "high",
+            "status",
+            "bootstrap",
+            "interval",
+            "sign",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 3,
+          "saved_selected_table": "panel_c_3.csv",
+          "sha256": "af8f29bcb6774435009519adec873c82cfedc7f2f8d0cdf3c4186b4a33452b6b"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/direct/exchange_background80.csv"
+      ],
+      "fields": {
+        "direct/exchange_background80.csv": [
+          "model",
+          "metric",
+          "target",
+          "units",
+          "n_original",
+          "n_target",
+          "estimate",
+          "low",
+          "high",
+          "draw_attempts",
+          "valid_draws",
+          "failed_draws",
+          "interval_type",
+          "point_accepted"
+        ]
+      },
+      "filter": [
+        "z = layers[layers.kind.eq('net') & layers.quantity.isin(['temporary', 'final'])]",
+        "z = z[z.metric.eq('post_r300_net')]"
+      ],
+      "sample_scope": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "units": {
+        "x": "",
+        "y": "Net contrast\n(10¹² kg)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "weights": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/exchange_background80.csv": "dd31fb8764c6b9d5fa7a237c48cf4f7ce4d7e6929975f0327dce56c72abb3765"
+        },
+        "original_plot_source": "matrix_main_original.py",
+        "original_plot_source_sha256": "967180a9ce9c8709324c58cc547a961d64506e0108dc6d0985b70ecdfd51a25f"
+      },
+      "selected_source_rows": [
+        {
+          "id": "d",
+          "role": "Distinct original/restricted/weighted targets, intervals and draw support retained; transform=kg / 10^12",
+          "source_key": "direct/exchange_background80.csv",
+          "fields": [
+            "model",
+            "metric",
+            "target",
+            "units",
+            "n_original",
+            "n_target",
+            "estimate",
+            "low",
+            "high",
+            "draw_attempts",
+            "valid_draws",
+            "failed_draws",
+            "interval_type",
+            "point_accepted",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_d_4.csv",
+          "sha256": "b19c710300cf6742bdd18d60786895c501ad65880403c115ee9cacf4209aa211"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "direct/exchange_background80.csv",
+      "relative_path": "inputs/direct/exchange_background80.csv",
+      "sha256": "dd31fb8764c6b9d5fa7a237c48cf4f7ce4d7e6929975f0327dce56c72abb3765",
+      "original_path": "exchange_background80.csv",
+      "bytes": 3183
+    },
+    {
+      "key": "direct/paired_flux_components.csv",
+      "relative_path": "inputs/direct/paired_flux_components.csv",
+      "sha256": "60900e8f316aae29a83d1bb98a7beb4be5e3282d0b37092de2a71b847884c811",
+      "original_path": "paired_flux_components.csv",
+      "bytes": 5727
+    },
+    {
+      "key": "direct/pressure_components.csv",
+      "relative_path": "inputs/direct/pressure_components.csv",
+      "sha256": "8ae053ffddf0b6a4b63fcf45f13c8ac3001fd6325674219ead1ab268b35025ac",
+      "original_path": "pressure_components.csv",
+      "bytes": 46361
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_06.png",
+      "sha256": "32ea232857833340e08d54ca93626006ad05455eb6d088bdef3f081c538e8de5"
+    },
+    "tiff": {
+      "path": "Figure_06.tiff",
+      "sha256": "ffee3a7c8dde013174a1d0fb7f6f6458377060f0c232177c70b073abcf129987"
+    },
+    "pdf": {
+      "path": "Figure_06.pdf",
+      "sha256": "3f8cd2eec053d8be0bb618e775be6373b734403009b009c7fc0cbf45d900253d"
+    },
+    "svg": {
+      "path": "Figure_06.svg",
+      "sha256": "8832a3b03298682e053e2022344125710397dfb0b1a5245b670c1690f2ddb33f"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_06",
+      "returncode": 0,
+      "elapsed_s": 11.18,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 4,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 484.72440944881896
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              66.33070866141733,
+              305.28462494819735,
+              494.9291338582678,
+              443.6787401574804
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 2,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              46.33070866141733,
+              455.6787401574803
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              66.33070866141733,
+              165.3919746301735,
+              241.26884139482564,
+              261.6661417322835
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              46.33070866141733,
+              273.6661417322835
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              319.9910011248594,
+              165.3919746301735,
+              494.92913385826773,
+              261.6661417322835
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              299.9910011248594,
+              273.6661417322835
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              66.33070866141733,
+              51.307086614173215,
+              494.9291338582678,
+              93.4270347213463
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              46.33070866141733,
+              105.42703472134629
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "b",
+              "c"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "d"
+            ]
+          }
+        ],
+        "boundary_groups": [
+          {
+            "id": "inferred-shared-left-1",
+            "edge": "left",
+            "panels": [
+              "a",
+              "b",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-shared-right-1",
+            "edge": "right",
+            "panels": [
+              "a",
+              "c",
+              "d"
+            ]
+          }
+        ],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      993.2329811473861,
+      993.2329251355793
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_06",
+      "source": "Figure_06.png",
+      "sha256": "32ea232857833340e08d54ca93626006ad05455eb6d088bdef3f081c538e8de5",
+      "pixels": [
+        6377,
+        6059
+      ],
+      "display_inches": [
+        6.42044728783902,
+        6.100281058617673
+      ],
+      "effective_dpi": 993.2329251355793
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Fig. 6 | Inward and outward exchange across the moving 300 km boundary. a, Gross inward, gross outward and net inward water-vapour exchange over 0–24 h for the same 80 paired cyclones. Arrow widths are proportional to saved class means on a common scale; the circular boundary is schematic. b, Net exchange within the four native pressure intervals. Block heights follow the pressure boundaries, while colour and numbers show layer-integrated mass, not transport per unit pressure; no interpolation connects the layers. c, Direct temporary-minus-final exchange contrasts. Panels c and d share the colour scale shown below c. d, Net contrasts in the original 80-pair sample, the restricted 74-pair sample and the two background-adjusted comparisons. Means are shown in the panels; complete 95% intervals and support are retained in Table S6a,c,g2,h,k. Positive net exchange is inward minus outward transport.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "final_layout.py": "cbaff34a13540a80c497e7ca92dc42fc5d389676eb3d64a9c58a750a81dfc244",
+      "render_source.py": "8688d49ada9fa4d6c29f3112ec2f0d9a615f469273d21041a965ced3da5156a5",
+      "run.py": "c0f930fd858d8173795dd99ebfeb916bf5a249f62278ab262c72be672a326509"
+    },
+    "late_accepted_layout_sources": [
+      {
+        "original_path": "other_matrix_minimal_keys.py",
+        "relative_snapshot": "accepted_layout_source_1.txt",
+        "sha256": "f74a199c418c08a1e130e70ed1d729424623582d3c9c376cb6ca6e5a565c6fa1",
+        "executed_dependency": false
+      },
+      {
+        "original_path": "repair_requested_figures.py",
+        "relative_snapshot": "accepted_layout_source_2.txt",
+        "sha256": "c0ee0872fb55f005a304644bf61ac7596fea2931054b1fc3f1ce799789e2601a",
+        "executed_dependency": false
+      }
+    ],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

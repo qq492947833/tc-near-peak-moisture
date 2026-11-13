@@ -1,0 +1,35 @@
+{
+  "figure_id": "Figure_S23",
+  "type": "main",
+  "entry_function": "fig8",
+  "legacy_identity": "Intensity_matched_pathways",
+  "family": "main",
+  "aliases": {},
+  "caption": "Fig. 12 | Paired environments at comparable intensity and their relation to lifecycle timing. a, Pre- and post-peak RH in 8,966 shared 10 kt intensity-bin pairs from 2,327 cyclones. b, The same observed RH differences plotted against signed duration asymmetry A. Hexagons count cyclone–intensity-bin pairs; the dashed lines indicate equal RH and zero difference. These descriptive panels contain no fitted trend. c, Raw, screened and adjusted post-minus-pre estimates for five environments, with each cyclone given unit total weight across its valid bins. d, Background-adjusted slopes per 0.1 A. Cells give one estimate in the stated native unit; colour identifies interval direction, not magnitude. Full intervals and cyclone/pair counts are in Table S4c,d,e,i,k. Raw contrasts and slopes against A retain separate five-test Benjamini–Hochberg families. Raw, screened and slope intervals use 2,000 SID resamples; adjusted ranges are conditional 2.5th–97.5th percentiles of successful support-screened refits. PI adjustment is unestimated because joint support is absent; its screened mean and A slope retain their own samples. RH is the 700/500 hPa mean, advection is storm-relative horizontal humidity advection, and PI − V is potential intensity minus concurrent maximum sustained wind. A compares time to first LMI with time after last LMI, excluding their intervening span. Exact-wind comparisons are in Table S4h1,h2,h3.",
+  "baseline": {
+    "label": "Figure_12",
+    "source": "old_Figure11.png",
+    "sha256": "94907f397cf1d23d869dd7ea609c9826258fa694b9754b7cae1adba3659f548c",
+    "pixels": [
+      6375,
+      6414
+    ],
+    "display_inches": [
+      6.496062992125984,
+      6.535803805774278
+    ],
+    "effective_dpi": 981.3636073857257
+  },
+  "source_code": [
+    {
+      "original_path": "main7_9_layout_adapter.py",
+      "sha256": "9fc17dbdf233b10a820e26f5f4248f84b5298fab510290bad2e6a12db9be5424",
+      "archive": "provenance/main7_9_layout_adapter.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "departure": {
+    "replicates": 2000,
+    "seed": 650117,
+    "pre_hours": [
+      -24,
+      -18,
+      -12,
+      -6
+    ],
+    "min_common": 3,
+    "min_area": 0.8
+  },
+  "rise": {
+    "bootstrap_B": 2000,
+    "seed": 650117,
+    "pre_required_count": 3
+  },
+  "comparison": {
+    "rtol": 1e-12,
+    "atol": 1e-14,
+    "scope": "Float64 storage and same-algorithm numerical roundoff only; identities, integer counts, units, masks, and bootstrap indices exact"
+  },
+  "selection": {
+    "primary_metrics": [
+      "KE",
+      "APE",
+      "C_A_to_K",
+      "vertical_input_K_Wkg",
+      "vertical_input_A_Wkg",
+      "vertical_input_P_Wkg"
+    ],
+    "pressure_hpa": 700,
+    "layer_boundary_hpa": [
+      500,
+      850
+    ],
+    "window": 1,
+    "departure_configurations": [
+      [
+        "main",
+        "r0_300"
+      ],
+      [
+        "shift16d",
+        "r0_300"
+      ],
+      [
+        "main",
+        "r0_500"
+      ]
+    ],
+    "rise_jobs": {
+      "native_primary": 6,
+      "joint_primary_six": 6,
+      "paired_configuration_common": 36
+    },
+    "selection_basis": "Predeclared scientific identities; no effect size, interval or significance filtering"
+  },
+  "units": {
+    "KE": "J kg-1",
+    "APE": "J kg-1",
+    "C_A_to_K": "W kg-1",
+    "vertical_input_K_Wkg": "W kg-1",
+    "vertical_input_A_Wkg": "W kg-1",
+    "vertical_input_P_Wkg": "W kg-1"
+  },
+  "meaning": {
+    "departure_contrast": "Temporary departure minus final departure within SID",
+    "rise_contrast": "Legitimate trough-to-return rise versus same-SID Resolution with unchanged exact roles and wind-bin pairs",
+    "land_contact": "Any recorded contact in the preceding 24 hours; no future land-free condition",
+    "rate_integrals": "Only saved diagnosed rates are integrated in seconds; KE and APE states are not energy supply integrals",
+    "support": "Regional valid-area QC and actual request intersection; no new grid-cell support calculation"
+  },
+  "completion_input_sha256": {
+    "departure_scientific_contract": "d70b795d14b72a83d6d3beedb871c769fd336631d489e5a92dbfd67a14daaa01",
+    "rise_scientific_contract": "2310f143174ea28d2c9c5203f9b2c645b2381f4d0bcc1eb30b9c28429c23db5f"
+  }
+}

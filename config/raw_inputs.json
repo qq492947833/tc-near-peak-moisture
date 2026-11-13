@@ -39,14 +39,13 @@
       "max_gap_hours": 12.0,
       "escalation_progress": 0.25,
       "maturity_progress": 0.9,
-      "escalation_rate_threshold": 10.0,
       "resolution_rate_threshold": 10.0,
       "ri_threshold": 30.0,
       "rw_threshold": 30.0,
       "reintensification_threshold": 10.0
     },
-    "frozen_sid_table": "source_data/lifecycle/analysis_per_SID_main_window.csv.gz",
-    "frozen_record_table": "source_data/lifecycle/analysis_records.csv.gz"
+    "frozen_sid_table": "paper_2026/lifecycle_figures/lifecycle/input/main_sid.csv",
+    "frozen_record_table": "paper_2026/lifecycle_figures/lifecycle/input/analysis_records_current.csv.gz"
   },
   "era5": {
     "root_env": "FLTCCF_ERA5_ROOT",

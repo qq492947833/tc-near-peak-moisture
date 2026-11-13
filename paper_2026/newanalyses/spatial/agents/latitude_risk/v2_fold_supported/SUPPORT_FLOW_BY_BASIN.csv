@@ -1,0 +1,7 @@
+hemisphere,basin,accepted_model_n,environment_complete_n,training_n,initial_target_n,final_fold_supported_target_n,target_return48,target_nonreturn48,target_unknown48
+NH,EP,430,369,369,97,78,2,64,12
+NH,NA,329,218,218,52,39,10,27,2
+NH,NI,87,11,0,0,0,0,0,0
+NH,WP,742,274,274,103,85,18,60,7
+SH,SI,397,250,250,113,93,11,66,16
+SH,SP,246,134,134,41,27,1,20,6

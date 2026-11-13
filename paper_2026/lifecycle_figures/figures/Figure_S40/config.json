@@ -1,0 +1,39 @@
+{
+  "figure_id": "Figure_S31",
+  "type": "supplementary",
+  "entry_function": "fig24",
+  "legacy_identity": "SI_historical_SCS_process",
+  "family": "late",
+  "aliases": {
+    "geography/C_q700_SCS_return_contrasts.csv": "inputs/d8c0b2c5c0_C_q700_SCS_return_contrasts.csv",
+    "geography/post_process_return_contrasts.csv": "inputs/1a9c11441f_post_process_return_contrasts.csv",
+    "geography/pre_environment_group_contrasts.csv": "inputs/a1dd587786_pre_environment_group_contrasts.csv"
+  },
+  "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data.",
+  "baseline": {
+    "label": "Figure_S31",
+    "source": "old_FigureS24.png",
+    "sha256": "2282cb795687fb9a0072128fd03aac141a59383b5839383ba7d53d0433fab907",
+    "pixels": [
+      6375,
+      7437
+    ],
+    "display_inches": [
+      6.496062992125984,
+      7.57823053368329
+    ],
+    "effective_dpi": 981.3636363636364
+  },
+  "source_code": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

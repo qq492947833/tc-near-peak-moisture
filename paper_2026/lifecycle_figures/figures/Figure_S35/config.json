@@ -1,0 +1,38 @@
+{
+  "figure_id": "Figure_S26",
+  "type": "supplementary",
+  "entry_function": "fig15",
+  "legacy_identity": "FigS15",
+  "family": "late_original",
+  "aliases": {
+    "FP0262": "inputs/38984d0356_38984d035673_state_h2_estimates.csv",
+    "FP0266": "inputs/d48acaf71a_d48acaf71a41_main_h2_estimates.csv"
+  },
+  "caption": "Supplementary Fig. 26 | Environmental associations with wind change in bridges and resolution. a, Resolution-minus-bridge differences in environmental slopes for subsequent 6 h wind change, in kt per actual main-model sample SD. The six factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Whiskers are marginal 95% SID-percentile intervals from 2,000 estimable draws. b, SID-cluster/normal P values, Benjamini–Hochberg q values for the six-test H2 family and independent SID counts (120 or 122). All q values exceed 0.05; P/q inference is separate from the percentile intervals. c,d, The same factors under unrestricted and tropical-endpoint (c) or sea-and-tropical-endpoint (d) eligibility. Both observations at t and t + 6 h must satisfy the rule. Tropical samples contain 118–120 SIDs; sea-and-tropical samples contain 81. These sensitivities use fixed v3.1 environmental reference SDs, whereas a uses main-model sample SDs. Weights are inverse SID-by-state observation counts after filtering. Intervals in c,d are descriptive 95% SID percentiles without an additional BH family. Table S11 and source tables retain factor-specific counts and the eligible populations.",
+  "baseline": {
+    "label": "Figure_S26",
+    "source": "Figure_S26.png",
+    "sha256": "c22c254af9d0ef642308138cd9d3702650cf2bfb95e5a8fe70ed22417e97e8ec",
+    "pixels": [
+      6377,
+      5208
+    ],
+    "display_inches": [
+      6.496062992125984,
+      5.30523731408574
+    ],
+    "effective_dpi": 981.6714487347119
+  },
+  "source_code": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

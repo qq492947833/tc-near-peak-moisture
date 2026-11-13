@@ -1,0 +1,23 @@
+{
+  "status": "FINAL_FIXED_FOLD_SUPPORT_PASSED_BEFORE_FIT",
+  "configuration_sha256": "230002b265ca8360be359d7f5e9b9f0bed8180b7bedba0dff4a6af93e16b37c0",
+  "support_inputs_sha256": "60bb940f4cb26cc03413ed61647d6b6c63af57dd0cb1f528f483ff7d67a4d56c",
+  "training_inputs_sha256": "eea0512f0de3767e183e3c4b7e65f0501bb604760eb43a469d268d520ad67c0c",
+  "n_training": 1245,
+  "n_target": 322,
+  "previous_target": 406,
+  "covariate_only_excluded": 84,
+  "independent_membership_exact": true,
+  "target_by_hemisphere": {
+    "NH": 202,
+    "SH": 120
+  },
+  "target_by_basin": {
+    "EP": 78,
+    "NA": 39,
+    "SI": 93,
+    "SP": 27,
+    "WP": 85
+  },
+  "risk_models_fit": 0
+}

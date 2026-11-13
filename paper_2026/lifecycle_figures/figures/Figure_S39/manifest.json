@@ -1,0 +1,1436 @@
+{
+  "figure_id": "Figure_S30",
+  "type": "supplementary",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\bbb1e631ae_G1_genesis_basin_recurrence.csv"
+      ],
+      "fields": [
+        "config",
+        "sensitivity",
+        "region",
+        "episode_category",
+        "n_sid",
+        "n_recurrent",
+        "fraction",
+        "ci_low",
+        "ci_high",
+        "CI_method",
+        "bootstrap_low",
+        "bootstrap_high",
+        "wilson_low",
+        "wilson_high"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig23",
+        "selected_rows": "panels\\00_a_Original_category_fractions__each_category_CI_n_retained_in_table.csv",
+        "selected_rows_sha256": "75cf772b77e41abe4230cdfb277edcc5d219296b73861793b40f69860ea9639f"
+      },
+      "sample_scope": {
+        "n_sid": [
+          343,
+          511,
+          748,
+          95,
+          397,
+          246
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "normalization": {
+        "executed_entry": "fig23",
+        "role": "Original category fractions; each category CI/n retained in table",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "difference_direction": {
+        "role": "Original category fractions; each category CI/n retained in table",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "CI_method",
+          "bootstrap_low",
+          "bootstrap_high",
+          "wilson_low",
+          "wilson_high"
+        ],
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/a1f8285d0e_ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline/ne_110m_coastline.shp"
+            ]
+          },
+          {
+            "relative_path": "inputs/bbb1e631ae_G1_genesis_basin_recurrence.csv",
+            "sha256": "bbb1e631ae4bb7fb3a70022de54c49f06e3b3d5e0d784463da0166bd4afa7a18",
+            "original_path": "G1_genesis_basin_recurrence.csv",
+            "logical_keys": [
+              "geography/G1_genesis_basin_recurrence.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fdf02e0947_G3_departure_risk_SID_source.csv",
+            "sha256": "fdf02e0947f5516a8fe6c9bcc82f485214730fffbc699868b43bb82ae22dc5d1",
+            "original_path": "G3_departure_risk_SID_source.csv",
+            "logical_keys": [
+              "geography/G3_departure_risk_SID_source.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/9038797474_G3_region_policy_estimates.csv",
+            "sha256": "90387974743cd88466759e910b84aabd5fa70e51bef6829c07229429804168bd",
+            "original_path": "G3_region_policy_estimates.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_estimates.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/02c56440b3_G3_region_policy_support.csv",
+            "sha256": "02c56440b3ab728b406fe53e645af97e8e53b1066626ffa03704ff3160a67494",
+            "original_path": "G3_region_policy_support.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_support.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a001ca831a_general_reintensification_master_episode_sources.csv",
+            "sha256": "a001ca831a26d29c8be66e07a5c524348f903bf72c8dc257b90bbbdae9a24d5e",
+            "original_path": "general_reintensification_master_episode_sources.csv",
+            "logical_keys": [
+              "geography/general_reintensification_main_episode_sources.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1aeff2a152_geographic_grid_counts_5_and_10deg.csv",
+            "sha256": "1aeff2a152dfe635bf06005613287c7a1d40fb1a351082aa9b7f40d69e9f597f",
+            "original_path": "geographic_grid_counts_5_and_10deg.csv",
+            "logical_keys": [
+              "geography/geographic_grid_counts_5_and_10deg.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.cpg",
+            "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+            "original_path": "ne_110m_coastline.cpg",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.dbf",
+            "sha256": "ac7e59083a862bafc20b86d73595fdf2a7c0693a411cf3ba91910a5de9df9bc3",
+            "original_path": "ne_110m_coastline.dbf",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.prj",
+            "sha256": "3259f0e55290a82b1350646f604e8a7ee1e2136c0320a40fad838ab40819fff8",
+            "original_path": "ne_110m_coastline.prj",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shx",
+            "sha256": "53d8c141edfb7e05c59feecc7bb64b0e22bc2e282dfa1024d20ae54c3ef7b01e",
+            "original_path": "ne_110m_coastline.shx",
+            "logical_keys": [
+              "coastline"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "75cf772b77e41abe4230cdfb277edcc5d219296b73861793b40f69860ea9639f"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\a001ca831a_general_reintensification_master_episode_sources.csv"
+      ],
+      "fields": [
+        "Index",
+        "sid",
+        "event_id",
+        "first_window_start",
+        "last_window_start",
+        "last_window_end",
+        "max_24h_gain_kt",
+        "qualifying_window_n",
+        "start_F_stage",
+        "involved_F_stages",
+        "cross_stage",
+        "window_end_present",
+        "qualifying_record_indices",
+        "first_window_start_UTC",
+        "first_window_end_UTC",
+        "start_lat",
+        "start_lon",
+        "start_basin",
+        "start_state",
+        "start_USA_STATUS",
+        "start_NATURE",
+        "start_wind_filled_flag",
+        "end_lat",
+        "end_lon",
+        "end_basin",
+        "status_class",
+        "explicit_ET_record",
+        "within_main2368",
+        "within_common2366",
+        "frozen_near_peak_recurrent",
+        "first_window_after_resolution",
+        "position_definition",
+        "start_region",
+        "start_ocean",
+        "end_region",
+        "end_ocean"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig23",
+        "selected_rows": "panels\\01_b_All_actual_events_retained__locations_remain_source_data__not_duplicated_from_main_Fig__1.csv",
+        "selected_rows_sha256": "840b2d1fdea7ff23e0a2d57b8255936a9dc2191073170b15f99347b2e1278643"
+      },
+      "sample_scope": {
+        "distinct_observed_SIDs": 315,
+        "distinct_event_id": 8
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "normalization": {
+        "executed_entry": "fig23",
+        "role": "All actual events retained; locations remain source data, not duplicated from main Fig. 1",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "difference_direction": {
+        "role": "All actual events retained; locations remain source data, not duplicated from main Fig. 1",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "explicit_ET_record"
+        ],
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/a1f8285d0e_ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline/ne_110m_coastline.shp"
+            ]
+          },
+          {
+            "relative_path": "inputs/bbb1e631ae_G1_genesis_basin_recurrence.csv",
+            "sha256": "bbb1e631ae4bb7fb3a70022de54c49f06e3b3d5e0d784463da0166bd4afa7a18",
+            "original_path": "G1_genesis_basin_recurrence.csv",
+            "logical_keys": [
+              "geography/G1_genesis_basin_recurrence.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fdf02e0947_G3_departure_risk_SID_source.csv",
+            "sha256": "fdf02e0947f5516a8fe6c9bcc82f485214730fffbc699868b43bb82ae22dc5d1",
+            "original_path": "G3_departure_risk_SID_source.csv",
+            "logical_keys": [
+              "geography/G3_departure_risk_SID_source.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/9038797474_G3_region_policy_estimates.csv",
+            "sha256": "90387974743cd88466759e910b84aabd5fa70e51bef6829c07229429804168bd",
+            "original_path": "G3_region_policy_estimates.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_estimates.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/02c56440b3_G3_region_policy_support.csv",
+            "sha256": "02c56440b3ab728b406fe53e645af97e8e53b1066626ffa03704ff3160a67494",
+            "original_path": "G3_region_policy_support.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_support.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a001ca831a_general_reintensification_master_episode_sources.csv",
+            "sha256": "a001ca831a26d29c8be66e07a5c524348f903bf72c8dc257b90bbbdae9a24d5e",
+            "original_path": "general_reintensification_master_episode_sources.csv",
+            "logical_keys": [
+              "geography/general_reintensification_main_episode_sources.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1aeff2a152_geographic_grid_counts_5_and_10deg.csv",
+            "sha256": "1aeff2a152dfe635bf06005613287c7a1d40fb1a351082aa9b7f40d69e9f597f",
+            "original_path": "geographic_grid_counts_5_and_10deg.csv",
+            "logical_keys": [
+              "geography/geographic_grid_counts_5_and_10deg.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.cpg",
+            "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+            "original_path": "ne_110m_coastline.cpg",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.dbf",
+            "sha256": "ac7e59083a862bafc20b86d73595fdf2a7c0693a411cf3ba91910a5de9df9bc3",
+            "original_path": "ne_110m_coastline.dbf",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.prj",
+            "sha256": "3259f0e55290a82b1350646f604e8a7ee1e2136c0320a40fad838ab40819fff8",
+            "original_path": "ne_110m_coastline.prj",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shx",
+            "sha256": "53d8c141edfb7e05c59feecc7bb64b0e22bc2e282dfa1024d20ae54c3ef7b01e",
+            "original_path": "ne_110m_coastline.shx",
+            "logical_keys": [
+              "coastline"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "840b2d1fdea7ff23e0a2d57b8255936a9dc2191073170b15f99347b2e1278643"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs\\1aeff2a152_geographic_grid_counts_5_and_10deg.csv"
+      ],
+      "fields": [
+        "grid_degrees",
+        "quantity",
+        "lon_left",
+        "lat_bottom",
+        "n_records",
+        "n_sid",
+        "known_return",
+        "unknown",
+        "risk_display_support",
+        "estimand"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig23",
+        "selected_rows": "panels\\02_c_Saved_5-degree_lattice__marker_area_linear_above_a_fixed_minimum.csv",
+        "selected_rows_sha256": "2ea9c1118b9e59f086555a641ff3e2caa0023202359d2a0df07b6ca635617605"
+      },
+      "sample_scope": {
+        "n_sid": [
+          1,
+          8,
+          3,
+          2,
+          5,
+          7,
+          4,
+          10,
+          6,
+          13,
+          27,
+          20,
+          33,
+          52,
+          22,
+          61,
+          30,
+          11,
+          16,
+          9,
+          12,
+          15,
+          23,
+          14,
+          32,
+          19,
+          24,
+          37,
+          49,
+          46,
+          28,
+          17,
+          18
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "normalization": {
+        "executed_entry": "fig23",
+        "role": "Saved 5-degree lattice; marker area linear above a fixed minimum",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "difference_direction": {
+        "role": "Saved 5-degree lattice; marker area linear above a fixed minimum",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/a1f8285d0e_ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline/ne_110m_coastline.shp"
+            ]
+          },
+          {
+            "relative_path": "inputs/bbb1e631ae_G1_genesis_basin_recurrence.csv",
+            "sha256": "bbb1e631ae4bb7fb3a70022de54c49f06e3b3d5e0d784463da0166bd4afa7a18",
+            "original_path": "G1_genesis_basin_recurrence.csv",
+            "logical_keys": [
+              "geography/G1_genesis_basin_recurrence.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fdf02e0947_G3_departure_risk_SID_source.csv",
+            "sha256": "fdf02e0947f5516a8fe6c9bcc82f485214730fffbc699868b43bb82ae22dc5d1",
+            "original_path": "G3_departure_risk_SID_source.csv",
+            "logical_keys": [
+              "geography/G3_departure_risk_SID_source.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/9038797474_G3_region_policy_estimates.csv",
+            "sha256": "90387974743cd88466759e910b84aabd5fa70e51bef6829c07229429804168bd",
+            "original_path": "G3_region_policy_estimates.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_estimates.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/02c56440b3_G3_region_policy_support.csv",
+            "sha256": "02c56440b3ab728b406fe53e645af97e8e53b1066626ffa03704ff3160a67494",
+            "original_path": "G3_region_policy_support.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_support.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a001ca831a_general_reintensification_master_episode_sources.csv",
+            "sha256": "a001ca831a26d29c8be66e07a5c524348f903bf72c8dc257b90bbbdae9a24d5e",
+            "original_path": "general_reintensification_master_episode_sources.csv",
+            "logical_keys": [
+              "geography/general_reintensification_main_episode_sources.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1aeff2a152_geographic_grid_counts_5_and_10deg.csv",
+            "sha256": "1aeff2a152dfe635bf06005613287c7a1d40fb1a351082aa9b7f40d69e9f597f",
+            "original_path": "geographic_grid_counts_5_and_10deg.csv",
+            "logical_keys": [
+              "geography/geographic_grid_counts_5_and_10deg.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.cpg",
+            "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+            "original_path": "ne_110m_coastline.cpg",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.dbf",
+            "sha256": "ac7e59083a862bafc20b86d73595fdf2a7c0693a411cf3ba91910a5de9df9bc3",
+            "original_path": "ne_110m_coastline.dbf",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.prj",
+            "sha256": "3259f0e55290a82b1350646f604e8a7ee1e2136c0320a40fad838ab40819fff8",
+            "original_path": "ne_110m_coastline.prj",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shx",
+            "sha256": "53d8c141edfb7e05c59feecc7bb64b0e22bc2e282dfa1024d20ae54c3ef7b01e",
+            "original_path": "ne_110m_coastline.shx",
+            "logical_keys": [
+              "coastline"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "2ea9c1118b9e59f086555a641ff3e2caa0023202359d2a0df07b6ca635617605"
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs\\fdf02e0947_G3_departure_risk_SID_source.csv"
+      ],
+      "fields": [
+        "month",
+        "outcome_group",
+        "count"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig23",
+        "selected_rows": "panels\\03_d_Exact_month_outcome_counts_from_all_94_SCS_departures.csv",
+        "selected_rows_sha256": "7961a16446e867ffb74ed08776773e1f58a3989d84ce3f01360f4174787019ab"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "normalization": {
+        "executed_entry": "fig23",
+        "role": "Exact month/outcome counts from all 94 SCS departures",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "difference_direction": {
+        "role": "Exact month/outcome counts from all 94 SCS departures",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/a1f8285d0e_ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline/ne_110m_coastline.shp"
+            ]
+          },
+          {
+            "relative_path": "inputs/bbb1e631ae_G1_genesis_basin_recurrence.csv",
+            "sha256": "bbb1e631ae4bb7fb3a70022de54c49f06e3b3d5e0d784463da0166bd4afa7a18",
+            "original_path": "G1_genesis_basin_recurrence.csv",
+            "logical_keys": [
+              "geography/G1_genesis_basin_recurrence.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fdf02e0947_G3_departure_risk_SID_source.csv",
+            "sha256": "fdf02e0947f5516a8fe6c9bcc82f485214730fffbc699868b43bb82ae22dc5d1",
+            "original_path": "G3_departure_risk_SID_source.csv",
+            "logical_keys": [
+              "geography/G3_departure_risk_SID_source.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/9038797474_G3_region_policy_estimates.csv",
+            "sha256": "90387974743cd88466759e910b84aabd5fa70e51bef6829c07229429804168bd",
+            "original_path": "G3_region_policy_estimates.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_estimates.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/02c56440b3_G3_region_policy_support.csv",
+            "sha256": "02c56440b3ab728b406fe53e645af97e8e53b1066626ffa03704ff3160a67494",
+            "original_path": "G3_region_policy_support.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_support.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a001ca831a_general_reintensification_master_episode_sources.csv",
+            "sha256": "a001ca831a26d29c8be66e07a5c524348f903bf72c8dc257b90bbbdae9a24d5e",
+            "original_path": "general_reintensification_master_episode_sources.csv",
+            "logical_keys": [
+              "geography/general_reintensification_main_episode_sources.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1aeff2a152_geographic_grid_counts_5_and_10deg.csv",
+            "sha256": "1aeff2a152dfe635bf06005613287c7a1d40fb1a351082aa9b7f40d69e9f597f",
+            "original_path": "geographic_grid_counts_5_and_10deg.csv",
+            "logical_keys": [
+              "geography/geographic_grid_counts_5_and_10deg.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.cpg",
+            "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+            "original_path": "ne_110m_coastline.cpg",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.dbf",
+            "sha256": "ac7e59083a862bafc20b86d73595fdf2a7c0693a411cf3ba91910a5de9df9bc3",
+            "original_path": "ne_110m_coastline.dbf",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.prj",
+            "sha256": "3259f0e55290a82b1350646f604e8a7ee1e2136c0320a40fad838ab40819fff8",
+            "original_path": "ne_110m_coastline.prj",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shx",
+            "sha256": "53d8c141edfb7e05c59feecc7bb64b0e22bc2e282dfa1024d20ae54c3ef7b01e",
+            "original_path": "ne_110m_coastline.shx",
+            "logical_keys": [
+              "coastline"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "7961a16446e867ffb74ed08776773e1f58a3989d84ce3f01360f4174787019ab"
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs\\9038797474_G3_region_policy_estimates.csv"
+      ],
+      "fields": [
+        "region",
+        "policy",
+        "outcome",
+        "method",
+        "n_sid",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "inference",
+        "headline_support"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig23",
+        "selected_rows": "panels\\04_e_Original_regional_estimates__complete_CI_n_and_conditional_inference_in_table.csv",
+        "selected_rows_sha256": "fbb002389c243b8ec53cb549dcd94063e0aff56cf4d665eba0da167d84c9a542"
+      },
+      "sample_scope": {
+        "n_sid": [
+          329,
+          423,
+          746,
+          90,
+          404,
+          239,
+          94
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "normalization": {
+        "executed_entry": "fig23",
+        "role": "Original regional estimates; complete CI/n and conditional inference in table",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "difference_direction": {
+        "role": "Original regional estimates; complete CI/n and conditional inference in table",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high"
+        ],
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/a1f8285d0e_ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline/ne_110m_coastline.shp"
+            ]
+          },
+          {
+            "relative_path": "inputs/bbb1e631ae_G1_genesis_basin_recurrence.csv",
+            "sha256": "bbb1e631ae4bb7fb3a70022de54c49f06e3b3d5e0d784463da0166bd4afa7a18",
+            "original_path": "G1_genesis_basin_recurrence.csv",
+            "logical_keys": [
+              "geography/G1_genesis_basin_recurrence.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fdf02e0947_G3_departure_risk_SID_source.csv",
+            "sha256": "fdf02e0947f5516a8fe6c9bcc82f485214730fffbc699868b43bb82ae22dc5d1",
+            "original_path": "G3_departure_risk_SID_source.csv",
+            "logical_keys": [
+              "geography/G3_departure_risk_SID_source.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/9038797474_G3_region_policy_estimates.csv",
+            "sha256": "90387974743cd88466759e910b84aabd5fa70e51bef6829c07229429804168bd",
+            "original_path": "G3_region_policy_estimates.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_estimates.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/02c56440b3_G3_region_policy_support.csv",
+            "sha256": "02c56440b3ab728b406fe53e645af97e8e53b1066626ffa03704ff3160a67494",
+            "original_path": "G3_region_policy_support.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_support.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a001ca831a_general_reintensification_master_episode_sources.csv",
+            "sha256": "a001ca831a26d29c8be66e07a5c524348f903bf72c8dc257b90bbbdae9a24d5e",
+            "original_path": "general_reintensification_master_episode_sources.csv",
+            "logical_keys": [
+              "geography/general_reintensification_main_episode_sources.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1aeff2a152_geographic_grid_counts_5_and_10deg.csv",
+            "sha256": "1aeff2a152dfe635bf06005613287c7a1d40fb1a351082aa9b7f40d69e9f597f",
+            "original_path": "geographic_grid_counts_5_and_10deg.csv",
+            "logical_keys": [
+              "geography/geographic_grid_counts_5_and_10deg.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.cpg",
+            "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+            "original_path": "ne_110m_coastline.cpg",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.dbf",
+            "sha256": "ac7e59083a862bafc20b86d73595fdf2a7c0693a411cf3ba91910a5de9df9bc3",
+            "original_path": "ne_110m_coastline.dbf",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.prj",
+            "sha256": "3259f0e55290a82b1350646f604e8a7ee1e2136c0320a40fad838ab40819fff8",
+            "original_path": "ne_110m_coastline.prj",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shx",
+            "sha256": "53d8c141edfb7e05c59feecc7bb64b0e22bc2e282dfa1024d20ae54c3ef7b01e",
+            "original_path": "ne_110m_coastline.shx",
+            "logical_keys": [
+              "coastline"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "fbb002389c243b8ec53cb549dcd94063e0aff56cf4d665eba0da167d84c9a542"
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs\\02c56440b3_G3_region_policy_support.csv"
+      ],
+      "fields": [
+        "region",
+        "policy",
+        "outcome",
+        "n_sid",
+        "shifted_n",
+        "coverage",
+        "ratio_ESS",
+        "observed_IPCW_ESS",
+        "policy_observed_ESS",
+        "weight_max",
+        "observed_outcome_n"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig23",
+        "selected_rows": "panels\\05_f_original_statistics.csv",
+        "selected_rows_sha256": "de946f467b32b1d0d675f3f3dc768db458dc9d2ecd0f2e923f535d8c1d2fe02b"
+      },
+      "sample_scope": {
+        "n_sid": [
+          329,
+          423,
+          746,
+          90,
+          404,
+          239,
+          94
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "normalization": {
+        "executed_entry": "fig23",
+        "role": "original_statistics",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "difference_direction": {
+        "role": "original_statistics",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/a1f8285d0e_ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline/ne_110m_coastline.shp"
+            ]
+          },
+          {
+            "relative_path": "inputs/bbb1e631ae_G1_genesis_basin_recurrence.csv",
+            "sha256": "bbb1e631ae4bb7fb3a70022de54c49f06e3b3d5e0d784463da0166bd4afa7a18",
+            "original_path": "G1_genesis_basin_recurrence.csv",
+            "logical_keys": [
+              "geography/G1_genesis_basin_recurrence.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/fdf02e0947_G3_departure_risk_SID_source.csv",
+            "sha256": "fdf02e0947f5516a8fe6c9bcc82f485214730fffbc699868b43bb82ae22dc5d1",
+            "original_path": "G3_departure_risk_SID_source.csv",
+            "logical_keys": [
+              "geography/G3_departure_risk_SID_source.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/9038797474_G3_region_policy_estimates.csv",
+            "sha256": "90387974743cd88466759e910b84aabd5fa70e51bef6829c07229429804168bd",
+            "original_path": "G3_region_policy_estimates.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_estimates.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/02c56440b3_G3_region_policy_support.csv",
+            "sha256": "02c56440b3ab728b406fe53e645af97e8e53b1066626ffa03704ff3160a67494",
+            "original_path": "G3_region_policy_support.csv",
+            "logical_keys": [
+              "geography/G3_region_policy_support.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a001ca831a_general_reintensification_master_episode_sources.csv",
+            "sha256": "a001ca831a26d29c8be66e07a5c524348f903bf72c8dc257b90bbbdae9a24d5e",
+            "original_path": "general_reintensification_master_episode_sources.csv",
+            "logical_keys": [
+              "geography/general_reintensification_main_episode_sources.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1aeff2a152_geographic_grid_counts_5_and_10deg.csv",
+            "sha256": "1aeff2a152dfe635bf06005613287c7a1d40fb1a351082aa9b7f40d69e9f597f",
+            "original_path": "geographic_grid_counts_5_and_10deg.csv",
+            "logical_keys": [
+              "geography/geographic_grid_counts_5_and_10deg.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.cpg",
+            "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+            "original_path": "ne_110m_coastline.cpg",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.dbf",
+            "sha256": "ac7e59083a862bafc20b86d73595fdf2a7c0693a411cf3ba91910a5de9df9bc3",
+            "original_path": "ne_110m_coastline.dbf",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.prj",
+            "sha256": "3259f0e55290a82b1350646f604e8a7ee1e2136c0320a40fad838ab40819fff8",
+            "original_path": "ne_110m_coastline.prj",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shp",
+            "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+            "original_path": "ne_110m_coastline.shp",
+            "logical_keys": [
+              "coastline"
+            ]
+          },
+          {
+            "relative_path": "inputs/coastline/ne_110m_coastline.shx",
+            "sha256": "53d8c141edfb7e05c59feecc7bb64b0e22bc2e282dfa1024d20ae54c3ef7b01e",
+            "original_path": "ne_110m_coastline.shx",
+            "logical_keys": [
+              "coastline"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "de946f467b32b1d0d675f3f3dc768db458dc9d2ecd0f2e923f535d8c1d2fe02b"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/a1f8285d0e_ne_110m_coastline.shp",
+      "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+      "original_path": "ne_110m_coastline.shp",
+      "logical_keys": [
+        "coastline/ne_110m_coastline.shp"
+      ]
+    },
+    {
+      "relative_path": "inputs/bbb1e631ae_G1_genesis_basin_recurrence.csv",
+      "sha256": "bbb1e631ae4bb7fb3a70022de54c49f06e3b3d5e0d784463da0166bd4afa7a18",
+      "original_path": "G1_genesis_basin_recurrence.csv",
+      "logical_keys": [
+        "geography/G1_genesis_basin_recurrence.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/fdf02e0947_G3_departure_risk_SID_source.csv",
+      "sha256": "fdf02e0947f5516a8fe6c9bcc82f485214730fffbc699868b43bb82ae22dc5d1",
+      "original_path": "G3_departure_risk_SID_source.csv",
+      "logical_keys": [
+        "geography/G3_departure_risk_SID_source.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/9038797474_G3_region_policy_estimates.csv",
+      "sha256": "90387974743cd88466759e910b84aabd5fa70e51bef6829c07229429804168bd",
+      "original_path": "G3_region_policy_estimates.csv",
+      "logical_keys": [
+        "geography/G3_region_policy_estimates.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/02c56440b3_G3_region_policy_support.csv",
+      "sha256": "02c56440b3ab728b406fe53e645af97e8e53b1066626ffa03704ff3160a67494",
+      "original_path": "G3_region_policy_support.csv",
+      "logical_keys": [
+        "geography/G3_region_policy_support.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/a001ca831a_general_reintensification_master_episode_sources.csv",
+      "sha256": "a001ca831a26d29c8be66e07a5c524348f903bf72c8dc257b90bbbdae9a24d5e",
+      "original_path": "general_reintensification_master_episode_sources.csv",
+      "logical_keys": [
+        "geography/general_reintensification_main_episode_sources.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/1aeff2a152_geographic_grid_counts_5_and_10deg.csv",
+      "sha256": "1aeff2a152dfe635bf06005613287c7a1d40fb1a351082aa9b7f40d69e9f597f",
+      "original_path": "geographic_grid_counts_5_and_10deg.csv",
+      "logical_keys": [
+        "geography/geographic_grid_counts_5_and_10deg.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/coastline/ne_110m_coastline.cpg",
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "original_path": "ne_110m_coastline.cpg",
+      "logical_keys": [
+        "coastline"
+      ]
+    },
+    {
+      "relative_path": "inputs/coastline/ne_110m_coastline.dbf",
+      "sha256": "ac7e59083a862bafc20b86d73595fdf2a7c0693a411cf3ba91910a5de9df9bc3",
+      "original_path": "ne_110m_coastline.dbf",
+      "logical_keys": [
+        "coastline"
+      ]
+    },
+    {
+      "relative_path": "inputs/coastline/ne_110m_coastline.prj",
+      "sha256": "3259f0e55290a82b1350646f604e8a7ee1e2136c0320a40fad838ab40819fff8",
+      "original_path": "ne_110m_coastline.prj",
+      "logical_keys": [
+        "coastline"
+      ]
+    },
+    {
+      "relative_path": "inputs/coastline/ne_110m_coastline.shp",
+      "sha256": "a1f8285d0e0a4858392cd78fc74fa3ee4cd9088947cf6e3693729dc852d70b60",
+      "original_path": "ne_110m_coastline.shp",
+      "logical_keys": [
+        "coastline"
+      ]
+    },
+    {
+      "relative_path": "inputs/coastline/ne_110m_coastline.shx",
+      "sha256": "53d8c141edfb7e05c59feecc7bb64b0e22bc2e282dfa1024d20ae54c3ef7b01e",
+      "original_path": "ne_110m_coastline.shx",
+      "logical_keys": [
+        "coastline"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S30",
+    "size_mm": [
+      171.0,
+      194.0
+    ],
+    "pixels": [
+      6059,
+      6874
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 906.9906228648565,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 7.0,
+    "files": {
+      "png": {
+        "path": "Figure_S30.png",
+        "sha256": "79b06fdc47d463fdbd99fa677ae0e16786ead4134b184066a43da21350642b36"
+      },
+      "tiff": {
+        "path": "Figure_S30.tiff",
+        "sha256": "435e6863bf63f1c2bbec60c430f2655325bee76fa245f819c851bc462da1b9ba"
+      },
+      "pdf": {
+        "path": "Figure_S30.pdf",
+        "sha256": "9c25d07ffb7c04b1e2138bc973b54101375ea9b10f3d13bfe175c4b102ee0ada"
+      },
+      "svg": {
+        "path": "Figure_S30.svg",
+        "sha256": "d24e70660fbd3130670e5ebe572d51d1edd652195e62a07d94fc491d6ecb6df6"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 484.72440944881896,
+          "height_pt": 549.9212598425197
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              66.33070866141733,
+              396.78310665712235,
+              236.7496062992126,
+              502.7244094488189
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              50.33070866141734,
+              514.724409448819
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              296.4472440944882,
+              396.78310665712235,
+              466.8661417322835,
+              502.7244094488189
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              280.4472440944882,
+              514.724409448819
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              66.33070866141733,
+              227.23407301360055,
+              236.7496062992126,
+              333.17537580529716
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              50.33070866141734,
+              345.17537580529716
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              296.4472440944882,
+              227.23407301360055,
+              466.8661417322835,
+              333.17537580529716
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              280.4472440944882,
+              345.17537580529716
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              66.33070866141733,
+              57.68503937007868,
+              236.7496062992126,
+              163.6263421617752
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              50.33070866141734,
+              175.62634216177523
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              296.4472440944882,
+              57.68503937007868,
+              466.8661417322835,
+              163.6263421617752
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              280.4472440944882,
+              175.62634216177523
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S30",
+    "source": "Figure_S23.png",
+    "sha256": "0122f447c9a63db397b8bfce0da9989cf22c56ecfdcd4e243eb0bec654498f84",
+    "pixels": [
+      6377,
+      7440
+    ],
+    "display_inches": [
+      6.496062992125984,
+      7.5789096675415575
+    ],
+    "effective_dpi": 981.6715151515151
+  },
+  "caption": "Supplementary Fig. 30 | Geographic context of recurrence and recovery. a, Genesis-basin fractions with exactly two or at least three anchored near-peak segments, equivalent to one or at least two returns. b, Status at the onset of 394 episodes under the separate post-first-LMI strengthening definition: 380 tropical, 12 other or mixed, and two unknown. These are event counts, not cyclone counts or near-peak-return counts. c, The first eligible departure locations for 2,231 model-supported main-sample cyclones on the saved 5° grid; marker areas increase with cyclone counts. Boxes mark the South China Sea and Japan Sea regions. d, Monthly observed outcomes for the 94 SCS departures. e, Regional one-step recovery contrasts for the shear and humidity policies, in percentage points. f, Regional fractions whose exposure changes under each supported policy. Regional intervals, effective support and fixed-model inference are retained in the corresponding tables.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

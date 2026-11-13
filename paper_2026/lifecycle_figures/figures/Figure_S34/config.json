@@ -1,0 +1,37 @@
+{
+  "figure_id": "Figure_S25",
+  "type": "supplementary",
+  "entry_function": "s7",
+  "legacy_identity": "SI_RUF_duration_coefficients",
+  "family": "early",
+  "aliases": {
+    "FP0029": "inputs/788d3f6f54_N2_contrasts.csv"
+  },
+  "caption": "Supplementary Fig. 25 | Environmental associations with alternative near-peak durations. a,b, Environmental coefficient differences between F and U duration models (GB; a) and between U and R models (GL; b). Factors are SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. Both comparisons use 2,232 equal-weight SIDs and the same common-entry design, with rank 21 and 2,211 residual degrees of freedom. Effects are log-duration differences per fixed common-entry environmental SD. Dark circles and bars show primary marginal 95% HC3/Student-t intervals with 2,211 degrees of freedom; blue squares and bars show auxiliary 95% SID-percentile intervals from 2,000 valid draws. The separated markers share one point estimate and differ only in uncertainty method. P values use the primary analytic reference, with Benjamini–Hochberg adjustment across all twelve tests. All q values exceed 0.05 (minimum ). These are conditional duration associations, without a causal interpretation. Source tables provide P/q, both interval estimates, reference SDs and sample sizes.",
+  "baseline": {
+    "label": "Figure_S25",
+    "source": "Figure_S21.png",
+    "sha256": "e45577bc039929d77f629f79bf7e37663bcb2c461ee1c425b542cfbc9fadbc69",
+    "pixels": [
+      6377,
+      3720
+    ],
+    "display_inches": [
+      6.496062992125984,
+      3.789455380577428
+    ],
+    "effective_dpi": 981.6714082626711
+  },
+  "source_code": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

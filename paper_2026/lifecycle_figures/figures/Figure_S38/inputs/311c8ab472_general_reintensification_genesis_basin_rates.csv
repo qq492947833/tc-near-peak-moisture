@@ -1,0 +1,10 @@
+scope,region,n_sid,n_ever_reintensified,events,fraction,ci_low,ci_high,CI_method,geography,event_definition
+master2340,GLOBAL,2340,315,394,0.1346153846153846,0.12051282051282051,0.14914529914529914,2000 SID bootstrap,genesis basin,inherited post-first-LMI >=10kt/24h contiguous qualifying-window episodes
+master2340,NA,343,80,99,0.23323615160349853,0.1885672877846791,0.27729079548769814,2000 SID bootstrap,genesis basin,inherited post-first-LMI >=10kt/24h contiguous qualifying-window episodes
+master2340,EP,511,62,80,0.12133072407045009,0.09386955890285904,0.15058324930936395,2000 SID bootstrap,genesis basin,inherited post-first-LMI >=10kt/24h contiguous qualifying-window episodes
+master2340,WP,748,94,115,0.12566844919786097,0.1023920667511851,0.1499397918844004,2000 SID bootstrap,genesis basin,inherited post-first-LMI >=10kt/24h contiguous qualifying-window episodes
+master2340,NI,95,8,9,0.08421052631578947,0.03296703296703297,0.14706656346749222,2000 SID bootstrap,genesis basin,inherited post-first-LMI >=10kt/24h contiguous qualifying-window episodes
+master2340,SI,397,56,75,0.14105793450881612,0.10823389725283253,0.17632316919984922,2000 SID bootstrap,genesis basin,inherited post-first-LMI >=10kt/24h contiguous qualifying-window episodes
+master2340,SP,246,15,16,0.06097560975609756,0.033748212488745294,0.09274406220225942,2000 SID bootstrap,genesis basin,inherited post-first-LMI >=10kt/24h contiguous qualifying-window episodes
+master2340,SA,0,0,0,,,,Wilson binomial,genesis basin,inherited post-first-LMI >=10kt/24h contiguous qualifying-window episodes
+master2340,UNKNOWN,0,0,0,,,,Wilson binomial,genesis basin,inherited post-first-LMI >=10kt/24h contiguous qualifying-window episodes

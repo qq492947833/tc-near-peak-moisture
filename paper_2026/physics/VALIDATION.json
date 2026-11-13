@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "python_files_syntax_checked": 158,
+  "independent_and_recovery_source_bytes_unchanged": [
+    "direct_mwt/src/MWT.py",
+    "direct_mwt/src/MWT_Apply_Increment.py",
+    "direct_mwt/src/MWT_Apply_Operator.py",
+    "direct_mwt/src/MWT_Atmosphere_Direct.py",
+    "direct_mwt/src/MWT_Prepare_Direct.py",
+    "recovery/fit_policies_v6.py",
+    "recovery/diagnostics_v6.py",
+    "recovery/mnar_and_balance.py",
+    "recovery/no_pi_sensitivity.py",
+    "recovery/physical_confounder_benchmark.py"
+  ],
+  "direct_mwt": {
+    "analytical_checks": 55,
+    "saved_diagnostic_checks": 25,
+    "scope": "local coefficient stencil, not full population"
+  },
+  "saved_result_checks": 238,
+  "RH_summary_rows": 192,
+  "RH_mean_max_absolute_error": 1.7763568394002505e-15,
+  "raw_native_metadata_checks": {
+    "files": 1,
+    "scope": "one real native ERA5 file; coordinate SHA, units, dimensions, size and three scalar probes"
+  },
+  "model_CLI_help": "PASS",
+  "unprovided_project_imports": [],
+  "private_absolute_paths": [],
+  "not_executed": [
+    "global ERA5 field extraction",
+    "population MWT",
+    "new model fitting",
+    "new bootstrap draws",
+    "full raw-to-manuscript end-to-end run"
+  ],
+  "third_party_imports": [
+    "cartopy",
+    "h5py",
+    "netCDF4",
+    "numpy",
+    "pandas",
+    "psutil",
+    "pyarrow",
+    "scipy",
+    "shapefile",
+    "shapely",
+    "sklearn",
+    "statsmodels",
+    "threadpoolctl"
+  ],
+  "stage_bytes": 212899351,
+  "dynamic_source_closure": {
+    "checks": 32,
+    "exact_original_AST_functions": 14,
+    "status": "PASS",
+    "scope": "Source/path/import and exact-AST checks only; no model fit, resampling, field calculation or queue launched."
+  }
+}

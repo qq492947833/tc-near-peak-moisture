@@ -1,0 +1,395 @@
+{
+  "figure_id": "Figure_S33",
+  "type": "supplementary",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\30b971e398_paired_difference_summary.csv"
+      ],
+      "fields": [
+        "scope",
+        "variable",
+        "contrast",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "estimate_sd",
+        "ci_low_sd",
+        "ci_high_sd",
+        "reference_sd",
+        "n_sid",
+        "n_sampling_frame",
+        "B_planned",
+        "B_valid",
+        "B_failed",
+        "min_draw_valid_n",
+        "max_draw_valid_n",
+        "unit",
+        "P",
+        "q",
+        "test_family",
+        "seed",
+        "estimand",
+        "selection_label"
+      ],
+      "filter": {
+        "executed_code": "q = table(name, 'a', w[w.scope.eq('main_all')], 'whole_windows')",
+        "entry_function": "s8",
+        "selected_rows": "panels\\00_a_whole_windows.csv",
+        "selected_rows_sha256": "d2545d565a7a0545507aac5499b77b05353204c9ddf815940641972929c0ddb9"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2340,
+          2242,
+          2241
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters."
+      },
+      "normalization": {
+        "executed_entry": "s8",
+        "role": "whole_windows",
+        "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters."
+      },
+      "difference_direction": {
+        "role": "whole_windows",
+        "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "ci_low_sd",
+          "ci_high_sd"
+        ],
+        "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/a4fc70dc81_disjoint_component_contrasts.csv",
+            "sha256": "a4fc70dc8191c2474c3432b728e6bdd60871aeca7b1cba00533ac57609a9dcb0",
+            "original_path": "disjoint_component_contrasts.csv",
+            "logical_keys": [
+              "thematic/fig2_components.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/30b971e398_paired_difference_summary.csv",
+            "sha256": "30b971e398b7321cbec3aa1812e3406cafb0a89e0bf6146552aed34153cade6e",
+            "original_path": "paired_difference_summary.csv",
+            "logical_keys": [
+              "thematic/fig2_window.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "d2545d565a7a0545507aac5499b77b05353204c9ddf815940641972929c0ddb9"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\a4fc70dc81_disjoint_component_contrasts.csv"
+      ],
+      "fields": [
+        "variable",
+        "comparison",
+        "component_a",
+        "component_b",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "n_sid",
+        "bootstrap_B",
+        "ci_method",
+        "status",
+        "estimand_id",
+        "sample_id",
+        "exposure_id",
+        "model_id",
+        "figure_panel_id",
+        "unit",
+        "variable_label",
+        "reference_id",
+        "reference_sd",
+        "reference_mean",
+        "estimate_standardized",
+        "ci_low_standardized",
+        "ci_high_standardized"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'b', c, 'isolated_components')",
+        "entry_function": "s8",
+        "selected_rows": "panels\\01_b_isolated_components.csv",
+        "selected_rows_sha256": "9727ad229a20f46e3d049000f0d28512718531342bedef4e7b6a49a92d021f65"
+      },
+      "sample_scope": {
+        "n_sid": [
+          123,
+          120
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters."
+      },
+      "normalization": {
+        "executed_entry": "s8",
+        "role": "isolated_components",
+        "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters."
+      },
+      "difference_direction": {
+        "role": "isolated_components",
+        "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "bootstrap_B",
+          "ci_method",
+          "ci_low_standardized",
+          "ci_high_standardized"
+        ],
+        "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/a4fc70dc81_disjoint_component_contrasts.csv",
+            "sha256": "a4fc70dc8191c2474c3432b728e6bdd60871aeca7b1cba00533ac57609a9dcb0",
+            "original_path": "disjoint_component_contrasts.csv",
+            "logical_keys": [
+              "thematic/fig2_components.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/30b971e398_paired_difference_summary.csv",
+            "sha256": "30b971e398b7321cbec3aa1812e3406cafb0a89e0bf6146552aed34153cade6e",
+            "original_path": "paired_difference_summary.csv",
+            "logical_keys": [
+              "thematic/fig2_window.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "9727ad229a20f46e3d049000f0d28512718531342bedef4e7b6a49a92d021f65"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/a4fc70dc81_disjoint_component_contrasts.csv",
+      "sha256": "a4fc70dc8191c2474c3432b728e6bdd60871aeca7b1cba00533ac57609a9dcb0",
+      "original_path": "disjoint_component_contrasts.csv",
+      "logical_keys": [
+        "thematic/fig2_components.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/30b971e398_paired_difference_summary.csv",
+      "sha256": "30b971e398b7321cbec3aa1812e3406cafb0a89e0bf6146552aed34153cade6e",
+      "original_path": "paired_difference_summary.csv",
+      "logical_keys": [
+        "thematic/fig2_window.csv"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S33",
+    "size_mm": [
+      180.0,
+      170.0
+    ],
+    "pixels": [
+      6377,
+      6023
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 901.9996390318586,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 7.4,
+    "files": {
+      "png": {
+        "path": "Figure_S33.png",
+        "sha256": "eefcec89cfdf57e78c81f48e1961b37a55bfdf0306bef9190f451397b459792e"
+      },
+      "tiff": {
+        "path": "Figure_S33.tiff",
+        "sha256": "6a18df9fb26e1586b758bb581a7537d9e172e57039f41916facf175ed4994bb7"
+      },
+      "pdf": {
+        "path": "Figure_S33.pdf",
+        "sha256": "a39aecc515f2eda8e5291f5fd7496c48c26b73d6e81d77a54b0eb7e811927325"
+      },
+      "svg": {
+        "path": "Figure_S33.svg",
+        "sha256": "308f6b429dd6f9559e6608c8a0b0e546b22fad8746daaeebfb27ce5e6d10d43f"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 1,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 481.8897637795276
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              91.84251968503938,
+              305.3930396105068,
+              497.4803149606299,
+              443.3385826771654
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              73.84251968503938,
+              455.33858267716533
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              91.84251968503938,
+              81.9212598425197,
+              497.4803149606299,
+              219.86680290917838
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              73.84251968503938,
+              231.8668029091784
+            ]
+          }
+        ],
+        "row_groups": [],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S33",
+    "source": "Figure_S22.png",
+    "sha256": "66092569c0bc8178267508535757fd0f54c80ca0f7e744a2af8e894ed6801eaa",
+    "pixels": [
+      6377,
+      6555
+    ],
+    "display_inches": [
+      6.496062992125984,
+      6.677386264216973
+    ],
+    "effective_dpi": 981.6715151515151
+  },
+  "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

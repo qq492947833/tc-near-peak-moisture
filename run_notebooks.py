@@ -1,4 +1,4 @@
-"""Run each notebook in a fresh kernel using this Python environment."""
+"""Run the historical v1 notebooks in fresh kernels (not the current paper pipeline)."""
 from pathlib import Path
 import argparse,json,os,sys,tempfile,time
 import nbformat

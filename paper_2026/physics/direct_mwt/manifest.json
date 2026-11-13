@@ -1,0 +1,94 @@
+{
+  "package": "direct_mwt",
+  "format_version": 1,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2827,
+      "sha256": "a4f2679e85a06de342affc4587088cdb440b769a82bea4a1e4af4c818c2f6a7f"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 15,
+      "sha256": "48fb15820d59a384f39c743742907be99a3968d17985428ec35cb1808edaa880"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 12711,
+      "sha256": "ea667f0a63d6b1b017c94c9620da2f0e002829b2fcbb849580911934944062fd"
+    },
+    {
+      "path": "config/direct_diagnostics.json",
+      "bytes": 3560,
+      "sha256": "7785c71a8a0d4f75fecae2a74d50367683c29c8fd10051ce20996638316ce061"
+    },
+    {
+      "path": "config/diagnostic_semantics.json",
+      "bytes": 38772,
+      "sha256": "e9a647cc6517c4e4f77bafa2af90f37b598a40034c93671ef3fa1a76905c15a8"
+    },
+    {
+      "path": "config/source_provenance.json",
+      "bytes": 3712,
+      "sha256": "f0b072c73de6117f0086cef68065bca6d7dc038681bdc3144f18f515397c1842"
+    },
+    {
+      "path": "inputs/departure_events.csv",
+      "bytes": 44537,
+      "sha256": "bdef163da70d151a481c32f76fabf20b6156564a075094712dab759dc75a3349"
+    },
+    {
+      "path": "inputs/departure_centres.csv",
+      "bytes": 437974,
+      "sha256": "9d8c478b2554f8d8bb40ccab1cd544921d558d39be9b5d16c9dbc95dcaa824c8"
+    },
+    {
+      "path": "inputs/saved_coefficients_example.json",
+      "bytes": 2022,
+      "sha256": "6e0224e67ef8d3df091c8fb58a970a4c4b2207f1bc748cb4a4b830a878476fb1"
+    },
+    {
+      "path": "inputs/saved_coefficients_example.npz",
+      "bytes": 98721,
+      "sha256": "3493b52a1a3844b0cf861ce0deb105c9568d47b784aadb6a1d0c1524a2397b2e"
+    },
+    {
+      "path": "src/MWT.py",
+      "bytes": 29636,
+      "sha256": "70b8f337bb10ec669263b2d784246fbcbb66f3e6eb5e35c4d44a8b9c5bed978c"
+    },
+    {
+      "path": "src/MWT_Prepare_Direct.py",
+      "bytes": 9293,
+      "sha256": "e0a324cecd6db261f244d5f043f2ba5fd247c1bfde28dc8f97ae79dee26b47c5"
+    },
+    {
+      "path": "src/MWT_Apply_Operator.py",
+      "bytes": 2474,
+      "sha256": "4ddab6bb236acfcc49355260a8619e6508031a4920705c19812aa4ec5fe0f86d"
+    },
+    {
+      "path": "src/MWT_Atmosphere_Direct.py",
+      "bytes": 6076,
+      "sha256": "2bf2081ff34f9dc7439c649a580f1ea895857d1d0cda83f3a42d868040a61309"
+    },
+    {
+      "path": "src/MWT_Apply_Increment.py",
+      "bytes": 4484,
+      "sha256": "ded98c370771cf29bf845358b400a4cfb1192c880d781418d7eda807ff451c35"
+    },
+    {
+      "path": "inputs/table_dictionary.json",
+      "bytes": 2354,
+      "sha256": "3b22acd036d24ef476048e84ff606e44f6f1dd7d647f6224bcea2488b2a38e87"
+    }
+  ],
+  "entrypoint": "python verify.py --output runs/check_01",
+  "runtime": {
+    "Python": "3.11.7",
+    "NumPy": "1.26.4"
+  },
+  "included_execution_scope": "Analytical implementation checks and one saved-coefficient local diagnostic replay.",
+  "raw_ERA5_or_population_recalculation_included": false,
+  "file_selection": "Explicit relative-file whitelist; generated runs are not package inputs."
+}

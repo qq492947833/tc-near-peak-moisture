@@ -1,0 +1,39 @@
+{
+  "figure_id": "Figure_S05",
+  "type": "supplementary",
+  "entry_function": "s6",
+  "legacy_identity": "SI_DE_representation",
+  "family": "early",
+  "aliases": {
+    "framework/A3_paired_contrasts.csv": "inputs/05f152b893_A3_paired_contrasts.csv",
+    "03_Work/v62/framework/A3_SID_loss_bank.csv": "inputs/377293ea07_A3_SID_loss_bank.csv",
+    "03_Work/v62/framework/A3_aggregate_losses.csv": "inputs/fa8ac90599_A3_aggregate_losses.csv"
+  },
+  "caption": "Supplementary Fig. 5 | Recurrence retention and held-out environmental information. a, A 2×2 design separates D/E subdivision from recurrence retention using identical cyclone identities, wind thresholds and legal intervals. F retains later near-peak episodes and bridges, whereas R is the continuous episode containing the first LMI; the late stage is Dec under F and a post-R tail under R. Of 2,340 cyclones, 2,217 have identical F and R durations and 123 gain duration under F. b,c, Empirical distributions of cyclone-level out-of-fold mean squared errors for shear and RH, with a symmetric-log horizontal scale. Every method retains the same 2,290 valid SIDs from the main sample. d,e, Actual-D/E-minus-reference differences in held-out native RMSE; negative values favour actual D/E. References pool D/E or use equal-time midpoint, quadratic normalized progress or quadratic age, with identical geographic and seasonal covariates. Models use 26,015 intervals, five SID-held-out folds and equal total weight per SID. Columns show paired RMSE differences; whiskers retain 95% percentiles from 2,000 paired-SID resamples of fixed predictions. These intervals condition on fitted predictions and exclude model-refitting uncertainty.",
+  "baseline": {
+    "label": "Figure_S05",
+    "source": "Figure_S04.png",
+    "sha256": "8f16858da7a93989a8bbd17c753bc6b3371a437079449cf21f8127550fb54808",
+    "pixels": [
+      6377,
+      7086
+    ],
+    "display_inches": [
+      6.496062992125984,
+      7.218300524934383
+    ],
+    "effective_dpi": 981.6715133323455
+  },
+  "source_code": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

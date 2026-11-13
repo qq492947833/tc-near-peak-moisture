@@ -1,0 +1,777 @@
+{
+  "figure_id": "Figure_S19",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/RISE_ENVIRONMENT_HISTORY_source.csv"
+      ],
+      "fields": {
+        "time": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel"
+        ]
+      },
+      "filter": [
+        "ax = axes.flat[i]"
+      ],
+      "sample_scope": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "units": {
+        "x": "",
+        "y": "Wind (kt)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "weights": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "time": "d0dfd00ac8efecbf3643e2d73cd693611d5007656d569c4214d2c0520e00436b"
+        },
+        "original_plot_source": "plot_rise_environment_history.py",
+        "original_plot_source_sha256": "4bfdca3887e92c374faf90fb5495c5f7475eb718810dfd3863ce46d72e208a19"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a_f",
+          "role": "Saved per-SID pointwise histories",
+          "source_key": null,
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 54,
+          "saved_selected_table": "panel_a_f_0.csv",
+          "sha256": "7305487db34f928594ef2f9bbd3982d43c60485203ae285d9f42d32f17137e3c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/RISE_ENVIRONMENT_HISTORY_source.csv"
+      ],
+      "fields": {
+        "time": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel"
+        ]
+      },
+      "filter": [
+        "ax = axes.flat[i]"
+      ],
+      "sample_scope": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "units": {
+        "x": "",
+        "y": "Relative humidity (%)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "weights": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "time": "d0dfd00ac8efecbf3643e2d73cd693611d5007656d569c4214d2c0520e00436b"
+        },
+        "original_plot_source": "plot_rise_environment_history.py",
+        "original_plot_source_sha256": "4bfdca3887e92c374faf90fb5495c5f7475eb718810dfd3863ce46d72e208a19"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a_f",
+          "role": "Saved per-SID pointwise histories",
+          "source_key": null,
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 54,
+          "saved_selected_table": "panel_a_f_0.csv",
+          "sha256": "7305487db34f928594ef2f9bbd3982d43c60485203ae285d9f42d32f17137e3c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/RISE_ENVIRONMENT_HISTORY_source.csv"
+      ],
+      "fields": {
+        "time": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel"
+        ]
+      },
+      "filter": [
+        "ax = axes.flat[i]"
+      ],
+      "sample_scope": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "units": {
+        "x": "",
+        "y": "Shear (m s$^{-1}$)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "weights": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "time": "d0dfd00ac8efecbf3643e2d73cd693611d5007656d569c4214d2c0520e00436b"
+        },
+        "original_plot_source": "plot_rise_environment_history.py",
+        "original_plot_source_sha256": "4bfdca3887e92c374faf90fb5495c5f7475eb718810dfd3863ce46d72e208a19"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a_f",
+          "role": "Saved per-SID pointwise histories",
+          "source_key": null,
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 54,
+          "saved_selected_table": "panel_a_f_0.csv",
+          "sha256": "7305487db34f928594ef2f9bbd3982d43c60485203ae285d9f42d32f17137e3c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/RISE_ENVIRONMENT_HISTORY_source.csv"
+      ],
+      "fields": {
+        "time": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel"
+        ]
+      },
+      "filter": [
+        "ax = axes.flat[i]"
+      ],
+      "sample_scope": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "units": {
+        "x": "",
+        "y": "SST (°C)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "weights": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "time": "d0dfd00ac8efecbf3643e2d73cd693611d5007656d569c4214d2c0520e00436b"
+        },
+        "original_plot_source": "plot_rise_environment_history.py",
+        "original_plot_source_sha256": "4bfdca3887e92c374faf90fb5495c5f7475eb718810dfd3863ce46d72e208a19"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a_f",
+          "role": "Saved per-SID pointwise histories",
+          "source_key": null,
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 54,
+          "saved_selected_table": "panel_a_f_0.csv",
+          "sha256": "7305487db34f928594ef2f9bbd3982d43c60485203ae285d9f42d32f17137e3c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/RISE_ENVIRONMENT_HISTORY_source.csv"
+      ],
+      "fields": {
+        "time": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel"
+        ]
+      },
+      "filter": [
+        "ax = axes.flat[i]"
+      ],
+      "sample_scope": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "units": {
+        "x": "Time from trough (h)",
+        "y": "PI (m s$^{-1}$)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "weights": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "time": "d0dfd00ac8efecbf3643e2d73cd693611d5007656d569c4214d2c0520e00436b"
+        },
+        "original_plot_source": "plot_rise_environment_history.py",
+        "original_plot_source_sha256": "4bfdca3887e92c374faf90fb5495c5f7475eb718810dfd3863ce46d72e208a19"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a_f",
+          "role": "Saved per-SID pointwise histories",
+          "source_key": null,
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 54,
+          "saved_selected_table": "panel_a_f_0.csv",
+          "sha256": "7305487db34f928594ef2f9bbd3982d43c60485203ae285d9f42d32f17137e3c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/RISE_ENVIRONMENT_HISTORY_source.csv"
+      ],
+      "fields": {
+        "time": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel"
+        ]
+      },
+      "filter": [
+        "ax = axes.flat[i]"
+      ],
+      "sample_scope": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "units": {
+        "x": "Time from trough (h)",
+        "y": "PI − V (m s$^{-1}$)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "weights": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "time": "d0dfd00ac8efecbf3643e2d73cd693611d5007656d569c4214d2c0520e00436b"
+        },
+        "original_plot_source": "plot_rise_environment_history.py",
+        "original_plot_source_sha256": "4bfdca3887e92c374faf90fb5495c5f7475eb718810dfd3863ce46d72e208a19"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a_f",
+          "role": "Saved per-SID pointwise histories",
+          "source_key": null,
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 54,
+          "saved_selected_table": "panel_a_f_0.csv",
+          "sha256": "7305487db34f928594ef2f9bbd3982d43c60485203ae285d9f42d32f17137e3c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "time",
+      "relative_path": "inputs/RISE_ENVIRONMENT_HISTORY_source.csv",
+      "sha256": "d0dfd00ac8efecbf3643e2d73cd693611d5007656d569c4214d2c0520e00436b",
+      "original_path": "RISE_ENVIRONMENT_HISTORY_source.csv",
+      "bytes": 5248
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S19.png",
+      "sha256": "781362a39173b167975f8ca1e2906a6514e1664f9ba11e0c415b04c42c8cd175"
+    },
+    "tiff": {
+      "path": "Figure_S19.tiff",
+      "sha256": "340a0048fd9f7eaafae45ec048475810f2323ee2ecca15c47b994cb35adee97f"
+    },
+    "pdf": {
+      "path": "Figure_S19.pdf",
+      "sha256": "c163e3c6e154c975626b440c138663d534e3e4ea1bd29740f28d9a30ea69f923"
+    },
+    "svg": {
+      "path": "Figure_S19.svg",
+      "sha256": "3d62f472fcea4efc2de4c228b66a5406b0aa1f2d21ea9e961d60352e3b6942d1"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S19",
+      "returncode": 0,
+      "elapsed_s": 11.18,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 527.244094488189
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              58.67716535433072,
+              388.349892627058,
+              242.2768095410668,
+              503.5181102362205
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              23.793232958850865,
+              514.459090909091
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              313.8806707738938,
+              388.349892627058,
+              497.4803149606299,
+              503.5181102362205
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              278.996738378414,
+              514.459090909091
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              58.67716535433072,
+              217.9009305654975,
+              242.2768095410668,
+              333.06914817466003
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              23.793232958850865,
+              344.01012884753044
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              313.8806707738938,
+              217.9009305654975,
+              497.4803149606299,
+              333.06914817466003
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              278.996738378414,
+              344.01012884753044
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              58.67716535433072,
+              47.451968503936996,
+              242.2768095410668,
+              162.6201861130995
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              23.793232958850865,
+              173.5611667859699
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              313.8806707738938,
+              47.451968503936996,
+              497.4803149606299,
+              162.6201861130995
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              278.996738378414,
+              173.5611667859699
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6615421507588
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S19",
+      "source": "old_FigureS11.png",
+      "sha256": "2aff5f2bc2912833366f405ef78cbfa84cfaa91197380aa85a690a841560fba4",
+      "pixels": [
+        6375,
+        6588
+      ],
+      "display_inches": [
+        6.496062992125984,
+        6.713108048993876
+      ],
+      "effective_dpi": 981.3636175552655
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 19 | Environmental evolution around the trough preceding a near-peak return. a, Recorded wind intensity. b–f, Mid-level relative humidity, 200–850 hPa shear, sea-surface temperature, potential intensity (PI) and PI − V in the 200–800 km annulus. Time zero is the last wind minimum between a temporary departure and its next qualifying return. Lines show means after averaging events within each SID; shaded bands are pointwise 95% intervals from 2,000 SID bootstrap draws. The fixed time window retains subsequent observed records, including those after return, and is not uniformly a reintensification phase. Of 123 cyclones with 133 returns, 25 cyclones still lie within their actual trough-to-return interval at +24 h. Availability is diagnostic-specific and reported by time in the accompanying source data; PI and PI − V require valid thermodynamic profiles. Tables S8a,b,d,k report the pre-trough states, actual trough-to-return endpoint changes, comparable-wind comparisons and common-support PI − V components.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "66edc0943eebba2a0b4c89f3ece72bcfe9dc1259f9a3c6475a45baf0cc6d6796",
+      "run.py": "ec771a916707eafa7a7627f84d5b5222bb8827b3d432a4b332863115ab47db34"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

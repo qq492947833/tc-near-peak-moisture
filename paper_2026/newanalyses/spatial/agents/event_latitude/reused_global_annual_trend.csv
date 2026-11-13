@@ -1,0 +1,2 @@
+estimand,kind,estimate,se,lo,hi,p_value,n_years,unit,q_value,family
+GLOBAL anchored-return SID fraction,global slope,0.5284431632845179,0.50847751463115654,-0.49922822434316405,1.5561145509121999,0.30492277956230096,42,percentage points per decade,0.98738331191875972,B_return_trends_11

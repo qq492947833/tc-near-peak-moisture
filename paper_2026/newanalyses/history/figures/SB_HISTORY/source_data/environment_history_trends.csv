@@ -1,0 +1,21 @@
+basin,variable,unit,estimate,ci_low,ci_high,bootstrap_sign_p,variation_status,q_value,family
+NA,X3_mid_rh_pct,RH percentage points/decade,1.7674429059839853,-0.24374160994296873,3.4449543978419377,0.085,variable,0.5650000000000001,B_within_basin_environment_history_20
+NA,X2_shear_ms,m/s/decade,-0.8136073682473226,-2.1252464176295804,0.2238778996590665,0.113,variable,0.5650000000000001,B_within_basin_environment_history_20
+NA,X1_sst_c,degC/decade,0.20442744863680778,-0.15556467351186887,0.4304357350913301,0.214,variable,0.5800000000000001,B_within_basin_environment_history_20
+NA,motion_past6h_ms,m/s/decade,-0.2837387972709465,-1.0207857798258702,0.4062387523200641,0.472,variable,0.7842857142857144,B_within_basin_environment_history_20
+NA,past24_land_contact,land-contact percentage points/decade,4.156941430189863,-3.3313664217848316,10.956473063075958,0.232,variable,0.5800000000000001,B_within_basin_environment_history_20
+EP,X3_mid_rh_pct,RH percentage points/decade,0.8011952296454481,-0.05173953835699192,1.7187739512199738,0.075,variable,0.5650000000000001,B_within_basin_environment_history_20
+EP,X2_shear_ms,m/s/decade,-0.12865286079796368,-0.49452443506188964,0.33252502003837425,0.549,variable,0.7842857142857144,B_within_basin_environment_history_20
+EP,X1_sst_c,degC/decade,0.14400864220137247,0.03331724959702827,0.2875726312909148,0.01,variable,0.2,B_within_basin_environment_history_20
+EP,motion_past6h_ms,m/s/decade,-0.11933993550166438,-0.38043626604278896,0.10320783690304157,0.31,variable,0.6888888888888889,B_within_basin_environment_history_20
+EP,past24_land_contact,land-contact percentage points/decade,0.2127056154282473,0.0,1.1263804341778996,1.0,variable,1.0,B_within_basin_environment_history_20
+WP,X3_mid_rh_pct,RH percentage points/decade,0.5051982973694821,-1.0052534088604153,1.909651328805367,0.547,variable,0.7842857142857144,B_within_basin_environment_history_20
+WP,X2_shear_ms,m/s/decade,0.21425423372462463,-0.4577991520119258,0.8790423213387124,0.508,variable,0.7842857142857144,B_within_basin_environment_history_20
+WP,X1_sst_c,degC/decade,0.035936595984714506,-0.1020369016478269,0.15412613865469318,0.622,variable,0.82125,B_within_basin_environment_history_20
+WP,motion_past6h_ms,m/s/decade,-0.10621813159456531,-0.44677813669337363,0.2576281552901868,0.514,variable,0.7842857142857144,B_within_basin_environment_history_20
+WP,past24_land_contact,land-contact percentage points/decade,-3.8812280916865656,-8.546635468867589,1.6763093911803666,0.144,variable,0.576,B_within_basin_environment_history_20
+SI,X3_mid_rh_pct,RH percentage points/decade,0.2657137536783484,-0.9296614463713221,1.7992344947088268,0.657,variable,0.82125,B_within_basin_environment_history_20
+SI,X2_shear_ms,m/s/decade,0.13103420900641224,-0.5356791855180173,0.8206987996665959,0.875,variable,0.9210526315789473,B_within_basin_environment_history_20
+SI,X1_sst_c,degC/decade,0.10405935794347407,-0.07309088694476337,0.28284854862434805,0.226,variable,0.5800000000000001,B_within_basin_environment_history_20
+SI,motion_past6h_ms,m/s/decade,0.06267513377522599,-0.24511109326744637,0.32477242059383565,0.723,variable,0.8505882352941176,B_within_basin_environment_history_20
+SI,past24_land_contact,land-contact percentage points/decade,0.6869311261175777,-4.685421057077619,5.87317474962656,0.769,variable,0.8544444444444445,B_within_basin_environment_history_20

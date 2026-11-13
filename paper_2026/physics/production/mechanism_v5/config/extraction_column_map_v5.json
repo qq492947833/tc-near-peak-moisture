@@ -1,0 +1,63 @@
+{
+  "version": "v5.1_extraction_schema_final",
+  "request_directory": "data/environment_extract/<request hash>",
+  "completed_checkpoint": "COMPLETE.json; verify outputs[].sha256 and binding.driver_sha/binding.semantics_sha; do not select just by filename/mtime",
+  "row_identity": "binding.request retains full source CSV row; request_values.json contains common identity columns",
+  "scalars": {
+    "format": "scalars.csv long table",
+    "value": "QC-gated mean; NaN if valid_area/original_domain_area<0.9",
+    "raw_supported_mean": "mean before 90% gate, not an accepted fallback",
+    "support_pass": "parse explicit True/False",
+    "valid_fraction": "valid_area_m2/original_area_m2",
+    "domain": "explicit original denominator definition",
+    "reason": "PASS / BELOW_90PCT_ORIGINAL_AREA / NO_ORIGINAL_DOMAIN"
+  },
+  "core_mapping": {
+    "X1_sst_c": "sst_C",
+    "X2_shear_ms": "shear_200_850_vector_magnitude_ms",
+    "X3_mid_rh_pct": "mid_rh_pct",
+    "X4_d200_1e5s": "d200_1e5_s",
+    "X5_minus_omega500_pa_s": "minus_omega500_Pa_s",
+    "X6_signed_vo850_1e5s": "cyclonic_vo850_1e5_s"
+  },
+  "thermo_mapping": {
+    "sst_k": "sst_K",
+    "msl_pa": "msl",
+    "shear_200_850_ms": "shear_200_850_vector_magnitude_ms",
+    "core600_saturated_entropy_jkgk": "core600_saturated_entropy_J_kgK",
+    "environment600_entropy_jkgk": "environment600_entropy_J_kgK"
+  },
+  "profile": {
+    "files": [
+      "profile.csv",
+      "profile.npz"
+    ],
+    "pressure_hpa": "13 strictly decreasing levels1000,925,850,700,600,500,400,300,250,200,150,100,50",
+    "temperature_K": "QC-gated temperature mean on joint T/q finite+SPvalid cells perlevel",
+    "specific_humidity_kgkg": "QC-gated SPECIFIC humidity mean on exactly same joint cells, never mixing ratio",
+    "joint_Tq_valid_fraction": "shared valid area / original200–800km atmospheric annulus, used by PI",
+    "temperature_original_valid_fraction": "individual T support metadata, not replacement for joint coverage",
+    "humidity_original_valid_fraction": "individual q support metadata, not replacement for joint coverage"
+  },
+  "entropy_metadata": "entropy600_metadata.json; mean native entropy in0–100km saturated and100–300km actual domains; functions/core saturated support independent of measuredq",
+  "maps": {
+    "file": "native_map_1500km.npz",
+    "fields": [
+      "q700",
+      "r700",
+      "u700",
+      "v700",
+      "z200",
+      "u200",
+      "v200",
+      "u850",
+      "v850"
+    ],
+    "coordinates": "latitude descending native0.25deg; longitude unwrapped continuous native0.25deg",
+    "support": "<key>__valid; cell_area_m2; original core_mask; nozero fill",
+    "process_file": "native_process_800km.npz stores native gradients-derivedbudget fields and jointsupport"
+  },
+  "raw_cache": "cache/native_fields/<canonical geometry hash>/<variable>.npz; embedded binding_json; OS byte-range locks guard concurrent temporal-halo access",
+  "source_profile_scope": "new v5 fields use sameNativeSP mask and original geometric denominator, NaturalEarth10m SST uniformly; not an automatic restatement of old110m track means",
+  "authoritative_new_parser_guard": "profiles lacking joint_Tq_valid_fraction or entropy600_metadata belong to earlier preserved pilots and must not be substituted for current completed profile outputs"
+}

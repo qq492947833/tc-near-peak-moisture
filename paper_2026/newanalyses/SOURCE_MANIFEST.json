@@ -1,0 +1,2086 @@
+[
+  {
+    "source_sha256": "0979900c005f66a88774c64394684c54cd2dbc20d87e1a0de802ef25204906d3",
+    "public_path": "history/agents/A/prepare_a.py",
+    "public_sha256": "46ca06aa832b1bf5d921fb556d31cf4d1ef2b44576eca1cff547f4d4c0cfa8db",
+    "bytes": 8596,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "prepare_a.py"
+  },
+  {
+    "source_sha256": "cda76d4700d46b32ed8e8aabdebdc333c11bdd771d58a67e2f3d28c96aa962fb",
+    "public_path": "history/agents/A/model_a.py",
+    "public_sha256": "c05eb2d6d846fb2adc093645acee221930a14da6d43bb5f373e5b534745202ef",
+    "bytes": 12402,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "model_a.py"
+  },
+  {
+    "source_sha256": "1ecf6797b43c0cd23fc77bc9a2b463222beedc40e8ed69f0d45b7fb85fbf0516",
+    "public_path": "history/agents/A/status_sensitivity.py",
+    "public_sha256": "625a7c5905ee882cf240260546c30279520741a5e6117aba193997b9df8a2e6c",
+    "bytes": 2947,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "status_sensitivity.py"
+  },
+  {
+    "source_sha256": "d6e6622f1d5fb6d1e1788a059ec309534cedcf823e8b4bd52730edc6e30ba5b8",
+    "public_path": "history/agents/A/analysis_support_all_sid.csv",
+    "public_sha256": "d6e6622f1d5fb6d1e1788a059ec309534cedcf823e8b4bd52730edc6e30ba5b8",
+    "bytes": 2203696,
+    "adaptations": [],
+    "source_filename": "analysis_support_all_sid.csv"
+  },
+  {
+    "source_sha256": "07ee17d0f7e72291a47e1c18ac1544c0236bc2ae7f631a542833b05d079341a8",
+    "public_path": "history/agents/A/basin_counts.csv",
+    "public_sha256": "07ee17d0f7e72291a47e1c18ac1544c0236bc2ae7f631a542833b05d079341a8",
+    "bytes": 542,
+    "adaptations": [],
+    "source_filename": "basin_counts.csv"
+  },
+  {
+    "source_sha256": "6dc0bee3842e35c3d8f0b353ab0f348b7cbcc9d87e85336b47e1d6f937df87bb",
+    "public_path": "history/agents/A/basin_estimates_ci.csv",
+    "public_sha256": "6dc0bee3842e35c3d8f0b353ab0f348b7cbcc9d87e85336b47e1d6f937df87bb",
+    "bytes": 1435,
+    "adaptations": [],
+    "source_filename": "basin_estimates_ci.csv"
+  },
+  {
+    "source_sha256": "e01a67e77af3bf772bdde09daf6c8738db838de5fe7021511afe64b5df1648f2",
+    "public_path": "history/agents/A/basin_probability_differences.csv",
+    "public_sha256": "e01a67e77af3bf772bdde09daf6c8738db838de5fe7021511afe64b5df1648f2",
+    "bytes": 2172,
+    "adaptations": [],
+    "source_filename": "basin_probability_differences.csv"
+  },
+  {
+    "source_sha256": "790b0cb2e814d5ad5f3a3dd39b22211d03f343403ef2c91362e44dac40769ad7",
+    "public_path": "history/agents/A/block_length_sensitivity.csv",
+    "public_sha256": "790b0cb2e814d5ad5f3a3dd39b22211d03f343403ef2c91362e44dac40769ad7",
+    "bytes": 2313,
+    "adaptations": [],
+    "source_filename": "block_length_sensitivity.csv"
+  },
+  {
+    "source_sha256": "77cc3189ed6aabe0ddeff03fe5f3fa87196581ca5e1744d860bf207b08b1dbba",
+    "public_path": "history/agents/A/bootstrap_draws.npz",
+    "public_sha256": "77cc3189ed6aabe0ddeff03fe5f3fa87196581ca5e1744d860bf207b08b1dbba",
+    "bytes": 741223,
+    "adaptations": [],
+    "source_filename": "bootstrap_draws.npz"
+  },
+  {
+    "source_sha256": "47f82f04bb5c32fb0b0b1eeb33bfb073b985cfaf8a68fd4d61b902e5ad603625",
+    "public_path": "history/agents/A/common_support_counts.csv",
+    "public_sha256": "47f82f04bb5c32fb0b0b1eeb33bfb073b985cfaf8a68fd4d61b902e5ad603625",
+    "bytes": 66,
+    "adaptations": [],
+    "source_filename": "common_support_counts.csv"
+  },
+  {
+    "source_sha256": "b816b142b4123703cd69d9ebe64102436e44384c4ec06e59fbd9a1d29f0da23e",
+    "public_path": "history/agents/A/coverage_and_followup_diagnostics.csv",
+    "public_sha256": "b816b142b4123703cd69d9ebe64102436e44384c4ec06e59fbd9a1d29f0da23e",
+    "bytes": 1511,
+    "adaptations": [],
+    "source_filename": "coverage_and_followup_diagnostics.csv"
+  },
+  {
+    "source_sha256": "4cebbaa4ed6179f406c9840ab27e7270e4a8d5fa7dd75c03425560e506cbd3e5",
+    "public_path": "history/agents/A/departure_episodes.csv",
+    "public_sha256": "4cebbaa4ed6179f406c9840ab27e7270e4a8d5fa7dd75c03425560e506cbd3e5",
+    "bytes": 345323,
+    "adaptations": [],
+    "source_filename": "departure_episodes.csv"
+  },
+  {
+    "source_sha256": "bfec4b59c0b06c0287a1b0f06b5277d55d8dfb5c2630dbef30e10c3904584943",
+    "public_path": "history/agents/A/environment_associations.csv",
+    "public_sha256": "bfec4b59c0b06c0287a1b0f06b5277d55d8dfb5c2630dbef30e10c3904584943",
+    "bytes": 423,
+    "adaptations": [],
+    "source_filename": "environment_associations.csv"
+  },
+  {
+    "source_sha256": "80a84cc26aff2c96d290180c58b64a960c6bdbbe1cbc2cc48ea477ba4e34c151",
+    "public_path": "history/agents/A/environment_by_basin.csv",
+    "public_sha256": "80a84cc26aff2c96d290180c58b64a960c6bdbbe1cbc2cc48ea477ba4e34c151",
+    "bytes": 931,
+    "adaptations": [],
+    "source_filename": "environment_by_basin.csv"
+  },
+  {
+    "source_sha256": "223c1727d6ee249b74d037de8821f40fb642978cb6084b206974e33c88e9600d",
+    "public_path": "history/agents/A/event_reconciliation.csv",
+    "public_sha256": "223c1727d6ee249b74d037de8821f40fb642978cb6084b206974e33c88e9600d",
+    "bytes": 9497,
+    "adaptations": [],
+    "source_filename": "event_reconciliation.csv"
+  },
+  {
+    "source_sha256": "ac27f9af344f0779898557440db4e3fd5873454d09280e1ca6cf458aa318e81a",
+    "public_path": "history/agents/A/first_departure_reference.csv",
+    "public_sha256": "ac27f9af344f0779898557440db4e3fd5873454d09280e1ca6cf458aa318e81a",
+    "bytes": 2073402,
+    "adaptations": [],
+    "source_filename": "first_departure_reference.csv"
+  },
+  {
+    "source_sha256": "79d96cc54b8fccc22edf3bcf02001db9ac8ae082faa4e192f1566682c44368a3",
+    "public_path": "history/agents/A/MODEL_CONFIG.json",
+    "public_sha256": "88cdd97ce1dca6c02d51e27f797c18df2f66fe89809f60a51eece6e2c5c3f1c2",
+    "bytes": 2149,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "MODEL_CONFIG.json"
+  },
+  {
+    "source_sha256": "0b4078fca40fbc4966527df9ec5c8ee73d10570b6e5489f5485c4889ac169ac4",
+    "public_path": "history/agents/A/opportunity_rate_contrasts.csv",
+    "public_sha256": "0b4078fca40fbc4966527df9ec5c8ee73d10570b6e5489f5485c4889ac169ac4",
+    "bytes": 2413,
+    "adaptations": [],
+    "source_filename": "opportunity_rate_contrasts.csv"
+  },
+  {
+    "source_sha256": "8f785943ca3b435b0c690865eab12bbced2a184d4ee86d99b6614a87211b9411",
+    "public_path": "history/agents/A/risk_intervals_6h.csv",
+    "public_sha256": "8f785943ca3b435b0c690865eab12bbced2a184d4ee86d99b6614a87211b9411",
+    "bytes": 3352133,
+    "adaptations": [],
+    "source_filename": "risk_intervals_6h.csv"
+  },
+  {
+    "source_sha256": "3fc7f69e3a9cc42f2b323dd4db8ca6d58cfb574d2a87df191cc49aaa2a7b2f6d",
+    "public_path": "history/agents/A/risk_nontropical_endpoint_intervals.csv",
+    "public_sha256": "3fc7f69e3a9cc42f2b323dd4db8ca6d58cfb574d2a87df191cc49aaa2a7b2f6d",
+    "bytes": 72511,
+    "adaptations": [],
+    "source_filename": "risk_nontropical_endpoint_intervals.csv"
+  },
+  {
+    "source_sha256": "e426fd4373d32d9a7b02077e2c547748fe57a8fe84f53196e1042eda2b821709",
+    "public_path": "history/agents/A/risk_status_sensitivity.csv",
+    "public_sha256": "e426fd4373d32d9a7b02077e2c547748fe57a8fe84f53196e1042eda2b821709",
+    "bytes": 732,
+    "adaptations": [],
+    "source_filename": "risk_status_sensitivity.csv"
+  },
+  {
+    "source_sha256": "073497589b786d0b002e3844f934f8ea8c773f1ae2b15c5ddac7d97841448439",
+    "public_path": "history/agents/A/risk_status_sensitivity_draws.npy",
+    "public_sha256": "073497589b786d0b002e3844f934f8ea8c773f1ae2b15c5ddac7d97841448439",
+    "bytes": 96128,
+    "adaptations": [],
+    "source_filename": "risk_status_sensitivity_draws.npy"
+  },
+  {
+    "source_sha256": "64b8f3ec98fc3725c5bff40fcb6c0a3b799bc95888fe83c59c70b65a6c202432",
+    "public_path": "history/agents/A/sensitivity_block1.npy",
+    "public_sha256": "64b8f3ec98fc3725c5bff40fcb6c0a3b799bc95888fe83c59c70b65a6c202432",
+    "bytes": 48128,
+    "adaptations": [],
+    "source_filename": "sensitivity_block1.npy"
+  },
+  {
+    "source_sha256": "6c4e00c2da86d2cac67999ae07cdb80e4f8545188011955d36c863577add2dd5",
+    "public_path": "history/agents/A/sensitivity_block5.npy",
+    "public_sha256": "6c4e00c2da86d2cac67999ae07cdb80e4f8545188011955d36c863577add2dd5",
+    "bytes": 48128,
+    "adaptations": [],
+    "source_filename": "sensitivity_block5.npy"
+  },
+  {
+    "source_sha256": "67295203d579e8cc3e8ccf648e002e5dbbd0a3d57b11f0d1f3a2918adf733d26",
+    "public_path": "history/agents/A/sid_denominators.csv",
+    "public_sha256": "67295203d579e8cc3e8ccf648e002e5dbbd0a3d57b11f0d1f3a2918adf733d26",
+    "bytes": 298958,
+    "adaptations": [],
+    "source_filename": "sid_denominators.csv"
+  },
+  {
+    "source_sha256": "85b62bcd678ece0da8d812cd8d6187d438eac23feec09e51059b8886b6b5e718",
+    "public_path": "history/agents/A/standardized_probabilities.csv",
+    "public_sha256": "85b62bcd678ece0da8d812cd8d6187d438eac23feec09e51059b8886b6b5e718",
+    "bytes": 1048,
+    "adaptations": [],
+    "source_filename": "standardized_probabilities.csv"
+  },
+  {
+    "source_sha256": "adf7a374d47f912aac26e54858371c50bdb387d12f56c7e23907c67c6f465a95",
+    "public_path": "history/agents/A/support_by_period_basin.csv",
+    "public_sha256": "adf7a374d47f912aac26e54858371c50bdb387d12f56c7e23907c67c6f465a95",
+    "bytes": 1353,
+    "adaptations": [],
+    "source_filename": "support_by_period_basin.csv"
+  },
+  {
+    "source_sha256": "82577bc773b9a9f6b88eac629741ca8d0eb2fa79d733c6f664e071ded3c4465d",
+    "public_path": "history/agents/A/sensitivity_complete/analysis_support_all_sid.csv",
+    "public_sha256": "82577bc773b9a9f6b88eac629741ca8d0eb2fa79d733c6f664e071ded3c4465d",
+    "bytes": 2202755,
+    "adaptations": [],
+    "source_filename": "analysis_support_all_sid.csv"
+  },
+  {
+    "source_sha256": "e45b7e8cef69bb9ac6617b7298711efc2983374193680d91457f51c710870794",
+    "public_path": "history/agents/A/sensitivity_complete/basin_estimates_ci.csv",
+    "public_sha256": "e45b7e8cef69bb9ac6617b7298711efc2983374193680d91457f51c710870794",
+    "bytes": 1437,
+    "adaptations": [],
+    "source_filename": "basin_estimates_ci.csv"
+  },
+  {
+    "source_sha256": "6cab7e3d3f7f26a784281c0f81c86fedf288450ab7dd60c67a0bc4fb25879223",
+    "public_path": "history/agents/A/sensitivity_complete/basin_probability_differences.csv",
+    "public_sha256": "6cab7e3d3f7f26a784281c0f81c86fedf288450ab7dd60c67a0bc4fb25879223",
+    "bytes": 2183,
+    "adaptations": [],
+    "source_filename": "basin_probability_differences.csv"
+  },
+  {
+    "source_sha256": "a3191764135bf7c37b6e90e06a1381d4059a59a388365c15944fca91a0d72db5",
+    "public_path": "history/agents/A/sensitivity_complete/block_length_sensitivity.csv",
+    "public_sha256": "a3191764135bf7c37b6e90e06a1381d4059a59a388365c15944fca91a0d72db5",
+    "bytes": 2316,
+    "adaptations": [],
+    "source_filename": "block_length_sensitivity.csv"
+  },
+  {
+    "source_sha256": "62799082b9b634f1371e6be14915d8ba8cae364971f3cc11caf09371cf9506e5",
+    "public_path": "history/agents/A/sensitivity_complete/bootstrap_draws.npz",
+    "public_sha256": "62799082b9b634f1371e6be14915d8ba8cae364971f3cc11caf09371cf9506e5",
+    "bytes": 377342,
+    "adaptations": [],
+    "source_filename": "bootstrap_draws.npz"
+  },
+  {
+    "source_sha256": "cc25d918bbecab308d7a7d741a59c50b5d811a3ba4b58f6b445660b363bf98c2",
+    "public_path": "history/agents/A/sensitivity_complete/common_support_counts.csv",
+    "public_sha256": "cc25d918bbecab308d7a7d741a59c50b5d811a3ba4b58f6b445660b363bf98c2",
+    "bytes": 68,
+    "adaptations": [],
+    "source_filename": "common_support_counts.csv"
+  },
+  {
+    "source_sha256": "93a89ec67c0f01478328045d85cddbcc333927fd41fca8c1ba8746127b955cac",
+    "public_path": "history/agents/A/sensitivity_complete/environment_associations.csv",
+    "public_sha256": "93a89ec67c0f01478328045d85cddbcc333927fd41fca8c1ba8746127b955cac",
+    "bytes": 342,
+    "adaptations": [],
+    "source_filename": "environment_associations.csv"
+  },
+  {
+    "source_sha256": "c550cc603fc435f9cae7481a14952813b52ac65f149d5a6295e1047e226de57f",
+    "public_path": "history/agents/A/sensitivity_complete/environment_by_basin.csv",
+    "public_sha256": "c550cc603fc435f9cae7481a14952813b52ac65f149d5a6295e1047e226de57f",
+    "bytes": 932,
+    "adaptations": [],
+    "source_filename": "environment_by_basin.csv"
+  },
+  {
+    "source_sha256": "2d9b5990f08febe64842d24419a968bcf0db3f8bf1792473e99d33a5bf26db19",
+    "public_path": "history/agents/A/sensitivity_complete/MODEL_CONFIG.json",
+    "public_sha256": "70ad251dc19597e3e59aa8ecb62786b61d1ceac3bbc779e33d621452e37464fd",
+    "bytes": 2173,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "MODEL_CONFIG.json"
+  },
+  {
+    "source_sha256": "cdab12e9ba56fdddb182e8c8ab6c02a1c9bbe254ba9ce6b3168e30d9a1d2726b",
+    "public_path": "history/agents/A/sensitivity_complete/sensitivity_block1.npy",
+    "public_sha256": "cdab12e9ba56fdddb182e8c8ab6c02a1c9bbe254ba9ce6b3168e30d9a1d2726b",
+    "bytes": 48128,
+    "adaptations": [],
+    "source_filename": "sensitivity_block1.npy"
+  },
+  {
+    "source_sha256": "eeb39205e08886d2e68412f7e0b90bd0a9ec636411e68fe7e9fb3df13438fac6",
+    "public_path": "history/agents/A/sensitivity_complete/sensitivity_block5.npy",
+    "public_sha256": "eeb39205e08886d2e68412f7e0b90bd0a9ec636411e68fe7e9fb3df13438fac6",
+    "bytes": 48128,
+    "adaptations": [],
+    "source_filename": "sensitivity_block5.npy"
+  },
+  {
+    "source_sha256": "ca200a1d1d903da505dca6cd99918ab8a2061f0f62a14198fa484970a1c69088",
+    "public_path": "history/agents/A/sensitivity_complete/standardized_probabilities.csv",
+    "public_sha256": "ca200a1d1d903da505dca6cd99918ab8a2061f0f62a14198fa484970a1c69088",
+    "bytes": 1050,
+    "adaptations": [],
+    "source_filename": "standardized_probabilities.csv"
+  },
+  {
+    "source_sha256": "7dae1cfb0ab5db5593b1786902936dd25c1bf45b5909ca505a7a685746312b26",
+    "public_path": "history/agents/B/history_counts_trends.py",
+    "public_sha256": "cdd73f5ddef794c613d55184af5789ee1a1f2ce69c2c80d5d9a8d692788850ce",
+    "bytes": 9243,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "history_counts_trends.py"
+  },
+  {
+    "source_sha256": "9e66e9bb27fc01a1993940c61cd9998fc92b198ad026df37754517919a9c9db4",
+    "public_path": "history/agents/B/annual_basin_numerators_denominators.csv",
+    "public_sha256": "9e66e9bb27fc01a1993940c61cd9998fc92b198ad026df37754517919a9c9db4",
+    "bytes": 20606,
+    "adaptations": [],
+    "source_filename": "annual_basin_numerators_denominators.csv"
+  },
+  {
+    "source_sha256": "02b685a9c5cc85537fd813b9d4656dc79f386dba90ea5a41bb86530fd3f5d4ae",
+    "public_path": "history/agents/B/annual_joint_slope_covariance.csv",
+    "public_sha256": "02b685a9c5cc85537fd813b9d4656dc79f386dba90ea5a41bb86530fd3f5d4ae",
+    "bytes": 359,
+    "adaptations": [],
+    "source_filename": "annual_joint_slope_covariance.csv"
+  },
+  {
+    "source_sha256": "1dd0a2385b4e3af2a7b55a31606c890b80353966441da589ecbda1367993c3be",
+    "public_path": "history/agents/B/annual_trends_and_basin_interactions.csv",
+    "public_sha256": "1dd0a2385b4e3af2a7b55a31606c890b80353966441da589ecbda1367993c3be",
+    "bytes": 2338,
+    "adaptations": [],
+    "source_filename": "annual_trends_and_basin_interactions.csv"
+  },
+  {
+    "source_sha256": "0f33e3b65ffde7e483ed4fd41ac992e6191191f5ad6fd10389f17f5e86a9b445",
+    "public_path": "history/agents/B/composition_bootstrap_draws.npy",
+    "public_sha256": "0f33e3b65ffde7e483ed4fd41ac992e6191191f5ad6fd10389f17f5e86a9b445",
+    "bytes": 240008,
+    "adaptations": [],
+    "source_filename": "composition_bootstrap_draws.npy"
+  },
+  {
+    "source_sha256": "b2149ccfbafaa293f70612656d2e333ea79ab887e53cf2d9460f0ba7d5f3a576",
+    "public_path": "history/agents/B/DESIGN_BEFORE_COUNTS.json",
+    "public_sha256": "6dae17d5b154ef307a0fec7a027275adf20b2b5966031de500a5d6e3d555e726",
+    "bytes": 1383,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "DESIGN_BEFORE_COUNTS.json"
+  },
+  {
+    "source_sha256": "bfce86faf499ab761d81add1ff6dd12e63d5423d9e8d605941fa887299f4fcc2",
+    "public_path": "history/agents/B/global_equal_year_P4_minus_P1_decomposition.csv",
+    "public_sha256": "bfce86faf499ab761d81add1ff6dd12e63d5423d9e8d605941fa887299f4fcc2",
+    "bytes": 1297,
+    "adaptations": [],
+    "source_filename": "global_equal_year_P4_minus_P1_decomposition.csv"
+  },
+  {
+    "source_sha256": "44116317c909bf81cb63e729ce2dacc7c5f6b8a478d121fc4ee6fa7d9b145d85",
+    "public_path": "history/agents/B/period_basin_numerators_denominators.csv",
+    "public_sha256": "44116317c909bf81cb63e729ce2dacc7c5f6b8a478d121fc4ee6fa7d9b145d85",
+    "bytes": 2862,
+    "adaptations": [],
+    "source_filename": "period_basin_numerators_denominators.csv"
+  },
+  {
+    "source_sha256": "d006aff47fcdad2273da4543d47e69e39521acbaac07e0c05dba1b84255c862e",
+    "public_path": "history/agents/B/period_observation_coverage_audit.csv",
+    "public_sha256": "d006aff47fcdad2273da4543d47e69e39521acbaac07e0c05dba1b84255c862e",
+    "bytes": 406,
+    "adaptations": [],
+    "source_filename": "period_observation_coverage_audit.csv"
+  },
+  {
+    "source_sha256": "27330857cba1a6b2e5b4980a4ab0f79e20d6f637c9d45dfac095ee5b16a1df7e",
+    "public_path": "history/agents/B_env/analyze_b_env.py",
+    "public_sha256": "54fc35938b52b7d7f36da577069795ad87152faf50129e692a0b19d548a618a0",
+    "bytes": 12326,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "analyze_b_env.py"
+  },
+  {
+    "source_sha256": "cd616f24364c84bacb02e5dbe2e58d72eb4d83d2c0234cd568892f0acc59e7c3",
+    "public_path": "history/agents/B_env/environment_only.py",
+    "public_sha256": "ebbf8600a31e7c32d365e05da45097745ee0b59846b0d4929a630fb2734991e5",
+    "bytes": 6898,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "environment_only.py"
+  },
+  {
+    "source_sha256": "b14f2dfd2e3c0915aa6e5b4399bd7e14a64628caed942cfed75b7cee84e9bb3b",
+    "public_path": "history/agents/B_env/annual_environment_means.csv",
+    "public_sha256": "b14f2dfd2e3c0915aa6e5b4399bd7e14a64628caed942cfed75b7cee84e9bb3b",
+    "bytes": 16065,
+    "adaptations": [],
+    "source_filename": "annual_environment_means.csv"
+  },
+  {
+    "source_sha256": "d0d887a811fd6b2ef1228307f440fbad0cb6ae00cda06f28b344bb84ea254c86",
+    "public_path": "history/agents/B_env/annual_standardized_probability_curves.csv",
+    "public_sha256": "d0d887a811fd6b2ef1228307f440fbad0cb6ae00cda06f28b344bb84ea254c86",
+    "bytes": 45645,
+    "adaptations": [],
+    "source_filename": "annual_standardized_probability_curves.csv"
+  },
+  {
+    "source_sha256": "0444cef6cdabccd1278f34de0a24c6f439a0d98e4f1b6b3ca3c83387a2642924",
+    "public_path": "history/agents/B_env/block1_sensitivity_draws.npy",
+    "public_sha256": "0444cef6cdabccd1278f34de0a24c6f439a0d98e4f1b6b3ca3c83387a2642924",
+    "bytes": 48128,
+    "adaptations": [],
+    "source_filename": "block1_sensitivity_draws.npy"
+  },
+  {
+    "source_sha256": "9b84c5771054097fdf43f4be6712675c507374ef6ad7f04813210ac0bdffae8b",
+    "public_path": "history/agents/B_env/block5_sensitivity_draws.npy",
+    "public_sha256": "9b84c5771054097fdf43f4be6712675c507374ef6ad7f04813210ac0bdffae8b",
+    "bytes": 48128,
+    "adaptations": [],
+    "source_filename": "block5_sensitivity_draws.npy"
+  },
+  {
+    "source_sha256": "b92c1964fb5609cd87b71bba13b6a48921f5dd26d0a5489b9db4d90e78f0ed94",
+    "public_path": "history/agents/B_env/block_length_sensitivity.csv",
+    "public_sha256": "b92c1964fb5609cd87b71bba13b6a48921f5dd26d0a5489b9db4d90e78f0ed94",
+    "bytes": 1542,
+    "adaptations": [],
+    "source_filename": "block_length_sensitivity.csv"
+  },
+  {
+    "source_sha256": "be449770fc85a18e22275591cf7c3a6ec4deafe63f0d726bbea15f304c8dd2b0",
+    "public_path": "history/agents/B_env/bootstrap_draws.npz",
+    "public_sha256": "be449770fc85a18e22275591cf7c3a6ec4deafe63f0d726bbea15f304c8dd2b0",
+    "bytes": 8566600,
+    "adaptations": [],
+    "source_filename": "bootstrap_draws.npz"
+  },
+  {
+    "source_sha256": "1b77026b33686d26c71738effe3d7162c7e046916c11d56b5102b439e6a9f2f6",
+    "public_path": "history/agents/B_env/DESIGN_BEFORE_ANALYSIS.json",
+    "public_sha256": "5cce5f64dec6602839a6495f4880bedb00bf1429877f57c716a8244c0f0aaddf",
+    "bytes": 4581,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "DESIGN_BEFORE_ANALYSIS.json"
+  },
+  {
+    "source_sha256": "d735b10551cf689becc923410c7ae6d64485d05a13ebc70286fa6cfd9a2048b8",
+    "public_path": "history/agents/B_env/environment_history_trends.csv",
+    "public_sha256": "d735b10551cf689becc923410c7ae6d64485d05a13ebc70286fa6cfd9a2048b8",
+    "bytes": 3401,
+    "adaptations": [],
+    "source_filename": "environment_history_trends.csv"
+  },
+  {
+    "source_sha256": "5352c83fefd4c6de45fecd5b89a4f42b2555232d3ec850f86002f3a799a7f74e",
+    "public_path": "history/agents/B_env/environment_only_bootstrap_draws.npy",
+    "public_sha256": "5352c83fefd4c6de45fecd5b89a4f42b2555232d3ec850f86002f3a799a7f74e",
+    "bytes": 192128,
+    "adaptations": [],
+    "source_filename": "environment_only_bootstrap_draws.npy"
+  },
+  {
+    "source_sha256": "7effddc65207122232d0b231a7f10c1cbc68940729d9a5d5bc15b67c5ec30051",
+    "public_path": "history/agents/B_env/ENVIRONMENT_ONLY_DESIGN_ADDENDUM.json",
+    "public_sha256": "e04a7845b723bc17c9b93f13f7a629d2c134d124f2b1bbede0fcc9b8313db520",
+    "bytes": 2149,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "ENVIRONMENT_ONLY_DESIGN_ADDENDUM.json"
+  },
+  {
+    "source_sha256": "a75f95c1a746c2f06906be67c2b0ca2fd7819f95ec3758e12e5d0607518f0bbb",
+    "public_path": "history/agents/B_env/environment_only_joint_support_audit.csv",
+    "public_sha256": "a75f95c1a746c2f06906be67c2b0ca2fd7819f95ec3758e12e5d0607518f0bbb",
+    "bytes": 1369,
+    "adaptations": [],
+    "source_filename": "environment_only_joint_support_audit.csv"
+  },
+  {
+    "source_sha256": "5a8bdbd4c42313314369c1e1838f075ef4d8784feb50b7c96bf2f6c8cb950cc0",
+    "public_path": "history/agents/B_env/MODEL_CONFIG.json",
+    "public_sha256": "c6f086bd5c2d05b95dfd0941dc90401d4d4f363e41a251d7a9976a7c215c2465",
+    "bytes": 4672,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "MODEL_CONFIG.json"
+  },
+  {
+    "source_sha256": "1d32cc1c75047f8f576947d1e665882635bcd068fdb664a14471d8177c37d872",
+    "public_path": "history/agents/B_env/same_model_actual_vs_fixed_joint.csv",
+    "public_sha256": "1d32cc1c75047f8f576947d1e665882635bcd068fdb664a14471d8177c37d872",
+    "bytes": 2803,
+    "adaptations": [],
+    "source_filename": "same_model_actual_vs_fixed_joint.csv"
+  },
+  {
+    "source_sha256": "cd407a9ebb302361200b419a849aa3019d4bc767ff04d4a457da7c78d36ef889",
+    "public_path": "history/agents/B_env/same_model_environment_only_annual_predictions.csv",
+    "public_sha256": "cd407a9ebb302361200b419a849aa3019d4bc767ff04d4a457da7c78d36ef889",
+    "bytes": 7735,
+    "adaptations": [],
+    "source_filename": "same_model_environment_only_annual_predictions.csv"
+  },
+  {
+    "source_sha256": "ab6c8346aeeba8f7518c61e7dc5bf4446c529aa10b4a56257611e9d027a3bc08",
+    "public_path": "history/agents/B_env/same_model_environment_only_trends.csv",
+    "public_sha256": "ab6c8346aeeba8f7518c61e7dc5bf4446c529aa10b4a56257611e9d027a3bc08",
+    "bytes": 2674,
+    "adaptations": [],
+    "source_filename": "same_model_environment_only_trends.csv"
+  },
+  {
+    "source_sha256": "1ca6b498e11c2e48bee4581debb2913078da16e5b322df3965ceda3666221104",
+    "public_path": "history/agents/B_env/standardization_trend_differences.csv",
+    "public_sha256": "1ca6b498e11c2e48bee4581debb2913078da16e5b322df3965ceda3666221104",
+    "bytes": 1221,
+    "adaptations": [],
+    "source_filename": "standardization_trend_differences.csv"
+  },
+  {
+    "source_sha256": "eeb0fb6d62c07ae79bc8af5c7b2236d3407269473fcbd0033ef8ee874f235f55",
+    "public_path": "history/agents/B_env/standardized_trend_estimates.csv",
+    "public_sha256": "eeb0fb6d62c07ae79bc8af5c7b2236d3407269473fcbd0033ef8ee874f235f55",
+    "bytes": 1208,
+    "adaptations": [],
+    "source_filename": "standardized_trend_estimates.csv"
+  },
+  {
+    "source_sha256": "753f5e0db81a9b63ac1ed060c3f04908302e9129bfce96bc1e642a3d1564e977",
+    "public_path": "history/agents/B_env/support_all_sid.csv",
+    "public_sha256": "753f5e0db81a9b63ac1ed060c3f04908302e9129bfce96bc1e642a3d1564e977",
+    "bytes": 2216797,
+    "adaptations": [],
+    "source_filename": "support_all_sid.csv"
+  },
+  {
+    "source_sha256": "008db15d405d8f8e99cb8126cae4dfd47c45fca1d4788413f522f2c38a32cf60",
+    "public_path": "history/agents/B_env/support_by_period.csv",
+    "public_sha256": "008db15d405d8f8e99cb8126cae4dfd47c45fca1d4788413f522f2c38a32cf60",
+    "bytes": 282,
+    "adaptations": [],
+    "source_filename": "support_by_period.csv"
+  },
+  {
+    "source_sha256": "021cbcc620b0546ed8b579c5ccc286ebc81f85956449e9312199d7d05e65ee12",
+    "public_path": "history/agents/B_env/support_by_year.csv",
+    "public_sha256": "021cbcc620b0546ed8b579c5ccc286ebc81f85956449e9312199d7d05e65ee12",
+    "bytes": 3733,
+    "adaptations": [],
+    "source_filename": "support_by_year.csv"
+  },
+  {
+    "source_sha256": "3f95236bba0cd5c3ba95e6f15f8382f56e0d68b6298fc4624cc7a9dad74124c8",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/annual_environment_means.csv",
+    "public_sha256": "3f95236bba0cd5c3ba95e6f15f8382f56e0d68b6298fc4624cc7a9dad74124c8",
+    "bytes": 17263,
+    "adaptations": [],
+    "source_filename": "annual_environment_means.csv"
+  },
+  {
+    "source_sha256": "9e2c9db1d46a9e10cb50887bfa6b67a94e13d60edd918b3035d91d0e267acfd7",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/annual_standardized_probability_curves.csv",
+    "public_sha256": "9e2c9db1d46a9e10cb50887bfa6b67a94e13d60edd918b3035d91d0e267acfd7",
+    "bytes": 45686,
+    "adaptations": [],
+    "source_filename": "annual_standardized_probability_curves.csv"
+  },
+  {
+    "source_sha256": "d644678464ee82b57b4a7b88a747bb94e37b652555226c8f825ab12c574bb047",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/bootstrap_draws.npz",
+    "public_sha256": "d644678464ee82b57b4a7b88a747bb94e37b652555226c8f825ab12c574bb047",
+    "bytes": 4279410,
+    "adaptations": [],
+    "source_filename": "bootstrap_draws.npz"
+  },
+  {
+    "source_sha256": "9d73207457a75ce454fb8e90f33457cee923f5c6b5f2c2dc4b8008fb8df38eb7",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/environment_history_trends.csv",
+    "public_sha256": "9d73207457a75ce454fb8e90f33457cee923f5c6b5f2c2dc4b8008fb8df38eb7",
+    "bytes": 3417,
+    "adaptations": [],
+    "source_filename": "environment_history_trends.csv"
+  },
+  {
+    "source_sha256": "800dcafbcb98132d8711c70acb9c51ebb4ea214446be05e60697f32fefa4db6b",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/environment_only_bootstrap_draws.npy",
+    "public_sha256": "800dcafbcb98132d8711c70acb9c51ebb4ea214446be05e60697f32fefa4db6b",
+    "bytes": 96128,
+    "adaptations": [],
+    "source_filename": "environment_only_bootstrap_draws.npy"
+  },
+  {
+    "source_sha256": "390831b1db5a6cde2f19441052b007ebc93c9f088868c52a8063889fba346196",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/environment_only_joint_support_audit.csv",
+    "public_sha256": "390831b1db5a6cde2f19441052b007ebc93c9f088868c52a8063889fba346196",
+    "bytes": 1372,
+    "adaptations": [],
+    "source_filename": "environment_only_joint_support_audit.csv"
+  },
+  {
+    "source_sha256": "5a977306f0e71780f83850bc73ae304b61582f8f5df707291b757c8dae00f999",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/MODEL_CONFIG.json",
+    "public_sha256": "cff8fffd8a16810f3ff70ce65247daaf0f3dda6322893b80ab0f3b4d5712b8a8",
+    "bytes": 4692,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "MODEL_CONFIG.json"
+  },
+  {
+    "source_sha256": "e63d7c7765652a1a3d00c4d8d38c349911f9dd2dec79e916a1fc01a472fcbdc7",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/same_model_actual_vs_fixed_joint.csv",
+    "public_sha256": "e63d7c7765652a1a3d00c4d8d38c349911f9dd2dec79e916a1fc01a472fcbdc7",
+    "bytes": 2808,
+    "adaptations": [],
+    "source_filename": "same_model_actual_vs_fixed_joint.csv"
+  },
+  {
+    "source_sha256": "234b7ea01403df8fcf407399cff8ff00bd4e6ba0d9f82e03687350daa58e3e66",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/same_model_environment_only_annual_predictions.csv",
+    "public_sha256": "234b7ea01403df8fcf407399cff8ff00bd4e6ba0d9f82e03687350daa58e3e66",
+    "bytes": 8080,
+    "adaptations": [],
+    "source_filename": "same_model_environment_only_annual_predictions.csv"
+  },
+  {
+    "source_sha256": "c4f5ff88a80d1307eb3c4685c8bef37d5fa34dfd223f2356435e3d50b809fedb",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/same_model_environment_only_trends.csv",
+    "public_sha256": "c4f5ff88a80d1307eb3c4685c8bef37d5fa34dfd223f2356435e3d50b809fedb",
+    "bytes": 2679,
+    "adaptations": [],
+    "source_filename": "same_model_environment_only_trends.csv"
+  },
+  {
+    "source_sha256": "662c14d6e1a5f5390d317c25381083d6ad191b61a58134839c081484e653eb11",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/standardization_trend_differences.csv",
+    "public_sha256": "662c14d6e1a5f5390d317c25381083d6ad191b61a58134839c081484e653eb11",
+    "bytes": 1196,
+    "adaptations": [],
+    "source_filename": "standardization_trend_differences.csv"
+  },
+  {
+    "source_sha256": "4570bd6dcd1986f21a74523efe921c062f3bfb81bb005a07ee6f17efb445e785",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/standardized_trend_estimates.csv",
+    "public_sha256": "4570bd6dcd1986f21a74523efe921c062f3bfb81bb005a07ee6f17efb445e785",
+    "bytes": 1215,
+    "adaptations": [],
+    "source_filename": "standardized_trend_estimates.csv"
+  },
+  {
+    "source_sha256": "6272fa16958dc8855a549bd3a743d39a7debf297f3965fd8a6c56309e048d430",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/support_all_sid.csv",
+    "public_sha256": "6272fa16958dc8855a549bd3a743d39a7debf297f3965fd8a6c56309e048d430",
+    "bytes": 2216465,
+    "adaptations": [],
+    "source_filename": "support_all_sid.csv"
+  },
+  {
+    "source_sha256": "a07e40fa8006db38df07b7be452f6eb9739eb294213453023d9c340685663ab1",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/support_by_period.csv",
+    "public_sha256": "a07e40fa8006db38df07b7be452f6eb9739eb294213453023d9c340685663ab1",
+    "bytes": 287,
+    "adaptations": [],
+    "source_filename": "support_by_period.csv"
+  },
+  {
+    "source_sha256": "3104c1ed3c9005caab5e6de01b1f14b2217555a2ca67e05ae2ee09a24bbecdef",
+    "public_path": "history/agents/B_env/sensitivity_temporal_overlap/support_by_year.csv",
+    "public_sha256": "3104c1ed3c9005caab5e6de01b1f14b2217555a2ca67e05ae2ee09a24bbecdef",
+    "bytes": 3803,
+    "adaptations": [],
+    "source_filename": "support_by_year.csv"
+  },
+  {
+    "source_sha256": "a17b4fe383b829a25e0118368124b45a199163bc2b9bbb01d2df04740a6373c1",
+    "public_path": "history/agents/C/audit_duration.py",
+    "public_sha256": "f805609f7915f20402ea748d8227d8e26a51d7daabd6fe04926faa4af83f45f4",
+    "bytes": 7589,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "audit_duration.py"
+  },
+  {
+    "source_sha256": "43bbab807d6d159667759bf57d059fcb28cfeb94003aeb0475bc8c8573d42ffe",
+    "public_path": "history/agents/C/analyze_duration.py",
+    "public_sha256": "3acca0d207c16aa0a4e69d10daf17958f35253ec316edac23f3482d66ad946c9",
+    "bytes": 13421,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "analyze_duration.py"
+  },
+  {
+    "source_sha256": "95fbc50fdd60e3e1aaee406f2f77d87c15657a119b167212fc135a1a2e1bc6ee",
+    "public_path": "history/agents/C/sensitivity_validate.py",
+    "public_sha256": "60c662e86f019298c1d17ffe8ce098f4813c8302f21d680c6f75da123dfd0dd0",
+    "bytes": 6141,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "sensitivity_validate.py"
+  },
+  {
+    "source_sha256": "ed84e8cbdf38b846770c1e8448a06d7f81d8efa460f83e0af1a296bb61d2c4f6",
+    "public_path": "history/agents/C/positive_duration_sensitivity.py",
+    "public_sha256": "c4f5c130b38caa079bd31008d2c7423b8c0fa81c111fb0ce281f9d08b00faca6",
+    "bytes": 3065,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "positive_duration_sensitivity.py"
+  },
+  {
+    "source_sha256": "21a06b9c0526e1da6501e7af66ee2fcb11112846f42f5993fb0b1b8bba99f01e",
+    "public_path": "history/agents/C/bootstrap_draw_status.csv",
+    "public_sha256": "21a06b9c0526e1da6501e7af66ee2fcb11112846f42f5993fb0b1b8bba99f01e",
+    "bytes": 98407,
+    "adaptations": [],
+    "source_filename": "bootstrap_draw_status.csv"
+  },
+  {
+    "source_sha256": "604f4dd0eee7cd2b444e517d2c1acce9936e3d75441630350cf1a12d7a2de258",
+    "public_path": "history/agents/C/common_support_annual_values.csv",
+    "public_sha256": "604f4dd0eee7cd2b444e517d2c1acce9936e3d75441630350cf1a12d7a2de258",
+    "bytes": 36812,
+    "adaptations": [],
+    "source_filename": "common_support_annual_values.csv"
+  },
+  {
+    "source_sha256": "e3dd791d8b3e09dffee01bfcad1f53a5ed4a1f303a9432af2ca6166120c064a1",
+    "public_path": "history/agents/C/common_support_basin_period.csv",
+    "public_sha256": "e3dd791d8b3e09dffee01bfcad1f53a5ed4a1f303a9432af2ca6166120c064a1",
+    "bytes": 1726,
+    "adaptations": [],
+    "source_filename": "common_support_basin_period.csv"
+  },
+  {
+    "source_sha256": "bf78bef2291f9a7508c6ea0320d09f3474c9900a09560d3a6d11da40abb672b9",
+    "public_path": "history/agents/C/common_support_cutoffs.csv",
+    "public_sha256": "bf78bef2291f9a7508c6ea0320d09f3474c9900a09560d3a6d11da40abb672b9",
+    "bytes": 1284,
+    "adaptations": [],
+    "source_filename": "common_support_cutoffs.csv"
+  },
+  {
+    "source_sha256": "9390c60a389b5ade0fc34bac6ae1d20dd71850dbaaaa50e54fc01670e58abf47",
+    "public_path": "history/agents/C/common_support_D.csv",
+    "public_sha256": "9390c60a389b5ade0fc34bac6ae1d20dd71850dbaaaa50e54fc01670e58abf47",
+    "bytes": 972689,
+    "adaptations": [],
+    "source_filename": "common_support_D.csv"
+  },
+  {
+    "source_sha256": "c72765afec649ffcfbe777b0ffffdbbc58bb7eea7312b288f035b6f0649035ba",
+    "public_path": "history/agents/C/common_support_E.csv",
+    "public_sha256": "c72765afec649ffcfbe777b0ffffdbbc58bb7eea7312b288f035b6f0649035ba",
+    "bytes": 1012111,
+    "adaptations": [],
+    "source_filename": "common_support_E.csv"
+  },
+  {
+    "source_sha256": "2bcc4ebfebf482de0dce744cb69812303a02e6e705a5766e05d0250b56f86788",
+    "public_path": "history/agents/C/common_support_F.csv",
+    "public_sha256": "2bcc4ebfebf482de0dce744cb69812303a02e6e705a5766e05d0250b56f86788",
+    "bytes": 1020856,
+    "adaptations": [],
+    "source_filename": "common_support_F.csv"
+  },
+  {
+    "source_sha256": "4fb3351ab8d968dc724786fe605fa0412759dcb1184ca67fed5f3fca87ca233e",
+    "public_path": "history/agents/C/common_support_period_means.csv",
+    "public_sha256": "4fb3351ab8d968dc724786fe605fa0412759dcb1184ca67fed5f3fca87ca233e",
+    "bytes": 3951,
+    "adaptations": [],
+    "source_filename": "common_support_period_means.csv"
+  },
+  {
+    "source_sha256": "bba4cb2b1f5d9db9f4ef6455956077afc00a9874b231fcef7a4523e8dddf218c",
+    "public_path": "history/agents/C/common_support_Res.csv",
+    "public_sha256": "bba4cb2b1f5d9db9f4ef6455956077afc00a9874b231fcef7a4523e8dddf218c",
+    "bytes": 1061092,
+    "adaptations": [],
+    "source_filename": "common_support_Res.csv"
+  },
+  {
+    "source_sha256": "2d0f328e679553d835ceb6a63e26bc330ba8eb38abc5c1a49ad0eb3968f43685",
+    "public_path": "history/agents/C/Dec_observation_annual.csv",
+    "public_sha256": "2d0f328e679553d835ceb6a63e26bc330ba8eb38abc5c1a49ad0eb3968f43685",
+    "bytes": 3459,
+    "adaptations": [],
+    "source_filename": "Dec_observation_annual.csv"
+  },
+  {
+    "source_sha256": "890d9779e02a9ee961b34cfb536686be23ab170f96ff67e68da750d3bf005306",
+    "public_path": "history/agents/C/Dec_observation_trends_HAC.csv",
+    "public_sha256": "890d9779e02a9ee961b34cfb536686be23ab170f96ff67e68da750d3bf005306",
+    "bytes": 659,
+    "adaptations": [],
+    "source_filename": "Dec_observation_trends_HAC.csv"
+  },
+  {
+    "source_sha256": "b6c20fa18a9d9f63437b37c634f55d5ecbf058d7063091e81e4e8488bb2f5a89",
+    "public_path": "history/agents/C/design_D.csv",
+    "public_sha256": "b6c20fa18a9d9f63437b37c634f55d5ecbf058d7063091e81e4e8488bb2f5a89",
+    "bytes": 753476,
+    "adaptations": [],
+    "source_filename": "design_D.csv"
+  },
+  {
+    "source_sha256": "ff85113528b835a9aedf2caba6ae50d4b1da33d555332a61259d459bc9cdf0c2",
+    "public_path": "history/agents/C/design_E.csv",
+    "public_sha256": "ff85113528b835a9aedf2caba6ae50d4b1da33d555332a61259d459bc9cdf0c2",
+    "bytes": 765571,
+    "adaptations": [],
+    "source_filename": "design_E.csv"
+  },
+  {
+    "source_sha256": "46e5e1cc728ffdcf17093bc703c7eef6fe9db00f53ba3fbb41c3dd31ac5637d6",
+    "public_path": "history/agents/C/design_F.csv",
+    "public_sha256": "46e5e1cc728ffdcf17093bc703c7eef6fe9db00f53ba3fbb41c3dd31ac5637d6",
+    "bytes": 767935,
+    "adaptations": [],
+    "source_filename": "design_F.csv"
+  },
+  {
+    "source_sha256": "0fbf72377760be552c56d674d1824e8755847fa89c49f15b2b272b7b20196015",
+    "public_path": "history/agents/C/design_Res.csv",
+    "public_sha256": "0fbf72377760be552c56d674d1824e8755847fa89c49f15b2b272b7b20196015",
+    "bytes": 788391,
+    "adaptations": [],
+    "source_filename": "design_Res.csv"
+  },
+  {
+    "source_sha256": "909b36532130af37f098aa88b6965dee07fe4cdc38b81b0a0836bb310a9cc186",
+    "public_path": "history/agents/C/duration_sensitivities.csv",
+    "public_sha256": "909b36532130af37f098aa88b6965dee07fe4cdc38b81b0a0836bb310a9cc186",
+    "bytes": 4615,
+    "adaptations": [],
+    "source_filename": "duration_sensitivities.csv"
+  },
+  {
+    "source_sha256": "f167304b238b304600630a9d08599ba6b3e4866971f01dfdbba8cc02e017bb73",
+    "public_path": "history/agents/C/entry_coverage_period.csv",
+    "public_sha256": "f167304b238b304600630a9d08599ba6b3e4866971f01dfdbba8cc02e017bb73",
+    "bytes": 1068,
+    "adaptations": [],
+    "source_filename": "entry_coverage_period.csv"
+  },
+  {
+    "source_sha256": "ed0777819fe460f794464cd8aeb42e8be51dab3ce305e873c43d902299fd6050",
+    "public_path": "history/agents/C/entry_environment_duration_associations.csv",
+    "public_sha256": "ed0777819fe460f794464cd8aeb42e8be51dab3ce305e873c43d902299fd6050",
+    "bytes": 2172,
+    "adaptations": [],
+    "source_filename": "entry_environment_duration_associations.csv"
+  },
+  {
+    "source_sha256": "db12895d636d189f27a656c695744fb6c07923a59a1061e79f6798dd2868728f",
+    "public_path": "history/agents/C/entry_environment_trends.csv",
+    "public_sha256": "db12895d636d189f27a656c695744fb6c07923a59a1061e79f6798dd2868728f",
+    "bytes": 1989,
+    "adaptations": [],
+    "source_filename": "entry_environment_trends.csv"
+  },
+  {
+    "source_sha256": "133215deff1bf977e3f3b3d9b90c1e62f16f61d0eb8d93bb22eca64e18dfc316",
+    "public_path": "history/agents/C/entry_state_trends_associations.csv",
+    "public_sha256": "133215deff1bf977e3f3b3d9b90c1e62f16f61d0eb8d93bb22eca64e18dfc316",
+    "bytes": 5667,
+    "adaptations": [],
+    "source_filename": "entry_state_trends_associations.csv"
+  },
+  {
+    "source_sha256": "f10a7c72b2f20ad70c08f71128a6e92c96abb2b385fbc83101bfa1baa7fb9e6d",
+    "public_path": "history/agents/C/F_components_annual.csv",
+    "public_sha256": "f10a7c72b2f20ad70c08f71128a6e92c96abb2b385fbc83101bfa1baa7fb9e6d",
+    "bytes": 3271,
+    "adaptations": [],
+    "source_filename": "F_components_annual.csv"
+  },
+  {
+    "source_sha256": "626a506f163ae45a6ce69ca18f4621dcfe8d8d7d805cbcb572e3e77804e53f09",
+    "public_path": "history/agents/C/F_components_original_N1_replayed.csv",
+    "public_sha256": "626a506f163ae45a6ce69ca18f4621dcfe8d8d7d805cbcb572e3e77804e53f09",
+    "bytes": 802,
+    "adaptations": [],
+    "source_filename": "F_components_original_N1_replayed.csv"
+  },
+  {
+    "source_sha256": "ea651fbc504897556c569bc999748b6c9f1fd230cb708ca043bfb6dc067fa58e",
+    "public_path": "history/agents/C/F_components_sid.csv",
+    "public_sha256": "ea651fbc504897556c569bc999748b6c9f1fd230cb708ca043bfb6dc067fa58e",
+    "bytes": 94834,
+    "adaptations": [],
+    "source_filename": "F_components_sid.csv"
+  },
+  {
+    "source_sha256": "6ec3c4a501884fce1ca28341a4a97f8b92e2ca3f5da0e50b3750a9ad501cd027",
+    "public_path": "history/agents/C/F_components_trends_HAC.csv",
+    "public_sha256": "6ec3c4a501884fce1ca28341a4a97f8b92e2ca3f5da0e50b3750a9ad501cd027",
+    "bytes": 520,
+    "adaptations": [],
+    "source_filename": "F_components_trends_HAC.csv"
+  },
+  {
+    "source_sha256": "3decb26c60ff75455c58f0ba25862d54c7b4f30096b3c737bf76db81fcbe15e8",
+    "public_path": "history/agents/C/gamma_duration_draws_D.npy",
+    "public_sha256": "3decb26c60ff75455c58f0ba25862d54c7b4f30096b3c737bf76db81fcbe15e8",
+    "bytes": 16128,
+    "adaptations": [],
+    "source_filename": "gamma_duration_draws_D.npy"
+  },
+  {
+    "source_sha256": "92677d17f53c2a18b584e2c97797856ea1d506ad88e8f6301181b66ad808a33e",
+    "public_path": "history/agents/C/gamma_duration_draws_E.npy",
+    "public_sha256": "92677d17f53c2a18b584e2c97797856ea1d506ad88e8f6301181b66ad808a33e",
+    "bytes": 16128,
+    "adaptations": [],
+    "source_filename": "gamma_duration_draws_E.npy"
+  },
+  {
+    "source_sha256": "a009d751bc248bcc464543059e4e43cefcf433a75fb6f61a1b7d344cfd9fcab2",
+    "public_path": "history/agents/C/gamma_duration_draws_F.npy",
+    "public_sha256": "a009d751bc248bcc464543059e4e43cefcf433a75fb6f61a1b7d344cfd9fcab2",
+    "bytes": 16128,
+    "adaptations": [],
+    "source_filename": "gamma_duration_draws_F.npy"
+  },
+  {
+    "source_sha256": "0f112d7b32590ca6349f6296eccd97d7f4db9e721daaacc5077486362445d03b",
+    "public_path": "history/agents/C/gamma_duration_draws_Res.npy",
+    "public_sha256": "0f112d7b32590ca6349f6296eccd97d7f4db9e721daaacc5077486362445d03b",
+    "bytes": 16128,
+    "adaptations": [],
+    "source_filename": "gamma_duration_draws_Res.npy"
+  },
+  {
+    "source_sha256": "8539d36e5be195e8f9632af2e156ee9dc43ed1d0b334c084909dea3b3c833ae1",
+    "public_path": "history/agents/C/individual_environment_trend_products.csv",
+    "public_sha256": "8539d36e5be195e8f9632af2e156ee9dc43ed1d0b334c084909dea3b3c833ae1",
+    "bytes": 2223,
+    "adaptations": [],
+    "source_filename": "individual_environment_trend_products.csv"
+  },
+  {
+    "source_sha256": "c7da3173605ebbb5f2be2664674a7e3ff92f2cba33e235a71088d1953500ae7b",
+    "public_path": "history/agents/C/joint_year_sid_draws.npz",
+    "public_sha256": "c7da3173605ebbb5f2be2664674a7e3ff92f2cba33e235a71088d1953500ae7b",
+    "bytes": 1388504,
+    "adaptations": [],
+    "source_filename": "joint_year_sid_draws.npz"
+  },
+  {
+    "source_sha256": "92a274debb6a731652e769462b32e8466b836b931f165efb0997b4736fd06eff",
+    "public_path": "history/agents/C/model_bootstrap_D.npz",
+    "public_sha256": "92a274debb6a731652e769462b32e8466b836b931f165efb0997b4736fd06eff",
+    "bytes": 767749,
+    "adaptations": [],
+    "source_filename": "model_bootstrap_D.npz"
+  },
+  {
+    "source_sha256": "7630fa7e99570c3dd42dab2018767225911ea5d474f6e9be29915d4a79b7aa51",
+    "public_path": "history/agents/C/model_bootstrap_E.npz",
+    "public_sha256": "7630fa7e99570c3dd42dab2018767225911ea5d474f6e9be29915d4a79b7aa51",
+    "bytes": 804746,
+    "adaptations": [],
+    "source_filename": "model_bootstrap_E.npz"
+  },
+  {
+    "source_sha256": "b0a91bb89e244ddbe60bc0bf17135292c0b23aedc6a2e3b7ddf893a627ab7e2e",
+    "public_path": "history/agents/C/model_bootstrap_F.npz",
+    "public_sha256": "b0a91bb89e244ddbe60bc0bf17135292c0b23aedc6a2e3b7ddf893a627ab7e2e",
+    "bytes": 796519,
+    "adaptations": [],
+    "source_filename": "model_bootstrap_F.npz"
+  },
+  {
+    "source_sha256": "c02dc7efd64d15589e2154694552ebabdf75590ba046801442fd16df0ace692a",
+    "public_path": "history/agents/C/model_bootstrap_Res.npz",
+    "public_sha256": "c02dc7efd64d15589e2154694552ebabdf75590ba046801442fd16df0ace692a",
+    "bytes": 1128757,
+    "adaptations": [],
+    "source_filename": "model_bootstrap_Res.npz"
+  },
+  {
+    "source_sha256": "bcfcd6f1415486f35e94cdfd3b36f027a6b44964b2ae3f2a3a35a385b7a6d21c",
+    "public_path": "history/agents/C/MODEL_SPEC_AND_AUDIT.json",
+    "public_sha256": "57d2f1cbb22cd0bb40958653d4573b2f859bf51b5ae2b07909aa095359e75e76",
+    "bytes": 3514,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "MODEL_SPEC_AND_AUDIT.json"
+  },
+  {
+    "source_sha256": "e819cdfa9f2fa44f52a15cd0766a5099a51d5fe362ac0941bf098115d7068283",
+    "public_path": "history/agents/C/positive_duration_draw_status.csv",
+    "public_sha256": "e819cdfa9f2fa44f52a15cd0766a5099a51d5fe362ac0941bf098115d7068283",
+    "bytes": 88755,
+    "adaptations": [],
+    "source_filename": "positive_duration_draw_status.csv"
+  },
+  {
+    "source_sha256": "ba15a08b6c18d1c0bb8b85db568ced58371cddc78826272fa306cb2710362cbb",
+    "public_path": "history/agents/C/positive_duration_model_sensitivity.csv",
+    "public_sha256": "ba15a08b6c18d1c0bb8b85db568ced58371cddc78826272fa306cb2710362cbb",
+    "bytes": 958,
+    "adaptations": [],
+    "source_filename": "positive_duration_model_sensitivity.csv"
+  },
+  {
+    "source_sha256": "b7a066d4229b712a156eda5b71409a869084f95251432e1ed5bc9c69472e480d",
+    "public_path": "history/agents/C/REQUIREMENT_STATUS.csv",
+    "public_sha256": "b7a066d4229b712a156eda5b71409a869084f95251432e1ed5bc9c69472e480d",
+    "bytes": 948,
+    "adaptations": [],
+    "source_filename": "REQUIREMENT_STATUS.csv"
+  },
+  {
+    "source_sha256": "fa9ae2d24763e73ce0329965559886634b5635b45dbc71fcd98690af88886365",
+    "public_path": "history/agents/C/S1c_exact_reproduction.csv",
+    "public_sha256": "fa9ae2d24763e73ce0329965559886634b5635b45dbc71fcd98690af88886365",
+    "bytes": 715,
+    "adaptations": [],
+    "source_filename": "S1c_exact_reproduction.csv"
+  },
+  {
+    "source_sha256": "607180b37415c01e1e109fc321959f95fadedc421e6fc83d66250cb9c5087e31",
+    "public_path": "history/agents/C/sensitivity_draws_D_complete_case_sensitivity.npz",
+    "public_sha256": "607180b37415c01e1e109fc321959f95fadedc421e6fc83d66250cb9c5087e31",
+    "bytes": 61511,
+    "adaptations": [],
+    "source_filename": "sensitivity_draws_D_complete_case_sensitivity.npz"
+  },
+  {
+    "source_sha256": "2e065eb3bbea71d30adb9b63d1e23da66fb520b58a9b4ac79e6c601d5180d0e4",
+    "public_path": "history/agents/C/sensitivity_draws_E_complete_case_sensitivity.npz",
+    "public_sha256": "2e065eb3bbea71d30adb9b63d1e23da66fb520b58a9b4ac79e6c601d5180d0e4",
+    "bytes": 60091,
+    "adaptations": [],
+    "source_filename": "sensitivity_draws_E_complete_case_sensitivity.npz"
+  },
+  {
+    "source_sha256": "de64965c66ac52e85906b9542e339dbb2a940501033939c5f4d0c8ac1b2b214c",
+    "public_path": "history/agents/C/sensitivity_draws_F_complete_case_sensitivity.npz",
+    "public_sha256": "de64965c66ac52e85906b9542e339dbb2a940501033939c5f4d0c8ac1b2b214c",
+    "bytes": 61119,
+    "adaptations": [],
+    "source_filename": "sensitivity_draws_F_complete_case_sensitivity.npz"
+  },
+  {
+    "source_sha256": "6cd2f9253ebb72df84e56db0f7e005f0d72856200c3da215b63d302dd7c6a8e2",
+    "public_path": "history/agents/C/sensitivity_draws_Res_complete_case_sensitivity.npz",
+    "public_sha256": "6cd2f9253ebb72df84e56db0f7e005f0d72856200c3da215b63d302dd7c6a8e2",
+    "bytes": 60838,
+    "adaptations": [],
+    "source_filename": "sensitivity_draws_Res_complete_case_sensitivity.npz"
+  },
+  {
+    "source_sha256": "c81cbc9f402730d839f2a9ab52805acf56a78d27bfa9cde9c4e2d71d44943828",
+    "public_path": "history/agents/C/sensitivity_draws_Res_exclude_missing_wind_tail.npz",
+    "public_sha256": "c81cbc9f402730d839f2a9ab52805acf56a78d27bfa9cde9c4e2d71d44943828",
+    "bytes": 61153,
+    "adaptations": [],
+    "source_filename": "sensitivity_draws_Res_exclude_missing_wind_tail.npz"
+  },
+  {
+    "source_sha256": "9e3d8f283ea3c88523f0672e5ed35185492f855bd8430983e3c53b68c9108e90",
+    "public_path": "history/agents/C/sensitivity_intervals.csv",
+    "public_sha256": "9e3d8f283ea3c88523f0672e5ed35185492f855bd8430983e3c53b68c9108e90",
+    "bytes": 4221,
+    "adaptations": [],
+    "source_filename": "sensitivity_intervals.csv"
+  },
+  {
+    "source_sha256": "e528db63f015879228f17f14cbebe085e1a8f974a28632e9ffd0fd57ca8b5d2e",
+    "public_path": "history/agents/C/stage_annual_full_cohort.csv",
+    "public_sha256": "e528db63f015879228f17f14cbebe085e1a8f974a28632e9ffd0fd57ca8b5d2e",
+    "bytes": 8669,
+    "adaptations": [],
+    "source_filename": "stage_annual_full_cohort.csv"
+  },
+  {
+    "source_sha256": "a72db8ce37d7d023082c9cb319577b0940d47769ce925eb5532abc52a8d8bb40",
+    "public_path": "history/agents/C/stage_duration_coverage_sid.csv",
+    "public_sha256": "a72db8ce37d7d023082c9cb319577b0940d47769ce925eb5532abc52a8d8bb40",
+    "bytes": 397522,
+    "adaptations": [],
+    "source_filename": "stage_duration_coverage_sid.csv"
+  },
+  {
+    "source_sha256": "5bab4b52186664192ee2e98685dfa73fce519fcb1a37d6edb41f117c896c395b",
+    "public_path": "history/agents/C/stage_entry_source_frozen.csv",
+    "public_sha256": "5bab4b52186664192ee2e98685dfa73fce519fcb1a37d6edb41f117c896c395b",
+    "bytes": 4825905,
+    "adaptations": [],
+    "source_filename": "stage_entry_source_frozen.csv"
+  },
+  {
+    "source_sha256": "a8c536a72c97a455cff01fca760421f41b22224c07c472d467a9e71e27b97d70",
+    "public_path": "history/agents/C/standardization_trend_contributions.csv",
+    "public_sha256": "a8c536a72c97a455cff01fca760421f41b22224c07c472d467a9e71e27b97d70",
+    "bytes": 2133,
+    "adaptations": [],
+    "source_filename": "standardization_trend_contributions.csv"
+  },
+  {
+    "source_sha256": "6702c25ac4f32464981a39c9459bae688160256080ac8e1334c91ce613e68b8e",
+    "public_path": "history/agents/C/standardized_annual_predictions.csv",
+    "public_sha256": "6702c25ac4f32464981a39c9459bae688160256080ac8e1334c91ce613e68b8e",
+    "bytes": 37263,
+    "adaptations": [],
+    "source_filename": "standardized_annual_predictions.csv"
+  },
+  {
+    "source_sha256": "20b56f41ceebdf55a9bd24d74fce9a356da7fac177c0d0a861a82085b11da8e7",
+    "public_path": "history/agents/C/standardized_duration_trends.csv",
+    "public_sha256": "20b56f41ceebdf55a9bd24d74fce9a356da7fac177c0d0a861a82085b11da8e7",
+    "bytes": 3059,
+    "adaptations": [],
+    "source_filename": "standardized_duration_trends.csv"
+  },
+  {
+    "source_sha256": "0993e6ca01fff2885ac3ef18a7efe8ada266fac9061373df95a131ef07b3db73",
+    "public_path": "history/agents/C/support_sid_stage.csv",
+    "public_sha256": "0993e6ca01fff2885ac3ef18a7efe8ada266fac9061373df95a131ef07b3db73",
+    "bytes": 358426,
+    "adaptations": [],
+    "source_filename": "support_sid_stage.csv"
+  },
+  {
+    "source_sha256": "5f74e2583564c6909ad56bae90dbf061d3ef0c79b66d512210ab211225e39840",
+    "public_path": "history/agents/C/track_coverage_period.csv",
+    "public_sha256": "5f74e2583564c6909ad56bae90dbf061d3ef0c79b66d512210ab211225e39840",
+    "bytes": 992,
+    "adaptations": [],
+    "source_filename": "track_coverage_period.csv"
+  },
+  {
+    "source_sha256": "30dc31e85a0e1a085b303f12a60efb93b73f82d19603cbf25b8050d471e34f24",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/fit_latitude_risk.py",
+    "public_sha256": "9785b06cf5ba8284cda19b0370e2132e46b9d81ed02d0c9e51613f05d6c03a08",
+    "bytes": 10654,
+    "adaptations": [
+      "Import exact original Basis/IntervalHazard class sources from bundled interval_hazard.py; source AST verified identical.",
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "fit_latitude_risk.py"
+  },
+  {
+    "source_sha256": "c44def2998394094e4f4eeef44bbac50425b53c4b6dd51ad29b4ae52b49bbfe9",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/summarize_latitude_risk.py",
+    "public_sha256": "41dcd3deceab75e8f6090d079d19e3270cc7a875eb95754751c40097d5836ef9",
+    "bytes": 9485,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "summarize_latitude_risk.py"
+  },
+  {
+    "source_sha256": "883ba518489b0a1e33573405ab43dc679f9c9cc95b21dcce4ebf0a90f372eede",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/analysis_outcome_support.csv",
+    "public_sha256": "883ba518489b0a1e33573405ab43dc679f9c9cc95b21dcce4ebf0a90f372eede",
+    "bytes": 261,
+    "adaptations": [],
+    "source_filename": "analysis_outcome_support.csv"
+  },
+  {
+    "source_sha256": "01d0fee87c939e67456cb71336210f9ac16a06ee83258fbd1e42ec6e0b85fb15",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/environment_context_support.csv",
+    "public_sha256": "01d0fee87c939e67456cb71336210f9ac16a06ee83258fbd1e42ec6e0b85fb15",
+    "bytes": 160,
+    "adaptations": [],
+    "source_filename": "environment_context_support.csv"
+  },
+  {
+    "source_sha256": "0554dc6a21a2d913cfac3c8d7583614945810a9d9db0758d569f63e731e84603",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/environment_descriptive_context.csv",
+    "public_sha256": "0554dc6a21a2d913cfac3c8d7583614945810a9d9db0758d569f63e731e84603",
+    "bytes": 4094,
+    "adaptations": [],
+    "source_filename": "environment_descriptive_context.csv"
+  },
+  {
+    "source_sha256": "5cb181abc92ade20afb9db73453b23afabf8a60854d7084ef91f5fd52c002897",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/fold_support_membership_406.csv",
+    "public_sha256": "5cb181abc92ade20afb9db73453b23afabf8a60854d7084ef91f5fd52c002897",
+    "bytes": 15678,
+    "adaptations": [],
+    "source_filename": "fold_support_membership_406.csv"
+  },
+  {
+    "source_sha256": "60bb940f4cb26cc03413ed61647d6b6c63af57dd0cb1f528f483ff7d67a4d56c",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/frozen_analysis_inputs.csv",
+    "public_sha256": "60bb940f4cb26cc03413ed61647d6b6c63af57dd0cb1f528f483ff7d67a4d56c",
+    "bytes": 341494,
+    "adaptations": [],
+    "source_filename": "frozen_analysis_inputs.csv"
+  },
+  {
+    "source_sha256": "230002b265ca8360be359d7f5e9b9f0bed8180b7bedba0dff4a6af93e16b37c0",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/FROZEN_CONFIG.json",
+    "public_sha256": "523f090892834efdfe032a45ea4696fb7c4afd9ff8dad0efac626b3932e45345",
+    "bytes": 5251,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "FROZEN_CONFIG.json"
+  },
+  {
+    "source_sha256": "e271cac1dc116ccfd89bbda69e47495bdba66bab093ee807f02e8022f943b65e",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/latitude_probability_contrasts.csv",
+    "public_sha256": "e271cac1dc116ccfd89bbda69e47495bdba66bab093ee807f02e8022f943b65e",
+    "bytes": 2233,
+    "adaptations": [],
+    "source_filename": "latitude_probability_contrasts.csv"
+  },
+  {
+    "source_sha256": "80f46eff29a03a3d51de9d250729e5e33be3bee840fd9a39534cff0e2a019c62",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/latitude_standardized_curves.csv",
+    "public_sha256": "80f46eff29a03a3d51de9d250729e5e33be3bee840fd9a39534cff0e2a019c62",
+    "bytes": 50277,
+    "adaptations": [],
+    "source_filename": "latitude_standardized_curves.csv"
+  },
+  {
+    "source_sha256": "101b73fcadd392373ebe5480a9b1f0291f2d1a31868bc70ecadd722177426a35",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/latitude_standardized_risks.csv",
+    "public_sha256": "101b73fcadd392373ebe5480a9b1f0291f2d1a31868bc70ecadd722177426a35",
+    "bytes": 2710,
+    "adaptations": [],
+    "source_filename": "latitude_standardized_risks.csv"
+  },
+  {
+    "source_sha256": "1e6ac859c6de56d07fe06e4881de3d8316f3d414ab2a2d6e07b2541a27077ce7",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/NH_bootstrap_draws.jsonl",
+    "public_sha256": "1e6ac859c6de56d07fe06e4881de3d8316f3d414ab2a2d6e07b2541a27077ce7",
+    "bytes": 3597448,
+    "adaptations": [],
+    "source_filename": "NH_bootstrap_draws.jsonl"
+  },
+  {
+    "source_sha256": "495436dd5e3b6debdacd58e3d3cf7e5408a6ccf9ce5b26c73aec0dcaeab79b0c",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/NH_bootstrap_reference_weights.npz",
+    "public_sha256": "495436dd5e3b6debdacd58e3d3cf7e5408a6ccf9ce5b26c73aec0dcaeab79b0c",
+    "bytes": 73576,
+    "adaptations": [],
+    "source_filename": "NH_bootstrap_reference_weights.npz"
+  },
+  {
+    "source_sha256": "e36a17e70f474e867b597513162e357ed0aee6c3904bb0ba19071ec606b992cf",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/NH_coefficient_diagnostics.csv",
+    "public_sha256": "e36a17e70f474e867b597513162e357ed0aee6c3904bb0ba19071ec606b992cf",
+    "bytes": 24616,
+    "adaptations": [],
+    "source_filename": "NH_coefficient_diagnostics.csv"
+  },
+  {
+    "source_sha256": "1894e75a4ec092146f321461304cac4a4a8531c9a9d7219824bb5f13530b7dc4",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/NH_point.json",
+    "public_sha256": "0b743c96fb09154c80bd12cf77176b99e1f2202f745a634a8539e4a05e8ec26a",
+    "bytes": 5134,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "NH_point.json"
+  },
+  {
+    "source_sha256": "20895d72608d5e85bbcce0e73a64b8ae1f31342173a3db9846a57738d4f3c0a7",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/NH_point_predictions.csv",
+    "public_sha256": "20895d72608d5e85bbcce0e73a64b8ae1f31342173a3db9846a57738d4f3c0a7",
+    "bytes": 127345,
+    "adaptations": [],
+    "source_filename": "NH_point_predictions.csv"
+  },
+  {
+    "source_sha256": "59814d821df3af8a8894a1826b068a0e0cdf162b5028220abcfc9e730153d281",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/paired_latitude_bootstrap_contrasts.csv",
+    "public_sha256": "59814d821df3af8a8894a1826b068a0e0cdf162b5028220abcfc9e730153d281",
+    "bytes": 354373,
+    "adaptations": [],
+    "source_filename": "paired_latitude_bootstrap_contrasts.csv"
+  },
+  {
+    "source_sha256": "f222a9df36d9ade790f56f60c761115d5f2be602174fb2ac131af4cdc4ab1659",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/scope_population_counts.csv",
+    "public_sha256": "f222a9df36d9ade790f56f60c761115d5f2be602174fb2ac131af4cdc4ab1659",
+    "bytes": 1831,
+    "adaptations": [],
+    "source_filename": "scope_population_counts.csv"
+  },
+  {
+    "source_sha256": "45f8e01b6da210dc2a8f02e24bc373d160b59a9efdf8162cd5fe32910ea94cf0",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/SH_bootstrap_draws.jsonl",
+    "public_sha256": "45f8e01b6da210dc2a8f02e24bc373d160b59a9efdf8162cd5fe32910ea94cf0",
+    "bytes": 3606808,
+    "adaptations": [],
+    "source_filename": "SH_bootstrap_draws.jsonl"
+  },
+  {
+    "source_sha256": "1c16c484f6a544987011c2309643d283c7d434de8da6a0e6112de2011015447c",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/SH_bootstrap_reference_weights.npz",
+    "public_sha256": "1c16c484f6a544987011c2309643d283c7d434de8da6a0e6112de2011015447c",
+    "bytes": 44155,
+    "adaptations": [],
+    "source_filename": "SH_bootstrap_reference_weights.npz"
+  },
+  {
+    "source_sha256": "a1f7679a66bcdca800e513b7a2d98e60a0f6ae73b3e9bfde7a9d39bd9269f4ba",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/SH_coefficient_diagnostics.csv",
+    "public_sha256": "a1f7679a66bcdca800e513b7a2d98e60a0f6ae73b3e9bfde7a9d39bd9269f4ba",
+    "bytes": 24264,
+    "adaptations": [],
+    "source_filename": "SH_coefficient_diagnostics.csv"
+  },
+  {
+    "source_sha256": "7198dada3872ff6909c67db45e97c42de3d820c9311ffa8fcef4927741ed233b",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/SH_point.json",
+    "public_sha256": "d3453baa2cc4e4ec91eb63fa12ef1fbfad5cd52b8343a0fbba785b5f48f19a34",
+    "bytes": 5145,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "SH_point.json"
+  },
+  {
+    "source_sha256": "b1485d609c69a18e4da922bc8816657733370b950f6df1c2b33a7a38c88cfd1f",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/SH_point_predictions.csv",
+    "public_sha256": "b1485d609c69a18e4da922bc8816657733370b950f6df1c2b33a7a38c88cfd1f",
+    "bytes": 75778,
+    "adaptations": [],
+    "source_filename": "SH_point_predictions.csv"
+  },
+  {
+    "source_sha256": "b1b691a8f7fa3c9f693b0387e597aaa64763cc45d3040e0c8324671837a81f6e",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/SUPPORT_FLOW_BY_BASIN.csv",
+    "public_sha256": "b1b691a8f7fa3c9f693b0387e597aaa64763cc45d3040e0c8324671837a81f6e",
+    "bytes": 360,
+    "adaptations": [],
+    "source_filename": "SUPPORT_FLOW_BY_BASIN.csv"
+  },
+  {
+    "source_sha256": "60b5e75c896af6c5ddcb5e37e87c17e267aa13df1f81c7309af6adf8c0645cde",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/SUPPORT_RECEIPT.json",
+    "public_sha256": "5ad42486c455819f2bcac9ba8b3064e0530d625ec4599da2a17fb686b287b581",
+    "bytes": 690,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings.",
+      "Update only the sanitized configuration file hash; training and reference CSV hashes unchanged."
+    ],
+    "source_filename": "SUPPORT_RECEIPT.json"
+  },
+  {
+    "source_sha256": "eea0512f0de3767e183e3c4b7e65f0501bb604760eb43a469d268d520ad67c0c",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/training_inputs.csv",
+    "public_sha256": "eea0512f0de3767e183e3c4b7e65f0501bb604760eb43a469d268d520ad67c0c",
+    "bytes": 1348402,
+    "adaptations": [],
+    "source_filename": "training_inputs.csv"
+  },
+  {
+    "source_sha256": "7519e3735923a00dc9f8ffec1fdac4804bc43785d0775efcebcaea8e3fa9dde1",
+    "public_path": "spatial/agents/latitude_risk/historical_risk_entry_return_locations.csv",
+    "public_sha256": "7519e3735923a00dc9f8ffec1fdac4804bc43785d0775efcebcaea8e3fa9dde1",
+    "bytes": 418277,
+    "adaptations": [],
+    "source_filename": "historical_risk_entry_return_locations.csv"
+  },
+  {
+    "source_sha256": "a2ed69904ceca5b5bdb4eae3cff791a8d6b2d3be9913a022a5f896b2c95981b9",
+    "public_path": "spatial/agents/latitude_risk/v2_fold_supported/interval_hazard.py",
+    "public_sha256": "e32a4ec596610cf396ea6a3bcf91546a0ff82790b9f415eb7ed2fe63ba0c51ff",
+    "bytes": 2518,
+    "adaptations": [
+      "Exact source extraction of two required classes; class ASTs identical."
+    ],
+    "source_filename": "fit_policies_v6.py"
+  },
+  {
+    "source_sha256": "3cd93730e1ef33d37a3537e5860bc7ccc251ce2a205352170e098a6f85f29716",
+    "public_path": "inputs/addendum/unified_main_20261023_1642/source_data/main_sid.csv",
+    "public_sha256": "3cd93730e1ef33d37a3537e5860bc7ccc251ce2a205352170e098a6f85f29716",
+    "bytes": 1971276,
+    "adaptations": [],
+    "source_filename": "main_sid.csv"
+  },
+  {
+    "source_sha256": "c267c8ae790ae292e59430ea484ed83d53595d9d100ae1ffe934fac8136ae299",
+    "public_path": "inputs/addendum/unified_main_20261023_1642/source_data/main_durations.csv",
+    "public_sha256": "c267c8ae790ae292e59430ea484ed83d53595d9d100ae1ffe934fac8136ae299",
+    "bytes": 849881,
+    "adaptations": [],
+    "source_filename": "main_durations.csv"
+  },
+  {
+    "source_sha256": "69dc4bad43c232b3360796a64a8a272c9c7cb5446ddae610b3d78009393ddc7f",
+    "public_path": "inputs/addendum/unified_main_20261023_1642/source_data/all_return_events.csv",
+    "public_sha256": "69dc4bad43c232b3360796a64a8a272c9c7cb5446ddae610b3d78009393ddc7f",
+    "bytes": 61118,
+    "adaptations": [],
+    "source_filename": "all_return_events.csv"
+  },
+  {
+    "source_sha256": "6451371f3436a992038e9180243b906243cfa1bcf78add76d317657f467be26f",
+    "public_path": "inputs/addendum/unified_main_20261023_1642/statistics/primary/primary_trends.csv",
+    "public_sha256": "6451371f3436a992038e9180243b906243cfa1bcf78add76d317657f467be26f",
+    "bytes": 2391,
+    "adaptations": [],
+    "source_filename": "primary_trends.csv"
+  },
+  {
+    "source_sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+    "public_path": "inputs/addendum/unified_main_20261023_1642/statistics/ruf/annual_slopes.csv",
+    "public_sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+    "bytes": 42986,
+    "adaptations": [],
+    "source_filename": "annual_slopes.csv"
+  },
+  {
+    "source_sha256": "e7ddea9384ed5310dce627d20fda946d06564bc859b30e0ac4e1c85f2a346262",
+    "public_path": "inputs/addendum/unified_main_20261023_1642/recovery_refit/cohort_recovered.csv",
+    "public_sha256": "e7ddea9384ed5310dce627d20fda946d06564bc859b30e0ac4e1c85f2a346262",
+    "bytes": 2155137,
+    "adaptations": [],
+    "source_filename": "cohort_recovered.csv"
+  },
+  {
+    "source_sha256": "25a9b4a06a887bc0fc5fdcddcf37b04da919a1f421a70ac408f9f7e5e3ac6c17",
+    "public_path": "inputs/addendum/unified_main_20261023_1642/recovery_refit/bootstrap_indices.npz",
+    "public_sha256": "25a9b4a06a887bc0fc5fdcddcf37b04da919a1f421a70ac408f9f7e5e3ac6c17",
+    "bytes": 4313039,
+    "adaptations": [],
+    "source_filename": "bootstrap_indices.npz"
+  },
+  {
+    "source_sha256": "9d87ec15e7cf744a3121ed20d5dd40b6ea8362f5eea134683d738025239db522",
+    "public_path": "spatial/agents/event_latitude/departure_return_bin_matrix.csv",
+    "public_sha256": "9d87ec15e7cf744a3121ed20d5dd40b6ea8362f5eea134683d738025239db522",
+    "bytes": 8696,
+    "adaptations": [],
+    "source_filename": "departure_return_bin_matrix.csv"
+  },
+  {
+    "source_sha256": "b16f48cee7d346a457d5d2ede092d7eee03ff52705332d98df9642e4a5fee3c3",
+    "public_path": "spatial/agents/event_latitude/descriptive_event_summary.csv",
+    "public_sha256": "b16f48cee7d346a457d5d2ede092d7eee03ff52705332d98df9642e4a5fee3c3",
+    "bytes": 1986,
+    "adaptations": [],
+    "source_filename": "descriptive_event_summary.csv"
+  },
+  {
+    "source_sha256": "564550801f72c3f8d2875e6b42ae6af29ac95c81a763aa28aaa3acd5d39b849c",
+    "public_path": "spatial/agents/event_latitude/event_latitude_ledger.csv",
+    "public_sha256": "564550801f72c3f8d2875e6b42ae6af29ac95c81a763aa28aaa3acd5d39b849c",
+    "bytes": 87585,
+    "adaptations": [],
+    "source_filename": "event_latitude_ledger.csv"
+  },
+  {
+    "source_sha256": "0822d998c40cc66c6931cf0f58b47ba7d4e27e4f0b57c0a022d7b354449d2d5a",
+    "public_path": "spatial/agents/event_latitude/event_support_by_basin.csv",
+    "public_sha256": "0822d998c40cc66c6931cf0f58b47ba7d4e27e4f0b57c0a022d7b354449d2d5a",
+    "bytes": 534,
+    "adaptations": [],
+    "source_filename": "event_support_by_basin.csv"
+  },
+  {
+    "source_sha256": "3f5c3efd8bc152c2da426d1890e1c3d8b4d53e8ce523ca3bbaf1569f1d53e7f7",
+    "public_path": "spatial/agents/event_latitude/matched_track_anchors.csv",
+    "public_sha256": "3f5c3efd8bc152c2da426d1890e1c3d8b4d53e8ce523ca3bbaf1569f1d53e7f7",
+    "bytes": 22713,
+    "adaptations": [],
+    "source_filename": "matched_track_anchors.csv"
+  },
+  {
+    "source_sha256": "6dc0bee3842e35c3d8f0b353ab0f348b7cbcc9d87e85336b47e1d6f937df87bb",
+    "public_path": "spatial/agents/event_latitude/reused_A_basin_estimates_ci.csv",
+    "public_sha256": "6dc0bee3842e35c3d8f0b353ab0f348b7cbcc9d87e85336b47e1d6f937df87bb",
+    "bytes": 1435,
+    "adaptations": [],
+    "source_filename": "reused_A_basin_estimates_ci.csv"
+  },
+  {
+    "source_sha256": "522d344830fb8bc6a507a40e62586859c1a696114daa3f356e6124250f7c3869",
+    "public_path": "spatial/agents/event_latitude/reused_global_annual_counts.csv",
+    "public_sha256": "522d344830fb8bc6a507a40e62586859c1a696114daa3f356e6124250f7c3869",
+    "bytes": 3527,
+    "adaptations": [],
+    "source_filename": "reused_global_annual_counts.csv"
+  },
+  {
+    "source_sha256": "88259a0ee655cbd9fe41525fcd38c72375d2108e6f2a5dbd1cafb7b7f5def418",
+    "public_path": "spatial/agents/event_latitude/reused_global_annual_trend.csv",
+    "public_sha256": "88259a0ee655cbd9fe41525fcd38c72375d2108e6f2a5dbd1cafb7b7f5def418",
+    "bytes": 289,
+    "adaptations": [],
+    "source_filename": "reused_global_annual_trend.csv"
+  },
+  {
+    "source_sha256": "dc5935c95cdf164ebd0395d6a45b712db422ba5eafccf2aa74854e37890ea8b7",
+    "public_path": "spatial/agents/event_latitude/reused_opportunity_sid_denominators.csv",
+    "public_sha256": "dc5935c95cdf164ebd0395d6a45b712db422ba5eafccf2aa74854e37890ea8b7",
+    "bytes": 81096,
+    "adaptations": [],
+    "source_filename": "reused_opportunity_sid_denominators.csv"
+  },
+  {
+    "source_sha256": "8cdf3255fe020398e550e81adb93c7b191e0359ce654cae4212a53fa77428356",
+    "public_path": "spatial/agents/event_latitude/support_by_hemisphere_basin.csv",
+    "public_sha256": "8cdf3255fe020398e550e81adb93c7b191e0359ce654cae4212a53fa77428356",
+    "bytes": 4370,
+    "adaptations": [],
+    "source_filename": "support_by_hemisphere_basin.csv"
+  },
+  {
+    "source_sha256": "5ca1fa5eb5983dfc18680102e07149800af5088a821c7e382ba40095d8055667",
+    "public_path": "spatial/agents/event_latitude/support_by_signed_bin.csv",
+    "public_sha256": "5ca1fa5eb5983dfc18680102e07149800af5088a821c7e382ba40095d8055667",
+    "bytes": 1253,
+    "adaptations": [],
+    "source_filename": "support_by_signed_bin.csv"
+  },
+  {
+    "source_sha256": "38c5fbacb8e4ba3827598074abf9751d642d0c0295c6a4fef1d056fbc3fefbe6",
+    "public_path": "spatial/agents/event_latitude/support_by_signed_bin_basin.csv",
+    "public_sha256": "38c5fbacb8e4ba3827598074abf9751d642d0c0295c6a4fef1d056fbc3fefbe6",
+    "bytes": 31634,
+    "adaptations": [],
+    "source_filename": "support_by_signed_bin_basin.csv"
+  },
+  {
+    "source_sha256": "44d217fb48408f54190cc6058a10bab8d784a564b2a9c7761ff911cc77f04c16",
+    "public_path": "spatial/agents/C_audit/Dec_common_support_elapsed_minus_covered.csv",
+    "public_sha256": "44d217fb48408f54190cc6058a10bab8d784a564b2a9c7761ff911cc77f04c16",
+    "bytes": 920,
+    "adaptations": [],
+    "source_filename": "Dec_common_support_elapsed_minus_covered.csv"
+  },
+  {
+    "source_sha256": "d1c8271553c5f6fb06b9bdb899ae7acad75ffdd08577630f0328d09e7fef5d85",
+    "public_path": "spatial/agents/C_audit/F_sid_identity_endpoints_audit.csv",
+    "public_sha256": "d1c8271553c5f6fb06b9bdb899ae7acad75ffdd08577630f0328d09e7fef5d85",
+    "bytes": 347200,
+    "adaptations": [],
+    "source_filename": "F_sid_identity_endpoints_audit.csv"
+  },
+  {
+    "source_sha256": "2eabbc8c6604ef8b164ea137a3b3e01c9da76edde9ff94fe86e97ce66d41a6fb",
+    "public_path": "spatial/agents/C_audit/joint_draw_identity.csv",
+    "public_sha256": "2eabbc8c6604ef8b164ea137a3b3e01c9da76edde9ff94fe86e97ce66d41a6fb",
+    "bytes": 270936,
+    "adaptations": [],
+    "source_filename": "joint_draw_identity.csv"
+  },
+  {
+    "source_sha256": "5582cac1c3f6606613e0d215d519b5013a775706c5e76ab7f9bbea477f60c9fa",
+    "public_path": "spatial/agents/C_audit/paired_draw_identity_audit.csv",
+    "public_sha256": "5582cac1c3f6606613e0d215d519b5013a775706c5e76ab7f9bbea477f60c9fa",
+    "bytes": 1520205,
+    "adaptations": [],
+    "source_filename": "paired_draw_identity_audit.csv"
+  },
+  {
+    "source_sha256": "df3da3b3f2255d0099cb6267a2849c205888be00e2edc2523b8ea2378e182b4b",
+    "public_path": "spatial/agents/C_audit/primary_full_cohort_full_precision.csv",
+    "public_sha256": "df3da3b3f2255d0099cb6267a2849c205888be00e2edc2523b8ea2378e182b4b",
+    "bytes": 833,
+    "adaptations": [],
+    "source_filename": "primary_full_cohort_full_precision.csv"
+  },
+  {
+    "source_sha256": "c85a3fa0efb29de239bb5767690a22ef1428f27f48313dc7aa889bd65927e6e0",
+    "public_path": "spatial/agents/C_audit/REQUIREMENT_STATUS.csv",
+    "public_sha256": "c85a3fa0efb29de239bb5767690a22ef1428f27f48313dc7aa889bd65927e6e0",
+    "bytes": 503,
+    "adaptations": [],
+    "source_filename": "REQUIREMENT_STATUS.csv"
+  },
+  {
+    "source_sha256": "25084c6dfee8da89b1b70ec9877fb29bf31fbd7aa14e240e7109fdd7b09e4d2f",
+    "public_path": "spatial/agents/C_audit/same_support_paired_trend_comparisons.csv",
+    "public_sha256": "25084c6dfee8da89b1b70ec9877fb29bf31fbd7aa14e240e7109fdd7b09e4d2f",
+    "bytes": 3686,
+    "adaptations": [],
+    "source_filename": "same_support_paired_trend_comparisons.csv"
+  },
+  {
+    "source_sha256": "fdedb1bf266bf79e981de41900427420b1b7ae4120f0aedbaabc034fba59dee0",
+    "public_path": "spatial/agents/C_audit/stage_support_and_attempts.csv",
+    "public_sha256": "fdedb1bf266bf79e981de41900427420b1b7ae4120f0aedbaabc034fba59dee0",
+    "bytes": 765,
+    "adaptations": [],
+    "source_filename": "stage_support_and_attempts.csv"
+  },
+  {
+    "source_sha256": "60b8ea1ef6d5e0b8cbad2b423d1af69725bc1c40a94f8e3c7c8ea7fff6ac7613",
+    "public_path": "history/figures/SC_DURATION/plot.py",
+    "public_sha256": "e34025fe22fb36fc47c7ab0ced6076f6ee07b3b1113d3307e080d7624f3dc034",
+    "bytes": 5429,
+    "adaptations": [
+      "Portable task-local bootstrap; use system-installed Arial without fixed Windows font paths.",
+      "Remove private post-render QA imports/calls only; all plotting, data transforms, panel geometry and export operations retained."
+    ],
+    "source_filename": "plot.py"
+  },
+  {
+    "source_sha256": "890d9779e02a9ee961b34cfb536686be23ab170f96ff67e68da750d3bf005306",
+    "public_path": "history/figures/SC_DURATION/Dec_observation_trends_HAC.csv",
+    "public_sha256": "890d9779e02a9ee961b34cfb536686be23ab170f96ff67e68da750d3bf005306",
+    "bytes": 659,
+    "adaptations": [],
+    "source_filename": "Dec_observation_trends_HAC.csv"
+  },
+  {
+    "source_sha256": "626a506f163ae45a6ce69ca18f4621dcfe8d8d7d805cbcb572e3e77804e53f09",
+    "public_path": "history/figures/SC_DURATION/F_components_original_N1_replayed.csv",
+    "public_sha256": "626a506f163ae45a6ce69ca18f4621dcfe8d8d7d805cbcb572e3e77804e53f09",
+    "bytes": 802,
+    "adaptations": [],
+    "source_filename": "F_components_original_N1_replayed.csv"
+  },
+  {
+    "source_sha256": "2d307636af66325a49fda3d173dd54e07ccace3fe517bab5ecd6912ffc38a4f6",
+    "public_path": "history/figures/SC_DURATION/panels_a_d_source.csv",
+    "public_sha256": "2d307636af66325a49fda3d173dd54e07ccace3fe517bab5ecd6912ffc38a4f6",
+    "bytes": 3009,
+    "adaptations": [],
+    "source_filename": "panels_a_d_source.csv"
+  },
+  {
+    "source_sha256": "f6190bfecde2533d0735c566a973a602365e701622a20f1203a7efbc0d7f80da",
+    "public_path": "history/figures/SC_DURATION/panel_e_source.csv",
+    "public_sha256": "f6190bfecde2533d0735c566a973a602365e701622a20f1203a7efbc0d7f80da",
+    "bytes": 606,
+    "adaptations": [],
+    "source_filename": "panel_e_source.csv"
+  },
+  {
+    "source_sha256": "73969538499225e8b78df693c837811493f17d7c182cd4b84a8738f530190b68",
+    "public_path": "history/figures/SC_DURATION/panel_f_source.csv",
+    "public_sha256": "73969538499225e8b78df693c837811493f17d7c182cd4b84a8738f530190b68",
+    "bytes": 503,
+    "adaptations": [],
+    "source_filename": "panel_f_source.csv"
+  },
+  {
+    "source_sha256": "20b56f41ceebdf55a9bd24d74fce9a356da7fac177c0d0a861a82085b11da8e7",
+    "public_path": "history/figures/SC_DURATION/standardized_duration_trends.csv",
+    "public_sha256": "20b56f41ceebdf55a9bd24d74fce9a356da7fac177c0d0a861a82085b11da8e7",
+    "bytes": 3059,
+    "adaptations": [],
+    "source_filename": "standardized_duration_trends.csv"
+  },
+  {
+    "source_sha256": "5aaf9e07955f093555a816f878c7958cdab5c77b684f5482f9037e5b7fd86432",
+    "public_path": "history/figures/SA_BASIN/plot.py",
+    "public_sha256": "267cb92f9be35cc8492a9850409a925f8ea6c4b30742d2860cc2499d14b9c8f6",
+    "bytes": 10798,
+    "adaptations": [
+      "Portable task-local bootstrap; use system-installed Arial without fixed Windows font paths.",
+      "Remove private post-render QA imports/calls only; all plotting, data transforms, panel geometry and export operations retained."
+    ],
+    "source_filename": "plot.py"
+  },
+  {
+    "source_sha256": "571d7edf3ccef9d31fd5a09d590bc57b9423244a1871b8e7bbadc4a99083fd06",
+    "public_path": "history/figures/SA_BASIN/plotted_values.csv",
+    "public_sha256": "571d7edf3ccef9d31fd5a09d590bc57b9423244a1871b8e7bbadc4a99083fd06",
+    "bytes": 4714,
+    "adaptations": [],
+    "source_filename": "plotted_values.csv"
+  },
+  {
+    "source_sha256": "6dc0bee3842e35c3d8f0b353ab0f348b7cbcc9d87e85336b47e1d6f937df87bb",
+    "public_path": "history/figures/SA_BASIN/source_data/basin_estimates_ci.csv",
+    "public_sha256": "6dc0bee3842e35c3d8f0b353ab0f348b7cbcc9d87e85336b47e1d6f937df87bb",
+    "bytes": 1435,
+    "adaptations": [],
+    "source_filename": "basin_estimates_ci.csv"
+  },
+  {
+    "source_sha256": "e01a67e77af3bf772bdde09daf6c8738db838de5fe7021511afe64b5df1648f2",
+    "public_path": "history/figures/SA_BASIN/source_data/basin_probability_differences.csv",
+    "public_sha256": "e01a67e77af3bf772bdde09daf6c8738db838de5fe7021511afe64b5df1648f2",
+    "bytes": 2172,
+    "adaptations": [],
+    "source_filename": "basin_probability_differences.csv"
+  },
+  {
+    "source_sha256": "bfec4b59c0b06c0287a1b0f06b5277d55d8dfb5c2630dbef30e10c3904584943",
+    "public_path": "history/figures/SA_BASIN/source_data/environment_associations.csv",
+    "public_sha256": "bfec4b59c0b06c0287a1b0f06b5277d55d8dfb5c2630dbef30e10c3904584943",
+    "bytes": 423,
+    "adaptations": [],
+    "source_filename": "environment_associations.csv"
+  },
+  {
+    "source_sha256": "62f1e6f30c00a53547e98c69d34eefce63485a6201815aa43620b8c3bd8d03e2",
+    "public_path": "history/figures/NEW_HISTORY/plot.py",
+    "public_sha256": "c7759e6bee3280aa6ee0d95efaecf8611a2fe59265ad39c2ca3cc1abb0dc7c12",
+    "bytes": 4954,
+    "adaptations": [
+      "Portable task-local bootstrap; use system-installed Arial without fixed Windows font paths.",
+      "Remove private post-render QA imports/calls only; all plotting, data transforms, panel geometry and export operations retained."
+    ],
+    "source_filename": "plot.py"
+  },
+  {
+    "source_sha256": "1dd0a2385b4e3af2a7b55a31606c890b80353966441da589ecbda1367993c3be",
+    "public_path": "history/figures/NEW_HISTORY/annual_trends_and_basin_interactions.csv",
+    "public_sha256": "1dd0a2385b4e3af2a7b55a31606c890b80353966441da589ecbda1367993c3be",
+    "bytes": 2338,
+    "adaptations": [],
+    "source_filename": "annual_trends_and_basin_interactions.csv"
+  },
+  {
+    "source_sha256": "2a904cbe709dc30b26d606446c25a77dbbd7313fac2ce44012717961e3e5fbd4",
+    "public_path": "history/figures/NEW_HISTORY/panel_a_source.csv",
+    "public_sha256": "2a904cbe709dc30b26d606446c25a77dbbd7313fac2ce44012717961e3e5fbd4",
+    "bytes": 2254,
+    "adaptations": [],
+    "source_filename": "panel_a_source.csv"
+  },
+  {
+    "source_sha256": "91da9741ba22091952bcb65d70a236996e48f5ee0d52892125d69ac97d59ab21",
+    "public_path": "history/figures/NEW_HISTORY/panel_b_source.csv",
+    "public_sha256": "91da9741ba22091952bcb65d70a236996e48f5ee0d52892125d69ac97d59ab21",
+    "bytes": 1005,
+    "adaptations": [],
+    "source_filename": "panel_b_source.csv"
+  },
+  {
+    "source_sha256": "44116317c909bf81cb63e729ce2dacc7c5f6b8a478d121fc4ee6fa7d9b145d85",
+    "public_path": "history/figures/NEW_HISTORY/period_basin_numerators_denominators.csv",
+    "public_sha256": "44116317c909bf81cb63e729ce2dacc7c5f6b8a478d121fc4ee6fa7d9b145d85",
+    "bytes": 2862,
+    "adaptations": [],
+    "source_filename": "period_basin_numerators_denominators.csv"
+  },
+  {
+    "source_sha256": "2c9e8f0e6dbee4ea646646a54a31f855fd66ab91294e2944fb8d3aa1a2a81e6a",
+    "public_path": "history/figures/SB_HISTORY/plot.py",
+    "public_sha256": "fe00878e3784a307d2b66589056a068522096ce367d95418fcf5a4915ad3356b",
+    "bytes": 10799,
+    "adaptations": [
+      "Portable task-local bootstrap; use system-installed Arial without fixed Windows font paths.",
+      "Remove private post-render QA imports/calls only; all plotting, data transforms, panel geometry and export operations retained."
+    ],
+    "source_filename": "plot.py"
+  },
+  {
+    "source_sha256": "a8203f1a9e9b021f3a66faa45d64b15ec142b4c0dcbb44f33cd493af338022b3",
+    "public_path": "history/figures/SB_HISTORY/plotted_values.csv",
+    "public_sha256": "a8203f1a9e9b021f3a66faa45d64b15ec142b4c0dcbb44f33cd493af338022b3",
+    "bytes": 5321,
+    "adaptations": [],
+    "source_filename": "plotted_values.csv"
+  },
+  {
+    "source_sha256": "d735b10551cf689becc923410c7ae6d64485d05a13ebc70286fa6cfd9a2048b8",
+    "public_path": "history/figures/SB_HISTORY/source_data/environment_history_trends.csv",
+    "public_sha256": "d735b10551cf689becc923410c7ae6d64485d05a13ebc70286fa6cfd9a2048b8",
+    "bytes": 3401,
+    "adaptations": [],
+    "source_filename": "environment_history_trends.csv"
+  },
+  {
+    "source_sha256": "bfce86faf499ab761d81add1ff6dd12e63d5423d9e8d605941fa887299f4fcc2",
+    "public_path": "history/figures/SB_HISTORY/source_data/global_equal_year_P4_minus_P1_decomposition.csv",
+    "public_sha256": "bfce86faf499ab761d81add1ff6dd12e63d5423d9e8d605941fa887299f4fcc2",
+    "bytes": 1297,
+    "adaptations": [],
+    "source_filename": "global_equal_year_P4_minus_P1_decomposition.csv"
+  },
+  {
+    "source_sha256": "ab6c8346aeeba8f7518c61e7dc5bf4446c529aa10b4a56257611e9d027a3bc08",
+    "public_path": "history/figures/SB_HISTORY/source_data/same_model_environment_only_trends.csv",
+    "public_sha256": "ab6c8346aeeba8f7518c61e7dc5bf4446c529aa10b4a56257611e9d027a3bc08",
+    "bytes": 2674,
+    "adaptations": [],
+    "source_filename": "same_model_environment_only_trends.csv"
+  },
+  {
+    "source_sha256": "4c024b82cae832a6212fd6ab97c6f629d2747530b6767726e26f8c31bc3378f2",
+    "public_path": "spatial/figures/LATITUDE/plot_latitude.py",
+    "public_sha256": "69ad9af1ebe79d73811368a157cf854bd0895f030954ee5fb11e0d5a3b900577",
+    "bytes": 8773,
+    "adaptations": [
+      "Portable task-local bootstrap; use system-installed Arial without fixed Windows font paths.",
+      "Remove private post-render QA imports/calls only; all plotting, data transforms, panel geometry and export operations retained."
+    ],
+    "source_filename": "plot_latitude.py"
+  },
+  {
+    "source_sha256": "564550801f72c3f8d2875e6b42ae6af29ac95c81a763aa28aaa3acd5d39b849c",
+    "public_path": "spatial/figures/LATITUDE/source_data/event_latitude_ledger.csv",
+    "public_sha256": "564550801f72c3f8d2875e6b42ae6af29ac95c81a763aa28aaa3acd5d39b849c",
+    "bytes": 87585,
+    "adaptations": [],
+    "source_filename": "event_latitude_ledger.csv"
+  },
+  {
+    "source_sha256": "7519e3735923a00dc9f8ffec1fdac4804bc43785d0775efcebcaea8e3fa9dde1",
+    "public_path": "spatial/figures/LATITUDE/source_data/historical_risk_entry_return_locations.csv",
+    "public_sha256": "7519e3735923a00dc9f8ffec1fdac4804bc43785d0775efcebcaea8e3fa9dde1",
+    "bytes": 418277,
+    "adaptations": [],
+    "source_filename": "historical_risk_entry_return_locations.csv"
+  },
+  {
+    "source_sha256": "976b9c5d77872aa81d1464e1501a8a991c8c4c9ffedbbfa137a1c3684112d011",
+    "public_path": "spatial/figures/LATITUDE/source_data/latitude_bin_display_counts.csv",
+    "public_sha256": "976b9c5d77872aa81d1464e1501a8a991c8c4c9ffedbbfa137a1c3684112d011",
+    "bytes": 754,
+    "adaptations": [],
+    "source_filename": "latitude_bin_display_counts.csv"
+  },
+  {
+    "source_sha256": "ec624aadd9fd69018dd16df338e348cba57a7b51d13994dfcb926efd15e80823",
+    "public_path": "spatial/figures/LATITUDE/source_data/plotted_standardized_probabilities.csv",
+    "public_sha256": "ec624aadd9fd69018dd16df338e348cba57a7b51d13994dfcb926efd15e80823",
+    "bytes": 1088,
+    "adaptations": [],
+    "source_filename": "plotted_standardized_probabilities.csv"
+  },
+  {
+    "source_sha256": "75e6808eedad857f55dc8ca221a0a3786038ef3e07577baa04d9b3f5a3d29139",
+    "public_path": "spatial/figures/LATITUDE/source_data/risk_FROZEN_CONFIG.json",
+    "public_sha256": "6d395544b74e4555de8987465fb217c6c827fb172a984c75732498b03cc325a1",
+    "bytes": 3707,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "risk_FROZEN_CONFIG.json"
+  },
+  {
+    "source_sha256": "883ba518489b0a1e33573405ab43dc679f9c9cc95b21dcce4ebf0a90f372eede",
+    "public_path": "spatial/figures/LATITUDE/source_data/v2_analysis_outcome_support.csv",
+    "public_sha256": "883ba518489b0a1e33573405ab43dc679f9c9cc95b21dcce4ebf0a90f372eede",
+    "bytes": 261,
+    "adaptations": [],
+    "source_filename": "v2_analysis_outcome_support.csv"
+  },
+  {
+    "source_sha256": "5cb181abc92ade20afb9db73453b23afabf8a60854d7084ef91f5fd52c002897",
+    "public_path": "spatial/figures/LATITUDE/source_data/v2_fold_support_membership_406.csv",
+    "public_sha256": "5cb181abc92ade20afb9db73453b23afabf8a60854d7084ef91f5fd52c002897",
+    "bytes": 15678,
+    "adaptations": [],
+    "source_filename": "v2_fold_support_membership_406.csv"
+  },
+  {
+    "source_sha256": "230002b265ca8360be359d7f5e9b9f0bed8180b7bedba0dff4a6af93e16b37c0",
+    "public_path": "spatial/figures/LATITUDE/source_data/v2_FROZEN_CONFIG.json",
+    "public_sha256": "523f090892834efdfe032a45ea4696fb7c4afd9ff8dad0efac626b3932e45345",
+    "bytes": 5251,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "v2_FROZEN_CONFIG.json"
+  },
+  {
+    "source_sha256": "e271cac1dc116ccfd89bbda69e47495bdba66bab093ee807f02e8022f943b65e",
+    "public_path": "spatial/figures/LATITUDE/source_data/v2_latitude_probability_contrasts.csv",
+    "public_sha256": "e271cac1dc116ccfd89bbda69e47495bdba66bab093ee807f02e8022f943b65e",
+    "bytes": 2233,
+    "adaptations": [],
+    "source_filename": "v2_latitude_probability_contrasts.csv"
+  },
+  {
+    "source_sha256": "101b73fcadd392373ebe5480a9b1f0291f2d1a31868bc70ecadd722177426a35",
+    "public_path": "spatial/figures/LATITUDE/source_data/v2_latitude_standardized_risks.csv",
+    "public_sha256": "101b73fcadd392373ebe5480a9b1f0291f2d1a31868bc70ecadd722177426a35",
+    "bytes": 2710,
+    "adaptations": [],
+    "source_filename": "v2_latitude_standardized_risks.csv"
+  },
+  {
+    "source_sha256": "ac332231501b645ba456f272b069eef15440c7e1f22ae9bab7039db80e985868",
+    "public_path": "spatial/figures/LATITUDE/source_data/v2_NUMERIC_RECEIPT.json",
+    "public_sha256": "86a808810ed3d236df7d3ab89edeb7c50b71a5fcc6d79e0b64cbdf7460514096",
+    "bytes": 8256,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "v2_NUMERIC_RECEIPT.json"
+  },
+  {
+    "source_sha256": "f222a9df36d9ade790f56f60c761115d5f2be602174fb2ac131af4cdc4ab1659",
+    "public_path": "spatial/figures/LATITUDE/source_data/v2_scope_population_counts.csv",
+    "public_sha256": "f222a9df36d9ade790f56f60c761115d5f2be602174fb2ac131af4cdc4ab1659",
+    "bytes": 1831,
+    "adaptations": [],
+    "source_filename": "v2_scope_population_counts.csv"
+  },
+  {
+    "source_sha256": "60b5e75c896af6c5ddcb5e37e87c17e267aa13df1f81c7309af6adf8c0645cde",
+    "public_path": "spatial/figures/LATITUDE/source_data/v2_SUPPORT_RECEIPT.json",
+    "public_sha256": "d90f43ffc6b71cc0e048135035b31bec7bc446f91f39b02be7510b399f2ef2d1",
+    "bytes": 668,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "v2_SUPPORT_RECEIPT.json"
+  },
+  {
+    "source_sha256": "af3db70741ac8948902e67b21c1abe45c779841920734440505ad44d741145de",
+    "public_path": "spatial/figures/LATITUDE/FINAL_STATISTICAL_BINDING.json",
+    "public_sha256": "6c2bc97e03e1e10503f2cc56722363a1bd34fbe5439d998ba65b259b475f7a7b",
+    "bytes": 3401,
+    "adaptations": [
+      "Relative snapshot paths and hashes of sanitized non-numerical configuration metadata; CSV values unchanged."
+    ],
+    "source_filename": "FINAL_STATISTICAL_BINDING.json"
+  },
+  {
+    "source_sha256": "65ff178a1b6433d1619b37e851ed683deddacff1da73a720e7b546ee1deecfe6",
+    "public_path": "history/backup/Figure_07.png",
+    "public_sha256": "65ff178a1b6433d1619b37e851ed683deddacff1da73a720e7b546ee1deecfe6",
+    "bytes": 427967,
+    "adaptations": [],
+    "source_filename": "Figure_07.png"
+  },
+  {
+    "source_sha256": "5770bd9fa8d0baeb1aa7a321a30f9dffd18c0fd8dacb971527f92e65cc1eb88b",
+    "public_path": "spatial/agents/event_latitude/describe_event_latitude.py",
+    "public_sha256": "ff40a79a5ad216b27e3f593493bbbe20c03d2a180a3de2c09c3efa617f76e5c0",
+    "bytes": 14641,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged."
+    ],
+    "source_filename": "describe_event_latitude.py"
+  },
+  {
+    "source_sha256": "cca79e8887fd660447e170afdd06f79b34bb0e04ba34471e9f36d3388c83f011",
+    "public_path": "spatial/agents/event_latitude/DESIGN_BEFORE_DESCRIPTORS.json",
+    "public_sha256": "b9808e4c1bb4ce678a8c8b505c8e369cd1393e2d6eac4e595c4b67bcc474036c",
+    "bytes": 2425,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "DESIGN_BEFORE_DESCRIPTORS.json"
+  },
+  {
+    "source_sha256": "3045d202ab654dfbc29c719fd9786eeaaf007b30d62cc59a6a6b26ad9a151093",
+    "public_path": "history/agents/A/SOURCE_MANIFEST.json",
+    "public_sha256": "ff9e325b6ffe85c0df647358fb91803ed45e1a08e07c4fb1f2df08c143e654e4",
+    "bytes": 971,
+    "adaptations": [
+      "Remove machine-specific provenance paths; preserve scientific settings."
+    ],
+    "source_filename": "SOURCE_MANIFEST.json"
+  },
+  {
+    "source_sha256": "e8088c0de59d4a15279611cbd76575c0082393fe2f4e608d5ebb081826f05159",
+    "public_path": "spatial/agents/C_audit/audit_saved_C.py",
+    "public_sha256": "d652d7e2a1a8642cee505a34904f4d3af9460f3f6242384567c5be7f2a40a7ea",
+    "bytes": 16713,
+    "adaptations": [
+      "Replace fixed host paths with package-relative defaults / FLTCCF_ADDENDUM_DIR and FLTCCF_UNIFIED_DIR.",
+      "Replace private vendor bootstrap with local temporary-directory setup; numerical code unchanged.",
+      "Remove the old host-path guard and internal report/source-receipt gate; retain every numerical saved-draw calculation and endpoint check. Public source manifest replaces the private provenance gate."
+    ],
+    "source_filename": "audit_saved_C.py"
+  },
+  {
+    "source_sha256": "4ad0764e57a02d27456a4d19e8baa201a9779ede8d80c4c88270ca698a3f255b",
+    "public_path": "history/agents/methods/F_forward_completeness.csv",
+    "public_sha256": "4ad0764e57a02d27456a4d19e8baa201a9779ede8d80c4c88270ca698a3f255b",
+    "bytes": 201425,
+    "adaptations": [],
+    "source_filename": "F_forward_completeness.csv"
+  },
+  {
+    "source_sha256": "caa278ea5e570b13d0c4b9c5040c34577a12907c49cfabb92fd52c2aa8ee3eb2",
+    "public_path": "history/agents/methods/frozen_sid_boundary_audit.csv",
+    "public_sha256": "caa278ea5e570b13d0c4b9c5040c34577a12907c49cfabb92fd52c2aa8ee3eb2",
+    "bytes": 150542,
+    "adaptations": [],
+    "source_filename": "frozen_sid_boundary_audit.csv"
+  },
+  {
+    "source_sha256": "a6e20ed523f41877a7d0d0cc4d6e26312bf16da886af719e9198336670508666",
+    "public_path": "history/agents/methods/missing_wind_records.csv",
+    "public_sha256": "a6e20ed523f41877a7d0d0cc4d6e26312bf16da886af719e9198336670508666",
+    "bytes": 52235,
+    "adaptations": [],
+    "source_filename": "missing_wind_records.csv"
+  },
+  {
+    "source_sha256": "df3da3b3f2255d0099cb6267a2849c205888be00e2edc2523b8ea2378e182b4b",
+    "public_path": "history/manuscript/supplement_S1c_source.csv",
+    "public_sha256": "df3da3b3f2255d0099cb6267a2849c205888be00e2edc2523b8ea2378e182b4b",
+    "bytes": 833,
+    "adaptations": [],
+    "source_filename": "supplement_S1c_source.csv"
+  },
+  {
+    "source_sha256": "6aa74cd4e3751dd599398e7f5820a79e127b713478a66bb577f084519db86da6",
+    "public_path": "inputs/addendum/source_data/new_lifecycle_tracks.csv",
+    "public_sha256": "6aa74cd4e3751dd599398e7f5820a79e127b713478a66bb577f084519db86da6",
+    "bytes": 7749638,
+    "adaptations": [],
+    "source_filename": "new_lifecycle_tracks.csv"
+  },
+  {
+    "source_sha256": "d67d6d047973c5c16275aea14223c2c3642cacca876c9dd9108f686fcddffe5e",
+    "public_path": "inputs/addendum/source_data/new_intervals.csv",
+    "public_sha256": "d67d6d047973c5c16275aea14223c2c3642cacca876c9dd9108f686fcddffe5e",
+    "bytes": 14898369,
+    "adaptations": [],
+    "source_filename": "new_intervals.csv"
+  },
+  {
+    "source_sha256": "a37365c66970e711492783cab21c91e593bb42f2acb2c6a128373cbd031f9d24",
+    "public_path": "inputs/addendum/source_data/de_existing_sources/analysis_rows.csv",
+    "public_sha256": "a37365c66970e711492783cab21c91e593bb42f2acb2c6a128373cbd031f9d24",
+    "bytes": 52731424,
+    "adaptations": [],
+    "source_filename": "analysis_rows.csv"
+  },
+  {
+    "source_sha256": "b392aa8a57c038e70ce5517c035e04ec554abda20f92fd3b142a594c936622d2",
+    "public_path": "inputs/addendum/source_data/de_existing_sources/track_sp_qc_relabelled.csv",
+    "public_sha256": "b392aa8a57c038e70ce5517c035e04ec554abda20f92fd3b142a594c936622d2",
+    "bytes": 44873288,
+    "adaptations": [],
+    "source_filename": "track_sp_qc_relabelled.csv"
+  },
+  {
+    "source_sha256": "5ebe1fa96299468015f286abe713d5f28f45c6e69dd7d2b4911d6cb6bab2fce7",
+    "public_path": "inputs/addendum/unified_main_20261023_1642/statistics/h4_models/stage_entries_revised.csv",
+    "public_sha256": "5ebe1fa96299468015f286abe713d5f28f45c6e69dd7d2b4911d6cb6bab2fce7",
+    "bytes": 4669476,
+    "adaptations": [],
+    "source_filename": "stage_entries_revised.csv"
+  }
+]

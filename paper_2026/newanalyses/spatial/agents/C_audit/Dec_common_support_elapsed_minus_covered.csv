@@ -1,0 +1,5 @@
+stage,target,n_sid,elapsed_slope,covered_slope,elapsed_minus_covered,paired_ci_low,paired_ci_high,valid_draws,unit,family
+Dec,actual_composition,1804,-4.7618402206228172,-3.9712110703062904,-0.79062915031652681,-1.2345134236534987,-0.24223143889928167,2000,h/decade,descriptive saved-draw reaggregation; no new p/q
+Dec,fixed_basin_season,1804,-4.1836716973586796,-3.4366497241417968,-0.7470219732168828,-1.3199307368381075,-0.1709984060073341,2000,h/decade,descriptive saved-draw reaggregation; no new p/q
+Dec,fixed_basin_season_state,1804,-4.804246841657946,-4.0910888165334827,-0.71315802512446336,-1.1016154404931162,-0.20203837783607489,2000,h/decade,descriptive saved-draw reaggregation; no new p/q
+Dec,fixed_basin_season_state_environment,1804,-6.0255261715199495,-5.2881271047323315,-0.73739906678761802,-1.1370610489822373,-0.25308114742353571,2000,h/decade,descriptive saved-draw reaggregation; no new p/q

@@ -1,0 +1,7 @@
+mode,basin_genesis,recurrent_SID,eligible_SID,percentage,denominator
+new,NA,24,343,6.997084548104956,"unique frozen main SID in genesis basin, 1982-2023"
+new,EP,23,511,4.500978473581213,"unique frozen main SID in genesis basin, 1982-2023"
+new,WP,42,748,5.614973262032086,"unique frozen main SID in genesis basin, 1982-2023"
+new,NI,3,95,3.1578947368421053,"unique frozen main SID in genesis basin, 1982-2023"
+new,SI,24,397,6.045340050377834,"unique frozen main SID in genesis basin, 1982-2023"
+new,SP,7,246,2.845528455284553,"unique frozen main SID in genesis basin, 1982-2023"

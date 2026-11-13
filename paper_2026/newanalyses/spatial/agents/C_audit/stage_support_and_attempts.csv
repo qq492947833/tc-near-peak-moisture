@@ -1,0 +1,5 @@
+stage,source_stage,full_cohort_n,complete_case_n,common_support_n,n_years,year_min_n,year_max_n,weight_sum,attempted_draws,successful_draws,failed_draws,Gamma_successful_draws,Gamma_failed_draws,reference,six_field_entry_qc_retained
+D,D,2340,2252,1893,42,31,62,42,2000,2000,0,1999,1,pooled same-support empirical distribution with each year total weight one,True
+E,E,2340,2233,1753,42,28,62,42,2000,1915,85,1915,85,pooled same-support empirical distribution with each year total weight one,True
+F,F,2340,2232,1754,42,29,56,42,2000,2000,0,1988,12,pooled same-support empirical distribution with each year total weight one,True
+Dec,Res,2340,2227,1804,42,29,57,42,2000,2000,0,2000,0,pooled same-support empirical distribution with each year total weight one,True

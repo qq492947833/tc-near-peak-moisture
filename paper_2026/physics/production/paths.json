@@ -1,0 +1,9 @@
+{
+  "mechanism_v5": "mechanism_v5",
+  "mwt": "mwt",
+  "project": "project",
+  "raw_era5": "../../../../inputs/era5",
+  "legacy_project": "legacy_project",
+  "ibtracs": "../../../../inputs/ibtracs.ALL.list.v04r01.csv",
+  "ocean_shapefile": "../../../../inputs/natural_earth/ne_10m_ocean.shp"
+}

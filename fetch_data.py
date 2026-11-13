@@ -1,3 +1,4 @@
+# Historical v1.0.0 data fetcher. For the current paper use fetch_release_data.py.
 """Fetch and verify the processed inputs for this fixed release."""
 from pathlib import Path, PurePosixPath
 import argparse, hashlib, json, os, urllib.request, zipfile

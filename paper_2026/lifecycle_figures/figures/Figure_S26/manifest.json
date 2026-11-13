@@ -1,0 +1,1342 @@
+{
+  "figure_id": "Figure_S18",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/S10c_common_support_direct_sensitivities.csv",
+        "inputs/S10e_motion_intensity_targets.csv"
+      ],
+      "fields": {
+        "sensitivity": [
+          "sensitivity",
+          "window",
+          "level",
+          "metric",
+          "units",
+          "n_sid",
+          "alternative_contrast_same_support",
+          "main_contrast_same_support",
+          "alternative_minus_main",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description",
+          "comparison",
+          "target"
+        ],
+        "motion": [
+          "metric",
+          "n_sid",
+          "raw_mean",
+          "units",
+          "status",
+          "attempts",
+          "estimate",
+          "lower",
+          "upper",
+          "speed_slope",
+          "wind_slope",
+          "successful",
+          "failed",
+          "failure_reasons",
+          "interval_scope",
+          "adjustment",
+          "adjustment_lower",
+          "adjustment_upper",
+          "speed_difference_min",
+          "speed_difference_max",
+          "wind_difference_min",
+          "wind_difference_max",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "estimand",
+          "raw_mean_scope",
+          "adjustment_scope"
+        ]
+      },
+      "filter": [
+        "sens = frames['sensitivity']",
+        "sens = sens[inputs.primary_mask(sens)]",
+        "motion = frames['motion'][frames['motion'].metric.eq(metric)].iloc[0]",
+        "row = sens[sens.metric.eq(metric) & sens.sensitivity.eq(name)].iloc[0]"
+      ],
+      "sample_scope": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "units": {
+        "x": "Change in contrast (J kg⁻¹)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "weights": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+        "saved_columns": [
+          "adjustment_lower",
+          "adjustment_upper",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "sensitivity": "e8882a3174f04c8b92f42b86eccd021f2f51901d6eab2f473a33e790cd008efb",
+          "motion": "8d9c6933087ead601fbef4a142addd823ad5876281755d509a3737ddf437c7bd"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "sensitivity",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "sensitivity",
+          "fields": [
+            "sensitivity",
+            "window",
+            "level",
+            "metric",
+            "units",
+            "n_sid",
+            "alternative_contrast_same_support",
+            "main_contrast_same_support",
+            "alternative_minus_main",
+            "direct_difference_lower",
+            "direct_difference_upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "comparison",
+            "target",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1278,
+          "saved_selected_table": "panel_sensitivity_0.csv",
+          "sha256": "317969e02c67b3aae2c4dfd17a9f135d58ac553a6b51b4643d6de1728ce6b2ef"
+        },
+        {
+          "id": "motion",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "motion",
+          "fields": [
+            "metric",
+            "n_sid",
+            "raw_mean",
+            "units",
+            "status",
+            "attempts",
+            "estimate",
+            "lower",
+            "upper",
+            "speed_slope",
+            "wind_slope",
+            "successful",
+            "failed",
+            "failure_reasons",
+            "interval_scope",
+            "adjustment",
+            "adjustment_lower",
+            "adjustment_upper",
+            "speed_difference_min",
+            "speed_difference_max",
+            "wind_difference_min",
+            "wind_difference_max",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "estimand",
+            "raw_mean_scope",
+            "adjustment_scope",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_motion_1.csv",
+          "sha256": "205e36035cb36f0b2d009afe5ca9d3e52dbd07c6266eb418fe09f26281e2bf93"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/S10c_common_support_direct_sensitivities.csv",
+        "inputs/S10e_motion_intensity_targets.csv"
+      ],
+      "fields": {
+        "sensitivity": [
+          "sensitivity",
+          "window",
+          "level",
+          "metric",
+          "units",
+          "n_sid",
+          "alternative_contrast_same_support",
+          "main_contrast_same_support",
+          "alternative_minus_main",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description",
+          "comparison",
+          "target"
+        ],
+        "motion": [
+          "metric",
+          "n_sid",
+          "raw_mean",
+          "units",
+          "status",
+          "attempts",
+          "estimate",
+          "lower",
+          "upper",
+          "speed_slope",
+          "wind_slope",
+          "successful",
+          "failed",
+          "failure_reasons",
+          "interval_scope",
+          "adjustment",
+          "adjustment_lower",
+          "adjustment_upper",
+          "speed_difference_min",
+          "speed_difference_max",
+          "wind_difference_min",
+          "wind_difference_max",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "estimand",
+          "raw_mean_scope",
+          "adjustment_scope"
+        ]
+      },
+      "filter": [
+        "sens = frames['sensitivity']",
+        "sens = sens[inputs.primary_mask(sens)]",
+        "motion = frames['motion'][frames['motion'].metric.eq(metric)].iloc[0]",
+        "row = sens[sens.metric.eq(metric) & sens.sensitivity.eq(name)].iloc[0]"
+      ],
+      "sample_scope": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "units": {
+        "x": "Change in contrast (J kg⁻¹)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "weights": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+        "saved_columns": [
+          "adjustment_lower",
+          "adjustment_upper",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "sensitivity": "e8882a3174f04c8b92f42b86eccd021f2f51901d6eab2f473a33e790cd008efb",
+          "motion": "8d9c6933087ead601fbef4a142addd823ad5876281755d509a3737ddf437c7bd"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "sensitivity",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "sensitivity",
+          "fields": [
+            "sensitivity",
+            "window",
+            "level",
+            "metric",
+            "units",
+            "n_sid",
+            "alternative_contrast_same_support",
+            "main_contrast_same_support",
+            "alternative_minus_main",
+            "direct_difference_lower",
+            "direct_difference_upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "comparison",
+            "target",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1278,
+          "saved_selected_table": "panel_sensitivity_0.csv",
+          "sha256": "317969e02c67b3aae2c4dfd17a9f135d58ac553a6b51b4643d6de1728ce6b2ef"
+        },
+        {
+          "id": "motion",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "motion",
+          "fields": [
+            "metric",
+            "n_sid",
+            "raw_mean",
+            "units",
+            "status",
+            "attempts",
+            "estimate",
+            "lower",
+            "upper",
+            "speed_slope",
+            "wind_slope",
+            "successful",
+            "failed",
+            "failure_reasons",
+            "interval_scope",
+            "adjustment",
+            "adjustment_lower",
+            "adjustment_upper",
+            "speed_difference_min",
+            "speed_difference_max",
+            "wind_difference_min",
+            "wind_difference_max",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "estimand",
+            "raw_mean_scope",
+            "adjustment_scope",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_motion_1.csv",
+          "sha256": "205e36035cb36f0b2d009afe5ca9d3e52dbd07c6266eb418fe09f26281e2bf93"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/S10c_common_support_direct_sensitivities.csv",
+        "inputs/S10e_motion_intensity_targets.csv"
+      ],
+      "fields": {
+        "sensitivity": [
+          "sensitivity",
+          "window",
+          "level",
+          "metric",
+          "units",
+          "n_sid",
+          "alternative_contrast_same_support",
+          "main_contrast_same_support",
+          "alternative_minus_main",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description",
+          "comparison",
+          "target"
+        ],
+        "motion": [
+          "metric",
+          "n_sid",
+          "raw_mean",
+          "units",
+          "status",
+          "attempts",
+          "estimate",
+          "lower",
+          "upper",
+          "speed_slope",
+          "wind_slope",
+          "successful",
+          "failed",
+          "failure_reasons",
+          "interval_scope",
+          "adjustment",
+          "adjustment_lower",
+          "adjustment_upper",
+          "speed_difference_min",
+          "speed_difference_max",
+          "wind_difference_min",
+          "wind_difference_max",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "estimand",
+          "raw_mean_scope",
+          "adjustment_scope"
+        ]
+      },
+      "filter": [
+        "sens = frames['sensitivity']",
+        "sens = sens[inputs.primary_mask(sens)]",
+        "motion = frames['motion'][frames['motion'].metric.eq(metric)].iloc[0]",
+        "row = sens[sens.metric.eq(metric) & sens.sensitivity.eq(name)].iloc[0]"
+      ],
+      "sample_scope": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "units": {
+        "x": "Change in contrast (W kg⁻¹)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "weights": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+        "saved_columns": [
+          "adjustment_lower",
+          "adjustment_upper",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "sensitivity": "e8882a3174f04c8b92f42b86eccd021f2f51901d6eab2f473a33e790cd008efb",
+          "motion": "8d9c6933087ead601fbef4a142addd823ad5876281755d509a3737ddf437c7bd"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "sensitivity",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "sensitivity",
+          "fields": [
+            "sensitivity",
+            "window",
+            "level",
+            "metric",
+            "units",
+            "n_sid",
+            "alternative_contrast_same_support",
+            "main_contrast_same_support",
+            "alternative_minus_main",
+            "direct_difference_lower",
+            "direct_difference_upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "comparison",
+            "target",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1278,
+          "saved_selected_table": "panel_sensitivity_0.csv",
+          "sha256": "317969e02c67b3aae2c4dfd17a9f135d58ac553a6b51b4643d6de1728ce6b2ef"
+        },
+        {
+          "id": "motion",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "motion",
+          "fields": [
+            "metric",
+            "n_sid",
+            "raw_mean",
+            "units",
+            "status",
+            "attempts",
+            "estimate",
+            "lower",
+            "upper",
+            "speed_slope",
+            "wind_slope",
+            "successful",
+            "failed",
+            "failure_reasons",
+            "interval_scope",
+            "adjustment",
+            "adjustment_lower",
+            "adjustment_upper",
+            "speed_difference_min",
+            "speed_difference_max",
+            "wind_difference_min",
+            "wind_difference_max",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "estimand",
+            "raw_mean_scope",
+            "adjustment_scope",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_motion_1.csv",
+          "sha256": "205e36035cb36f0b2d009afe5ca9d3e52dbd07c6266eb418fe09f26281e2bf93"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/S10c_common_support_direct_sensitivities.csv",
+        "inputs/S10e_motion_intensity_targets.csv"
+      ],
+      "fields": {
+        "sensitivity": [
+          "sensitivity",
+          "window",
+          "level",
+          "metric",
+          "units",
+          "n_sid",
+          "alternative_contrast_same_support",
+          "main_contrast_same_support",
+          "alternative_minus_main",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description",
+          "comparison",
+          "target"
+        ],
+        "motion": [
+          "metric",
+          "n_sid",
+          "raw_mean",
+          "units",
+          "status",
+          "attempts",
+          "estimate",
+          "lower",
+          "upper",
+          "speed_slope",
+          "wind_slope",
+          "successful",
+          "failed",
+          "failure_reasons",
+          "interval_scope",
+          "adjustment",
+          "adjustment_lower",
+          "adjustment_upper",
+          "speed_difference_min",
+          "speed_difference_max",
+          "wind_difference_min",
+          "wind_difference_max",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "estimand",
+          "raw_mean_scope",
+          "adjustment_scope"
+        ]
+      },
+      "filter": [
+        "sens = frames['sensitivity']",
+        "sens = sens[inputs.primary_mask(sens)]",
+        "motion = frames['motion'][frames['motion'].metric.eq(metric)].iloc[0]",
+        "row = sens[sens.metric.eq(metric) & sens.sensitivity.eq(name)].iloc[0]"
+      ],
+      "sample_scope": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "units": {
+        "x": "Change in contrast (W kg⁻¹)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "weights": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+        "saved_columns": [
+          "adjustment_lower",
+          "adjustment_upper",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "sensitivity": "e8882a3174f04c8b92f42b86eccd021f2f51901d6eab2f473a33e790cd008efb",
+          "motion": "8d9c6933087ead601fbef4a142addd823ad5876281755d509a3737ddf437c7bd"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "sensitivity",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "sensitivity",
+          "fields": [
+            "sensitivity",
+            "window",
+            "level",
+            "metric",
+            "units",
+            "n_sid",
+            "alternative_contrast_same_support",
+            "main_contrast_same_support",
+            "alternative_minus_main",
+            "direct_difference_lower",
+            "direct_difference_upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "comparison",
+            "target",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1278,
+          "saved_selected_table": "panel_sensitivity_0.csv",
+          "sha256": "317969e02c67b3aae2c4dfd17a9f135d58ac553a6b51b4643d6de1728ce6b2ef"
+        },
+        {
+          "id": "motion",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "motion",
+          "fields": [
+            "metric",
+            "n_sid",
+            "raw_mean",
+            "units",
+            "status",
+            "attempts",
+            "estimate",
+            "lower",
+            "upper",
+            "speed_slope",
+            "wind_slope",
+            "successful",
+            "failed",
+            "failure_reasons",
+            "interval_scope",
+            "adjustment",
+            "adjustment_lower",
+            "adjustment_upper",
+            "speed_difference_min",
+            "speed_difference_max",
+            "wind_difference_min",
+            "wind_difference_max",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "estimand",
+            "raw_mean_scope",
+            "adjustment_scope",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_motion_1.csv",
+          "sha256": "205e36035cb36f0b2d009afe5ca9d3e52dbd07c6266eb418fe09f26281e2bf93"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/S10c_common_support_direct_sensitivities.csv",
+        "inputs/S10e_motion_intensity_targets.csv"
+      ],
+      "fields": {
+        "sensitivity": [
+          "sensitivity",
+          "window",
+          "level",
+          "metric",
+          "units",
+          "n_sid",
+          "alternative_contrast_same_support",
+          "main_contrast_same_support",
+          "alternative_minus_main",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description",
+          "comparison",
+          "target"
+        ],
+        "motion": [
+          "metric",
+          "n_sid",
+          "raw_mean",
+          "units",
+          "status",
+          "attempts",
+          "estimate",
+          "lower",
+          "upper",
+          "speed_slope",
+          "wind_slope",
+          "successful",
+          "failed",
+          "failure_reasons",
+          "interval_scope",
+          "adjustment",
+          "adjustment_lower",
+          "adjustment_upper",
+          "speed_difference_min",
+          "speed_difference_max",
+          "wind_difference_min",
+          "wind_difference_max",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "estimand",
+          "raw_mean_scope",
+          "adjustment_scope"
+        ]
+      },
+      "filter": [
+        "sens = frames['sensitivity']",
+        "sens = sens[inputs.primary_mask(sens)]",
+        "motion = frames['motion'][frames['motion'].metric.eq(metric)].iloc[0]",
+        "row = sens[sens.metric.eq(metric) & sens.sensitivity.eq(name)].iloc[0]"
+      ],
+      "sample_scope": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "units": {
+        "x": "Change in contrast (W kg⁻¹)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "weights": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+        "saved_columns": [
+          "adjustment_lower",
+          "adjustment_upper",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "sensitivity": "e8882a3174f04c8b92f42b86eccd021f2f51901d6eab2f473a33e790cd008efb",
+          "motion": "8d9c6933087ead601fbef4a142addd823ad5876281755d509a3737ddf437c7bd"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "sensitivity",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "sensitivity",
+          "fields": [
+            "sensitivity",
+            "window",
+            "level",
+            "metric",
+            "units",
+            "n_sid",
+            "alternative_contrast_same_support",
+            "main_contrast_same_support",
+            "alternative_minus_main",
+            "direct_difference_lower",
+            "direct_difference_upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "comparison",
+            "target",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1278,
+          "saved_selected_table": "panel_sensitivity_0.csv",
+          "sha256": "317969e02c67b3aae2c4dfd17a9f135d58ac553a6b51b4643d6de1728ce6b2ef"
+        },
+        {
+          "id": "motion",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "motion",
+          "fields": [
+            "metric",
+            "n_sid",
+            "raw_mean",
+            "units",
+            "status",
+            "attempts",
+            "estimate",
+            "lower",
+            "upper",
+            "speed_slope",
+            "wind_slope",
+            "successful",
+            "failed",
+            "failure_reasons",
+            "interval_scope",
+            "adjustment",
+            "adjustment_lower",
+            "adjustment_upper",
+            "speed_difference_min",
+            "speed_difference_max",
+            "wind_difference_min",
+            "wind_difference_max",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "estimand",
+            "raw_mean_scope",
+            "adjustment_scope",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_motion_1.csv",
+          "sha256": "205e36035cb36f0b2d009afe5ca9d3e52dbd07c6266eb418fe09f26281e2bf93"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/S10c_common_support_direct_sensitivities.csv",
+        "inputs/S10e_motion_intensity_targets.csv"
+      ],
+      "fields": {
+        "sensitivity": [
+          "sensitivity",
+          "window",
+          "level",
+          "metric",
+          "units",
+          "n_sid",
+          "alternative_contrast_same_support",
+          "main_contrast_same_support",
+          "alternative_minus_main",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description",
+          "comparison",
+          "target"
+        ],
+        "motion": [
+          "metric",
+          "n_sid",
+          "raw_mean",
+          "units",
+          "status",
+          "attempts",
+          "estimate",
+          "lower",
+          "upper",
+          "speed_slope",
+          "wind_slope",
+          "successful",
+          "failed",
+          "failure_reasons",
+          "interval_scope",
+          "adjustment",
+          "adjustment_lower",
+          "adjustment_upper",
+          "speed_difference_min",
+          "speed_difference_max",
+          "wind_difference_min",
+          "wind_difference_max",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "estimand",
+          "raw_mean_scope",
+          "adjustment_scope"
+        ]
+      },
+      "filter": [
+        "sens = frames['sensitivity']",
+        "sens = sens[inputs.primary_mask(sens)]",
+        "motion = frames['motion'][frames['motion'].metric.eq(metric)].iloc[0]",
+        "row = sens[sens.metric.eq(metric) & sens.sensitivity.eq(name)].iloc[0]"
+      ],
+      "sample_scope": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "units": {
+        "x": "Change in contrast (W kg⁻¹)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "weights": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+        "saved_columns": [
+          "adjustment_lower",
+          "adjustment_upper",
+          "direct_difference_lower",
+          "direct_difference_upper",
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "sensitivity": "e8882a3174f04c8b92f42b86eccd021f2f51901d6eab2f473a33e790cd008efb",
+          "motion": "8d9c6933087ead601fbef4a142addd823ad5876281755d509a3737ddf437c7bd"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "sensitivity",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "sensitivity",
+          "fields": [
+            "sensitivity",
+            "window",
+            "level",
+            "metric",
+            "units",
+            "n_sid",
+            "alternative_contrast_same_support",
+            "main_contrast_same_support",
+            "alternative_minus_main",
+            "direct_difference_lower",
+            "direct_difference_upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "comparison",
+            "target",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1278,
+          "saved_selected_table": "panel_sensitivity_0.csv",
+          "sha256": "317969e02c67b3aae2c4dfd17a9f135d58ac553a6b51b4643d6de1728ce6b2ef"
+        },
+        {
+          "id": "motion",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "motion",
+          "fields": [
+            "metric",
+            "n_sid",
+            "raw_mean",
+            "units",
+            "status",
+            "attempts",
+            "estimate",
+            "lower",
+            "upper",
+            "speed_slope",
+            "wind_slope",
+            "successful",
+            "failed",
+            "failure_reasons",
+            "interval_scope",
+            "adjustment",
+            "adjustment_lower",
+            "adjustment_upper",
+            "speed_difference_min",
+            "speed_difference_max",
+            "wind_difference_min",
+            "wind_difference_max",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "estimand",
+            "raw_mean_scope",
+            "adjustment_scope",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_motion_1.csv",
+          "sha256": "205e36035cb36f0b2d009afe5ca9d3e52dbd07c6266eb418fe09f26281e2bf93"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "sensitivity",
+      "relative_path": "inputs/S10c_common_support_direct_sensitivities.csv",
+      "sha256": "e8882a3174f04c8b92f42b86eccd021f2f51901d6eab2f473a33e790cd008efb",
+      "original_path": "S10c_common_support_direct_sensitivities.csv",
+      "bytes": 535358
+    },
+    {
+      "key": "motion",
+      "relative_path": "inputs/S10e_motion_intensity_targets.csv",
+      "sha256": "8d9c6933087ead601fbef4a142addd823ad5876281755d509a3737ddf437c7bd",
+      "original_path": "S10e_motion_intensity_targets.csv",
+      "bytes": 4198
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S18.png",
+      "sha256": "8c8291a626d4cf79a37452d8067cab7faac876b934031f597e61b6d4fdd7b46c"
+    },
+    "tiff": {
+      "path": "Figure_S18.tiff",
+      "sha256": "6281326da4b240300d6342719f1f8765b525e6082247cc5005808357fad7ce33"
+    },
+    "pdf": {
+      "path": "Figure_S18.pdf",
+      "sha256": "e3adcb25d17d4ea3ee455c11dc9e9b3168368aac604043091651c2063029dc0d"
+    },
+    "svg": {
+      "path": "Figure_S18.svg",
+      "sha256": "ee03b828cb9e5d1508743c6a0234981ea122d6553f5047f82db3db6c34214191"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S18",
+      "returncode": 0,
+      "elapsed_s": 9.31,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 524.4094488188977
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              91.84251968503938,
+              389.25483178239085,
+              245.69237242291283,
+              492.9448818897638
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              73.84251968503938,
+              500.9448818897638
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              341.0792811203944,
+              389.25483178239085,
+              494.9291338582678,
+              492.9448818897638
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              323.07928112039434,
+              500.9448818897638
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              91.84251968503938,
+              212.9817465998569,
+              245.69237242291283,
+              316.6717967072298
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              73.84251968503938,
+              324.67179670722976
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              341.0792811203944,
+              212.9817465998569,
+              494.9291338582678,
+              316.6717967072298
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              323.07928112039434,
+              324.67179670722976
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              91.84251968503938,
+              36.70866141732293,
+              245.69237242291283,
+              140.39871152469584
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              73.84251968503938,
+              148.39871152469584
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              341.0792811203944,
+              36.70866141732293,
+              494.9291338582678,
+              140.39871152469584
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              323.07928112039434,
+              148.39871152469584
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.671531438458
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S18",
+      "source": "Figure_S10.png",
+      "sha256": "2c54188d81130313cd4e6efd1b60ab7ac616736a9769dfb1f0d70d987ba4e200",
+      "pixels": [
+        6377,
+        6555
+      ],
+      "display_inches": [
+        6.496062992125984,
+        6.677386264216973
+      ],
+      "effective_dpi": 981.6715151515151
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 18 | Changes in paired energy contrasts under the fixed supporting comparisons. The first two rows within each panel show the direct alternative-minus-main change for a 16-day input displacement and a 0–500 km region, respectively. Each change uses identical SID and relative-time support in the two configurations. The third row shows the conditional zero-speed/zero-intensity-difference estimate minus the raw contrast on the same covariate-complete sample. Points and horizontal limits reproduce the saved changes and pointwise 95% intervals; the conditional model retains all attempted draws and any failure status in Tables S7h,i. Successful-refit intervals, where applicable, remain conditional on target-supported refits. Missing targets are labelled unavailable rather than plotted at zero. These comparisons quantify method and target dependence; interval overlap with zero does not establish equivalence. Tables S7e,f,g retain the fixed input, radius and pre-departure land-contact comparisons.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "55fff0317f626f700caa30b32219de2ceb6d780c496e42d46ad46c496fac9bde",
+      "run.py": "ec771a916707eafa7a7627f84d5b5222bb8827b3d432a4b332863115ab47db34"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

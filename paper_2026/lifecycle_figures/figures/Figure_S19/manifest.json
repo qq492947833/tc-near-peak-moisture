@@ -1,0 +1,875 @@
+{
+  "figure_id": "Figure_S12",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/same_sample/T3_summary.csv"
+      ],
+      "fields": {
+        "same_sample/T3_summary.csv": [
+          "metric",
+          "units",
+          "n",
+          "internal",
+          "final",
+          "difference",
+          "low",
+          "high",
+          "support",
+          "status",
+          "internal_low",
+          "internal_high",
+          "final_low",
+          "final_high",
+          "bootstrap",
+          "p_value",
+          "interval"
+        ]
+      },
+      "filter": [
+        "mat = z.pivot(index='field', columns='ring', values='difference').loc[fields, RINGS]",
+        "z = curve[curve.kind.eq('net')]",
+        "z = comp[comp.cohort.eq('original_post80') & comp.window.eq('0_24h') & comp.factor.eq(1) & comp.kind.eq('out') & comp.sector.eq('all') & comp.layer.isin(LAYERS) & comp.quantity.isin(['humidity', 'relative_motion', 'difference'])]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "units": {
+        "x": "",
+        "y": "Humidity contrast (g kg⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "weights": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+        "saved_columns": [
+          "final_high",
+          "final_low",
+          "high",
+          "internal_high",
+          "internal_low",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "same_sample/T3_summary.csv": "e40f76bddd485a80810987a39c2ae77b55fcb087a69234061757f3bbb8398530"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "; transform=identity",
+          "source_key": "same_sample/T3_summary.csv",
+          "fields": [
+            "units",
+            "n",
+            "internal",
+            "final",
+            "difference",
+            "low",
+            "high",
+            "support",
+            "status",
+            "internal_low",
+            "internal_high",
+            "final_low",
+            "final_high",
+            "bootstrap",
+            "p_value",
+            "interval",
+            "_source_csv_row_index",
+            "_source_csv_line",
+            "field",
+            "ring"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "9ece52ff5ded4cc80f3a206fea17363b894fcd685c5db08670f535d22b44362a"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/same_sample/T3_summary.csv"
+      ],
+      "fields": {
+        "same_sample/T3_summary.csv": [
+          "metric",
+          "units",
+          "n",
+          "internal",
+          "final",
+          "difference",
+          "low",
+          "high",
+          "support",
+          "status",
+          "internal_low",
+          "internal_high",
+          "final_low",
+          "final_high",
+          "bootstrap",
+          "p_value",
+          "interval"
+        ]
+      },
+      "filter": [
+        "mat = z.pivot(index='field', columns='ring', values='difference').loc[fields, RINGS]",
+        "z = curve[curve.kind.eq('net')]",
+        "z = comp[comp.cohort.eq('original_post80') & comp.window.eq('0_24h') & comp.factor.eq(1) & comp.kind.eq('out') & comp.sector.eq('all') & comp.layer.isin(LAYERS) & comp.quantity.isin(['humidity', 'relative_motion', 'difference'])]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "units": {
+        "x": "Annulus (km); integrated contrast (g kg⁻¹)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              0.03293106807145245,
+              -0.14278083500379682
+            ],
+            [
+              0.7376365140726338,
+              0.14665221970993572
+            ],
+            [
+              -0.5094024295743864,
+              -0.15116062584362241
+            ],
+            [
+              0.26116515256969985,
+              -0.1472892411374835
+            ]
+          ],
+          "vmin": -0.7376365140726338,
+          "vmax": 0.7376365140726338,
+          "norm": "Normalize",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "weights": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+        "saved_columns": [
+          "final_high",
+          "final_low",
+          "high",
+          "internal_high",
+          "internal_low",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "same_sample/T3_summary.csv": "e40f76bddd485a80810987a39c2ae77b55fcb087a69234061757f3bbb8398530"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "Saved 80-pair estimates; all CI/n in complete statistics; transform=identity",
+          "source_key": "same_sample/T3_summary.csv",
+          "fields": [
+            "units",
+            "n",
+            "internal",
+            "final",
+            "difference",
+            "low",
+            "high",
+            "support",
+            "status",
+            "internal_low",
+            "internal_high",
+            "final_low",
+            "final_high",
+            "bootstrap",
+            "p_value",
+            "interval",
+            "_source_csv_row_index",
+            "_source_csv_line",
+            "field",
+            "ring"
+          ],
+          "selected_rows": 8,
+          "saved_selected_table": "panel_b_1.csv",
+          "sha256": "fcdd957f73622a9a39839f14fdc4299d45d77250e65f219fdeb772697845f5f4"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/same_sample/T3_summary.csv"
+      ],
+      "fields": {
+        "same_sample/T3_summary.csv": [
+          "metric",
+          "units",
+          "n",
+          "internal",
+          "final",
+          "difference",
+          "low",
+          "high",
+          "support",
+          "status",
+          "internal_low",
+          "internal_high",
+          "final_low",
+          "final_high",
+          "bootstrap",
+          "p_value",
+          "interval"
+        ]
+      },
+      "filter": [
+        "mat = z.pivot(index='field', columns='ring', values='difference').loc[fields, RINGS]",
+        "z = curve[curve.kind.eq('net')]",
+        "z = comp[comp.cohort.eq('original_post80') & comp.window.eq('0_24h') & comp.factor.eq(1) & comp.kind.eq('out') & comp.sector.eq('all') & comp.layer.isin(LAYERS) & comp.quantity.isin(['humidity', 'relative_motion', 'difference'])]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "units": {
+        "x": "",
+        "y": "Mass contrast (10¹² kg)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "weights": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+        "saved_columns": [
+          "final_high",
+          "final_low",
+          "high",
+          "internal_high",
+          "internal_low",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "same_sample/T3_summary.csv": "e40f76bddd485a80810987a39c2ae77b55fcb087a69234061757f3bbb8398530"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "; transform=identity",
+          "source_key": "same_sample/T3_summary.csv",
+          "fields": [
+            "metric",
+            "units",
+            "n",
+            "internal",
+            "final",
+            "difference",
+            "low",
+            "high",
+            "support",
+            "status",
+            "internal_low",
+            "internal_high",
+            "final_low",
+            "final_high",
+            "bootstrap",
+            "p_value",
+            "interval",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 2,
+          "saved_selected_table": "panel_c_2.csv",
+          "sha256": "f139123cd97519353725568933e36eaa0a7198e73ac88e4e9c05a296faab38e2"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/same_sample/T1_same80_absolute_time_curves.csv"
+      ],
+      "fields": {
+        "same_sample/T1_same80_absolute_time_curves.csv": [
+          "lag_h",
+          "kind",
+          "side",
+          "n",
+          "mean_kg_s",
+          "low_kg_s",
+          "high_kg_s"
+        ]
+      },
+      "filter": [
+        "mat = z.pivot(index='field', columns='ring', values='difference').loc[fields, RINGS]",
+        "z = curve[curve.kind.eq('net')]",
+        "z = comp[comp.cohort.eq('original_post80') & comp.window.eq('0_24h') & comp.factor.eq(1) & comp.kind.eq('out') & comp.sector.eq('all') & comp.layer.isin(LAYERS) & comp.quantity.isin(['humidity', 'relative_motion', 'difference'])]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "units": {
+        "x": "Hours after departure",
+        "y": "Net inward flux (10⁸ kg s⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "weights": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+        "saved_columns": [
+          "high_kg_s",
+          "low_kg_s"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "same_sample/T1_same80_absolute_time_curves.csv": "2c79c9c7e941abbe7e55d6418ad47f666f11e79bb4a282bbba4a9334fee69a59"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "d",
+          "role": "; transform=identity",
+          "source_key": "same_sample/T1_same80_absolute_time_curves.csv",
+          "fields": [
+            "lag_h",
+            "kind",
+            "side",
+            "n",
+            "mean_kg_s",
+            "low_kg_s",
+            "high_kg_s",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 10,
+          "saved_selected_table": "panel_d_3.csv",
+          "sha256": "559e9d78416d32c19222bd50c23522ea3c8ef8111527ee9d1b8ceea6ea599646"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/same_sample/T1_pressure_layer_summary.csv"
+      ],
+      "fields": {
+        "same_sample/T1_pressure_layer_summary.csv": [
+          "layer_hPa",
+          "n",
+          "internal_kg",
+          "final_kg",
+          "difference_kg",
+          "low_kg",
+          "high_kg"
+        ]
+      },
+      "filter": [
+        "mat = z.pivot(index='field', columns='ring', values='difference').loc[fields, RINGS]",
+        "z = curve[curve.kind.eq('net')]",
+        "z = comp[comp.cohort.eq('original_post80') & comp.window.eq('0_24h') & comp.factor.eq(1) & comp.kind.eq('out') & comp.sector.eq('all') & comp.layer.isin(LAYERS) & comp.quantity.isin(['humidity', 'relative_motion', 'difference'])]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "units": {
+        "x": "Discrete pressure interval (hPa)",
+        "y": "Net mass contrast (10¹² kg)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "weights": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+        "saved_columns": [
+          "high_kg",
+          "low_kg"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "same_sample/T1_pressure_layer_summary.csv": "17a79f8f6ab09ac0a71d78343576d30fd0a8258f86a527c6f01e4afddf2e5d08"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "e",
+          "role": "; transform=identity",
+          "source_key": "same_sample/T1_pressure_layer_summary.csv",
+          "fields": [
+            "layer_hPa",
+            "n",
+            "internal_kg",
+            "final_kg",
+            "difference_kg",
+            "low_kg",
+            "high_kg",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_e_4.csv",
+          "sha256": "23267822260929ffb118ef16993e780adb8b0c790e15fe10e20e77a0482f015e"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/same_sample/component_by_pressure_and_sector_summary.csv"
+      ],
+      "fields": {
+        "same_sample/component_by_pressure_and_sector_summary.csv": [
+          "cohort",
+          "window",
+          "factor",
+          "kind",
+          "layer",
+          "sector",
+          "units",
+          "quantity",
+          "n",
+          "finite_n",
+          "estimate",
+          "low",
+          "high",
+          "status",
+          "bootstrap",
+          "interval",
+          "sign"
+        ]
+      },
+      "filter": [
+        "mat = z.pivot(index='field', columns='ring', values='difference').loc[fields, RINGS]",
+        "z = curve[curve.kind.eq('net')]",
+        "z = comp[comp.cohort.eq('original_post80') & comp.window.eq('0_24h') & comp.factor.eq(1) & comp.kind.eq('out') & comp.sector.eq('all') & comp.layer.isin(LAYERS) & comp.quantity.isin(['humidity', 'relative_motion', 'difference'])]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "units": {
+        "x": "Discrete pressure interval (hPa)",
+        "y": "Outward contrast (10¹² kg)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "weights": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+        "saved_columns": [
+          "high",
+          "low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "same_sample/component_by_pressure_and_sector_summary.csv": "8ae053ffddf0b6a4b63fcf45f13c8ac3001fd6325674219ead1ab268b35025ac"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "f",
+          "role": "Cq + Cv = total; all saved CIs retained in complete statistics; transform=identity",
+          "source_key": "same_sample/component_by_pressure_and_sector_summary.csv",
+          "fields": [
+            "cohort",
+            "window",
+            "factor",
+            "kind",
+            "layer",
+            "sector",
+            "units",
+            "quantity",
+            "n",
+            "finite_n",
+            "estimate",
+            "low",
+            "high",
+            "status",
+            "bootstrap",
+            "interval",
+            "sign",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 12,
+          "saved_selected_table": "panel_f_5.csv",
+          "sha256": "45a285f8f15db3a9efb386407b8fa221833a7f8e16eec475fc45b3ac677c2cf4"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "same_sample/T1_pressure_layer_summary.csv",
+      "relative_path": "inputs/same_sample/T1_pressure_layer_summary.csv",
+      "sha256": "17a79f8f6ab09ac0a71d78343576d30fd0a8258f86a527c6f01e4afddf2e5d08",
+      "original_path": "T1_pressure_layer_summary.csv",
+      "bytes": 488
+    },
+    {
+      "key": "same_sample/T1_same80_absolute_time_curves.csv",
+      "relative_path": "inputs/same_sample/T1_same80_absolute_time_curves.csv",
+      "sha256": "2c79c9c7e941abbe7e55d6418ad47f666f11e79bb4a282bbba4a9334fee69a59",
+      "original_path": "T1_same80_absolute_time_curves.csv",
+      "bytes": 2238
+    },
+    {
+      "key": "same_sample/T3_summary.csv",
+      "relative_path": "inputs/same_sample/T3_summary.csv",
+      "sha256": "e40f76bddd485a80810987a39c2ae77b55fcb087a69234061757f3bbb8398530",
+      "original_path": "T3_summary.csv",
+      "bytes": 4617
+    },
+    {
+      "key": "same_sample/component_by_pressure_and_sector_summary.csv",
+      "relative_path": "inputs/same_sample/component_by_pressure_and_sector_summary.csv",
+      "sha256": "8ae053ffddf0b6a4b63fcf45f13c8ac3001fd6325674219ead1ab268b35025ac",
+      "original_path": "component_by_pressure_and_sector_summary.csv",
+      "bytes": 46361
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S12.png",
+      "sha256": "7e3e95ba274d9899ced000f95bf2b7f857a8c2e51dd4a36a764589fc8710fec3"
+    },
+    "tiff": {
+      "path": "Figure_S12.tiff",
+      "sha256": "afc3890597b16a24c7f4b21441bba944d1880f9c727f49436f8d52a717070d8c"
+    },
+    "pdf": {
+      "path": "Figure_S12.pdf",
+      "sha256": "ed85d60ebfe221b3024d9d96b50c7b4c98bf7642636b8a25b8b691e2d659b940"
+    },
+    "svg": {
+      "path": "Figure_S12.svg",
+      "sha256": "e367a7f2c1d570be06998b31ff735daaac20cdb1d6f66da69518d21a5786fb5e"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S12",
+      "returncode": 0,
+      "elapsed_s": 10.63,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 581.1023622047244
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              61.22834645669292,
+              429.89210923102695,
+              231.64321060657932,
+              528.8031496062993
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              45.22834645669292,
+              540.8031496062993
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              321.9630886060191,
+              429.89210923102695,
+              492.3779527559055,
+              528.8031496062993
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              305.96308860601914,
+              540.8031496062993
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              61.22834645669292,
+              246.90668453677333,
+              231.64321060657932,
+              345.81772491204555
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              45.22834645669292,
+              357.8177249120456
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              321.9630886060191,
+              246.90668453677333,
+              492.3779527559055,
+              345.81772491204555
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              305.96308860601914,
+              357.8177249120456
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              61.22834645669292,
+              63.921259842519675,
+              231.64321060657932,
+              162.83230021779192
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              45.22834645669292,
+              174.83230021779195
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              321.9630886060191,
+              63.921259842519675,
+              492.3779527559055,
+              162.83230021779192
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              305.96308860601914,
+              174.83230021779195
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      1036.4055951513428,
+      1036.405617977528
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S12",
+      "source": "Figure_S17.png",
+      "sha256": "7e3e95ba274d9899ced000f95bf2b7f857a8c2e51dd4a36a764589fc8710fec3",
+      "pixels": [
+        6377,
+        7263
+      ],
+      "display_inches": [
+        6.152996500437445,
+        7.0078740157480315
+      ],
+      "effective_dpi": 1036.4055951513428
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 12 | Radial moisture changes and pressure-resolved boundary exchange. a,b, Temporary-minus-final contrasts in pre-event 700-hPa observed humidity, common-cell background and anomaly (a), and 0–24 h integrated horizontal advection, vertical advection, residual and moving tendency (b), for 100–300 and 300–800 km annuli. Both use 80 SID pairs. These local quantities, in g kg⁻¹, differ from layer-integrated 500–925 hPa transport in kg. c, Annular lateral input and water-vapour stock-change contrasts on the same independently screened 79-SID subset. Lateral input is net exchange at 300 km minus that at 100 km; stock change is mass at 24 h minus that at 0 h. d, Mean net inward flux at 300 km at five post-departure times for each class (80 pairs). e,f, Discrete native pressure-interval contributions to net-transport contrasts (e) and outward-transport contrasts separated into symmetric humidity and relative-motion components (f). Each total in f equals . Panels a–c,e,f show paired differences; d shows class means. SIDs receive equal weight. Whiskers and shading are ordinary 95% percentiles from 2,000 paired-SID resamples, with common draws within a,b and shared primary transport identities in e,f. Tables S6b,g retain the intervals and counts for b and f; intervals crossing zero are retained.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "b7ecabe822b3a7e4b017647fc3a8e883f9642d526d9585e663fb17ad95b77dd5",
+      "run.py": "dede438679e54cbd379918431ff4475afd32fa1accfbe3de8bdf4535bb95e19a"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

@@ -1,0 +1,28 @@
+panel,component,estimate_pp,ci_low,ci_high,accepted_draws,attempted_draws,basin,variable,unit,estimate,bootstrap_sign_p,variation_status,q_value,family,estimand,estimate_pp_per_decade,p_bootstrap,state_treatment,environment_reference,q_environment_only_family
+a,total_within,3.3792424572366904,-0.3406476891754516,7.262016257751727,1999.0,2000.0,,,,,,,,,,,,,,
+a,total_composition,-0.1523668451232499,-0.7466922807889838,0.541227275771853,1999.0,2000.0,,,,,,,,,,,,,,
+a,global_change,3.2268756121134388,-0.5234914248951672,7.183234966657425,1999.0,2000.0,,,,,,,,,,,,,,
+b,,,-0.2437416099429687,3.4449543978419377,,,NA,X3_mid_rh_pct,RH percentage points/decade,1.7674429059839851,0.085,variable,0.5650000000000001,B_within_basin_environment_history_20,,,,,,
+b,,,-0.0517395383569919,1.7187739512199738,,,EP,X3_mid_rh_pct,RH percentage points/decade,0.8011952296454481,0.075,variable,0.5650000000000001,B_within_basin_environment_history_20,,,,,,
+b,,,-1.0052534088604153,1.909651328805367,,,WP,X3_mid_rh_pct,RH percentage points/decade,0.5051982973694821,0.547,variable,0.7842857142857144,B_within_basin_environment_history_20,,,,,,
+b,,,-0.929661446371322,1.7992344947088268,,,SI,X3_mid_rh_pct,RH percentage points/decade,0.2657137536783484,0.657,variable,0.82125,B_within_basin_environment_history_20,,,,,,
+c,,,-2.1252464176295804,0.2238778996590665,,,NA,X2_shear_ms,m/s/decade,-0.8136073682473226,0.113,variable,0.5650000000000001,B_within_basin_environment_history_20,,,,,,
+c,,,-0.4945244350618896,0.3325250200383742,,,EP,X2_shear_ms,m/s/decade,-0.1286528607979636,0.549,variable,0.7842857142857144,B_within_basin_environment_history_20,,,,,,
+c,,,-0.4577991520119258,0.8790423213387124,,,WP,X2_shear_ms,m/s/decade,0.2142542337246246,0.508,variable,0.7842857142857144,B_within_basin_environment_history_20,,,,,,
+c,,,-0.5356791855180173,0.8206987996665959,,,SI,X2_shear_ms,m/s/decade,0.1310342090064122,0.875,variable,0.9210526315789472,B_within_basin_environment_history_20,,,,,,
+d,,,-0.1555646735118688,0.4304357350913301,,,NA,X1_sst_c,degC/decade,0.2044274486368077,0.214,variable,0.5800000000000001,B_within_basin_environment_history_20,,,,,,
+d,,,0.0333172495970282,0.2875726312909148,,,EP,X1_sst_c,degC/decade,0.1440086422013724,0.01,variable,0.2,B_within_basin_environment_history_20,,,,,,
+d,,,-0.1020369016478269,0.1541261386546931,,,WP,X1_sst_c,degC/decade,0.0359365959847145,0.622,variable,0.82125,B_within_basin_environment_history_20,,,,,,
+d,,,-0.0730908869447633,0.282848548624348,,,SI,X1_sst_c,degC/decade,0.104059357943474,0.226,variable,0.5800000000000001,B_within_basin_environment_history_20,,,,,,
+e,,,-14.801480008115949,2.9789422304673487,,,NA,,,,,,,,actual_environment,-4.014017282676069,0.372,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+e,,,-3.56022557024136,2.608606916482128,,,EP,,,,,,,,actual_environment,-0.7054945373874245,0.595,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+e,,,-4.493958720608301,5.139871091331891,,,WP,,,,,,,,actual_environment,-0.298863307882511,0.854,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+e,,,-1.4134121648773958,6.34935415655219,,,SI,,,,,,,,actual_environment,2.420857365421932,0.218,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+e,,,-15.9213360481866,1.994247231700319,,,NA,,,,,,,,fixed_reference_environment_state_unchanged,-5.712873015898999,0.209,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+e,,,-3.717123337699804,1.8274202001392577,,,EP,,,,,,,,fixed_reference_environment_state_unchanged,-0.9185924435844112,0.441,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+e,,,-4.845001979666291,5.062573210999332,,,WP,,,,,,,,fixed_reference_environment_state_unchanged,-0.3660484022173613,0.815,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+e,,,-1.477939254134901,6.122318567952597,,,SI,,,,,,,,fixed_reference_environment_state_unchanged,2.3941007507064804,0.234,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+f,,,-0.743333682818499,5.033301629892694,,,NA,,,,,,,,actual_minus_fixed_environment,1.6988557332229297,0.185,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",0.562
+f,,,-0.2456995529734137,1.1563243013352122,,,EP,,,,,,,,actual_minus_fixed_environment,0.2130979061969867,0.281,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",0.562
+f,,,-1.036192626804445,1.4633793811606717,,,WP,,,,,,,,actual_minus_fixed_environment,0.0671850943348503,0.848,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",0.874
+f,,,-0.997837127267786,1.1999488579014022,,,SI,,,,,,,,actual_minus_fixed_environment,0.0267566147154512,0.874,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",0.874

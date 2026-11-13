@@ -1,0 +1,351 @@
+{
+  "figure_id": "Figure_S09",
+  "type": "supplementary",
+  "status": "VERIFIED_READY_FOR_ROOT_INTEGRATION",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\77c6f12c3b_fig6_regions.csv"
+      ],
+      "fields": [
+        "region",
+        "sector",
+        "field",
+        "units",
+        "estimand",
+        "estimate",
+        "lo",
+        "hi",
+        "n_sid",
+        "original_estimate"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig16",
+        "selected_rows": "panels\\00_a_Real_four_shear-relative_sectors_and_two_annuli__CI_n_retained_in_statistics.csv",
+        "selected_rows_sha256": "39fcc06e42795bbeb462de88442c6c0a1848a8142ee995f8d0d4e21fdc38aa6f"
+      },
+      "sample_scope": {
+        "n_sid": [
+          103
+        ]
+      },
+      "units": [
+        "g kg-1"
+      ],
+      "normalization": {
+        "executed_entry": "fig16",
+        "role": "Real four shear-relative sectors and two annuli; CI/n retained in statistics",
+        "caption": "Supplementary Fig. 9 | Shear-relative moisture and circulation before paired departures. a,b, Temporary-minus-final contrasts in 700-hPa specific humidity (g kg⁻¹; a) and cyclonic tangential wind (m s⁻¹; b) in four 90° sectors of the 100–300 and 300–800 km annuli. Colour represents sector means, with separate scales for the two variables. The upward-pointing deep-shear vector  defines downshear above, upshear below and left/right relative to the vector. Each sector is centred on one of these four directions relative to . Sector departures are measured from native-area azimuthal means within 50 km radial bins, separately from seasonal anomalies. Total, azimuthal mean and departure share valid cells; cyclonic wind is positive in both hemispheres. Orientation uses mean pre-event deep shear of at least 2 m s⁻¹. Pre-means require three of the four −24-to−6 h observations, retaining 103 paired cyclones. Table S5g gives all 16 means, 95% percentiles from 2,000 paired-cyclone resamples and counts. Sector comparisons are descriptive. Fig. 5 gives the annular pre-event states and subsequent processes."
+      },
+      "difference_direction": {
+        "role": "Real four shear-relative sectors and two annuli; CI/n retained in statistics",
+        "caption": "Supplementary Fig. 9 | Shear-relative moisture and circulation before paired departures. a,b, Temporary-minus-final contrasts in 700-hPa specific humidity (g kg⁻¹; a) and cyclonic tangential wind (m s⁻¹; b) in four 90° sectors of the 100–300 and 300–800 km annuli. Colour represents sector means, with separate scales for the two variables. The upward-pointing deep-shear vector  defines downshear above, upshear below and left/right relative to the vector. Each sector is centred on one of these four directions relative to . Sector departures are measured from native-area azimuthal means within 50 km radial bins, separately from seasonal anomalies. Total, azimuthal mean and departure share valid cells; cyclonic wind is positive in both hemispheres. Orientation uses mean pre-event deep shear of at least 2 m s⁻¹. Pre-means require three of the four −24-to−6 h observations, retaining 103 paired cyclones. Table S5g gives all 16 means, 95% percentiles from 2,000 paired-cyclone resamples and counts. Sector comparisons are descriptive. Fig. 5 gives the annular pre-event states and subsequent processes."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 9 | Shear-relative moisture and circulation before paired departures. a,b, Temporary-minus-final contrasts in 700-hPa specific humidity (g kg⁻¹; a) and cyclonic tangential wind (m s⁻¹; b) in four 90° sectors of the 100–300 and 300–800 km annuli. Colour represents sector means, with separate scales for the two variables. The upward-pointing deep-shear vector  defines downshear above, upshear below and left/right relative to the vector. Each sector is centred on one of these four directions relative to . Sector departures are measured from native-area azimuthal means within 50 km radial bins, separately from seasonal anomalies. Total, azimuthal mean and departure share valid cells; cyclonic wind is positive in both hemispheres. Orientation uses mean pre-event deep shear of at least 2 m s⁻¹. Pre-means require three of the four −24-to−6 h observations, retaining 103 paired cyclones. Table S5g gives all 16 means, 95% percentiles from 2,000 paired-cyclone resamples and counts. Sector comparisons are descriptive. Fig. 5 gives the annular pre-event states and subsequent processes."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 9 | Shear-relative moisture and circulation before paired departures. a,b, Temporary-minus-final contrasts in 700-hPa specific humidity (g kg⁻¹; a) and cyclonic tangential wind (m s⁻¹; b) in four 90° sectors of the 100–300 and 300–800 km annuli. Colour represents sector means, with separate scales for the two variables. The upward-pointing deep-shear vector  defines downshear above, upshear below and left/right relative to the vector. Each sector is centred on one of these four directions relative to . Sector departures are measured from native-area azimuthal means within 50 km radial bins, separately from seasonal anomalies. Total, azimuthal mean and departure share valid cells; cyclonic wind is positive in both hemispheres. Orientation uses mean pre-event deep shear of at least 2 m s⁻¹. Pre-means require three of the four −24-to−6 h observations, retaining 103 paired cyclones. Table S5g gives all 16 means, 95% percentiles from 2,000 paired-cyclone resamples and counts. Sector comparisons are descriptive. Fig. 5 gives the annular pre-event states and subsequent processes."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/77c6f12c3b_fig6_regions.csv",
+            "sha256": "fe391e451467ff75510085a50c9a6f248cc2be52c0997e984a00436fc0dcbe2b",
+            "original_path": "fig6_regions.csv",
+            "logical_keys": [
+              "thematic/fig6_regions.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": "Authorized reaggregation of existing SH left/right values with unchanged stored SID multiplicities; no refit or new draws"
+      },
+      "selected_data_sha256": "39fcc06e42795bbeb462de88442c6c0a1848a8142ee995f8d0d4e21fdc38aa6f"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\77c6f12c3b_fig6_regions.csv"
+      ],
+      "fields": [
+        "region",
+        "sector",
+        "field",
+        "units",
+        "estimand",
+        "estimate",
+        "lo",
+        "hi",
+        "n_sid",
+        "original_estimate"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig16",
+        "selected_rows": "panels\\01_b_Real_four_shear-relative_sectors_and_two_annuli__CI_n_retained_in_statistics.csv",
+        "selected_rows_sha256": "b23cef9a9d156820775e96711b9382ad227ce58fab973d0c6c978cc40b02afe2"
+      },
+      "sample_scope": {
+        "n_sid": [
+          103
+        ]
+      },
+      "units": [
+        "m s-1"
+      ],
+      "normalization": {
+        "executed_entry": "fig16",
+        "role": "Real four shear-relative sectors and two annuli; CI/n retained in statistics",
+        "caption": "Supplementary Fig. 9 | Shear-relative moisture and circulation before paired departures. a,b, Temporary-minus-final contrasts in 700-hPa specific humidity (g kg⁻¹; a) and cyclonic tangential wind (m s⁻¹; b) in four 90° sectors of the 100–300 and 300–800 km annuli. Colour represents sector means, with separate scales for the two variables. The upward-pointing deep-shear vector  defines downshear above, upshear below and left/right relative to the vector. Each sector is centred on one of these four directions relative to . Sector departures are measured from native-area azimuthal means within 50 km radial bins, separately from seasonal anomalies. Total, azimuthal mean and departure share valid cells; cyclonic wind is positive in both hemispheres. Orientation uses mean pre-event deep shear of at least 2 m s⁻¹. Pre-means require three of the four −24-to−6 h observations, retaining 103 paired cyclones. Table S5g gives all 16 means, 95% percentiles from 2,000 paired-cyclone resamples and counts. Sector comparisons are descriptive. Fig. 5 gives the annular pre-event states and subsequent processes."
+      },
+      "difference_direction": {
+        "role": "Real four shear-relative sectors and two annuli; CI/n retained in statistics",
+        "caption": "Supplementary Fig. 9 | Shear-relative moisture and circulation before paired departures. a,b, Temporary-minus-final contrasts in 700-hPa specific humidity (g kg⁻¹; a) and cyclonic tangential wind (m s⁻¹; b) in four 90° sectors of the 100–300 and 300–800 km annuli. Colour represents sector means, with separate scales for the two variables. The upward-pointing deep-shear vector  defines downshear above, upshear below and left/right relative to the vector. Each sector is centred on one of these four directions relative to . Sector departures are measured from native-area azimuthal means within 50 km radial bins, separately from seasonal anomalies. Total, azimuthal mean and departure share valid cells; cyclonic wind is positive in both hemispheres. Orientation uses mean pre-event deep shear of at least 2 m s⁻¹. Pre-means require three of the four −24-to−6 h observations, retaining 103 paired cyclones. Table S5g gives all 16 means, 95% percentiles from 2,000 paired-cyclone resamples and counts. Sector comparisons are descriptive. Fig. 5 gives the annular pre-event states and subsequent processes."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 9 | Shear-relative moisture and circulation before paired departures. a,b, Temporary-minus-final contrasts in 700-hPa specific humidity (g kg⁻¹; a) and cyclonic tangential wind (m s⁻¹; b) in four 90° sectors of the 100–300 and 300–800 km annuli. Colour represents sector means, with separate scales for the two variables. The upward-pointing deep-shear vector  defines downshear above, upshear below and left/right relative to the vector. Each sector is centred on one of these four directions relative to . Sector departures are measured from native-area azimuthal means within 50 km radial bins, separately from seasonal anomalies. Total, azimuthal mean and departure share valid cells; cyclonic wind is positive in both hemispheres. Orientation uses mean pre-event deep shear of at least 2 m s⁻¹. Pre-means require three of the four −24-to−6 h observations, retaining 103 paired cyclones. Table S5g gives all 16 means, 95% percentiles from 2,000 paired-cyclone resamples and counts. Sector comparisons are descriptive. Fig. 5 gives the annular pre-event states and subsequent processes."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 9 | Shear-relative moisture and circulation before paired departures. a,b, Temporary-minus-final contrasts in 700-hPa specific humidity (g kg⁻¹; a) and cyclonic tangential wind (m s⁻¹; b) in four 90° sectors of the 100–300 and 300–800 km annuli. Colour represents sector means, with separate scales for the two variables. The upward-pointing deep-shear vector  defines downshear above, upshear below and left/right relative to the vector. Each sector is centred on one of these four directions relative to . Sector departures are measured from native-area azimuthal means within 50 km radial bins, separately from seasonal anomalies. Total, azimuthal mean and departure share valid cells; cyclonic wind is positive in both hemispheres. Orientation uses mean pre-event deep shear of at least 2 m s⁻¹. Pre-means require three of the four −24-to−6 h observations, retaining 103 paired cyclones. Table S5g gives all 16 means, 95% percentiles from 2,000 paired-cyclone resamples and counts. Sector comparisons are descriptive. Fig. 5 gives the annular pre-event states and subsequent processes."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/77c6f12c3b_fig6_regions.csv",
+            "sha256": "fe391e451467ff75510085a50c9a6f248cc2be52c0997e984a00436fc0dcbe2b",
+            "original_path": "fig6_regions.csv",
+            "logical_keys": [
+              "thematic/fig6_regions.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": "Authorized reaggregation of existing SH left/right values with unchanged stored SID multiplicities; no refit or new draws"
+      },
+      "selected_data_sha256": "b23cef9a9d156820775e96711b9382ad227ce58fab973d0c6c978cc40b02afe2"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/77c6f12c3b_fig6_regions.csv",
+      "sha256": "fe391e451467ff75510085a50c9a6f248cc2be52c0997e984a00436fc0dcbe2b",
+      "original_path": "fig6_regions.csv",
+      "logical_keys": [
+        "thematic/fig6_regions.csv"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S09",
+    "size_mm": [
+      180.0,
+      102.99999999999999
+    ],
+    "pixels": [
+      6377,
+      3649
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 902.7518050866281,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 8.0,
+    "files": {
+      "png": {
+        "path": "Figure_S09.png",
+        "sha256": "fe5dae880dca3d5d3df076f65690d2710979713671c97f9805ca4601df33eac8"
+      },
+      "tiff": {
+        "path": "Figure_S09.tiff",
+        "sha256": "68b288c8819d5d940ba04ae984af2d80a1fc969abb9e5ac4c49ce8807f0284a7"
+      },
+      "pdf": {
+        "path": "Figure_S09.pdf",
+        "sha256": "58603319dc2c40db5a311727543995371ae6417bfdafb3977de807bc537a2dc3"
+      },
+      "svg": {
+        "path": "Figure_S09.svg",
+        "sha256": "3476ce221b62f8ab8d42e70ad4541a01b843b2a2f65427742ce23d6df68f87fa"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 1,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 291.9685039370079
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              45.92125984251969,
+              60.39930625411911,
+              242.59821707308615,
+              237.40856776162894
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              29.921259842519692,
+              249.40856776162894
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              295.70099552533907,
+              60.39930625411911,
+              492.37795275590554,
+              237.40856776162894
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              279.70099552533907,
+              249.40856776162894
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          }
+        ],
+        "column_groups": [],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "Full final figure and separate a/b inspected; labels, directions, annular separation, palette and exact colorbar ticks legible; no clipping/overlap",
+    "PDF_text_and_collision": "PASS"
+  },
+  "provenance": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S09",
+    "source": "Figure_S27.png",
+    "sha256": "3652647272f227b206767538e740ae74551acb8187175ada7c830b32994ecf8d",
+    "pixels": [
+      6377,
+      3968
+    ],
+    "display_inches": [
+      6.496062992125984,
+      4.04208552055993
+    ],
+    "effective_dpi": 981.6714613822254
+  },
+  "caption": "Supplementary Fig. 9 | Shear-relative moisture and circulation before paired departures. a,b, Temporary-minus-final contrasts in 700-hPa specific humidity (g kg⁻¹; a) and cyclonic tangential wind (m s⁻¹; b) in four 90° sectors of the 100–300 and 300–800 km annuli. Colour represents sector means, with separate scales for the two variables. The upward-pointing deep-shear vector  defines downshear above, upshear below and left/right relative to the vector. Each sector is centred on one of these four directions relative to . Sector departures are measured from native-area azimuthal means within 50 km radial bins, separately from seasonal anomalies. Total, azimuthal mean and departure share valid cells; cyclonic wind is positive in both hemispheres. Orientation uses mean pre-event deep shear of at least 2 m s⁻¹. Pre-means require three of the four −24-to−6 h observations, retaining 103 paired cyclones. Table S5g gives all 16 means, 95% percentiles from 2,000 paired-cyclone resamples and counts. Sector comparisons are descriptive. Fig. 5 gives the annular pre-event states and subsequent processes.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  },
+  "hemisphere_correction_provenance": {
+    "authorized_current_figure": "Figure_S11",
+    "historical_style_id": "Figure_S09",
+    "rule": "reflect SH shear transverse coordinate: swap left/right; retain q and already cyclonic-signed tangential scalar",
+    "changed_cells": 8,
+    "valid_sid": 103,
+    "NH_sid": 78,
+    "SH_sid": 25,
+    "resampling": "same stored 2000 SID multiplicities, no new draws",
+    "original_bootstrap_sha256": "4e3f1eb10264293e6b8599a013320c5c1badc03dd2646514b2734f737c7d28e4",
+    "original_figure_source_sha256": "77c6f12c3be9405a26014907570fb7fa190b7ac2ee02436537ad23b611093ec7",
+    "selected_SID_source_sha256": "d2193c0bc36231df0c80c3ca1d1f4e11a23fb47ced91343072b558cd09ff2b44",
+    "corrected_csv_sha256": "fe391e451467ff75510085a50c9a6f248cc2be52c0997e984a00436fc0dcbe2b",
+    "palette": "RdBu_r unchanged",
+    "a_final_norm": [
+      -0.125,
+      0.125
+    ],
+    "b_final_norm": [
+      -0.5,
+      0.5
+    ],
+    "display_scope": "a color scaling expands to avoid clipping; unchanged a up/down values map through the new scale; b keeps original scale"
+  },
+  "authoritative_correction_acceptance": "FINAL_FIGURE_ACCEPTANCE.json"
+}

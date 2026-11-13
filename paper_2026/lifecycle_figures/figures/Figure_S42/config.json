@@ -1,0 +1,38 @@
+{
+  "figure_id": "Figure_S33",
+  "type": "supplementary",
+  "entry_function": "s8",
+  "legacy_identity": "SI_RUF_components",
+  "family": "early",
+  "aliases": {
+    "thematic/fig2_components.csv": "inputs/a4fc70dc81_disjoint_component_contrasts.csv",
+    "thematic/fig2_window.csv": "inputs/30b971e398_paired_difference_summary.csv"
+  },
+  "caption": "Supplementary Fig. 33 | Environmental differences between near-peak windows and their components. a, Paired whole-window contrasts  and  within the main sample (factor-specific n = 2,241–2,340), including the recurrent subset in Supplementary Fig. 3c. Each cyclone's record is fixed and only the averaging windows change. b, Contrasts among disjoint components R, later near-peak occupancy  and weakening bridges : ,  and  (n = 120–123 with complete three-component support). Window contrasts in a and component-mean contrasts in b are distinct quantities. The six factors and native units are SST (°C), 200–850-hPa shear (m s⁻¹), mid-level RH (percentage points), 200-hPa divergence (10⁻⁵ s⁻¹), ascent (; Pa s⁻¹) and hemisphere-signed 850-hPa vorticity (10⁻⁵ s⁻¹), sampled at 200–800 km. Estimates and interval limits are divided by fixed lifecycle reference SDs. Columns show paired means and whiskers are marginal 95% percentiles from 2,000 paired-SID resamples. Axis limits differ from Supplementary Fig. 3c. Table S1b and figure sources provide native estimates, counts and reference parameters.",
+  "baseline": {
+    "label": "Figure_S33",
+    "source": "Figure_S22.png",
+    "sha256": "66092569c0bc8178267508535757fd0f54c80ca0f7e744a2af8e894ed6801eaa",
+    "pixels": [
+      6377,
+      6555
+    ],
+    "display_inches": [
+      6.496062992125984,
+      6.677386264216973
+    ],
+    "effective_dpi": 981.6715151515151
+  },
+  "source_code": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

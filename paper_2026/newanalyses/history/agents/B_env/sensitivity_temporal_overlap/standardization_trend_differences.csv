@@ -1,0 +1,9 @@
+contrast,basin,estimate_pp_per_decade,ci_low,ci_high,bootstrap_sign_p,q_value,family
+natural_minus_fixed_state,NA,0.6599282095716547,-0.7728801957440795,2.8401740847845542,0.42,,state_diagnostic_descriptive
+natural_minus_fixed_state,EP,-0.16494152680448648,-0.6721547295962157,0.3913577035379861,0.554,,state_diagnostic_descriptive
+natural_minus_fixed_state,WP,-0.2843298277962687,-0.9307350165846665,0.596004895849657,0.688,,state_diagnostic_descriptive
+natural_minus_fixed_state,SI,-0.3143049281362118,-1.6484631308974385,0.8675387839848984,0.712,,state_diagnostic_descriptive
+fixed_state_minus_fixed_environment,NA,0.5878862025610843,-0.27693705445056227,1.9487367440302434,0.18,0.602,B_environment_standardization_four_basins
+fixed_state_minus_fixed_environment,EP,0.08010294956285513,-0.2729591825571394,0.49847529437309124,0.602,0.602,B_environment_standardization_four_basins
+fixed_state_minus_fixed_environment,WP,0.1355000273285083,-0.32814456775982465,0.7629716780722576,0.536,0.602,B_environment_standardization_four_basins
+fixed_state_minus_fixed_environment,SI,0.39392872259956313,-0.5296853179612601,1.2650999097179345,0.452,0.602,B_environment_standardization_four_basins

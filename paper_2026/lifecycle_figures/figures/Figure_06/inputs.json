@@ -1,0 +1,14 @@
+{
+  "curves": {
+    "relative_path": "inputs/MAIN_RISE_COMPARISON_source.csv",
+    "sha256": "50df19d214011f1fda0abbdb8666912d7216dc762a57d82dc48b8020e581a420",
+    "original_path": "MAIN_RISE_COMPARISON_source.csv",
+    "bytes": 8096
+  },
+  "g": {
+    "relative_path": "inputs/panel_g_source_rows.csv",
+    "sha256": "574703f257f1bb52b287689ac71e6a6efc05277efaa53a5883b31db0c6a85466",
+    "original_path": "panel_g_source_rows.csv",
+    "bytes": 681
+  }
+}

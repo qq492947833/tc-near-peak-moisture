@@ -1,0 +1,40 @@
+{
+  "figure_id": "Figure_S24",
+  "type": "supplementary",
+  "entry_function": "main",
+  "legacy_identity": "SI_coverage",
+  "family": "coverage",
+  "aliases": {
+    "coverage/annual": "inputs/cd33ca6488_SI_coverage_annual_annual.csv",
+    "coverage/annual_basin_fraction": "inputs/a690f89141_SI_coverage_annual_basin_fraction_annual_basin_fraction.csv",
+    "coverage/month_by_basin_percent": "inputs/633e9c8998_SI_coverage_month_by_basin_percent_month_by_basin_percent.csv",
+    "coverage/stage_environment_support": "inputs/54b78f06aa_SI_coverage_stage_environment_support_stage_environment_support.csv"
+  },
+  "caption": "Supplementary Fig. 24 | Temporal, basin and environmental support of the single main sample. a, Unique main-sample SIDs by genesis year (1982–2023; 42 years; N=2,340). Complete retained lifetimes and existing follow-up may extend beyond the genesis year. b, Genesis-month percentages within each genesis basin. c, Basin fractions within each genesis year. d, Number of main-sample cyclones with a valid stage-level environmental exposure, separately for each variable and stage; shading denotes percentage of the 2,340 main-sample SIDs. D, Development; E, Intensification; F, near-peak persistence; Res, Resolution. Each environmental diagnostic retains its valid subset of the main sample. These are observed counts and descriptive distributions, so no sampling intervals are shown.",
+  "baseline": {
+    "label": "Figure_S24",
+    "source": "Figure_S13.png",
+    "sha256": "e1e5f1b1d96538bc819283dd65abff7d08c982aab8bb36aa30cf43f5d192a3eb",
+    "pixels": [
+      6377,
+      5669
+    ],
+    "display_inches": [
+      6.496062992125984,
+      5.774843613298338
+    ],
+    "effective_dpi": 981.6715151515151
+  },
+  "source_code": [
+    {
+      "original_path": "plot_master_coverage.py",
+      "sha256": "548994e7a8c0dc6a129febd120fa605029d7db7fe0fa1c51cfdca46451379003",
+      "archive": "provenance/plot_master_coverage.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

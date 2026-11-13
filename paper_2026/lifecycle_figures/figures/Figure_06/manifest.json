@@ -1,0 +1,1016 @@
+{
+  "figure_id": "Figure_09",
+  "type": "main",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/MAIN_RISE_COMPARISON_source.csv"
+      ],
+      "fields": {
+        "curves": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel",
+          "source_kind",
+          "job_id",
+          "group_id",
+          "level",
+          "window",
+          "region",
+          "scheme",
+          "support_mode",
+          "comparison_role",
+          "comparison_id"
+        ]
+      },
+      "filter": [
+        "coverage = panels[0][panels[0].relative_hour.ge(0)]",
+        "x, y, w, h = pos_before[i]"
+      ],
+      "sample_scope": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "units": {
+        "x": "",
+        "y": "Wind (kt)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "weights": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "curves": "50df19d214011f1fda0abbdb8666912d7216dc762a57d82dc48b8020e581a420"
+        },
+        "original_plot_source": "extend_figure9.py",
+        "original_plot_source_sha256": "247f0ba85f05b9e6ce45982a0a5da163fed9f22e83649827f0367807af72be37"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "Saved equal-SID pointwise histories and percentile intervals",
+          "source_key": "curves",
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "source_kind",
+            "job_id",
+            "group_id",
+            "level",
+            "window",
+            "region",
+            "scheme",
+            "support_mode",
+            "comparison_role",
+            "comparison_id",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "1ea6b717cc6cd0ba0111b57a0bb88202d1520a490e05723f9ef5b99e4aa93426"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/MAIN_RISE_COMPARISON_source.csv"
+      ],
+      "fields": {
+        "curves": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel",
+          "source_kind",
+          "job_id",
+          "group_id",
+          "level",
+          "window",
+          "region",
+          "scheme",
+          "support_mode",
+          "comparison_role",
+          "comparison_id"
+        ]
+      },
+      "filter": [
+        "coverage = panels[0][panels[0].relative_hour.ge(0)]",
+        "x, y, w, h = pos_before[i]"
+      ],
+      "sample_scope": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "units": {
+        "x": "",
+        "y": "Relative humidity (%)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "weights": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "curves": "50df19d214011f1fda0abbdb8666912d7216dc762a57d82dc48b8020e581a420"
+        },
+        "original_plot_source": "extend_figure9.py",
+        "original_plot_source_sha256": "247f0ba85f05b9e6ce45982a0a5da163fed9f22e83649827f0367807af72be37"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "Saved equal-SID pointwise histories and percentile intervals",
+          "source_key": "curves",
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "source_kind",
+            "job_id",
+            "group_id",
+            "level",
+            "window",
+            "region",
+            "scheme",
+            "support_mode",
+            "comparison_role",
+            "comparison_id",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_b_1.csv",
+          "sha256": "78931a7088a7106eb933fc06d7154d7c97d638fd91aedf75dbdb1aa90060c055"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/MAIN_RISE_COMPARISON_source.csv"
+      ],
+      "fields": {
+        "curves": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel",
+          "source_kind",
+          "job_id",
+          "group_id",
+          "level",
+          "window",
+          "region",
+          "scheme",
+          "support_mode",
+          "comparison_role",
+          "comparison_id"
+        ]
+      },
+      "filter": [
+        "coverage = panels[0][panels[0].relative_hour.ge(0)]",
+        "x, y, w, h = pos_before[i]"
+      ],
+      "sample_scope": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "units": {
+        "x": "",
+        "y": "KE (J kg$^{-1}$)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "weights": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "curves": "50df19d214011f1fda0abbdb8666912d7216dc762a57d82dc48b8020e581a420"
+        },
+        "original_plot_source": "extend_figure9.py",
+        "original_plot_source_sha256": "247f0ba85f05b9e6ce45982a0a5da163fed9f22e83649827f0367807af72be37"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "Saved equal-SID pointwise histories and percentile intervals",
+          "source_key": "curves",
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "source_kind",
+            "job_id",
+            "group_id",
+            "level",
+            "window",
+            "region",
+            "scheme",
+            "support_mode",
+            "comparison_role",
+            "comparison_id",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_c_2.csv",
+          "sha256": "4daabcd43e39bb8fb6ce8f7ddd68202339f6bb051717972441d11b3724e58e78"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/MAIN_RISE_COMPARISON_source.csv"
+      ],
+      "fields": {
+        "curves": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel",
+          "source_kind",
+          "job_id",
+          "group_id",
+          "level",
+          "window",
+          "region",
+          "scheme",
+          "support_mode",
+          "comparison_role",
+          "comparison_id"
+        ]
+      },
+      "filter": [
+        "coverage = panels[0][panels[0].relative_hour.ge(0)]",
+        "x, y, w, h = pos_before[i]"
+      ],
+      "sample_scope": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "units": {
+        "x": "",
+        "y": "APE (J kg$^{-1}$)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "weights": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "curves": "50df19d214011f1fda0abbdb8666912d7216dc762a57d82dc48b8020e581a420"
+        },
+        "original_plot_source": "extend_figure9.py",
+        "original_plot_source_sha256": "247f0ba85f05b9e6ce45982a0a5da163fed9f22e83649827f0367807af72be37"
+      },
+      "selected_source_rows": [
+        {
+          "id": "d",
+          "role": "Saved equal-SID pointwise histories and percentile intervals",
+          "source_key": "curves",
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "source_kind",
+            "job_id",
+            "group_id",
+            "level",
+            "window",
+            "region",
+            "scheme",
+            "support_mode",
+            "comparison_role",
+            "comparison_id",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_d_3.csv",
+          "sha256": "2c9319e9bb3542c4028ff6d3b950213452f2379555dcf20144757d4344259f68"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/MAIN_RISE_COMPARISON_source.csv"
+      ],
+      "fields": {
+        "curves": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel",
+          "source_kind",
+          "job_id",
+          "group_id",
+          "level",
+          "window",
+          "region",
+          "scheme",
+          "support_mode",
+          "comparison_role",
+          "comparison_id"
+        ]
+      },
+      "filter": [
+        "coverage = panels[0][panels[0].relative_hour.ge(0)]",
+        "x, y, w, h = pos_before[i]"
+      ],
+      "sample_scope": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "units": {
+        "x": "Time from trough (h)",
+        "y": "Conversion (W kg$^{-1}$)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "weights": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "curves": "50df19d214011f1fda0abbdb8666912d7216dc762a57d82dc48b8020e581a420"
+        },
+        "original_plot_source": "extend_figure9.py",
+        "original_plot_source_sha256": "247f0ba85f05b9e6ce45982a0a5da163fed9f22e83649827f0367807af72be37"
+      },
+      "selected_source_rows": [
+        {
+          "id": "e",
+          "role": "Saved equal-SID pointwise histories and percentile intervals",
+          "source_key": "curves",
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "source_kind",
+            "job_id",
+            "group_id",
+            "level",
+            "window",
+            "region",
+            "scheme",
+            "support_mode",
+            "comparison_role",
+            "comparison_id",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_e_4.csv",
+          "sha256": "c2d630d5483a9c769c00ea298e0e59959a4400402340dddd871df7200cbd321c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/MAIN_RISE_COMPARISON_source.csv"
+      ],
+      "fields": {
+        "curves": [
+          "relative_hour",
+          "units",
+          "n_events",
+          "n_events_within_rise",
+          "n_sid_within_rise",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "metric",
+          "radial",
+          "panel",
+          "source_kind",
+          "job_id",
+          "group_id",
+          "level",
+          "window",
+          "region",
+          "scheme",
+          "support_mode",
+          "comparison_role",
+          "comparison_id"
+        ]
+      },
+      "filter": [
+        "coverage = panels[0][panels[0].relative_hour.ge(0)]",
+        "x, y, w, h = pos_before[i]"
+      ],
+      "sample_scope": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "units": {
+        "x": "Time from trough (h)",
+        "y": "Net input (W kg$^{-1}$)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "weights": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "curves": "50df19d214011f1fda0abbdb8666912d7216dc762a57d82dc48b8020e581a420"
+        },
+        "original_plot_source": "extend_figure9.py",
+        "original_plot_source_sha256": "247f0ba85f05b9e6ce45982a0a5da163fed9f22e83649827f0367807af72be37"
+      },
+      "selected_source_rows": [
+        {
+          "id": "f",
+          "role": "Saved equal-SID pointwise histories and percentile intervals",
+          "source_key": "curves",
+          "fields": [
+            "relative_hour",
+            "units",
+            "n_events",
+            "n_events_within_rise",
+            "n_sid_within_rise",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "metric",
+            "radial",
+            "panel",
+            "source_kind",
+            "job_id",
+            "group_id",
+            "level",
+            "window",
+            "region",
+            "scheme",
+            "support_mode",
+            "comparison_role",
+            "comparison_id",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 9,
+          "saved_selected_table": "panel_f_5.csv",
+          "sha256": "390080a6596c936698e0136716bb46be2edf9846ef7e34dea1dafde3935a91f5"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "g",
+      "input_files": [
+        "inputs/panel_g_source_rows.csv"
+      ],
+      "fields": {
+        "g": [
+          "estimand",
+          "sample",
+          "units",
+          "n_events",
+          "estimate",
+          "lower",
+          "upper",
+          "n_sid",
+          "job_id",
+          "group_id",
+          "metric",
+          "level",
+          "window",
+          "region",
+          "scheme",
+          "support_mode",
+          "comparison_role",
+          "comparison_id"
+        ]
+      },
+      "filter": [
+        "coverage = panels[0][panels[0].relative_hour.ge(0)]",
+        "x, y, w, h = pos_before[i]"
+      ],
+      "sample_scope": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "units": {
+        "x": "Ascent − Resolution APE (J kg⁻¹)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "weights": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "g": "574703f257f1bb52b287689ac71e6a6efc05277efaa53a5883b31db0c6a85466"
+        },
+        "original_plot_source": "extend_figure9.py",
+        "original_plot_source_sha256": "247f0ba85f05b9e6ce45982a0a5da163fed9f22e83649827f0367807af72be37"
+      },
+      "selected_source_rows": [
+        {
+          "id": "g",
+          "role": "Matched ascent-minus-Resolution APE; original 115 events / 108 SID; three saved windows",
+          "source_key": "g",
+          "fields": [
+            "estimand",
+            "sample",
+            "units",
+            "n_events",
+            "estimate",
+            "lower",
+            "upper",
+            "n_sid",
+            "job_id",
+            "group_id",
+            "metric",
+            "level",
+            "window",
+            "region",
+            "scheme",
+            "support_mode",
+            "comparison_role",
+            "comparison_id",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 3,
+          "saved_selected_table": "panel_g_6.csv",
+          "sha256": "88704742f3a43e108c93f8c0b7adb3e56cacf4cdd36b9fd18f46b69844684184"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "curves",
+      "relative_path": "inputs/MAIN_RISE_COMPARISON_source.csv",
+      "sha256": "50df19d214011f1fda0abbdb8666912d7216dc762a57d82dc48b8020e581a420",
+      "original_path": "MAIN_RISE_COMPARISON_source.csv",
+      "bytes": 8096
+    },
+    {
+      "key": "g",
+      "relative_path": "inputs/panel_g_source_rows.csv",
+      "sha256": "574703f257f1bb52b287689ac71e6a6efc05277efaa53a5883b31db0c6a85466",
+      "original_path": "panel_g_source_rows.csv",
+      "bytes": 681
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_09.png",
+      "sha256": "cea09805720168b29e05c2339c376edea0b26984f0583630ec17d2ce1dc0a360"
+    },
+    "tiff": {
+      "path": "Figure_09.tiff",
+      "sha256": "789b7e2d0d1b223c72ebf91980efc8ce28262857e9ceaa219aa76737bddb4731"
+    },
+    "pdf": {
+      "path": "Figure_09.pdf",
+      "sha256": "620310408b669c6d21d774f67006ddb0d1ee83daa6312ddd4e1b230c19b9dfea"
+    },
+    "svg": {
+      "path": "Figure_09.svg",
+      "sha256": "c3387c787a05a0d61ad6f1ccc6bb0a461cc804f8a6830b1b5accd207a17ad196"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_09",
+      "returncode": 0,
+      "elapsed_s": 9.76,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 646.2992125984252
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              61.22834645669292,
+              513.7143730168057,
+              240.02013682715892,
+              622.5732283464566
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              24.576029430747386,
+              632.9148196027735
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              318.6885245901639,
+              513.7143730168057,
+              497.4803149606299,
+              622.5732283464566
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              282.0362075642184,
+              632.9148196027735
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              61.22834645669292,
+              349.3375014690328,
+              240.02013682715892,
+              458.1963567986838
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              24.576029430747386,
+              468.53794805500064
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              318.6885245901639,
+              349.3375014690328,
+              497.4803149606299,
+              458.1963567986838
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              282.0362075642184,
+              468.53794805500064
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              61.22834645669292,
+              184.96062992125985,
+              240.02013682715892,
+              293.8194852509108
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              24.576029430747386,
+              304.1610765072277
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              318.6885245901639,
+              184.96062992125985,
+              497.4803149606299,
+              293.8194852509108
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              282.0362075642184,
+              304.1610765072277
+            ]
+          },
+          {
+            "id": "g",
+            "bbox_pt": [
+              61.22834645669292,
+              34.01574803149607,
+              497.48031496063,
+              102.04724409448819
+            ],
+            "panel_label": "g",
+            "panel_label_anchor_pt": [
+              24.628346456692913,
+              109.54724409448818
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6714743366113
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_09",
+      "source": "Figure_09.png",
+      "sha256": "cea09805720168b29e05c2339c376edea0b26984f0583630ec17d2ce1dc0a360",
+      "pixels": [
+        6377,
+        8078
+      ],
+      "display_inches": [
+        6.496062992125984,
+        8.22882217847769
+      ],
+      "effective_dpi": 981.6714743366113
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Fig. 9 | Wind, humidity and multiscale energy during near-peak return and at matched wind speeds. a,b, Recorded wind and 200–800 km mid-level relative humidity. c–e, Horizontal KE, dry APE and same-window APE-to-KE conversion at 700 hPa. f, Net vertical KE input to 500–850 hPa per unit layer mass. Panels c–f use 0–300 km means in the 2–16-day window; positive conversion transfers APE to KE, and positive layer input denotes vertical convergence. Time zero is the last wind minimum before return. Lines average events within each SID, then SIDs; shading shows pointwise 95% intervals from 2,000 SID bootstrap draws on diagnostic-specific support. Counts show SIDs observed within their actual trough-to-return intervals; the fixed-time composites include later observations. g, Ascent-minus-Resolution dry APE at 700 hPa and 0–300 km in three nominal windows (>16 days, 2–16 days and <2 days). Dots and bars show mean differences and 95% SID-bootstrap intervals from 115 events in 108 SIDs, matched within cyclone and common 10 kt wind bins. The vertical line marks zero. Actual-phase endpoint changes, integrated rates, matched comparisons and diagnostic-specific counts are reported in Tables S9a–n.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "decfe6581f560903ba637799cf6fe5ac627493997761f8c7285a9f9ede8d915a",
+      "run.py": "ec771a916707eafa7a7627f84d5b5222bb8827b3d432a4b332863115ab47db34"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

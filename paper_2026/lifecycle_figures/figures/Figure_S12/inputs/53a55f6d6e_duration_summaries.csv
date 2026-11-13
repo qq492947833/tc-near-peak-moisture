@@ -1,0 +1,565 @@
+scope,metric,statistic,estimate,ci_low,ci_high,n_sid,unit,B_planned,B_valid,seed,estimand
+main_all,R,mean,19.42051282051282,18.838397435897434,20.010320512820513,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,R,median,18.0,18.0,18.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,R,p90,36.0,36.0,36.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,R,p95,42.0,42.0,48.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,U,mean,20.276923076923076,19.653589743589745,20.91025641025641,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,U,median,18.0,18.0,18.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,U,p90,36.0,36.0,42.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,U,p95,48.0,48.0,48.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,F,mean,22.17948717948718,21.382051282051282,23.04897435897436,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,F,median,18.0,18.0,18.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,F,p90,42.0,42.0,42.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,F,p95,60.0,54.0,60.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,L,mean,0.8564102564102564,0.6820512820512821,1.0462820512820505,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,L,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,L,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,L,p95,6.0,0.0,6.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,B,mean,1.9025641025641025,1.4691666666666667,2.3974999999999995,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,B,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,B,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,B,p95,6.0,0.0,12.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,R_long,mean,19.58974358974359,19.010128205128204,20.17948717948718,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,R_long,median,18.0,18.0,18.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,R_long,p90,36.0,36.0,36.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,R_long,p95,48.0,42.0,48.0,2340,h,2000,2000,20260920,distribution of SID duration
+main_all,F_minus_R,mean,2.758974358974359,2.1846153846153844,3.3924358974358966,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,F_minus_R,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,F_minus_R,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,F_minus_R,p95,12.299999999998363,0.0,24.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,U_minus_R_long,mean,0.6871794871794872,0.5538461538461539,0.8282692307692304,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,U_minus_R_long,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,U_minus_R_long,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,U_minus_R_long,p95,6.0,0.0,6.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,F_minus_R_long,mean,2.58974358974359,2.063846153846154,3.1796153846153836,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,F_minus_R_long,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,F_minus_R_long,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,F_minus_R_long,p95,12.0,0.0,24.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_all,quantile_F_minus_U,mean,1.902564102564103,1.4691666666666634,2.3975,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_F_minus_U,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_F_minus_U,p90,6.0,0.0,6.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_F_minus_U,p95,12.0,6.0,12.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_U_minus_R,mean,0.8564102564102569,0.6820512820512831,1.0462820512820503,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_U_minus_R,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_U_minus_R,p90,0.0,0.0,6.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_U_minus_R,p95,6.0,0.0,6.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_U_minus_R_long,mean,0.6871794871794847,0.5538461538461553,0.8282692307692293,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_U_minus_R_long,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_U_minus_R_long,p90,0.0,0.0,6.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_all,quantile_U_minus_R_long,p95,0.0,0.0,6.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,R,mean,20.536585365853657,18.24390243902439,22.878048780487806,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,R,median,18.0,18.0,18.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,R,p90,40.79999999999998,30.0,42.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,R,p95,47.39999999999995,41.39999999999995,60.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,U,mean,36.829268292682926,33.51219512195122,40.196341463414626,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,U,median,30.0,30.0,36.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,U,p90,66.0,54.0,72.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,U,p95,72.0,66.0,82.7999999999999,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,F,mean,73.02439024390245,65.7560975609756,81.3670731707317,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,F,median,60.0,60.0,72.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,F,p90,112.79999999999998,96.0,150.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,F,p95,150.0,113.39999999999995,178.19999999999985,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,L,mean,16.29268292682927,14.145121951219512,18.390243902439025,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,L,median,12.0,12.0,12.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,L,p90,30.0,24.0,36.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,L,p95,41.39999999999995,30.0,54.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,B,mean,36.19512195121951,30.146341463414632,43.41463414634146,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,B,median,24.0,18.0,30.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,B,p90,72.0,64.79999999999998,90.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,B,p95,90.0,72.0,120.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,R_long,mean,23.75609756097561,21.414634146341463,26.048780487804876,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,R_long,median,18.0,18.0,24.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,R_long,p90,42.0,36.0,48.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,R_long,p95,53.39999999999995,42.0,60.0,123,h,2000,2000,20260920,distribution of SID duration
+main_multi,F_minus_R,mean,52.48780487804878,45.65853658536585,60.53658536585366,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,F_minus_R,median,42.0,36.0,48.0,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,F_minus_R,p90,88.79999999999998,78.0,124.7999999999999,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,F_minus_R,p95,130.7999999999999,89.39999999999995,154.81499999999983,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,U_minus_R_long,mean,13.073170731707316,11.560975609756097,14.585365853658537,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,U_minus_R_long,median,12.0,6.0,12.0,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,U_minus_R_long,p90,24.0,18.0,30.0,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,U_minus_R_long,p95,30.0,24.0,36.0,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,F_minus_R_long,mean,49.26829268292683,42.78048780487805,56.9280487804878,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,F_minus_R_long,median,36.0,36.0,42.0,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,F_minus_R_long,p90,84.0,76.79999999999998,115.19999999999993,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,F_minus_R_long,p95,118.19999999999985,84.0,153.5999999999998,123,h,2000,2000,20260920,distribution of within-SID difference
+main_multi,quantile_F_minus_U,mean,36.19512195121952,30.146341463414636,43.414634146341456,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_F_minus_U,median,30.0,24.0,36.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_F_minus_U,p90,46.79999999999998,34.79999999999998,82.79999999999998,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_F_minus_U,p95,78.0,41.39999999999995,105.5999999999998,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_U_minus_R,mean,16.29268292682927,14.14512195121951,18.390243902439025,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_U_minus_R,median,12.0,12.0,18.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_U_minus_R,p90,25.200000000000017,18.0,36.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_U_minus_R,p95,24.60000000000005,12.0,36.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_U_minus_R_long,mean,13.073170731707314,11.560975609756095,14.585365853658534,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_U_minus_R_long,median,12.0,6.0,18.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_U_minus_R_long,p90,24.0,18.0,30.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_multi,quantile_U_minus_R_long,p95,18.60000000000005,12.0,30.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,R,mean,19.358592692828147,18.795669824086602,19.989174560216508,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,R,median,18.0,18.0,18.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,R,p90,36.0,36.0,36.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,R,p95,42.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,U,mean,19.358592692828147,18.795669824086602,19.989174560216508,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,U,median,18.0,18.0,18.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,U,p90,36.0,36.0,36.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,U,p95,42.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,F,mean,19.358592692828147,18.795669824086602,19.989174560216508,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,F,median,18.0,18.0,18.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,F,p90,36.0,36.0,36.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,F,p95,42.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,L,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,L,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,L,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,L,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,B,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,B,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,B,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,B,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,R_long,mean,19.358592692828147,18.795669824086602,19.989174560216508,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,R_long,median,18.0,18.0,18.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,R_long,p90,36.0,36.0,36.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,R_long,p95,42.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+main_nonmulti,F_minus_R,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,F_minus_R,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,F_minus_R,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,F_minus_R,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,U_minus_R_long,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,U_minus_R_long,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,U_minus_R_long,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,U_minus_R_long,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,F_minus_R_long,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,F_minus_R_long,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,F_minus_R_long,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,F_minus_R_long,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+main_nonmulti,quantile_F_minus_U,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_F_minus_U,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_F_minus_U,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_F_minus_U,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_U_minus_R,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_U_minus_R,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_U_minus_R,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_U_minus_R,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_U_minus_R_long,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_U_minus_R_long,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_U_minus_R_long,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+main_nonmulti,quantile_U_minus_R_long,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,R,mean,19.42051282051282,18.838397435897434,20.010320512820513,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R,median,18.0,18.0,18.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R,p90,36.0,36.0,36.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R,p95,42.0,42.0,48.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,U,mean,20.276923076923076,19.653589743589745,20.91025641025641,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,U,median,18.0,18.0,18.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,U,p90,36.0,36.0,42.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,U,p95,48.0,48.0,48.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,F,mean,22.17948717948718,21.382051282051282,23.04897435897436,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,F,median,18.0,18.0,18.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,F,p90,42.0,42.0,42.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,F,p95,60.0,54.0,60.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,L,mean,0.8564102564102564,0.6820512820512821,1.0462820512820505,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,L,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,L,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,L,p95,6.0,0.0,6.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,B,mean,1.9025641025641025,1.4691666666666667,2.3974999999999995,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,B,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,B,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,B,p95,6.0,0.0,12.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R_long,mean,19.58974358974359,19.010128205128204,20.17948717948718,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R_long,median,18.0,18.0,18.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R_long,p90,36.0,36.0,36.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R_long,p95,48.0,42.0,48.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R5,mean,25.22820512820513,24.6074358974359,25.861602564102565,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R5,median,24.0,24.0,24.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R5,p90,42.0,42.0,48.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,R5,p95,54.0,54.0,54.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,U5,mean,26.42820512820513,25.76134615384615,27.107692307692307,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,U5,median,24.0,24.0,24.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,U5,p90,48.0,48.0,48.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,U5,p95,60.0,54.0,60.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,F5,mean,28.75897435897436,27.866602564102564,29.743653846153848,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,F5,median,24.0,24.0,24.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,F5,p90,54.0,48.0,54.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,F5,p95,66.0,60.29999999999836,72.0,2340,h,2000,2000,20260920,distribution of SID duration
+six_common_all,F_minus_R,mean,2.758974358974359,2.1846153846153844,3.3924358974358966,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F_minus_R,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F_minus_R,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F_minus_R,p95,12.299999999998363,0.0,24.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U_minus_R_long,mean,0.6871794871794872,0.5538461538461539,0.8282692307692304,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U_minus_R_long,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U_minus_R_long,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U_minus_R_long,p95,6.0,0.0,6.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F_minus_R_long,mean,2.58974358974359,2.063846153846154,3.1796153846153836,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F_minus_R_long,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F_minus_R_long,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F_minus_R_long,p95,12.0,0.0,24.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U5_minus_R5,mean,1.2,0.961474358974359,1.4744230769230766,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U5_minus_R5,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U5_minus_R5,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U5_minus_R5,p95,6.0,6.0,12.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_U5,mean,2.330769230769231,1.8230128205128204,2.8692948717948714,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_U5,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_U5,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_U5,p95,12.0,6.0,18.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_R5,mean,3.5307692307692307,2.861474358974359,4.259102564102563,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_R5,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_R5,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_R5,p95,24.0,18.0,30.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,R5_minus_R90,mean,5.8076923076923075,5.31525641025641,6.2846153846153845,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,R5_minus_R90,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,R5_minus_R90,p90,18.0,18.0,24.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,R5_minus_R90,p95,30.0,24.0,30.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U5_minus_U90,mean,6.151282051282052,5.6461538461538465,6.6461538461538465,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U5_minus_U90,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U5_minus_U90,p90,24.0,18.0,24.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,U5_minus_U90,p95,30.0,30.0,30.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_F90,mean,6.579487179487179,5.979423076923077,7.18974358974359,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_F90,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_F90,p90,24.0,18.0,24.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,F5_minus_F90,p95,30.0,30.0,36.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,threshold_interaction_B,mean,0.4282051282051282,0.13064102564102564,0.7435897435897436,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,threshold_interaction_B,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,threshold_interaction_B,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,threshold_interaction_B,p95,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,threshold_interaction_L,mean,0.3435897435897436,0.16666666666666666,0.5358974358974359,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,threshold_interaction_L,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,threshold_interaction_L,p90,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,threshold_interaction_L,p95,0.0,0.0,0.0,2340,h,2000,2000,20260920,distribution of within-SID difference
+six_common_all,quantile_F_minus_U,mean,1.902564102564103,1.4691666666666634,2.3975,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_F_minus_U,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_F_minus_U,p90,6.0,0.0,6.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_F_minus_U,p95,12.0,6.0,12.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_U_minus_R,mean,0.8564102564102569,0.6820512820512831,1.0462820512820503,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_U_minus_R,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_U_minus_R,p90,0.0,0.0,6.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_U_minus_R,p95,6.0,0.0,6.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_U_minus_R_long,mean,0.6871794871794847,0.5538461538461553,0.8282692307692293,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_U_minus_R_long,median,0.0,0.0,0.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_U_minus_R_long,p90,0.0,0.0,6.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_all,quantile_U_minus_R_long,p95,0.0,0.0,6.0,2340,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,R,mean,20.536585365853657,18.24390243902439,22.878048780487806,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R,median,18.0,18.0,18.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R,p90,40.79999999999998,30.0,42.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R,p95,47.39999999999995,41.39999999999995,60.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,U,mean,36.829268292682926,33.51219512195122,40.196341463414626,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,U,median,30.0,30.0,36.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,U,p90,66.0,54.0,72.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,U,p95,72.0,66.0,82.7999999999999,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,F,mean,73.02439024390245,65.7560975609756,81.3670731707317,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,F,median,60.0,60.0,72.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,F,p90,112.79999999999998,96.0,150.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,F,p95,150.0,113.39999999999995,178.19999999999985,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,L,mean,16.29268292682927,14.145121951219512,18.390243902439025,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,L,median,12.0,12.0,12.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,L,p90,30.0,24.0,36.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,L,p95,41.39999999999995,30.0,54.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,B,mean,36.19512195121951,30.146341463414632,43.41463414634146,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,B,median,24.0,18.0,30.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,B,p90,72.0,64.79999999999998,90.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,B,p95,90.0,72.0,120.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R_long,mean,23.75609756097561,21.414634146341463,26.048780487804876,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R_long,median,18.0,18.0,24.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R_long,p90,42.0,36.0,48.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R_long,p95,53.39999999999995,42.0,60.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R5,mean,27.902439024390244,24.681707317073172,31.26829268292683,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R5,median,24.0,24.0,24.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R5,p90,54.0,42.0,60.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,R5,p95,60.0,54.0,93.02999999999959,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,U5,mean,44.68292682926829,40.390243902439025,49.51463414634145,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,U5,median,42.0,36.0,48.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,U5,p90,76.79999999999998,66.0,84.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,U5,p95,84.0,77.39999999999995,101.39999999999995,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,F5,mean,74.82926829268293,66.8780487804878,84.58658536585365,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,F5,median,60.0,60.0,72.0,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,F5,p90,118.79999999999998,108.0,154.88999999999942,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,F5,p95,160.19999999999985,119.39999999999995,233.9999999999995,123,h,2000,2000,20260920,distribution of SID duration
+six_common_multi,F_minus_R,mean,52.48780487804878,45.65853658536585,60.53658536585366,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F_minus_R,median,42.0,36.0,48.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F_minus_R,p90,88.79999999999998,78.0,124.7999999999999,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F_minus_R,p95,130.7999999999999,89.39999999999995,154.81499999999983,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U_minus_R_long,mean,13.073170731707316,11.560975609756097,14.585365853658537,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U_minus_R_long,median,12.0,6.0,12.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U_minus_R_long,p90,24.0,18.0,30.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U_minus_R_long,p95,30.0,24.0,36.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F_minus_R_long,mean,49.26829268292683,42.78048780487805,56.9280487804878,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F_minus_R_long,median,36.0,36.0,42.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F_minus_R_long,p90,84.0,76.79999999999998,115.19999999999993,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F_minus_R_long,p95,118.19999999999985,84.0,153.5999999999998,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U5_minus_R5,mean,16.78048780487805,13.559756097560975,20.489024390243895,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U5_minus_R5,median,12.0,12.0,18.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U5_minus_R5,p90,36.0,30.0,42.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U5_minus_R5,p95,42.0,35.985,60.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_U5,mean,30.146341463414632,23.853658536585368,37.65853658536585,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_U5,median,18.0,12.0,24.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_U5,p90,66.0,52.79999999999998,92.42999999999978,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_U5,p95,95.39999999999995,66.0,118.19999999999985,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_R5,mean,46.926829268292686,38.8780487804878,56.34268292682926,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_R5,median,36.0,30.0,42.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_R5,p90,94.79999999999998,82.79999999999998,125.99999999999991,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_R5,p95,130.7999999999999,95.39999999999995,209.9999999999995,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,R5_minus_R90,mean,7.365853658536586,4.487804878048781,10.390243902439025,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,R5_minus_R90,median,0.0,0.0,0.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,R5_minus_R90,p90,36.0,18.0,42.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,R5_minus_R90,p95,42.0,34.7999999999999,53.39999999999995,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U5_minus_U90,mean,7.853658536585366,4.1451219512195125,12.14756097560975,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U5_minus_U90,median,0.0,0.0,0.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U5_minus_U90,p90,30.0,24.0,36.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,U5_minus_U90,p95,41.39999999999995,30.0,58.7999999999999,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_F90,mean,1.8048780487804879,-1.853658536585366,5.512195121951219,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_F90,median,0.0,0.0,0.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_F90,p90,12.0,12.0,18.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,F5_minus_F90,p95,23.39999999999995,12.0,34.7999999999999,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,threshold_interaction_B,mean,-6.048780487804878,-8.634146341463415,-3.707317073170732,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,threshold_interaction_B,median,0.0,-6.0,0.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,threshold_interaction_B,p90,0.0,0.0,6.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,threshold_interaction_B,p95,6.0,0.0,22.799999999999898,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,threshold_interaction_L,mean,0.4878048780487805,-2.1463414634146343,3.513414634146335,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,threshold_interaction_L,median,0.0,0.0,0.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,threshold_interaction_L,p90,12.0,6.0,12.0,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,threshold_interaction_L,p95,12.0,12.0,45.599999999999795,123,h,2000,2000,20260920,distribution of within-SID difference
+six_common_multi,quantile_F_minus_U,mean,36.19512195121952,30.146341463414636,43.414634146341456,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_F_minus_U,median,30.0,24.0,36.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_F_minus_U,p90,46.79999999999998,34.79999999999998,82.79999999999998,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_F_minus_U,p95,78.0,41.39999999999995,105.5999999999998,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_U_minus_R,mean,16.29268292682927,14.14512195121951,18.390243902439025,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_U_minus_R,median,12.0,12.0,18.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_U_minus_R,p90,25.200000000000017,18.0,36.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_U_minus_R,p95,24.60000000000005,12.0,36.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_U_minus_R_long,mean,13.073170731707314,11.560975609756095,14.585365853658534,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_U_minus_R_long,median,12.0,6.0,18.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_U_minus_R_long,p90,24.0,18.0,30.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_multi,quantile_U_minus_R_long,p95,18.60000000000005,12.0,30.0,123,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,R,mean,19.358592692828147,18.795669824086602,19.989174560216508,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R,median,18.0,18.0,18.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R,p90,36.0,36.0,36.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R,p95,42.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,U,mean,19.358592692828147,18.795669824086602,19.989174560216508,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,U,median,18.0,18.0,18.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,U,p90,36.0,36.0,36.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,U,p95,42.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,F,mean,19.358592692828147,18.795669824086602,19.989174560216508,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,F,median,18.0,18.0,18.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,F,p90,36.0,36.0,36.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,F,p95,42.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,L,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,L,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,L,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,L,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,B,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,B,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,B,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,B,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R_long,mean,19.358592692828147,18.795669824086602,19.989174560216508,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R_long,median,18.0,18.0,18.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R_long,p90,36.0,36.0,36.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R_long,p95,42.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R5,mean,25.079837618403246,24.479025710419485,25.67801082543978,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R5,median,24.0,24.0,24.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R5,p90,42.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,R5,p95,54.0,48.0,54.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,U5,mean,25.415426251691475,24.80913396481732,26.035182679296348,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,U5,median,24.0,24.0,24.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,U5,p90,48.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,U5,p95,54.0,54.0,60.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,F5,mean,26.20297699594046,25.477604871447905,26.917658998646818,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,F5,median,24.0,24.0,24.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,F5,p90,48.0,42.0,48.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,F5,p95,60.0,54.0,60.0,2217,h,2000,2000,20260920,distribution of SID duration
+six_common_nonmulti,F_minus_R,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F_minus_R,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F_minus_R,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F_minus_R,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U_minus_R_long,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U_minus_R_long,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U_minus_R_long,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U_minus_R_long,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F_minus_R_long,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F_minus_R_long,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F_minus_R_long,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F_minus_R_long,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U5_minus_R5,mean,0.33558863328822736,0.22185385656292286,0.476319350473613,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U5_minus_R5,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U5_minus_R5,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U5_minus_R5,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_U5,mean,0.7875507442489851,0.5142083897158322,1.0933694181326117,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_U5,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_U5,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_U5,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_R5,mean,1.1231393775372125,0.7658322056833559,1.510148849797023,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_R5,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_R5,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_R5,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,R5_minus_R90,mean,5.7212449255751014,5.2124492557510145,6.208457374830852,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,R5_minus_R90,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,R5_minus_R90,p90,18.0,18.0,24.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,R5_minus_R90,p95,30.0,24.0,30.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U5_minus_U90,mean,6.056833558863329,5.566982408660352,6.533220568335588,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U5_minus_U90,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U5_minus_U90,p90,18.0,18.0,24.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,U5_minus_U90,p95,30.0,24.0,30.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_F90,mean,6.844384303112314,6.238092016238159,7.426387009472259,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_F90,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_F90,p90,24.0,18.0,24.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,F5_minus_F90,p95,30.0,30.0,36.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,threshold_interaction_B,mean,0.7875507442489851,0.5142083897158322,1.0933694181326117,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,threshold_interaction_B,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,threshold_interaction_B,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,threshold_interaction_B,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,threshold_interaction_L,mean,0.33558863328822736,0.22185385656292286,0.476319350473613,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,threshold_interaction_L,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,threshold_interaction_L,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,threshold_interaction_L,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,distribution of within-SID difference
+six_common_nonmulti,quantile_F_minus_U,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_F_minus_U,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_F_minus_U,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_F_minus_U,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_U_minus_R,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_U_minus_R,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_U_minus_R,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_U_minus_R,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_U_minus_R_long,mean,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_U_minus_R_long,median,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_U_minus_R_long,p90,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+six_common_nonmulti,quantile_U_minus_R_long,p95,0.0,0.0,0.0,2217,h,2000,2000,20260920,difference of marginal duration distribution statistics; paired SID draw
+exclude_single_6h,R,mean,19.432173913043478,18.886891304347824,20.027021739130433,2300,h,2000,2000,20260920,distribution of SID duration
+exclude_single_6h,U,mean,20.19913043478261,19.591239130434783,20.835847826086955,2300,h,2000,2000,20260920,distribution of SID duration
+exclude_single_6h,F,mean,21.563478260869566,20.736391304347826,22.382608695652173,2300,h,2000,2000,20260920,distribution of SID duration
+exclude_single_6h,L,mean,0.7669565217391304,0.5895652173913043,0.9626086956521739,2300,h,2000,2000,20260920,distribution of SID duration
+exclude_single_6h,B,mean,1.3643478260869566,0.9521086956521739,1.833913043478261,2300,h,2000,2000,20260920,distribution of SID duration
+exclude_single_6h,R_long,mean,19.604347826086958,19.04863043478261,20.201804347826084,2300,h,2000,2000,20260920,distribution of SID duration
+exclude_single_6h,F_minus_R,mean,2.131304347826087,1.5834782608695652,2.739260869565217,2300,h,2000,2000,20260920,distribution of within-SID difference
+exclude_single_6h,U_minus_R_long,mean,0.5947826086956521,0.4591304347826087,0.7408695652173913,2300,h,2000,2000,20260920,distribution of within-SID difference
+exclude_single_6h,F_minus_R_long,mean,1.9591304347826086,1.44,2.5331086956521736,2300,h,2000,2000,20260920,distribution of within-SID difference
+strict_bridge_tropical,R,mean,19.418554938007695,18.861778537836685,20.029136383069687,2339,h,2000,2000,20260920,distribution of SID duration
+strict_bridge_tropical,U,mean,20.249679350149638,19.646793501496365,20.873022659256094,2339,h,2000,2000,20260920,distribution of SID duration
+strict_bridge_tropical,F,mean,22.08636169303121,21.27563061137238,22.935506626763576,2339,h,2000,2000,20260920,distribution of SID duration
+strict_bridge_tropical,L,mean,0.831124412141941,0.6643864899529713,1.013253527148354,2339,h,2000,2000,20260920,distribution of SID duration
+strict_bridge_tropical,B,mean,1.8366823428815733,1.4159897392047884,2.3009833262077812,2339,h,2000,2000,20260920,distribution of SID duration
+strict_bridge_tropical,R_long,mean,19.57246686618213,19.020820863616933,20.17272338606242,2339,h,2000,2000,20260920,distribution of SID duration
+strict_bridge_tropical,F_minus_R,mean,2.6678067550235145,2.121355280034203,3.24497648567764,2339,h,2000,2000,20260920,distribution of within-SID difference
+strict_bridge_tropical,U_minus_R_long,mean,0.6772124839675074,0.5412569474134246,0.8132321504916628,2339,h,2000,2000,20260920,distribution of within-SID difference
+strict_bridge_tropical,F_minus_R_long,mean,2.513894826849081,1.990594271056007,3.065476699444207,2339,h,2000,2000,20260920,distribution of within-SID difference
+without_Halola,R,mean,19.418554938007695,18.861778537836685,20.029136383069687,2339,h,2000,2000,20260920,distribution of SID duration
+without_Halola,U,mean,20.249679350149638,19.646793501496365,20.873022659256094,2339,h,2000,2000,20260920,distribution of SID duration
+without_Halola,F,mean,22.08636169303121,21.27563061137238,22.935506626763576,2339,h,2000,2000,20260920,distribution of SID duration
+without_Halola,L,mean,0.831124412141941,0.6643864899529713,1.013253527148354,2339,h,2000,2000,20260920,distribution of SID duration
+without_Halola,B,mean,1.8366823428815733,1.4159897392047884,2.3009833262077812,2339,h,2000,2000,20260920,distribution of SID duration
+without_Halola,R_long,mean,19.57246686618213,19.020820863616933,20.17272338606242,2339,h,2000,2000,20260920,distribution of SID duration
+without_Halola,F_minus_R,mean,2.6678067550235145,2.121355280034203,3.24497648567764,2339,h,2000,2000,20260920,distribution of within-SID difference
+without_Halola,U_minus_R_long,mean,0.6772124839675074,0.5412569474134246,0.8132321504916628,2339,h,2000,2000,20260920,distribution of within-SID difference
+without_Halola,F_minus_R_long,mean,2.513894826849081,1.990594271056007,3.065476699444207,2339,h,2000,2000,20260920,distribution of within-SID difference
+without_Freddy2023,R,mean,19.41598973920479,18.86190679777683,20.00598546387345,2339,h,2000,2000,20260920,distribution of SID duration
+without_Freddy2023,U,mean,20.2727661393758,19.664749893116717,20.90123984608807,2339,h,2000,2000,20260920,distribution of SID duration
+without_Freddy2023,F,mean,22.176143651132964,21.339888841385207,23.004702864471998,2339,h,2000,2000,20260920,distribution of SID duration
+without_Freddy2023,L,mean,0.8567764001710133,0.6848439504061565,1.0440359127832406,2339,h,2000,2000,20260920,distribution of SID duration
+without_Freddy2023,B,mean,1.9033775117571612,1.4595339888841383,2.388264215476699,2339,h,2000,2000,20260920,distribution of SID duration
+without_Freddy2023,R_long,mean,19.585292860196667,19.031145788798632,20.19330910645575,2339,h,2000,2000,20260920,distribution of SID duration
+without_Freddy2023,F_minus_R,mean,2.7601539119281746,2.1983112441214194,3.36053869174861,2339,h,2000,2000,20260920,distribution of within-SID difference
+without_Freddy2023,U_minus_R_long,mean,0.6874732791791364,0.5489525438221462,0.8209277469003844,2339,h,2000,2000,20260920,distribution of within-SID difference
+without_Freddy2023,F_minus_R_long,mean,2.5908507909362974,2.049593843522873,3.15025651988029,2339,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_WP,R,mean,18.38819095477387,17.75502512562814,19.013819095477388,1592,h,2000,2000,20260920,distribution of SID duration
+without_basin_WP,U,mean,19.258793969849247,18.561557788944725,19.92211055276382,1592,h,2000,2000,20260920,distribution of SID duration
+without_basin_WP,F,mean,21.207286432160803,20.219849246231156,22.266425879396984,1592,h,2000,2000,20260920,distribution of SID duration
+without_basin_WP,L,mean,0.8706030150753769,0.6594535175879398,1.1194409547738688,1592,h,2000,2000,20260920,distribution of SID duration
+without_basin_WP,B,mean,1.9484924623115578,1.3756281407035176,2.641959798994975,1592,h,2000,2000,20260920,distribution of SID duration
+without_basin_WP,R_long,mean,18.58040201005025,17.943373115577888,19.206124371859296,1592,h,2000,2000,20260920,distribution of SID duration
+without_basin_WP,F_minus_R,mean,2.819095477386935,2.076538944723618,3.678486180904522,1592,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_WP,U_minus_R_long,mean,0.678391959798995,0.5087939698492462,0.8555276381909548,1592,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_WP,F_minus_R_long,mean,2.6268844221105527,1.933322864321608,3.4184359296482407,1592,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_EP,R,mean,19.548387096774192,18.934773100054674,20.181601968288682,1829,h,2000,2000,20260920,distribution of SID duration
+without_basin_EP,U,mean,20.401312192454892,19.758337889557136,21.08037178786222,1829,h,2000,2000,20260920,distribution of SID duration
+without_basin_EP,F,mean,22.39912520503007,21.49034991798797,23.435839256424273,1829,h,2000,2000,20260920,distribution of SID duration
+without_basin_EP,L,mean,0.8529250956806999,0.6494532531437944,1.0662383816293053,1829,h,2000,2000,20260920,distribution of SID duration
+without_basin_EP,B,mean,1.9978130125751776,1.45981410606889,2.604702022963368,1829,h,2000,2000,20260920,distribution of SID duration
+without_basin_EP,R_long,mean,19.696008747949698,19.082476763258608,20.335702569710225,1829,h,2000,2000,20260920,distribution of SID duration
+without_basin_EP,F_minus_R,mean,2.8507381082558774,2.165117550574084,3.6020503007107703,1829,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_EP,U_minus_R_long,mean,0.7053034445051941,0.5445598687807545,0.8759704756697645,1829,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_EP,F_minus_R_long,mean,2.703116457080372,2.05686167304538,3.4149808638600327,1829,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_SI,R,mean,19.39886773031395,18.790452907874418,20.025733401955737,1943,h,2000,2000,20260920,distribution of SID duration
+without_basin_SI,U,mean,20.232629953679876,19.593180648481727,20.887287699433866,1943,h,2000,2000,20260920,distribution of SID duration
+without_basin_SI,F,mean,22.131755018013383,21.217550180133813,23.083170355120945,1943,h,2000,2000,20260920,distribution of SID duration
+without_basin_SI,L,mean,0.833762223365929,0.6361296963458569,1.0406587750900669,1943,h,2000,2000,20260920,distribution of SID duration
+without_basin_SI,B,mean,1.899125064333505,1.386515697375193,2.4611425630468347,1943,h,2000,2000,20260920,distribution of SID duration
+without_basin_SI,R_long,mean,19.57179619145651,18.972568193515183,20.20174987133299,1943,h,2000,2000,20260920,distribution of SID duration
+without_basin_SI,F_minus_R,mean,2.732887287699434,2.0748327328872875,3.443129181677818,1943,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_SI,U_minus_R_long,mean,0.660833762223366,0.5156973751930005,0.8183221821924859,1943,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_SI,F_minus_R_long,mean,2.559958826556871,1.926762738033968,3.233221821924858,1943,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_NA,R,mean,19.87180771156735,19.27090635953931,20.487731597396095,1997,h,2000,2000,20260920,distribution of SID duration
+without_basin_NA,U,mean,20.652979469203807,20.024887330996496,21.320055082623934,1997,h,2000,2000,20260920,distribution of SID duration
+without_basin_NA,F,mean,22.374561842764145,21.521281922884327,23.24594391587381,1997,h,2000,2000,20260920,distribution of SID duration
+without_basin_NA,L,mean,0.7811717576364546,0.6008262393590386,0.9584376564847271,1997,h,2000,2000,20260920,distribution of SID duration
+without_basin_NA,B,mean,1.7215823735603406,1.2617426139208814,2.2324236354531797,1997,h,2000,2000,20260920,distribution of SID duration
+without_basin_NA,R_long,mean,20.019028542814223,19.42391086629945,20.62616424636955,1997,h,2000,2000,20260920,distribution of SID duration
+without_basin_NA,F_minus_R,mean,2.502754131196795,1.9168002003004507,3.1608162243365046,1997,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_NA,U_minus_R_long,mean,0.6339509263895844,0.4987481221832749,0.7751627441161743,1997,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_NA,F_minus_R_long,mean,2.3555332999499248,1.799699549323986,2.9744616925388083,1997,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_SP,R,mean,19.51002865329513,18.92256446991404,20.123352435530084,2094,h,2000,2000,20260920,distribution of SID duration
+without_basin_SP,U,mean,20.429799426934096,19.79656160458453,21.07163323782235,2094,h,2000,2000,20260920,distribution of SID duration
+without_basin_SP,F,mean,22.32951289398281,21.45272206303725,23.19204871060172,2094,h,2000,2000,20260920,distribution of SID duration
+without_basin_SP,L,mean,0.9197707736389685,0.7248567335243553,1.1174785100286533,2094,h,2000,2000,20260920,distribution of SID duration
+without_basin_SP,B,mean,1.8997134670487106,1.4669770773638968,2.35243553008596,2094,h,2000,2000,20260920,distribution of SID duration
+without_basin_SP,R_long,mean,19.696275071633238,19.106017191977077,20.318051575931232,2094,h,2000,2000,20260920,distribution of SID duration
+without_basin_SP,F_minus_R,mean,2.819484240687679,2.2176934097421204,3.438467048710601,2094,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_SP,U_minus_R_long,mean,0.7335243553008596,0.5816618911174785,0.8911174785100286,2094,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_SP,F_minus_R_long,mean,2.63323782234957,2.0830229226361032,3.2149713467048704,2094,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_NI,R,mean,19.582182628062363,19.00750556792873,20.164944320712696,2245,h,2000,2000,20260920,distribution of SID duration
+without_basin_NI,U,mean,20.45879732739421,19.846703786191537,21.084253897550113,2245,h,2000,2000,20260920,distribution of SID duration
+without_basin_NI,F,mean,22.417817371937637,21.591915367483296,23.28380846325167,2245,h,2000,2000,20260920,distribution of SID duration
+without_basin_NI,L,mean,0.8766146993318485,0.6975501113585746,1.0717817371937637,2245,h,2000,2000,20260920,distribution of SID duration
+without_basin_NI,B,mean,1.9590200445434298,1.4859688195991092,2.4883296213808457,2245,h,2000,2000,20260920,distribution of SID duration
+without_basin_NI,R_long,mean,19.7532293986637,19.162516703786192,20.327906458797326,2245,h,2000,2000,20260920,distribution of SID duration
+without_basin_NI,F_minus_R,mean,2.8356347438752785,2.228953229398664,3.4905567928730505,2245,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_NI,U_minus_R_long,mean,0.7055679287305122,0.5692650334075724,0.8552338530066815,2245,h,2000,2000,20260920,distribution of within-SID difference
+without_basin_NI,F_minus_R_long,mean,2.664587973273942,2.087305122494432,3.2953897550111355,2245,h,2000,2000,20260920,distribution of within-SID difference
+beta085_available,R,mean,24.471446972949764,23.7963503649635,25.162000858737652,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_available,U,mean,25.574066122799486,24.85523829969944,26.285229712322884,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_available,F,mean,27.820523829969943,26.8929583512237,28.755817947617,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_available,L,mean,1.1026191498497209,0.8836410476599399,1.347359381708888,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_available,B,mean,2.2464577071704595,1.736303134392443,2.759188492915414,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_available,R_long,mean,24.677544010304853,23.994847574066124,25.373121511378272,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_available,F_minus_R,mean,3.3490768570201803,2.681708887934736,4.042142550450837,2329,h,2000,2000,20260920,distribution of within-SID difference
+beta085_available,U_minus_R_long,mean,0.8965221124946329,0.7341562902533275,1.0614641477028766,2329,h,2000,2000,20260920,distribution of within-SID difference
+beta085_available,F_minus_R_long,mean,3.142979819665092,2.511743237440962,3.7742164018892224,2329,h,2000,2000,20260920,distribution of within-SID difference
+beta085_common,R,mean,24.471446972949764,23.7963503649635,25.162000858737652,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_common,U,mean,25.574066122799486,24.85523829969944,26.285229712322884,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_common,F,mean,27.820523829969943,26.8929583512237,28.755817947617,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_common,L,mean,1.1026191498497209,0.8836410476599399,1.347359381708888,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_common,B,mean,2.2464577071704595,1.736303134392443,2.759188492915414,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_common,R_long,mean,24.677544010304853,23.994847574066124,25.373121511378272,2329,h,2000,2000,20260920,distribution of SID duration
+beta085_common,F_minus_R,mean,3.3490768570201803,2.681708887934736,4.042142550450837,2329,h,2000,2000,20260920,distribution of within-SID difference
+beta085_common,U_minus_R_long,mean,0.8965221124946329,0.7341562902533275,1.0614641477028766,2329,h,2000,2000,20260920,distribution of within-SID difference
+beta085_common,F_minus_R_long,mean,3.142979819665092,2.511743237440962,3.7742164018892224,2329,h,2000,2000,20260920,distribution of within-SID difference
+main_for_beta085,R,mean,19.465865178188064,18.92215543151567,20.043001288106485,2329,h,2000,2000,20260920,distribution of SID duration
+main_for_beta085,U,mean,20.326320309145554,19.73887934735938,20.93443537999141,2329,h,2000,2000,20260920,distribution of SID duration
+main_for_beta085,F,mean,22.237870330613998,21.431386861313868,23.098389866895666,2329,h,2000,2000,20260920,distribution of SID duration
+main_for_beta085,L,mean,0.8604551309574925,0.6852726492056677,1.051094890510949,2329,h,2000,2000,20260920,distribution of SID duration
+main_for_beta085,B,mean,1.9115500214684413,1.4529197080291971,2.3752683555173895,2329,h,2000,2000,20260920,distribution of SID duration
+main_for_beta085,R_long,mean,19.63589523400601,19.076857020180334,20.223336195792186,2329,h,2000,2000,20260920,distribution of SID duration
+main_for_beta085,F_minus_R,mean,2.7720051524259337,2.1768999570631173,3.372327179046801,2329,h,2000,2000,20260920,distribution of within-SID difference
+main_for_beta085,U_minus_R_long,mean,0.6904250751395449,0.5538213825676256,0.8398454272219836,2329,h,2000,2000,20260920,distribution of within-SID difference
+main_for_beta085,F_minus_R_long,mean,2.6019750966079864,2.0402318591670245,3.1610777157578354,2329,h,2000,2000,20260920,distribution of within-SID difference
+beta095_available,R,mean,14.24102564102564,13.83326923076923,14.666666666666666,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_available,U,mean,14.905128205128205,14.440897435897437,15.37698717948718,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_available,F,mean,16.546153846153846,15.843525641025641,17.28974358974359,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_available,L,mean,0.6641025641025641,0.5128205128205128,0.8461538461538461,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_available,B,mean,1.641025641025641,1.2307692307692308,2.1333974358974355,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_available,R_long,mean,14.4,13.976858974358974,14.823141025641027,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_available,F_minus_R,mean,2.305128205128205,1.7921794871794872,2.91801282051282,2340,h,2000,2000,20260920,distribution of within-SID difference
+beta095_available,U_minus_R_long,mean,0.5051282051282051,0.39487179487179486,0.6358974358974359,2340,h,2000,2000,20260920,distribution of within-SID difference
+beta095_available,F_minus_R_long,mean,2.146153846153846,1.6666025641025641,2.7154487179487177,2340,h,2000,2000,20260920,distribution of within-SID difference
+beta095_common,R,mean,14.24102564102564,13.83326923076923,14.666666666666666,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_common,U,mean,14.905128205128205,14.440897435897437,15.37698717948718,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_common,F,mean,16.546153846153846,15.843525641025641,17.28974358974359,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_common,L,mean,0.6641025641025641,0.5128205128205128,0.8461538461538461,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_common,B,mean,1.641025641025641,1.2307692307692308,2.1333974358974355,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_common,R_long,mean,14.4,13.976858974358974,14.823141025641027,2340,h,2000,2000,20260920,distribution of SID duration
+beta095_common,F_minus_R,mean,2.305128205128205,1.7921794871794872,2.91801282051282,2340,h,2000,2000,20260920,distribution of within-SID difference
+beta095_common,U_minus_R_long,mean,0.5051282051282051,0.39487179487179486,0.6358974358974359,2340,h,2000,2000,20260920,distribution of within-SID difference
+beta095_common,F_minus_R_long,mean,2.146153846153846,1.6666025641025641,2.7154487179487177,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_for_beta095,R,mean,19.42051282051282,18.838397435897434,20.010320512820513,2340,h,2000,2000,20260920,distribution of SID duration
+main_for_beta095,U,mean,20.276923076923076,19.653589743589745,20.91025641025641,2340,h,2000,2000,20260920,distribution of SID duration
+main_for_beta095,F,mean,22.17948717948718,21.382051282051282,23.04897435897436,2340,h,2000,2000,20260920,distribution of SID duration
+main_for_beta095,L,mean,0.8564102564102564,0.6820512820512821,1.0462820512820505,2340,h,2000,2000,20260920,distribution of SID duration
+main_for_beta095,B,mean,1.9025641025641025,1.4691666666666667,2.3974999999999995,2340,h,2000,2000,20260920,distribution of SID duration
+main_for_beta095,R_long,mean,19.58974358974359,19.010128205128204,20.17948717948718,2340,h,2000,2000,20260920,distribution of SID duration
+main_for_beta095,F_minus_R,mean,2.758974358974359,2.1846153846153844,3.3924358974358966,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_for_beta095,U_minus_R_long,mean,0.6871794871794872,0.5538461538461539,0.8282692307692304,2340,h,2000,2000,20260920,distribution of within-SID difference
+main_for_beta095,F_minus_R_long,mean,2.58974358974359,2.063846153846154,3.1796153846153836,2340,h,2000,2000,20260920,distribution of within-SID difference

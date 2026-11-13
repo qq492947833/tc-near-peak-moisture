@@ -1,0 +1,14 @@
+{
+  "states": {
+    "relative_path": "inputs/RISE_MOISTURE_PROCESS_states_source.csv",
+    "sha256": "eacbc04bc376a19040c66afc59edbeb39d16ed2c26f518267936ecb939729a2b",
+    "original_path": "RISE_MOISTURE_PROCESS_states_source.csv",
+    "bytes": 13177
+  },
+  "integrals": {
+    "relative_path": "inputs/RISE_MOISTURE_PROCESS_integrals_source.csv",
+    "sha256": "6c4cffaa4d2f30ef27963c457580e1e638d15f0356cc8a1d550b05cef9adfa05",
+    "original_path": "RISE_MOISTURE_PROCESS_integrals_source.csv",
+    "bytes": 1135
+  }
+}

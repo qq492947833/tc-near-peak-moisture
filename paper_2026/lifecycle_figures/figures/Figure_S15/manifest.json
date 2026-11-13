@@ -1,0 +1,542 @@
+{
+  "figure_id": "Figure_05",
+  "type": "main",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a0",
+      "input_files": [
+        "inputs/direct/fig6_regions.csv"
+      ],
+      "fields": {
+        "direct/fig6_regions.csv": [
+          "region",
+          "sector",
+          "field",
+          "units",
+          "estimand",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "pre = d[d.sector.eq('whole') & d.estimand.eq('pre_mean') & d.field.isin(['q700_raw_common', 'q700_climatology', 'q700_anomaly'])]",
+        "z = d[d.sector.eq('whole') & d.estimand.eq('integral_0_24') & d.field.isin(cats)]",
+        "q = pre[pre.field.eq(field)].set_index('region').loc[regions]"
+      ],
+      "sample_scope": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": "Observed"
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "weights": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/fig6_regions.csv": "77c6f12c3be9405a26014907570fb7fa190b7ac2ee02436537ad23b611093ec7"
+        },
+        "original_plot_source": "main1_6.py",
+        "original_plot_source_sha256": "631da5535a02129d2b82af69670a49c413776f12c6b07362f6f511b3c62aa8d0"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "Uniform colours encode the two actual saved annular averages; actual 100/300/800 km radial geometry; transform=identity",
+          "source_key": "direct/fig6_regions.csv",
+          "fields": [
+            "region",
+            "sector",
+            "field",
+            "units",
+            "estimand",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "05cd36ceaf6cd35a9dedaf3556c71ba49d2eaf5b1a7650c798f7c4314a115e64"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "a1",
+      "input_files": [
+        "inputs/direct/fig6_regions.csv"
+      ],
+      "fields": {
+        "direct/fig6_regions.csv": [
+          "region",
+          "sector",
+          "field",
+          "units",
+          "estimand",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "pre = d[d.sector.eq('whole') & d.estimand.eq('pre_mean') & d.field.isin(['q700_raw_common', 'q700_climatology', 'q700_anomaly'])]",
+        "z = d[d.sector.eq('whole') & d.estimand.eq('integral_0_24') & d.field.isin(cats)]",
+        "q = pre[pre.field.eq(field)].set_index('region').loc[regions]"
+      ],
+      "sample_scope": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": "Background"
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "weights": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/fig6_regions.csv": "77c6f12c3be9405a26014907570fb7fa190b7ac2ee02436537ad23b611093ec7"
+        },
+        "original_plot_source": "main1_6.py",
+        "original_plot_source_sha256": "631da5535a02129d2b82af69670a49c413776f12c6b07362f6f511b3c62aa8d0"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "Uniform colours encode the two actual saved annular averages; actual 100/300/800 km radial geometry; transform=identity",
+          "source_key": "direct/fig6_regions.csv",
+          "fields": [
+            "region",
+            "sector",
+            "field",
+            "units",
+            "estimand",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "05cd36ceaf6cd35a9dedaf3556c71ba49d2eaf5b1a7650c798f7c4314a115e64"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "a2",
+      "input_files": [
+        "inputs/direct/fig6_regions.csv"
+      ],
+      "fields": {
+        "direct/fig6_regions.csv": [
+          "region",
+          "sector",
+          "field",
+          "units",
+          "estimand",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "pre = d[d.sector.eq('whole') & d.estimand.eq('pre_mean') & d.field.isin(['q700_raw_common', 'q700_climatology', 'q700_anomaly'])]",
+        "z = d[d.sector.eq('whole') & d.estimand.eq('integral_0_24') & d.field.isin(cats)]",
+        "q = pre[pre.field.eq(field)].set_index('region').loc[regions]"
+      ],
+      "sample_scope": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": "Anomaly"
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "weights": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/fig6_regions.csv": "77c6f12c3be9405a26014907570fb7fa190b7ac2ee02436537ad23b611093ec7"
+        },
+        "original_plot_source": "main1_6.py",
+        "original_plot_source_sha256": "631da5535a02129d2b82af69670a49c413776f12c6b07362f6f511b3c62aa8d0"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "Uniform colours encode the two actual saved annular averages; actual 100/300/800 km radial geometry; transform=identity",
+          "source_key": "direct/fig6_regions.csv",
+          "fields": [
+            "region",
+            "sector",
+            "field",
+            "units",
+            "estimand",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "05cd36ceaf6cd35a9dedaf3556c71ba49d2eaf5b1a7650c798f7c4314a115e64"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/direct/fig6_regions.csv"
+      ],
+      "fields": {
+        "direct/fig6_regions.csv": [
+          "region",
+          "sector",
+          "field",
+          "units",
+          "estimand",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "pre = d[d.sector.eq('whole') & d.estimand.eq('pre_mean') & d.field.isin(['q700_raw_common', 'q700_climatology', 'q700_anomaly'])]",
+        "z = d[d.sector.eq('whole') & d.estimand.eq('integral_0_24') & d.field.isin(cats)]",
+        "q = pre[pre.field.eq(field)].set_index('region').loc[regions]"
+      ],
+      "sample_scope": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "weights": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "direct/fig6_regions.csv": "77c6f12c3be9405a26014907570fb7fa190b7ac2ee02436537ad23b611093ec7"
+        },
+        "original_plot_source": "main1_6.py",
+        "original_plot_source_sha256": "631da5535a02129d2b82af69670a49c413776f12c6b07362f6f511b3c62aa8d0"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "All four original terms; net = horizontal + vertical + residual; original shared budget support; transform=identity",
+          "source_key": "direct/fig6_regions.csv",
+          "fields": [
+            "region",
+            "sector",
+            "field",
+            "units",
+            "estimand",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 8,
+          "saved_selected_table": "panel_b_1.csv",
+          "sha256": "484764fd030711f24d950b37b603caee05483a048fa6bcd14345cd099f7a946c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "direct/fig6_regions.csv",
+      "relative_path": "inputs/direct/fig6_regions.csv",
+      "sha256": "77c6f12c3be9405a26014907570fb7fa190b7ac2ee02436537ad23b611093ec7",
+      "original_path": "fig6_regions.csv",
+      "bytes": 70042
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_05.png",
+      "sha256": "e0589db51aa24d1de4198d5f7377897c299f0548c41aac40e7063ea8a6560d4b"
+    },
+    "tiff": {
+      "path": "Figure_05.tiff",
+      "sha256": "86fb55f43ae41d83d02ed6a7d914bf32112b7353f7a53a627931e8703db0d249"
+    },
+    "pdf": {
+      "path": "Figure_05.pdf",
+      "sha256": "07797c5875246dcde909185e3c97e98d4e37615ca0e52822f7f000fef78e0b5f"
+    },
+    "svg": {
+      "path": "Figure_05.svg",
+      "sha256": "ef9444070f8045e07abacb1534d9b8297cea52d772e7d6d039321fbf2831ec79"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_05",
+      "returncode": 0,
+      "elapsed_s": 7.72,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 4,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 453.5433070866142
+        },
+        "panels": [
+          {
+            "id": "a0",
+            "bbox_pt": [
+              81.63779527559056,
+              288.4227946083011,
+              203.04942605065935,
+              399.1181102362205
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              61.637795275590555,
+              411.1181102362205
+            ]
+          },
+          {
+            "id": "a1",
+            "bbox_pt": [
+              222.47528697467035,
+              288.4227946083011,
+              343.88691774973915,
+              399.1181102362205
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2
+          },
+          {
+            "id": "a2",
+            "bbox_pt": [
+              363.31277867375013,
+              288.4227946083011,
+              484.72440944881896,
+              399.1181102362205
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 2,
+            "col_stop": 3
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              81.63779527559056,
+              72.5669291338583,
+              484.72440944881896,
+              183.2622447617777
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 3,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              61.637795275590555,
+              195.2622447617777
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a0",
+              "a1",
+              "a2"
+            ]
+          }
+        ],
+        "column_groups": [],
+        "boundary_groups": [
+          {
+            "id": "inferred-shared-left-1",
+            "edge": "left",
+            "panels": [
+              "a0",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-shared-right-1",
+            "edge": "right",
+            "panels": [
+              "a2",
+              "b"
+            ]
+          }
+        ],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6716052613787
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_05",
+      "source": "Figure_05.png",
+      "sha256": "e0589db51aa24d1de4198d5f7377897c299f0548c41aac40e7063ea8a6560d4b",
+      "pixels": [
+        6377,
+        5669
+      ],
+      "display_inches": [
+        6.496062992125984,
+        5.774843613298338
+      ],
+      "effective_dpi": 981.6715151515151
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Fig. 5 | Radial structure of humidity contrasts and the subsequent moisture budget. a, Temporary-minus-final contrasts in pre-event 700 hPa observed humidity, seasonal background and anomaly. Each diagram uses the actual 100, 300 and 800 km radii; uniform colour within a ring represents its saved annular mean, without resolving finer radial or azimuthal structure. b, Contrasts in the 0–24 h integrals of horizontal advection, vertical advection, the residual and moving-frame tendency for the same two annuli. The residual offsets part of the positive inner-annulus vertical-advection contrast. The budget terms retain their diagnostic accounting relationship. Colours and numbers show means; Table S5e reports all original 95% intervals and supports: 117 paired cyclones for pre-event state and 105 for the budget. Table S6b separately reports the matched 80-pair comparison.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "12a0d812e829b08f1f42b1f53555f3c03d3d5c178afe5932324f1a3f367fd5b0",
+      "run.py": "dede438679e54cbd379918431ff4475afd32fa1accfbe3de8bdf4535bb95e19a"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "status": "C_STANDARDIZATION_ESTIMATED",
+  "elapsed_seconds": 6.7761194705963135,
+  "models": [
+    {
+      "stage": "D",
+      "n_sid": 1893,
+      "complete_n": 2252,
+      "original_n": 2340,
+      "rank": 19,
+      "columns": 19,
+      "year_min_n": 31,
+      "year_max_n": 62,
+      "state": [
+        "entry_wind_kt",
+        "entry_track_lat",
+        "lon_sin_entry",
+        "lon_cos_entry",
+        "entry_land_current_v3"
+      ],
+      "excluded_constant_columns": [],
+      "entry_exposure": "fixed entry-location -24,-18,-12,-6 h; at least 3 valid; source frozen",
+      "reference": "pooled common-support distribution with equal total weight per genesis year",
+      "dynamic_D_unsupported": "prior motion/land history not defined before operational genesis"
+    },
+    {
+      "stage": "E",
+      "n_sid": 1753,
+      "complete_n": 2233,
+      "original_n": 2340,
+      "rank": 21,
+      "columns": 21,
+      "year_min_n": 28,
+      "year_max_n": 62,
+      "state": [
+        "entry_wind_kt",
+        "entry_track_lat",
+        "lon_sin_entry",
+        "lon_cos_entry",
+        "entry_land_current_v3",
+        "entry_age_h",
+        "entry_motion_ms_v3"
+      ],
+      "excluded_constant_columns": [],
+      "entry_exposure": "fixed entry-location -24,-18,-12,-6 h; at least 3 valid; source frozen",
+      "reference": "pooled common-support distribution with equal total weight per genesis year",
+      "dynamic_D_unsupported": ""
+    },
+    {
+      "stage": "F",
+      "n_sid": 1754,
+      "complete_n": 2232,
+      "original_n": 2340,
+      "rank": 21,
+      "columns": 21,
+      "year_min_n": 29,
+      "year_max_n": 56,
+      "state": [
+        "entry_wind_kt",
+        "entry_track_lat",
+        "lon_sin_entry",
+        "lon_cos_entry",
+        "entry_land_current_v3",
+        "entry_age_h",
+        "entry_motion_ms_v3"
+      ],
+      "excluded_constant_columns": [],
+      "entry_exposure": "fixed entry-location -24,-18,-12,-6 h; at least 3 valid; source frozen",
+      "reference": "pooled common-support distribution with equal total weight per genesis year",
+      "dynamic_D_unsupported": ""
+    },
+    {
+      "stage": "Res",
+      "n_sid": 1804,
+      "complete_n": 2227,
+      "original_n": 2340,
+      "rank": 21,
+      "columns": 21,
+      "year_min_n": 29,
+      "year_max_n": 57,
+      "state": [
+        "entry_wind_kt",
+        "entry_track_lat",
+        "lon_sin_entry",
+        "lon_cos_entry",
+        "entry_land_current_v3",
+        "entry_age_h",
+        "entry_motion_ms_v3"
+      ],
+      "excluded_constant_columns": [],
+      "entry_exposure": "fixed entry-location -24,-18,-12,-6 h; at least 3 valid; source frozen",
+      "reference": "pooled common-support distribution with equal total weight per genesis year",
+      "dynamic_D_unsupported": ""
+    }
+  ],
+  "bootstrap": {
+    "B": 2000,
+    "seed": 2026110903,
+    "block_years": 3,
+    "levels": "joint circular genesis-year blocks then whole SIDs within selected year",
+    "all_stage_same_draw_bank": true,
+    "overlap": "fixed four-period common marginal 1st--99th percentile intersection",
+    "failed_draws": "reported; no replacement"
+  },
+  "family_policy": "Original seven primary and 30 H4 tests untouched; four separate new families of 16,12,12,12 tests",
+  "scientific_scope": "Associational standardization in observed support; no causal mediation or explanation percentage",
+  "runtime": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]"
+}

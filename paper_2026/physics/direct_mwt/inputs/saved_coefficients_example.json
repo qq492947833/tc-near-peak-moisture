@@ -1,0 +1,38 @@
+{
+  "sid": "1982005S10105",
+  "event_id": "1982005S10105|departure|0027",
+  "event_class": "final",
+  "departure_UTC": "1982-01-15T00:00:00+00:00",
+  "selection_rule": "First lexicographically ordered frozen SID; final event; lag 0; geometric centre of fixed domain with one grid and time neighbour each side. No outcome-based location selection.",
+  "scheme": "main",
+  "N": 1024,
+  "j0": 5,
+  "j1": 8,
+  "dt_seconds": 21600,
+  "normalization": "physical",
+  "boundary": "symmetric",
+  "gamma_form": "conservative",
+  "comparison": "All 25 diagnostics, all three scale windows, each actually supported pressure level; only centre time/grid cell is compared.",
+  "scope": "Saved ERA5-derived coefficient replay only; no raw-field extraction, no full transform, no event aggregation and no group inference.",
+  "array_conventions": {
+    "coefficient__*": "window,time,pressure,latitude,longitude",
+    "expected__*": "window,pressure or window for layer-boundary input"
+  },
+  "source_h5_sha256_recorded_at_original_completion": "dad97648ca507e070d6b98c171d328adb7df111fb09115acf6c9a8707180f367",
+  "source_h5_bytes": 2802169607,
+  "source_receipt_sha256": "b20bff582da9496dd70d0a7b478319e13ce02090cb1a3b18ca547d44fb46fd9d",
+  "source_operator_sha256": "3933b4cf235faed44db65559f7efb20f3b54a27f4456fcb392a33d4abe6c171e",
+  "source_function_sha256": {
+    "MWT.py": "70b8f337bb10ec669263b2d784246fbcbb66f3e6eb5e35c4d44a8b9c5bed978c",
+    "MWT_Prepare_Direct.py": "e0a324cecd6db261f244d5f043f2ba5fd247c1bfde28dc8f97ae79dee26b47c5",
+    "MWT_Apply_Operator.py": "4ddab6bb236acfcc49355260a8619e6508031a4920705c19812aa4ec5fe0f86d",
+    "MWT_Atmosphere_Direct.py": "2bf2081ff34f9dc7439c649a580f1ea895857d1d0cda83f3a42d868040a61309",
+    "MWT_Apply_Increment.py": "ded98c370771cf29bf845358b400a4cfb1192c880d781418d7eda807ff451c35"
+  },
+  "source_geometric_grid_index": [
+    42,
+    55
+  ],
+  "source_selected_time_index": 11,
+  "local_replay_is_not_independent_physical_validation": true
+}

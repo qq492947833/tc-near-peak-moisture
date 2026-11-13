@@ -1,0 +1,1382 @@
+{
+  "figure_id": "Figure_S07",
+  "type": "supplementary",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\b71de6cef6_FP0059.csv"
+      ],
+      "fields": [
+        "basin",
+        "group",
+        "n_sid",
+        "count",
+        "fraction"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'a', groups, 'recurrence')",
+        "entry_function": "s4",
+        "selected_rows": "panels\\00_a_recurrence.csv",
+        "selected_rows_sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36"
+      },
+      "sample_scope": {
+        "n_sid": [
+          511,
+          343,
+          95,
+          397,
+          246,
+          748
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "normalization": {
+        "executed_entry": "s4",
+        "role": "recurrence",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "difference_direction": {
+        "role": "recurrence",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/b71de6cef6_FP0059.csv",
+            "sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36",
+            "original_path": "FP0059.csv",
+            "logical_keys": [
+              "FP0059"
+            ]
+          },
+          {
+            "relative_path": "inputs/dba3d75863_FP0065.csv",
+            "sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b",
+            "original_path": "FP0065.csv",
+            "logical_keys": [
+              "FP0065"
+            ]
+          },
+          {
+            "relative_path": "inputs/d4ba662878_FP0066.csv",
+            "sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc",
+            "original_path": "FP0066.csv",
+            "logical_keys": [
+              "FP0066"
+            ]
+          },
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0238"
+            ]
+          },
+          {
+            "relative_path": "inputs/74fcbbd46b_annual_slopes.csv",
+            "sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+            "original_path": "annual_slopes.csv",
+            "logical_keys": [
+              "FP0240"
+            ]
+          },
+          {
+            "relative_path": "inputs/0fceed2577_leave_one_sid_influence.csv",
+            "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e",
+            "original_path": "leave_one_sid_influence.csv",
+            "logical_keys": [
+              "FP0242"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\dba3d75863_FP0065.csv"
+      ],
+      "fields": [
+        "near_lmi_episode_count",
+        "count"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'b', counts, 'episodes')",
+        "entry_function": "s4",
+        "selected_rows": "panels\\01_b_episodes.csv",
+        "selected_rows_sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "normalization": {
+        "executed_entry": "s4",
+        "role": "episodes",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "difference_direction": {
+        "role": "episodes",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/b71de6cef6_FP0059.csv",
+            "sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36",
+            "original_path": "FP0059.csv",
+            "logical_keys": [
+              "FP0059"
+            ]
+          },
+          {
+            "relative_path": "inputs/dba3d75863_FP0065.csv",
+            "sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b",
+            "original_path": "FP0065.csv",
+            "logical_keys": [
+              "FP0065"
+            ]
+          },
+          {
+            "relative_path": "inputs/d4ba662878_FP0066.csv",
+            "sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc",
+            "original_path": "FP0066.csv",
+            "logical_keys": [
+              "FP0066"
+            ]
+          },
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0238"
+            ]
+          },
+          {
+            "relative_path": "inputs/74fcbbd46b_annual_slopes.csv",
+            "sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+            "original_path": "annual_slopes.csv",
+            "logical_keys": [
+              "FP0240"
+            ]
+          },
+          {
+            "relative_path": "inputs/0fceed2577_leave_one_sid_influence.csv",
+            "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e",
+            "original_path": "leave_one_sid_influence.csv",
+            "logical_keys": [
+              "FP0242"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\d4ba662878_FP0066.csv"
+      ],
+      "fields": [
+        "reintensification_event_count",
+        "count"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'b', rcounts, 'reintensifications')",
+        "entry_function": "s4",
+        "selected_rows": "panels\\02_b_reintensifications.csv",
+        "selected_rows_sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "normalization": {
+        "executed_entry": "s4",
+        "role": "reintensifications",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "difference_direction": {
+        "role": "reintensifications",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/b71de6cef6_FP0059.csv",
+            "sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36",
+            "original_path": "FP0059.csv",
+            "logical_keys": [
+              "FP0059"
+            ]
+          },
+          {
+            "relative_path": "inputs/dba3d75863_FP0065.csv",
+            "sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b",
+            "original_path": "FP0065.csv",
+            "logical_keys": [
+              "FP0065"
+            ]
+          },
+          {
+            "relative_path": "inputs/d4ba662878_FP0066.csv",
+            "sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc",
+            "original_path": "FP0066.csv",
+            "logical_keys": [
+              "FP0066"
+            ]
+          },
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0238"
+            ]
+          },
+          {
+            "relative_path": "inputs/74fcbbd46b_annual_slopes.csv",
+            "sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+            "original_path": "annual_slopes.csv",
+            "logical_keys": [
+              "FP0240"
+            ]
+          },
+          {
+            "relative_path": "inputs/0fceed2577_leave_one_sid_influence.csv",
+            "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e",
+            "original_path": "leave_one_sid_influence.csv",
+            "logical_keys": [
+              "FP0242"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs\\53a55f6d6e_duration_summaries.csv"
+      ],
+      "fields": [
+        "scope",
+        "metric",
+        "statistic",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "n_sid",
+        "unit",
+        "B_planned",
+        "B_valid",
+        "seed",
+        "estimand"
+      ],
+      "filter": {
+        "executed_code": "q = table(name, 'c', dur[dur.scope.isin(SCOPES) & dur.metric.eq('B') & dur.statistic.eq('mean')].set_index('scope').loc[SCOPES].reset_index(), 'scope_duration')",
+        "entry_function": "s4",
+        "selected_rows": "panels\\03_c_scope_duration.csv",
+        "selected_rows_sha256": "d045259c1db00f1a11e4e36319767736f36cb0e6564c3836f51ec30e6f58061d"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2340,
+          2300,
+          2339,
+          1592,
+          1829,
+          1943,
+          1997,
+          2094,
+          2245
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "normalization": {
+        "executed_entry": "s4",
+        "role": "scope_duration",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "difference_direction": {
+        "role": "scope_duration",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high"
+        ],
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/b71de6cef6_FP0059.csv",
+            "sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36",
+            "original_path": "FP0059.csv",
+            "logical_keys": [
+              "FP0059"
+            ]
+          },
+          {
+            "relative_path": "inputs/dba3d75863_FP0065.csv",
+            "sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b",
+            "original_path": "FP0065.csv",
+            "logical_keys": [
+              "FP0065"
+            ]
+          },
+          {
+            "relative_path": "inputs/d4ba662878_FP0066.csv",
+            "sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc",
+            "original_path": "FP0066.csv",
+            "logical_keys": [
+              "FP0066"
+            ]
+          },
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0238"
+            ]
+          },
+          {
+            "relative_path": "inputs/74fcbbd46b_annual_slopes.csv",
+            "sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+            "original_path": "annual_slopes.csv",
+            "logical_keys": [
+              "FP0240"
+            ]
+          },
+          {
+            "relative_path": "inputs/0fceed2577_leave_one_sid_influence.csv",
+            "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e",
+            "original_path": "leave_one_sid_influence.csv",
+            "logical_keys": [
+              "FP0242"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "d045259c1db00f1a11e4e36319767736f36cb0e6564c3836f51ec30e6f58061d"
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs\\74fcbbd46b_annual_slopes.csv"
+      ],
+      "fields": [
+        "scope",
+        "metric",
+        "estimate",
+        "se",
+        "ci_low",
+        "ci_high",
+        "p",
+        "q",
+        "n_sid",
+        "n_year",
+        "rank",
+        "df",
+        "HAC_lag",
+        "finite_sample_correction",
+        "reference",
+        "unit",
+        "family"
+      ],
+      "filter": {
+        "executed_code": "q = table(name, 'd', tr[tr.scope.isin(SCOPES) & tr.metric.isin(['L', 'B'])], 'scope_trends')",
+        "entry_function": "s4",
+        "selected_rows": "panels\\04_d_scope_trends.csv",
+        "selected_rows_sha256": "25669366e9d741fbe6778fe031e12aa0711a653eb6c9d541d3b41494d2044709"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2340,
+          2300,
+          2339,
+          1592,
+          1829,
+          1943,
+          1997,
+          2094,
+          2245
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "normalization": {
+        "executed_entry": "s4",
+        "role": "scope_trends",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "difference_direction": {
+        "role": "scope_trends",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high"
+        ],
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/b71de6cef6_FP0059.csv",
+            "sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36",
+            "original_path": "FP0059.csv",
+            "logical_keys": [
+              "FP0059"
+            ]
+          },
+          {
+            "relative_path": "inputs/dba3d75863_FP0065.csv",
+            "sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b",
+            "original_path": "FP0065.csv",
+            "logical_keys": [
+              "FP0065"
+            ]
+          },
+          {
+            "relative_path": "inputs/d4ba662878_FP0066.csv",
+            "sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc",
+            "original_path": "FP0066.csv",
+            "logical_keys": [
+              "FP0066"
+            ]
+          },
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0238"
+            ]
+          },
+          {
+            "relative_path": "inputs/74fcbbd46b_annual_slopes.csv",
+            "sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+            "original_path": "annual_slopes.csv",
+            "logical_keys": [
+              "FP0240"
+            ]
+          },
+          {
+            "relative_path": "inputs/0fceed2577_leave_one_sid_influence.csv",
+            "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e",
+            "original_path": "leave_one_sid_influence.csv",
+            "logical_keys": [
+              "FP0242"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "25669366e9d741fbe6778fe031e12aa0711a653eb6c9d541d3b41494d2044709"
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs\\0fceed2577_leave_one_sid_influence.csv"
+      ],
+      "fields": [
+        "deleted_sid",
+        "deleted_name",
+        "deleted_basin",
+        "variable",
+        "contrast",
+        "estimate",
+        "change_from_main",
+        "estimate_sd",
+        "change_from_main_sd",
+        "n_remaining",
+        "deleted_was_environment_eligible",
+        "unit"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'e_f', loo, 'all_deletion_values')",
+        "entry_function": "s4",
+        "selected_rows": "panels\\05_e_f_all_deletion_values.csv",
+        "selected_rows_sha256": "96d31b84396c445d62a1a091c82417f2ac6b679b29fcdd6d114bb65362d4c9df"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "normalization": {
+        "executed_entry": "s4",
+        "role": "all_deletion_values",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "difference_direction": {
+        "role": "all_deletion_values",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/b71de6cef6_FP0059.csv",
+            "sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36",
+            "original_path": "FP0059.csv",
+            "logical_keys": [
+              "FP0059"
+            ]
+          },
+          {
+            "relative_path": "inputs/dba3d75863_FP0065.csv",
+            "sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b",
+            "original_path": "FP0065.csv",
+            "logical_keys": [
+              "FP0065"
+            ]
+          },
+          {
+            "relative_path": "inputs/d4ba662878_FP0066.csv",
+            "sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc",
+            "original_path": "FP0066.csv",
+            "logical_keys": [
+              "FP0066"
+            ]
+          },
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0238"
+            ]
+          },
+          {
+            "relative_path": "inputs/74fcbbd46b_annual_slopes.csv",
+            "sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+            "original_path": "annual_slopes.csv",
+            "logical_keys": [
+              "FP0240"
+            ]
+          },
+          {
+            "relative_path": "inputs/0fceed2577_leave_one_sid_influence.csv",
+            "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e",
+            "original_path": "leave_one_sid_influence.csv",
+            "logical_keys": [
+              "FP0242"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "96d31b84396c445d62a1a091c82417f2ac6b679b29fcdd6d114bb65362d4c9df"
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs\\0fceed2577_leave_one_sid_influence.csv"
+      ],
+      "fields": [
+        "deleted_sid",
+        "deleted_name",
+        "deleted_basin",
+        "variable",
+        "contrast",
+        "estimate",
+        "change_from_main",
+        "estimate_sd",
+        "change_from_main_sd",
+        "n_remaining",
+        "deleted_was_environment_eligible",
+        "unit"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'e_f', loo, 'all_deletion_values')",
+        "entry_function": "s4",
+        "selected_rows": "panels\\05_e_f_all_deletion_values.csv",
+        "selected_rows_sha256": "96d31b84396c445d62a1a091c82417f2ac6b679b29fcdd6d114bb65362d4c9df"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "normalization": {
+        "executed_entry": "s4",
+        "role": "all_deletion_values",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "difference_direction": {
+        "role": "all_deletion_values",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/b71de6cef6_FP0059.csv",
+            "sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36",
+            "original_path": "FP0059.csv",
+            "logical_keys": [
+              "FP0059"
+            ]
+          },
+          {
+            "relative_path": "inputs/dba3d75863_FP0065.csv",
+            "sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b",
+            "original_path": "FP0065.csv",
+            "logical_keys": [
+              "FP0065"
+            ]
+          },
+          {
+            "relative_path": "inputs/d4ba662878_FP0066.csv",
+            "sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc",
+            "original_path": "FP0066.csv",
+            "logical_keys": [
+              "FP0066"
+            ]
+          },
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0238"
+            ]
+          },
+          {
+            "relative_path": "inputs/74fcbbd46b_annual_slopes.csv",
+            "sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+            "original_path": "annual_slopes.csv",
+            "logical_keys": [
+              "FP0240"
+            ]
+          },
+          {
+            "relative_path": "inputs/0fceed2577_leave_one_sid_influence.csv",
+            "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e",
+            "original_path": "leave_one_sid_influence.csv",
+            "logical_keys": [
+              "FP0242"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "96d31b84396c445d62a1a091c82417f2ac6b679b29fcdd6d114bb65362d4c9df"
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/b71de6cef6_FP0059.csv",
+        "inputs/dba3d75863_FP0065.csv",
+        "inputs/d4ba662878_FP0066.csv",
+        "inputs/53a55f6d6e_duration_summaries.csv",
+        "inputs/74fcbbd46b_annual_slopes.csv",
+        "inputs/0fceed2577_leave_one_sid_influence.csv"
+      ],
+      "fields": [
+        "variable",
+        "bin_left",
+        "bin_right",
+        "count",
+        "original_n"
+      ],
+      "filter": {
+        "executed_code": "table(name, chr(101 + k), pd.DataFrame(hist_rows), 'descriptive_histogram_counts')",
+        "entry_function": "s4",
+        "selected_rows": "panels\\06_e_descriptive_histogram_counts.csv",
+        "selected_rows_sha256": "f62dda8d7e56a09ae93fa1bb09231230292fe724442a98a21ecd6d9d8b770497"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "normalization": {
+        "executed_entry": "s4",
+        "role": "descriptive_histogram_counts",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "difference_direction": {
+        "role": "descriptive_histogram_counts",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/b71de6cef6_FP0059.csv",
+            "sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36",
+            "original_path": "FP0059.csv",
+            "logical_keys": [
+              "FP0059"
+            ]
+          },
+          {
+            "relative_path": "inputs/dba3d75863_FP0065.csv",
+            "sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b",
+            "original_path": "FP0065.csv",
+            "logical_keys": [
+              "FP0065"
+            ]
+          },
+          {
+            "relative_path": "inputs/d4ba662878_FP0066.csv",
+            "sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc",
+            "original_path": "FP0066.csv",
+            "logical_keys": [
+              "FP0066"
+            ]
+          },
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0238"
+            ]
+          },
+          {
+            "relative_path": "inputs/74fcbbd46b_annual_slopes.csv",
+            "sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+            "original_path": "annual_slopes.csv",
+            "logical_keys": [
+              "FP0240"
+            ]
+          },
+          {
+            "relative_path": "inputs/0fceed2577_leave_one_sid_influence.csv",
+            "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e",
+            "original_path": "leave_one_sid_influence.csv",
+            "logical_keys": [
+              "FP0242"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "f62dda8d7e56a09ae93fa1bb09231230292fe724442a98a21ecd6d9d8b770497"
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/b71de6cef6_FP0059.csv",
+        "inputs/dba3d75863_FP0065.csv",
+        "inputs/d4ba662878_FP0066.csv",
+        "inputs/53a55f6d6e_duration_summaries.csv",
+        "inputs/74fcbbd46b_annual_slopes.csv",
+        "inputs/0fceed2577_leave_one_sid_influence.csv"
+      ],
+      "fields": [
+        "variable",
+        "bin_left",
+        "bin_right",
+        "count",
+        "original_n"
+      ],
+      "filter": {
+        "executed_code": "table(name, chr(101 + k), pd.DataFrame(hist_rows), 'descriptive_histogram_counts')",
+        "entry_function": "s4",
+        "selected_rows": "panels\\07_f_descriptive_histogram_counts.csv",
+        "selected_rows_sha256": "395f5c261d1cb8c9b16b6e6f82701a3950cecba8d658efcaab5ce806b4a36b3c"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "normalization": {
+        "executed_entry": "s4",
+        "role": "descriptive_histogram_counts",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "difference_direction": {
+        "role": "descriptive_histogram_counts",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals. Trend-cell colours encode duration trends (h per decade), and daggers mark intervals spanning zero. e,f, Distributions of changes in environmental meanF-meanU and meanU-meanR contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/b71de6cef6_FP0059.csv",
+            "sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36",
+            "original_path": "FP0059.csv",
+            "logical_keys": [
+              "FP0059"
+            ]
+          },
+          {
+            "relative_path": "inputs/dba3d75863_FP0065.csv",
+            "sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b",
+            "original_path": "FP0065.csv",
+            "logical_keys": [
+              "FP0065"
+            ]
+          },
+          {
+            "relative_path": "inputs/d4ba662878_FP0066.csv",
+            "sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc",
+            "original_path": "FP0066.csv",
+            "logical_keys": [
+              "FP0066"
+            ]
+          },
+          {
+            "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+            "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0238"
+            ]
+          },
+          {
+            "relative_path": "inputs/74fcbbd46b_annual_slopes.csv",
+            "sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+            "original_path": "annual_slopes.csv",
+            "logical_keys": [
+              "FP0240"
+            ]
+          },
+          {
+            "relative_path": "inputs/0fceed2577_leave_one_sid_influence.csv",
+            "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e",
+            "original_path": "leave_one_sid_influence.csv",
+            "logical_keys": [
+              "FP0242"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "395f5c261d1cb8c9b16b6e6f82701a3950cecba8d658efcaab5ce806b4a36b3c"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/b71de6cef6_FP0059.csv",
+      "sha256": "b71de6cef6300e0f9c386b31dda47f66f3212f10cda5456b6345965ea3d91a36",
+      "original_path": "FP0059.csv",
+      "logical_keys": [
+        "FP0059"
+      ]
+    },
+    {
+      "relative_path": "inputs/dba3d75863_FP0065.csv",
+      "sha256": "dba3d758632c9953c01e28949841bd4742a686986c4d2ed51a1dc643c1d8171b",
+      "original_path": "FP0065.csv",
+      "logical_keys": [
+        "FP0065"
+      ]
+    },
+    {
+      "relative_path": "inputs/d4ba662878_FP0066.csv",
+      "sha256": "d4ba6628783001fb7b3e6ed0312cbb2f1ddb996f4c546329bd667ab49c3dddfc",
+      "original_path": "FP0066.csv",
+      "logical_keys": [
+        "FP0066"
+      ]
+    },
+    {
+      "relative_path": "inputs/53a55f6d6e_duration_summaries.csv",
+      "sha256": "53a55f6d6ef8bfed6a78a0be6dde07bad70c45b3937c075eee238f524721b81d",
+      "original_path": "duration_summaries.csv",
+      "logical_keys": [
+        "FP0238"
+      ]
+    },
+    {
+      "relative_path": "inputs/74fcbbd46b_annual_slopes.csv",
+      "sha256": "74fcbbd46b2e0cc41e1843a535ab65aebdabeda21f0fd5b55573db2a127c4e71",
+      "original_path": "annual_slopes.csv",
+      "logical_keys": [
+        "FP0240"
+      ]
+    },
+    {
+      "relative_path": "inputs/0fceed2577_leave_one_sid_influence.csv",
+      "sha256": "0fceed2577d88b50e7f36127612822ceac0d4349d71c701772d215cabf41c57e",
+      "original_path": "leave_one_sid_influence.csv",
+      "logical_keys": [
+        "FP0242"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S07",
+    "size_mm": [
+      180.0,
+      230.99999999999997
+    ],
+    "pixels": [
+      6377,
+      8185
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 1054.1357746478873,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 6.8,
+    "files": {
+      "png": {
+        "path": "Figure_S07.png",
+        "sha256": "feff4c6e8728a032dbbc1a98c0ae941f563eddfcad1944788dad313cb41aac7b"
+      },
+      "tiff": {
+        "path": "Figure_S07.tiff",
+        "sha256": "43bab232aaaeb16b5e57c076a1c71792d8673c390e08fa9e1ae77cf2dffac0b7"
+      },
+      "pdf": {
+        "path": "Figure_S07.pdf",
+        "sha256": "3ca9e14f22047b93758684ecf490492a2378efc7c9c2feeef748317f2c9df91f"
+      },
+      "svg": {
+        "path": "Figure_S07.svg",
+        "sha256": "3ec03e9b04a8ae3502df47125c4c89ef9c208a0fd59295d6dd9a3e4e4971f41d"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 1
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 654.8031496062993
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              81.63779527559056,
+              477.8149606299214,
+              252.7664041994751,
+              603.7795275590553
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              63.637795275590555,
+              615.7795275590553
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              326.35170603674544,
+              477.8149606299214,
+              497.48031496063,
+              603.7795275590553
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              308.35170603674544,
+              615.7795275590553
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              81.63779527559056,
+              288.86811023622056,
+              252.7664041994751,
+              414.8326771653544
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              63.637795275590555,
+              426.8326771653544
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              326.35170603674544,
+              288.86811023622056,
+              497.48031496063,
+              414.8326771653544
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              308.35170603674544,
+              426.8326771653544
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              81.63779527559056,
+              82.91338582677167,
+              252.7664041994751,
+              208.87795275590557
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              63.637795275590555,
+              220.87795275590554
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              326.35170603674544,
+              82.91338582677167,
+              497.48031496063,
+              208.87795275590557
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              308.35170603674544,
+              220.87795275590554
+            ]
+          },
+          {
+            "id": "g",
+            "bbox_pt": [
+              338.33070866141736,
+              253.62992125984255,
+              485.501312335958,
+              260.0078740157481
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": [
+          {
+            "panels": [
+              "e",
+              "f"
+            ],
+            "checks": [
+              "vertical-gutter"
+            ],
+            "reason": "6 mm added above bottom row for the new trend colorbar; original physical data-panel sizes, column alignments and top-row gap are preserved."
+          }
+        ]
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S07",
+    "source": "Figure_S14.png",
+    "sha256": "d3061109b301dfeaa83a0f6bbf7f1dec243335c37637316d0220aef23df7653d",
+    "pixels": [
+      6377,
+      8433
+    ],
+    "display_inches": [
+      5.871599956255468,
+      7.7646544181977255
+    ],
+    "effective_dpi": 1086.075353823465
+  },
+  "caption": "Supplementary Fig. 7 | Near-peak returns and sensitivity of window-based lifecycle summaries. a, Within-basin proportions of the 2,340 main-sample cyclones with no near-peak return, one return, or at least two returns, using the first-LMI-anchored definition. b, Complete distributions of anchored near-peak segments and subsequent returns; the initial near-peak segment is not a return. The cyclone-count axis is logarithmic. The sample contains 2,217 cyclones without a return, 114 with one, eight with two and one with three, giving 133 return events in 123 cyclones. c,d, Mean bridge duration and trends in later-near-peak and bridge durations under ten prespecified restrictions. S0 retains the main sample; S1 excludes cyclones with exactly one later near-peak episode lasting 6 h; S2 retains cyclones with no bridge or with two observed tropical endpoints and no status conflict at every bridge interval; S3 omits Freddy (2023); S4–S9 omit WP, EP, SI, NA, SP and NI, respectively. Bars show the existing 95% SID-bootstrap intervals; marked trend cells have intervals spanning zero. e,f, Distributions of changes in environmental  and  contrasts when each master SID is omitted, expressed in 10−4 reference standard deviations. Colours count omitted-SID results, with a logarithmic colour scale. Variable-specific support is retained.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

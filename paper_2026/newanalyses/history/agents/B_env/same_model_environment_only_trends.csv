@@ -1,0 +1,13 @@
+basin,estimand,estimate_pp_per_decade,ci_low,ci_high,p_bootstrap,state_treatment,environment_reference,q_environment_only_family
+NA,actual_environment,-4.014017282676069,-14.801480008115949,2.9789422304673487,0.372,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+NA,fixed_reference_environment_state_unchanged,-5.712873015898999,-15.9213360481866,1.994247231700319,0.209,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+NA,actual_minus_fixed_environment,1.6988557332229295,-0.743333682818499,5.033301629892694,0.185,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",0.562
+EP,actual_environment,-0.7054945373874245,-3.56022557024136,2.608606916482128,0.595,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+EP,fixed_reference_environment_state_unchanged,-0.9185924435844113,-3.717123337699804,1.8274202001392579,0.441,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+EP,actual_minus_fixed_environment,0.21309790619698676,-0.24569955297341375,1.1563243013352122,0.281,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",0.562
+WP,actual_environment,-0.298863307882511,-4.493958720608301,5.139871091331891,0.854,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+WP,fixed_reference_environment_state_unchanged,-0.3660484022173613,-4.845001979666291,5.062573210999332,0.815,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+WP,actual_minus_fixed_environment,0.06718509433485031,-1.036192626804445,1.4633793811606715,0.848,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",0.874
+SI,actual_environment,2.4208573654219316,-1.4134121648773958,6.34935415655219,0.218,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+SI,fixed_reference_environment_state_unchanged,2.3941007507064804,-1.477939254134901,6.122318567952597,0.234,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",
+SI,actual_minus_fixed_environment,0.02675661471545121,-0.997837127267786,1.1999488579014022,0.874,each SID actual year/state unchanged,"same basin all-period joint environmental vectors, equal-year reference",0.874

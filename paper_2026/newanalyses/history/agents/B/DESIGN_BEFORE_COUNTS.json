@@ -1,0 +1,34 @@
+{
+  "cohort": 2340,
+  "outcome": "At least one observed qualified return after first-LMI anchored near-peak segment",
+  "genesis_year": "Full genesis UTC year, cross-year histories retained",
+  "periods": [
+    [
+      "P1",
+      1982,
+      1992
+    ],
+    [
+      "P2",
+      1993,
+      2003
+    ],
+    [
+      "P3",
+      2004,
+      2014
+    ],
+    [
+      "P4",
+      2015,
+      2023
+    ]
+  ],
+  "annual_trends": "42 annual numerator/denominator proportions; equal-year OLS, basin-by-decade interaction; lag3 Bartlett score covariance jointly across basins and years, finite correction/t40",
+  "new_test_family": "Four adequately supported basin slopes, six pairwise interaction contrasts and new observed-return global slope: 11 tests BH; NI/SP descriptive counts and Wilson intervals only",
+  "decomposition": "Exact symmetric P1/P4 decomposition of original global equal-year target. Basin weights are mean annual basin shares; basin conditional rates weight each SID by inverse global annual count. Zero denominator basin-years contribute zero weight, not zero rate.",
+  "decomposition_CI": "2000 within-period circular3year blocks, synchronized all basins; SID resampling within selected year",
+  "seed": 2026110902,
+  "source": "See SOURCE_MANIFEST.json and configured upstream inputs.",
+  "sha256": "ac27f9af344f0779898557440db4e3fd5873454d09280e1ca6cf458aa318e81a"
+}

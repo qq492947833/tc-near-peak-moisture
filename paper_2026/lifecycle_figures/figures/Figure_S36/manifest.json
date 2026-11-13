@@ -1,0 +1,387 @@
+{
+  "figure_id": "Figure_S27",
+  "type": "supplementary",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\2d001b5a63_effects.csv"
+      ],
+      "fields": [
+        "variable",
+        "stage",
+        "contrast",
+        "test",
+        "reference_sd",
+        "observed_sd",
+        "n",
+        "n_sid",
+        "family_size",
+        "family_id",
+        "model_id",
+        "coef_log_h_per_unit",
+        "se_log_h_per_unit",
+        "percent_per_1sd",
+        "ci_low_percent",
+        "ci_high_percent",
+        "p",
+        "q",
+        "bootstrap_ci_low_percent",
+        "bootstrap_ci_high_percent",
+        "status",
+        "bootstrap_requested",
+        "bootstrap_attempted",
+        "bootstrap_successful",
+        "bootstrap_rank_failed",
+        "bootstrap_numeric_failed",
+        "interval_scope"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'a', d, 'complete_H4_family')",
+        "entry_function": "s9",
+        "selected_rows": "panels\\00_a_complete_H4_family.csv",
+        "selected_rows_sha256": "18b9de6014d43cc727cd35d6d772c72ba7fe1d06d7f3161cca33b16ccd9dbff4"
+      },
+      "sample_scope": {
+        "n": [
+          8944
+        ],
+        "n_sid": [
+          2298
+        ],
+        "bootstrap_successful": [
+          2000
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation."
+      },
+      "normalization": {
+        "executed_entry": "s9",
+        "role": "complete_H4_family",
+        "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation."
+      },
+      "difference_direction": {
+        "role": "complete_H4_family",
+        "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low_percent",
+          "ci_high_percent",
+          "bootstrap_ci_low_percent",
+          "bootstrap_ci_high_percent",
+          "bootstrap_requested",
+          "bootstrap_attempted",
+          "bootstrap_successful",
+          "bootstrap_rank_failed",
+          "bootstrap_numeric_failed"
+        ],
+        "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/d2b1a66b5a_effects.csv",
+            "sha256": "9590e9e26564c9cc332f93737aef9874f3334f96533f1a0c0aa4dd93701a1021",
+            "original_path": "effects.csv",
+            "logical_keys": [
+              "SF-F-EXACT-DE-6"
+            ]
+          },
+          {
+            "relative_path": "inputs/2d001b5a63_effects.csv",
+            "sha256": "2d001b5a63bdb1ebf0c7ac3b0b9bafa3b7d192f76fefdd8ec1a3759a68e4a059",
+            "original_path": "effects.csv",
+            "logical_keys": [
+              "SF-F-H4-30"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "18b9de6014d43cc727cd35d6d772c72ba7fe1d06d7f3161cca33b16ccd9dbff4"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\d2b1a66b5a_effects.csv"
+      ],
+      "fields": [
+        "test",
+        "variable",
+        "conditioning",
+        "n",
+        "n_sid",
+        "target",
+        "coef",
+        "se",
+        "p",
+        "ci_low",
+        "ci_high",
+        "status",
+        "design_rank",
+        "design_columns",
+        "removed_redundant",
+        "bootstrap_requested",
+        "bootstrap_attempted",
+        "bootstrap_successful",
+        "bootstrap_rank_failed",
+        "bootstrap_numeric_failed",
+        "seed",
+        "failed_draw_policy",
+        "bootstrap_ci_low",
+        "bootstrap_ci_high",
+        "source_status",
+        "source_function",
+        "auxiliary_interval_scope"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'b', de, 'exact_DE_allocation')",
+        "entry_function": "s9",
+        "selected_rows": "panels\\01_b_exact_DE_allocation.csv",
+        "selected_rows_sha256": "8723641704955f177114a1bd9fbd3f797b00f2a20c4c1dfcee06eea4d5480021"
+      },
+      "sample_scope": {
+        "n": [
+          2217
+        ],
+        "n_sid": [
+          2217
+        ],
+        "bootstrap_successful": [
+          28
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation."
+      },
+      "normalization": {
+        "executed_entry": "s9",
+        "role": "exact_DE_allocation",
+        "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation."
+      },
+      "difference_direction": {
+        "role": "exact_DE_allocation",
+        "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "bootstrap_requested",
+          "bootstrap_attempted",
+          "bootstrap_successful",
+          "bootstrap_rank_failed",
+          "bootstrap_numeric_failed",
+          "bootstrap_ci_low",
+          "bootstrap_ci_high"
+        ],
+        "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/d2b1a66b5a_effects.csv",
+            "sha256": "9590e9e26564c9cc332f93737aef9874f3334f96533f1a0c0aa4dd93701a1021",
+            "original_path": "effects.csv",
+            "logical_keys": [
+              "SF-F-EXACT-DE-6"
+            ]
+          },
+          {
+            "relative_path": "inputs/2d001b5a63_effects.csv",
+            "sha256": "2d001b5a63bdb1ebf0c7ac3b0b9bafa3b7d192f76fefdd8ec1a3759a68e4a059",
+            "original_path": "effects.csv",
+            "logical_keys": [
+              "SF-F-H4-30"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "8723641704955f177114a1bd9fbd3f797b00f2a20c4c1dfcee06eea4d5480021"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/d2b1a66b5a_effects.csv",
+      "sha256": "9590e9e26564c9cc332f93737aef9874f3334f96533f1a0c0aa4dd93701a1021",
+      "original_path": "effects.csv",
+      "logical_keys": [
+        "SF-F-EXACT-DE-6"
+      ]
+    },
+    {
+      "relative_path": "inputs/2d001b5a63_effects.csv",
+      "sha256": "2d001b5a63bdb1ebf0c7ac3b0b9bafa3b7d192f76fefdd8ec1a3759a68e4a059",
+      "original_path": "effects.csv",
+      "logical_keys": [
+        "SF-F-H4-30"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S27",
+    "size_mm": [
+      180.0,
+      200.0
+    ],
+    "pixels": [
+      6377,
+      7086
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 981.6715151515151,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 7.0,
+    "files": {
+      "png": {
+        "path": "Figure_S27.png",
+        "sha256": "5d753ab6fb1f076b7fe18cc462e7470532ada9bad82247137a31da20f5d45f93"
+      },
+      "tiff": {
+        "path": "Figure_S27.tiff",
+        "sha256": "39f011a9eecd6102a3e7deec8748ee6e0b4fa3a696f7b4258f2cc2eb09187cc0"
+      },
+      "pdf": {
+        "path": "Figure_S27.pdf",
+        "sha256": "a237144d5fa0f83e515121ac50c00e9a19cc62edb3277d2ce9c6d6e57f4ebf06"
+      },
+      "svg": {
+        "path": "Figure_S27.svg",
+        "sha256": "057e7ea2e8b231063f61c351f717a0a0be7945b012f96fa1d665ab7f98df6693"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": false,
+      "auditable": false,
+      "verdict": "NOT APPLICABLE",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "errors": [],
+      "findings": [],
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 566.9291338582677
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              91.84251968503938,
+              311.8110236220473,
+              489.82677165354335,
+              515.9055118110236
+            ],
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              73.84251968503938,
+              527.9055118110236
+            ]
+          }
+        ],
+        "row_groups": [],
+        "column_groups": [],
+        "boundary_groups": [],
+        "exemptions": []
+      }
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S27",
+    "source": "Figure_S28.png",
+    "sha256": "6a8a0b89f6add490dd1d3ef2acc09e917680a8d1992eb8e6f3699dc6288642e6",
+    "pixels": [
+      6377,
+      6732
+    ],
+    "display_inches": [
+      6.496062992125984,
+      6.857691382327209
+    ],
+    "effective_dpi": 981.6714729025099
+  },
+  "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are , using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction , conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. The table gives primary analytic 95% intervals and P values, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

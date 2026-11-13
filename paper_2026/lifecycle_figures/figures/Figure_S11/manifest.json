@@ -1,0 +1,687 @@
+{
+  "figure_id": "Figure_S06",
+  "type": "supplementary",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\3928be4370_manifest.csv"
+      ],
+      "fields": [
+        "experiment_no",
+        "experiment_id",
+        "is_baseline",
+        "escalation_progress",
+        "maturity_progress",
+        "min_peak_gain",
+        "fixed_main_sid_n",
+        "n_valid",
+        "n_unavailable",
+        "valid_fraction",
+        "n_obs",
+        "qc_reason_counts_json",
+        "median_lifetime_h",
+        "median_development_h",
+        "median_escalation_h",
+        "median_maturity_h",
+        "median_resolution_h",
+        "median_lmi_kt",
+        "median_mir_kt24h",
+        "median_mwr_kt24h",
+        "complex_lifecycle_fraction",
+        "recurrence_scope"
+      ],
+      "filter": {
+        "executed_code": "table(name, 'a', native, 'native_thresholds')",
+        "entry_function": "s5",
+        "selected_rows": "panels\\00_a_native_thresholds.csv",
+        "selected_rows_sha256": "10459b1cba3fadc523bb13849b0b17492919d68c41aba3e53a888c7eb0abc514"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "normalization": {
+        "executed_entry": "s5",
+        "role": "native_thresholds",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "difference_direction": {
+        "role": "native_thresholds",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "CI_source": {
+        "copied_fields": [],
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/3928be4370_manifest.csv",
+            "sha256": "3928be43707c476538c6fbf696781e4e8c3339ba0abd5f76c73c802998cb8991",
+            "original_path": "manifest.csv",
+            "logical_keys": [
+              "FP0071"
+            ]
+          },
+          {
+            "relative_path": "inputs/f238cd830c_duration_summaries.csv",
+            "sha256": "f238cd830c7a3d4ac667c3759f1a761b00aeb699bce29af3a324e814d0212c03",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0223"
+            ]
+          },
+          {
+            "relative_path": "inputs/a7a7886894_threshold_common_difference.csv",
+            "sha256": "a7a7886894396b3a48782de6bd8fc7ffdd8f6db05d525a9f70f8f121816f55ee",
+            "original_path": "threshold_common_difference.csv",
+            "logical_keys": [
+              "FP0230"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "10459b1cba3fadc523bb13849b0b17492919d68c41aba3e53a888c7eb0abc514"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\f238cd830c_duration_summaries.csv"
+      ],
+      "fields": [
+        "scope",
+        "metric",
+        "statistic",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "n_sid",
+        "unit",
+        "B_planned",
+        "B_valid",
+        "B_failed",
+        "P",
+        "q",
+        "test_family",
+        "estimand"
+      ],
+      "filter": {
+        "executed_code": "q = table(name, 'b', dur[dur.scope.isin(scopes) & dur.metric.isin(['L', 'B']) & dur.statistic.eq('mean')], 'duration')",
+        "entry_function": "s5",
+        "selected_rows": "panels\\01_b_duration.csv",
+        "selected_rows_sha256": "325cd41e4d0f536106ccdc8f18a428c56754b4e89a436850cc4f37758a0f060e"
+      },
+      "sample_scope": {
+        "n_sid": [
+          150,
+          123,
+          109
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "normalization": {
+        "executed_entry": "s5",
+        "role": "duration",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "difference_direction": {
+        "role": "duration",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high"
+        ],
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/3928be4370_manifest.csv",
+            "sha256": "3928be43707c476538c6fbf696781e4e8c3339ba0abd5f76c73c802998cb8991",
+            "original_path": "manifest.csv",
+            "logical_keys": [
+              "FP0071"
+            ]
+          },
+          {
+            "relative_path": "inputs/f238cd830c_duration_summaries.csv",
+            "sha256": "f238cd830c7a3d4ac667c3759f1a761b00aeb699bce29af3a324e814d0212c03",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0223"
+            ]
+          },
+          {
+            "relative_path": "inputs/a7a7886894_threshold_common_difference.csv",
+            "sha256": "a7a7886894396b3a48782de6bd8fc7ffdd8f6db05d525a9f70f8f121816f55ee",
+            "original_path": "threshold_common_difference.csv",
+            "logical_keys": [
+              "FP0230"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "325cd41e4d0f536106ccdc8f18a428c56754b4e89a436850cc4f37758a0f060e"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs\\a7a7886894_threshold_common_difference.csv"
+      ],
+      "fields": [
+        "alternate",
+        "comparison",
+        "variable",
+        "contrast",
+        "n_sid",
+        "n_physical_common_sid",
+        "main_native_environment_eligible_n",
+        "alternate_native_environment_eligible_n",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "estimate_sd",
+        "ci_low_sd",
+        "ci_high_sd",
+        "B_planned",
+        "B_valid",
+        "B_failed",
+        "unit",
+        "P",
+        "q",
+        "test_family"
+      ],
+      "filter": {
+        "executed_code": "q = table(name, chr(99 + k), env[env.contrast.eq(contrast)], 'all_18_threshold_contrasts')",
+        "entry_function": "s5",
+        "selected_rows": "panels\\02_c_all_18_threshold_contrasts.csv",
+        "selected_rows_sha256": "505ccae4e796b89be448f8506e65ac4845abc8e48308974baa3b8d7e80adf5d3"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2329,
+          2231,
+          2340,
+          2239,
+          2241
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "normalization": {
+        "executed_entry": "s5",
+        "role": "all_18_threshold_contrasts",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "difference_direction": {
+        "role": "all_18_threshold_contrasts",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "ci_low_sd",
+          "ci_high_sd"
+        ],
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/3928be4370_manifest.csv",
+            "sha256": "3928be43707c476538c6fbf696781e4e8c3339ba0abd5f76c73c802998cb8991",
+            "original_path": "manifest.csv",
+            "logical_keys": [
+              "FP0071"
+            ]
+          },
+          {
+            "relative_path": "inputs/f238cd830c_duration_summaries.csv",
+            "sha256": "f238cd830c7a3d4ac667c3759f1a761b00aeb699bce29af3a324e814d0212c03",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0223"
+            ]
+          },
+          {
+            "relative_path": "inputs/a7a7886894_threshold_common_difference.csv",
+            "sha256": "a7a7886894396b3a48782de6bd8fc7ffdd8f6db05d525a9f70f8f121816f55ee",
+            "original_path": "threshold_common_difference.csv",
+            "logical_keys": [
+              "FP0230"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "505ccae4e796b89be448f8506e65ac4845abc8e48308974baa3b8d7e80adf5d3"
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs\\a7a7886894_threshold_common_difference.csv"
+      ],
+      "fields": [
+        "alternate",
+        "comparison",
+        "variable",
+        "contrast",
+        "n_sid",
+        "n_physical_common_sid",
+        "main_native_environment_eligible_n",
+        "alternate_native_environment_eligible_n",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "estimate_sd",
+        "ci_low_sd",
+        "ci_high_sd",
+        "B_planned",
+        "B_valid",
+        "B_failed",
+        "unit",
+        "P",
+        "q",
+        "test_family"
+      ],
+      "filter": {
+        "executed_code": "q = table(name, chr(99 + k), env[env.contrast.eq(contrast)], 'all_18_threshold_contrasts')",
+        "entry_function": "s5",
+        "selected_rows": "panels\\03_d_all_18_threshold_contrasts.csv",
+        "selected_rows_sha256": "b912244e744ebd8c3f565fbc5e47a225aa8ae5c6336c34ad0dcefcbe4f0e702d"
+      },
+      "sample_scope": {
+        "n_sid": [
+          2329,
+          2230,
+          2340,
+          2238,
+          2239
+        ]
+      },
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "normalization": {
+        "executed_entry": "s5",
+        "role": "all_18_threshold_contrasts",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "difference_direction": {
+        "role": "all_18_threshold_contrasts",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "ci_low_sd",
+          "ci_high_sd"
+        ],
+        "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/3928be4370_manifest.csv",
+            "sha256": "3928be43707c476538c6fbf696781e4e8c3339ba0abd5f76c73c802998cb8991",
+            "original_path": "manifest.csv",
+            "logical_keys": [
+              "FP0071"
+            ]
+          },
+          {
+            "relative_path": "inputs/f238cd830c_duration_summaries.csv",
+            "sha256": "f238cd830c7a3d4ac667c3759f1a761b00aeb699bce29af3a324e814d0212c03",
+            "original_path": "duration_summaries.csv",
+            "logical_keys": [
+              "FP0223"
+            ]
+          },
+          {
+            "relative_path": "inputs/a7a7886894_threshold_common_difference.csv",
+            "sha256": "a7a7886894396b3a48782de6bd8fc7ffdd8f6db05d525a9f70f8f121816f55ee",
+            "original_path": "threshold_common_difference.csv",
+            "logical_keys": [
+              "FP0230"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si1_13_redraw.py",
+            "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+            "archive": "provenance/si1_13_redraw.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "b912244e744ebd8c3f565fbc5e47a225aa8ae5c6336c34ad0dcefcbe4f0e702d"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/3928be4370_manifest.csv",
+      "sha256": "3928be43707c476538c6fbf696781e4e8c3339ba0abd5f76c73c802998cb8991",
+      "original_path": "manifest.csv",
+      "logical_keys": [
+        "FP0071"
+      ]
+    },
+    {
+      "relative_path": "inputs/f238cd830c_duration_summaries.csv",
+      "sha256": "f238cd830c7a3d4ac667c3759f1a761b00aeb699bce29af3a324e814d0212c03",
+      "original_path": "duration_summaries.csv",
+      "logical_keys": [
+        "FP0223"
+      ]
+    },
+    {
+      "relative_path": "inputs/a7a7886894_threshold_common_difference.csv",
+      "sha256": "a7a7886894396b3a48782de6bd8fc7ffdd8f6db05d525a9f70f8f121816f55ee",
+      "original_path": "threshold_common_difference.csv",
+      "logical_keys": [
+        "FP0230"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S06",
+    "size_mm": [
+      180.0,
+      180.0
+    ],
+    "pixels": [
+      6377,
+      6377
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 929.9047805554524,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 7.0,
+    "files": {
+      "png": {
+        "path": "Figure_S06.png",
+        "sha256": "b75fb1d0edfc36e028fdde815c03fb87fcaf1b65bef4ff19c5a59ece336df219"
+      },
+      "tiff": {
+        "path": "Figure_S06.tiff",
+        "sha256": "b68d894af237fb557541c2745cb45d592cca6d25a37cf1756cd50cbafb930828"
+      },
+      "pdf": {
+        "path": "Figure_S06.pdf",
+        "sha256": "b7b488749920ed45aa7261aec81fcb881079ec9af7c26b368855a60d15adf207"
+      },
+      "svg": {
+        "path": "Figure_S06.svg",
+        "sha256": "ecd717007734c7d3660b37c56b59376801ff523a3486a0302e99a7aaaa017945"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 4,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 510.236220472441
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              81.63779527559056,
+              321.1600059426534,
+              249.3162306324613,
+              469.41732283464574
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              63.637795275590555,
+              481.41732283464574
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              329.80187960375923,
+              321.1600059426534,
+              497.48031496063,
+              469.41732283464574
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              311.80187960375923,
+              481.41732283464574
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              81.63779527559056,
+              76.53543307086616,
+              249.3162306324613,
+              224.79274996285847
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              63.637795275590555,
+              236.79274996285847
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              329.80187960375923,
+              76.53543307086616,
+              497.48031496063,
+              224.79274996285847
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              311.80187960375923,
+              236.79274996285847
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              88.3449326898654,
+              273.9968503937008,
+              242.60909321818647,
+              281.140157480315
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S06",
+    "source": "Figure_S05.png",
+    "sha256": "d78f8f263ccc28184ebff8310e2fbac8e88068449941186bdf7ab292eef85081",
+    "pixels": [
+      6377,
+      6732
+    ],
+    "display_inches": [
+      6.496062992125984,
+      6.857691382327209
+    ],
+    "effective_dpi": 981.6714729025099
+  },
+  "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in  and  environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

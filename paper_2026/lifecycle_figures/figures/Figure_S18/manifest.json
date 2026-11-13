@@ -1,0 +1,790 @@
+{
+  "figure_id": "Figure_S11",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/physics/centre_budget_estimates.csv"
+      ],
+      "fields": {
+        "physics/centre_budget_estimates.csv": [
+          "field",
+          "policy",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "d = budget[budget.estimand.eq('integral_0_24') & budget.field.isin(['fixed_tendency', 'motion_term', 'moving_tendency'])]",
+        "mat = d.pivot(index='row', columns='policy', values='estimate').loc[keys, POLICIES]",
+        "d = budget[budget.estimand.eq(window) & budget.field.isin(fields)]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "units": {
+        "x": "",
+        "y": "Contrast (g kg⁻¹ day⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "weights": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/centre_budget_estimates.csv": "cd0727761a66502c578df94ecf3df535fad27e14d1351bddd101b73e784426dd"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "Horizontal + vertical + residual = net; each term shown once; transform=identity",
+          "source_key": "physics/centre_budget_estimates.csv",
+          "fields": [
+            "field",
+            "policy",
+            "estimand",
+            "units",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 8,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "1d768783994e78c8483a7cb3ead3ac5dcbbf31d3d4cace23e4d8fcb972a773f8"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/physics/centre_budget_estimates.csv"
+      ],
+      "fields": {
+        "physics/centre_budget_estimates.csv": [
+          "field",
+          "policy",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "d = budget[budget.estimand.eq('integral_0_24') & budget.field.isin(['fixed_tendency', 'motion_term', 'moving_tendency'])]",
+        "mat = d.pivot(index='row', columns='policy', values='estimate').loc[keys, POLICIES]",
+        "d = budget[budget.estimand.eq(window) & budget.field.isin(fields)]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "units": {
+        "x": "",
+        "y": "Contrast (g kg⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "weights": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/centre_budget_estimates.csv": "cd0727761a66502c578df94ecf3df535fad27e14d1351bddd101b73e784426dd"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "Horizontal + vertical + residual = net; each term shown once; transform=identity",
+          "source_key": "physics/centre_budget_estimates.csv",
+          "fields": [
+            "field",
+            "policy",
+            "estimand",
+            "units",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 8,
+          "saved_selected_table": "panel_b_1.csv",
+          "sha256": "3a2ba994fe72ba68bde42d2c343baeaddde33f502ce8244d403937c349b3fe73"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/physics/centre_budget_estimates.csv"
+      ],
+      "fields": {
+        "physics/centre_budget_estimates.csv": [
+          "field",
+          "policy",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "d = budget[budget.estimand.eq('integral_0_24') & budget.field.isin(['fixed_tendency', 'motion_term', 'moving_tendency'])]",
+        "mat = d.pivot(index='row', columns='policy', values='estimate').loc[keys, POLICIES]",
+        "d = budget[budget.estimand.eq(window) & budget.field.isin(fields)]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "units": {
+        "x": "",
+        "y": "Integrated contrast (g kg⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "weights": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/centre_budget_estimates.csv": "cd0727761a66502c578df94ecf3df535fad27e14d1351bddd101b73e784426dd"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "Two representations of the same net tendency; not added to a/b; transform=identity",
+          "source_key": "physics/centre_budget_estimates.csv",
+          "fields": [
+            "field",
+            "policy",
+            "estimand",
+            "units",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_c_2.csv",
+          "sha256": "86eb20298253869096f664cfe2934561616f44056489b0f04a28038305acf990"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/physics/FigS9_motion_panel_source.csv"
+      ],
+      "fields": {
+        "physics/FigS9_motion_panel_source.csv": [
+          "lag_h",
+          "velocity",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "d = budget[budget.estimand.eq('integral_0_24') & budget.field.isin(['fixed_tendency', 'motion_term', 'moving_tendency'])]",
+        "mat = d.pivot(index='row', columns='policy', values='estimate').loc[keys, POLICIES]",
+        "d = budget[budget.estimand.eq(window) & budget.field.isin(fields)]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "units": {
+        "x": "Hours from departure",
+        "y": "Advection contrast\n(g kg⁻¹ day⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "weights": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/FigS9_motion_panel_source.csv": "d098d0478c6b89aa806179fcd81864e6386737f0f6d60a9653b1ed52ed9a1794"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "d",
+          "role": "; transform=identity",
+          "source_key": "physics/FigS9_motion_panel_source.csv",
+          "fields": [
+            "lag_h",
+            "velocity",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 18,
+          "saved_selected_table": "panel_d_3.csv",
+          "sha256": "725f94df581f77863ae0d920fa2724bf159aa624a917e8be1c123a8591c9b2b7"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/physics/FigS9_850_windows_panel_source.csv"
+      ],
+      "fields": {
+        "physics/FigS9_850_windows_panel_source.csv": [
+          "policy",
+          "window",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "d = budget[budget.estimand.eq('integral_0_24') & budget.field.isin(['fixed_tendency', 'motion_term', 'moving_tendency'])]",
+        "mat = d.pivot(index='row', columns='policy', values='estimate').loc[keys, POLICIES]",
+        "d = budget[budget.estimand.eq(window) & budget.field.isin(fields)]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "units": {
+        "x": "",
+        "y": "Integrated MFC contrast (g kg⁻¹)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "weights": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/FigS9_850_windows_panel_source.csv": "6fd23f1f5cefdef769db05261fd9a9976e3c83e0a4897bd7a195c32af8d44fc5"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "e",
+          "role": "Own pressure-surface support; transform=identity",
+          "source_key": "physics/FigS9_850_windows_panel_source.csv",
+          "fields": [
+            "policy",
+            "window",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_e_4.csv",
+          "sha256": "1b77ad9697a126bf2ebab6a1c52211bb4cc2a18448c733751fe0d3fb5f0cf6eb"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/physics/centre_native_estimates.csv"
+      ],
+      "fields": {
+        "physics/centre_native_estimates.csv": [
+          "variable",
+          "policy",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "d = budget[budget.estimand.eq('integral_0_24') & budget.field.isin(['fixed_tendency', 'motion_term', 'moving_tendency'])]",
+        "mat = d.pivot(index='row', columns='policy', values='estimate').loc[keys, POLICIES]",
+        "d = budget[budget.estimand.eq(window) & budget.field.isin(fields)]",
+        "sub = data[data[groupkey].eq(g)].set_index(xkey).loc[keys]"
+      ],
+      "sample_scope": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "units": {
+        "x": "Shear contrast (m s⁻¹)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              -0.20385601899714012,
+              -0.7403472949210282,
+              -0.7403472949210282
+            ],
+            [
+              -0.6123890693211539,
+              -0.9019536841093149,
+              -0.9019536841093149
+            ],
+            [
+              -0.1542602877492618,
+              1.05651602092307,
+              -0.1542602877492618
+            ],
+            [
+              -0.4652327590261087,
+              0.23589154212193658,
+              -0.4652327590261087
+            ]
+          ],
+          "vmin": -1.05651602092307,
+          "vmax": 1.05651602092307,
+          "norm": "Normalize",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "weights": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/centre_native_estimates.csv": "37de9ac8e22f31db4dcfc0cb5de11b871a002f6a9e074be3347b8c9172d6133b"
+        },
+        "original_plot_source": "si141723_prior_snapshot.py",
+        "original_plot_source_sha256": "a94a93c4686f796e72b851a3a17036a8478ea89da4211f1a3095b9d08b463c58"
+      },
+      "selected_source_rows": [
+        {
+          "id": "f",
+          "role": "Heatmap shows saved mean; full 95% CI and n in complete statistics; transform=identity",
+          "source_key": "physics/centre_native_estimates.csv",
+          "fields": [
+            "variable",
+            "policy",
+            "estimand",
+            "units",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line",
+            "row"
+          ],
+          "selected_rows": 12,
+          "saved_selected_table": "panel_f_5.csv",
+          "sha256": "e824f88760ee325b7c833e62ae0f264358f82eee29ffbf8c58842f7a6ae205cb"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "physics/FigS9_850_windows_panel_source.csv",
+      "relative_path": "inputs/physics/FigS9_850_windows_panel_source.csv",
+      "sha256": "6fd23f1f5cefdef769db05261fd9a9976e3c83e0a4897bd7a195c32af8d44fc5",
+      "original_path": "FigS9_850_windows_panel_source.csv",
+      "bytes": 363
+    },
+    {
+      "key": "physics/FigS9_motion_panel_source.csv",
+      "relative_path": "inputs/physics/FigS9_motion_panel_source.csv",
+      "sha256": "d098d0478c6b89aa806179fcd81864e6386737f0f6d60a9653b1ed52ed9a1794",
+      "original_path": "FigS9_motion_panel_source.csv",
+      "bytes": 1562
+    },
+    {
+      "key": "physics/centre_budget_estimates.csv",
+      "relative_path": "inputs/physics/centre_budget_estimates.csv",
+      "sha256": "cd0727761a66502c578df94ecf3df535fad27e14d1351bddd101b73e784426dd",
+      "original_path": "centre_budget_estimates.csv",
+      "bytes": 4235
+    },
+    {
+      "key": "physics/centre_native_estimates.csv",
+      "relative_path": "inputs/physics/centre_native_estimates.csv",
+      "sha256": "37de9ac8e22f31db4dcfc0cb5de11b871a002f6a9e074be3347b8c9172d6133b",
+      "original_path": "centre_native_estimates.csv",
+      "bytes": 11133
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S11.png",
+      "sha256": "22bf0ecfbb7ce5998481a28308444a7a766eebd470ef02a7c4d4fcb4e6fc2c2c"
+    },
+    "tiff": {
+      "path": "Figure_S11.tiff",
+      "sha256": "1ec8daf6f6c6d878f838d161b157425ee15a71754cfcc228d2aeb49284a60c26"
+    },
+    "pdf": {
+      "path": "Figure_S11.pdf",
+      "sha256": "a415efa724c70a10c40cfe750b3378623ac523b0a0a17ab8191a1ef146fd9105"
+    },
+    "svg": {
+      "path": "Figure_S11.svg",
+      "sha256": "4e8ce6624a53723cbaa1da781971201f87d1c498c205d2dfbd9f2475b4b031ea"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S11",
+      "returncode": 0,
+      "elapsed_s": 11.55,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 581.1023622047244
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              58.67716535433072,
+              427.7418692228689,
+              230.10040148143537,
+              528.8031496062993
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              42.67716535433072,
+              540.8031496062993
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              320.95471662880084,
+              427.7418692228689,
+              492.3779527559055,
+              528.8031496062993
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              304.9547166288008,
+              540.8031496062993
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              58.67716535433072,
+              245.83156453269424,
+              230.10040148143537,
+              346.89284491612455
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              42.67716535433072,
+              358.8928449161246
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              320.95471662880084,
+              245.83156453269424,
+              492.3779527559055,
+              346.89284491612455
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              304.9547166288008,
+              358.8928449161246
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              58.67716535433072,
+              63.92125984251961,
+              230.10040148143537,
+              164.98254022594995
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              42.67716535433072,
+              176.98254022594992
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              320.95471662880084,
+              63.92125984251961,
+              492.3779527559055,
+              164.98254022594995
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              304.9547166288008,
+              176.98254022594992
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      1036.4055951513428,
+      1036.405617977528
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S11",
+      "source": "Figure_S16.png",
+      "sha256": "22bf0ecfbb7ce5998481a28308444a7a766eebd470ef02a7c4d4fcb4e6fc2c2c",
+      "pixels": [
+        6377,
+        7263
+      ],
+      "display_inches": [
+        6.152996500437445,
+        7.0078740157480315
+      ],
+      "effective_dpi": 1036.4055951513428
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 11 | Sampling-centre and motion contributions to moisture contrasts. All contrasts are temporary minus final departure in 200–800 km annuli. a,b, The pre-event 700-hPa budget and its next-day integral. Horizontal advection, vertical advection and residual sum to the moving tendency on common native-cell and event/centre-lag support. c, Fixed-frame tendency and translation sum to the moving tendency. d, Fixed-centre horizontal advection using actual translation  or the nonzero departure velocity . e, Integrated 850-hPa moisture-flux convergence () before and after departure, using absolute wind and complete support across both windows on its own pressure surface. f, Upper-layer (200–500 hPa) and lower-layer (500–850 hPa) shear contrasts under the three centre choices in Supplementary Fig. 10. Pre-means require three of −24/−18/−12/−6 h; changes use 0 and +24 h; integrals use all five six-hour observations with trapezoidal weights. Samples are n=116 before and n=105 after for the budget, n=105–117 in d, n=101 in e, and n=116–117 before and n=105 for changes in f. Whiskers and shading are pointwise 95% intervals from 2,000 paired-cyclone resamples. The shear intervals and counts are tabulated in Table S5f. The mixed-centre post-event budget equals the along-track budget by definition.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "b2f0305a3f51a534df9db000bb57479ca35971d03cbab09fb32413ef131132c4",
+      "run.py": "dede438679e54cbd379918431ff4475afd32fa1accfbe3de8bdf4535bb95e19a"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

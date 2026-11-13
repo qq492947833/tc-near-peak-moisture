@@ -1,0 +1,111 @@
+{
+  "status": "FINAL_V2_FROZEN_BEFORE_CORRECTED_FIT",
+  "frozen_utc": "2026-11-09T16:57:07.319324+00:00",
+  "population": "2340 frozen main SID; accepted historical first-departure model input2231; joint measured preRH/preShear/PI(t0)1256; no future-completeness entry gate",
+  "hemispheres": {
+    "NH": {
+      "low_abs_lat": 15.8,
+      "high_abs_lat": 23.0
+    },
+    "SH": {
+      "low_abs_lat": 15.0,
+      "high_abs_lat": 20.2
+    }
+  },
+  "latitude": "within-hemisphere absolute latitude3-term restricted cubic basis; same5/35/65/95 percentile knot rule, refitted using each training fold as in the original estimator",
+  "support": {
+    "local_half_width_deg": 2.5,
+    "min_local_sid_per_basin": 20,
+    "environment": "both local neighborhoods 3D convex hull of measured complete environment rows",
+    "state_quantiles": [
+      0.01,
+      0.99
+    ],
+    "state_range_variables": [
+      "wind_t0_kt",
+      "gap_below_threshold_kt",
+      "log_age",
+      "delta_v24_backward_kt",
+      "motion_speed_prev_ms"
+    ],
+    "fixed_before_fitting": true,
+    "bootstrap_support": "fixed empirical support target; no outcome-driven retuning"
+  },
+  "state_variables": [
+    "wind_t0_kt",
+    "gap_below_threshold_kt",
+    "log_age",
+    "delta_v24_backward_kt",
+    "motion_speed_prev_ms",
+    "current_land_contact",
+    "past_land_contact",
+    "month_sin",
+    "month_cos",
+    "year_decade",
+    "lon_sin",
+    "lon_cos"
+  ],
+  "environment_variables": [
+    "past_RH",
+    "past_shear",
+    "PI_t0_ms"
+  ],
+  "environment_timing": {
+    "past_RH": "mean of at least3 valid -24,-18,-12,-6h observations",
+    "past_shear": "same pre-entry window",
+    "PI_t0_ms": "saved t0_PIheadroom + current wind_kt*1852/3600; not a pret0 mean"
+  },
+  "excluded_redundant_terms": [
+    "t0_PIheadroom",
+    "SST",
+    "ventilation index"
+  ],
+  "state_threshold_gap": "Vref_kt minus wind_t0_kt; Vref from history strictly preceding t0, never future LMI",
+  "models": [
+    "M0_state",
+    "M1_state_joint_environment"
+  ],
+  "outcome_model": "accepted v62 eight-bin6h interval-logistic hazard with original L_h/U_h",
+  "penalty": {
+    "nonintercept": 1.0,
+    "intercept": 0.0,
+    "includes_time_indicators": true
+  },
+  "crossfit": {
+    "folds": 5,
+    "membership": "original saved SID fold; copies keep fold"
+  },
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 610102026,
+    "unit": "SID",
+    "paired_across": "both models, both latitude targets, environment-difference change",
+    "refit": "preprocessing and outcome model in every fold/draw",
+    "CI": "percentile95",
+    "failed_draws": "retain and report; no top-up",
+    "training_and_target": "same original2231SID draw indices select training1245 and fixed322target; all copies keep fold; models/targets share identicalweights"
+  },
+  "reference": "actual entire observed covariate rows of supported same-hemisphere basins, equal SID weights; bootstrap empirical reweighting; same rows M0/M1",
+  "contrast": "higher abs latitude minus lower abs latitude; probability percentage points",
+  "environment_change": "M0 contrast minus M1 contrast, paired draws; no explained percentage",
+  "sensitivity": "one linear-latitude functional-form sensitivity on same support; no threshold/year/environment search",
+  "source_inspection_sha256": "b7728a32ed9cb6639168204f9f37b8b1be78f4336afa43d2729a3f02dd77f1fc",
+  "author_instruction_sha256": "b578188bf4af164d4ba7bce433963abe4455e0f3e2dfffd00d9e63a05570fbc3",
+  "source_model_sha256": "a2ed69904ceca5b5bdb4eae3cff791a8d6b2d3be9913a022a5f896b2c95981b9",
+  "scientific_fit_performed_at_freeze": false,
+  "runtime": {
+    "executable": "See SOURCE_MANIFEST.json and configured upstream inputs.",
+    "version": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+    "existing_packages": "isolated F anaconda cp311; no cp312 vendor imports or global edits"
+  },
+  "frozen_v2_utc": "2026-11-09T17:15:48.129649+00:00",
+  "supersedes": "v1 training restricted to reference406, independent support-geometry error",
+  "training_population": "same1245 complete-environment supported-basin rows for M0 andM1; NH861/SH384",
+  "reference_population": "322 target SIDs (NH202/SH120), covariate-only intersection of original406 with both local environmental hulls in each SID assigned-fold training pool;1245training unchanged",
+  "target_reference_sha256": "60bb940f4cb26cc03413ed61647d6b6c63af57dd0cb1f528f483ff7d67a4d56c",
+  "training_support": "all observations supplying the original supported-basin environmental hulls are retained for model training; empirical support is evaluated in this observed pool",
+  "crossfit_support_scope": "Every retained target passes both prespecified local environmental hulls of its actual point-estimate heldout-fold training pool; fixed target across original bootstrap draws, no outcome-driven reselection",
+  "source_config_sha256": "5e3ddb5e1cbe0cded5676132c0c32104ec0c1e835bb4237f5643d2baf63f4634",
+  "independent_target_membership_sha256": "2ed16da497d7c5d07c0a7b94e74896d5539a419bc2082a7c66962e1e7520d286",
+  "support_correction": "One root-authorized scientific implementation correction before v2 model fitting; no v2 models were fit using406 target"
+}

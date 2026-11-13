@@ -1,0 +1,3978 @@
+{
+  "version": "v5.1_same_inputs_P1_P5",
+  "mandatory_modules": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5"
+  ],
+  "not_a_scientific_result": true,
+  "paths": {
+    "u10": {
+      "path": "${RAW_ERA5}/10m-u-component-of-wind-1980-2025.nc",
+      "variable": "u10",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "surface fields: do not apply 850 hPa subsurface mask",
+      "metadata_sha256": "1d2132bd9c8a4e329cc5183def3b19cd0488497b69111464ef019711af0a750b",
+      "source_identity": {
+        "path": "${RAW_ERA5}/10m-u-component-of-wind-1980-2025.nc",
+        "size": 374666721780
+      }
+    },
+    "v10": {
+      "path": "${RAW_ERA5}/10m-v-component-of-wind-1980-2025.nc",
+      "variable": "v10",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "surface fields: do not apply 850 hPa subsurface mask",
+      "metadata_sha256": "715bf3ab8627f8098f2a06788f6545788fd5091233a66dc9247f3cef574498fe",
+      "source_identity": {
+        "path": "${RAW_ERA5}/10m-v-component-of-wind-1980-2025.nc",
+        "size": 374201480730
+      }
+    },
+    "t2m": {
+      "path": "${RAW_ERA5}/2m-temperature-1980-2025.nc",
+      "variable": "t2m",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "surface fields: do not apply 850 hPa subsurface mask",
+      "metadata_sha256": "7cc70634c09794a1db1892894fd259ccceb11fda53135c69cf7349fa051c564b",
+      "source_identity": {
+        "path": "${RAW_ERA5}/2m-temperature-1980-2025.nc",
+        "size": 97566640773
+      }
+    },
+    "cape": {
+      "path": "${RAW_ERA5}/Convective-available-potential-energy-1980-2025.nc",
+      "variable": "cape",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "J kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "surface fields: do not apply 850 hPa subsurface mask",
+      "metadata_sha256": "66e468737a578594116f2e143aade61364f986aea9e311e978782b43666daa8b",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Convective-available-potential-energy-1980-2025.nc",
+        "size": 62836329073
+      }
+    },
+    "d200": {
+      "path": "${RAW_ERA5}/Divergence-200hpa-1980-2025.nc",
+      "variable": "d",
+      "pressure_level_hpa": 200.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "s^-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "3acaed5e34fe854e5897858d98072fdd46eb2b8ec159cd5b2fbe372cae26470f",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Divergence-200hpa-1980-2025.nc",
+        "size": 211460480904
+      }
+    },
+    "d850": {
+      "path": "${RAW_ERA5}/Divergence-850hpa-1980-2025.nc",
+      "variable": "d",
+      "pressure_level_hpa": 850.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "s^-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "10c4092262ee9dfa1be6323ad69187295d36fd414703719d3df3d46c7a6c3187",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Divergence-850hpa-1980-2025.nc",
+        "size": 216381664138
+      }
+    },
+    "z1000": {
+      "path": "${RAW_ERA5}/Geopotential-1000hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 1000.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "197e0bfc530ed10dad2c0fe2c37fc40b1c1f54d4b78ccb7ec7acbfbaf3dd41c2",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-1000hpa-1980-2025.nc",
+        "size": 94213585040
+      }
+    },
+    "z100": {
+      "path": "${RAW_ERA5}/Geopotential-100hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 100.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "86191f91f15231ef7445115cc533f9f066a62037d7ce326bcb91b46de804485a",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-100hpa-1980-2025.nc",
+        "size": 66384640214
+      }
+    },
+    "z150": {
+      "path": "${RAW_ERA5}/Geopotential-150hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 150.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "433ae97224e7f6c2a0f77a47a2a53cb43e2ccc871b65521f45f6bd456c4c93cb",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-150hpa-1980-2025.nc",
+        "size": 67004092781
+      }
+    },
+    "z200": {
+      "path": "${RAW_ERA5}/Geopotential-200hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 200.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "722230528a31f86f944bb0516deb129c56b0db779f4514c92146806002da91ca",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-200hpa-1980-2025.nc",
+        "size": 67366947676
+      }
+    },
+    "z250": {
+      "path": "${RAW_ERA5}/Geopotential-250hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 250.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "96163d25d48c7150e7ff867d00dc233d57d1c48d07d0fc3e1f68271c07a81e11",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-250hpa-1980-2025.nc",
+        "size": 69762493122
+      }
+    },
+    "z300": {
+      "path": "${RAW_ERA5}/Geopotential-300hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 300.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "b15adbfb1036995eaf6429f29821b0b0cab25f5d2f3b1ba2d05d02ef1026d89b",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-300hpa-1980-2025.nc",
+        "size": 289132939863
+      }
+    },
+    "z400": {
+      "path": "${RAW_ERA5}/Geopotential-400hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 400.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "a5a8610447e4a3b703f00919d021d7c03eda5837c0674087b22c14155039d015",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-400hpa-1980-2025.nc",
+        "size": 76995461020
+      }
+    },
+    "z500": {
+      "path": "${RAW_ERA5}/Geopotential-500hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 500.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "8d5a9c81d5ffcf0e8b1599548ffa9d122dcca6529f515879a810e2729811824c",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-500hpa-1980-2025.nc",
+        "size": 296556277456
+      }
+    },
+    "z50": {
+      "path": "${RAW_ERA5}/Geopotential-50hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 50.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "d050dec737fea19f322b8daa88e76892ce20b8a0c156d2c20c27b851557baa76",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-50hpa-1980-2025.nc",
+        "size": 64394925850
+      }
+    },
+    "z600": {
+      "path": "${RAW_ERA5}/Geopotential-600hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 600.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "223fd8b21241f608e4c856f6435b162b0ddc5474fc5ef1dee49776c8e1ce5af7",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-600hpa-1980-2025.nc",
+        "size": 73784093464
+      }
+    },
+    "z700": {
+      "path": "${RAW_ERA5}/Geopotential-700hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 700.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "e96418d75e954a8fdc68c6877f4e10a30a7354f9df1ceb551937bdb403ce3ccd",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-700hpa-1980-2025.nc",
+        "size": 78154746538
+      }
+    },
+    "z850": {
+      "path": "${RAW_ERA5}/Geopotential-850hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 850.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "94b0dcaa7477326ad86a423abd5105f1e97db983987a01120a3ada2f9ee1370d",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-850hpa-1980-2025.nc",
+        "size": 87694147665
+      }
+    },
+    "z925": {
+      "path": "${RAW_ERA5}/Geopotential-925hpa-1980-2025.nc",
+      "variable": "z",
+      "pressure_level_hpa": 925.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m**2 s**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "0ddfacc180e301daa6a1d9cbe32ac4805d36d6c16aad02dd0d44773d25d50cb3",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Geopotential-925hpa-1980-2025.nc",
+        "size": 94772676695
+      }
+    },
+    "lsm": {
+      "path": "${RAW_ERA5}/Land-sea mask.nc",
+      "variable": "lsm",
+      "pressure_level_hpa": null,
+      "time_variable": "valid_time",
+      "time_units": "seconds since 1970-01-01",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "valid_time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        1,
+        721,
+        1440
+      ],
+      "units": "(0 - 1)",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        1,
+        721,
+        1440
+      ],
+      "step_type": "instant",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "surface fields: do not apply 850 hPa subsurface mask",
+      "metadata_sha256": "12037b85ec3213684d6d5c4866b5deb8dac876ea9a105795edcf1a2cce90b485",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Land-sea mask.nc",
+        "size": 780600
+      }
+    },
+    "msl": {
+      "path": "${RAW_ERA5}/Mean-sea-level-pressure-1980-2025.nc",
+      "variable": "msl",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "Pa",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "surface fields: do not apply 850 hPa subsurface mask",
+      "metadata_sha256": "0dafe7d412445f3fac918adb23da32f370d2a0b605d877379c004e0ec98e580f",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Mean-sea-level-pressure-1980-2025.nc",
+        "size": 299742518903
+      }
+    },
+    "r500": {
+      "path": "${RAW_ERA5}/Relative-humidity-500hpa-1980-2025.nc",
+      "variable": "r",
+      "pressure_level_hpa": 500.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "%",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "9b4bd8fd8a7ee57fc7855f022d36d0c5d51fdd022cf795fde9caa46804770bd1",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Relative-humidity-500hpa-1980-2025.nc",
+        "size": 121717673418
+      }
+    },
+    "r600": {
+      "path": "${RAW_ERA5}/Relative-humidity-600hpa-1980-2025.nc",
+      "variable": "r",
+      "pressure_level_hpa": 600.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "%",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "06452e51f236778dd3a8d73cfe2d429c78be5b79594a5854267d21b64e382e02",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Relative-humidity-600hpa-1980-2025.nc",
+        "size": 128603049732
+      }
+    },
+    "r700": {
+      "path": "${RAW_ERA5}/Relative-humidity-700hpa-1980-2025.nc",
+      "variable": "r",
+      "pressure_level_hpa": 700.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "%",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "33963b06d71956384eb16ccc8b576ba7a7c9c11905237f3b0dbee0ed09c6c2e6",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Relative-humidity-700hpa-1980-2025.nc",
+        "size": 121266536380
+      }
+    },
+    "r850": {
+      "path": "${RAW_ERA5}/Relative-humidity-850hpa-1980-2025.nc",
+      "variable": "r",
+      "pressure_level_hpa": 850.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "%",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "e66368fe674e251eb9c294b7714f7339b969af6353bbec9959f333ca2f816a2f",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Relative-humidity-850hpa-1980-2025.nc",
+        "size": 119673025371
+      }
+    },
+    "sst": {
+      "path": "${RAW_ERA5}/Sea-surface-temperature-1980-2025.nc",
+      "variable": "sst",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "surface fields: do not apply 850 hPa subsurface mask",
+      "metadata_sha256": "f8412ccd95bf2237463088054cf3858222218752bfe65a79da54ef50d7048c44",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Sea-surface-temperature-1980-2025.nc",
+        "size": 18107735982
+      }
+    },
+    "skt": {
+      "path": "${RAW_ERA5}/Skin-temperature-1980-2025.nc",
+      "variable": "skt",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "surface fields: do not apply 850 hPa subsurface mask",
+      "metadata_sha256": "a0d201627f0f9a8ac2fa55c5c4e99cd378e64f6073894d0028f48319dcc8fa52",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Skin-temperature-1980-2025.nc",
+        "size": 93101341950
+      }
+    },
+    "q1000": {
+      "path": "${RAW_ERA5}/Specific-humidity-1000hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 1000.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "5a90a574f2e4a76bfba0b144d1a9fc2dc631544dc82ad30e6be78b5cb25a2fa1",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-1000hpa-1980-2025.nc",
+        "size": 100791739572
+      }
+    },
+    "q100": {
+      "path": "${RAW_ERA5}/Specific-humidity-100hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 100.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "65a4f4b13548a3a16eedf62a8864fe4e0e9f7e436ed3bc16c6eebc3ad2431168",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-100hpa-1980-2025.nc",
+        "size": 85177262444
+      }
+    },
+    "q150": {
+      "path": "${RAW_ERA5}/Specific-humidity-150hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 150.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "8141732692deb95202ec97a7cddc3723433cc2df72df6d1173322d7f4001ef99",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-150hpa-1980-2025.nc",
+        "size": 83038097752
+      }
+    },
+    "q200": {
+      "path": "${RAW_ERA5}/Specific-humidity-200hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 200.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "3912b6e63a8ab3420626e43337d63363e5d9f43b6965749deb4d23a943c9d05f",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-200hpa-1980-2025.nc",
+        "size": 89214078210
+      }
+    },
+    "q250": {
+      "path": "${RAW_ERA5}/Specific-humidity-250hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 250.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "9414f1897fa2123e49e56e499f56c672b8da47c0f7e78cf285e4dc482d81771f",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-250hpa-1980-2025.nc",
+        "size": 94450907328
+      }
+    },
+    "q300": {
+      "path": "${RAW_ERA5}/Specific-humidity-300hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 300.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "be1e121ee3c6b03d85f714b4eaa3dbb870efd0bbeb1fd2ca47b945cb7250fdab",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-300hpa-1980-2025.nc",
+        "size": 96872465190
+      }
+    },
+    "q400": {
+      "path": "${RAW_ERA5}/Specific-humidity-400hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 400.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "b5bd21684f5e2a7221fd8ef2de588283ed05c05c0c6ba60891acae70a9dbbbbb",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-400hpa-1980-2025.nc",
+        "size": 103364703837
+      }
+    },
+    "q500": {
+      "path": "${RAW_ERA5}/Specific-humidity-500hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 500.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "c82675d1f89cfdd91c9c555667f5addb6ca8831a864f2a88503751d594a717d4",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-500hpa-1980-2025.nc",
+        "size": 108140585768
+      }
+    },
+    "q50": {
+      "path": "${RAW_ERA5}/Specific-humidity-50hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 50.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "d9a33542de21970d94dc1ca35e42f6f96d8ba836163233dcbda556de19883168",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-50hpa-1980-2025.nc",
+        "size": 81843887758
+      }
+    },
+    "q600": {
+      "path": "${RAW_ERA5}/Specific-humidity-600hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 600.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "9c76cf60e582063c735f3680dfb9d02cb65bcdaa2f828a57ac58c64cbcf7d188",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-600hpa-1980-2025.nc",
+        "size": 107261542319
+      }
+    },
+    "q700": {
+      "path": "${RAW_ERA5}/Specific-humidity-700hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 700.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "eac0d6a3e1bb503c83f58e834eea308e730927a215ab4f70c2bcea9a9e17996e",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-700hpa-1980-2025.nc",
+        "size": 111002408903
+      }
+    },
+    "q850": {
+      "path": "${RAW_ERA5}/Specific-humidity-850hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 850.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "3c3b97e3265b926e2002aafb1036f520a87852351038b04455523301966da641",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-850hpa-1980-2025.nc",
+        "size": 104595804754
+      }
+    },
+    "q925": {
+      "path": "${RAW_ERA5}/Specific-humidity-925hpa-1980-2025.nc",
+      "variable": "q",
+      "pressure_level_hpa": 925.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg kg**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "0fdfdb0ad28a7de2363efd1fc62b80bd25457699d4c6f1e832b3bc4c25d70d26",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Specific-humidity-925hpa-1980-2025.nc",
+        "size": 102652058071
+      }
+    },
+    "slhf": {
+      "path": "${RAW_ERA5}/Surface-latent-heat-flux-1980-2025.nc",
+      "variable": "slhf",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "J m**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "accum",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "User-confirmed ERA5 official download/time concatenation only; hourly accumulated J m-2 sampled six-hourly; upward W m-2 = -value/3600; legacy standard_name is not sign authority",
+      "metadata_sha256": "cadb5bd50806388ef5982cb982d3cabe50dfa430503c2d0a3bc3211ae3afea26",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Surface-latent-heat-flux-1980-2025.nc",
+        "size": 117644894199
+      }
+    },
+    "sp": {
+      "path": "${RAW_ERA5}/Surface-pressure-1980-2025.nc",
+      "variable": "sp",
+      "pressure_level_hpa": null,
+      "time_variable": "valid_time",
+      "time_units": "seconds since 1970-01-01",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "valid_time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "Pa",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "surface fields: do not apply 850 hPa subsurface mask",
+      "metadata_sha256": "bac7b8610c1e10efb810dbcb45c083cee2b445af934f8ef3d0ad0e4b29d2b125",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Surface-pressure-1980-2025.nc",
+        "size": 86589470347
+      }
+    },
+    "sshf": {
+      "path": "${RAW_ERA5}/Surface-sensible-heat-flux-1980-2025.nc",
+      "variable": "sshf",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "J m**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "accum",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "User-confirmed ERA5 official download/time concatenation only; hourly accumulated J m-2 sampled six-hourly; upward W m-2 = -value/3600; legacy standard_name is not sign authority",
+      "metadata_sha256": "a07c7f6cfa76b2b0f5daf12ba954e8e8c7376cffcf67ea2434601e5edd759eb7",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Surface-sensible-heat-flux-1980-2025.nc",
+        "size": 117072093682
+      }
+    },
+    "t1000": {
+      "path": "${RAW_ERA5}/Temperature-1000hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 1000.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "e6e42aad6a89326c179e6ca1e4eaaab7c988e82e83e9822c4c584954ce57aaee",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-1000hpa-1980-2025.nc",
+        "size": 95646414209
+      }
+    },
+    "t100": {
+      "path": "${RAW_ERA5}/Temperature-100hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 100.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "f62191f271ee5b9c15d3cf9d063183ff366f4d6dbf9caaf6cb5324870ecc4beb",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-100hpa-1980-2025.nc",
+        "size": 91861016558
+      }
+    },
+    "t150": {
+      "path": "${RAW_ERA5}/Temperature-150hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 150.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "54cf2b05816b8679b7121877bbadcf91b4f446a25c47cd5277f797bafd699f90",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-150hpa-1980-2025.nc",
+        "size": 91078200830
+      }
+    },
+    "t200": {
+      "path": "${RAW_ERA5}/Temperature-200hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 200.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "5bac0fc35e65371b2f331b0a4f11739e8e3bae1d0d17fb10e3e7108f6dac5951",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-200hpa-1980-2025.nc",
+        "size": 92262059771
+      }
+    },
+    "t250": {
+      "path": "${RAW_ERA5}/Temperature-250hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 250.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "80e53d68453171a1c27d625e04e8016a7ad9ccaa7df2de3ea7d110b4b10284e1",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-250hpa-1980-2025.nc",
+        "size": 92833864712
+      }
+    },
+    "t300": {
+      "path": "${RAW_ERA5}/Temperature-300hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 300.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "8ed7eb203f804973b7c219d16390e4cb119fc2d3d2a755ab15e11ee422bb3381",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-300hpa-1980-2025.nc",
+        "size": 90303377219
+      }
+    },
+    "t400": {
+      "path": "${RAW_ERA5}/Temperature-400hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 400.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "2e3478783fe19ce98f712668eb407deb6e575a83dd7b3f464be9cfb043ce0932",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-400hpa-1980-2025.nc",
+        "size": 91523902299
+      }
+    },
+    "t500": {
+      "path": "${RAW_ERA5}/Temperature-500hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 500.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "eaf2d36a7937f30bc8fbc046016e954f3dcc2f0e685d93532df3e3d85ed100d0",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-500hpa-1980-2025.nc",
+        "size": 90730486919
+      }
+    },
+    "t50": {
+      "path": "${RAW_ERA5}/Temperature-50hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 50.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "7a3d3aff758ab593553ecab84b7f673b6250f35e04ac7627b278f45657a213a1",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-50hpa-1980-2025.nc",
+        "size": 90673788237
+      }
+    },
+    "t600": {
+      "path": "${RAW_ERA5}/Temperature-600hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 600.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "dcae1001c990865a79bc714c3b778f2cbbf9dff30089f308150f6ed786a7e9d9",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-600hpa-1980-2025.nc",
+        "size": 88170540612
+      }
+    },
+    "t700": {
+      "path": "${RAW_ERA5}/Temperature-700hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 700.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "1efef2c5628b656e062122dd9400ca2a06c8f6e14686038566c8b6f9b0725e58",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-700hpa-1980-2025.nc",
+        "size": 90075677452
+      }
+    },
+    "t850": {
+      "path": "${RAW_ERA5}/Temperature-850hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 850.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "b11e3653eaade6b5e10a7cf595e94850f9f63849c4a814b05334a7f6782f02fd",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-850hpa-1980-2025.nc",
+        "size": 95363309466
+      }
+    },
+    "t925": {
+      "path": "${RAW_ERA5}/Temperature-925hpa-1980-2025.nc",
+      "variable": "t",
+      "pressure_level_hpa": 925.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "K",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "24c7de78e7f17934c66fe6de2f5c09cc029bf207cc59c76621cf61a9f500b785",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Temperature-925hpa-1980-2025.nc",
+        "size": 96498027967
+      }
+    },
+    "tcwv": {
+      "path": "${RAW_ERA5}/Total-column-water-vapour-1980-2025.nc",
+      "variable": "tcwv",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "kg m**-2",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "surface fields: do not apply 850 hPa subsurface mask",
+      "metadata_sha256": "b33596087e8efff78dc5bc882572706b9379140c1340cf9d5fa700d9403431fd",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Total-column-water-vapour-1980-2025.nc",
+        "size": 96028569284
+      }
+    },
+    "tp": {
+      "path": "${RAW_ERA5}/Total-precipitation-1980-2025.nc",
+      "variable": "tp",
+      "pressure_level_hpa": null,
+      "time_variable": "valid_time",
+      "time_units": "seconds since 1970-01-01",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "valid_time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "accum",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "one-hour accumulation ending valid UTC, sampled every 6h; mm h-1=value*1000; not six-hour/daily total",
+      "metadata_sha256": "8a711dc1c6b0fd19a72ef05e369fde1c7c43bb13be4761b64f5af9f1f98ed813",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Total-precipitation-1980-2025.nc",
+        "size": 54458317490
+      }
+    },
+    "u1000": {
+      "path": "${RAW_ERA5}/U-component-of-wind-1000hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 1000.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "186a1cd6e00c39385745e2318ba00bdbbb2ba28749524ea9a1332e66691236b5",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-1000hpa-1980-2025.nc",
+        "size": 122248441165
+      }
+    },
+    "u100": {
+      "path": "${RAW_ERA5}/U-component-of-wind-100hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 100.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "e47309005e99ec5fa2b91c81e8da4acfdc2f7cbc54bccf184d64125fe96e6919",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-100hpa-1980-2025.nc",
+        "size": 99788679619
+      }
+    },
+    "u150": {
+      "path": "${RAW_ERA5}/U-component-of-wind-150hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 150.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "c2d0ea78895b946eb46b63f40b0812014009366ec295a11c6e923f00f93c1204",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-150hpa-1980-2025.nc",
+        "size": 101676054588
+      }
+    },
+    "u200": {
+      "path": "${RAW_ERA5}/U-component-of-wind-200hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 200.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "9c913f6fc551ac173ea3af51fa21d4151c7d0a5a0af3adc95ca6630c823b7023",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-200hpa-1980-2025.nc",
+        "size": 103805623953
+      }
+    },
+    "u_shear_200_850": {
+      "path": "${RAW_ERA5}/U-component-of-wind-200hpa-850hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "derived signed wind difference, not raw pressure-level wind",
+      "metadata_sha256": "435981607a76ff2c36095eb8184ed3ca88b2f42d55e0c89935c06d28ae7d4e68",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-200hpa-850hpa-1980-2025.nc",
+        "size": 113239578710
+      }
+    },
+    "u250": {
+      "path": "${RAW_ERA5}/U-component-of-wind-250hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 250.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "525249419596794a31b15cb18dd368a565631fbe757495bffac85cf1dfeeeaaf",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-250hpa-1980-2025.nc",
+        "size": 105421391700
+      }
+    },
+    "u300": {
+      "path": "${RAW_ERA5}/U-component-of-wind-300hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 300.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "297c32baae3d6520681416c178eb9f9992442ae248dc5bbca0a9dd0428933f77",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-300hpa-1980-2025.nc",
+        "size": 106913454985
+      }
+    },
+    "u400": {
+      "path": "${RAW_ERA5}/U-component-of-wind-400hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 400.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "d958cd07db884b8b776b020dee09b851bf19a5d7cc9633fcd991db8a0c5fd04d",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-400hpa-1980-2025.nc",
+        "size": 108898745880
+      }
+    },
+    "u500": {
+      "path": "${RAW_ERA5}/U-component-of-wind-500hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 500.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "521ffa41dd71a79ff3fd73cc95f484c5a3157070eb50fc6e87cd2ff3d70493ee",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-500hpa-1980-2025.nc",
+        "size": 108651303075
+      }
+    },
+    "u_shear_500_700": {
+      "path": "${RAW_ERA5}/U-component-of-wind-500hpa-700hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "derived signed wind difference, not raw pressure-level wind",
+      "metadata_sha256": "615fec354d75507ade78f1ec6a44cbae21c74e59a12d502bed1333ab796ad5ed",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-500hpa-700hpa-1980-2025.nc",
+        "size": 120272301528
+      }
+    },
+    "u50": {
+      "path": "${RAW_ERA5}/U-component-of-wind-50hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 50.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "d397412511d6941b52523d2454218629f085a7738e360ed3e4b9a23d86b24fd0",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-50hpa-1980-2025.nc",
+        "size": 99526272049
+      }
+    },
+    "u600": {
+      "path": "${RAW_ERA5}/U-component-of-wind-600hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 600.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "1d3730d9c57788ed8f96b50cb89e9eff32e9b55ced042e243aa6deda10444c28",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-600hpa-1980-2025.nc",
+        "size": 109489340238
+      }
+    },
+    "u700": {
+      "path": "${RAW_ERA5}/U-component-of-wind-700hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 700.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "e91c08fce88919c02aa4fb69f95b88f06a9595ca42bd696d18539e833a47f3eb",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-700hpa-1980-2025.nc",
+        "size": 111644579532
+      }
+    },
+    "u850": {
+      "path": "${RAW_ERA5}/U-component-of-wind-850hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 850.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "4a91e9d098a10a965ac4df69578e4b192515674352b96c4e4b403fa7b61bb1c6",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-850hpa-1980-2025.nc",
+        "size": 116171510818
+      }
+    },
+    "u925": {
+      "path": "${RAW_ERA5}/U-component-of-wind-925hpa-1980-2025.nc",
+      "variable": "u",
+      "pressure_level_hpa": 925.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "ad107e9bea97ff18dbdfd19eda20d31caffe1ddd2d1faf15de38c68c59a555c3",
+      "source_identity": {
+        "path": "${RAW_ERA5}/U-component-of-wind-925hpa-1980-2025.nc",
+        "size": 117284035413
+      }
+    },
+    "v1000": {
+      "path": "${RAW_ERA5}/V-component-of-wind-1000hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 1000.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "b15cd799bfdda4f29fcc5465903c65b4e86100af1af6eb811480d06f058bbc76",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-1000hpa-1980-2025.nc",
+        "size": 124049918997
+      }
+    },
+    "v100": {
+      "path": "${RAW_ERA5}/V-component-of-wind-100hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 100.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "08bbcf59839a296e74f7edc62e1fb62a06d9180d5194a3fe792578123d439110",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-100hpa-1980-2025.nc",
+        "size": 108692648489
+      }
+    },
+    "v150": {
+      "path": "${RAW_ERA5}/V-component-of-wind-150hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 150.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "783346e084005e63f9124ac58557ae9364500c84d312bf80c7f0b359ac58de46",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-150hpa-1980-2025.nc",
+        "size": 106743478140
+      }
+    },
+    "v200": {
+      "path": "${RAW_ERA5}/V-component-of-wind-200hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 200.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "65ffa373a9e1952bf2921b51651f2ac97f5b7610b18b4cbe640a283130a0269b",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-200hpa-1980-2025.nc",
+        "size": 108949606744
+      }
+    },
+    "v_shear_200_850": {
+      "path": "${RAW_ERA5}/V-component-of-wind-200hpa-850hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "derived signed wind difference, not raw pressure-level wind",
+      "metadata_sha256": "66bfc0a68ee6cfa8046fb283ffc217bc59705abf5d83be4d6890b2b9a7e870af",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-200hpa-850hpa-1980-2025.nc",
+        "size": 120353460619
+      }
+    },
+    "v250": {
+      "path": "${RAW_ERA5}/V-component-of-wind-250hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 250.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "5a22707f816b30a68c339edbb6629f62b1a15e6fb289d63cebd577b929e30e36",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-250hpa-1980-2025.nc",
+        "size": 110831480568
+      }
+    },
+    "v300": {
+      "path": "${RAW_ERA5}/V-component-of-wind-300hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 300.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "beea431fda20908d06e3da089103b3db0e5b498c7ef2a4b069355d6fc4472280",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-300hpa-1980-2025.nc",
+        "size": 112912544439
+      }
+    },
+    "v400": {
+      "path": "${RAW_ERA5}/V-component-of-wind-400hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 400.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "1977f24c196420d872aa4745cb02655c50fbd228900cfcb2c35ddc82574a28ef",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-400hpa-1980-2025.nc",
+        "size": 115428054108
+      }
+    },
+    "v500": {
+      "path": "${RAW_ERA5}/V-component-of-wind-500hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 500.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "cd8654aa4ce13f57ef1326b07bae2413b60448fc4b231aaaddd6bbb101cee658",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-500hpa-1980-2025.nc",
+        "size": 115647957671
+      }
+    },
+    "v_shear_500_700": {
+      "path": "${RAW_ERA5}/V-component-of-wind-500hpa-700hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": null,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "",
+      "source_level_mask": "surface:no pressure-level mask",
+      "role": "derived signed wind difference, not raw pressure-level wind",
+      "metadata_sha256": "3d962e3433c94790092483a430156ec0bd7b70f0cc92faef0da9d34ae0f1f034",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-500hpa-700hpa-1980-2025.nc",
+        "size": 126671273876
+      }
+    },
+    "v50": {
+      "path": "${RAW_ERA5}/V-component-of-wind-50hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 50.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "150d38417649091fcdc6f25fac6f1f459a1fb0024f67d94133310ff04e97cf27",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-50hpa-1980-2025.nc",
+        "size": 108276895653
+      }
+    },
+    "v600": {
+      "path": "${RAW_ERA5}/V-component-of-wind-600hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 600.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "ad71c0ad90210f0a05510406c8a8ac5b7b0036874af1a71b227557bd4d440f90",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-600hpa-1980-2025.nc",
+        "size": 116586715875
+      }
+    },
+    "v700": {
+      "path": "${RAW_ERA5}/V-component-of-wind-700hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 700.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "732354c82012f5a47208eb8ecc36b346cb2a6e453a328955d938d222748d56a5",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-700hpa-1980-2025.nc",
+        "size": 119083431358
+      }
+    },
+    "v850": {
+      "path": "${RAW_ERA5}/V-component-of-wind-850hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 850.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "e4b2adaf5bc383fb2023508f663f6af0867c1bfc01c13c8a4c5b8e4fbc69ce40",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-850hpa-1980-2025.nc",
+        "size": 122691155702
+      }
+    },
+    "v925": {
+      "path": "${RAW_ERA5}/V-component-of-wind-925hpa-1980-2025.nc",
+      "variable": "v",
+      "pressure_level_hpa": 925.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "m s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "34ecdb7e35dd07a324cf3516e6c07bd40549a6c28f88d8866ffa4ec18289f96e",
+      "source_identity": {
+        "path": "${RAW_ERA5}/V-component-of-wind-925hpa-1980-2025.nc",
+        "size": 122136469867
+      }
+    },
+    "w500": {
+      "path": "${RAW_ERA5}/Vertical-velocity-500hpa-1980-2025.nc",
+      "variable": "w",
+      "pressure_level_hpa": 500.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "Pa s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "bf1a1276098c20241a2c1a48f81722354cde19ca11d0b3032015468072970529",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Vertical-velocity-500hpa-1980-2025.nc",
+        "size": 122115894688
+      }
+    },
+    "w700": {
+      "path": "${RAW_ERA5}/Vertical-velocity-700hpa-1980-2025.nc",
+      "variable": "w",
+      "pressure_level_hpa": 700.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "Pa s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "4fdf7651c6e7c6c0cb3c4d81f363173d92c321a979a66678dbbc7817e79e9103",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Vertical-velocity-700hpa-1980-2025.nc",
+        "size": 128149671574
+      }
+    },
+    "w850": {
+      "path": "${RAW_ERA5}/Vertical-velocity-850hpa-1980-2025.nc",
+      "variable": "w",
+      "pressure_level_hpa": 850.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "Pa s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float32",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "0e1d36b9c7b34acfdbed01a90251da33da37ff5ba888362bf4a9a81b1eaff12c",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Vertical-velocity-850hpa-1980-2025.nc",
+        "size": 135603831344
+      }
+    },
+    "vo850": {
+      "path": "${RAW_ERA5}/Vorticity-(relative)-850hpa-1980-2025.nc",
+      "variable": "vo",
+      "pressure_level_hpa": 850.0,
+      "time_variable": "time",
+      "time_units": "hours since 1980-01-01 00:00:00",
+      "calendar": "proleptic_gregorian",
+      "dimensions": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "shape": [
+        67208,
+        721,
+        1440
+      ],
+      "units": "s**-1",
+      "latitude_variable": "latitude",
+      "longitude_variable": "longitude",
+      "latitude_order": "descending",
+      "longitude_range": "0..359.75",
+      "latitude_resolution_deg": 0.25,
+      "longitude_resolution_deg": 0.25,
+      "original_grid": [
+        721,
+        1440
+      ],
+      "dtype": "float64",
+      "chunks": [
+        8,
+        90,
+        180
+      ],
+      "step_type": "instant",
+      "source_level_mask": "sp>=100*pressure_level_hpa",
+      "role": "SP pressure mask before pressure-level diagnostics; original area denominator",
+      "metadata_sha256": "bf370e5bfcb32bfc1b9cdef2dc8f7af44a92d7b0ecd9f2378c04e7fd573d83fc",
+      "source_identity": {
+        "path": "${RAW_ERA5}/Vorticity-(relative)-850hpa-1980-2025.nc",
+        "size": 146969339716
+      }
+    }
+  },
+  "raw_time_index_formula": "ERA5 time normalized to six-hour index since1980-01-01T00:00Z; verify exact UTC conversion and identity againststoredcoords",
+  "static_lsm_note": "single2025-12-31T00:00UTCsupport is static and broadcastspatially; do not request eventUTC fromits length1timeaxis",
+  "conversions": {
+    "z_to_height_m": "z/9.80665",
+    "q_to_mixing_ratio_kgkg": "q/(1-q)",
+    "t_K_to_C": "t-273.15",
+    "tp_to_sampled_hourly_rate_mm_h": "tp*1000 (preceding1h)",
+    "slhf_sshf_to_upward_W_m2": "-accumulated_J_m2/3600"
+  }
+}

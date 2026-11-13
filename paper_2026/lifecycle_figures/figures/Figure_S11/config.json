@@ -1,0 +1,39 @@
+{
+  "figure_id": "Figure_S06",
+  "type": "supplementary",
+  "entry_function": "s5",
+  "legacy_identity": "SI_threshold_sensitivity",
+  "family": "early",
+  "aliases": {
+    "FP0071": "inputs/3928be4370_manifest.csv",
+    "FP0223": "inputs/f238cd830c_duration_summaries.csv",
+    "FP0230": "inputs/a7a7886894_threshold_common_difference.csv"
+  },
+  "caption": "Supplementary Fig. 6 | Threshold sensitivity within the frozen main sample. a, Valid support for 18 combinations of intensification progress (0.20, 0.25, 0.30), near-peak progress (0.85, 0.90, 0.95) and minimum lifetime wind gain (15 or 20 kt), evaluated on the same 2,340 wind histories. Valid counts range from 2,133 to 2,340 and are encoded by the sequential colour scale in a. b, Mean later-near-peak (L) and bridge (B) durations for the 0.85 and 0.95 thresholds. Native recurrence subsets contain 150 and 109 cyclones, respectively. Main and Alt. compare the 0.90 and alternative definitions on the same 123 cyclones recurrent under the main definition. Error bars are the existing 95% SID-bootstrap intervals. c,d, Alternative-minus-main changes in meanF-meanU and meanU-meanR environmental contrasts for the 0.85, 0.95 and C5 definitions, using common SID support within each variable and comparison. Values are divided by the main reference standard deviation; daggers identify intervals spanning zero. C5 uses V_LMI−5 kt: R5 is the continuous near-peak segment containing the first LMI, U5 is the union of subsequent near-peak intervals from that segment onset, and F5 spans from that onset to the end of the last near-peak interval, with durations counted over valid six-hour intervals.",
+  "baseline": {
+    "label": "Figure_S06",
+    "source": "Figure_S05.png",
+    "sha256": "d78f8f263ccc28184ebff8310e2fbac8e88068449941186bdf7ab292eef85081",
+    "pixels": [
+      6377,
+      6732
+    ],
+    "display_inches": [
+      6.496062992125984,
+      6.857691382327209
+    ],
+    "effective_dpi": 981.6714729025099
+  },
+  "source_code": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

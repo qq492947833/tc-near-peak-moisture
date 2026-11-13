@@ -1,0 +1,999 @@
+{
+  "figure_id": "Figure_S17",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/full_pre_all_schemes_regions.csv"
+      ],
+      "fields": {
+        "pre": [
+          "scheme",
+          "window",
+          "level",
+          "region",
+          "metric",
+          "summary",
+          "lag_h",
+          "units",
+          "n_sid",
+          "temporary_mean",
+          "final_mean",
+          "estimate",
+          "lower",
+          "upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description"
+        ]
+      },
+      "filter": [
+        "data = frames['pre']",
+        "data = data[data.scheme.eq('main') & data.region.eq('r0_300') & data.metric.eq(metric)]",
+        "value = array[y, x]"
+      ],
+      "sample_scope": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "units": {
+        "x": "",
+        "y": "hPa",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              -2.252753198198385,
+              -9.341606338616074,
+              -4.065826463879668
+            ],
+            [
+              -1.9244833684207074,
+              -13.407595330945615,
+              -6.880915946496975
+            ],
+            [
+              -2.2640717763007063,
+              -16.546122022049484,
+              -7.420784010783801
+            ]
+          ],
+          "vmin": -16.546122022049484,
+          "vmax": 16.546122022049484,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "weights": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "pre": "7f2edd05633ab1c54fef40f9534f89b13f2c6d60e1e16c0685d05b9101ae1ceb"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "pre",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "pre",
+          "fields": [
+            "scheme",
+            "window",
+            "level",
+            "region",
+            "metric",
+            "summary",
+            "lag_h",
+            "units",
+            "n_sid",
+            "temporary_mean",
+            "final_mean",
+            "estimate",
+            "lower",
+            "upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 3834,
+          "saved_selected_table": "panel_pre_0.csv",
+          "sha256": "f01bf8f89f7fcc29911f5c1ae09584c4396089b7fefb89da02c3f741b8df2c8f"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/full_pre_all_schemes_regions.csv"
+      ],
+      "fields": {
+        "pre": [
+          "scheme",
+          "window",
+          "level",
+          "region",
+          "metric",
+          "summary",
+          "lag_h",
+          "units",
+          "n_sid",
+          "temporary_mean",
+          "final_mean",
+          "estimate",
+          "lower",
+          "upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description"
+        ]
+      },
+      "filter": [
+        "data = frames['pre']",
+        "data = data[data.scheme.eq('main') & data.region.eq('r0_300') & data.metric.eq(metric)]",
+        "value = array[y, x]"
+      ],
+      "sample_scope": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "units": {
+        "x": "",
+        "y": "hPa",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              -0.006099881231342552,
+              -1.2041022795807417,
+              -0.4871691998082949
+            ],
+            [
+              1.8818799329771865,
+              -1.0692510217050821,
+              -0.4145662982427537
+            ],
+            [
+              4.351072098903085,
+              -1.2718358161953875,
+              -0.222292380464002
+            ]
+          ],
+          "vmin": -4.351072098903085,
+          "vmax": 4.351072098903085,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "weights": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "pre": "7f2edd05633ab1c54fef40f9534f89b13f2c6d60e1e16c0685d05b9101ae1ceb"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "pre",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "pre",
+          "fields": [
+            "scheme",
+            "window",
+            "level",
+            "region",
+            "metric",
+            "summary",
+            "lag_h",
+            "units",
+            "n_sid",
+            "temporary_mean",
+            "final_mean",
+            "estimate",
+            "lower",
+            "upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 3834,
+          "saved_selected_table": "panel_pre_0.csv",
+          "sha256": "f01bf8f89f7fcc29911f5c1ae09584c4396089b7fefb89da02c3f741b8df2c8f"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/full_pre_all_schemes_regions.csv"
+      ],
+      "fields": {
+        "pre": [
+          "scheme",
+          "window",
+          "level",
+          "region",
+          "metric",
+          "summary",
+          "lag_h",
+          "units",
+          "n_sid",
+          "temporary_mean",
+          "final_mean",
+          "estimate",
+          "lower",
+          "upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description"
+        ]
+      },
+      "filter": [
+        "data = frames['pre']",
+        "data = data[data.scheme.eq('main') & data.region.eq('r0_300') & data.metric.eq(metric)]",
+        "value = array[y, x]"
+      ],
+      "sample_scope": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "units": {
+        "x": "",
+        "y": "hPa",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              4.152249161878495e-05,
+              -0.00013465746867758312,
+              -0.00013358850924146697
+            ],
+            [
+              -4.850994163048022e-06,
+              -0.00019662819371108584,
+              -5.10915849081726e-05
+            ],
+            [
+              3.517121083417111e-05,
+              -0.0001628067506951386,
+              -1.3517662549392586e-07
+            ]
+          ],
+          "vmin": -0.00019662819371108584,
+          "vmax": 0.00019662819371108584,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "weights": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "pre": "7f2edd05633ab1c54fef40f9534f89b13f2c6d60e1e16c0685d05b9101ae1ceb"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "pre",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "pre",
+          "fields": [
+            "scheme",
+            "window",
+            "level",
+            "region",
+            "metric",
+            "summary",
+            "lag_h",
+            "units",
+            "n_sid",
+            "temporary_mean",
+            "final_mean",
+            "estimate",
+            "lower",
+            "upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 3834,
+          "saved_selected_table": "panel_pre_0.csv",
+          "sha256": "f01bf8f89f7fcc29911f5c1ae09584c4396089b7fefb89da02c3f741b8df2c8f"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/full_pre_all_schemes_regions.csv"
+      ],
+      "fields": {
+        "pre": [
+          "scheme",
+          "window",
+          "level",
+          "region",
+          "metric",
+          "summary",
+          "lag_h",
+          "units",
+          "n_sid",
+          "temporary_mean",
+          "final_mean",
+          "estimate",
+          "lower",
+          "upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description"
+        ]
+      },
+      "filter": [
+        "data = frames['pre']",
+        "data = data[data.scheme.eq('main') & data.region.eq('r0_300') & data.metric.eq(metric)]",
+        "value = array[y, x]"
+      ],
+      "sample_scope": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "units": {
+        "x": "",
+        "y": "Layer (hPa)",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              -1.864391290986918e-05,
+              -0.0001156831654924336,
+              -0.0001035538552565076
+            ]
+          ],
+          "vmin": -0.0001156831654924336,
+          "vmax": 0.0001156831654924336,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "weights": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "pre": "7f2edd05633ab1c54fef40f9534f89b13f2c6d60e1e16c0685d05b9101ae1ceb"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "pre",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "pre",
+          "fields": [
+            "scheme",
+            "window",
+            "level",
+            "region",
+            "metric",
+            "summary",
+            "lag_h",
+            "units",
+            "n_sid",
+            "temporary_mean",
+            "final_mean",
+            "estimate",
+            "lower",
+            "upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 3834,
+          "saved_selected_table": "panel_pre_0.csv",
+          "sha256": "f01bf8f89f7fcc29911f5c1ae09584c4396089b7fefb89da02c3f741b8df2c8f"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/full_pre_all_schemes_regions.csv"
+      ],
+      "fields": {
+        "pre": [
+          "scheme",
+          "window",
+          "level",
+          "region",
+          "metric",
+          "summary",
+          "lag_h",
+          "units",
+          "n_sid",
+          "temporary_mean",
+          "final_mean",
+          "estimate",
+          "lower",
+          "upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description"
+        ]
+      },
+      "filter": [
+        "data = frames['pre']",
+        "data = data[data.scheme.eq('main') & data.region.eq('r0_300') & data.metric.eq(metric)]",
+        "value = array[y, x]"
+      ],
+      "sample_scope": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "units": {
+        "x": "",
+        "y": "Layer (hPa)",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              3.5357332902837807e-06,
+              1.8458182700328474e-05,
+              1.7253165710775934e-05
+            ]
+          ],
+          "vmin": -1.8458182700328474e-05,
+          "vmax": 1.8458182700328474e-05,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "weights": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "pre": "7f2edd05633ab1c54fef40f9534f89b13f2c6d60e1e16c0685d05b9101ae1ceb"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "pre",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "pre",
+          "fields": [
+            "scheme",
+            "window",
+            "level",
+            "region",
+            "metric",
+            "summary",
+            "lag_h",
+            "units",
+            "n_sid",
+            "temporary_mean",
+            "final_mean",
+            "estimate",
+            "lower",
+            "upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 3834,
+          "saved_selected_table": "panel_pre_0.csv",
+          "sha256": "f01bf8f89f7fcc29911f5c1ae09584c4396089b7fefb89da02c3f741b8df2c8f"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/full_pre_all_schemes_regions.csv"
+      ],
+      "fields": {
+        "pre": [
+          "scheme",
+          "window",
+          "level",
+          "region",
+          "metric",
+          "summary",
+          "lag_h",
+          "units",
+          "n_sid",
+          "temporary_mean",
+          "final_mean",
+          "estimate",
+          "lower",
+          "upper",
+          "p_centered",
+          "draw_key",
+          "quantity",
+          "physical_category",
+          "units_display",
+          "window_description"
+        ]
+      },
+      "filter": [
+        "data = frames['pre']",
+        "data = data[data.scheme.eq('main') & data.region.eq('r0_300') & data.metric.eq(metric)]",
+        "value = array[y, x]"
+      ],
+      "sample_scope": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "units": {
+        "x": "",
+        "y": "Layer (hPa)",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              -9.709826941179537e-05,
+              0.00039067957706805367,
+              0.0002430877710565792
+            ]
+          ],
+          "vmin": -0.00039067957706805367,
+          "vmax": 0.00039067957706805367,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "weights": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+        "saved_columns": [
+          "lower",
+          "upper"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "pre": "7f2edd05633ab1c54fef40f9534f89b13f2c6d60e1e16c0685d05b9101ae1ceb"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "pre",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "pre",
+          "fields": [
+            "scheme",
+            "window",
+            "level",
+            "region",
+            "metric",
+            "summary",
+            "lag_h",
+            "units",
+            "n_sid",
+            "temporary_mean",
+            "final_mean",
+            "estimate",
+            "lower",
+            "upper",
+            "p_centered",
+            "draw_key",
+            "quantity",
+            "physical_category",
+            "units_display",
+            "window_description",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 3834,
+          "saved_selected_table": "panel_pre_0.csv",
+          "sha256": "f01bf8f89f7fcc29911f5c1ae09584c4396089b7fefb89da02c3f741b8df2c8f"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "pre",
+      "relative_path": "inputs/full_pre_all_schemes_regions.csv",
+      "sha256": "7f2edd05633ab1c54fef40f9534f89b13f2c6d60e1e16c0685d05b9101ae1ceb",
+      "original_path": "full_pre_all_schemes_regions.csv",
+      "bytes": 1093552
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S17.png",
+      "sha256": "3269812d26243e0c4d0f92761b84ee49a8ab432157b8f21f279b50cd1cacabcd"
+    },
+    "tiff": {
+      "path": "Figure_S17.tiff",
+      "sha256": "0b921f5f0db6f71d50f174b045d916c50ffb281ca199c6e6cbdef0a234e2904c"
+    },
+    "pdf": {
+      "path": "Figure_S17.pdf",
+      "sha256": "7dec978c149f57c19288cf4643058ca78201af1a72e833f91be3cd8e6566c1b4"
+    },
+    "svg": {
+      "path": "Figure_S17.svg",
+      "sha256": "9d26c2b132b592fde95b61029c596b4d294e5b8caadf7053b9cbbd86ccdf1d9f"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S17",
+      "returncode": 0,
+      "elapsed_s": 16.82,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 484.72440944881896
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              66.33070866141733,
+              360.030166871343,
+              199.85147119767927,
+              455.6409448818898
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              48.33070866141733,
+              463.6409448818898
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              311.512639867385,
+              360.030166871343,
+              445.033402403647,
+              455.6409448818898
+            ],
+            "grid_id": "matplotlib-grid-2",
+            "row_start": 0,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              293.512639867385,
+              463.6409448818898
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              66.33070866141733,
+              199.4040598136243,
+              199.85147119767927,
+              295.01483782417114
+            ],
+            "grid_id": "matplotlib-grid-3",
+            "row_start": 0,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              48.33070866141733,
+              303.0148378241711
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              311.512639867385,
+              199.4040598136243,
+              445.033402403647,
+              295.01483782417114
+            ],
+            "grid_id": "matplotlib-grid-4",
+            "row_start": 0,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              293.512639867385,
+              303.0148378241711
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              66.33070866141733,
+              38.7779527559056,
+              199.85147119767927,
+              134.38873076645243
+            ],
+            "grid_id": "matplotlib-grid-5",
+            "row_start": 0,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              48.33070866141733,
+              142.38873076645243
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              311.512639867385,
+              38.7779527559056,
+              445.033402403647,
+              134.38873076645243
+            ],
+            "grid_id": "matplotlib-grid-6",
+            "row_start": 0,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              293.512639867385,
+              142.38873076645243
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6714719465211
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S17",
+      "source": "Figure_S09.png",
+      "sha256": "d79b319884752432eb1e5dfc83dcb84d2f3d7fb0a90db83bc39ecec3a5274fca",
+      "pixels": [
+        6377,
+        6059
+      ],
+      "display_inches": [
+        6.496062992125984,
+        6.172125984251968
+      ],
+      "effective_dpi": 981.6714719465211
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 17 | Pressure and scale structure of the pre-departure paired contrasts. Each cell shows a saved temporary-minus-final mean in its original unit. The first three panels compare 500, 700 and 850 hPa; layer-input panels retain the 500–850 hPa boundary difference. Columns are the three distinct nominal scale windows, not equally spaced continuous coordinates. Each quantity has its own symmetric zero-centred colour scale; missing estimates are grey and are not interpreted as zero. Tables S7b,c,d give the estimates, paired SID counts and intervals at the three common pressure levels and for the 500–850 hPa layer. The accompanying source data also provide the 13-level storage, local-tendency and horizontal diagnostics. Table S7n defines the quantities. The panels use the main input placement and 0–300 km region; colour does not encode significance.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "4c64e38225a6513a9e4b63b03c90cbcd12fcd7510adaa92347bd1dcab264ce46",
+      "run.py": "ec771a916707eafa7a7627f84d5b5222bb8827b3d432a4b332863115ab47db34"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

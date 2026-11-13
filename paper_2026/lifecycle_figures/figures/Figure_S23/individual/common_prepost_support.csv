@@ -1,0 +1,118 @@
+sid,original_pre90,original_post80,Sstar,temporary_t0,final_t0,event_separation_h,full_48h_windows_overlap_positive_duration,full_48h_windows_touch_or_overlap,overlap_duration_h,post24_windows_overlap_positive_duration,exclusion_reasons
+1982005S10105,True,True,True,1982-01-13T12:00:00+00:00,1982-01-15T00:00:00+00:00,36.0,True,True,12.0,False,
+1982257N17140,True,True,True,1982-09-19T06:00:00+00:00,1982-09-20T18:00:00+00:00,36.0,True,True,12.0,False,
+1982272N11156,True,True,True,1982-10-05T18:00:00+00:00,1982-10-06T18:00:00+00:00,24.0,True,True,24.0,False,
+1983281N12256,True,True,True,1983-10-12T00:00:00+00:00,1983-10-15T06:00:00+00:00,78.0,False,False,0.0,False,
+1984214N12143,False,False,False,1984-08-07T06:00:00+00:00,1984-08-07T18:00:00+00:00,12.0,True,True,36.0,True,temporary:-6h:terrain support;temporary:+0h:terrain support;temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support
+1984259N19245,True,False,False,1984-09-21T06:00:00+00:00,1984-09-24T18:00:00+00:00,84.0,False,False,0.0,False,final:+18h:terrain support
+1984317N04164,True,False,False,1984-11-18T12:00:00+00:00,1984-11-20T06:00:00+00:00,42.0,True,True,6.0,False,"final:+24h:centre unavailable,missing field or centre"
+1985210N14257,True,True,True,1985-08-03T12:00:00+00:00,1985-08-05T18:00:00+00:00,54.0,False,False,0.0,False,
+1985259N12262,True,True,True,1985-09-20T12:00:00+00:00,1985-09-21T12:00:00+00:00,24.0,True,True,24.0,False,
+1985268N16126,False,False,False,1985-09-29T18:00:00+00:00,1985-10-01T06:00:00+00:00,36.0,True,True,12.0,False,temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support;final:-24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+1987058S10173,True,False,False,1987-03-04T18:00:00+00:00,1987-03-06T06:00:00+00:00,36.0,True,True,12.0,False,"final:+24h:centre unavailable,missing field or centre"
+1987200N04191,True,True,True,1987-07-27T00:00:00+00:00,1987-07-27T18:00:00+00:00,18.0,True,True,30.0,True,
+1987263N10241,True,True,True,1987-09-23T06:00:00+00:00,1987-09-24T18:00:00+00:00,36.0,True,True,12.0,False,
+1988005N03174,True,True,True,1988-01-11T18:00:00+00:00,1988-01-13T00:00:00+00:00,30.0,True,True,18.0,False,
+1988242N12215,True,True,True,1988-09-02T06:00:00+00:00,1988-09-03T12:00:00+00:00,30.0,True,True,18.0,False,
+1988310S08100,True,True,True,1988-11-16T18:00:00+00:00,1988-11-18T00:00:00+00:00,30.0,True,True,18.0,False,
+1989201N11145,False,False,False,1989-07-26T12:00:00+00:00,1989-07-28T00:00:00+00:00,36.0,True,True,12.0,False,temporary:+18h:terrain support;final:-18h:terrain support;final:+6h:terrain support;final:+24h:terrain support
+1989254N13340,True,True,True,1989-09-16T12:00:00+00:00,1989-09-18T06:00:00+00:00,42.0,True,True,6.0,False,
+1990012S12131,True,True,True,1990-01-16T12:00:00+00:00,1990-01-18T06:00:00+00:00,42.0,True,True,6.0,False,
+1990187N13258,True,True,True,1990-07-09T12:00:00+00:00,1990-07-10T12:00:00+00:00,24.0,True,True,24.0,False,
+1990247N07337,True,True,True,1990-09-08T00:00:00+00:00,1990-09-12T00:00:00+00:00,96.0,False,False,0.0,False,
+1990289N22300,True,True,True,1990-10-18T18:00:00+00:00,1990-10-19T18:00:00+00:00,24.0,True,True,24.0,False,
+1992197N11266,True,True,True,1992-07-19T06:00:00+00:00,1992-07-22T00:00:00+00:00,66.0,False,False,0.0,False,
+1992298N10188,True,True,True,1992-10-28T12:00:00+00:00,1992-11-02T12:00:00+00:00,120.0,False,False,0.0,False,
+1993064N03174,True,True,True,1993-03-15T00:00:00+00:00,1993-03-16T12:00:00+00:00,36.0,True,True,12.0,False,
+1993360S04171,True,True,True,1994-01-03T12:00:00+00:00,1994-01-17T00:00:00+00:00,324.0,False,False,0.0,False,
+1994012S09075,True,True,True,1994-01-15T06:00:00+00:00,1994-01-16T06:00:00+00:00,24.0,True,True,24.0,False,
+1994153N19113,True,False,False,1994-06-07T00:00:00+00:00,1994-06-08T06:00:00+00:00,30.0,True,True,18.0,False,final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+1995032S10074,True,True,True,1995-02-08T12:00:00+00:00,1995-02-11T00:00:00+00:00,60.0,False,False,0.0,False,
+1995241N11333,True,True,True,1995-09-05T06:00:00+00:00,1995-09-07T06:00:00+00:00,48.0,False,True,0.0,False,
+1995270N10322,True,True,True,1995-09-30T12:00:00+00:00,1995-10-06T00:00:00+00:00,132.0,False,False,0.0,False,
+1996207N12297,False,False,False,1996-07-27T18:00:00+00:00,1996-07-28T12:00:00+00:00,18.0,True,True,30.0,True,"temporary:-24h:terrain support;temporary:+0h:terrain support;temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:centre unavailable,missing field or centre;final:+18h:centre unavailable,missing field or centre;final:+24h:centre unavailable,missing field or centre"
+1996233N12340,True,True,True,1996-08-27T12:00:00+00:00,1996-08-31T00:00:00+00:00,84.0,False,False,0.0,False,
+1996260N19107,False,False,False,1996-09-20T12:00:00+00:00,1996-09-22T00:00:00+00:00,36.0,True,True,12.0,False,temporary:+18h:terrain support;temporary:+24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+1996261N08184,True,True,True,1996-09-26T18:00:00+00:00,1996-09-28T18:00:00+00:00,48.0,False,True,0.0,False,
+1997198N27267,True,True,True,1997-07-19T06:00:00+00:00,1997-07-19T18:00:00+00:00,12.0,True,True,36.0,True,
+1997284N04179,True,True,True,1997-10-17T18:00:00+00:00,1997-10-18T18:00:00+00:00,24.0,True,True,24.0,False,
+1997298N06140,True,False,False,1997-11-03T18:00:00+00:00,1997-11-07T06:00:00+00:00,84.0,False,False,0.0,False,temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support
+1997299N07169,True,True,True,1997-11-02T00:00:00+00:00,1997-11-03T00:00:00+00:00,24.0,True,True,24.0,False,
+1998022S15125,True,True,True,1998-01-28T00:00:00+00:00,1998-01-28T18:00:00+00:00,18.0,True,True,30.0,True,
+1998203N11253,True,True,True,1998-07-26T00:00:00+00:00,1998-07-28T12:00:00+00:00,60.0,False,False,0.0,False,
+1998236N13326,True,True,True,1998-08-26T18:00:00+00:00,1998-09-02T00:00:00+00:00,150.0,False,False,0.0,False,
+1999255N13336,True,True,True,1999-09-16T18:00:00+00:00,1999-09-17T18:00:00+00:00,24.0,True,True,24.0,False,
+2000023S15172,True,True,True,2000-01-26T00:00:00+00:00,2000-01-27T00:00:00+00:00,24.0,True,True,24.0,False,
+2000205N10260,True,True,True,2000-07-27T00:00:00+00:00,2000-07-28T12:00:00+00:00,36.0,True,True,12.0,False,
+2000248N18126,False,False,False,2000-09-09T00:00:00+00:00,2000-09-10T18:00:00+00:00,42.0,True,True,6.0,False,temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+24h:terrain support
+2000260N15308,True,False,False,2000-09-22T06:00:00+00:00,2000-09-25T12:00:00+00:00,78.0,False,False,0.0,False,"temporary:+18h:terrain support;temporary:+24h:terrain support;final:+12h:centre unavailable,missing field or centre;final:+18h:centre unavailable,missing field or centre;final:+24h:centre unavailable,missing field or centre"
+2000277N15257,True,True,True,2000-10-05T12:00:00+00:00,2000-10-08T12:00:00+00:00,72.0,False,False,0.0,False,
+2001212N10158,True,True,True,2001-08-05T12:00:00+00:00,2001-08-07T00:00:00+00:00,36.0,True,True,12.0,False,
+2001227N13323,False,False,False,2001-08-19T18:00:00+00:00,2001-08-21T06:00:00+00:00,36.0,True,True,12.0,False,temporary:+12h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support;final:-24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+2002122S07063,False,False,False,2002-05-07T06:00:00+00:00,2002-05-09T18:00:00+00:00,60.0,False,False,0.0,False,final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+2002237N10202,True,True,True,2002-09-01T12:00:00+00:00,2002-09-03T12:00:00+00:00,48.0,False,True,0.0,False,
+2002297N09206,True,True,True,2002-11-04T00:00:00+00:00,2002-11-05T12:00:00+00:00,36.0,True,True,12.0,False,
+2003098N03159,True,True,True,2003-04-16T18:00:00+00:00,2003-04-18T18:00:00+00:00,48.0,False,True,0.0,False,
+2003249N14329,True,True,True,2003-09-13T06:00:00+00:00,2003-09-15T00:00:00+00:00,42.0,True,True,6.0,False,
+2003316N11141,False,False,False,2003-11-17T00:00:00+00:00,2003-11-18T06:00:00+00:00,30.0,True,True,18.0,False,temporary:-6h:terrain support;temporary:+0h:terrain support;temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support;final:-24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support
+2003338S09065,True,False,False,2003-12-17T00:00:00+00:00,2003-12-20T12:00:00+00:00,84.0,False,False,0.0,False,"final:+18h:centre unavailable,missing field or centre;final:+24h:centre unavailable,missing field or centre"
+2004072S11146,True,False,False,2004-03-23T00:00:00+00:00,2004-03-27T00:00:00+00:00,96.0,False,False,0.0,False,final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+2004093N07154,True,True,True,2004-04-10T12:00:00+00:00,2004-04-13T12:00:00+00:00,72.0,False,False,0.0,False,
+2004230N09172,True,True,True,2004-08-25T06:00:00+00:00,2004-08-26T00:00:00+00:00,18.0,True,True,30.0,True,
+2004239N11171,True,True,True,2004-09-02T06:00:00+00:00,2004-09-05T00:00:00+00:00,66.0,False,False,0.0,False,
+2004247N10332,True,True,True,2004-09-12T18:00:00+00:00,2004-09-14T12:00:00+00:00,42.0,True,True,6.0,False,
+2004332N02072,True,True,True,2004-11-29T18:00:00+00:00,2004-12-01T00:00:00+00:00,30.0,True,True,18.0,False,
+2005063S12141,True,True,True,2005-03-12T18:00:00+00:00,2005-03-15T12:00:00+00:00,66.0,False,False,0.0,False,
+2005186N12299,True,True,True,2005-07-08T18:00:00+00:00,2005-07-10T12:00:00+00:00,42.0,True,True,6.0,False,
+2005249N26281,True,True,True,2005-09-11T12:00:00+00:00,2005-09-15T06:00:00+00:00,90.0,False,False,0.0,False,
+2005364N24324,True,True,True,2006-01-02T06:00:00+00:00,2006-01-04T06:00:00+00:00,48.0,False,True,0.0,False,
+2006203N12257,False,True,False,2006-07-24T00:00:00+00:00,2006-07-26T18:00:00+00:00,66.0,False,False,0.0,False,temporary:-24h:terrain support;temporary:-18h:terrain support;temporary:-12h:terrain support
+2006340N08142,False,True,False,2006-12-10T06:00:00+00:00,2006-12-13T06:00:00+00:00,72.0,False,False,0.0,False,temporary:-24h:terrain support
+2007085S11085,False,False,False,2007-04-01T06:00:00+00:00,2007-04-03T00:00:00+00:00,42.0,True,True,6.0,False,final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+2007240N17153,False,False,False,2007-08-31T12:00:00+00:00,2007-09-06T12:00:00+00:00,144.0,False,False,0.0,False,"final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:centre unavailable,missing field or centre"
+2007244N12303,False,False,False,2007-09-03T18:00:00+00:00,2007-09-04T18:00:00+00:00,24.0,True,True,24.0,False,"temporary:-18h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:centre unavailable,missing field or centre;final:+24h:centre unavailable,missing field or centre"
+2009227N12328,True,True,True,2009-08-20T12:00:00+00:00,2009-08-21T06:00:00+00:00,18.0,True,True,30.0,True,
+2009325N06148,True,True,True,2009-11-26T12:00:00+00:00,2009-11-28T06:00:00+00:00,42.0,True,True,6.0,False,
+2012018S16041,True,True,True,2012-01-26T00:00:00+00:00,2012-01-27T06:00:00+00:00,30.0,True,True,18.0,False,
+2012337S06089,True,True,True,2012-12-09T12:00:00+00:00,2012-12-10T18:00:00+00:00,30.0,True,True,18.0,False,
+2013093S08074,True,True,True,2013-04-11T06:00:00+00:00,2013-04-15T06:00:00+00:00,96.0,False,False,0.0,False,
+2013269N15118,False,False,False,2013-09-29T12:00:00+00:00,2013-09-30T12:00:00+00:00,24.0,True,True,24.0,False,"temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:centre unavailable,missing field or centre;final:+24h:centre unavailable,missing field or centre"
+2014356S08101,True,True,True,2014-12-28T00:00:00+00:00,2014-12-30T18:00:00+00:00,66.0,False,False,0.0,False,
+2015009S19054,True,True,True,2015-01-13T12:00:00+00:00,2015-01-16T12:00:00+00:00,72.0,False,False,0.0,False,
+2015092S18074,True,True,True,2015-04-08T18:00:00+00:00,2015-04-11T06:00:00+00:00,60.0,False,False,0.0,False,
+2015188N08194,True,True,True,2015-07-15T00:00:00+00:00,2015-07-24T00:00:00+00:00,216.0,False,False,0.0,False,
+2015226N12151,False,False,False,2015-08-18T00:00:00+00:00,2015-08-24T12:00:00+00:00,156.0,False,False,0.0,False,final:-24h:terrain support;final:-18h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+2015238N10255,True,True,True,2015-08-30T00:00:00+00:00,2015-09-01T00:00:00+00:00,48.0,False,True,0.0,False,
+2015344N07145,True,False,False,2015-12-14T12:00:00+00:00,2015-12-15T06:00:00+00:00,18.0,True,True,30.0,True,temporary:+24h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+2016197N14256,True,True,True,2016-07-18T12:00:00+00:00,2016-07-20T18:00:00+00:00,54.0,False,False,0.0,False,
+2016235N11341,True,True,True,2016-08-29T12:00:00+00:00,2016-08-31T18:00:00+00:00,54.0,False,False,0.0,False,
+2016256N12146,False,False,False,2016-09-17T06:00:00+00:00,2016-09-19T12:00:00+00:00,54.0,False,False,0.0,False,"temporary:-18h:terrain support;temporary:-12h:terrain support;temporary:+0h:terrain support;temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support;final:+18h:terrain support;final:+24h:centre unavailable,missing field or centre"
+2017242N16333,False,False,False,2017-09-08T00:00:00+00:00,2017-09-09T06:00:00+00:00,30.0,True,True,18.0,False,temporary:-18h:terrain support;temporary:-12h:terrain support;temporary:-6h:terrain support;temporary:+0h:terrain support;temporary:+6h:terrain support;final:-24h:terrain support
+2018025S09080,True,True,True,2018-01-29T18:00:00+00:00,2018-02-02T06:00:00+00:00,84.0,False,False,0.0,False,
+2018227N11145,True,True,True,2018-08-18T12:00:00+00:00,2018-08-21T06:00:00+00:00,66.0,False,False,0.0,False,
+2018294N08161,True,True,True,2018-10-25T18:00:00+00:00,2018-10-27T18:00:00+00:00,48.0,False,True,0.0,False,
+2018324N04156,True,True,True,2018-11-24T00:00:00+00:00,2018-11-25T06:00:00+00:00,30.0,True,True,18.0,False,
+2018334S09156,True,False,False,2018-12-13T12:00:00+00:00,2018-12-14T06:00:00+00:00,18.0,True,True,30.0,True,final:+18h:terrain support
+2019001S10162,True,True,True,2019-01-04T00:00:00+00:00,2019-01-06T18:00:00+00:00,66.0,False,False,0.0,False,
+2019050N05163,True,True,True,2019-02-24T00:00:00+00:00,2019-02-25T18:00:00+00:00,42.0,True,True,6.0,False,
+2019078S13066,True,True,True,2019-03-27T00:00:00+00:00,2019-03-28T12:00:00+00:00,36.0,True,True,12.0,False,
+2019336S06055,False,False,False,2019-12-08T00:00:00+00:00,2019-12-10T00:00:00+00:00,48.0,False,True,0.0,False,temporary:+12h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support;final:-24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+2020053S12119,True,True,True,2020-02-26T00:00:00+00:00,2020-02-26T12:00:00+00:00,12.0,True,True,36.0,True,
+2020154N19269,False,False,False,2020-06-03T18:00:00+00:00,2020-06-06T12:00:00+00:00,66.0,False,False,0.0,False,temporary:-24h:terrain support;temporary:-18h:terrain support;temporary:-12h:terrain support;temporary:-6h:terrain support;temporary:+0h:terrain support;temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support
+2020277N21141,True,True,True,2020-10-08T00:00:00+00:00,2020-10-09T00:00:00+00:00,24.0,True,True,24.0,False,
+2020303N05149,False,False,False,2020-11-05T18:00:00+00:00,2020-11-07T00:00:00+00:00,30.0,True,True,18.0,False,"temporary:+0h:terrain support;temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support;final:-24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:centre unavailable,missing field or centre;final:+18h:centre unavailable,missing field or centre;final:+24h:centre unavailable,missing field or centre"
+2020366S12073,True,True,True,2021-01-04T06:00:00+00:00,2021-01-05T18:00:00+00:00,36.0,True,True,12.0,False,
+2021029S16171,True,False,False,2021-01-31T12:00:00+00:00,2021-02-01T06:00:00+00:00,18.0,True,True,30.0,True,"final:+12h:centre unavailable,missing field or centre;final:+18h:centre unavailable,missing field or centre;final:+24h:centre unavailable,missing field or centre"
+2021053S13128,True,True,True,2021-03-01T06:00:00+00:00,2021-03-02T00:00:00+00:00,18.0,True,True,30.0,True,
+2021062S14064,True,True,True,2021-03-11T06:00:00+00:00,2021-03-12T12:00:00+00:00,30.0,True,True,18.0,False,
+2021248N11131,False,False,False,2021-09-07T00:00:00+00:00,2021-09-08T06:00:00+00:00,30.0,True,True,18.0,False,temporary:-18h:terrain support;temporary:-12h:terrain support;temporary:+24h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support
+2021266N10327,True,True,True,2021-09-27T06:00:00+00:00,2021-10-02T06:00:00+00:00,120.0,False,False,0.0,False,
+2021267N18094,False,False,False,2021-10-03T00:00:00+00:00,2021-10-03T12:00:00+00:00,12.0,True,True,36.0,True,"temporary:-24h:terrain support;temporary:-18h:terrain support;temporary:-12h:terrain support;temporary:-6h:terrain support;temporary:+0h:terrain support;temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support;temporary:+24h:terrain support;final:-24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:centre unavailable,missing field or centre"
+2021282N16165,True,True,True,2021-10-16T06:00:00+00:00,2021-10-16T18:00:00+00:00,12.0,True,True,36.0,True,
+2021346N05145,False,False,False,2021-12-16T06:00:00+00:00,2021-12-18T18:00:00+00:00,60.0,False,False,0.0,False,temporary:-6h:terrain support;temporary:+0h:terrain support;temporary:+6h:terrain support;temporary:+12h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+2022126N07095,False,False,False,2022-05-08T12:00:00+00:00,2022-05-10T12:00:00+00:00,48.0,False,True,0.0,False,final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support;final:+24h:terrain support
+2023213N14257,True,True,True,2023-08-06T18:00:00+00:00,2023-08-10T06:00:00+00:00,84.0,False,False,0.0,False,
+2023228N12259,True,False,False,2023-08-18T18:00:00+00:00,2023-08-19T12:00:00+00:00,18.0,True,True,30.0,True,final:+24h:terrain support
+2023266N16323,True,True,True,2023-09-25T18:00:00+00:00,2023-10-01T12:00:00+00:00,138.0,False,False,0.0,False,
+2023271N14144,False,False,False,2023-10-02T18:00:00+00:00,2023-10-05T00:00:00+00:00,54.0,False,False,0.0,False,temporary:+24h:terrain support;final:-24h:terrain support;final:-18h:terrain support;final:-12h:terrain support;final:-6h:terrain support;final:+0h:terrain support;final:+6h:terrain support;final:+12h:terrain support;final:+18h:terrain support
+2023302N10267,False,False,False,2023-11-01T12:00:00+00:00,2023-11-03T00:00:00+00:00,36.0,True,True,12.0,False,temporary:-24h:terrain support;temporary:-18h:terrain support;temporary:-12h:terrain support;temporary:-6h:terrain support;temporary:+0h:terrain support;temporary:+6h:terrain support;temporary:+12h:terrain support;temporary:+18h:terrain support;final:-24h:terrain support;final:-18h:terrain support

@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0",
+  "figure_id": "Figure_S02",
+  "type": "frozen scientific statistical plot",
+  "status": "SEALED_ACTUAL_RENDER_AND_LOCAL_QA_COMPLETE",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "input/S2_a_duration.csv"
+      ],
+      "filter": "All2340SID four duration columns; sort each full vector for ECDF",
+      "units": "h",
+      "normalization": "rank1..n / n; no fitted densities",
+      "difference_direction": "none",
+      "weights": "One observation per SID",
+      "CI_source": "none",
+      "sample_scope": "2340SID",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/S2_a_duration.csv": [
+          "sid",
+          "name",
+          "season",
+          "basin_genesis",
+          "basin_lmi",
+          "valid_lifecycle",
+          "qc_reason",
+          "n_lifecycle_obs",
+          "wind_valid_fraction",
+          "n_wind_filled",
+          "max_record_gap_hours",
+          "max_wind_gap_hours",
+          "genesis_time",
+          "escalation_time",
+          "maturity_time",
+          "lmi_time",
+          "lmi_last_time",
+          "resolution_time",
+          "termination_time",
+          "mir_time",
+          "mwr_time",
+          "genesis_lat",
+          "genesis_lon",
+          "escalation_lat",
+          "escalation_lon",
+          "maturity_lat",
+          "maturity_lon",
+          "lmi_lat",
+          "lmi_lon",
+          "resolution_lat",
+          "resolution_lon",
+          "termination_lat",
+          "termination_lon",
+          "mir_lat",
+          "mir_lon",
+          "mwr_lat",
+          "mwr_lon",
+          "genesis_wind",
+          "lmi",
+          "peak_gain",
+          "mature_threshold_wind",
+          "termination_wind",
+          "mir",
+          "mwr",
+          "lifetime_hours",
+          "development_duration_hours",
+          "escalation_duration_hours",
+          "maturity_duration_hours",
+          "resolution_duration_hours",
+          "pre_lmi_duration_hours",
+          "post_lmi_duration_hours",
+          "lmi_plateau_duration_hours",
+          "intensification_duration_hours",
+          "mean_intensification_rate24",
+          "weakening_duration_hours",
+          "mean_weakening_rate24",
+          "development_rate24",
+          "escalation_rate24",
+          "resolution_rate24",
+          "lifecycle_asymmetry_time",
+          "lifecycle_asymmetry_rate",
+          "ri_event_count",
+          "rw_event_count",
+          "reintensification_event_count",
+          "near_lmi_episode_count",
+          "ace",
+          "pdi_m3_s2",
+          "track_distance_km",
+          "mean_translation_speed_kmh",
+          "resolution_rate_criterion_confirmed",
+          "resolution_used_final_exit_rule",
+          "distance_to_land_genesis_km",
+          "distance_to_land_mir_km",
+          "distance_to_land_lmi_km",
+          "landfall_event_count",
+          "first_landfall_time",
+          "first_landfall_stage_code",
+          "first_landfall_wind",
+          "first_landfall_lat",
+          "first_landfall_lon",
+          "first_landfall_intensity_ratio",
+          "hours_lmi_to_landfall",
+          "hours_mir_to_landfall",
+          "short_stage_names",
+          "genesis_year",
+          "historical_first_event_id",
+          "historical_first_t0",
+          "Vref_kt",
+          "genesis_UTC",
+          "genesis_wind_kt",
+          "prefix_n_records",
+          "prefix_wind_valid_fraction",
+          "prefix_max_finite_wind_gap_h",
+          "main_complete",
+          "common_window_first_UTC",
+          "common_window_last_UTC"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "input/S2_b_stage_fraction.csv"
+      ],
+      "filter": "All6 genesis basins and four saved stage fractions",
+      "units": "dimensionless",
+      "normalization": "Supplied mean within-SID fraction of elapsed lifecycle",
+      "difference_direction": "none",
+      "weights": "Frozen equal-SID basin mean",
+      "CI_source": "none",
+      "sample_scope": "Six sampled genesis basins;2340SID",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/S2_b_stage_fraction.csv": [
+          "basin_genesis",
+          "development_duration_hours",
+          "escalation_duration_hours",
+          "maturity_duration_hours",
+          "resolution_duration_hours"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "input/S2_c_d_asymmetry.csv"
+      ],
+      "filter": "All2340SID grouped by basin_genesis; signed A",
+      "units": "dimensionless",
+      "normalization": "Sort within basin, empirical rank1..n / n",
+      "difference_direction": "positive=longer pre-peak period",
+      "weights": "One observation per SID",
+      "CI_source": "none",
+      "sample_scope": "2340SID",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/S2_c_d_asymmetry.csv": [
+          "sid",
+          "basin_genesis",
+          "lifecycle_asymmetry_time"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "input/S2_c_d_asymmetry.csv"
+      ],
+      "filter": "All2340SID grouped by basin_genesis; abs(A) per individual before sorting",
+      "units": "dimensionless",
+      "normalization": "absolute value then within-basin empirical rank",
+      "difference_direction": "individual magnitude, not absolute basin mean",
+      "weights": "One observation per SID",
+      "CI_source": "none",
+      "sample_scope": "2340SID",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/S2_c_d_asymmetry.csv": [
+          "sid",
+          "basin_genesis",
+          "lifecycle_asymmetry_time"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "input/S2_a_duration.csv",
+      "sha256": "aecb23dbdd35d985fa3ec830acd76259463bda54ad177eac0f9e8e517c6686ac",
+      "original_path": "S2_a_duration.csv"
+    },
+    {
+      "relative_path": "input/S2_b_stage_fraction.csv",
+      "sha256": "534b34f786bde06a532d052fb6e23bdd6e1ea69d41f675c6b60161998e91c186",
+      "original_path": "S2_b_stage_fraction.csv"
+    },
+    {
+      "relative_path": "input/S2_c_d_asymmetry.csv",
+      "sha256": "466c32be515a4e313097399be0986e4da3aa1f270e7e3886e995777d80e61afb",
+      "original_path": "S2_c_d_asymmetry.csv"
+    }
+  ],
+  "entrypoint": "run.py --output-dir <directory>",
+  "code": [
+    {
+      "relative_path": "run.py",
+      "sha256": "2cbc0769f578d187a3824cbf5ec33190b5ccdaf4b9be754c004f27e76563c1f0"
+    },
+    {
+      "relative_path": "code/plot.py",
+      "sha256": "baa87980016d09793ec3cc69ede742c794d85e47dafa41599932af597c698e39"
+    },
+    {
+      "relative_path": "config.json",
+      "sha256": "241514aa83059d263ac9ff1e58006cc6ecd860c4e50dee935ad7df3b6fd4c3e6"
+    },
+    {
+      "relative_path": "code/bootstrap.py",
+      "sha256": "bd9eaabcb7c305c8d63e1d894d19bc58cbba23072102159a1dd9b6306d28039b"
+    }
+  ],
+  "outputs": {
+    "png": {
+      "relative_path": "Figure_S02.png",
+      "sha256": "cb8c0bee8395332e95837f4ec3cb11962834313ee64cee41fce8f8c4a1998fe3"
+    },
+    "tiff": {
+      "relative_path": "Figure_S02.tiff",
+      "sha256": "93d720101d0119a508c6c7196911c96416f49fb1a04c3b35d67b095f532ef706"
+    },
+    "pdf": {
+      "relative_path": "Figure_S02.pdf",
+      "sha256": "efe5b23cb8dbbdb771de10f7f65a7ae9357f05692714fdcb57bde1114960d3a5"
+    },
+    "svg": {
+      "relative_path": "Figure_S02.svg",
+      "sha256": "676fff123e4f3c416abfd9afc8fc34b0391ea56086ce7493c24e799a6247c044"
+    }
+  },
+  "size_mm": [
+    180.0,
+    145.0
+  ],
+  "pixels": [
+    6377,
+    5137
+  ],
+  "dpi": [
+    899.9982,
+    899.9982
+  ],
+  "effective_dpi_at_prior_document_size": 1026.7036290564952,
+  "QA": {
+    "alignment": "PASS",
+    "pdf_text": "PASS",
+    "collision_raw": {
+      "fail": 0,
+      "warn": 0,
+      "contained_fill_overlays": 0,
+      "contained_image_overlays": 0
+    },
+    "source_static_raw": {
+      "ready": false,
+      "strict": false,
+      "counts": {
+        "PASS": 20,
+        "WARN": 0,
+        "FAIL": 1
+      }
+    },
+    "resolved_findings": "rebuilt/qa/resolved_audit_findings.json",
+    "scientific_comparison": "rebuilt/qa/scientific_comparison.json",
+    "visual_review": "rebuilt/qa/visual_review.json",
+    "png_tiff_pixels_identical": true,
+    "baseline_comparison": {
+      "method": "Source AST and frozen input identity; numeric objects exported before writing; raster comparison is QA only",
+      "baseline_size": [
+        6377,
+        5137
+      ],
+      "rebuilt_size": [
+        6377,
+        5137
+      ],
+      "pixel_identical": false,
+      "different_pixel_count": 276425,
+      "mean_absolute_channel_difference": 1.0555550790062598
+    },
+    "central_cold_rebuild": "pending root"
+  },
+  "provenance": {
+    "no_generative_image_calls": true,
+    "no_AI_image_asset": true,
+    "no_raster_plot_input": true,
+    "no_raster_tracing": true,
+    "no_overlay_or_superresolution": true,
+    "drawing_origin": "Executable native Python plotting functions and frozen numerical tables; coastline vector data only for main1. Original reference PNG accessed only after all scientific exports for comparison.",
+    "source_history": "provenance/input_manifest.json and original plotting source archived under provenance; source-path references are audit metadata only, never runtime dependencies.",
+    "statistics": "No bootstrap, model, significance or confidence-interval computation executed; CDF sorting and fixed-SD display division only."
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2"
+  }
+}

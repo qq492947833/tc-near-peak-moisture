@@ -1,0 +1,686 @@
+{
+  "module_B": {
+    "version": "v6.2_module_B_proposal_1",
+    "status": "FROZEN_FOR_EXECUTION",
+    "created_utc": "2026-10-10T16:50:18.432411+00:00",
+    "specification_read": {
+      "path": "Codex_FLTCCF_v62_integrated.md",
+      "all_lines_read": 577,
+      "scope": "module B and its integration with A/C and existing v6 process evidence"
+    },
+    "authority": {
+      "accepted": "review_completion_v3_2/e1/new_available plus sources/track_sp_qc_v3_2.parquet; confirmed by SP canonical validation, E1 COMPLETE and final acceptance receipt; not filename/mtime alone",
+      "original_e1_implementation_hash_matches_execution_receipt": true,
+      "historical_old_original_and_old_common": "reference only; do not mix with SP-QC main estimates",
+      "v6_release": "valid provenance/reproducibility index; full accepted E1 source remains the bound I-drive files",
+      "catalog_live_hash_comparisons": [
+        {
+          "input": "accepted_sp_track",
+          "relative_path": "sources/track_sp_qc_v3_2.parquet",
+          "archived_sha256": "2f6c229aaab54523cd9298edf31774faffda9d1d2007d3f02930ff168b701bab",
+          "live_sha256": "2f6c229aaab54523cd9298edf31774faffda9d1d2007d3f02930ff168b701bab",
+          "match": true
+        },
+        {
+          "input": "accepted_sp_validation",
+          "relative_path": "sources/canonical_source_validation.json",
+          "archived_sha256": "aa8f46cd924ee5b7c8de5a861d5f4e1ebc16c67c16204f880f6868b61426dbc6",
+          "live_sha256": "aa8f46cd924ee5b7c8de5a861d5f4e1ebc16c67c16204f880f6868b61426dbc6",
+          "match": true
+        },
+        {
+          "input": "accepted_e1_execution",
+          "relative_path": "e1/status.json",
+          "archived_sha256": "83018241e2e41ad04a709dd9947f67c8ae0276824e35396047187857cf77e315",
+          "live_sha256": "83018241e2e41ad04a709dd9947f67c8ae0276824e35396047187857cf77e315",
+          "match": true
+        },
+        {
+          "input": "stage_sid",
+          "relative_path": "e1/new_available/stage_sid_all_track.csv",
+          "archived_sha256": "d3bcd1c86318847107d7e45ba162239559f9f009052bddd54489a5fab97bbc8b",
+          "live_sha256": "d3bcd1c86318847107d7e45ba162239559f9f009052bddd54489a5fab97bbc8b",
+          "match": true
+        },
+        {
+          "input": "stage_raw_existing",
+          "relative_path": "e1/new_available/stage_descriptive_all_track.csv",
+          "archived_sha256": "b1e70e355a22773c2f4d7d6eaf62a012c971f16ca17fc1e8400f22b70045d199",
+          "live_sha256": "b1e70e355a22773c2f4d7d6eaf62a012c971f16ca17fc1e8400f22b70045d199",
+          "match": true
+        },
+        {
+          "input": "stage_adjusted_legacy_reference_only",
+          "relative_path": "e1/new_available/stage_adjusted_all_track_common_controls.csv",
+          "archived_sha256": "bf9426e971faf0162f412c221d814ad68f4cd20f31a023875308acd6a4e51831",
+          "live_sha256": "bf9426e971faf0162f412c221d814ad68f4cd20f31a023875308acd6a4e51831",
+          "match": true
+        },
+        {
+          "input": "stage_contrasts_vs_D_legacy_reference_only",
+          "relative_path": "e1/new_available/stage_contrasts_all_track_common_controls.csv",
+          "archived_sha256": "1ae62b1461749cd168cf85a1d9af6a6bc8e0928ec0cd2a6a1751c839a52e9c54",
+          "live_sha256": "1ae62b1461749cd168cf85a1d9af6a6bc8e0928ec0cd2a6a1751c839a52e9c54",
+          "match": true
+        },
+        {
+          "input": "stage_covariate_summary",
+          "relative_path": "e1/new_available/model_sid_all_track_common_controls.csv",
+          "archived_sha256": "938438ff5e6cc6997ef071f55d8b38e9de2c21ed80ed24dcca5c4ea10cce8552",
+          "live_sha256": "938438ff5e6cc6997ef071f55d8b38e9de2c21ed80ed24dcca5c4ea10cce8552",
+          "match": true
+        },
+        {
+          "input": "stage_legacy_support_audit",
+          "relative_path": "e1/new_available/common_support_all_track_common_controls.csv",
+          "archived_sha256": "698f48e36ea9c719f31a71b82a366fcaf9d7fb0144ccbf6414c84bdd2376084f",
+          "live_sha256": "698f48e36ea9c719f31a71b82a366fcaf9d7fb0144ccbf6414c84bdd2376084f",
+          "match": true
+        },
+        {
+          "input": "boundary_lag_existing",
+          "relative_path": "e1/new_available/boundary_lag_all_track.csv",
+          "archived_sha256": "d29642e12cf9346ecaf11cec3cd45ff48647546ed9f6870b0a70cbe985f32cd5",
+          "live_sha256": "d29642e12cf9346ecaf11cec3cd45ff48647546ed9f6870b0a70cbe985f32cd5",
+          "match": true
+        },
+        {
+          "input": "component_contrasts_existing",
+          "relative_path": "e1/new_available/component_pairs_all_track.csv",
+          "archived_sha256": "e0d1e46939d9cf7fcd9c36387b19cc65300f7a067fab53056fe438735e79f2ef",
+          "live_sha256": "e0d1e46939d9cf7fcd9c36387b19cc65300f7a067fab53056fe438735e79f2ef",
+          "match": true
+        },
+        {
+          "input": "E1_SP_adapter",
+          "relative_path": "scripts/recompute_e1_v3_2.py",
+          "archived_sha256": "4cd3123c9b23bdadf5334fa91d4a5fb8b7b4917436bb622963f562cc6e9bad16",
+          "live_sha256": "4cd3123c9b23bdadf5334fa91d4a5fb8b7b4917436bb622963f562cc6e9bad16",
+          "match": true
+        },
+        {
+          "input": "SP_composition",
+          "relative_path": "scripts/canonical_sources_v3_2.py",
+          "archived_sha256": "f4a3a28dcf941402c7e939b804c2a7c4a8433b0ed952a15fc00b8c8af8a0f9fb",
+          "live_sha256": "f4a3a28dcf941402c7e939b804c2a7c4a8433b0ed952a15fc00b8c8af8a0f9fb",
+          "match": true
+        }
+      ]
+    },
+    "inputs": {
+      "accepted_sp_track": {
+        "path": "track_sp_qc_v3_2.parquet",
+        "bytes": 11693462,
+        "sha256": "2f6c229aaab54523cd9298edf31774faffda9d1d2007d3f02930ff168b701bab",
+        "read_only": true,
+        "rows": 64210,
+        "schema": {
+          "row_id": "string",
+          "sid": "string",
+          "UTC": "timestamp[ns, tz=UTC]",
+          "source_batch": "string",
+          "stage": "string",
+          "component": "string",
+          "basin_genesis": "string",
+          "period": "string",
+          "genesis_year": "double",
+          "lat": "double",
+          "lon": "double",
+          "wind_kt": "double",
+          "interval_hours_v3": "double",
+          "legal_interval_v3": "bool",
+          "terminal_point_v3": "bool",
+          "sea_main": "bool",
+          "center_land_110m": "int64",
+          "ocean_ratio_110m": "double",
+          "ring_area_km2_110m": "double",
+          "ocean_area_km2_110m": "double",
+          "past24_observed_points": "int32",
+          "past24_complete": "bool",
+          "past24_observed_land": "double",
+          "past24_land_contact": "double",
+          "current_dist2land_contact": "double",
+          "sst_quality_basis": "string",
+          "sst_legacy_full_ring_valid_fraction": "double",
+          "sst_true_ocean_valid_fraction": "double",
+          "atmos_five_complete": "bool",
+          "six_complete": "bool",
+          "year_centered": "double",
+          "month_sin": "double",
+          "month_cos": "double",
+          "lon_sin": "double",
+          "lon_cos": "double",
+          "age_h": "double",
+          "center_land": "double",
+          "motion_past6h_ms": "double",
+          "dv24_kt": "double",
+          "X1_sst_c_value": "double",
+          "X2_shear_ms_value": "double",
+          "X3_mid_rh_pct_value": "double",
+          "X4_d200_1e5s_value": "double",
+          "X5_minus_omega500_pa_s_value": "double",
+          "X6_signed_vo850_1e5s_value": "double",
+          "X1_sst_c_qc": "bool",
+          "X2_shear_ms_qc": "bool",
+          "X3_mid_rh_pct_qc": "bool",
+          "X4_d200_1e5s_qc": "bool",
+          "X5_minus_omega500_pa_s_qc": "bool",
+          "X6_signed_vo850_1e5s_qc": "bool",
+          "X1_sst_c_raw": "double",
+          "X1_sst_c_valid_fraction": "double",
+          "X2_shear_ms_raw": "double",
+          "X2_shear_ms_valid_fraction": "double",
+          "X3_mid_rh_pct_raw": "double",
+          "X3_mid_rh_pct_valid_fraction": "double",
+          "X4_d200_1e5s_raw": "double",
+          "X4_d200_1e5s_valid_fraction": "double",
+          "X5_minus_omega500_pa_s_raw": "double",
+          "X5_minus_omega500_pa_s_valid_fraction": "double",
+          "X6_signed_vo850_1e5s_raw": "double",
+          "X6_signed_vo850_1e5s_valid_fraction": "double"
+        }
+      },
+      "accepted_sp_validation": {
+        "path": "canonical_source_validation.json",
+        "bytes": 2003,
+        "sha256": "aa8f46cd924ee5b7c8de5a861d5f4e1ebc16c67c16204f880f6868b61426dbc6",
+        "read_only": true
+      },
+      "accepted_e1_execution": {
+        "path": "status.json",
+        "bytes": 583,
+        "sha256": "83018241e2e41ad04a709dd9947f67c8ae0276824e35396047187857cf77e315",
+        "read_only": true
+      },
+      "accepted_release_receipt": {
+        "path": "final_acceptance_v3_2.json",
+        "bytes": 13217,
+        "sha256": "4849f58681c747569d191ffb98c3b124ddf8d743eb4259318d926ad84089128c",
+        "read_only": true
+      },
+      "stage_sid": {
+        "path": "stage_sid_all_track.csv",
+        "bytes": 18727350,
+        "sha256": "d3bcd1c86318847107d7e45ba162239559f9f009052bddd54489a5fab97bbc8b",
+        "read_only": true,
+        "columns": [
+          "sid",
+          "stage",
+          "median",
+          "covered_h",
+          "n_valid_intervals",
+          "source_row_ids",
+          "basin_genesis",
+          "estimate",
+          "legal_h",
+          "variable",
+          "coverage_fraction",
+          "mode"
+        ]
+      },
+      "stage_raw_existing": {
+        "path": "stage_descriptive_all_track.csv",
+        "bytes": 10129,
+        "sha256": "b1e70e355a22773c2f4d7d6eaf62a012c971f16ca17fc1e8400f22b70045d199",
+        "read_only": true,
+        "columns": [
+          "stage",
+          "variable",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_sid",
+          "covered_h",
+          "bootstrap_B",
+          "ci_method",
+          "status",
+          "estimand_id",
+          "sample_id",
+          "exposure_id",
+          "model_id",
+          "figure_panel_id",
+          "unit",
+          "variable_label",
+          "reference_id",
+          "reference_sd",
+          "reference_mean",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized"
+        ]
+      },
+      "stage_adjusted_legacy_reference_only": {
+        "path": "stage_adjusted_all_track_common_controls.csv",
+        "bytes": 14867,
+        "sha256": "bf9426e971faf0162f412c221d814ad68f4cd20f31a023875308acd6a4e51831",
+        "read_only": true,
+        "columns": [
+          "stage",
+          "variable",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_sid",
+          "n_model_sid",
+          "n_model_rows",
+          "covered_h",
+          "bootstrap_B",
+          "bootstrap_success",
+          "ci_method",
+          "status",
+          "target_support",
+          "estimand_id",
+          "sample_id",
+          "exposure_id",
+          "model_id",
+          "figure_panel_id",
+          "unit",
+          "variable_label",
+          "reference_id",
+          "reference_sd",
+          "reference_mean",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized"
+        ]
+      },
+      "stage_contrasts_vs_D_legacy_reference_only": {
+        "path": "stage_contrasts_all_track_common_controls.csv",
+        "bytes": 9168,
+        "sha256": "1ae62b1461749cd168cf85a1d9af6a6bc8e0928ec0cd2a6a1751c839a52e9c54",
+        "read_only": true,
+        "columns": [
+          "stage",
+          "variable",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_sid",
+          "n_model_sid",
+          "n_model_rows",
+          "cluster_se",
+          "p_exploratory",
+          "bootstrap_B",
+          "bootstrap_success",
+          "status",
+          "estimand_id",
+          "sample_id",
+          "exposure_id",
+          "model_id",
+          "figure_panel_id",
+          "unit",
+          "variable_label",
+          "reference_id",
+          "reference_sd",
+          "reference_mean",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized"
+        ]
+      },
+      "stage_covariate_summary": {
+        "path": "model_sid_all_track_common_controls.csv",
+        "bytes": 25201815,
+        "sha256": "938438ff5e6cc6997ef071f55d8b38e9de2c21ed80ed24dcca5c4ea10cce8552",
+        "read_only": true,
+        "columns": [
+          "sid",
+          "stage",
+          "median",
+          "covered_h",
+          "n_valid_intervals",
+          "source_row_ids",
+          "basin_genesis",
+          "estimate",
+          "legal_h",
+          "year_centered",
+          "month_sin",
+          "month_cos",
+          "lat",
+          "lon_sin",
+          "lon_cos",
+          "wind_kt",
+          "age_h",
+          "center_land",
+          "variable",
+          "coverage_fraction",
+          "mode"
+        ]
+      },
+      "stage_legacy_support_audit": {
+        "path": "common_support_all_track_common_controls.csv",
+        "bytes": 40910,
+        "sha256": "698f48e36ea9c719f31a71b82a366fcaf9d7fb0144ccbf6414c84bdd2376084f",
+        "read_only": true,
+        "columns": [
+          "scope",
+          "scheme",
+          "variable",
+          "control",
+          "stage",
+          "stage_min",
+          "stage_max",
+          "support_low",
+          "support_high",
+          "overlap_exists",
+          "n_stage",
+          "n_outside_marginal_intersection",
+          "n_excluded_by_this_diagnostic",
+          "rule"
+        ]
+      },
+      "boundary_lag_existing": {
+        "path": "boundary_lag_all_track.csv",
+        "bytes": 31242,
+        "sha256": "d29642e12cf9346ecaf11cec3cd45ff48647546ed9f6870b0a70cbe985f32cd5",
+        "read_only": true,
+        "columns": [
+          "stage",
+          "lag_h",
+          "variable",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_sid",
+          "n_observed_sid",
+          "bootstrap_B",
+          "ci_method",
+          "status",
+          "estimand_id",
+          "sample_id",
+          "exposure_id",
+          "model_id",
+          "figure_panel_id",
+          "unit",
+          "variable_label",
+          "reference_id",
+          "reference_sd",
+          "reference_mean",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized"
+        ]
+      },
+      "component_contrasts_existing": {
+        "path": "component_pairs_all_track.csv",
+        "bytes": 8049,
+        "sha256": "e0d1e46939d9cf7fcd9c36387b19cc65300f7a067fab53056fe438735e79f2ef",
+        "read_only": true,
+        "columns": [
+          "variable",
+          "comparison",
+          "component_a",
+          "component_b",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_sid",
+          "bootstrap_B",
+          "ci_method",
+          "status",
+          "estimand_id",
+          "sample_id",
+          "exposure_id",
+          "model_id",
+          "figure_panel_id",
+          "unit",
+          "variable_label",
+          "reference_id",
+          "reference_sd",
+          "reference_mean",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized"
+        ]
+      },
+      "reference_scale": {
+        "path": "reference_scale.csv",
+        "bytes": 1305,
+        "sha256": "7b0fbaa6d6bf659b8692664cfd4fe22e36858e84113db46b884392b67b947234",
+        "read_only": true,
+        "columns": [
+          "variable",
+          "reference_id",
+          "reference_mean",
+          "reference_sd",
+          "reference_n_sid",
+          "reference_population",
+          "sst_limit"
+        ]
+      },
+      "E1_original_implementation": {
+        "path": "complete_e1.py",
+        "bytes": 33420,
+        "sha256": "bfe745124f56a468a1e9705f646eb5ce2b8e06c6a41317aa2ba86ccc39f2fe3c",
+        "read_only": true
+      },
+      "E1_SP_adapter": {
+        "path": "recompute_e1_v3_2.py",
+        "bytes": 10641,
+        "sha256": "4cd3123c9b23bdadf5334fa91d4a5fb8b7b4917436bb622963f562cc6e9bad16",
+        "read_only": true
+      },
+      "SP_composition": {
+        "path": "canonical_sources_v3_2.py",
+        "bytes": 11729,
+        "sha256": "f4a3a28dcf941402c7e939b804c2a7c4a8433b0ed952a15fc00b8c8af8a0f9fb",
+        "read_only": true
+      },
+      "climatology_tiles_config": {
+        "path": "climatology_tiles_v5_1.json",
+        "bytes": 166146,
+        "sha256": "cc727d6e76e20780561719164d90a12b8c28a4052b056376ed110f48def3407d",
+        "read_only": true
+      },
+      "physics_extraction_contract": {
+        "path": "extraction_semantics_v5.json",
+        "bytes": 4185,
+        "sha256": "d66c2126c900d8d7ad5171248022309c7f93c07c2d4a0fd988c6ec43b009f47b",
+        "read_only": true
+      }
+    },
+    "distinguish_estimands": {
+      "B_stage_internal": "legal-interval-duration-weighted environment within a frozen stage, then equal original SID",
+      "H4_entry_duration": "fixed-anchor -24/-18/-12/-6 entry exposure versus log stage duration; historical 30-test family unchanged",
+      "boundary_environment": "same actual UTC boundary lags, not whole-stage state",
+      "old_E1_adjusted": "four-stage regression evaluated at mean nuisance vector of all fitted stage records; range checks were diagnostic only, no joint support; contrast rows are E-D, F-D, Res-D. These are not the new adjacent-pair support-restricted target."
+    },
+    "variables": [
+      {
+        "variable": "X1_sst_c",
+        "unit": "degC",
+        "value_column": "X1_sst_c_value",
+        "qc_column": "X1_sst_c_qc",
+        "spatial_fraction_column": "X1_sst_c_valid_fraction"
+      },
+      {
+        "variable": "X2_shear_ms",
+        "unit": "m s-1",
+        "value_column": "X2_shear_ms_value",
+        "qc_column": "X2_shear_ms_qc",
+        "spatial_fraction_column": "X2_shear_ms_valid_fraction"
+      },
+      {
+        "variable": "X3_mid_rh_pct",
+        "unit": "percent; differences in percentage points",
+        "value_column": "X3_mid_rh_pct_value",
+        "qc_column": "X3_mid_rh_pct_qc",
+        "spatial_fraction_column": "X3_mid_rh_pct_valid_fraction"
+      },
+      {
+        "variable": "X4_d200_1e5s",
+        "unit": "1e-5 s-1",
+        "value_column": "X4_d200_1e5s_value",
+        "qc_column": "X4_d200_1e5s_qc",
+        "spatial_fraction_column": "X4_d200_1e5s_valid_fraction"
+      },
+      {
+        "variable": "X5_minus_omega500_pa_s",
+        "unit": "Pa s-1",
+        "value_column": "X5_minus_omega500_pa_s_value",
+        "qc_column": "X5_minus_omega500_pa_s_qc",
+        "spatial_fraction_column": "X5_minus_omega500_pa_s_valid_fraction"
+      },
+      {
+        "variable": "X6_signed_vo850_1e5s",
+        "unit": "1e-5 s-1",
+        "value_column": "X6_signed_vo850_1e5s_value",
+        "qc_column": "X6_signed_vo850_1e5s_qc",
+        "spatial_fraction_column": "X6_signed_vo850_1e5s_valid_fraction"
+      }
+    ],
+    "population": {
+      "base_sid": 2368,
+      "base_period": [
+        1982,
+        2023
+      ],
+      "source_rows": 64210,
+      "sid_from_accepted_track": "unique original sid, keep NA basin as a string",
+      "stage_order": [
+        "D",
+        "E",
+        "F",
+        "Res"
+      ],
+      "no_requirement_all_four_stages_or_all_six_factors_valid": true,
+      "no_entry_pre_genesis_history_required_for_raw_stage_summary": true
+    },
+    "aggregation": {
+      "domain": "along actual track; original 200<=r<800 km annulus; no fixed-anchor stage-entry substitution",
+      "interval": "reuse frozen interval_hours_v3 and legal_interval_v3. Positive duration must be exactly 6 h and end at the next actual +6 h UTC. Value is the accepted left-endpoint environment. Terminal observations and gaps contribute 0 h.",
+      "spatial_QC": "reuse accepted per-variable value/qc and fraction >=0.90. SST is the accepted repaired NaturalEarth110m ocean denominator, never v5 NaturalEarth10m substitution. Atmospheric denominator is original annulus area after same-UTC SP>=pressure; combined shear and RH preserve native joint support.",
+      "within_sid_stage": "sum(value*legal_6h on finite per-variable QC rows)/sum(legal_6h on those rows)",
+      "temporal_coverage": "report covered_h, legal_h, coverage_fraction and n_valid_intervals; preserve accepted >=1 legal valid interval eligibility with no new arbitrary stage-duration coverage threshold",
+      "overall": "equal mean across eligible SID-stage means, separately for each variable/stage",
+      "raw_reuse": "reuse 24 existing stage summaries and their B=2000 CIs after independent reconstruction check; numerical snapshots retained, no rerun required if equivalent",
+      "reference_SD": "bound existing reference_scale.csv: fixed lifecycle SID-equal QC90 reference, (stage mean-reference mean)/reference SD display only; all tables retain original units",
+      "matched_contrast": "for each variable and adjacent pair, retain same SID with finite means in both stages. delta=after-before per SID; mean delta, never difference of independent stage means with different membership. Export matched endpoint means and IDs.",
+      "multivariable_support": "existing atmosphere-five/six-complete summaries supplementary only; do not use as global primary eligibility"
+    },
+    "primary_family": {
+      "contrasts": [
+        {
+          "from": "D",
+          "to": "E",
+          "direction": "E minus D"
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "direction": "F minus E"
+        },
+        {
+          "from": "F",
+          "to": "Res",
+          "direction": "Res minus F"
+        }
+      ],
+      "targets": 18,
+      "outcomes": [
+        "X1_sst_c",
+        "X2_shear_ms",
+        "X3_mid_rh_pct",
+        "X4_d200_1e5s",
+        "X5_minus_omega500_pa_s",
+        "X6_signed_vo850_1e5s"
+      ],
+      "inference": "two-sided one-sample t test of mean same-SID difference=0; df=n_pairs-1; BH across exactly 18 raw adjacent contrasts. Percentile bootstrap CIs are separate from analytic P values. Do not merge H4/old E1/P1-P5 families. Adjusted/anomaly comparisons descriptive effect/CI, no additional stars or significance claims."
+    },
+    "bootstrap": {
+      "B": 2000,
+      "unit": "original SID, retaining all stage/variable rows together",
+      "proposed_seed": 2026101102,
+      "generator": "numpy Generator(PCG64)",
+      "plan": "one fixed 2000 x 2368 multinomial multiplicity bank over sorted original SIDs; target-specific finite/support masks applied inside each replicate; no redraw on a failed target. Existing accepted 24 stage CI rows keep their original seed20260920 and provenance.",
+      "interval": "2.5 and 97.5 percentiles of valid predeclared draws; report attempted/valid/failed and reasons. No overwrite of old draws; no seed selection by effects.",
+      "adjustment_refits": "refit design scaling, outcome regression and support thresholds within each resample for full procedure uncertainty; keep fixed covariate names/model rule. Preserve singular/unsupported draws.",
+      "model_point_data": "same per-variable source values, no future survival inclusion"
+    },
+    "geographic_adjustment": {
+      "summary": "one row per SID per side; environment and all included covariates averaged over exactly the same valid legal intervals for that variable and model scheme; show raw matched estimate again on that model support.",
+      "covariates": [
+        "latitude",
+        "longitude_sin",
+        "longitude_cos",
+        "month_sin",
+        "month_cos"
+      ],
+      "pair_covariates": "after-minus-before differences of the five geographic/seasonal summaries; original genesis-basin and period factors describe heterogeneous adjacent-stage contrasts. No raw longitude subtraction across dateline.",
+      "fixed_model": "delta_environment ~ 1 + delta_geo_seasonal + C(basin_genesis) + C(period), ordinary least squares with one equal-weight pair per original SID; drop exactly constant/redundant nuisance columns in fixed order, retain target intercept.",
+      "support_rule": "within each variable and adjacent-stage pair, compute each endpoint distribution 5th/95th covariate quantiles; intersect the two central ranges. Keep only complete pairs whose two endpoints fall within every shared continuous range. Keep basin/period levels represented in both stages. Store all ranges, original/retained n, membership, reasons, and phase-specific empirical distributions. This is an explicit marginal-support restriction, not proof of full joint overlap.",
+      "standardization_target": "for each retained SID use its own two-stage covariate midpoint for both stages; basin and period stay that SID's actual values. In the additive paired-difference model this is delta_geo_seasonal=0; average predictions over the retained empirical SID mix. No single global four-stage covariate mean and no claim of causal intervention.",
+      "estimability_gate": "require at least30 retained SID pairs and full-rank identifiable target; report condition number, residual df, leverage, each basin/period count, and whether zero lies within each retained delta covariate range. If zero outside any delta range or target unidentifiable, leave adjusted target NA rather than extrapolate; retain raw restricted target.",
+      "target_label": "same-SID adjacent-stage contrast standardized for geography and season on stated marginal support"
+    },
+    "state_adjustment": {
+      "adds": [
+        "wind_kt",
+        "age_h",
+        "dv24_kt",
+        "center_land",
+        "past24_land_contact"
+      ],
+      "scheme": "separate narrower history-complete stage summaries on the same actual intervals for response and all state covariates; no filled pre-genesis history. Apply same pair-specific central-range rule to continuous state covariates; preserve categorical binary support for contact measures before averaging if useful.",
+      "paired_model": "geographic difference model plus differences of wind, age, preceding dv24, current land and past24 land contact; retain each pair observed delta_age in prediction; equalize other covariates as specified below",
+      "interpretation": "conditional descriptive comparison in the narrower common measured-state range; not a denial of raw stage differences and not four stages at a universal common intensity. Report original and retained pairs plus raw-on-state-support contrast.",
+      "deterministic_age_warning": "chronological stage mean age difference is generally strictly positive. A same-age zero-change target may be outside observed delta support; if so this state target is NA. Prefer a specified observed-age-conditioned contrast or omit age from equalization while retaining age as descriptive support only, subject to root freeze.",
+      "standardization_target": "mean_i predict(delta_geo=0, delta_wind=0, delta_dv24=0, delta_land=0, delta_age=observed delta_age_i, basin_i, period_i). Subject to root selection before execution.",
+      "age_rule": "Age stays chronological. Report age endpoint ranges and observed delta_age; do not require delta_age=0 or claim same-age comparison. Endpoint central-range eligibility is retained as registered, so this can be a narrow subset."
+    },
+    "state_target_recommended_amendment": {
+      "reason": "Equalizing age across successive stages has structural non-overlap; same-SID later stage is always older. It must not be silently extrapolated to delta_age=0.",
+      "recommendation": "for the state-standardized descriptive target equalize wind, prior24h tendency and land history at pairwise shared-support values; retain each pair's observed delta_age in predictions. Include age in fitted model and audit its endpoint support but do not intervene/equalize age. Standardized predictions retain chronological progression and empirical basin/period mix.",
+      "formula": "mean_i predict(delta_geo=0, delta_wind=0, delta_dv24=0, delta_land=0, delta_age=observed delta_age_i, basin_i, period_i). Subject to root selection before execution."
+    },
+    "climatology": {
+      "existing_cache_keys": [
+        "q700",
+        "r700",
+        "u700",
+        "v700",
+        "z200",
+        "u200",
+        "v200",
+        "u850",
+        "v850"
+      ],
+      "existing_definition": "1991-2020 calendar month x actual UTC, native grid and same-UTC SP QC, minimum requested-time coverage90%; extracted raw/climatology/anomaly must share the native-cell mask.",
+      "core_gap": "No complete same-grid six-core climatology is established by this cache: SST/r500/d200/w500/vo850 are absent from listed cached keys. r700 alone cannot replace 700/500 mean RH; magnitude of climatological shear vector cannot be relabelled mean climatology of shear magnitude.",
+      "available_companion": "reuse v6 q700 and r700 raw/background/anomaly diagnostics only on verified exact SID-UTC native common support, with independent coverage counts. These are additional single-level moisture diagnostics, not all-six or full-lifecycle anomalies by assumption.",
+      "scope_before_extra_extraction": "coverage/schema audit of existing caches only. A bounded new extraction or seasonal background summary requires a separate exact missing-request list and root design inclusion; do not reread global fields or open active NC files.",
+      "authorization": "Audit and summarize existing exact same-grid/same-UTC raw-background-anomaly sources for q700/r700. No new full-field climatology. Missing core climate variables reported specifically; use raw stage state plus geo adjustment and established boundary process evidence."
+    },
+    "composition_check": {
+      "groups": "six frozen genesis basins and four existing period labels",
+      "scope": "one lightweight table of n, legal/valid coverage and raw same-SID paired contrast directions within each; no full historical bootstrap reruns, no subset selected by P"
+    },
+    "existing_process_integration": {
+      "D": "genesis-to-E preparation/waiting; combine raw stage state with existing -24 to0 D->E finite RH/background/budget, not pre-35kt formation.",
+      "E": "accepted E->F RH/q background, 24h moving-frame budget and PI versus wind decomposition; raw stage RH decline may coexist with increasing moisture anomaly.",
+      "F": "report full F mean and existing R/U/bridge contrast with native memberships; recurrence and bridge are not steady universal equilibrium.",
+      "Res": "raw Res state plus all-along final-departure trajectories and time-allocation/asymmetry; no assumption every6h weakens."
+    },
+    "verification_required": [
+      "reconstruct one existing stage summary from legal weighted source rows and compare exact means/n",
+      "independent direct same-SID adjacent difference for one variable",
+      "terminal point weight0 and no gap bridging",
+      "all18 fixed contrasts including zeros/NA",
+      "read NA basin with keep_default_na=False",
+      "model raw comparison uses identical pair support",
+      "all adjustment masks and failed draws retained",
+      "component contrasts are not incorrectly substituted for new adjacent stage contrasts"
+    ],
+    "resource_plan": {
+      "native_threads": 1,
+      "new_workers_before_freeze": 0,
+      "raw_nc_reads_before_freeze": 0,
+      "planned_initial_source_io_MB": 80,
+      "no_GPU": true,
+      "no_P1_P5_H2_spatial_rerun": true,
+      "write_whitelist": "stages",
+      "discovery_processes": "all five own readonly discovery sessions ended; no science worker started"
+    },
+    "pending_root_decisions": []
+  }
+}

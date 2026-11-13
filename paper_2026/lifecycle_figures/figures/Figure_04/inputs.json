@@ -1,0 +1,20 @@
+{
+  "direct/exchange_background80.csv": {
+    "relative_path": "inputs/direct/exchange_background80.csv",
+    "sha256": "dd31fb8764c6b9d5fa7a237c48cf4f7ce4d7e6929975f0327dce56c72abb3765",
+    "original_path": "exchange_background80.csv",
+    "bytes": 3183
+  },
+  "direct/paired_flux_components.csv": {
+    "relative_path": "inputs/direct/paired_flux_components.csv",
+    "sha256": "60900e8f316aae29a83d1bb98a7beb4be5e3282d0b37092de2a71b847884c811",
+    "original_path": "paired_flux_components.csv",
+    "bytes": 5727
+  },
+  "direct/pressure_components.csv": {
+    "relative_path": "inputs/direct/pressure_components.csv",
+    "sha256": "8ae053ffddf0b6a4b63fcf45f13c8ac3001fd6325674219ead1ab268b35025ac",
+    "original_path": "pressure_components.csv",
+    "bytes": 46361
+  }
+}

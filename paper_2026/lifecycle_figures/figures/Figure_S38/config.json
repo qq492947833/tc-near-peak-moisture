@@ -1,0 +1,41 @@
+{
+  "figure_id": "Figure_S29",
+  "type": "supplementary",
+  "entry_function": "fig22",
+  "legacy_identity": "SI_regional_departure_risk",
+  "family": "late",
+  "aliases": {
+    "geography/G1_genesis_basin_recurrence.csv": "inputs/bbb1e631ae_G1_genesis_basin_recurrence.csv",
+    "geography/G3_region_followup_counts.csv": "inputs/5262f4dbf7_G3_region_followup_counts.csv",
+    "geography/G3_region_risk_estimates.csv": "inputs/42c205c9a9_G3_region_risk_estimates.csv",
+    "geography/general_reintensification_genesis_basin_rates.csv": "inputs/311c8ab472_general_reintensification_genesis_basin_rates.csv",
+    "geography/post_process_return_contrasts.csv": "inputs/1a9c11441f_post_process_return_contrasts.csv"
+  },
+  "caption": "Supplementary Fig. 29 | Regional recurrence and recovery support. a, Genesis-basin fractions under two distinct definitions applied to the same 2,340 main-sample histories: anchored near-peak returns, and the retained post-first-LMI episodes satisfying the separate 10-kt-in-24-hour strengthening definition. Error bars are 95% SID-bootstrap intervals. b, Outcome composition among model-supported first eligible departures, assigned by departure location; labels give regional cyclone counts. Unknown outcomes remain separate. c, Natural-course recovery predictions with fixed-model conditional 95% intervals; these differ from bounds implied by unknown observations. d,e, South China Sea return-minus-complete-nonreturn contrasts in integrated horizontal advection, vertical advection, residual and moving-frame moisture tendency, for the 100–300 and 300–800 km annuli. Waterfall steps retain the original component arithmetic; diagnostic-specific counts and intervals are reported in the corresponding tables. The SCS subset has 94 eligible departures; the Japan Sea box has none.",
+  "baseline": {
+    "label": "Figure_S29",
+    "source": "Figure_S19.png",
+    "sha256": "e82e06e920d5eba126e72c929a7fad0d6ce7da25da92a44a2316407a789340e0",
+    "pixels": [
+      6377,
+      7263
+    ],
+    "display_inches": [
+      6.496062992125984,
+      7.398605643044619
+    ],
+    "effective_dpi": 981.6714595172266
+  },
+  "source_code": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

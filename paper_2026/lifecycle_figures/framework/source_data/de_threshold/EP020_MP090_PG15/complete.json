@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE",
+  "outputs": {
+    "QC.parquet": "00c7930b37a8e7653ef34527c45741345c932f1656169f44591c99110df3023b",
+    "summary.parquet": "f738e4cad4778c9ca85764202377e657676f8b4315cd754b030597d835016f2c",
+    "observations.parquet": "d2ab953215a5548d47d8314fc8d0500ee7908d4974950d69933b867cc7f1b45a"
+  }
+}

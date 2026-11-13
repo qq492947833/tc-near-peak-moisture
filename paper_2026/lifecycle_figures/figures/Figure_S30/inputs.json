@@ -1,0 +1,32 @@
+{
+  "recovery/calibration_deciles.csv": {
+    "relative_path": "inputs/recovery/calibration_deciles.csv",
+    "sha256": "5064f96f0ebe04e3e2e205cb2715375017b8b6b9f5c60c5f878a47326d017ec8",
+    "original_path": "calibration_deciles.csv",
+    "bytes": 2398
+  },
+  "recovery/cohort_recovered.csv": {
+    "relative_path": "inputs/recovery/cohort_recovered.csv",
+    "sha256": "e7ddea9384ed5310dce627d20fda946d06564bc859b30e0ac4e1c85f2a346262",
+    "original_path": "cohort_recovered.csv",
+    "bytes": 2155137
+  },
+  "recovery/effects_with_CI.csv": {
+    "relative_path": "inputs/recovery/effects_with_CI.csv",
+    "sha256": "fb4a8fa3900ed79bb73c2fb25ed6a14a06097821f169e044edf498fe71bceb2e",
+    "original_path": "effects_with_CI.csv",
+    "bytes": 2289
+  },
+  "recovery/nonsynoptic_sensitivity/point_estimates.csv": {
+    "relative_path": "inputs/recovery/nonsynoptic_sensitivity/point_estimates.csv",
+    "sha256": "dd40b3dfeec13f9924cbe57423360c44de1c5cc00878c166030cf24c25ca3b48",
+    "original_path": "point_estimates.csv",
+    "bytes": 1566
+  },
+  "recovery/point_predictions.csv": {
+    "relative_path": "inputs/recovery/point_predictions.csv",
+    "sha256": "468883c9df89699c30723117715232e63f08f0f6880e0de234b26ee016047419",
+    "original_path": "point_predictions.csv",
+    "bytes": 2640234
+  }
+}

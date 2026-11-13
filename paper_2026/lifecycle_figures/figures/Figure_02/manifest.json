@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.0",
+  "figure_id": "Figure_02",
+  "type": "frozen scientific statistical plot",
+  "status": "SEALED_ACTUAL_RENDER_AND_LOCAL_QA_COMPLETE",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "input/raw_stage_summary.csv",
+        "input/reference_scale.csv"
+      ],
+      "filter": "All24 variable-stage rows; stages D,E,F,Res and six named environmental variables",
+      "units": "reference SD",
+      "normalization": "Frozen standardized mean and limits: (mean-reference_mean)/reference_sd; no SD re-estimation",
+      "difference_direction": "stage minus fixed whole-lifecycle reference",
+      "weights": "Frozen SID-stage means, each SID equal in stage aggregate",
+      "CI_source": "Original95% SID-bootstrap percentile bounds; raw ci_provenance column",
+      "sample_scope": "2244–2340SID by variable/stage",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/raw_stage_summary.csv": [
+          "variable",
+          "unit",
+          "stage",
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_sid",
+          "covered_h",
+          "legal_h",
+          "mean_temporal_coverage",
+          "min_temporal_coverage",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized",
+          "ci_provenance",
+          "original_bootstrap_seed"
+        ],
+        "input/reference_scale.csv": [
+          "variable",
+          "reference_id",
+          "reference_mean",
+          "reference_sd",
+          "reference_n_sid",
+          "reference_population",
+          "sst_limit"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "input/raw_adjacent_contrasts.csv",
+        "input/adjusted_adjacent_summary.csv",
+        "input/reference_scale.csv"
+      ],
+      "filter": "contrast=E-D; adjusted scheme=geography; all six variables; raw full,raw common,adjusted common",
+      "units": "reference SD",
+      "normalization": "All points and original CI endpoints divided by fixed reference_sd",
+      "difference_direction": "E-D",
+      "weights": "Raw same-SID differences and unweighted common support; frozen adjusted support/model-refit estimates",
+      "CI_source": "95% SID-bootstrap percentiles from supplied raw/common/adjusted columns; none regenerated",
+      "sample_scope": "Raw2218–2340 paired SID; common1195–1402 paired SID across panels",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/raw_adjacent_contrasts.csv": [
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_pairs",
+          "sd_delta",
+          "se_delta",
+          "t_statistic",
+          "df",
+          "p_value",
+          "bootstrap_attempted",
+          "bootstrap_valid",
+          "bootstrap_failed",
+          "variable",
+          "unit",
+          "contrast",
+          "stage_from",
+          "stage_to",
+          "before_matched_estimate",
+          "after_matched_estimate",
+          "covered_h_before",
+          "covered_h_after",
+          "reference_sd",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized",
+          "status",
+          "ci_method",
+          "p_method",
+          "p_BH18",
+          "BH_family_size"
+        ],
+        "input/adjusted_adjacent_summary.csv": [
+          "variable",
+          "scheme",
+          "contrast",
+          "stage_from",
+          "stage_to",
+          "unit",
+          "estimate",
+          "raw_matched_estimate",
+          "before_matched_estimate",
+          "after_matched_estimate",
+          "n_original_pairs",
+          "n_pairs",
+          "n_unique",
+          "retained_fraction",
+          "status",
+          "rank",
+          "residual_df",
+          "condition_number",
+          "residual_sd",
+          "max_leverage",
+          "target_identifiability_error",
+          "ci_low",
+          "ci_high",
+          "bootstrap_attempted",
+          "bootstrap_valid",
+          "bootstrap_failed",
+          "failure_reasons",
+          "raw_on_support_ci_low",
+          "raw_on_support_ci_high",
+          "reference_sd",
+          "target_age",
+          "interval_scope"
+        ],
+        "input/reference_scale.csv": [
+          "variable",
+          "reference_id",
+          "reference_mean",
+          "reference_sd",
+          "reference_n_sid",
+          "reference_population",
+          "sst_limit"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "input/raw_adjacent_contrasts.csv",
+        "input/adjusted_adjacent_summary.csv",
+        "input/reference_scale.csv"
+      ],
+      "filter": "contrast=F-E; adjusted scheme=geography; all six variables; raw full,raw common,adjusted common",
+      "units": "reference SD",
+      "normalization": "All points and original CI endpoints divided by fixed reference_sd",
+      "difference_direction": "F-E",
+      "weights": "Raw same-SID differences and unweighted common support; frozen adjusted support/model-refit estimates",
+      "CI_source": "95% SID-bootstrap percentiles from supplied raw/common/adjusted columns; none regenerated",
+      "sample_scope": "Raw2218–2340 paired SID; common1195–1402 paired SID across panels",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/raw_adjacent_contrasts.csv": [
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_pairs",
+          "sd_delta",
+          "se_delta",
+          "t_statistic",
+          "df",
+          "p_value",
+          "bootstrap_attempted",
+          "bootstrap_valid",
+          "bootstrap_failed",
+          "variable",
+          "unit",
+          "contrast",
+          "stage_from",
+          "stage_to",
+          "before_matched_estimate",
+          "after_matched_estimate",
+          "covered_h_before",
+          "covered_h_after",
+          "reference_sd",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized",
+          "status",
+          "ci_method",
+          "p_method",
+          "p_BH18",
+          "BH_family_size"
+        ],
+        "input/adjusted_adjacent_summary.csv": [
+          "variable",
+          "scheme",
+          "contrast",
+          "stage_from",
+          "stage_to",
+          "unit",
+          "estimate",
+          "raw_matched_estimate",
+          "before_matched_estimate",
+          "after_matched_estimate",
+          "n_original_pairs",
+          "n_pairs",
+          "n_unique",
+          "retained_fraction",
+          "status",
+          "rank",
+          "residual_df",
+          "condition_number",
+          "residual_sd",
+          "max_leverage",
+          "target_identifiability_error",
+          "ci_low",
+          "ci_high",
+          "bootstrap_attempted",
+          "bootstrap_valid",
+          "bootstrap_failed",
+          "failure_reasons",
+          "raw_on_support_ci_low",
+          "raw_on_support_ci_high",
+          "reference_sd",
+          "target_age",
+          "interval_scope"
+        ],
+        "input/reference_scale.csv": [
+          "variable",
+          "reference_id",
+          "reference_mean",
+          "reference_sd",
+          "reference_n_sid",
+          "reference_population",
+          "sst_limit"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "input/raw_adjacent_contrasts.csv",
+        "input/adjusted_adjacent_summary.csv",
+        "input/reference_scale.csv"
+      ],
+      "filter": "contrast=Res-F; adjusted scheme=geography; all six variables; raw full,raw common,adjusted common",
+      "units": "reference SD",
+      "normalization": "All points and original CI endpoints divided by fixed reference_sd",
+      "difference_direction": "Res-F",
+      "weights": "Raw same-SID differences and unweighted common support; frozen adjusted support/model-refit estimates",
+      "CI_source": "95% SID-bootstrap percentiles from supplied raw/common/adjusted columns; none regenerated",
+      "sample_scope": "Raw2218–2340 paired SID; common1195–1402 paired SID across panels",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/raw_adjacent_contrasts.csv": [
+          "estimate",
+          "ci_low",
+          "ci_high",
+          "n_pairs",
+          "sd_delta",
+          "se_delta",
+          "t_statistic",
+          "df",
+          "p_value",
+          "bootstrap_attempted",
+          "bootstrap_valid",
+          "bootstrap_failed",
+          "variable",
+          "unit",
+          "contrast",
+          "stage_from",
+          "stage_to",
+          "before_matched_estimate",
+          "after_matched_estimate",
+          "covered_h_before",
+          "covered_h_after",
+          "reference_sd",
+          "estimate_standardized",
+          "ci_low_standardized",
+          "ci_high_standardized",
+          "status",
+          "ci_method",
+          "p_method",
+          "p_BH18",
+          "BH_family_size"
+        ],
+        "input/adjusted_adjacent_summary.csv": [
+          "variable",
+          "scheme",
+          "contrast",
+          "stage_from",
+          "stage_to",
+          "unit",
+          "estimate",
+          "raw_matched_estimate",
+          "before_matched_estimate",
+          "after_matched_estimate",
+          "n_original_pairs",
+          "n_pairs",
+          "n_unique",
+          "retained_fraction",
+          "status",
+          "rank",
+          "residual_df",
+          "condition_number",
+          "residual_sd",
+          "max_leverage",
+          "target_identifiability_error",
+          "ci_low",
+          "ci_high",
+          "bootstrap_attempted",
+          "bootstrap_valid",
+          "bootstrap_failed",
+          "failure_reasons",
+          "raw_on_support_ci_low",
+          "raw_on_support_ci_high",
+          "reference_sd",
+          "target_age",
+          "interval_scope"
+        ],
+        "input/reference_scale.csv": [
+          "variable",
+          "reference_id",
+          "reference_mean",
+          "reference_sd",
+          "reference_n_sid",
+          "reference_population",
+          "sst_limit"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "input/reference_scale.csv",
+      "sha256": "7b0fbaa6d6bf659b8692664cfd4fe22e36858e84113db46b884392b67b947234",
+      "original_path": "reference_scale.csv"
+    },
+    {
+      "relative_path": "input/raw_stage_summary.csv",
+      "sha256": "2971aaf41062a3d40a1b8744605bf33a760dd8b372497513bb230313415c6d0e",
+      "original_path": "raw_stage_summary.csv"
+    },
+    {
+      "relative_path": "input/raw_adjacent_contrasts.csv",
+      "sha256": "b9967b23b40cb8c80f1ffae670725738aa66e058b5d2c0c049f2656ad0e5f01e",
+      "original_path": "raw_adjacent_contrasts.csv"
+    },
+    {
+      "relative_path": "input/adjusted_adjacent_summary.csv",
+      "sha256": "aeb2b320f63f3a9483d9b3ddc237c3a933067de293d6f9884db1bfe2c67af91c",
+      "original_path": "adjusted_adjacent_summary.csv"
+    }
+  ],
+  "entrypoint": "run.py --output-dir <directory>",
+  "code": [
+    {
+      "relative_path": "run.py",
+      "sha256": "2cbc0769f578d187a3824cbf5ec33190b5ccdaf4b9be754c004f27e76563c1f0"
+    },
+    {
+      "relative_path": "code/plot.py",
+      "sha256": "4f4065998503430d15f9a27749651577434b4c8252b5b02f0b0e52b07a01b6fe"
+    },
+    {
+      "relative_path": "config.json",
+      "sha256": "d304bb8c3a4663074db203c204f443138faa7df621461137546752f5b1871a13"
+    },
+    {
+      "relative_path": "code/bootstrap.py",
+      "sha256": "bd9eaabcb7c305c8d63e1d894d19bc58cbba23072102159a1dd9b6306d28039b"
+    }
+  ],
+  "outputs": {
+    "png": {
+      "relative_path": "Figure_02.png",
+      "sha256": "3b14c4ab3b460d7acf88b7d237f905aaceb4358040bf9389a0d2310c7eb0aa6d"
+    },
+    "tiff": {
+      "relative_path": "Figure_02.tiff",
+      "sha256": "a20af73288fce1d066a7e1bcee86f8634b9e2b6c1b0cf62fa5d65afb179063ca"
+    },
+    "pdf": {
+      "relative_path": "Figure_02.pdf",
+      "sha256": "c48fb38b3cab9a5f5ed80c726a4558a6ac2de92136fb7ef6a9e234c2a9808fdc"
+    },
+    "svg": {
+      "relative_path": "Figure_02.svg",
+      "sha256": "49440e6d173d72f19bc6287570a0cec9e74602870acf7867ebd383f523656958"
+    }
+  },
+  "size_mm": [
+    180.0,
+    160.0
+  ],
+  "pixels": [
+    6377,
+    5669
+  ],
+  "dpi": [
+    899.9982,
+    899.9982
+  ],
+  "effective_dpi_at_prior_document_size": 981.6715151515151,
+  "QA": {
+    "alignment": "PASS",
+    "pdf_text": "PASS",
+    "collision_raw": {
+      "fail": 0,
+      "warn": 0,
+      "contained_fill_overlays": 0,
+      "contained_image_overlays": 0
+    },
+    "source_static_raw": {
+      "ready": false,
+      "strict": false,
+      "counts": {
+        "PASS": 20,
+        "WARN": 0,
+        "FAIL": 1
+      }
+    },
+    "resolved_findings": "rebuilt/qa/resolved_audit_findings.json",
+    "scientific_comparison": "rebuilt/qa/scientific_comparison.json",
+    "visual_review": "rebuilt/qa/visual_review.json",
+    "png_tiff_pixels_identical": true,
+    "baseline_comparison": {
+      "method": "Source AST and frozen input identity; numeric objects exported before writing; raster comparison is QA only",
+      "baseline_size": [
+        6377,
+        5669
+      ],
+      "rebuilt_size": [
+        6377,
+        5669
+      ],
+      "pixel_identical": false,
+      "different_pixel_count": 467437,
+      "mean_absolute_channel_difference": 2.333267434207533
+    },
+    "central_cold_rebuild": "pending root"
+  },
+  "provenance": {
+    "no_generative_image_calls": true,
+    "no_AI_image_asset": true,
+    "no_raster_plot_input": true,
+    "no_raster_tracing": true,
+    "no_overlay_or_superresolution": true,
+    "drawing_origin": "Executable native Python plotting functions and frozen numerical tables; coastline vector data only for main1. Original reference PNG accessed only after all scientific exports for comparison.",
+    "source_history": "provenance/input_manifest.json and original plotting source archived under provenance; source-path references are audit metadata only, never runtime dependencies.",
+    "statistics": "No bootstrap, model, significance or confidence-interval computation executed; CDF sorting and fixed-SD display division only."
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2"
+  }
+}

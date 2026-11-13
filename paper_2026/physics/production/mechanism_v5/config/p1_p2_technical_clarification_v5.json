@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-08T15:06:17.935210+00:00",
+  "status": "technical clarification frozen before real P1/P2 effects",
+  "authorization": "root explicit approval",
+  "contrast": "internal minus final",
+  "persistence_family": [
+    "shear200_850",
+    "shear500_850",
+    "shear200_500",
+    "midRH",
+    "PI_headroom",
+    "Tang_Emanuel_ventilation"
+  ],
+  "SST": "retains primary18 pre/change family and descriptive fixed/displacement decomposition; no persistence test",
+  "persistence_family_reason": "thermal headroom already contains SST background; avoid redundant persistence endpoint, selected before outcomes",
+  "interval_rule": "both sampled endpoints strictly worse than own supported premean; legal6h; no interpolation; crossing intervals separately counted",
+  "interval_interpretation": "covered 6-h intervals adverse at both sampled endpoints; not continuously observed adverse conditions",
+  "pre_pairing": "primary event premeans use same paired valid lags >=3/4; lag-specific comparisons use same observed lag on both events",
+  "primary_persistence": "complete24h common supported lawful intervals only; partial covered/adverse hours retained descriptively, never extrapolated",
+  "primary_centers": "fixed_t0 at negative lags, actual_track at nonnegative lags; separate all-along sensitivity",
+  "signed_ventilation": "raw_signed_index and signed_estimable; retain negative values; higher relative value is a relative diagnostic, not proof of damage",
+  "sector": "700hPa r/q/advection only; native derivative before rotation; fixed premean shear vector direction>=2m/s; weak events remain scalar",
+  "count_family": "18 pre/change;6 persistence, fixed sizes with missing P retained; sensitivity/sector/lag no added significance families",
+  "bootstrap": "2000 draws of original selected cohort SID, same draw IDs for all event sides/lags/processes; no complete48h gate"
+}

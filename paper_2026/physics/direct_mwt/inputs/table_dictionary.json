@@ -1,0 +1,31 @@
+{
+  "departure_events.csv": {
+    "row_unit": "One frozen departure event; two events per SID.",
+    "sid": "IBTrACS storm identifier; the independent statistical unit.",
+    "event_id": "Frozen event identity; unchanged from the event source.",
+    "event_class": {"internal": "Temporary departure followed by a later return to the defined near-peak state.", "final": "Last defined departure from the near-peak state in the observed record; not necessarily physical storm extinction."},
+    "t0": "Frozen departure anchor in UTC.",
+    "first_LMI_UTC": "First occurrence of lifetime maximum recorded intensity, UTC.",
+    "last_LMI_UTC": "Last occurrence of lifetime maximum recorded intensity, UTC.",
+    "termination_UTC": "End of the available study record, UTC; not an assumption of physical extinction.",
+    "lat": "Departure latitude, degrees north.",
+    "lon": "Departure longitude, degrees east using the saved source convention.",
+    "wind_t0_kt": "Recorded wind at departure, kt.",
+    "near_threshold_kt": "Frozen near-peak wind threshold, kt.",
+    "age_h": "Time from the study-defined starting observation to departure, hours.",
+    "land_contact": "Frozen flag for recorded land contact in the 24 h preceding departure. The ocean sensitivity requires 0 for both events; no future-ocean or survival restriction is imposed.",
+    "basin_genesis": "Basin of genesis, distinct from the actual departure or return location."
+  },
+  "departure_centres.csv": {
+    "row_unit": "One frozen SID/event/UTC centre request; missing coordinates remain missing.",
+    "UTC": "Actual request time in UTC, not normalized lifecycle progress.",
+    "lag_h": "Hours relative to the frozen departure anchor. The -30 and +30 h rows supply derivative halos around the -24 to +24 h analysis.",
+    "lat": "Latitude in degrees north; no trajectory extrapolation is added here.",
+    "lon": "Longitude in degrees east using the saved source convention.",
+    "motion_u_ms": "Saved eastward translation velocity, m s-1.",
+    "motion_v_ms": "Saved northward translation velocity, m s-1.",
+    "wind_kt": "Recorded wind, kt.",
+    "actual_track_point": "Whether the centre comes from an actual track observation.",
+    "position_extrapolated": "Whether the source position was flagged as extrapolated. This package does not create extrapolated positions."
+  }
+}

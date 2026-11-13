@@ -1,0 +1,34 @@
+{
+  "module": "v6.7 M6 one strict-wind restriction",
+  "classification": "A: fixed new sensitivity needed for environment-path comparison; B: correct pre/post terminology from existing definitions",
+  "current_claim": "Post-minus-pre environmental differences within10kt bins and their association with signedA",
+  "actual_gap": "Original representative winds need not match exactly; pre/post does not guarantee instantaneous intensification/weakening",
+  "limited_action": "Restrict frozen representative pairs to exactly equal original wind_kt; no rematching, new representative selection, alternative binwidths, new environmental extraction or repeated sensitivity searches",
+  "unchanged": [
+    "original SID and phase endpoints",
+    "original representativeUTC",
+    "source winds/fill policy",
+    "process QC",
+    "original5processes",
+    "background columns and slope estimand",
+    "equalSID weighting with supported bins normalized withinSID"
+  ],
+  "comparisons": [
+    "reuse originalall means/slopes and uncertainty",
+    "original pairs restricted to SIDs having a strict-valid pair",
+    "strict equal-wind pairs on those exact SIDs",
+    "direct strict-minus-original-on-commonSID contrasts"
+  ],
+  "slope": "Response is post-minus-pre environmental difference; A coefficient per0.1A, same original nuisance covariate differences and basin; never interpreted as explainingA formation",
+  "explained_variance": "Weighted in-sample incrementalR2 from addingA to the original nuisance regression of environmentdifference; plus partialR2; no predictive or causal claim",
+  "numerical_rule": "Column rescaling leaves objective/estimand unchanged. Identicallyzero deltaWind in strict pairs is retained in source but removed from solve as an exact redundant nuisancecolumn. Test target estimability from rowspace; no drop of samples to force fullrank; no model substitution. Direct SVD point fit validates sufficient-statistic solve",
+  "bootstrap": {
+    "B": 2000,
+    "seed": 670620026,
+    "unit": "originalSID",
+    "common_comparisons": "identical wholeSID draw multiplicities for original-common and strict; weights renormalized perSID in each representation",
+    "failures": "record each draw reason and targetestimability; no topup; if any failures no unsupported nominal95coverage claim"
+  },
+  "branch_check": "Descriptive forward6h windchange at alreadyselected endpoints; no branch-filteredsecondmodel",
+  "stop": "One frozen exact-wind restriction, five originalprocesses, directcommonSID comparison and response-correctR2; reviseclaim if altered; no further criteria or experiments"
+}

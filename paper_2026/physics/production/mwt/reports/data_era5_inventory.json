@@ -1,0 +1,6053 @@
+[
+  {
+    "field": "u",
+    "level_hpa": 50,
+    "path": "${RAW_ERA5}/U-component-of-wind-50hpa-1980-2025.nc",
+    "size_bytes": 99526272049,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -21.673202514648438
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 8.57940673828125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -14.156784057617188
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 100,
+    "path": "${RAW_ERA5}/U-component-of-wind-100hpa-1980-2025.nc",
+    "size_bytes": 99788679619,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -2.953033447265625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -18.833877563476562
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 9.285202026367188
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 150,
+    "path": "${RAW_ERA5}/U-component-of-wind-150hpa-1980-2025.nc",
+    "size_bytes": 101676054588,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -3.8882293701171875
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -19.744979858398438
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 12.1435546875
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 200,
+    "path": "${RAW_ERA5}/U-component-of-wind-200hpa-1980-2025.nc",
+    "size_bytes": 103805623953,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -5.82354736328125
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -19.318527221679688
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 0.5954742431640625
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 250,
+    "path": "${RAW_ERA5}/U-component-of-wind-250hpa-1980-2025.nc",
+    "size_bytes": 105421391700,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -7.9498443603515625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -15.851943969726562
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 3.7658233642578125
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 300,
+    "path": "${RAW_ERA5}/U-component-of-wind-300hpa-1980-2025.nc",
+    "size_bytes": 106913454985,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -8.458389282226562
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -12.431610107421875
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 4.9010162353515625
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 400,
+    "path": "${RAW_ERA5}/U-component-of-wind-400hpa-1980-2025.nc",
+    "size_bytes": 108898745880,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -5.38067626953125
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -4.5692291259765625
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 7.25592041015625
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 500,
+    "path": "${RAW_ERA5}/U-component-of-wind-500hpa-1980-2025.nc",
+    "size_bytes": 108651303075,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -3.6834869384765625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 0.2620086669921875
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 2.224761962890625
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 600,
+    "path": "${RAW_ERA5}/U-component-of-wind-600hpa-1980-2025.nc",
+    "size_bytes": 109489340238,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -5.8776702880859375
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 1.860443115234375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 5.967315673828125
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 700,
+    "path": "${RAW_ERA5}/U-component-of-wind-700hpa-1980-2025.nc",
+    "size_bytes": 111644579532,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -7.3887481689453125
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -5.476654052734375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 1.6458282470703125
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 850,
+    "path": "${RAW_ERA5}/U-component-of-wind-850hpa-1980-2025.nc",
+    "size_bytes": 116171510818,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -6.7905426025390625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -7.408905029296875
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -4.0044708251953125
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 925,
+    "path": "${RAW_ERA5}/U-component-of-wind-925hpa-1980-2025.nc",
+    "size_bytes": 117284035413,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -6.2191162109375
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -6.8429718017578125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -5.06793212890625
+      }
+    ]
+  },
+  {
+    "field": "u",
+    "level_hpa": 1000,
+    "path": "${RAW_ERA5}/U-component-of-wind-1000hpa-1980-2025.nc",
+    "size_bytes": 122248441165,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "u",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "U component of wind",
+      "standard_name": "eastward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -5.4880523681640625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -6.7591094970703125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -5.131103515625
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 50,
+    "path": "${RAW_ERA5}/V-component-of-wind-50hpa-1980-2025.nc",
+    "size_bytes": 108276895653,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 4.350250244140625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 0.8626556396484375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 2.1400146484375
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 100,
+    "path": "${RAW_ERA5}/V-component-of-wind-100hpa-1980-2025.nc",
+    "size_bytes": 108692648489,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 4.8831329345703125
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 10.82177734375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -5.3208770751953125
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 150,
+    "path": "${RAW_ERA5}/V-component-of-wind-150hpa-1980-2025.nc",
+    "size_bytes": 106743478140,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 0.1370697021484375
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -3.1067962646484375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 2.219329833984375
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 200,
+    "path": "${RAW_ERA5}/V-component-of-wind-200hpa-1980-2025.nc",
+    "size_bytes": 108949606744,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 3.6228179931640625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -1.30810546875
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 11.339141845703125
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 250,
+    "path": "${RAW_ERA5}/V-component-of-wind-250hpa-1980-2025.nc",
+    "size_bytes": 110831480568,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 3.1183013916015625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 3.534637451171875
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 11.213272094726562
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 300,
+    "path": "${RAW_ERA5}/V-component-of-wind-300hpa-1980-2025.nc",
+    "size_bytes": 112912544439,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 4.46978759765625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 3.1700592041015625
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 8.247787475585938
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 400,
+    "path": "${RAW_ERA5}/V-component-of-wind-400hpa-1980-2025.nc",
+    "size_bytes": 115428054108,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 3.143524169921875
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 3.2767333984375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -0.8877105712890625
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 500,
+    "path": "${RAW_ERA5}/V-component-of-wind-500hpa-1980-2025.nc",
+    "size_bytes": 115647957671,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 4.438934326171875
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -2.7235260009765625
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -2.1597747802734375
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 600,
+    "path": "${RAW_ERA5}/V-component-of-wind-600hpa-1980-2025.nc",
+    "size_bytes": 116586715875,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 1.008056640625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -0.2544708251953125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 0.2815093994140625
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 700,
+    "path": "${RAW_ERA5}/V-component-of-wind-700hpa-1980-2025.nc",
+    "size_bytes": 119083431358,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 1.003570556640625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -1.6397552490234375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -3.0383758544921875
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 850,
+    "path": "${RAW_ERA5}/V-component-of-wind-850hpa-1980-2025.nc",
+    "size_bytes": 122691155702,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 3.631134033203125
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -4.2704315185546875
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -3.7866973876953125
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 925,
+    "path": "${RAW_ERA5}/V-component-of-wind-925hpa-1980-2025.nc",
+    "size_bytes": 122136469867,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 1.5380859375
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -4.720458984375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -0.95361328125
+      }
+    ]
+  },
+  {
+    "field": "v",
+    "level_hpa": 1000,
+    "path": "${RAW_ERA5}/V-component-of-wind-1000hpa-1980-2025.nc",
+    "size_bytes": 124049918997,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "v",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m s**-1",
+      "long_name": "V component of wind",
+      "standard_name": "northward_wind",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -0.555328369140625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -4.3166046142578125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 0.109619140625
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 50,
+    "path": "${RAW_ERA5}/Geopotential-50hpa-1980-2025.nc",
+    "size_bytes": 64394925850,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 201251.0
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 201728.75
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 201026.1875
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 100,
+    "path": "${RAW_ERA5}/Geopotential-100hpa-1980-2025.nc",
+    "size_bytes": 66384640214,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 162341.25
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 163091.125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 162694.3125
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 150,
+    "path": "${RAW_ERA5}/Geopotential-150hpa-1980-2025.nc",
+    "size_bytes": 67004092781,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 139649.375
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 140330.9375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 139712.25
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 200,
+    "path": "${RAW_ERA5}/Geopotential-200hpa-1980-2025.nc",
+    "size_bytes": 67366947676,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 122091.3125
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 122598.875
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 122042.75
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 250,
+    "path": "${RAW_ERA5}/Geopotential-250hpa-1980-2025.nc",
+    "size_bytes": 69762493122,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 107530.5
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 107899.1875
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 107477.625
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 300,
+    "path": "${RAW_ERA5}/Geopotential-300hpa-1980-2025.nc",
+    "size_bytes": 289132939863,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 95078.31036748661
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 95304.49800577572
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 94973.0
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 400,
+    "path": "${RAW_ERA5}/Geopotential-400hpa-1980-2025.nc",
+    "size_bytes": 76995461020,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 74290.03125
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 74469.03125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 74245.796875
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 500,
+    "path": "${RAW_ERA5}/Geopotential-500hpa-1980-2025.nc",
+    "size_bytes": 296556277456,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 57314.84447911739
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 57512.88113669831
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 57354.765625
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 600,
+    "path": "${RAW_ERA5}/Geopotential-600hpa-1980-2025.nc",
+    "size_bytes": 73784093464,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 43037.34765625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 43202.91796875
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 43059.58203125
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 700,
+    "path": "${RAW_ERA5}/Geopotential-700hpa-1980-2025.nc",
+    "size_bytes": 78154746538,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 30637.0390625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 30719.203125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 30655.33203125
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 850,
+    "path": "${RAW_ERA5}/Geopotential-850hpa-1980-2025.nc",
+    "size_bytes": 87694147665,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 14551.421875
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 14548.80078125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 14557.77734375
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 925,
+    "path": "${RAW_ERA5}/Geopotential-925hpa-1980-2025.nc",
+    "size_bytes": 94772676695,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 7374.10693359375
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 7348.7734375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 7399.6875
+      }
+    ]
+  },
+  {
+    "field": "z",
+    "level_hpa": 1000,
+    "path": "${RAW_ERA5}/Geopotential-1000hpa-1980-2025.nc",
+    "size_bytes": 94213585040,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "z",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "m**2 s**-2",
+      "long_name": "Geopotential",
+      "standard_name": "geopotential",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 647.43603515625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 611.557861328125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 700.047119140625
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 50,
+    "path": "${RAW_ERA5}/Temperature-50hpa-1980-2025.nc",
+    "size_bytes": 90673788237,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 206.2495574951172
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 203.06356811523438
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 204.3833770751953
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 100,
+    "path": "${RAW_ERA5}/Temperature-100hpa-1980-2025.nc",
+    "size_bytes": 91861016558,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 190.95079040527344
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 185.9653778076172
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 189.58609008789062
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 150,
+    "path": "${RAW_ERA5}/Temperature-150hpa-1980-2025.nc",
+    "size_bytes": 91078200830,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 204.31088256835938
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 206.52993774414062
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 206.66111755371094
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 200,
+    "path": "${RAW_ERA5}/Temperature-200hpa-1980-2025.nc",
+    "size_bytes": 92262059771,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 220.89537048339844
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 222.9221649169922
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 221.17616271972656
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 250,
+    "path": "${RAW_ERA5}/Temperature-250hpa-1980-2025.nc",
+    "size_bytes": 92833864712,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 233.2039337158203
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 235.89280700683594
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 233.70046997070312
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 300,
+    "path": "${RAW_ERA5}/Temperature-300hpa-1980-2025.nc",
+    "size_bytes": 90303377219,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 243.13705444335938
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 244.8021240234375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 243.5391845703125
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 400,
+    "path": "${RAW_ERA5}/Temperature-400hpa-1980-2025.nc",
+    "size_bytes": 91523902299,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 259.5398254394531
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 259.3876953125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 257.41790771484375
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 500,
+    "path": "${RAW_ERA5}/Temperature-500hpa-1980-2025.nc",
+    "size_bytes": 90730486919,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 269.00628662109375
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 268.63873291015625
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 268.5216979980469
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 600,
+    "path": "${RAW_ERA5}/Temperature-600hpa-1980-2025.nc",
+    "size_bytes": 88170540612,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 275.73626708984375
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 276.74688720703125
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 276.72308349609375
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 700,
+    "path": "${RAW_ERA5}/Temperature-700hpa-1980-2025.nc",
+    "size_bytes": 90075677452,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 282.7952880859375
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 284.7812194824219
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 282.5606689453125
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 850,
+    "path": "${RAW_ERA5}/Temperature-850hpa-1980-2025.nc",
+    "size_bytes": 95363309466,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 291.785400390625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 292.1642150878906
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 291.43707275390625
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 925,
+    "path": "${RAW_ERA5}/Temperature-925hpa-1980-2025.nc",
+    "size_bytes": 96498027967,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 295.5298156738281
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 295.6419677734375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 293.89056396484375
+      }
+    ]
+  },
+  {
+    "field": "t",
+    "level_hpa": 1000,
+    "path": "${RAW_ERA5}/Temperature-1000hpa-1980-2025.nc",
+    "size_bytes": 95646414209,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "t",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float64",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "K",
+      "long_name": "Temperature",
+      "standard_name": "air_temperature",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 300.4837646484375
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 300.79400634765625
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 299.69769287109375
+      }
+    ]
+  },
+  {
+    "field": "omega",
+    "level_hpa": 500,
+    "path": "${RAW_ERA5}/Vertical-velocity-500hpa-1980-2025.nc",
+    "size_bytes": 122115894688,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "w",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float32",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "Pa s**-1",
+      "long_name": "Vertical velocity",
+      "standard_name": "lagrangian_tendency_of_air_pressure",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -0.05502510070800781
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -0.1478424072265625
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 0.13280296325683594
+      }
+    ]
+  },
+  {
+    "field": "omega",
+    "level_hpa": 700,
+    "path": "${RAW_ERA5}/Vertical-velocity-700hpa-1980-2025.nc",
+    "size_bytes": 128149671574,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "w",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float32",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "Pa s**-1",
+      "long_name": "Vertical velocity",
+      "standard_name": "lagrangian_tendency_of_air_pressure",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": -0.0666961669921875
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -0.6306638717651367
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": -0.00133514404296875
+      }
+    ]
+  },
+  {
+    "field": "omega",
+    "level_hpa": 850,
+    "path": "${RAW_ERA5}/Vertical-velocity-850hpa-1980-2025.nc",
+    "size_bytes": 135603831344,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "w",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float32",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "time": {
+        "shape": [
+          67208
+        ],
+        "first": 0,
+        "last": 403242,
+        "attributes": {
+          "units": "hours since 1980-01-01 00:00:00",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time"
+        },
+        "steps": {
+          "6.0": 67207
+        },
+        "sha256_values": "f3d488c4768209ab70be3cadb36f8add734549ceb680f712078750e6bc4cdf5a"
+      }
+    },
+    "attributes": {
+      "units": "Pa s**-1",
+      "long_name": "Vertical velocity",
+      "standard_name": "lagrangian_tendency_of_air_pressure",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 0.06565189361572266
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": -0.6346864700317383
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 0.05890464782714844
+      }
+    ]
+  },
+  {
+    "field": "sp",
+    "level_hpa": null,
+    "path": "${RAW_ERA5}/Surface-pressure-1980-2025.nc",
+    "size_bytes": 86589470347,
+    "access": "read-only metadata and bounded sample, no full-file hash",
+    "variable": "sp",
+    "shape": [
+      67208,
+      721,
+      1440
+    ],
+    "dtype": "float32",
+    "chunks": [
+      8,
+      90,
+      180
+    ],
+    "compression": "gzip",
+    "compression_opts": 9,
+    "coordinates": {
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "first": 90.0,
+        "last": -90.0,
+        "attributes": {
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "latitude"
+        },
+        "steps": {
+          "-0.25": 720
+        },
+        "sha256_values": "9a1c2dafea16c451e0014b155528375e76561bbe3a65824cc83f0eabeb2fc9f4"
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "first": 0.0,
+        "last": 359.75,
+        "attributes": {
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "longitude"
+        },
+        "steps": {
+          "0.25": 1439
+        },
+        "sha256_values": "473af4e2fe9bec2a1b3956d359547f9908e76b61def2afb5552e051bf21f94de"
+      },
+      "valid_time": {
+        "shape": [
+          67208
+        ],
+        "first": 315532800,
+        "last": 1767204000,
+        "attributes": {
+          "units": "seconds since 1970-01-01",
+          "calendar": "proleptic_gregorian",
+          "standard_name": "time",
+          "long_name": "time"
+        },
+        "steps": {
+          "21600.0": 67207
+        },
+        "sha256_values": "e16cad6ac5aab0c909818b6b650722d8435d2281b772d4df9cc74bd8c7146009"
+      }
+    },
+    "attributes": {
+      "units": "Pa",
+      "long_name": "Surface pressure",
+      "standard_name": "surface_air_pressure",
+      "_FillValue": [
+        NaN
+      ]
+    },
+    "dimension_labels": [
+      "",
+      "",
+      ""
+    ],
+    "scalar_probes": [
+      {
+        "index": [
+          0,
+          360,
+          720
+        ],
+        "value": 100741.015625
+      },
+      {
+        "index": [
+          33604,
+          360,
+          720
+        ],
+        "value": 100698.1484375
+      },
+      {
+        "index": [
+          67207,
+          360,
+          720
+        ],
+        "value": 100803.8046875
+      }
+    ]
+  }
+]

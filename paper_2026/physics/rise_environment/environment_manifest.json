@@ -1,0 +1,91 @@
+{
+  "created_UTC": "2026-10-22T19:33:41.508938+00:00",
+  "scope": "Processed actual return-ascent environmental statistics; exact data and core function used for the manuscript",
+  "raw_ERA5_included": false,
+  "MWT_energy_package_status": "Not yet assembled; original and increment calculations are still running",
+  "source_completed_sha256": "8d6a18de0786e67ff1df1699ac6ab58c82ceba8d6c78faaf50586474cac962ca",
+  "files": [
+    {
+      "relative_path": "inputs/rise_environment_points.parquet",
+      "bytes": 577515,
+      "sha256": "1028da7d50c711eade3812aa9fc909f761d5255ce3d3b8368998dbac5cc90a31"
+    },
+    {
+      "relative_path": "inputs/rise_point_roles.parquet",
+      "bytes": 64788,
+      "sha256": "1a2b4245d1a4af9c1d8b2c2012db07432dac2e9eb776131d4d63ea6ce164aae0"
+    },
+    {
+      "relative_path": "inputs/rise_comparable_state_pairs.parquet",
+      "bytes": 53258,
+      "sha256": "9f9b74a59a2adda8d3ea29131ef44cc30fbff24ad426cc5814ac774f6eb83b21"
+    },
+    {
+      "relative_path": "inputs/return_events.parquet",
+      "bytes": 55526,
+      "sha256": "59d691495aa97b8c4663a48fd41a446f6b8b601821c17ba4cdf492d63e2ad352"
+    },
+    {
+      "relative_path": "inputs/legal_intervals.parquet",
+      "bytes": 1043936,
+      "sha256": "77caf443c35f8da72a449f6d44fabf90a88e2b92ce1e002a65c4a487d454b0be"
+    },
+    {
+      "relative_path": "config/rise_analysis_contract.json",
+      "bytes": 7648,
+      "sha256": "2310f143174ea28d2c9c5203f9b2c645b2381f4d0bcc1eb30b9c28429c23db5f"
+    },
+    {
+      "relative_path": "src/Rise_Event_Statistics.py",
+      "bytes": 9118,
+      "sha256": "40937c7348657938946a410d6a99035f335b082c924f873c243b47ea0ee84763"
+    },
+    {
+      "relative_path": "reproduce_environment.py",
+      "bytes": 4887,
+      "sha256": "b8d55bd832fd100bb20cc6e6844634a47c721d02461c1687d36738c8ee2d3d87"
+    },
+    {
+      "relative_path": "reference_results/environment/summary.parquet",
+      "bytes": 27838,
+      "sha256": "f1cc3583e14fd72e19f266f82de4abe3541247cd980af00e6284a45ebc2f2aa1"
+    },
+    {
+      "relative_path": "reference_results/environment/event_estimates.parquet",
+      "bytes": 263555,
+      "sha256": "d8f47a14af183be5e161963cb518f908106842914ea11d5b4defe96c7c6a2fe4"
+    },
+    {
+      "relative_path": "reference_results/environment/sid_estimates.parquet",
+      "bytes": 240897,
+      "sha256": "96dfc2b48d51d12367fb37bcc701cc04a5b5624e4a36baa98142c01c341b66cb"
+    },
+    {
+      "relative_path": "reference_results/environment/coverage.parquet",
+      "bytes": 15869,
+      "sha256": "065b0f898895175c80dbbb9796349a5a045bac9ed8bac52c0cd9273e55132c15"
+    },
+    {
+      "relative_path": "reference_results/environment/matched_bins.parquet",
+      "bytes": 111127,
+      "sha256": "c10787e63f1fded7a2d9207159255401f36fbb77fcf8d499abe5469f8a8390a1"
+    },
+    {
+      "relative_path": "reference_results/environment/time_summary.parquet",
+      "bytes": 14193,
+      "sha256": "fd15f93ed00b62fde5bf13c8b5727d39c1aeb1afbd3314deb67366105418f6fb"
+    },
+    {
+      "relative_path": "reference_results/environment/time_sid.parquet",
+      "bytes": 232858,
+      "sha256": "819104649164398541bce43f07ed93c3bfaba6797a0c4303506d430f4fb1fa59"
+    }
+  ],
+  "independent_function_imports": [
+    "numpy",
+    "pandas"
+  ],
+  "bootstrap_B": 2000,
+  "seed": 650117,
+  "units": "Input units retained; rate integrals use actual seconds with their documented per-day conversion."
+}

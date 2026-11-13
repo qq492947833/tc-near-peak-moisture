@@ -1,0 +1,4 @@
+estimand,sample,units,n_events,estimate,lower,upper,n_sid,job_id,group_id,metric,level,window,region,scheme,support_mode,comparison_role,comparison_id
+matched_rise_minus_Resolution,all_events,J kg-1,115,3.8980060214386869,2.2911992869245004,5.5949046871327539,108,j0396,g0396,APE,700,0,r0_300,main,native_diagnostic,value,
+matched_rise_minus_Resolution,all_events,J kg-1,115,-1.5062912222824594,-2.4016013761397685,-0.72117010955685978,108,j0402,g0402,APE,700,1,r0_300,main,native_diagnostic,value,
+matched_rise_minus_Resolution,all_events,J kg-1,115,-0.72115707778177607,-0.98503218743361065,-0.46111482149210686,108,j0408,g0408,APE,700,2,r0_300,main,native_diagnostic,value,

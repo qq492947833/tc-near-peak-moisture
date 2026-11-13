@@ -1,0 +1,20 @@
+{
+  "thematic/fig7_diagnostics.csv": {
+    "relative_path": "inputs/thematic/fig7_diagnostics.csv",
+    "sha256": "95230873a0d6ecf2222d9583f61ade83d6de7c424cd8655c7e1f64e9f97a7428",
+    "original_path": "weight_and_bias_diagnostics.csv",
+    "bytes": 1117
+  },
+  "thematic/fig7_effects.csv": {
+    "relative_path": "inputs/thematic/fig7_effects.csv",
+    "sha256": "fb4a8fa3900ed79bb73c2fb25ed6a14a06097821f169e044edf498fe71bceb2e",
+    "original_path": "effects_with_CI.csv",
+    "bytes": 2289
+  },
+  "thematic/fig7_sensitivity.csv": {
+    "relative_path": "inputs/thematic/fig7_sensitivity.csv",
+    "sha256": "bef589ec1804a1ad66cfac8f0e5094ef6841dfb19d2d9775fcccd0a569cd93fa",
+    "original_path": "MNAR_policy_response_sensitivity.csv",
+    "bytes": 2363
+  }
+}

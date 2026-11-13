@@ -1,0 +1,861 @@
+{
+  "figure_id": "Figure_S10",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/physics/FigS8_panel_source.csv"
+      ],
+      "fields": {
+        "physics/FigS8_panel_source.csv": [
+          "variable",
+          "policy",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "a = ax.flat[i]",
+        "vals = q.pivot(index='policy', columns='estimand', values='estimate').loc[policies, ['pre_mean', 'change_0_24']]"
+      ],
+      "sample_scope": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              3.8544114299810865,
+              -0.9106063281811699
+            ],
+            [
+              2.1579815122586594,
+              1.325358923302249
+            ],
+            [
+              2.1579815122586594,
+              -0.9106063281811699
+            ]
+          ],
+          "vmin": -3.8544114299810865,
+          "vmax": 3.8544114299810865,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "weights": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/FigS8_panel_source.csv": "13156368cf3665f778282f57aee0877a157c0201fbff906b434884425800ea49"
+        },
+        "original_plot_source": "si1_13_redraw.py",
+        "original_plot_source_sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "sampling_policies",
+          "source_key": "physics/FigS8_panel_source.csv",
+          "fields": [
+            "variable",
+            "policy",
+            "estimand",
+            "units",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "24d4c916c3400f48ec3ba2962a75f14941e66f8f4b42d9eb42991ae0e09b861b"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/physics/FigS8_panel_source.csv"
+      ],
+      "fields": {
+        "physics/FigS8_panel_source.csv": [
+          "variable",
+          "policy",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "a = ax.flat[i]",
+        "vals = q.pivot(index='policy', columns='estimand', values='estimate').loc[policies, ['pre_mean', 'change_0_24']]"
+      ],
+      "sample_scope": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              2.539810331662712,
+              -6.164052963173125
+            ],
+            [
+              3.3145698959700747,
+              -10.718874303527635
+            ],
+            [
+              3.3145698959700747,
+              -6.164052963173125
+            ]
+          ],
+          "vmin": -10.718874303527635,
+          "vmax": 10.718874303527635,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "weights": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/FigS8_panel_source.csv": "13156368cf3665f778282f57aee0877a157c0201fbff906b434884425800ea49"
+        },
+        "original_plot_source": "si1_13_redraw.py",
+        "original_plot_source_sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "sampling_policies",
+          "source_key": "physics/FigS8_panel_source.csv",
+          "fields": [
+            "variable",
+            "policy",
+            "estimand",
+            "units",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_b_1.csv",
+          "sha256": "612964160043aa751da5c4b1aac708b7eb2a467f261cfa38aebf23b26e7fdd47"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/physics/FigS8_panel_source.csv"
+      ],
+      "fields": {
+        "physics/FigS8_panel_source.csv": [
+          "variable",
+          "policy",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "a = ax.flat[i]",
+        "vals = q.pivot(index='policy', columns='estimand', values='estimate').loc[policies, ['pre_mean', 'change_0_24']]"
+      ],
+      "sample_scope": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              3.611569590921969,
+              4.804290852340505
+            ],
+            [
+              4.386329155229336,
+              0.24946951198598755
+            ],
+            [
+              4.386329155229336,
+              4.804290852340505
+            ]
+          ],
+          "vmin": -4.804290852340505,
+          "vmax": 4.804290852340505,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "weights": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/FigS8_panel_source.csv": "13156368cf3665f778282f57aee0877a157c0201fbff906b434884425800ea49"
+        },
+        "original_plot_source": "si1_13_redraw.py",
+        "original_plot_source_sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "sampling_policies",
+          "source_key": "physics/FigS8_panel_source.csv",
+          "fields": [
+            "variable",
+            "policy",
+            "estimand",
+            "units",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_c_2.csv",
+          "sha256": "13c57c4015182129f199b823fc5c0e322ab8bb5517f8b3e06ed2253e09c1bf0f"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/physics/FigS8_panel_source.csv"
+      ],
+      "fields": {
+        "physics/FigS8_panel_source.csv": [
+          "variable",
+          "policy",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "a = ax.flat[i]",
+        "vals = q.pivot(index='policy', columns='estimand', values='estimate').loc[policies, ['pre_mean', 'change_0_24']]"
+      ],
+      "sample_scope": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              -0.2187303418230822,
+              -0.09753216445610449
+            ],
+            [
+              -0.08043555623220298,
+              0.04038135918891866
+            ],
+            [
+              -0.08043555623220298,
+              -0.09753216445610449
+            ]
+          ],
+          "vmin": -0.2187303418230822,
+          "vmax": 0.2187303418230822,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "weights": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/FigS8_panel_source.csv": "13156368cf3665f778282f57aee0877a157c0201fbff906b434884425800ea49"
+        },
+        "original_plot_source": "si1_13_redraw.py",
+        "original_plot_source_sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2"
+      },
+      "selected_source_rows": [
+        {
+          "id": "d",
+          "role": "sampling_policies",
+          "source_key": "physics/FigS8_panel_source.csv",
+          "fields": [
+            "variable",
+            "policy",
+            "estimand",
+            "units",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_d_3.csv",
+          "sha256": "f57e5d3941cf016dc0482496d74ba89803f613259505a29c6942334700a51f39"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/physics/FigS8_panel_source.csv"
+      ],
+      "fields": {
+        "physics/FigS8_panel_source.csv": [
+          "variable",
+          "policy",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "a = ax.flat[i]",
+        "vals = q.pivot(index='policy', columns='estimand', values='estimate').loc[policies, ['pre_mean', 'change_0_24']]"
+      ],
+      "sample_scope": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              -11.958482334386607,
+              -0.7256740236560999
+            ],
+            [
+              -3.298671431646172,
+              3.421232058958406
+            ],
+            [
+              -3.298671431646172,
+              -0.7256740236560999
+            ]
+          ],
+          "vmin": -11.958482334386607,
+          "vmax": 11.958482334386607,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "weights": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/FigS8_panel_source.csv": "13156368cf3665f778282f57aee0877a157c0201fbff906b434884425800ea49"
+        },
+        "original_plot_source": "si1_13_redraw.py",
+        "original_plot_source_sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2"
+      },
+      "selected_source_rows": [
+        {
+          "id": "e",
+          "role": "sampling_policies",
+          "source_key": "physics/FigS8_panel_source.csv",
+          "fields": [
+            "variable",
+            "policy",
+            "estimand",
+            "units",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_e_4.csv",
+          "sha256": "79680f9f7d93d8567b38af0be1a37a6cdf197a48f0036d8dac80005698e57cce"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/physics/FigS8_panel_source.csv"
+      ],
+      "fields": {
+        "physics/FigS8_panel_source.csv": [
+          "variable",
+          "policy",
+          "estimand",
+          "units",
+          "estimate",
+          "lo",
+          "hi",
+          "n_sid"
+        ]
+      },
+      "filter": [
+        "a = ax.flat[i]",
+        "vals = q.pivot(index='policy', columns='estimand', values='estimate').loc[policies, ['pre_mean', 'change_0_24']]"
+      ],
+      "sample_scope": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "units": {
+        "x": "",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [
+        {
+          "array": [
+            [
+              -0.03477488863300679,
+              -0.10872180482744481
+            ],
+            [
+              -0.02096329786642422,
+              0.015798478039779747
+            ],
+            [
+              -0.02096329786642422,
+              -0.10872180482744481
+            ]
+          ],
+          "vmin": -0.10872180482744481,
+          "vmax": 0.10872180482744481,
+          "norm": "TwoSlopeNorm",
+          "cmap": "RdBu_r"
+        }
+      ],
+      "difference_direction": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "weights": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+        "saved_columns": [
+          "hi",
+          "lo"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "physics/FigS8_panel_source.csv": "13156368cf3665f778282f57aee0877a157c0201fbff906b434884425800ea49"
+        },
+        "original_plot_source": "si1_13_redraw.py",
+        "original_plot_source_sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2"
+      },
+      "selected_source_rows": [
+        {
+          "id": "f",
+          "role": "sampling_policies",
+          "source_key": "physics/FigS8_panel_source.csv",
+          "fields": [
+            "variable",
+            "policy",
+            "estimand",
+            "units",
+            "estimate",
+            "lo",
+            "hi",
+            "n_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 6,
+          "saved_selected_table": "panel_f_5.csv",
+          "sha256": "e5fdb9513ec9598e5fd58db4e24c2b3732d9f8159fcf64e41205f2f3030311c1"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "physics/FigS8_panel_source.csv",
+      "relative_path": "inputs/physics/FigS8_panel_source.csv",
+      "sha256": "13156368cf3665f778282f57aee0877a157c0201fbff906b434884425800ea49",
+      "original_path": "FigS8_panel_source.csv",
+      "bytes": 4691
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S10.png",
+      "sha256": "3a0fe70057d39fa7c69b117b5d6a36d20ab979b155f5aaa038b4475c605fef1f"
+    },
+    "tiff": {
+      "path": "Figure_S10.tiff",
+      "sha256": "19c2c7b3f9b7618e1678881ab885dbdeb082e59132d4247e572806983a073041"
+    },
+    "pdf": {
+      "path": "Figure_S10.pdf",
+      "sha256": "1123944fedc9c029598113dedb8ce00dd74c8814cfa53c526affbd768c250c83"
+    },
+    "svg": {
+      "path": "Figure_S10.svg",
+      "sha256": "5cc58d1a505a902afd298772b96121e34132a8792a0a607207e46d7076526b1a"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S10",
+      "returncode": 0,
+      "elapsed_s": 15.11,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 544.2519685039371
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              96.94488188976379,
+              416.1987223295202,
+              245.29133858267716,
+              495.2692913385827
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              78.94488188976379,
+              507.26929133858266
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              349.1338582677165,
+              416.1987223295202,
+              497.4803149606299,
+              495.2692913385827
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              331.1338582677165,
+              507.26929133858266
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              96.94488188976379,
+              246.19699896003573,
+              245.29133858267716,
+              325.26756796909825
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              78.94488188976379,
+              337.26756796909825
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              349.1338582677165,
+              246.19699896003573,
+              497.4803149606299,
+              325.26756796909825
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              331.1338582677165,
+              337.26756796909825
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              96.94488188976379,
+              76.19527559055126,
+              245.29133858267716,
+              155.26584459961379
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              78.94488188976379,
+              167.26584459961379
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              349.1338582677165,
+              76.19527559055126,
+              497.4803149606299,
+              155.26584459961379
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              331.1338582677165,
+              167.26584459961379
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.652193837649
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S10",
+      "source": "old_FigureS15.png",
+      "sha256": "f6d86edf9598ea77d0edf62a11589443286afcf7f6538aa976681dfdb74c6d34",
+      "pixels": [
+        6375,
+        6801
+      ],
+      "display_inches": [
+        6.496062992125984,
+        6.930153105861767
+      ],
+      "effective_dpi": 981.363599925011
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 10 | Sensitivity of paired environmental contrasts to sampling centre. Temporary-minus-final contrasts use three centres: the observed position at every lag, the fixed departure position, and a mixed centre fixed before departure and following the cyclone afterwards. a–f, RH (a), PI − V (b), PI (c), signed entropy ratio χ (d), its signed entropy-deficit numerator (e) and signed ventilation  (f). The entropy deficit compares saturated 600-hPa core entropy at 0–100 km with environmental entropy at 100–300 km around the same centre; χ divides this deficit by surface-to-boundary-layer entropy disequilibrium. Negative signed values are retained. “Pre” averages −24, −18, −12 and −6 h with at least three common lags; “Change” is +24 h minus departure. Each variable uses a common finite SID–lag mask across events and centre comparisons. RH has n=117 for pre-means and n=105 for changes; the thermodynamic quantities have n=58 and n=53. Cells give the mean contrast in native units. Each physical variable has an independent zero-centred colour scale; colour magnitudes should be compared within a panel. Table S5h reports all 36 estimates, sample sizes and pointwise 95% percentiles from 2,000 paired-cyclone resamples. Pre-mean and change summaries use their respective eligible samples and do not imply identical support across windows. Positive values indicate larger temporary-departure values or subsequent changes. The mixed-centre definition yields identical fixed/mixed pre-means and along-track/mixed changes.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "d6ebdd038af11d1ab2f0ff47669eafedd7e29e44bf1ecbc48c6103ab9db2ba5b",
+      "run.py": "dede438679e54cbd379918431ff4475afd32fa1accfbe3de8bdf4535bb95e19a"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

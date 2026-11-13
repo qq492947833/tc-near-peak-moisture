@@ -1,0 +1,7 @@
+region,quantity,n_return,n_complete_nonreturn,estimate,ci_low,ci_high,B_valid,ci_na_reason,units,provenance,comparison,radial,component
+SCS_box,q700_raw_common_100_300km,15,30,0.154799383054323,-0.2089022144895284,0.5352216671940826,2000,,g kg-1,new_v63,known_return minus complete_nonreturn,100_300km,q700_raw_common
+SCS_box,q700_background_100_300km,15,30,0.0162002226889335,-0.418725439384675,0.4572855863131114,2000,,g kg-1,new_v63,known_return minus complete_nonreturn,100_300km,q700_background
+SCS_box,q700_anomaly_100_300km,15,30,0.1385991603653904,-0.4204596492541658,0.7080681970180084,2000,,g kg-1,new_v63,known_return minus complete_nonreturn,100_300km,q700_anomaly
+SCS_box,q700_raw_common_300_800km,15,30,0.0289049957908069,-0.4648597765405449,0.5170023729203108,2000,,g kg-1,new_v63,known_return minus complete_nonreturn,300_800km,q700_raw_common
+SCS_box,q700_background_300_800km,15,30,-0.0097877561367596,-0.4649603061615122,0.4408470850838691,2000,,g kg-1,new_v63,known_return minus complete_nonreturn,300_800km,q700_background
+SCS_box,q700_anomaly_300_800km,15,30,0.038692751927567,-0.5029315529621611,0.5474792139125922,2000,,g kg-1,new_v63,known_return minus complete_nonreturn,300_800km,q700_anomaly

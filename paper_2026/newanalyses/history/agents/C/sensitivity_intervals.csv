@@ -1,0 +1,21 @@
+stage,scope,target,n_sid,slope,ci_low,ci_high,p_boot,valid_draws,interval_scope
+D,complete_case_sensitivity,actual_composition,2252,1.3420976975584065,-0.27643824690209828,2.9171153128418017,0.099950024987506242,2000,marginal percentile conditional on successful fixed attempts
+D,complete_case_sensitivity,fixed_basin_season,2252,1.3847345578381984,-0.57452843344818183,3.1746393620733082,0.13793103448275862,2000,marginal percentile conditional on successful fixed attempts
+D,complete_case_sensitivity,fixed_basin_season_state,2252,1.1742152234793399,-0.58516984028263863,2.880036023698612,0.16691654172913542,2000,marginal percentile conditional on successful fixed attempts
+D,complete_case_sensitivity,fixed_basin_season_state_environment,2252,1.2687203390123265,-0.63495559355556797,3.0433817407171837,0.15392303848075961,2000,marginal percentile conditional on successful fixed attempts
+E,complete_case_sensitivity,actual_composition,2233,-1.9163016840808456,-3.2470763073829056,-0.54642827616228196,0.0071355759429153924,1961,marginal percentile conditional on successful fixed attempts
+E,complete_case_sensitivity,fixed_basin_season,2233,-1.8384543315118831,-3.2950362675219202,-0.4244076705820809,0.010193679918450561,1961,marginal percentile conditional on successful fixed attempts
+E,complete_case_sensitivity,fixed_basin_season_state,2233,-2.2952916388559705,-3.588036706789326,-0.94954932790880187,0.0020387359836901123,1961,marginal percentile conditional on successful fixed attempts
+E,complete_case_sensitivity,fixed_basin_season_state_environment,2233,-2.3089033198978504,-3.661631825380935,-0.90548784023419981,0.0020387359836901123,1961,marginal percentile conditional on successful fixed attempts
+F,complete_case_sensitivity,actual_composition,2232,-1.9991778711559873,-3.6484679327881535,-0.79348601903825999,0.0069965017491254375,2000,marginal percentile conditional on successful fixed attempts
+F,complete_case_sensitivity,fixed_basin_season,2232,-1.8748156503737654,-3.7362376365070804,-0.59714646498608726,0.010994502748625687,2000,marginal percentile conditional on successful fixed attempts
+F,complete_case_sensitivity,fixed_basin_season_state,2232,-2.0538929411516791,-3.5002156562981628,-0.97977055711575045,0.0039980009995002497,2000,marginal percentile conditional on successful fixed attempts
+F,complete_case_sensitivity,fixed_basin_season_state_environment,2232,-2.1131519630978968,-3.5610826098121744,-1.072112221650388,0.0039980009995002497,2000,marginal percentile conditional on successful fixed attempts
+Res,complete_case_sensitivity,actual_composition,2227,-4.1502525027116928,-8.2253564761729887,-1.1281465382920433,0.0059970014992503746,2000,marginal percentile conditional on successful fixed attempts
+Res,complete_case_sensitivity,fixed_basin_season,2227,-3.8436390930064537,-8.8881601558470003,-0.274538586986324,0.036981509245377311,2000,marginal percentile conditional on successful fixed attempts
+Res,complete_case_sensitivity,fixed_basin_season_state,2227,-4.0971849157736138,-7.8045124992786628,-1.4587541601833274,0.0039980009995002497,2000,marginal percentile conditional on successful fixed attempts
+Res,complete_case_sensitivity,fixed_basin_season_state_environment,2227,-5.0470828463631099,-9.0338515187411268,-2.3399405348344442,0.0019990004997501249,2000,marginal percentile conditional on successful fixed attempts
+Res,exclude_missing_wind_tail,actual_composition,1476,-4.4347220985580087,-8.8502278260872025,-0.79491305666096002,0.021989005497251374,2000,marginal percentile conditional on successful fixed attempts
+Res,exclude_missing_wind_tail,fixed_basin_season,1476,-2.5530583828780644,-8.9317964104105609,2.302756820561938,0.33083458270864569,2000,marginal percentile conditional on successful fixed attempts
+Res,exclude_missing_wind_tail,fixed_basin_season_state,1476,-4.8198757165759343,-8.8267424828469334,-1.5750087124039409,0.0059970014992503746,2000,marginal percentile conditional on successful fixed attempts
+Res,exclude_missing_wind_tail,fixed_basin_season_state_environment,1476,-6.2249734108291905,-10.443525291142297,-2.7664679833129759,0.00099950024987506244,2000,marginal percentile conditional on successful fixed attempts

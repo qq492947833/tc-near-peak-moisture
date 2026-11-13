@@ -1,0 +1,9 @@
+estimand,sample,units,n_events,estimate,lower,upper,n_sid,metric,radial,panel
+rise_rate_integral,all_events,g kg-1,132,-0.64493584047626884,-0.78699954478763712,-0.51599511105397589,122,horizontal_advection,inner,c
+rise_rate_integral,all_events,g kg-1,132,4.1164554614816602,3.3609922103123364,4.8816417543561617,122,vertical_advection,inner,c
+rise_rate_integral,all_events,g kg-1,132,-3.4407657085641326,-4.1307762569061461,-2.7408830150922485,122,residual,inner,c
+rise_rate_integral,all_events,g kg-1,132,0.030753912441258371,-0.064750254225963283,0.13732316064103034,122,moving_tendency,inner,c
+rise_rate_integral,all_events,g kg-1,130,-0.22997461748016609,-0.31468549456224421,-0.15444595699374222,121,horizontal_advection,outer,d
+rise_rate_integral,all_events,g kg-1,130,0.55994171616268762,0.38680842903684415,0.78202056848457824,121,vertical_advection,outer,d
+rise_rate_integral,all_events,g kg-1,130,-0.42170416376393294,-0.60340226733446534,-0.27347522210470582,121,residual,outer,d
+rise_rate_integral,all_events,g kg-1,130,-0.091737065081411398,-0.15995017476717238,-0.022817912127492186,121,moving_tendency,outer,d

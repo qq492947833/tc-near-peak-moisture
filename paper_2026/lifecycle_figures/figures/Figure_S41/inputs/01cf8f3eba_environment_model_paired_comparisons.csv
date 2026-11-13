@@ -1,0 +1,11 @@
+model,reference,metric,n_sid,n_observed_positive_weight,weight_sum,weight_ESS,paired_difference,ci_low,ci_high,B_valid,improvement_direction,inference
+M0,M0,interval_log_likelihood,1281,,,,0.0,0.0,0.0,2000,positive,paired 2000 fixed-OOF SID bootstrap
+M0,M0,complete_observation_IPCW_Brier,1281,1038.0,1286.5284103543252,783.1253336552938,0.0,0.0,0.0,2000,negative,paired 2000 fixed-OOF SID bootstrap
+M0+dynamics,M0,interval_log_likelihood,1281,,,,0.0032783713666637987,-0.004737843083405427,0.010783945858407612,2000,positive,paired 2000 fixed-OOF SID bootstrap
+M0+dynamics,M0,complete_observation_IPCW_Brier,1281,1038.0,1286.5284103543252,783.1253336552938,-0.0010350792279633023,-0.003771771679245588,0.0017025685858933267,2000,negative,paired 2000 fixed-OOF SID bootstrap
+M0+moisture,M0,interval_log_likelihood,1281,,,,-9.592065381955238e-05,-0.00525667607001545,0.005287037166582519,2000,positive,paired 2000 fixed-OOF SID bootstrap
+M0+moisture,M0,complete_observation_IPCW_Brier,1281,1038.0,1286.5284103543252,783.1253336552938,0.0003667552404328419,-0.0015527000670501414,0.002182224347372449,2000,negative,paired 2000 fixed-OOF SID bootstrap
+M0+thermodynamics,M0,interval_log_likelihood,1281,,,,0.02509429260632229,0.01156498148880941,0.03815417212053621,2000,positive,paired 2000 fixed-OOF SID bootstrap
+M0+thermodynamics,M0,complete_observation_IPCW_Brier,1281,1038.0,1286.5284103543252,783.1253336552938,-0.008264193871575905,-0.013587643252459881,-0.0033119676638299345,2000,negative,paired 2000 fixed-OOF SID bootstrap
+M0+all,M0,interval_log_likelihood,1281,,,,0.02696066172428531,0.011421983726227991,0.04257056198076759,2000,positive,paired 2000 fixed-OOF SID bootstrap
+M0+all,M0,complete_observation_IPCW_Brier,1281,1038.0,1286.5284103543252,783.1253336552938,-0.008899426214525354,-0.015196469800507808,-0.003300002169422374,2000,negative,paired 2000 fixed-OOF SID bootstrap

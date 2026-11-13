@@ -1,0 +1,43 @@
+{
+  "task": "Bounded descriptive actual-return latitude analysis, Nov10",
+  "status": "PREDECLARED_BEFORE_EVENT_LATITUDE_DISTRIBUTION_READ",
+  "frozen_cohort_sid": 2340,
+  "frozen_events": 133,
+  "frozen_returning_sid": 123,
+  "analysis_unit": "Every frozen qualifying actual-return event; repeated events within a SID retained",
+  "event_definition": "Exactly inherited all_return_events event IDs and UTC; no new return classification",
+  "departure_reference": "The observed departure opening the matched A risk episode that ends at this qualifying return; retain and compare any canonical event-source departure field before finalizing the ledger",
+  "latitude_definition": "Signed track latitude at the observed departure UTC and actual return UTC; no interpolation and no event-latitude truncation at plus/minus40 degrees",
+  "latitude_bins_degrees": [
+    -90,
+    -80,
+    -70,
+    -60,
+    -50,
+    -40,
+    -30,
+    -20,
+    -10,
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "bin_rule": "Left-closed, right-open 10 degree bins; last bin includes +90. Keep every prespecified bin, including zero-count bins.",
+  "hemisphere": "NH for latitude >0, SH for latitude <0, EQ for exactly0; preserve departure and return hemisphere separately",
+  "displacements": [
+    "return_latitude minus departure_latitude in degrees",
+    "absolute return latitude minus absolute departure latitude in degrees; positive denotes poleward magnitude increase"
+  ],
+  "summaries": "Event counts and distinct SID counts by signed bin, hemisphere and basin; preserve event and SID counts as distinct quantities; counts only, no p-values, models, confidence intervals or causal attribution",
+  "denominator_reuse": "Reuse R1 A true observable risk-hours and R1 B annual global uniqueSID/genesis-year numerators/denominators without fitting a new global model",
+  "global_trend_source": "R1/agents/B/annual_trends_and_basin_interactions.csv; exact stored 0.5284431632845179 [-0.49922822434316405,1.5561145509121999] percentage points per decade",
+  "scope_boundary": "No 48h risk model, no redefinition of eligibility, no latitude-conditioned occurrence denominator or causal claim from this event-only distribution, no figures or DOCX",
+  "input_policy": "R1 and original sources read-only; stream track columns and retain only required event rows; all output/cache/temp in this R2 agent directory"
+}

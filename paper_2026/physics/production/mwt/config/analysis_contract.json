@@ -1,0 +1,132 @@
+{
+  "contract_version": "1.0",
+  "status": "fixed_before_any_event_group_energy_contrast",
+  "candidate_SID": 117,
+  "event_identity": "source_data/events_frozen.csv; frozen IDs and departure UTC unchanged",
+  "source_selection": "Existing raw ERA5 only; no future-survival or prior T1 support restriction",
+  "pressure_hpa": [
+    50,
+    100,
+    150,
+    200,
+    250,
+    300,
+    400,
+    500,
+    600,
+    700,
+    850,
+    925,
+    1000
+  ],
+  "omega_pressure_hpa": [
+    500,
+    700,
+    850
+  ],
+  "dt_seconds": 21600,
+  "MWT": {
+    "primary_N": 1024,
+    "j0": 5,
+    "j1": 8,
+    "physical_period_boundaries_days": [
+      16,
+      2
+    ],
+    "window_labels": [
+      "longer than 16 days",
+      "2 to 16 days",
+      "shorter than 2 days (resolved at 6-hour sampling)"
+    ],
+    "normalization": "physical",
+    "boundary": "symmetric",
+    "implementation": "Unchanged supplied MWT basis applied through a validated exact linear operator",
+    "main_start": "6-hour-UTC-floored midpoint of frozen two departure times minus 512 steps",
+    "sensitivity": "Same N shifted forward 64 steps (16 days); same scales, geographical domain, reference state, fixed column mask",
+    "choice_basis": "Original physical-period relation and pre-outcome impulse-response endpoint check; no group effects consulted"
+  },
+  "reference_state": "Area/time mean over primary 1024-step fixed geographical domain, using actual above-ground valid observations per pressure; shared by both events and shifted-input sensitivity",
+  "fixed_column_mask": "Each pressure/grid column above actual surface and finite u/v/T/Phi throughout union1088; omega also finite at three supplied levels. No zero fill/extrapolation.",
+  "reference_missing_rule": "Preserve actual13-level reference and neighboring derivatives. Missing/unstable levels masked individually; valid common-pressure diagnostics retained.",
+  "fixed_geographical_domain": "Smallest native0.25-degree rectangle containing both events observed centres -24 through +24h plus800-km circles and2grid-cell halo; longitude unwrapped about SID",
+  "regions_km": {
+    "primary": [
+      0,
+      300
+    ],
+    "environment": [
+      200,
+      800
+    ],
+    "radius_sensitivity": [
+      0,
+      500
+    ]
+  },
+  "space_weights": "Exact spherical grid-cell areas; geographic derivatives before neighborhood sampling",
+  "minimum_valid_area_fraction": 0.8,
+  "event_lags_hours": [
+    -24,
+    -18,
+    -12,
+    -6,
+    0,
+    6,
+    12,
+    18,
+    24
+  ],
+  "time_derivative_halo_hours": 6,
+  "primary_event_window_hours": [
+    -24,
+    -18,
+    -12,
+    -6
+  ],
+  "pre_window_support": "At least3 of4 identical pre-departure offsets in both SID members; mean paired difference over exactly those common offsets",
+  "primary_pressure_hpa": 700,
+  "consistency_pressure_hpa": [
+    500,
+    850
+  ],
+  "primary_scale_window": "2 to16 days",
+  "primary_estimands": [
+    "KE",
+    "APE",
+    "C_A_to_K",
+    "vertical_input_K_Wkg",
+    "vertical_input_A_Wkg",
+    "vertical_input_P_Wkg"
+  ],
+  "additional_diagnostics": [
+    "dKE_dt",
+    "dAPE_dt",
+    "transport_K_h",
+    "transport_A_h",
+    "Gamma_K_h",
+    "Gamma_A_h",
+    "W_PG",
+    "Q_K_p",
+    "Q_A_p",
+    "Q_P_p"
+  ],
+  "scope": "Storage, same-scale conversion, horizontal transport, horizontal canonical-transfer contributions and boundary net vertical inputs are distinct; no complete budget or complete3D canonical transfer",
+  "continuity_constrained_Gamma": false,
+  "vertical_omega_reconstruction": false,
+  "bootstrap": {
+    "unit": "SID",
+    "replicates": 2000,
+    "seed": 650117,
+    "interval": "percentile95%",
+    "contrast": "temporary minus final",
+    "sampling_order": "sorted SID",
+    "multiple_testing": "Six primary outcomes form one family. Pointwise95%intervals; centered-bootstrap two-sided p and BH q supplied for this family. Other results descriptive estimates/intervals."
+  },
+  "sensitivity_rules": [
+    "Input shift on identical SID and offset supports; coverage differences explicit",
+    "0-500km radius using saved fields; common-SID comparison and each sample",
+    "Event-time ocean subset requires both frozen land_contact=0; no future condition",
+    "13level hydrostatic and finite-difference implementation checks; residual never forced to zero"
+  ],
+  "completion_condition": "All candidates accounted, implementation checked, declared contrasts/sensitivities computed once, evidence-appropriate figures/NPJtext integrated and rendered. Significance is not a stopping condition."
+}

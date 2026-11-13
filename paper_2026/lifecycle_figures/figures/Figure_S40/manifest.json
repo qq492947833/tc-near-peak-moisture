@@ -1,0 +1,874 @@
+{
+  "figure_id": "Figure_S31",
+  "type": "supplementary",
+  "status": "RENDERED_PENDING_INDEPENDENT_NUMERICAL_TEXT_VISUAL_QA",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs\\a1dd587786_pre_environment_group_contrasts.csv"
+      ],
+      "fields": [
+        "variable",
+        "region",
+        "comparison",
+        "n_group",
+        "n_nonreturn",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "B_valid",
+        "reference_sd",
+        "standardized_difference",
+        "standardized_ci_low",
+        "standardized_ci_high"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig24",
+        "selected_rows": "panels\\00_a_Separate_outcome_groups__diagnostic-specific_observed_support.csv",
+        "selected_rows_sha256": "4a55ef9f0fd4d8cf617db2bc985b842929f5a4958f6ac46f1171fc68977f37b3"
+      },
+      "sample_scope": {},
+      "units": {
+        "source": "scientific caption and source-level axis strings",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "normalization": {
+        "executed_entry": "fig24",
+        "role": "Separate outcome groups; diagnostic-specific observed support",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "difference_direction": {
+        "role": "Separate outcome groups; diagnostic-specific observed support",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "standardized_ci_low",
+          "standardized_ci_high"
+        ],
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/d8c0b2c5c0_C_q700_SCS_return_contrasts.csv",
+            "sha256": "d8c0b2c5c04479d46e33a1807935d4ae9a97618fdac475cf52b66cf59364faa6",
+            "original_path": "C_q700_SCS_return_contrasts.csv",
+            "logical_keys": [
+              "geography/C_q700_SCS_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1a9c11441f_post_process_return_contrasts.csv",
+            "sha256": "1a9c11441f8ae21ecd579a87e2a03cb5029437875037d708b2815035a619f33f",
+            "original_path": "post_process_return_contrasts.csv",
+            "logical_keys": [
+              "geography/post_process_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a1dd587786_pre_environment_group_contrasts.csv",
+            "sha256": "a1dd5877861383c0391177553b7171e09db8c3169570df87536fbc5a1c8fdfc7",
+            "original_path": "pre_environment_group_contrasts.csv",
+            "logical_keys": [
+              "geography/pre_environment_group_contrasts.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "4a55ef9f0fd4d8cf617db2bc985b842929f5a4958f6ac46f1171fc68977f37b3"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs\\d8c0b2c5c0_C_q700_SCS_return_contrasts.csv"
+      ],
+      "fields": [
+        "region",
+        "quantity",
+        "n_return",
+        "n_complete_nonreturn",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "B_valid",
+        "ci_na_reason",
+        "units",
+        "provenance",
+        "comparison",
+        "radial",
+        "component"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig24",
+        "selected_rows": "panels\\01_b_original_statistics.csv",
+        "selected_rows_sha256": "3cfdbb586ce8e3dfd3744cb94f098be36a9c4d7a16530146e563ae58f99b0def"
+      },
+      "sample_scope": {},
+      "units": [
+        "g kg-1"
+      ],
+      "normalization": {
+        "executed_entry": "fig24",
+        "role": "original_statistics",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "difference_direction": {
+        "role": "original_statistics",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "ci_na_reason"
+        ],
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/d8c0b2c5c0_C_q700_SCS_return_contrasts.csv",
+            "sha256": "d8c0b2c5c04479d46e33a1807935d4ae9a97618fdac475cf52b66cf59364faa6",
+            "original_path": "C_q700_SCS_return_contrasts.csv",
+            "logical_keys": [
+              "geography/C_q700_SCS_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1a9c11441f_post_process_return_contrasts.csv",
+            "sha256": "1a9c11441f8ae21ecd579a87e2a03cb5029437875037d708b2815035a619f33f",
+            "original_path": "post_process_return_contrasts.csv",
+            "logical_keys": [
+              "geography/post_process_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a1dd587786_pre_environment_group_contrasts.csv",
+            "sha256": "a1dd5877861383c0391177553b7171e09db8c3169570df87536fbc5a1c8fdfc7",
+            "original_path": "pre_environment_group_contrasts.csv",
+            "logical_keys": [
+              "geography/pre_environment_group_contrasts.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "3cfdbb586ce8e3dfd3744cb94f098be36a9c4d7a16530146e563ae58f99b0def"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs\\1a9c11441f_post_process_return_contrasts.csv"
+      ],
+      "fields": [
+        "field",
+        "region",
+        "quantity",
+        "n_return",
+        "n_complete_nonreturn",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "B_valid",
+        "units",
+        "ci_na_reason",
+        "provenance",
+        "comparison",
+        "radial",
+        "estimand"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig24",
+        "selected_rows": "panels\\02_c_Group_difference__complete_original_marginal_CI_n_supplied_in_table.csv",
+        "selected_rows_sha256": "51490696ebc8335122e51ac2f452e5a9a446a239b834848dcf2bbd40704451d1"
+      },
+      "sample_scope": {},
+      "units": [
+        "g kg-1"
+      ],
+      "normalization": {
+        "executed_entry": "fig24",
+        "role": "Group difference; complete original marginal CI/n supplied in table",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "difference_direction": {
+        "role": "Group difference; complete original marginal CI/n supplied in table",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "ci_na_reason"
+        ],
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/d8c0b2c5c0_C_q700_SCS_return_contrasts.csv",
+            "sha256": "d8c0b2c5c04479d46e33a1807935d4ae9a97618fdac475cf52b66cf59364faa6",
+            "original_path": "C_q700_SCS_return_contrasts.csv",
+            "logical_keys": [
+              "geography/C_q700_SCS_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1a9c11441f_post_process_return_contrasts.csv",
+            "sha256": "1a9c11441f8ae21ecd579a87e2a03cb5029437875037d708b2815035a619f33f",
+            "original_path": "post_process_return_contrasts.csv",
+            "logical_keys": [
+              "geography/post_process_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a1dd587786_pre_environment_group_contrasts.csv",
+            "sha256": "a1dd5877861383c0391177553b7171e09db8c3169570df87536fbc5a1c8fdfc7",
+            "original_path": "pre_environment_group_contrasts.csv",
+            "logical_keys": [
+              "geography/pre_environment_group_contrasts.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "51490696ebc8335122e51ac2f452e5a9a446a239b834848dcf2bbd40704451d1"
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs\\1a9c11441f_post_process_return_contrasts.csv"
+      ],
+      "fields": [
+        "field",
+        "region",
+        "quantity",
+        "n_return",
+        "n_complete_nonreturn",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "B_valid",
+        "units",
+        "ci_na_reason",
+        "provenance",
+        "comparison",
+        "radial",
+        "estimand"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig24",
+        "selected_rows": "panels\\03_d_Group_difference__complete_original_marginal_CI_n_supplied_in_table.csv",
+        "selected_rows_sha256": "9e00d51326c5ef4870d579c7d74c584b43d64225d703e78d95ee472238f7cdf6"
+      },
+      "sample_scope": {},
+      "units": [
+        "g kg-1"
+      ],
+      "normalization": {
+        "executed_entry": "fig24",
+        "role": "Group difference; complete original marginal CI/n supplied in table",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "difference_direction": {
+        "role": "Group difference; complete original marginal CI/n supplied in table",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "ci_na_reason"
+        ],
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/d8c0b2c5c0_C_q700_SCS_return_contrasts.csv",
+            "sha256": "d8c0b2c5c04479d46e33a1807935d4ae9a97618fdac475cf52b66cf59364faa6",
+            "original_path": "C_q700_SCS_return_contrasts.csv",
+            "logical_keys": [
+              "geography/C_q700_SCS_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1a9c11441f_post_process_return_contrasts.csv",
+            "sha256": "1a9c11441f8ae21ecd579a87e2a03cb5029437875037d708b2815035a619f33f",
+            "original_path": "post_process_return_contrasts.csv",
+            "logical_keys": [
+              "geography/post_process_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a1dd587786_pre_environment_group_contrasts.csv",
+            "sha256": "a1dd5877861383c0391177553b7171e09db8c3169570df87536fbc5a1c8fdfc7",
+            "original_path": "pre_environment_group_contrasts.csv",
+            "logical_keys": [
+              "geography/pre_environment_group_contrasts.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "9e00d51326c5ef4870d579c7d74c584b43d64225d703e78d95ee472238f7cdf6"
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs\\1a9c11441f_post_process_return_contrasts.csv"
+      ],
+      "fields": [
+        "region",
+        "quantity",
+        "n_return",
+        "n_complete_nonreturn",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "B_valid",
+        "units",
+        "ci_na_reason",
+        "provenance",
+        "comparison",
+        "radial",
+        "field",
+        "estimand"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig24",
+        "selected_rows": "panels\\04_e_original_statistics.csv",
+        "selected_rows_sha256": "d05e16a3708651cf4f011951e171e53c4880586191b38ab38d3db3dcf3e98440"
+      },
+      "sample_scope": {},
+      "units": [
+        "g kg-1"
+      ],
+      "normalization": {
+        "executed_entry": "fig24",
+        "role": "original_statistics",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "difference_direction": {
+        "role": "original_statistics",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "ci_na_reason"
+        ],
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/d8c0b2c5c0_C_q700_SCS_return_contrasts.csv",
+            "sha256": "d8c0b2c5c04479d46e33a1807935d4ae9a97618fdac475cf52b66cf59364faa6",
+            "original_path": "C_q700_SCS_return_contrasts.csv",
+            "logical_keys": [
+              "geography/C_q700_SCS_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1a9c11441f_post_process_return_contrasts.csv",
+            "sha256": "1a9c11441f8ae21ecd579a87e2a03cb5029437875037d708b2815035a619f33f",
+            "original_path": "post_process_return_contrasts.csv",
+            "logical_keys": [
+              "geography/post_process_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a1dd587786_pre_environment_group_contrasts.csv",
+            "sha256": "a1dd5877861383c0391177553b7171e09db8c3169570df87536fbc5a1c8fdfc7",
+            "original_path": "pre_environment_group_contrasts.csv",
+            "logical_keys": [
+              "geography/pre_environment_group_contrasts.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "d05e16a3708651cf4f011951e171e53c4880586191b38ab38d3db3dcf3e98440"
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs\\1a9c11441f_post_process_return_contrasts.csv"
+      ],
+      "fields": [
+        "radial",
+        "region",
+        "quantity",
+        "n_return",
+        "n_complete_nonreturn",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "B_valid",
+        "units",
+        "ci_na_reason",
+        "provenance",
+        "comparison",
+        "field",
+        "estimand"
+      ],
+      "filter": {
+        "executed_code": "return table(name,panel,d,meaning or 'original_statistics')",
+        "entry_function": "fig24",
+        "selected_rows": "panels\\05_f_Own_pressure-level_support.csv",
+        "selected_rows_sha256": "a8b82c76ff17928aefae7d117a4b536f7ac0782f02e86a6186d8ef422a1cd7f7"
+      },
+      "sample_scope": {},
+      "units": [
+        "g kg-1"
+      ],
+      "normalization": {
+        "executed_entry": "fig24",
+        "role": "Own pressure-level support",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "difference_direction": {
+        "role": "Own pressure-level support",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "weights": {
+        "source": "Frozen upstream estimates; plotting code never refits or recomputes weights. See caption and copied source fields.",
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "CI_source": {
+        "copied_fields": [
+          "ci_low",
+          "ci_high",
+          "ci_na_reason"
+        ],
+        "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data."
+      },
+      "statistical_generation_provenance": {
+        "frozen_source_inputs": [
+          {
+            "relative_path": "inputs/d8c0b2c5c0_C_q700_SCS_return_contrasts.csv",
+            "sha256": "d8c0b2c5c04479d46e33a1807935d4ae9a97618fdac475cf52b66cf59364faa6",
+            "original_path": "C_q700_SCS_return_contrasts.csv",
+            "logical_keys": [
+              "geography/C_q700_SCS_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/1a9c11441f_post_process_return_contrasts.csv",
+            "sha256": "1a9c11441f8ae21ecd579a87e2a03cb5029437875037d708b2815035a619f33f",
+            "original_path": "post_process_return_contrasts.csv",
+            "logical_keys": [
+              "geography/post_process_return_contrasts.csv"
+            ]
+          },
+          {
+            "relative_path": "inputs/a1dd587786_pre_environment_group_contrasts.csv",
+            "sha256": "a1dd5877861383c0391177553b7171e09db8c3169570df87536fbc5a1c8fdfc7",
+            "original_path": "pre_environment_group_contrasts.csv",
+            "logical_keys": [
+              "geography/pre_environment_group_contrasts.csv"
+            ]
+          }
+        ],
+        "original_plot_code": [
+          {
+            "original_path": "si14_26_rebuild.py",
+            "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+            "archive": "provenance/si14_26_rebuild.py"
+          },
+          {
+            "original_path": "redraw_frozen_master_figures.py",
+            "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+            "archive": "provenance/redraw_frozen_master_figures.py"
+          }
+        ],
+        "statistical_recalculation": false
+      },
+      "selected_data_sha256": "a8b82c76ff17928aefae7d117a4b536f7ac0782f02e86a6186d8ef422a1cd7f7"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "inputs/d8c0b2c5c0_C_q700_SCS_return_contrasts.csv",
+      "sha256": "d8c0b2c5c04479d46e33a1807935d4ae9a97618fdac475cf52b66cf59364faa6",
+      "original_path": "C_q700_SCS_return_contrasts.csv",
+      "logical_keys": [
+        "geography/C_q700_SCS_return_contrasts.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/1a9c11441f_post_process_return_contrasts.csv",
+      "sha256": "1a9c11441f8ae21ecd579a87e2a03cb5029437875037d708b2815035a619f33f",
+      "original_path": "post_process_return_contrasts.csv",
+      "logical_keys": [
+        "geography/post_process_return_contrasts.csv"
+      ]
+    },
+    {
+      "relative_path": "inputs/a1dd587786_pre_environment_group_contrasts.csv",
+      "sha256": "a1dd5877861383c0391177553b7171e09db8c3169570df87536fbc5a1c8fdfc7",
+      "original_path": "pre_environment_group_contrasts.csv",
+      "logical_keys": [
+        "geography/pre_environment_group_contrasts.csv"
+      ]
+    }
+  ],
+  "entrypoint": "python run.py --output-dir rebuilt",
+  "outputs": {
+    "figure": "Figure_S31",
+    "size_mm": [
+      180.0,
+      185.0
+    ],
+    "pixels": [
+      6377,
+      6555
+    ],
+    "dpi": [
+      899.9982,
+      899.9982
+    ],
+    "effective_dpi_in_baseline_document": 864.9776449614071,
+    "PNG_TIFF_same_pixels": true,
+    "minimum_object_font_pt": 7.0,
+    "files": {
+      "png": {
+        "path": "Figure_S31.png",
+        "sha256": "b1aabd6ed8f8f68e240afdd0dc12e355436e8c5e23b5a12b0a0b2ae38006cf73"
+      },
+      "tiff": {
+        "path": "Figure_S31.tiff",
+        "sha256": "ff58ab3ecdf290ae8df1edaa5bc351b3f143df7d9ef544a1fb2ea5aef6f3f769"
+      },
+      "pdf": {
+        "path": "Figure_S31.pdf",
+        "sha256": "b720036a2e2c2cd4dcad5145310153fbd728b139999a83445b071cb74fa99434"
+      },
+      "svg": {
+        "path": "Figure_S31.svg",
+        "sha256": "82560f1bc1f7a1d250a2ab643eff5a31ddc8e3b795a23dc1bda859bc0cdd8248"
+      }
+    }
+  },
+  "QA": {
+    "alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 524.4094488188977
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              81.63779527559056,
+              375.38552098463424,
+              247.25882651765306,
+              477.21259842519686
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              65.63779527559056,
+              501.2125984251969
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              326.75692151384305,
+              375.38552098463424,
+              492.37795275590554,
+              477.21259842519686
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              310.75692151384305,
+              501.2125984251969
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              81.63779527559056,
+              216.5352801773565,
+              247.25882651765306,
+              318.3623576179191
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              65.63779527559056,
+              330.36235761791914
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              326.75692151384305,
+              216.5352801773565,
+              492.37795275590554,
+              318.3623576179191
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              310.75692151384305,
+              330.36235761791914
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              81.63779527559056,
+              57.685039370078734,
+              247.25882651765306,
+              159.5121168106414
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              65.63779527559056,
+              183.5121168106414
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              326.75692151384305,
+              57.685039370078734,
+              492.37795275590554,
+              159.5121168106414
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 2,
+            "row_stop": 3,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              310.75692151384305,
+              183.5121168106414
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-row-3",
+            "panels": [
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c",
+              "e"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "raster_pair_equal": true,
+    "numerical_objects": "numerical_objects.json",
+    "display_text": "display_text.json",
+    "visual_review": "PENDING",
+    "PDF_text_and_collision": "PENDING"
+  },
+  "provenance": [
+    {
+      "original_path": "si14_26_rebuild.py",
+      "sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115",
+      "archive": "provenance/si14_26_rebuild.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ],
+  "baseline": {
+    "label": "Figure_S31",
+    "source": "old_FigureS24.png",
+    "sha256": "2282cb795687fb9a0072128fd03aac141a59383b5839383ba7d53d0433fab907",
+    "pixels": [
+      6375,
+      7437
+    ],
+    "display_inches": [
+      6.496062992125984,
+      7.57823053368329
+    ],
+    "effective_dpi": 981.3636363636364
+  },
+  "caption": "Supplementary Fig. 31 | Pre-event environments and subsequent moisture changes in the South China Sea. a, Return-minus-complete-nonreturn contrasts in pre-event means at −24, −18, −12 and −6 h, requiring three valid times and divided by fixed global reference SDs. Each variable uses 15 returns and 30 nonreturns, except PI − V (two/four cyclones; point estimate only). b, Observed 700-hPa humidity, 1991–2020 month-and-UTC background and anomaly contrasts on identical native cells and SID–lag support (15/30 cyclones). c,d, Integrated 0–24 h budget contrasts for 100–300 and 300–800 km, respectively. Horizontal advection, vertical advection and residual sum to the moving tendency; net is the total. e, Fixed-frame tendency plus storm-motion contribution equals moving tendency. All six diagnostics share native support and five six-hour observations within each radius (inner 15/30; outer 15/29); fixed-frame horizontal advection is retained in the source data. f, Integrated 850-hPa moisture-flux convergence on its own pressure-level support. Whiskers are 95% intervals from 2,000 SID resamples; Table S12f gives all budget intervals and counts. Inner and outer populations differ, so these are separate outcome-group comparisons rather than paired radial contrasts. Unknown outcomes remain separate in the source data.",
+  "statistical_recalculation": false,
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "temporary_root": "tmp",
+    "scoped_platform_WMI_avoidance": true
+  }
+}

@@ -1,0 +1,73 @@
+scope,metric,statistic,estimate,ci_low,ci_high,n_sid,unit,B_planned,B_valid,B_failed,P,q,test_family,estimand
+beta085_native_multi,R,mean,26.24,23.72,28.960999999999995,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_native_multi,U,mean,43.36,39.799,47.16,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_native_multi,F,mean,78.24,71.15899999999999,86.041,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_native_multi,L,mean,17.12,14.8,19.60199999999999,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_native_multi,B,mean,34.88,29.12,41.28,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_native_multi,R_long,mean,29.44,26.64,32.44,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_native_multi,F_minus_R,mean,52.0,45.56,59.120999999999995,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_native_multi,U_minus_R_long,mean,13.92,12.6,15.32,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_native_multi,F_minus_R_long,mean,48.8,42.72,55.36199999999999,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_fixed90_multi_main,R,mean,20.536585365853657,18.24390243902439,22.878048780487806,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_main,U,mean,36.829268292682926,33.51219512195122,40.196341463414626,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_main,F,mean,73.02439024390245,65.7560975609756,81.3670731707317,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_main,L,mean,16.29268292682927,14.145121951219512,18.390243902439025,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_main,B,mean,36.19512195121951,30.146341463414632,43.41463414634146,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_main,R_long,mean,23.75609756097561,21.414634146341463,26.048780487804876,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_main,F_minus_R,mean,52.48780487804878,45.65853658536585,60.53658536585366,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_main,U_minus_R_long,mean,13.073170731707316,11.560975609756097,14.585365853658537,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_main,F_minus_R_long,mean,49.26829268292683,42.78048780487805,56.9280487804878,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,R,mean,31.365853658536587,27.51219512195122,35.31707317073171,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,U,mean,48.09756097560975,43.5109756097561,52.78048780487805,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,F,mean,77.95121951219512,70.48658536585366,86.2439024390244,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,L,mean,16.73170731707317,13.706097560975609,19.902439024390244,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,B,mean,29.853658536585368,23.803658536585367,37.31707317073171,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,R_long,mean,35.1219512195122,31.121951219512194,39.41585365853658,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,F_minus_R,mean,46.58536585365854,39.1219512195122,55.17195121951219,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,U_minus_R_long,mean,12.975609756097562,11.121951219512194,14.781707317073165,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,F_minus_R_long,mean,42.829268292682926,35.90243902439025,50.879268292682916,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_difference,R,mean,10.829268292682928,7.853658536585366,13.902439024390244,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta085_fixed90_multi_difference,U,mean,11.268292682926829,8.682926829268293,14.0,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta085_fixed90_multi_difference,F,mean,4.926829268292683,3.5609756097560976,6.341463414634147,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta085_fixed90_multi_difference,L,mean,0.43902439024390244,-1.9024390243902438,2.731707317073171,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta085_fixed90_multi_difference,B,mean,-6.341463414634147,-8.146341463414634,-4.7317073170731705,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta085_fixed90_multi_difference,R_long,mean,11.365853658536585,8.341463414634147,14.536585365853659,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta085_fixed90_multi_difference,F_minus_R,mean,-5.902439024390244,-8.390243902439025,-3.658536585365854,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta085_fixed90_multi_difference,U_minus_R_long,mean,-0.0975609756097561,-1.9036585365853658,1.6097560975609757,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta085_fixed90_multi_difference,F_minus_R_long,mean,-6.439024390243903,-8.975609756097562,-4.048780487804878,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta095_native_multi,R,mean,15.46788990825688,13.539908256880734,17.559633027522935,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_native_multi,U,mean,29.724770642201836,26.75229357798165,32.972477064220186,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_native_multi,F,mean,64.95412844036697,56.971100917431194,73.87431192660549,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_native_multi,L,mean,14.256880733944953,12.220183486238533,16.678899082568808,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_native_multi,B,mean,35.22935779816514,28.23715596330275,43.43119266055046,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_native_multi,R_long,mean,18.880733944954127,16.89908256880734,21.137614678899084,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_native_multi,F_minus_R,mean,49.48623853211009,41.8348623853211,58.07339449541284,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_native_multi,U_minus_R_long,mean,10.844036697247706,9.521559633027524,12.331651376146782,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_native_multi,F_minus_R_long,mean,46.07339449541284,38.75229357798165,54.27660550458715,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_fixed90_multi_main,R,mean,20.536585365853657,18.24390243902439,22.878048780487806,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_main,U,mean,36.829268292682926,33.51219512195122,40.196341463414626,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_main,F,mean,73.02439024390245,65.7560975609756,81.3670731707317,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_main,L,mean,16.29268292682927,14.145121951219512,18.390243902439025,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_main,B,mean,36.19512195121951,30.146341463414632,43.41463414634146,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_main,R_long,mean,23.75609756097561,21.414634146341463,26.048780487804876,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_main,F_minus_R,mean,52.48780487804878,45.65853658536585,60.53658536585366,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_main,U_minus_R_long,mean,13.073170731707316,11.560975609756097,14.585365853658537,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_main,F_minus_R_long,mean,49.26829268292683,42.78048780487805,56.9280487804878,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,R,mean,14.487804878048781,12.828048780487805,16.29268292682927,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,U,mean,23.902439024390244,21.21951219512195,26.585365853658537,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,F,mean,51.853658536585364,44.09756097560975,61.02439024390244,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,L,mean,9.414634146341463,7.658536585365853,11.21951219512195,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,B,mean,27.951219512195124,21.31463414634146,36.246341463414616,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,R_long,mean,16.73170731707317,14.926829268292684,18.536585365853657,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,F_minus_R,mean,37.36585365853659,29.853658536585368,46.09756097560975,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,U_minus_R_long,mean,7.170731707317073,5.951219512195122,8.390243902439025,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,F_minus_R_long,mean,35.1219512195122,27.901219512195123,43.85609756097559,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_difference,R,mean,-6.048780487804878,-7.463414634146342,-4.682926829268292,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta095_fixed90_multi_difference,U,mean,-12.926829268292684,-15.365853658536585,-10.536585365853659,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta095_fixed90_multi_difference,F,mean,-21.170731707317074,-26.73170731707317,-16.14512195121952,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta095_fixed90_multi_difference,L,mean,-6.878048780487805,-8.536585365853659,-5.414634146341464,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta095_fixed90_multi_difference,B,mean,-8.24390243902439,-12.975609756097562,-4.195121951219512,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta095_fixed90_multi_difference,R_long,mean,-7.024390243902439,-8.634146341463415,-5.463414634146342,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta095_fixed90_multi_difference,F_minus_R,mean,-15.121951219512194,-20.049999999999997,-10.681707317073178,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta095_fixed90_multi_difference,U_minus_R_long,mean,-5.902439024390244,-7.219512195121951,-4.682926829268292,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast
+beta095_fixed90_multi_difference,F_minus_R_long,mean,-14.146341463414634,-19.121951219512194,-9.559756097560982,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,alternate minus main90 on same SID; direct paired contrast

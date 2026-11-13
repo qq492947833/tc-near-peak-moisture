@@ -1,0 +1,26 @@
+{
+  "physics/FigS9_850_windows_panel_source.csv": {
+    "relative_path": "inputs/physics/FigS9_850_windows_panel_source.csv",
+    "sha256": "6fd23f1f5cefdef769db05261fd9a9976e3c83e0a4897bd7a195c32af8d44fc5",
+    "original_path": "FigS9_850_windows_panel_source.csv",
+    "bytes": 363
+  },
+  "physics/FigS9_motion_panel_source.csv": {
+    "relative_path": "inputs/physics/FigS9_motion_panel_source.csv",
+    "sha256": "d098d0478c6b89aa806179fcd81864e6386737f0f6d60a9653b1ed52ed9a1794",
+    "original_path": "FigS9_motion_panel_source.csv",
+    "bytes": 1562
+  },
+  "physics/centre_budget_estimates.csv": {
+    "relative_path": "inputs/physics/centre_budget_estimates.csv",
+    "sha256": "cd0727761a66502c578df94ecf3df535fad27e14d1351bddd101b73e784426dd",
+    "original_path": "centre_budget_estimates.csv",
+    "bytes": 4235
+  },
+  "physics/centre_native_estimates.csv": {
+    "relative_path": "inputs/physics/centre_native_estimates.csv",
+    "sha256": "37de9ac8e22f31db4dcfc0cb5de11b871a002f6a9e074be3347b8c9172d6133b",
+    "original_path": "centre_native_estimates.csv",
+    "bytes": 11133
+  }
+}

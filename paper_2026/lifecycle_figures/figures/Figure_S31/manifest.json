@@ -1,0 +1,747 @@
+{
+  "figure_id": "Figure_S22",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/recovery/MNAR_sensitivity.csv"
+      ],
+      "fields": {
+        "recovery/MNAR_sensitivity.csv": [
+          "policy",
+          "outcome",
+          "MNAR_offset",
+          "offset_units",
+          "estimate"
+        ]
+      },
+      "filter": [
+        "d = d[d[k].eq(v)]"
+      ],
+      "sample_scope": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "units": {
+        "x": "Log-odds offset",
+        "y": "Recovery contrast (pp)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "weights": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/MNAR_sensitivity.csv": "4509d1206ccebc6063fc97e30da0afed76ee9d36fc7f17bca709fb9412987814"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "; transform=identity",
+          "source_key": "recovery/MNAR_sensitivity.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "MNAR_offset",
+            "offset_units",
+            "estimate",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 10,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "ec6f0375c6e9d1c3f00e7bf868c2fd4856c52644c16d773259c963504abce086"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/recovery/MNAR_policy_response_sensitivity.csv"
+      ],
+      "fields": {
+        "recovery/MNAR_policy_response_sensitivity.csv": [
+          "policy",
+          "outcome",
+          "offset",
+          "units",
+          "scenario",
+          "estimate"
+        ]
+      },
+      "filter": [
+        "d = d[d[k].eq(v)]"
+      ],
+      "sample_scope": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "units": {
+        "x": "Log-odds offset",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "weights": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/MNAR_policy_response_sensitivity.csv": "bef589ec1804a1ad66cfac8f0e5094ef6841dfb19d2d9775fcccd0a569cd93fa"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "; transform=identity",
+          "source_key": "recovery/MNAR_policy_response_sensitivity.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "offset",
+            "units",
+            "scenario",
+            "estimate",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 14,
+          "saved_selected_table": "panel_b_1.csv",
+          "sha256": "dac768bb85b36923258746a46601c3358c23291e343479437eafea16325b1119"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/recovery/physical_confounder_summary.csv"
+      ],
+      "fields": {
+        "recovery/physical_confounder_summary.csv": [
+          "policy",
+          "outcome",
+          "benchmark",
+          "mean_signed_bias_one_benchmark",
+          "point_effect",
+          "product_strength_to_null",
+          "balanced_strength_each_to_null"
+        ]
+      },
+      "filter": [
+        "d = d[d[k].eq(v)]"
+      ],
+      "sample_scope": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "units": {
+        "x": "Benchmark multiplier",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "weights": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/physical_confounder_summary.csv": "f257a4a7cb17a28e5f64ca9904db9dc10371b08d92dba9746d87a465d6f52f52"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "Original prescribed sensitivity equation; no fitted parameter; transform=identity",
+          "source_key": "recovery/physical_confounder_summary.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "benchmark",
+            "mean_signed_bias_one_benchmark",
+            "point_effect",
+            "product_strength_to_null",
+            "balanced_strength_each_to_null",
+            "_source_csv_row_index",
+            "_source_csv_line",
+            "association_multiplier",
+            "displayed_scenario"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_c_2.csv",
+          "sha256": "f1f43cf912efc841b1d30142e45c885c215259e22c85f8795a5d85e5d3aa9d04"
+        },
+        {
+          "id": "c",
+          "role": "Original prescribed sensitivity equation; no fitted parameter; transform=identity",
+          "source_key": "recovery/physical_confounder_summary.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "benchmark",
+            "mean_signed_bias_one_benchmark",
+            "point_effect",
+            "product_strength_to_null",
+            "balanced_strength_each_to_null",
+            "_source_csv_row_index",
+            "_source_csv_line",
+            "association_multiplier",
+            "displayed_scenario"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_c_3.csv",
+          "sha256": "639360ff7501e7b4594815049f9fa1b864a86b595f9f340056c983e9f887d903"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/recovery/MNAR_sensitivity.csv"
+      ],
+      "fields": {
+        "recovery/MNAR_sensitivity.csv": [
+          "policy",
+          "outcome",
+          "MNAR_offset",
+          "offset_units",
+          "estimate"
+        ]
+      },
+      "filter": [
+        "d = d[d[k].eq(v)]"
+      ],
+      "sample_scope": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "units": {
+        "x": "Outcome offset (kt)",
+        "y": "Wind-change contrast (kt)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "weights": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/MNAR_sensitivity.csv": "4509d1206ccebc6063fc97e30da0afed76ee9d36fc7f17bca709fb9412987814"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "d",
+          "role": "; transform=identity",
+          "source_key": "recovery/MNAR_sensitivity.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "MNAR_offset",
+            "offset_units",
+            "estimate",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 10,
+          "saved_selected_table": "panel_d_4.csv",
+          "sha256": "07596cc113e13a8d6c8ae67dd046db223a986db5edb884b193c76733167ba8f8"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "e",
+      "input_files": [
+        "inputs/recovery/MNAR_policy_response_sensitivity.csv"
+      ],
+      "fields": {
+        "recovery/MNAR_policy_response_sensitivity.csv": [
+          "policy",
+          "outcome",
+          "offset",
+          "units",
+          "scenario",
+          "estimate"
+        ]
+      },
+      "filter": [
+        "d = d[d[k].eq(v)]"
+      ],
+      "sample_scope": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "units": {
+        "x": "Outcome offset (kt)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "weights": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/MNAR_policy_response_sensitivity.csv": "bef589ec1804a1ad66cfac8f0e5094ef6841dfb19d2d9775fcccd0a569cd93fa"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "e",
+          "role": "; transform=identity",
+          "source_key": "recovery/MNAR_policy_response_sensitivity.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "offset",
+            "units",
+            "scenario",
+            "estimate",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 10,
+          "saved_selected_table": "panel_e_5.csv",
+          "sha256": "b6ec38267c754db4cdcfd72394361fbf69d8b5c6782abf1fd5b52e568dd10fb7"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "f",
+      "input_files": [
+        "inputs/recovery/physical_confounder_summary.csv"
+      ],
+      "fields": {
+        "recovery/physical_confounder_summary.csv": [
+          "policy",
+          "outcome",
+          "benchmark",
+          "mean_signed_bias_one_benchmark",
+          "point_effect",
+          "product_strength_to_null",
+          "balanced_strength_each_to_null"
+        ]
+      },
+      "filter": [
+        "d = d[d[k].eq(v)]"
+      ],
+      "sample_scope": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "units": {
+        "x": "Benchmark multiplier",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "weights": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "recovery/physical_confounder_summary.csv": "f257a4a7cb17a28e5f64ca9904db9dc10371b08d92dba9746d87a465d6f52f52"
+        },
+        "original_plot_source": "si14_26_rebuild.py",
+        "original_plot_source_sha256": "25ed6220cb736eff419199895af38de5e1d24ef324a08844808a8edb216a3115"
+      },
+      "selected_source_rows": [
+        {
+          "id": "f",
+          "role": "Original prescribed sensitivity equation; no fitted parameter; transform=identity",
+          "source_key": "recovery/physical_confounder_summary.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "benchmark",
+            "mean_signed_bias_one_benchmark",
+            "point_effect",
+            "product_strength_to_null",
+            "balanced_strength_each_to_null",
+            "_source_csv_row_index",
+            "_source_csv_line",
+            "association_multiplier",
+            "displayed_scenario"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_f_6.csv",
+          "sha256": "66ba4694a9165f4706fc2d48073b85c54d6f1717fb8182850e4019e4f83bfbb2"
+        },
+        {
+          "id": "f",
+          "role": "Original prescribed sensitivity equation; no fitted parameter; transform=identity",
+          "source_key": "recovery/physical_confounder_summary.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "benchmark",
+            "mean_signed_bias_one_benchmark",
+            "point_effect",
+            "product_strength_to_null",
+            "balanced_strength_each_to_null",
+            "_source_csv_row_index",
+            "_source_csv_line",
+            "association_multiplier",
+            "displayed_scenario"
+          ],
+          "selected_rows": 4,
+          "saved_selected_table": "panel_f_7.csv",
+          "sha256": "f062da1e5bddc736693d948eca9985ffbb40044e8ca402e2492b712ca56b50cc"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "recovery/MNAR_policy_response_sensitivity.csv",
+      "relative_path": "inputs/recovery/MNAR_policy_response_sensitivity.csv",
+      "sha256": "bef589ec1804a1ad66cfac8f0e5094ef6841dfb19d2d9775fcccd0a569cd93fa",
+      "original_path": "MNAR_policy_response_sensitivity.csv",
+      "bytes": 2363
+    },
+    {
+      "key": "recovery/MNAR_sensitivity.csv",
+      "relative_path": "inputs/recovery/MNAR_sensitivity.csv",
+      "sha256": "4509d1206ccebc6063fc97e30da0afed76ee9d36fc7f17bca709fb9412987814",
+      "original_path": "MNAR_sensitivity.csv",
+      "bytes": 871
+    },
+    {
+      "key": "recovery/physical_confounder_summary.csv",
+      "relative_path": "inputs/recovery/physical_confounder_summary.csv",
+      "sha256": "f257a4a7cb17a28e5f64ca9904db9dc10371b08d92dba9746d87a465d6f52f52",
+      "original_path": "physical_confounder_summary.csv",
+      "bytes": 1411
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S22.png",
+      "sha256": "9a3123a1b22c951d0f0db91a75be804aa48f1e8f499c092c986dc2026bff5846"
+    },
+    "tiff": {
+      "path": "Figure_S22.tiff",
+      "sha256": "7832f68497d14cd88284868c730e14e1512a7eda2350e98a11a324bc878d0467"
+    },
+    "pdf": {
+      "path": "Figure_S22.pdf",
+      "sha256": "e9fbf7715627588a0efcac64954c888d3361f7bffd4f65ccdf97a6d8fe1edc1d"
+    },
+    "svg": {
+      "path": "Figure_S22.svg",
+      "sha256": "7f9429443dcf9de027e08e37121ba109d30006d88256bcecf22f2d85ddac0269"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S22",
+      "returncode": 0,
+      "elapsed_s": 9.1,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 7,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 411.02362204724415
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              53.5748031496063,
+              238.10011248593923,
+              164.38367931281323,
+              345.2598425196851
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              37.57480314960631,
+              357.2598425196851
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              217.57193987115252,
+              238.10011248593923,
+              328.38081603435944,
+              345.2598425196851
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              201.57193987115252,
+              357.2598425196851
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              381.56907659269876,
+              238.10011248593923,
+              492.37795275590565,
+              345.2598425196851
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 2,
+            "col_stop": 3,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              365.5690765926988,
+              357.2598425196851
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              53.5748031496063,
+              45.21259842519685,
+              164.38367931281323,
+              152.37232845894263
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              37.57480314960631,
+              164.3723284589426
+            ]
+          },
+          {
+            "id": "e",
+            "bbox_pt": [
+              217.57193987115252,
+              45.21259842519685,
+              328.38081603435944,
+              152.37232845894263
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "e",
+            "panel_label_anchor_pt": [
+              201.57193987115252,
+              164.3723284589426
+            ]
+          },
+          {
+            "id": "f",
+            "bbox_pt": [
+              381.56907659269876,
+              45.21259842519685,
+              492.37795275590565,
+              152.37232845894263
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 2,
+            "col_stop": 3,
+            "panel_label": "f",
+            "panel_label_anchor_pt": [
+              365.5690765926988,
+              164.3723284589426
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b",
+              "c"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "d",
+              "e",
+              "f"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "d"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "e"
+            ]
+          },
+          {
+            "id": "inferred-column-3",
+            "panels": [
+              "c",
+              "f"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6715409529916
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S22",
+      "source": "Figure_S32.png",
+      "sha256": "78bfe3578f14820d29683d7931477df086ae25015644820d5ef467d6bd8ca373",
+      "pixels": [
+        6377,
+        5137
+      ],
+      "display_inches": [
+        6.496062992125984,
+        5.232911198600175
+      ],
+      "effective_dpi": 981.6715151515151
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 22 | Prespecified sensitivity scenarios for the recovery policies. Rows show recovery contrasts in percentage points and 24-hour wind-change contrasts in knots. a,d, Common offsets applied to both missing outcome responses. b,e, Offsets applied only to the policy response. c,f, Effects under the original observed-confounder benchmark equation at association multipliers 0.5, 1, 2 and 4. Blue and orange lines represent the shear and humidity policies. These are scenario-dependent point estimates, not additional fitted interventions or confidence intervals.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "04fcb5d5a8a22471b865d9563d1028f9ed78ec3f689f43c2a3a5b339135b5be1",
+      "run.py": "dede438679e54cbd379918431ff4475afd32fa1accfbe3de8bdf4535bb95e19a"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "coverage": {
+    "relative_path": "inputs/S10f_timepoint_n.csv",
+    "sha256": "14c1a26ab48d91572c9f10eea8e5ddb06669e067bd3a266abcb2b9c64bf49706",
+    "original_path": "S10f_timepoint_n.csv",
+    "bytes": 1694496
+  },
+  "reference_size": {
+    "relative_path": "inputs/reference13_review.csv",
+    "sha256": "1728c44d91789f18cf65bdf820703d128282cce9d76b722558f9b891d12f868e",
+    "original_path": "reference13_review.csv",
+    "bytes": 4425
+  },
+  "hydro_size": {
+    "relative_path": "inputs/hydrostatic_pressure_review.csv",
+    "sha256": "944215f45f76244ef4bcf817c1cad2d108f5b9b4138557ca5446d6d54907121d",
+    "original_path": "hydrostatic_pressure_review.csv",
+    "bytes": 3634
+  }
+}

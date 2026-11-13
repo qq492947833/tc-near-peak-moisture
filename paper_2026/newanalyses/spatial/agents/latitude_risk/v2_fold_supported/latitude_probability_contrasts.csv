@@ -1,0 +1,13 @@
+hemisphere,kind,model,low_abs_lat,high_abs_lat,n_sid,n_training_sid,difference_pp,ci_low_pp,ci_high_pp,successful_draws,interpretation
+NH,spline,M0_state,15.8,23.0,202,861,-8.53517058486223,-13.382552812431358,-3.2532855686710365,1000,higher absolute latitude minus lower absolute latitude
+NH,spline,M1_state_joint_environment,15.8,23.0,202,861,-1.7252331422306102,-6.123020070131849,2.9848829501759386,1000,higher absolute latitude minus lower absolute latitude
+NH,spline,change_after_joint_environment,15.8,23.0,202,861,-6.80993744263162,-9.87833826491119,-3.920342694659811,1000,M0 latitude difference minus M1 latitude difference; paired within draw
+NH,linear,M0_state,15.8,23.0,202,861,-8.819147473817857,-13.332853022071488,-4.653113412754667,1000,higher absolute latitude minus lower absolute latitude
+NH,linear,M1_state_joint_environment,15.8,23.0,202,861,-1.3553011882279729,-5.735896498586877,2.6787670616603223,1000,higher absolute latitude minus lower absolute latitude
+NH,linear,change_after_joint_environment,15.8,23.0,202,861,-7.463846285589884,-10.423185491238911,-4.4796775915415825,1000,M0 latitude difference minus M1 latitude difference; paired within draw
+SH,spline,M0_state,15.0,20.2,120,384,-19.49863577752601,-27.657236463604445,-12.096236932448091,1000,higher absolute latitude minus lower absolute latitude
+SH,spline,M1_state_joint_environment,15.0,20.2,120,384,-18.442573686111466,-27.2213989083563,-9.830334821995372,1000,higher absolute latitude minus lower absolute latitude
+SH,spline,change_after_joint_environment,15.0,20.2,120,384,-1.0560620914145473,-6.434970797292819,3.862433697433442,1000,M0 latitude difference minus M1 latitude difference; paired within draw
+SH,linear,M0_state,15.0,20.2,120,384,-15.402595698402594,-21.507297965560497,-9.375402717770276,1000,higher absolute latitude minus lower absolute latitude
+SH,linear,M1_state_joint_environment,15.0,20.2,120,384,-13.74691802784424,-21.41155292145805,-6.795011056579004,1000,higher absolute latitude minus lower absolute latitude
+SH,linear,change_after_joint_environment,15.0,20.2,120,384,-1.6556776705583531,-5.852408849418365,2.5455744796990922,1000,M0 latitude difference minus M1 latitude difference; paired within draw

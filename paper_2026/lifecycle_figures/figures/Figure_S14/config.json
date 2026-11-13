@@ -1,0 +1,37 @@
+{
+  "figure_id": "Figure_S08",
+  "type": "supplementary",
+  "entry_function": "s11",
+  "legacy_identity": "SI_transition_climatology",
+  "family": "early",
+  "aliases": {
+    "climate/P4_raw_climate_anomaly_CI_n.csv": "inputs/64ad083c13_P4_raw_climate_anomaly_CI_n.csv"
+  },
+  "caption": "Supplementary Fig. 8 | Along-track moisture and its local seasonal background. a,c, Observed (solid) and climatological (dashed) means of native 700-hPa specific humidity (g kg⁻¹; a) and RH (%; c). b,d, Observed-minus-climatology anomalies in g kg⁻¹ and RH percentage points. Blue circles mark D→E and orange squares E→F. Samples follow actual centres at nine six-hour lags from −24 to +24 h. Climatology is the native-grid 1991–2020 month-by-UTC mean, evaluated at each position before averaging over 200–800 km. The fields , ,  and  share observed/climatological pressure-quality support; temporal climatology coverage and original-area coverage each require 90%. Native  is distinct from the 700/500-hPa RH mean in the principal diagnostics. Shading gives pointwise 95% percentiles from a common bank of 2,000 resamples of all 2,340 main-sample SIDs. Observed, background and anomaly means share valid cells and SIDs within each lag; support can vary between lags. Source tables provide actual counts and all four linear fields.",
+  "baseline": {
+    "label": "Figure_S08",
+    "source": "Figure_S30.png",
+    "sha256": "44ffdd7ba17d40b79ba81bcb51faa28a9fba35a5d6f7e4d375c4181e9cfe2080",
+    "pixels": [
+      6377,
+      6023
+    ],
+    "display_inches": [
+      6.496062992125984,
+      6.13545384951881
+    ],
+    "effective_dpi": 981.6714700693855
+  },
+  "source_code": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

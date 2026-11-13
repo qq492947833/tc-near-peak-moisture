@@ -1,0 +1,43 @@
+{
+  "status": "DESIGN_RECORDED_BEFORE_NEW_OUTCOME_MODEL_FITS",
+  "task": "B within-basin environment history and probability standardization",
+  "frozen_cohort": "2340 unique SID, 123 observed return SID, 133 events; NA parsed literally",
+  "source": "A/analysis_support_all_sid.csv and A/first_departure_reference.csv; no new ERA5 extraction",
+  "reference": "First observed downward crossing after the first-LMI-anchored near-peak window, identical for returning and nonreturning cyclones; outcome strictly later in recorded lifecycle",
+  "scope": "Retrospective anchored-lifecycle diagnosis, not operational forecasting or the historical 48-hour recovery outcome",
+  "reuse": "Existing B annual counts, equal-year basin trends/interactions and global composition decomposition remain authoritative and are not rerun",
+  "primary_support": "Exactly A common_support (953 SID/61 returns); NA has 71 SID/8 returns over 33 observed years and WP 41 observed years, explicitly flag sparse temporal support",
+  "sensitivity_support": "Complete NA/EP/WP/SI cases within each basin's intersection of its four inherited period-specific 1st-99th percentile ranges for abs latitude, wind, age, motion, RH, shear and SST; support fixed before outcomes are fit",
+  "periods": {
+    "P1": [
+      1982,
+      1992
+    ],
+    "P2": [
+      1993,
+      2003
+    ],
+    "P3": [
+      2004,
+      2014
+    ],
+    "P4": [
+      2015,
+      2023
+    ]
+  },
+  "environment_trends": "Fit full-year SID data with weights inverse basin-year count (renormalized within each basin); report annual-mean-equivalent OLS slopes per decade for RH, shear, SST, preceding-six-hour motion and prior-24-hour land contact; land reported percentage points/decade. Do not regress four period averages.",
+  "probability_models": [
+    "M0: basin plus continuous year plus basin-by-year interactions; its probability curve represents natural observed covariate composition",
+    "M1: add first-departure season, absolute latitude, wind, age, motion and prior-24-hour land contact; standardize over a fixed within-basin all-period state distribution",
+    "M2: add RH, shear and SST; standardize over the same SID support's fixed within-basin joint state/environment distribution"
+  ],
+  "estimand": "Equal-calendar-year OLS slope of each 1982-2023 model probability curve, percentage points per decade; pairwise model differences also in pp/decade with paired bootstrap intervals",
+  "interpretation": "Sequential regression-standardized trends, not a causal mediation decomposition. M0 to M1 and M1 to M2 compare nested model-based standardizations on identical support; differences cannot alone prove an environmental cause. M2 also supplies predictions averaged over actual annual covariates, compared within the same fitted model to fixed joint state/environment distribution as a consistency diagnostic.",
+  "weights": "Each observed basin-year has equal total fitting weight within basin, then normalized to its SID count; predicted reference distribution gives equal weight to observed basin-years and equal SID weight within each year. Missing basin-years remain missing empirical cells; 42-year model curves identify those years as modeled.",
+  "regularization": "Weak ridge: standardized state/environment coefficients penalty1, basin contrast and basin-by-decade contrast penalties0.16, global intercept and global year coefficient unpenalized; sparse basin trend interactions partially pooled to stabilize fitting, not presented as independent high-precision trends",
+  "uncertainty": "2000 circular moving blocks of three global genesis years with synchronous all-basin years and whole-SID resampling inside each selected year. All repeated data from SID travel together. Primary one- and five-year block sensitivity each500. Temporal-overlap sensitivity1000 primary replicates.",
+  "new_test_families": "20 environment-history slopes (4 basins by 5 exposures), BH; 4 environment-standardization trend differences, BH. Saved nominal95% intervals remain labeled nominal; no discovery from separate significance comparisons.",
+  "missingness": "No fixed-length future follow-up eligibility filter. Record endings and missing Dec-tail winds retained as observation limitations. NI and SP do not receive separate environment attribution models; SA0/0 remains undefined.",
+  "validation": "Source SHA, exact support membership and numerator readback, model score convergence, interval reaggregation from saved draws, 42-year-vs-period distinction, explicit sparse year flags, no changes to A/B/formal sources"
+}

@@ -1,0 +1,3 @@
+hemisphere,n_sid,n_training_sid,observed_return,complete_nonreturn,unknown,all_eight_observed,early_return_incomplete,zero_information,right_censored,successful_draws,failed_draws
+NH,202,861,30,151,21,181,0,0,172,1000,0
+SH,120,384,12,86,22,98,0,0,108,1000,0

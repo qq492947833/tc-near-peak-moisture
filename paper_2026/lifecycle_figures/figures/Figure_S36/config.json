@@ -1,0 +1,38 @@
+{
+  "figure_id": "Figure_S27",
+  "type": "supplementary",
+  "entry_function": "s9",
+  "legacy_identity": "SI_stage_duration_models",
+  "family": "early",
+  "aliases": {
+    "SF-F-EXACT-DE-6": "inputs/d2b1a66b5a_effects.csv",
+    "SF-F-H4-30": "inputs/2d001b5a63_effects.csv"
+  },
+  "caption": "Supplementary Fig. 27 | Stage-duration associations and the allocation of development time. a, Stage-duration slopes and the direct D-minus-E slope contrast for SST, 200–850-hPa shear, mid-level RH, 200-hPa divergence, 500-hPa ascent and hemisphere-signed 850-hPa vorticity. The common test family contains thirty hypotheses and 2,298 independent SIDs. Effects are 100expβ×reference SD-1, using fixed entry-environment SDs. The D−E contrast exponentiates the difference in log-duration slopes, rather than subtracting percentage responses. Circle area encodes response magnitude and colour its signed value; numbers give the estimates. A dark outline identifies BH q<0.05 and † identifies a primary 95% interval containing zero. The primary intervals use finite-sample SID-cluster covariance with a normal reference; all thirty tests remain in the same Benjamini–Hochberg family. Tables S2a,j report complete estimates, intervals, P/q and counts. b, Environmental coefficients for development fraction DD+E, conditional on exact categorical D+E strata (2,217 SIDs; no additional covariates). Units per environmental increment are °C, m s⁻¹, RH percentage point, 10⁻⁵ s⁻¹, Pa s⁻¹ and 10⁻⁵ s⁻¹, respectively. Points and whiskers show coefficients and primary analytic 95% intervals on separate native-unit axes; P values are shown at right, without an additional BH family. Only 28 of 2,000 auxiliary bootstrap attempts were estimable for the exact-stratum model; these summaries are separate from the displayed analytic inference. Source tables provide all coefficients, reference SDs and interval types. The estimates describe conditional duration associations, without an intervention interpretation.",
+  "baseline": {
+    "label": "Figure_S27",
+    "source": "Figure_S28.png",
+    "sha256": "6a8a0b89f6add490dd1d3ef2acc09e917680a8d1992eb8e6f3699dc6288642e6",
+    "pixels": [
+      6377,
+      6732
+    ],
+    "display_inches": [
+      6.496062992125984,
+      6.857691382327209
+    ],
+    "effective_dpi": 981.6714729025099
+  },
+  "source_code": [
+    {
+      "original_path": "si1_13_redraw.py",
+      "sha256": "f1a1be8963db0d9a2ca53f434c263fac7f57abd6108d1558f3fe6c9bab1077b2",
+      "archive": "provenance/si1_13_redraw.py"
+    },
+    {
+      "original_path": "redraw_frozen_master_figures.py",
+      "sha256": "fb3cf8212202ae39510ffea8da28948690f075b4030ed3c3542ac489c396a054",
+      "archive": "provenance/redraw_frozen_master_figures.py"
+    }
+  ]
+}

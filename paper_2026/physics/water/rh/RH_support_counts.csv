@@ -1,0 +1,5 @@
+boundary,level_hpa,n_original_endpoint_pairs,n_fourway_valid,n_original_comparison25,n_primary_common,n_same_comparison50
+D_to_E,500,1088,1088,1088,1088,839
+D_to_E,700,1088,1088,1088,1088,839
+E_to_F,500,2206,2206,2200,2200,1655
+E_to_F,700,2206,2206,2200,2200,1655

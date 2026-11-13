@@ -1,0 +1,14 @@
+{
+  "direct/environmental_contrasts.csv": {
+    "relative_path": "inputs/direct/environmental_contrasts.csv",
+    "sha256": "311e12e8ea1d41fd8c3dd0ab01901ebda435b24298cc36fa43fcee1576797e84",
+    "original_path": "environmental_contrasts.csv",
+    "bytes": 5810
+  },
+  "direct/fig5_trajectories.csv": {
+    "relative_path": "inputs/direct/fig5_trajectories.csv",
+    "sha256": "ac2b5bbe44ded7cc3da39aa5f159c36507cf61a60a847bd7d5cf5a201cfee6a9",
+    "original_path": "fig5_trajectories.csv",
+    "bytes": 6721
+  }
+}

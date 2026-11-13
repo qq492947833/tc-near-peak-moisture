@@ -1,0 +1,16 @@
+{
+  "scope": "Original outcome-independent validation settings for a fresh production workspace; queue-hash reuse is disabled; output files are streamed and checked independently.",
+  "queue_sha256": null,
+  "production_runner_sha256": "c70e9f077510d4d2661a0d166ee26eab41470b94f4dededf2ec0c52129fc34d7",
+  "pilot_sid": null,
+  "pilot_runner_archive": null,
+  "nodes": "geometric quarters/centre; nearest common three-level support; first invalid column per pressure if present",
+  "formula_lags_hours": [
+    -18,
+    0
+  ],
+  "regional_check_lag_hours": -18,
+  "regional_check_scale": 1,
+  "regional_check_radius_km": 300,
+  "no_group_effects_or_pvalues": true
+}

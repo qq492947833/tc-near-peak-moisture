@@ -1,0 +1,680 @@
+{
+  "figure_id": "Figure_S16",
+  "type": "supplementary",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/S10f_timepoint_n.csv"
+      ],
+      "fields": {
+        "coverage": [
+          "scheme",
+          "window",
+          "level",
+          "region",
+          "metric",
+          "lag_h",
+          "candidate_sid",
+          "temporary_valid_sid",
+          "final_valid_sid",
+          "paired_valid_sid"
+        ]
+      },
+      "filter": [
+        "cov = frames['coverage']"
+      ],
+      "sample_scope": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "units": {
+        "x": "Hours from departure",
+        "y": "Paired SID",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "weights": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "coverage": "14c1a26ab48d91572c9f10eea8e5ddb06669e067bd3a266abcb2b9c64bf49706"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "coverage",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "coverage",
+          "fields": [
+            "scheme",
+            "window",
+            "level",
+            "region",
+            "metric",
+            "lag_h",
+            "candidate_sid",
+            "temporary_valid_sid",
+            "final_valid_sid",
+            "paired_valid_sid",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 34506,
+          "saved_selected_table": "panel_coverage_0.csv",
+          "sha256": "56ef4047a5f1c4b4192fa9cfe1d52bd8f57deeca0ee3ec4013d2fd8222c8c0f7"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/reference13_review.csv"
+      ],
+      "fields": {
+        "reference_size": [
+          "pressure_hpa",
+          "candidate_sid",
+          "finite_positive_c_sid",
+          "reference_T_K_n_finite",
+          "reference_T_K_minimum",
+          "reference_T_K_median",
+          "reference_T_K_maximum",
+          "c_n_finite",
+          "c_minimum",
+          "c_median",
+          "c_maximum",
+          "dc_dp_n_finite",
+          "dc_dp_minimum",
+          "dc_dp_median",
+          "dc_dp_maximum",
+          "reference_weight_fraction_n_finite",
+          "reference_weight_fraction_minimum",
+          "reference_weight_fraction_median",
+          "reference_weight_fraction_maximum",
+          "fixed_joint_aboveground_finite_area_fraction_n_finite",
+          "fixed_joint_aboveground_finite_area_fraction_minimum",
+          "fixed_joint_aboveground_finite_area_fraction_median",
+          "fixed_joint_aboveground_finite_area_fraction_maximum",
+          "fixed_omega_joint_area_fraction_n_finite",
+          "fixed_omega_joint_area_fraction_minimum",
+          "fixed_omega_joint_area_fraction_median",
+          "fixed_omega_joint_area_fraction_maximum"
+        ]
+      },
+      "filter": [
+        "cov = frames['coverage']"
+      ],
+      "sample_scope": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "units": {
+        "x": "Area fraction",
+        "y": "Pressure (hPa)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "weights": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+        "saved_columns": [
+          "c_maximum",
+          "c_minimum",
+          "dc_dp_maximum",
+          "dc_dp_minimum",
+          "fixed_joint_aboveground_finite_area_fraction_maximum",
+          "fixed_joint_aboveground_finite_area_fraction_minimum",
+          "fixed_omega_joint_area_fraction_maximum",
+          "fixed_omega_joint_area_fraction_minimum",
+          "reference_T_K_maximum",
+          "reference_T_K_minimum",
+          "reference_weight_fraction_maximum",
+          "reference_weight_fraction_minimum"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "reference_size": "1728c44d91789f18cf65bdf820703d128282cce9d76b722558f9b891d12f868e"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "reference_size",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "reference_size",
+          "fields": [
+            "pressure_hpa",
+            "candidate_sid",
+            "finite_positive_c_sid",
+            "reference_T_K_n_finite",
+            "reference_T_K_minimum",
+            "reference_T_K_median",
+            "reference_T_K_maximum",
+            "c_n_finite",
+            "c_minimum",
+            "c_median",
+            "c_maximum",
+            "dc_dp_n_finite",
+            "dc_dp_minimum",
+            "dc_dp_median",
+            "dc_dp_maximum",
+            "reference_weight_fraction_n_finite",
+            "reference_weight_fraction_minimum",
+            "reference_weight_fraction_median",
+            "reference_weight_fraction_maximum",
+            "fixed_joint_aboveground_finite_area_fraction_n_finite",
+            "fixed_joint_aboveground_finite_area_fraction_minimum",
+            "fixed_joint_aboveground_finite_area_fraction_median",
+            "fixed_joint_aboveground_finite_area_fraction_maximum",
+            "fixed_omega_joint_area_fraction_n_finite",
+            "fixed_omega_joint_area_fraction_minimum",
+            "fixed_omega_joint_area_fraction_median",
+            "fixed_omega_joint_area_fraction_maximum",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 13,
+          "saved_selected_table": "panel_reference_size_1.csv",
+          "sha256": "8ba83301d72418825efc9fd47f27f2237074e1e70684798fe7f2b0929ab0713c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/reference13_review.csv"
+      ],
+      "fields": {
+        "reference_size": [
+          "pressure_hpa",
+          "candidate_sid",
+          "finite_positive_c_sid",
+          "reference_T_K_n_finite",
+          "reference_T_K_minimum",
+          "reference_T_K_median",
+          "reference_T_K_maximum",
+          "c_n_finite",
+          "c_minimum",
+          "c_median",
+          "c_maximum",
+          "dc_dp_n_finite",
+          "dc_dp_minimum",
+          "dc_dp_median",
+          "dc_dp_maximum",
+          "reference_weight_fraction_n_finite",
+          "reference_weight_fraction_minimum",
+          "reference_weight_fraction_median",
+          "reference_weight_fraction_maximum",
+          "fixed_joint_aboveground_finite_area_fraction_n_finite",
+          "fixed_joint_aboveground_finite_area_fraction_minimum",
+          "fixed_joint_aboveground_finite_area_fraction_median",
+          "fixed_joint_aboveground_finite_area_fraction_maximum",
+          "fixed_omega_joint_area_fraction_n_finite",
+          "fixed_omega_joint_area_fraction_minimum",
+          "fixed_omega_joint_area_fraction_median",
+          "fixed_omega_joint_area_fraction_maximum"
+        ]
+      },
+      "filter": [
+        "cov = frames['coverage']"
+      ],
+      "sample_scope": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "units": {
+        "x": "J kg⁻¹ K⁻² (log scale)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "weights": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+        "saved_columns": [
+          "c_maximum",
+          "c_minimum",
+          "dc_dp_maximum",
+          "dc_dp_minimum",
+          "fixed_joint_aboveground_finite_area_fraction_maximum",
+          "fixed_joint_aboveground_finite_area_fraction_minimum",
+          "fixed_omega_joint_area_fraction_maximum",
+          "fixed_omega_joint_area_fraction_minimum",
+          "reference_T_K_maximum",
+          "reference_T_K_minimum",
+          "reference_weight_fraction_maximum",
+          "reference_weight_fraction_minimum"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "reference_size": "1728c44d91789f18cf65bdf820703d128282cce9d76b722558f9b891d12f868e"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "reference_size",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "reference_size",
+          "fields": [
+            "pressure_hpa",
+            "candidate_sid",
+            "finite_positive_c_sid",
+            "reference_T_K_n_finite",
+            "reference_T_K_minimum",
+            "reference_T_K_median",
+            "reference_T_K_maximum",
+            "c_n_finite",
+            "c_minimum",
+            "c_median",
+            "c_maximum",
+            "dc_dp_n_finite",
+            "dc_dp_minimum",
+            "dc_dp_median",
+            "dc_dp_maximum",
+            "reference_weight_fraction_n_finite",
+            "reference_weight_fraction_minimum",
+            "reference_weight_fraction_median",
+            "reference_weight_fraction_maximum",
+            "fixed_joint_aboveground_finite_area_fraction_n_finite",
+            "fixed_joint_aboveground_finite_area_fraction_minimum",
+            "fixed_joint_aboveground_finite_area_fraction_median",
+            "fixed_joint_aboveground_finite_area_fraction_maximum",
+            "fixed_omega_joint_area_fraction_n_finite",
+            "fixed_omega_joint_area_fraction_minimum",
+            "fixed_omega_joint_area_fraction_median",
+            "fixed_omega_joint_area_fraction_maximum",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 13,
+          "saved_selected_table": "panel_reference_size_1.csv",
+          "sha256": "8ba83301d72418825efc9fd47f27f2237074e1e70684798fe7f2b0929ab0713c"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/hydrostatic_pressure_review.csv"
+      ],
+      "fields": {
+        "hydro_size": [
+          "pressure_hpa",
+          "candidate_sid",
+          "event_records",
+          "spatial_temporal_scope",
+          "residual_units",
+          "finite_fraction_n_finite",
+          "finite_fraction_minimum",
+          "finite_fraction_median",
+          "finite_fraction_maximum",
+          "mean_absolute_hydrostatic_residual_n_finite",
+          "mean_absolute_hydrostatic_residual_minimum",
+          "mean_absolute_hydrostatic_residual_median",
+          "mean_absolute_hydrostatic_residual_maximum",
+          "residual_over_reference_scale_n_finite",
+          "residual_over_reference_scale_minimum",
+          "residual_over_reference_scale_median",
+          "residual_over_reference_scale_maximum"
+        ]
+      },
+      "filter": [
+        "cov = frames['coverage']"
+      ],
+      "sample_scope": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "units": {
+        "x": "Relative to Rd T̄/p",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "weights": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+        "saved_columns": [
+          "finite_fraction_maximum",
+          "finite_fraction_minimum",
+          "mean_absolute_hydrostatic_residual_maximum",
+          "mean_absolute_hydrostatic_residual_minimum",
+          "residual_over_reference_scale_maximum",
+          "residual_over_reference_scale_minimum"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "hydro_size": "944215f45f76244ef4bcf817c1cad2d108f5b9b4138557ca5446d6d54907121d"
+        },
+        "original_plot_source": "mwt_departure_figures.py",
+        "original_plot_source_sha256": "671064c4435e4b1a37ab4c05253a5227ca42e555bcb7142d13a52fd5c7d4d18a"
+      },
+      "selected_source_rows": [
+        {
+          "id": "hydro_size",
+          "role": "Frozen precomputed display source; selected below by original plotting statements",
+          "source_key": "hydro_size",
+          "fields": [
+            "pressure_hpa",
+            "candidate_sid",
+            "event_records",
+            "spatial_temporal_scope",
+            "residual_units",
+            "finite_fraction_n_finite",
+            "finite_fraction_minimum",
+            "finite_fraction_median",
+            "finite_fraction_maximum",
+            "mean_absolute_hydrostatic_residual_n_finite",
+            "mean_absolute_hydrostatic_residual_minimum",
+            "mean_absolute_hydrostatic_residual_median",
+            "mean_absolute_hydrostatic_residual_maximum",
+            "residual_over_reference_scale_n_finite",
+            "residual_over_reference_scale_minimum",
+            "residual_over_reference_scale_median",
+            "residual_over_reference_scale_maximum",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 13,
+          "saved_selected_table": "panel_hydro_size_2.csv",
+          "sha256": "e19b878f9ea10427303f7b4d3d63a942b9d70d38ab9fcb9bc8bb9fd55ab8b64e"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "coverage",
+      "relative_path": "inputs/S10f_timepoint_n.csv",
+      "sha256": "14c1a26ab48d91572c9f10eea8e5ddb06669e067bd3a266abcb2b9c64bf49706",
+      "original_path": "S10f_timepoint_n.csv",
+      "bytes": 1694496
+    },
+    {
+      "key": "reference_size",
+      "relative_path": "inputs/reference13_review.csv",
+      "sha256": "1728c44d91789f18cf65bdf820703d128282cce9d76b722558f9b891d12f868e",
+      "original_path": "reference13_review.csv",
+      "bytes": 4425
+    },
+    {
+      "key": "hydro_size",
+      "relative_path": "inputs/hydrostatic_pressure_review.csv",
+      "sha256": "944215f45f76244ef4bcf817c1cad2d108f5b9b4138557ca5446d6d54907121d",
+      "original_path": "hydrostatic_pressure_review.csv",
+      "bytes": 3634
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_S16.png",
+      "sha256": "b6d4678713d5ab7697de735f877a93430113a337f96e1d433cda9fd4637b2646"
+    },
+    "tiff": {
+      "path": "Figure_S16.tiff",
+      "sha256": "6b85578b20a301c980a878e77570069f9f689ef4db691eec9d8d7d24069c5b03"
+    },
+    "pdf": {
+      "path": "Figure_S16.pdf",
+      "sha256": "9e8dc79c90b72e29d48cdfdcec34976bb4ae23c7a994f9b526ab4f14994d0d96"
+    },
+    "svg": {
+      "path": "Figure_S16.svg",
+      "sha256": "de7456cf219bc55817669384925ac2bfdfdb425f231f6156f099e0d525daa58f"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_S16",
+      "returncode": 0,
+      "elapsed_s": 11.59,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 1
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 436.5354330708662
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              51.0236220472441,
+              244.25035707745837,
+              500.0314960629922,
+              375.42047244094493
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 3,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              33.02362204724411,
+              383.4204724409449
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              51.0236220472441,
+              52.38425196850394,
+              158.95820714718354,
+              171.62981138985532
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              33.02362204724411,
+              179.62981138985532
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              221.5602665051484,
+              52.38425196850394,
+              329.4948516050879,
+              171.62981138985532
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              203.56026650514838,
+              179.62981138985532
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              392.0969109630527,
+              52.38425196850394,
+              500.0314960629922,
+              171.62981138985532
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 2,
+            "col_stop": 3,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              374.0969109630528,
+              179.62981138985532
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "row-1",
+            "panels": [
+              "b",
+              "c",
+              "d"
+            ]
+          }
+        ],
+        "column_groups": [],
+        "boundary_groups": [
+          {
+            "id": "inferred-shared-left-1",
+            "edge": "left",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-shared-right-1",
+            "edge": "right",
+            "panels": [
+              "a",
+              "d"
+            ]
+          }
+        ],
+        "exemptions": [
+          {
+            "panels": [
+              "a"
+            ],
+            "checks": [
+              "column",
+              "panel-width"
+            ],
+            "reason": "Top time-coverage panel intentionally spans all three columns"
+          }
+        ]
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6714855274793
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_S16",
+      "source": "Figure_S08.png",
+      "sha256": "236e6519d0d67c82c3e89bea1b62786569e33b7195bcef6363d0beb93c352924",
+      "pixels": [
+        6377,
+        5456
+      ],
+      "display_inches": [
+        6.496062992125984,
+        5.557867454068242
+      ],
+      "effective_dpi": 981.6714855274793
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Supplementary Fig. 16 | Observational coverage and reference-state diagnostics. a, Number of independently paired SID contributing at each departure-relative time for the six primary quantities. The six count curves coincide at every relative time. b, Pressure-level coverage of the fixed geographical domain, using the common above-ground and finite-field mask across all 1088 source times. c, Dry-APE reference coefficient c at the 13 supplied pressure levels. d, Saved mean absolute dry-hydrostatic mismatch relative to the fixed reference scale of the hydrostatic pressure gradient. Lines and shading in b–d are medians and observed minima–maxima across the corresponding stored SID or event summaries, not confidence intervals. Panel c uses a logarithmic horizontal axis to retain the full positive coefficient range. Reference means use the main 1024 times; the fixed mask uses their union with the shifted input. These diagnostics describe source and numerical support without asserting physical budget closure. Tables S7l,m give the underlying summaries.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "6d9fca203ffda2e81816b75451979906e89b3621e47cf0e08061bc57f459b49b",
+      "run.py": "ec771a916707eafa7a7627f84d5b5222bb8827b3d432a4b332863115ab47db34"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "figure_id": "Figure_11",
+  "type": "frozen scientific statistical plot",
+  "status": "SEALED_ACTUAL_RENDER_AND_LOCAL_QA_COMPLETE",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "input/S2_e_time_allocation.csv"
+      ],
+      "filter": "All12 stage-segment cells; before first LMI/intervening LMI/after last LMI",
+      "units": "h",
+      "normalization": "none; covered and uncovered stacked separately",
+      "difference_direction": "none",
+      "weights": "Equal2340SID",
+      "CI_source": "none; descriptive",
+      "sample_scope": "2340SID",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/S2_e_time_allocation.csv": [
+          "figure",
+          "panel",
+          "stage",
+          "segment",
+          "mean_covered_h",
+          "mean_uncovered_h",
+          "mean_elapsed_h",
+          "n_sid",
+          "A",
+          "empirical_CDF"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "input/S2_f_time_asymmetry.csv"
+      ],
+      "filter": "All2340 stored A and empirical_CDF rows",
+      "units": "dimensionless",
+      "normalization": "A=(t_pre-t_post)/(t_pre+t_post); existing values; excludes intervening LMI span",
+      "difference_direction": "positive A means longer pre-peak time",
+      "weights": "Each SID one ECDF observation",
+      "CI_source": "none",
+      "sample_scope": "2340SID",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/S2_f_time_asymmetry.csv": [
+          "figure",
+          "panel",
+          "stage",
+          "segment",
+          "mean_covered_h",
+          "mean_uncovered_h",
+          "mean_elapsed_h",
+          "n_sid",
+          "A",
+          "empirical_CDF"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "input/primary_trends.csv"
+      ],
+      "filter": "metric four *_duration_hours stage rows",
+      "units": "h decade-1",
+      "normalization": "Frozen slope and CI already per decade",
+      "difference_direction": "positive=lengthening",
+      "weights": "42 annual means equally weighted,1982–2023",
+      "CI_source": "Saved95% finite-sample t intervals; lag3 Bartlett Newey-West covariance; original7-test primary family; no fit rerun",
+      "sample_scope": "42years; same2340SID cohort",
+      "statistical_generation_provenance": "Frozen upstream tables copied byte-for-byte with original paths/hashes; the package only draws and performs declared descriptive transforms. No model or resampling is run.",
+      "entry": "code/plot.py: build(dpi)",
+      "fields": {
+        "input/primary_trends.csv": [
+          "metric",
+          "n_years",
+          "start_year",
+          "end_year",
+          "missing_years",
+          "maxlags",
+          "use_correction",
+          "use_t",
+          "kernel",
+          "df",
+          "unit",
+          "status",
+          "slope",
+          "ci_low",
+          "ci_high",
+          "p_value",
+          "intercept",
+          "year_center",
+          "slope_native_per_year",
+          "cov_00",
+          "cov_01",
+          "cov_11",
+          "t_critical",
+          "family",
+          "main_sid_n",
+          "q_value",
+          "family_test_n"
+        ]
+      },
+      "input_inventory": "rebuilt/qa/input_inventory.json"
+    }
+  ],
+  "inputs": [
+    {
+      "relative_path": "input/S2_e_time_allocation.csv",
+      "sha256": "4bf7df538029f7760a3fa034c88d97d3834dcd7b55ba2381232843b2f492a845",
+      "original_path": "S2_e_time_allocation.csv"
+    },
+    {
+      "relative_path": "input/S2_f_time_asymmetry.csv",
+      "sha256": "1a58d93e27a1bb76fe9923d4a3d268d107f140e514339c367578f2409df7b0de",
+      "original_path": "S2_f_time_asymmetry.csv"
+    },
+    {
+      "relative_path": "input/primary_trends.csv",
+      "sha256": "6451371f3436a992038e9180243b906243cfa1bcf78add76d317657f467be26f",
+      "original_path": "primary_trends.csv"
+    }
+  ],
+  "entrypoint": "run.py --output-dir <directory>",
+  "code": [
+    {
+      "relative_path": "run.py",
+      "sha256": "2cbc0769f578d187a3824cbf5ec33190b5ccdaf4b9be754c004f27e76563c1f0"
+    },
+    {
+      "relative_path": "code/plot.py",
+      "sha256": "846b082b157b56c2a94a72e1e20727c12dc3526867a7a7329a08a8f30bf4512f"
+    },
+    {
+      "relative_path": "config.json",
+      "sha256": "679fd47f4fe60e2658340be257709e3090e4dd2596d1f0c93dd48a8ff2ba8b4f"
+    },
+    {
+      "relative_path": "code/bootstrap.py",
+      "sha256": "bd9eaabcb7c305c8d63e1d894d19bc58cbba23072102159a1dd9b6306d28039b"
+    }
+  ],
+  "outputs": {
+    "png": {
+      "relative_path": "Figure_11.png",
+      "sha256": "a02e2c2bbccedcaca62118176b657a3a2809c10fada4b04428af11da5f83cdf0"
+    },
+    "tiff": {
+      "relative_path": "Figure_11.tiff",
+      "sha256": "9df8875a22ce22e95a362681c8f8bb80b9abe77c493fa579e31388517491a816"
+    },
+    "pdf": {
+      "relative_path": "Figure_11.pdf",
+      "sha256": "6a70e286632015f9cab19917fde39a2d505ea796262615163965c43d769e3a33"
+    },
+    "svg": {
+      "relative_path": "Figure_11.svg",
+      "sha256": "fa091fd1057ebfe1564e1eb4c752ab9144a009fc292931f9753e834b43b6a58c"
+    }
+  },
+  "size_mm": [
+    180.0,
+    145.0
+  ],
+  "pixels": [
+    6377,
+    5137
+  ],
+  "dpi": [
+    899.9982,
+    899.9982
+  ],
+  "effective_dpi_at_prior_document_size": 981.6715151515151,
+  "QA": {
+    "alignment": "PASS",
+    "pdf_text": "PASS",
+    "collision_raw": {
+      "fail": 0,
+      "warn": 0,
+      "contained_fill_overlays": 0,
+      "contained_image_overlays": 0
+    },
+    "source_static_raw": {
+      "ready": false,
+      "strict": false,
+      "counts": {
+        "PASS": 20,
+        "WARN": 0,
+        "FAIL": 1
+      }
+    },
+    "resolved_findings": "rebuilt/qa/resolved_audit_findings.json",
+    "scientific_comparison": "rebuilt/qa/scientific_comparison.json",
+    "visual_review": "rebuilt/qa/visual_review.json",
+    "png_tiff_pixels_identical": true,
+    "baseline_comparison": {
+      "method": "Source AST and frozen input identity; numeric objects exported before writing; raster comparison is QA only",
+      "baseline_size": [
+        6377,
+        5137
+      ],
+      "rebuilt_size": [
+        6377,
+        5137
+      ],
+      "pixel_identical": false,
+      "different_pixel_count": 220551,
+      "mean_absolute_channel_difference": 0.9810039276446758
+    },
+    "central_cold_rebuild": "pending root"
+  },
+  "provenance": {
+    "no_generative_image_calls": true,
+    "no_AI_image_asset": true,
+    "no_raster_plot_input": true,
+    "no_raster_tracing": true,
+    "no_overlay_or_superresolution": true,
+    "drawing_origin": "Executable native Python plotting functions and frozen numerical tables; coastline vector data only for main1. Original reference PNG accessed only after all scientific exports for comparison.",
+    "source_history": "provenance/input_manifest.json and original plotting source archived under provenance; source-path references are audit metadata only, never runtime dependencies.",
+    "statistics": "No bootstrap, model, significance or confidence-interval computation executed; CDF sorting and fixed-SD display division only."
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "core_functions": [
+    {
+      "path": "src/MWT.py",
+      "sha256": "70b8f337bb10ec669263b2d784246fbcbb66f3e6eb5e35c4d44a8b9c5bed978c",
+      "unmodified": true
+    },
+    {
+      "path": "src/MWT_Prepare_Direct.py",
+      "sha256": "e0a324cecd6db261f244d5f043f2ba5fd247c1bfde28dc8f97ae79dee26b47c5",
+      "unmodified": true
+    },
+    {
+      "path": "src/MWT_Apply_Operator.py",
+      "sha256": "4ddab6bb236acfcc49355260a8619e6508031a4920705c19812aa4ec5fe0f86d",
+      "unmodified": true
+    },
+    {
+      "path": "src/MWT_Atmosphere_Direct.py",
+      "sha256": "2bf2081ff34f9dc7439c649a580f1ea895857d1d0cda83f3a42d868040a61309",
+      "unmodified": true
+    },
+    {
+      "path": "src/MWT_Apply_Increment.py",
+      "sha256": "ded98c370771cf29bf845358b400a4cfb1192c880d781418d7eda807ff451c35",
+      "unmodified": true
+    }
+  ],
+  "scientific_tables": [
+    {
+      "path": "inputs/departure_events.csv",
+      "source_sha256": "918367439a2e70509bea03ba8a81d54a501dfa869bc5205143cd68b046b43d61",
+      "columns": [
+        "sid",
+        "event_id",
+        "event_class",
+        "t0",
+        "first_LMI_UTC",
+        "last_LMI_UTC",
+        "termination_UTC",
+        "lat",
+        "lon",
+        "wind_t0_kt",
+        "near_threshold_kt",
+        "age_h",
+        "land_contact",
+        "basin_genesis"
+      ],
+      "rows": 234,
+      "independent_SID": 117,
+      "selection": "All frozen events"
+    },
+    {
+      "path": "inputs/departure_centres.csv",
+      "source_sha256": "f8ccd874fbc4b66461cb1ad5ebac469500c7fe5c8c63211ea4ea8c7b7128ec1c",
+      "columns": [
+        "sid",
+        "event_id",
+        "event_class",
+        "t0",
+        "UTC",
+        "lag_h",
+        "lat",
+        "lon",
+        "motion_u_ms",
+        "motion_v_ms",
+        "wind_kt",
+        "actual_track_point",
+        "position_extrapolated"
+      ],
+      "rows": 2574,
+      "independent_SID": 117,
+      "selection": "Actual frozen centre requests from -30 to +30 h, retaining unavailable locations"
+    }
+  ],
+  "analysis_configuration_source_sha256": "d70b795d14b72a83d6d3beedb871c769fd336631d489e5a92dbfd67a14daaa01",
+  "transform_source": "User-supplied independent MWT Python transform; basis, normalization and boundary implementation unchanged.",
+  "method_references": [
+    {
+      "authors": "X. San Liang and Donald G. M. Anderson",
+      "year": 2007,
+      "title": "Multiscale Window Transform",
+      "journal": "Multiscale Modeling & Simulation",
+      "volume": "6",
+      "issue": "2",
+      "pages": "437–467",
+      "doi": "10.1137/06066895X",
+      "publisher_record": "https://epubs.siam.org/doi/10.1137/06066895X",
+      "author_pdf": "http://www.ncoads.org/upload/202009/24/202009241415481611.pdf"
+    },
+    {
+      "authors": "X. San Liang",
+      "year": 2016,
+      "title": "Canonical Transfer and Multiscale Energetics for Primitive and Quasigeostrophic Atmospheres",
+      "journal": "Journal of the Atmospheric Sciences",
+      "volume": "73",
+      "issue": "11",
+      "pages": "4439–4468",
+      "doi": "10.1175/JAS-D-16-0131.1",
+      "publisher_record": "https://doi.org/10.1175/JAS-D-16-0131.1",
+      "author_pdf": "http://www.ncoads.org/upload/202009/24/202009241422028421.pdf"
+    }
+  ],
+  "data_sources": "Scientific event definitions are derived from IBTrACS; the saved coefficient example is derived from local ERA5 pressure-level and surface-pressure fields.",
+  "redistribution_license_added": false,
+  "license_note": "Existing source attribution is preserved. No additional redistribution permission or license is asserted by this package."
+}

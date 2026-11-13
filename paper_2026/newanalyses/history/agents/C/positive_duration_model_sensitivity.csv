@@ -1,0 +1,5 @@
+stage,n_sid,target,slope,ci_low,ci_high,p_boot,valid_draws,unit,interval_scope,all_individual_predictions_positive
+D,1893,fully_fixed_reference_Gamma_loglink_predict_hours,1.2918975719290362,-0.79666616591640904,2.9545724270429559,0.20200000000000001,1999,h/decade,fixed 2000 attempts; conditional on successful fits,True
+E,1753,fully_fixed_reference_Gamma_loglink_predict_hours,-2.1112763246888662,-3.5444394429004094,-0.57564214810798686,0.011482254697286013,1915,h/decade,fixed 2000 attempts; conditional on successful fits,True
+F,1754,fully_fixed_reference_Gamma_loglink_predict_hours,-2.190114473460786,-3.8802504566409302,-1.0732964532569726,0.0040221216691804923,1988,h/decade,fixed 2000 attempts; conditional on successful fits,True
+Res,1804,fully_fixed_reference_Gamma_loglink_predict_hours,-6.7294028570828575,-10.839615218518642,-3.5134950047824676,0.0019990004997501249,2000,h/decade,fixed 2000 attempts; conditional on successful fits,True

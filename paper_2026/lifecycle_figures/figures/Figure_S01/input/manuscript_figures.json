@@ -1,0 +1,125 @@
+{
+  "backend": "python",
+  "width_mm": 180,
+  "dpi": 900,
+  "preview_dpi": 180,
+  "palette": {
+    "D": "#437F9C",
+    "E": "#428C79",
+    "F": "#BD9145",
+    "Res": "#AB685E",
+    "ink": "#233A46",
+    "return1": "#167B9E",
+    "return2": "#CC7445",
+    "return3": "#9069A3"
+  },
+  "figure1": {
+    "height_mm": 220,
+    "schematic_hours": [
+      0,
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42,
+      48,
+      54,
+      60,
+      66,
+      72,
+      78
+    ],
+    "schematic_wind_kt": [
+      35,
+      55,
+      58,
+      60,
+      62,
+      60,
+      95,
+      100,
+      92,
+      86,
+      96,
+      94,
+      80,
+      65
+    ],
+    "genesis_kt": 35,
+    "lmi_kt": 100,
+    "progress_E": 0.25,
+    "progress_F": 0.9,
+    "E_onset_h": 6,
+    "F_onset_h": 36,
+    "Resolution_onset_h": 72,
+    "episode_ranges_h": [
+      [
+        36,
+        42
+      ],
+      [
+        60,
+        66
+      ]
+    ],
+    "departure_h": 48,
+    "valley_h": 54,
+    "return_h": 60,
+    "basin_order": [
+      "NA",
+      "EP",
+      "WP",
+      "NI",
+      "SI",
+      "SP"
+    ]
+  },
+  "literature_schematic": {
+    "height_mm": 230,
+    "hours": [
+      0,
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42,
+      48,
+      54,
+      60,
+      66,
+      72,
+      78
+    ],
+    "wind_kt": [
+      35,
+      55,
+      58,
+      60,
+      62,
+      60,
+      95,
+      100,
+      92,
+      75,
+      96,
+      94,
+      80,
+      65
+    ],
+    "scope": "Adapted schematic; a deliberately illustrative common curve, never a measured cyclone or empirical result",
+    "YT_restart_h": 54,
+    "YT_threshold_kt": 80,
+    "Song_lower_kt": 95
+  },
+  "coverage": {
+    "height_mm": 215,
+    "remove_fields": [
+      "E_fallback_fraction"
+    ],
+    "keep_legacy_counts": true
+  }
+}

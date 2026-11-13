@@ -1,0 +1,124 @@
+{
+  "status": "FIXED_BEFORE_NEW_RISE_ENVIRONMENT_OR_ENERGY_CONTRASTS",
+  "created_UTC": "2026-10-22T17:01:11.360624+00:00",
+  "scope": "All legitimate anchored-domain trough-to-return events in the E-rule-revised main cohort; no additional growth threshold",
+  "definitions": {
+    "event_domain": "Original first-LMI-anchored near-peak union and intervening bridges; retain original legal interval and state rules",
+    "trough": "Last occurrence of minimum processed wind between temporary departure and its next near-peak return; retain every actual subsequent six-hour observation and fluctuation",
+    "event_identity": "SID plus chronological anchored return ordinal; no energy-derived recentering",
+    "Resolution": "Original final departure to original tropical record endpoint; subsequent below-threshold strengthening is retained"
+  },
+  "time_composite": {
+    "relative_hours": [
+      -24,
+      -18,
+      -12,
+      -6,
+      0,
+      6,
+      12,
+      18,
+      24
+    ],
+    "anchor": "Actual trough UTC",
+    "sample": "Every available actual-track observation, no extrapolation or post-event-survival selection",
+    "in_rise_flag": "trough <= UTC <= return; show separate count of observations still within the rise at each lag",
+    "pre_mean_offsets_hours": [
+      -24,
+      -18,
+      -12,
+      -6
+    ],
+    "pre_required_count": 3,
+    "pre_change": "trough minus -24 h, only when both endpoints observed"
+  },
+  "phase_summary": {
+    "rise_domain": "[trough,return] endpoints for observed states; legal [trough,return) six-hour intervals for duration",
+    "state_mean": "Trapezoid integral over the actual complete rise divided by actual rise duration",
+    "rate_integral": "Trapezoid integration in seconds of the actual diagnosed rate; retain the corresponding rate mean and duration separately",
+    "coverage": "Every actual six-hour endpoint required for a complete phase mean/integral for that diagnostic; missing endpoints produce missing complete-phase estimate and an explicit support record",
+    "endpoint_change": "Return minus trough on observed regional means; it is not an asserted closed moving-area budget",
+    "raw_Resolution_comparison": "Each event rise mean minus the same SID whole-Resolution time-weighted mean on original legal intervals, descriptive across unequal state paths; no paired integral difference across unequal durations",
+    "raw_and_matched_are_distinct_estimands": true,
+    "energy_integrals": "Only diagnostic rate integrals (e.g. W kg-1 integrated in seconds gives J kg-1) are interpreted as integrated tendencies/conversion/transport; KE/APE state integrals are not reported as supply."
+  },
+  "comparable_state_matching": {
+    "source": "p4_p5_sources.py match_intensity rules, explicitly adapted from pre/post to rise/Resolution",
+    "bin_origin_kt": 35.0,
+    "bin_width_kt": 10.0,
+    "interval": "left closed right open",
+    "eligible_nodes": "Actual finite-wind observations at the left endpoint of a legal six-hour interval; rise nodes before return; Resolution nodes in original Res; no future-survival rule",
+    "rise_representative": "Within each event and wind bin, closest actual wind to bin midpoint; ties earliest UTC",
+    "Resolution_representative": "Within the same SID and bin, closest actual wind to bin midpoint; ties latest UTC, preserving the existing representative rule",
+    "match_keys": [
+      "sid",
+      "wind_bin"
+    ],
+    "selection_fields": [
+      "wind_kt",
+      "UTC",
+      "frozen_phase_and_legal_interval"
+    ],
+    "unmatched": "Retained in coverage ledger; no other-SID replacement, interpolation, or environment-dependent selection",
+    "direction": "rise representative minus Resolution representative",
+    "within_event": "Equal weight among jointly valid shared bins, specific to each diagnostic",
+    "within_SID": "Equal weight among eligible event means, then equal weight across SID",
+    "control_reuse": "One Resolution representative may serve several events of a SID; all are kept in one SID cluster",
+    "full_pair_table": "Retain both timestamps, observed wind mismatch, positions, prior six-hour tendency and phase; report state support and descriptive background differences without adding a new causal model",
+    "retrospective_scope": "Representative points use the recorded wind history and existing chronology tie rules; this is a retrospective state comparison, not a real-time algorithm or causal adjustment."
+  },
+  "diagnostics": {
+    "environment": [
+      "wind_kt",
+      "shear200_850",
+      "midRH",
+      "SST",
+      "PI",
+      "PI_headroom"
+    ],
+    "moisture": [
+      "q700_inner_100_300",
+      "q700_outer_300_800",
+      "horizontal_storm_relative_advection700",
+      "vertical_advection700",
+      "moving_tendency700",
+      "residual700"
+    ],
+    "energy_primary": [
+      "KE_700_middle",
+      "APE_700_middle",
+      "C_A_to_K_700_middle",
+      "vertical_input_K_Wkg_middle",
+      "vertical_input_A_Wkg_middle",
+      "vertical_input_P_Wkg_middle"
+    ],
+    "energy_supporting": "Retain all original direct diagnostic terms and pressure/windows; finite selection of panels after full evidence review, no selective table omission",
+    "headroom": "Use original PI and V units; report Delta H = Delta PI - Delta V with the exact same paired support",
+    "environment_geometry": "Reuse existing per-variable definitions and source identity; 200-800 km environment, actual 100-300/300-800 km moisture annuli; do not equate old 90% and MWT 80% coverage"
+  },
+  "statistics": {
+    "unit": "SID",
+    "bootstrap_B": 2000,
+    "seed": 650117,
+    "CI": "ordinary percentile 95% on fixed observed diagnostic support, cluster resample SID; no redraw to fill failures",
+    "primary_new_rise_comparison": "Mean of within-SID rise-minus-Resolution shared-wind-bin differences",
+    "multiplicity": "New rise analyses report estimates and uncertainty with explicit diagnostic scope; do not label unadjusted interval exclusion as BH significance. Any additional formal test family must be fixed in a separate recorded amendment before group effects are reviewed.",
+    "first_event_sensitivity": "Retain only chronological first legitimate rise event per SID, not first event with favorable/complete results; show original-all-event estimate on same SID support and direct difference",
+    "time_support": "n SID and n events at every relative time, metric and level; no complete +24h survival filter"
+  },
+  "MWT_reuse": "Exact UTC/domain/mask/reference/operator/version identity required; missing selected coefficient rows need explicit incremental transforms of original continuous fields. Old departure composites are not relabelled as rises.",
+  "stop_conditions": [
+    "Old/new wind-only cohort and boundaries reproduced and every affected result dependency classified",
+    "Every eligible event and unavailable requested observation has a coverage record",
+    "All defined direct contrasts and one first-event sensitivity computed with retained uncertainty, regardless of direction",
+    "Methods, figures and final claims describe actual estimands and distinguish physical rate integrals from observed endpoint changes"
+  ],
+  "prohibitions": [
+    "No new growth threshold",
+    "No smoothing of wind histories",
+    "No energy/environment-dependent matching",
+    "No full three-dimensional transfer or continuity replacement",
+    "No remapping whole Res as one weakening event",
+    "No new causal model or threshold search"
+  ]
+}

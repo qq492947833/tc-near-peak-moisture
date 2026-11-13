@@ -1,0 +1,851 @@
+{
+  "figure_id": "Figure_10",
+  "type": "main",
+  "status": "SOURCE_RECONSTRUCTION_AND_BASELINE_VISUAL_QA_PASS",
+  "panels": [
+    {
+      "id": "a",
+      "input_files": [
+        "inputs/thematic/fig7_effects.csv"
+      ],
+      "fields": {
+        "thematic/fig7_effects.csv": [
+          "policy",
+          "outcome",
+          "method",
+          "estimate",
+          "coverage",
+          "n",
+          "empirical_if_se",
+          "ci_low",
+          "ci_high",
+          "successful_draws"
+        ]
+      },
+      "filter": [
+        "a = ax[1, 0]",
+        "a = ax[1, 1]",
+        "a = ax[0, j]",
+        "z = diag[diag.policy.eq(p) & diag.outcome.eq(48)]",
+        "r = z.iloc[0]",
+        "z = effects[effects.policy.eq(p) & effects.outcome.eq(outcome) & effects.method.eq(method)]"
+      ],
+      "sample_scope": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "units": {
+        "x": "Recovery difference (pp)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "weights": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+        "saved_columns": [
+          "ci_high",
+          "ci_low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "thematic/fig7_effects.csv": "fb4a8fa3900ed79bb73c2fb25ed6a14a06097821f169e044edf498fe71bceb2e"
+        },
+        "original_plot_source": "frozen_5_9_base_layout_adapter.py",
+        "original_plot_source_sha256": "219bee2655cec2c7c88bf8aa147d9906f00ebd098a30feaaddbcfd4f8e94fbd7"
+      },
+      "selected_source_rows": [
+        {
+          "id": "a",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_a_0.csv",
+          "sha256": "1e056ca893e8c169c8cb0f885b0a3be38f706ac9c6a22cf8fb9228d6d418e62d"
+        },
+        {
+          "id": "a",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_a_1.csv",
+          "sha256": "23355af28aec3e38a5a682fa720c46b0eca2a498a347b8c6e5b453eb36b11ff2"
+        },
+        {
+          "id": "a",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_a_2.csv",
+          "sha256": "8c3ea2ef30c59c664c7c887ba358e823e51151258653c6977cef7ac6c23b1151"
+        },
+        {
+          "id": "a",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_a_3.csv",
+          "sha256": "b3bd11428140d4129a9b6d87a78a83e6e07e46c91fa6fe432c6449e0a89495c1"
+        },
+        {
+          "id": "a",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_a_4.csv",
+          "sha256": "b0667f1e1d1fc11345cb14aed46b330cbe9875f73133fa864ee61772a49a1dc1"
+        },
+        {
+          "id": "a",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_a_5.csv",
+          "sha256": "6078c1e0c330d706ce39f2e41e8693a924eb6e5a36f4b8530a1db7f0219a275a"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "b",
+      "input_files": [
+        "inputs/thematic/fig7_effects.csv"
+      ],
+      "fields": {
+        "thematic/fig7_effects.csv": [
+          "policy",
+          "outcome",
+          "method",
+          "estimate",
+          "coverage",
+          "n",
+          "empirical_if_se",
+          "ci_low",
+          "ci_high",
+          "successful_draws"
+        ]
+      },
+      "filter": [
+        "a = ax[1, 0]",
+        "a = ax[1, 1]",
+        "a = ax[0, j]",
+        "z = diag[diag.policy.eq(p) & diag.outcome.eq(48)]",
+        "r = z.iloc[0]",
+        "z = effects[effects.policy.eq(p) & effects.outcome.eq(outcome) & effects.method.eq(method)]"
+      ],
+      "sample_scope": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "units": {
+        "x": "Wind-change difference (kt)",
+        "y": "",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "weights": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+        "saved_columns": [
+          "ci_high",
+          "ci_low"
+        ]
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "thematic/fig7_effects.csv": "fb4a8fa3900ed79bb73c2fb25ed6a14a06097821f169e044edf498fe71bceb2e"
+        },
+        "original_plot_source": "frozen_5_9_base_layout_adapter.py",
+        "original_plot_source_sha256": "219bee2655cec2c7c88bf8aa147d9906f00ebd098a30feaaddbcfd4f8e94fbd7"
+      },
+      "selected_source_rows": [
+        {
+          "id": "b",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_b_6.csv",
+          "sha256": "3a91149604cde753c7ce1149b01ab895f5017aa4747cad6d613430fd145011fd"
+        },
+        {
+          "id": "b",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_b_7.csv",
+          "sha256": "600793b3fa492e399cc4b08ede8aa5b1bb4aec7a175a6fd706a4fbc1a49589d2"
+        },
+        {
+          "id": "b",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_b_8.csv",
+          "sha256": "d1b8358fef86ff55d8ed8f583f7682c9295477add61e02d31281a3ac601be02b"
+        },
+        {
+          "id": "b",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_b_9.csv",
+          "sha256": "4aab52ae87909b6ad592d15e87137d95c7c02dfcebb536219a50e29208bb2a70"
+        },
+        {
+          "id": "b",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_b_10.csv",
+          "sha256": "205712b05e2f08f00c413a13c4aae99df40a29476fe288392d2e622ce37c9024"
+        },
+        {
+          "id": "b",
+          "role": "Prespecified policy-minus-natural-course estimate and 1000-refit interval; transform=identity",
+          "source_key": "thematic/fig7_effects.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "method",
+            "estimate",
+            "coverage",
+            "n",
+            "empirical_if_se",
+            "ci_low",
+            "ci_high",
+            "successful_draws",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_b_11.csv",
+          "sha256": "d1dd1a409a131ce2d3fa882d9e72c2a2d22a486edc541452a959f8b7fe3d1260"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "c",
+      "input_files": [
+        "inputs/thematic/fig7_diagnostics.csv"
+      ],
+      "fields": {
+        "thematic/fig7_diagnostics.csv": [
+          "policy",
+          "outcome",
+          "coverage",
+          "ratio_mean",
+          "ratio_max",
+          "ratio_ESS",
+          "complete_n",
+          "observed_IPCW_ESS",
+          "policy_observed_ESS",
+          "uncapped_weight_max",
+          "capped_n",
+          "g_min",
+          "g_median",
+          "tipping_offset_per_shifted_person",
+          "benchmark_observed_pastwind5"
+        ]
+      },
+      "filter": [
+        "a = ax[1, 0]",
+        "a = ax[1, 1]",
+        "a = ax[0, j]",
+        "z = diag[diag.policy.eq(p) & diag.outcome.eq(48)]",
+        "r = z.iloc[0]",
+        "z = effects[effects.policy.eq(p) & effects.outcome.eq(outcome) & effects.method.eq(method)]"
+      ],
+      "sample_scope": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "units": {
+        "x": "",
+        "y": "Cohort fraction (%)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "weights": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "thematic/fig7_diagnostics.csv": "95230873a0d6ecf2222d9583f61ade83d6de7c424cd8655c7e1f64e9f97a7428"
+        },
+        "original_plot_source": "frozen_5_9_base_layout_adapter.py",
+        "original_plot_source_sha256": "219bee2655cec2c7c88bf8aa147d9906f00ebd098a30feaaddbcfd4f8e94fbd7"
+      },
+      "selected_source_rows": [
+        {
+          "id": "c",
+          "role": "Exposure-change fraction and density-ratio ESS fraction; transform=coverage * 100; ratio_ESS / 2231 * 100",
+          "source_key": "thematic/fig7_diagnostics.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "coverage",
+            "ratio_mean",
+            "ratio_max",
+            "ratio_ESS",
+            "complete_n",
+            "observed_IPCW_ESS",
+            "policy_observed_ESS",
+            "uncapped_weight_max",
+            "capped_n",
+            "g_min",
+            "g_median",
+            "tipping_offset_per_shifted_person",
+            "benchmark_observed_pastwind5",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_c_12.csv",
+          "sha256": "efc3cb30fc10b89d873404aa9b6c1df1b91ec6d37f6bf641c1c1df87009c9bed"
+        },
+        {
+          "id": "c",
+          "role": "Exposure-change fraction and density-ratio ESS fraction; transform=coverage * 100; ratio_ESS / 2231 * 100",
+          "source_key": "thematic/fig7_diagnostics.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "coverage",
+            "ratio_mean",
+            "ratio_max",
+            "ratio_ESS",
+            "complete_n",
+            "observed_IPCW_ESS",
+            "policy_observed_ESS",
+            "uncapped_weight_max",
+            "capped_n",
+            "g_min",
+            "g_median",
+            "tipping_offset_per_shifted_person",
+            "benchmark_observed_pastwind5",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 1,
+          "saved_selected_table": "panel_c_13.csv",
+          "sha256": "4d0035e4fbcbd5d0ec234575b86f9f7e508aa7e8de8a6d600034f633bd3cbd94"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    },
+    {
+      "id": "d",
+      "input_files": [
+        "inputs/thematic/fig7_sensitivity.csv"
+      ],
+      "fields": {
+        "thematic/fig7_sensitivity.csv": [
+          "policy",
+          "outcome",
+          "offset",
+          "units",
+          "scenario",
+          "estimate"
+        ]
+      },
+      "filter": [
+        "a = ax[1, 0]",
+        "a = ax[1, 1]",
+        "a = ax[0, j]",
+        "z = diag[diag.policy.eq(p) & diag.outcome.eq(48)]",
+        "r = z.iloc[0]",
+        "z = effects[effects.policy.eq(p) & effects.outcome.eq(outcome) & effects.method.eq(method)]"
+      ],
+      "sample_scope": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "units": {
+        "x": "Missing-outcome log-odds offset",
+        "y": "Recovery difference (pp)",
+        "title": ""
+      },
+      "normalization": [],
+      "difference_direction": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "weights": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+      "CI_source": {
+        "policy": "Only existing saved interval bounds / descriptive ranges are plotted. No CI is recomputed. Exact interval and descriptive range scope in accepted caption.",
+        "accepted_caption": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+        "saved_columns": []
+      },
+      "statistical_generation_provenance": {
+        "frozen_upstream": true,
+        "recomputed": false,
+        "input_sha256": {
+          "thematic/fig7_sensitivity.csv": "bef589ec1804a1ad66cfac8f0e5094ef6841dfb19d2d9775fcccd0a569cd93fa"
+        },
+        "original_plot_source": "frozen_5_9_base_layout_adapter.py",
+        "original_plot_source_sha256": "219bee2655cec2c7c88bf8aa147d9906f00ebd098a30feaaddbcfd4f8e94fbd7"
+      },
+      "selected_source_rows": [
+        {
+          "id": "d",
+          "role": "Fixed sensitivity scenarios; no confidence intervals calculated; transform=identity",
+          "source_key": "thematic/fig7_sensitivity.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "offset",
+            "units",
+            "scenario",
+            "estimate",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 7,
+          "saved_selected_table": "panel_d_14.csv",
+          "sha256": "9afcf2faee9b3c2675009c24afa6a6e5579650f4c432d6b30596d178c5faa2a9"
+        },
+        {
+          "id": "d",
+          "role": "Fixed sensitivity scenarios; no confidence intervals calculated; transform=identity",
+          "source_key": "thematic/fig7_sensitivity.csv",
+          "fields": [
+            "policy",
+            "outcome",
+            "offset",
+            "units",
+            "scenario",
+            "estimate",
+            "_source_csv_row_index",
+            "_source_csv_line"
+          ],
+          "selected_rows": 7,
+          "saved_selected_table": "panel_d_15.csv",
+          "sha256": "bfd2e5c6068eac892a8f319fabc2c11f8c8cc102558ebc3856e6aa7498e93c40"
+        }
+      ],
+      "source_row_selection_note": "Saved selected tables retain original row indexes and lines when present. Their panel column, where present, identifies this panel; the complete executable selection expressions are recorded in filter.",
+      "shared_support_verification_inputs": []
+    }
+  ],
+  "inputs": [
+    {
+      "key": "thematic/fig7_diagnostics.csv",
+      "relative_path": "inputs/thematic/fig7_diagnostics.csv",
+      "sha256": "95230873a0d6ecf2222d9583f61ade83d6de7c424cd8655c7e1f64e9f97a7428",
+      "original_path": "weight_and_bias_diagnostics.csv",
+      "bytes": 1117
+    },
+    {
+      "key": "thematic/fig7_effects.csv",
+      "relative_path": "inputs/thematic/fig7_effects.csv",
+      "sha256": "fb4a8fa3900ed79bb73c2fb25ed6a14a06097821f169e044edf498fe71bceb2e",
+      "original_path": "effects_with_CI.csv",
+      "bytes": 2289
+    },
+    {
+      "key": "thematic/fig7_sensitivity.csv",
+      "relative_path": "inputs/thematic/fig7_sensitivity.csv",
+      "sha256": "bef589ec1804a1ad66cfac8f0e5094ef6841dfb19d2d9775fcccd0a569cd93fa",
+      "original_path": "MNAR_policy_response_sensitivity.csv",
+      "bytes": 2363
+    }
+  ],
+  "entrypoint": {
+    "script": "run.py",
+    "arguments": [
+      "--output-dir",
+      "<absolute-output-directory>",
+      "--dpi",
+      "900"
+    ]
+  },
+  "environment": {
+    "bootstrap": "../../environment/bootstrap.py when using bundled offline runtime; otherwise install requirements.txt",
+    "libraries": "numpy,pandas,matplotlib,Pillow",
+    "no_old_project_runtime_dependency": true
+  },
+  "outputs": {
+    "png": {
+      "path": "Figure_10.png",
+      "sha256": "13fe677c004c94f42541ebe9cb6c70b863b089f7f0d23f325369a51ca2249bc5"
+    },
+    "tiff": {
+      "path": "Figure_10.tiff",
+      "sha256": "fae6a16adf0072a0c69a256a19c0a0925b689c9724d0f942d3b6abda1bb7e48d"
+    },
+    "pdf": {
+      "path": "Figure_10.pdf",
+      "sha256": "f4a1182036c74f37e4243aaa6e18ecee1e914ccd1a8c00106d14f7d222aa7210"
+    },
+    "svg": {
+      "path": "Figure_10.svg",
+      "sha256": "b0a4c4e4a90452e9e577a140cccb544b2c6fe64f487f70e45a1d8f978c43c4d0"
+    }
+  },
+  "output_directory": "rebuild_test",
+  "QAstatus": {
+    "execution": {
+      "figure_id": "Figure_10",
+      "returncode": 0,
+      "elapsed_s": 10.72,
+      "log": "execution.log"
+    },
+    "strict_alignment": {
+      "schema_version": 1,
+      "applicable": true,
+      "auditable": true,
+      "verdict": "PASS",
+      "backend": "python-matplotlib",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 4,
+        "exemptions": 0
+      },
+      "tolerances": {
+        "alignment_pt": 1.5,
+        "gutter_pt": 1.5
+      },
+      "layout": {
+        "schema_version": 1,
+        "backend": "python-matplotlib",
+        "figure": {
+          "width_pt": 510.236220472441,
+          "height_pt": 484.72440944881896
+        },
+        "panels": [
+          {
+            "id": "a",
+            "bbox_pt": [
+              66.33070866141733,
+              290.8346456692914,
+              245.54591006702677,
+              412.0157480314961
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "a",
+            "panel_label_anchor_pt": [
+              50.33070866141734,
+              425.0157480314961
+            ]
+          },
+          {
+            "id": "b",
+            "bbox_pt": [
+              320.8162946573827,
+              290.8346456692914,
+              500.0314960629922,
+              412.0157480314961
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 0,
+            "row_stop": 1,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "b",
+            "panel_label_anchor_pt": [
+              304.8162946573827,
+              425.0157480314961
+            ]
+          },
+          {
+            "id": "c",
+            "bbox_pt": [
+              66.33070866141733,
+              72.70866141732286,
+              245.54591006702677,
+              193.88976377952756
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 0,
+            "col_stop": 1,
+            "panel_label": "c",
+            "panel_label_anchor_pt": [
+              50.33070866141734,
+              206.88976377952756
+            ]
+          },
+          {
+            "id": "d",
+            "bbox_pt": [
+              320.8162946573827,
+              72.70866141732286,
+              500.0314960629922,
+              193.88976377952756
+            ],
+            "grid_id": "matplotlib-grid-1",
+            "row_start": 1,
+            "row_stop": 2,
+            "col_start": 1,
+            "col_stop": 2,
+            "panel_label": "d",
+            "panel_label_anchor_pt": [
+              304.8162946573827,
+              206.88976377952756
+            ]
+          }
+        ],
+        "row_groups": [
+          {
+            "id": "inferred-row-1",
+            "panels": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "id": "inferred-row-2",
+            "panels": [
+              "c",
+              "d"
+            ]
+          }
+        ],
+        "column_groups": [
+          {
+            "id": "inferred-column-1",
+            "panels": [
+              "a",
+              "c"
+            ]
+          },
+          {
+            "id": "inferred-column-2",
+            "panels": [
+              "b",
+              "d"
+            ]
+          }
+        ],
+        "boundary_groups": [],
+        "exemptions": []
+      },
+      "findings": []
+    },
+    "lossless_PNG_TIFF_pixels_equal": true,
+    "dpi_png": [
+      899.9982,
+      899.9982
+    ],
+    "dpi_tiff": [
+      900.0,
+      900.0
+    ],
+    "visual_review": "PASS",
+    "comparison": "visual_comparison.png",
+    "visual_review_receipt": "visual_review.json",
+    "effective_dpi_at_accepted_DOCX_display": [
+      981.6715151515151,
+      981.6714719465211
+    ],
+    "portability_static_audit": {
+      "runtime_render_source_absolute_path_literals": [],
+      "all_numeric_inputs_inside_package": true,
+      "all_input_hashes_verified": true,
+      "numeric_source_suffixes": [
+        "csv",
+        "npz"
+      ],
+      "old_raster_read_for_render": false
+    },
+    "central_cold_run": "Separate parent-owned verification; this receipt does not claim it.",
+    "normalization_render_objects": "rebuild_test/render_objects.json contains every image normalization and every collection norm/cmap, offsets/segments/paths and patch geometry."
+  },
+  "provenance": {
+    "no_AI_assets": true,
+    "source_types": [
+      "frozen numeric CSV or scientific NPZ arrays",
+      "original Python Matplotlib plot statements"
+    ],
+    "no_PNG_data_source": true,
+    "no_DOCX_extracted_artwork": true,
+    "no_new_models_or_bootstrap": true,
+    "baseline": {
+      "label": "Figure_10",
+      "source": "Figure_10.png",
+      "sha256": "ae56a1cdff1ffcef5dbaec40e6a30853cf631579d26b5529c63ae7ffbabc9231",
+      "pixels": [
+        6377,
+        6059
+      ],
+      "display_inches": [
+        6.496062992125984,
+        6.172125984251968
+      ],
+      "effective_dpi": 981.6714719465211
+    },
+    "adaptation": "Portable paths and per-figure entrypoint; approved PI labels changed on Matplotlib Text objects before rendering. Original plot selectors, original estimates and interval columns retained.",
+    "accepted_caption": "Fig. 10 | Supported initial shear shifts show a clearer recovery contrast than humidity shifts. Recovery modelling uses the first eligible historical-threshold departure in 2,231 SIDs with valid model inputs from the 2,340-SID main sample. Policies reduce initial 200–850 hPa shear by 2 m s⁻¹ or increase initial mean 700/500 hPa relative humidity (RH) by 5 percentage points where both exposures satisfy training-fold support; other exposures are unchanged. a,b, Policy-minus-natural-course differences in recovery within 48 h and wind change over 24 h, respectively. Symbols distinguish g-formula, one-step augmented and density-weighted estimates; bars are 95% percentile intervals from 1,000 complete cyclone-level bootstrap refits. Higher wind-change contrasts include slower weakening. c, Changed-exposure fraction and density-ratio effective sample size (ESS) divided by the 2,231-cyclone model-subset size. Density ratios give . ESS measures weight concentration, not the number of recoveries. d, G-formula recovery contrasts under policy-specific log-odds offsets for changed cyclones with missing outcomes. Zero is the fitted missing-at-random model; unchanged cyclones retain zero policy contrast. Curves show fixed response assumptions without confidence intervals. pp, percentage points; kt, knots.",
+    "code_sha256": {
+      "audit_panel_alignment.py": "43958e6b49d897f326ff64e73cbed0bf057e17c06533b5b57d3dededf8111e76",
+      "render_source.py": "5b69dca328b3e1b1f668438cbb5c7a28c47ea393f5352473c270474bf99f79e8",
+      "run.py": "dede438679e54cbd379918431ff4475afd32fa1accfbe3de8bdf4535bb95e19a"
+    },
+    "late_accepted_layout_sources": [],
+    "review_only_helpers": "build_*, test_*, prepare_* and seal_* are packaging/QA helpers, not the run.py entrypoint; original external paths in them are provenance or one-time frozen-source acquisition."
+  }
+}

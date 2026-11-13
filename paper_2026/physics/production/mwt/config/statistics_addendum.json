@@ -1,0 +1,10 @@
+{
+  "fixed_UTC": "2026-10-22T11:45:33.282463+00:00",
+  "status": "specified_before_inspection_of_any_group_energy_effect",
+  "reason": "Existing frozen background table shows a -0.51244 m/s previous-six-hour translation-speed contrast; fixed-grid MWT includes translation. Existing 74-pair water-vapour weights have no motion term and do not target new117 energy observations.",
+  "sensitivity": "For six primary energy outcomes only, regress SID paired pre-window energy differences on an intercept plus paired pre-window translation-speed and wind-intensity differences. Means use identical common energy/covariate offsets, >=3 of4. Report conditional contrast at zero speed and wind differences; separate it from the unadjusted paired mean.",
+  "support": "Require >=30 SID, full rank and joint zero-covariate target inside observed2D convex hull. Otherwise retain unestimated status. No age adjustment: temporary event is earlier by construction.",
+  "uncertainty": "2000 fixed SID bootstrap attempts seed650117; refit each draw. No replacement draws. Record rank/target-support failures; if failures occur do not claim unconditional95%coverage from successful subset.",
+  "limits": "Finite observational sensitivity, not causal identification or a new predictive model.",
+  "land_contact_semantics": "The fixed land_contact==0 criterion means no recorded land contact in the24h before each departure; both events satisfy it. It is not a future-ocean-survival condition, and the selection is unchanged."
+}

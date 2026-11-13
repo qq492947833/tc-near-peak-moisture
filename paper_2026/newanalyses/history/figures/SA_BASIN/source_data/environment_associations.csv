@@ -1,0 +1,4 @@
+variable,log_odds_per_unit,ci_low,ci_high,unit,penalty_per_standardized_coefficient,bootstrap_sign_p,holm_p_new_three_environment_family
+X3_mid_rh_pct,-0.0170804123945308,-0.0696982046855564,0.032325089793152,percentage point RH,1,0.482,0.482
+X2_shear_ms,-0.1392642891832273,-0.2922813865697661,-0.0189401163396969,m/s,1,0.028,0.084
+X1_sst_c,0.3571080447180218,-0.0852825752564626,0.9115111209324293,degC,1,0.094,0.188

@@ -1,0 +1,14 @@
+{
+  "sensitivity": {
+    "relative_path": "inputs/S10c_common_support_direct_sensitivities.csv",
+    "sha256": "e8882a3174f04c8b92f42b86eccd021f2f51901d6eab2f473a33e790cd008efb",
+    "original_path": "S10c_common_support_direct_sensitivities.csv",
+    "bytes": 535358
+  },
+  "motion": {
+    "relative_path": "inputs/S10e_motion_intensity_targets.csv",
+    "sha256": "8d9c6933087ead601fbef4a142addd823ad5876281755d509a3737ddf437c7bd",
+    "original_path": "S10e_motion_intensity_targets.csv",
+    "bytes": 4198
+  }
+}
