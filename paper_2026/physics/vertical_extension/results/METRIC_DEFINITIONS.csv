@@ -1,0 +1,15 @@
+metric,definition,level_mean_to_column_mass
+KE,Horizontal kinetic-energy reservoir,3571.428571428571
+APE,Dry available-potential-energy reservoir about the frozen reference state,3571.428571428571
+C_A_to_K,Same-window dry APE-to-horizontal-KE conversion; positive supplies KE,3571.428571428571
+Gamma_K_h,All-source horizontal contribution to canonical horizontal-KE transfer,3571.428571428571
+Gamma_K_p,All-source pressure-direction contribution to canonical horizontal-KE transfer,3571.428571428571
+Gamma_K_total,Sum of horizontal and pressure-direction canonical horizontal-KE transfer,3571.428571428571
+Gamma_A_h,All-source horizontal contribution to canonical dry-APE transfer,3571.428571428571
+Gamma_A_p,All-source pressure-direction contribution to canonical dry-APE transfer,3571.428571428571
+Gamma_A_total,Sum of horizontal and pressure-direction canonical dry-APE transfer,3571.428571428571
+APE_ref_correction,"Separate dry-APE reference-gradient correction, one-half T_hat MWT(omega T-prime) dc/dp",3571.428571428571
+APE_compressibility,Separate dry-APE thermodynamic reference term R/(p Tbar) T_hat MWT(omega T-prime),3571.428571428571
+vertical_input_K_Wkg,Net vertical KE input through 500/850-hPa boundaries per unit layer mass,3571.428571428571
+vertical_input_A_Wkg,Net vertical dry-APE input through 500/850-hPa boundaries per unit layer mass,3571.428571428571
+vertical_input_P_Wkg,Net vertical pressure-flux input through 500/850-hPa boundaries per unit layer mass,3571.428571428571

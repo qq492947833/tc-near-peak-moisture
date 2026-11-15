@@ -76,3 +76,16 @@ The complete global raw-data extraction, model ensemble and figure-rendering
 campaign were not rerun for packaging. Full archive computation still requires
 the external raw inputs, the documented working-space configuration and the
 time/storage needed by the original procedures.
+
+
+## MWT vertical-extension inputs (v2.1.0)
+
+See `paper_2026/physics/vertical_extension/README.md` and its configuration
+example. The extension reuses the original 1024-sample operators, reference
+state, frozen event requests and masks. It reads direct ERA5 pressure-coordinate
+omega in Pa s⁻¹, including 400/600/925 hPa derivative support in addition to the
+base 500/700/850 hPa levels. Temperature, wind and geopotential remain at the
+original 13 levels. Fields must match the six-hour UTC time axis and native
+0.25-degree coordinates. Only required layers enter each validity mask.
+The diagnostic domain is 700 hPa and the 500–850 hPa layer, rather than a whole
+50–1000 hPa column. The saved-result figure route requires no raw NetCDF files.

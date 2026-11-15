@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "syntax__adjusted_legacy_helpers.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_adjusted_statistics.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_assemble_adjusted_requests.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_bind_cache.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_configuration.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_curate_diagnostics.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_derive_sensitivity.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_extract_vertical.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_preflight_inputs.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_raw_statistics.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_read_era5_fixed_block.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_test_vertical_terms.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_theory_MWT_Atmosphere_Direct.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_verify_saved_example.py",
+      "passed": true
+    },
+    {
+      "check": "syntax_vertical_terms.py",
+      "passed": true
+    },
+    {
+      "check": "import_read_era5_fixed_block",
+      "passed": true
+    },
+    {
+      "check": "import_theory_MWT_Atmosphere_Direct",
+      "passed": true
+    },
+    {
+      "check": "import_vertical_terms",
+      "passed": true
+    },
+    {
+      "check": "import__adjusted_legacy_helpers",
+      "passed": true
+    },
+    {
+      "check": "import_raw_statistics",
+      "passed": true
+    },
+    {
+      "check": "import_derive_sensitivity",
+      "passed": true
+    },
+    {
+      "check": "import_adjusted_statistics",
+      "passed": true
+    },
+    {
+      "check": "import_curate_diagnostics",
+      "passed": true
+    },
+    {
+      "check": "import_extract_vertical",
+      "passed": true
+    },
+    {
+      "check": "import_assemble_adjusted_requests",
+      "passed": true
+    },
+    {
+      "check": "import_bind_cache",
+      "passed": true
+    },
+    {
+      "check": "import_preflight_inputs",
+      "passed": true
+    },
+    {
+      "check": "fourteen_analytic_numerical_checks",
+      "passed": true
+    },
+    {
+      "check": "frozen_event_identities",
+      "passed": true
+    },
+    {
+      "check": "matched_identities",
+      "passed": true
+    },
+    {
+      "check": "background_input_identities",
+      "passed": true
+    },
+    {
+      "check": "saved_event_integral_APE_compressibility",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_APE_ref_correction",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_C_A_to_K",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_Gamma_A_h",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_Gamma_A_p",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_Gamma_A_total",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_Gamma_K_h",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_Gamma_K_p",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_Gamma_K_total",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_vertical_input_A_Wkg",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_vertical_input_K_Wkg",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_event_integral_vertical_input_P_Wkg",
+      "passed": true,
+      "max_abs_error_Jkg": 0.0
+    },
+    {
+      "check": "saved_population_interval_P_APE_compressibility",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_APE_ref_correction",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_C_A_to_K",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_Gamma_A_h",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_Gamma_A_p",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_Gamma_A_total",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_Gamma_K_h",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_Gamma_K_p",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_Gamma_K_total",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_vertical_input_A_Wkg",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_vertical_input_K_Wkg",
+      "passed": true
+    },
+    {
+      "check": "saved_population_interval_P_vertical_input_P_Wkg",
+      "passed": true
+    },
+    {
+      "check": "saved_draw_additivity_K",
+      "passed": true
+    },
+    {
+      "check": "saved_draw_additivity_A",
+      "passed": true
+    }
+  ],
+  "scope": "Syntax/imports, fourteen predefined analytic tests, frozen support identities, one saved SID integral readback and saved population interval/P/additivity checks. No ERA5 calculation, model fitting or new bootstrap draws.",
+  "maximum_event_integral_error_Jkg": 0.0,
+  "python": "3.11.7"
+}

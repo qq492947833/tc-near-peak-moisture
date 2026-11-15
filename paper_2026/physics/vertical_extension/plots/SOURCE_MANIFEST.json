@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "path": "results/MWT_ALL_STATISTICS.csv",
+      "rows": 5076,
+      "columns": 44,
+      "sha256": "9b9d1ba8a8d0df2816c1d81ba1b2f522706c73175079ae70616674724189bb88"
+    },
+    {
+      "path": "results/MWT_ADJUSTED_WIND_MATCHED.csv",
+      "rows": 36,
+      "columns": 31,
+      "sha256": "9f8d2ab975f3420f412a07ff34fd9068f3fe4637dcbaad38420b18b30af94d84"
+    },
+    {
+      "path": "results/REINTENSIFICATION_RATE_INTEGRALS.csv",
+      "rows": 1089,
+      "columns": 44,
+      "sha256": "903aed7e02cbfea9c129b3918cc1f16bd1793a1f4bb2bf61cb4dd63239e4ca57"
+    },
+    {
+      "path": "results/NUMERICAL_SENSITIVITY.csv",
+      "rows": 1836,
+      "columns": 40,
+      "sha256": "8c6dcb7061806438292c31c21ee92bf17e317fb8976f45cb68ff8490a1c90bee"
+    },
+    {
+      "path": "results/MWT_COLUMN_INTEGRALS.csv",
+      "rows": 2628,
+      "columns": 45,
+      "sha256": "fbcc0bdecb7e86b33b384d1025d78a4227e422a9fee3dbdf9d1fcff2dc892b31"
+    },
+    {
+      "path": "results/OLD_METRICS_ON_NEW_SUPPORT.csv",
+      "rows": 12,
+      "columns": 20,
+      "sha256": "f59e82b92abe0370311a2616ebedf85345384f93c9e820820d6afecc0019c056"
+    },
+    {
+      "path": "results/METRIC_DEFINITIONS.csv",
+      "rows": 14,
+      "columns": 3,
+      "sha256": "09d83ff97063533a29e905f2567a119ca52bdf3582f3e5befd7c8544b8bd83a5"
+    },
+    {
+      "path": "plots/plot_source.csv",
+      "rows": 9,
+      "columns": 51,
+      "sha256": "316f04cdddecc270020d2d8dcf9d226006b5e26b28c2dfb429f68fcfe4a0e364"
+    }
+  ],
+  "plotting_scripts": [
+    {
+      "path": "plots/compose_figure6.py",
+      "sha256": "b25ad02f61676d08a8030d331aed9968b69d0446e60482df1bbf5f2843085a78"
+    },
+    {
+      "path": "plots/plot_mwt_integrals.py",
+      "sha256": "c073f4c9ef7ca42f9f2878977fbef51fb999b75a71dc767ec491b191def722d9"
+    },
+    {
+      "path": "plots/verify_figures.py",
+      "sha256": "e65e5c0189da0e3cd1b9de490ef068048b4d19e78a56e4cb62180854bf4670fd"
+    }
+  ],
+  "figure_asset_manifest": "figure_bundle/MANIFEST.json",
+  "figure_assets": [
+    {
+      "path": "source_assets/Figure_06_before_vertical.png",
+      "bytes": 1130666,
+      "sha256": "3dcf5ecb47fc401545fad1e4e232a9a35d6ffbd40baf12d92d74ee884934a74a"
+    },
+    {
+      "path": "source_assets/Fig6b_new_tile.png",
+      "bytes": 113232,
+      "sha256": "fad4e99631466763eadf8303f76f2d450bfa221db6dda886875f3a60d506bcf8"
+    },
+    {
+      "path": "figures/Figure_06.png",
+      "bytes": 1015994,
+      "sha256": "c92785521972f46cf369550b74b72aa765c23539db716349c3c8a5480544680b"
+    },
+    {
+      "path": "figures/Figure_06.tiff",
+      "bytes": 2384126,
+      "sha256": "ce7a03c8c6fbd937323b4599f00281aa696479a3fded3d95f3fc050e46df5324"
+    },
+    {
+      "path": "figures/Figure_S29.png",
+      "bytes": 261687,
+      "sha256": "002b32450e89545b3c86946a18b647545383b16a169ae9e75d6c5447fe582600"
+    },
+    {
+      "path": "figures/Figure_S29.tiff",
+      "bytes": 604770,
+      "sha256": "e019f4d8e1f7d000eafa56b1240f82e5b3e12e550b3093a65f5873d355ff1184"
+    },
+    {
+      "path": "figures/Figure_S29.pdf",
+      "bytes": 19894,
+      "sha256": "b5025a5d0d51354734f13e761c5598bf7683d3ddf6091e65e3d399421546922b"
+    },
+    {
+      "path": "figures/Figure_S29.svg",
+      "bytes": 17608,
+      "sha256": "4a3ac062983551771c469771b2103e8db90b0866413597b79061175111c822ae"
+    },
+    {
+      "path": "figures/MWT_vertical_three_panel.png",
+      "bytes": 294945,
+      "sha256": "7feca4f645ec60bece2c0455121bc502a74fbbb379ee9096764aba34e47c5adb"
+    },
+    {
+      "path": "figures/MWT_vertical_three_panel.tiff",
+      "bytes": 666372,
+      "sha256": "c0eb3fab144c19c882fcdb4687c307f95499362f6ddc446dabe3fb9e9add6f11"
+    },
+    {
+      "path": "figures/MWT_vertical_three_panel.pdf",
+      "bytes": 21038,
+      "sha256": "14ac5ea3fb7895b5d36f5b66f2aecf1aa0fe14e50bd1a9e8fc2bc306d1246274"
+    },
+    {
+      "path": "figures/MWT_vertical_three_panel.svg",
+      "bytes": 23825,
+      "sha256": "355b9b9c7e7af31b3081520fe22e6112844ba0edec4c62a2a94a735d14a7df93"
+    }
+  ],
+  "analysis_scope": {
+    "period": "1982–2023",
+    "main_cohort_sids": 2340,
+    "plot_sids": 122,
+    "plot_events": 132,
+    "scale_window": "2–16 d",
+    "pressure_layer_hpa": [
+      500,
+      850
+    ],
+    "pressure_samples_hpa": [
+      500,
+      600,
+      700,
+      850
+    ],
+    "region_km": [
+      0,
+      300
+    ],
+    "statistic": "Time integral over actual valley-to-return intervals",
+    "unit": "J kg-1"
+  },
+  "figure_bindings": [
+    {
+      "figure": "Figure_06b",
+      "source_panels": [
+        "a"
+      ],
+      "output": "Figure_06.png",
+      "preserved_base": "source_assets/Figure_06_before_vertical.png"
+    },
+    {
+      "figure": "Supplementary Figure 29",
+      "source_panels": [
+        "b",
+        "c"
+      ],
+      "output": "Figure_S29.png"
+    },
+    {
+      "figure": "Standalone comparison",
+      "source_panels": [
+        "a",
+        "b",
+        "c"
+      ],
+      "output": "MWT_vertical_three_panel.png"
+    }
+  ],
+  "saved_estimate_replay": {
+    "raster_files": 7,
+    "different_pixels": 0,
+    "scope": "Frozen-estimate plotting and whole-panel composition; no refit or field recomputation"
+  }
+}

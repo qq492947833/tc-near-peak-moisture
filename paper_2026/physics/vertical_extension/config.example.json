@@ -1,0 +1,9 @@
+{
+  "output_root": "generated",
+  "mwt_root": "../production/mwt",
+  "template_root": "inputs/legacy_mwt",
+  "background_root": "inputs/background",
+  "rise_input_root": "../mwt_statistics/inputs/rise",
+  "era5_root": "../../../../inputs/era5",
+  "omega_filename_pattern": "Vertical-velocity-{level}hpa-1980-2025.nc"
+}

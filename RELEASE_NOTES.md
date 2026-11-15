@@ -1,30 +1,34 @@
-# v2.0.0 — Current lifecycle, physical-process and historical analyses
+# v2.1.0 — MWT vertical transfer and layer energetics
 
-This stable release updates the existing repository to the current 1982–2023,
-2,340-SID study. It includes the actual production implementations and
-configurations for lifecycle/environment comparisons, paired moisture and MWT
-diagnostics, reintensification/recovery, basin and latitude analyses, historical
-changes and stage-duration standardization. The figure catalogue now describes
-8 main figures and 42 supplementary figures, including editable schematic
-sources and final panel-composition scripts.
+This release adds the pressure-direction contributions to KE and dry-APE
+canonical transfer, their sums with the horizontal contributions, and consistent
+500–850 hPa storage, conversion and time integrals. It retains the 1982–2023,
+2,340-SID framework and the original event definitions, reference state and
+nominal >16-day, 2–16-day and <2-day windows.
 
-The current lifecycle entry uses the accepted progress threshold without the
-early additional E-stage rate gate. Internal identifiers and the distinct
-quantity-specific samples, units, event anchors, support rules, folds and draw
-families are preserved. Portable path adapters do not replace the scientific
-implementations with approximations.
+The scientific package contains the actual extraction, diagnostic, statistical
+and sensitivity implementations with portable input/output configuration.
+Full-precision summaries retain all three established comparisons, scale
+windows, regions and diagnostic supports. Existing numerical functions remain
+independently callable.
 
-The release assets supply checksummed processed inputs and figure-source
-assets. The source-code archive corresponds to this exact tag. Large raw ERA5
-and IBTrACS archives must be obtained from their official providers; the
-documented raw workflows require the original input identity and support checks.
+Figure 6b and Supplementary Figure 29 use the same 122 SIDs and 132 actual
+reintensification events, 0–300 km region and 500–850 hPa layer. Horizontal,
+vertical and total canonical terms use coupled saved SID draws. Layer
+conversion and boundary input use the same common support. The figure archive
+contains the delivered 900 dpi PNG/TIFF files, editable vector exports for the
+new panels and the unchanged base image needed to compose Figure 6.
 
-Validation includes source syntax, representative imports and entry points,
-frozen lifecycle identities, saved statistical reaggregation, complete declared
-BH families and bounded direct-MWT checks. See VALIDATION.md for the exact
-scope. The complete global experiments and accepted figures were not rerun
-for this release. Manuscript documents and final submission images were not
-modified.
+The KE total integral is negative and the dry-APE total positive in the
+prespecified discrete comparisons. Dry-APE magnitude remains sensitive to
+pressure derivatives and discrete form. Strict machine-precision conservation
+is not claimed, and no donor-window interaction decomposition or closed energy
+budget is supplied.
 
-The repository default branch is updated without rewriting Git history. Earlier
-v1.0.0 and v1.0.1 tags and their public assets remain separately citable.
+The extension archive contains the versioned package at its repository-relative
+path and is used with the v2.1.0 checkout for base production dependencies. The existing v2.0.0 processed-input
+assets remain available for the base workflows. Validation uses source and
+dependency checks, saved-value comparisons and bounded figure reproduction;
+it does not rerun the atmospheric calculations, fit models or generate new
+bootstrap samples. See the package README and VALIDATION.md for exact commands
+and scope. Earlier tags and their assets remain unchanged.

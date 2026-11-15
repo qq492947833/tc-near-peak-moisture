@@ -1,0 +1,8 @@
+# Versions used for the accepted diagnostics and release verification.
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.11.4
+h5py==3.9.0
+pyarrow==14.0.2
+matplotlib==3.8.0
+Pillow==10.2.0

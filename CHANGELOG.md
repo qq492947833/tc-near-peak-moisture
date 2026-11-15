@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.1.0 — 2026-11-16
+
+* Add the implemented pressure-direction KE and dry-APE canonical-transfer terms, horizontal-plus-vertical totals, and consistent 500–850hPa layer diagnostics.
+* Provide the three established comparison routes, support-aware full-precision summaries, joint-support figure data and reproducible high-resolution figure composition.
+* Integrate the KE decomposition as Figure 6b and the dry-APE/selected-KE panels as Supplementary Figure 29; map earlier S29–S42 to S30–S43 without redrawing retained panels.
+* Document direct-omega input requirements, preserved statistical families and the finite-discretization qualifications.
+* Preserve callable scientific interfaces, the frozen cohort, prior input archives, historical tags, authorship and third-party notices.
+
 ## v2.0.0 — 2026-11-13
 
 * Bind the current analysis entry points to the frozen 1982–2023, 2,340-SID cohort.

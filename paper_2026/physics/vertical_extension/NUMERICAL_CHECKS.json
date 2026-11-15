@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "scope": "Analytical numerical checks only; no scientific event or ERA5 calculation",
+  "checks": [
+    {
+      "check": "nonuniform_quadratic_derivative_Pa",
+      "max_abs_error": 4.404571325722362e-20,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "alternative_three_point_quadratic_derivative_Pa",
+      "max_abs_error": 1.6940658945086007e-21,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "alternative_five_point_quartic_derivative_Pa",
+      "max_abs_error": 6.776263578034403e-21,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "linear_K_vertical_conservative",
+      "max_abs_error": 1.0503208545953324e-19,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "linear_K_vertical_bracket",
+      "max_abs_error": 1.1858461261560205e-19,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "cprime_correction_separated_from_A_canonical",
+      "max_abs_error": 3.7947076036992655e-19,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "constant_T_A_bracket_zero",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "cprime_correction_positive_value",
+      "max_abs_error": 7.453889935837843e-19,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "thermodynamic_correction",
+      "max_abs_error": 1.0842021724855044e-19,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "linear_layer_mean_exact",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "layer_column_integral_units_factor",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "missing_layer_not_partial_mean",
+      "passed": true,
+      "max_abs_error": null,
+      "tolerance": null
+    },
+    {
+      "check": "linear_sparse_and_dense_integral_match",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "different_shape_rejected",
+      "passed": true,
+      "max_abs_error": null,
+      "tolerance": null
+    }
+  ]
+}

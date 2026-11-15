@@ -5,11 +5,32 @@ tropical-cyclone storm identifiers (SIDs). The current release covers lifecycle
 classification and comparisons, environmental evolution, paired temporary
 departure and decay conditions, moisture transport, multiscale energy,
 reintensification and recovery, spatial contrasts, and historical duration changes.
-The figure catalogue follows the current **8 main and 42 supplementary figures**.
+The figure catalogue follows the current **8 main and 43 supplementary figures**.
 
-**Stable version:** [v2.0.0](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.0.0)
-(13 November 2026). Older tags remain unchanged. This repository has no assigned
+**Stable version:** [v2.1.0](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.0)
+(16 November 2026). Older tags remain unchanged. This repository has no assigned
 paper DOI or software-archive DOI.
+
+## MWT pressure-direction and layer diagnostics
+
+Version 2.1.0 adds the actual pressure-coordinate canonical-transfer implementation,
+horizontal-plus-vertical totals, and consistent 500–850 hPa storage, conversion and
+time integrals. The extension retains the original 1982–2023 cohort, fixed MWT
+operator, reference state, event definitions and quantity-specific support.
+
+The new [vertical-extension package](paper_2026/physics/vertical_extension/README.md)
+contains scientific entry points, configurable input locations, full-precision
+summary tables and the figure scripts. The integrated Figure 6b and new
+Supplementary Figure 29 use identical spatial/temporal support: 122 SIDs and 132
+actual reintensification events, 0–300 km, 500–850 hPa and the nominal 2–16-day window.
+Their estimates are equal-SID averages of event integrals, in J kg⁻¹, with saved
+2,000-draw percentile intervals. The new high-resolution figures and unchanged
+base-panel assets are distributed with this Release.
+
+The published extraction and statistical drivers are explicit computational
+routes; plotting from the released summary tables needs no atmospheric-field
+extraction, model fit or new bootstrap. See the package instructions for the
+saved-result plotting commands and figure-asset download.
 
 ## Start from the versioned processed inputs
 
@@ -17,7 +38,7 @@ Use Python 3.11 for the current scientific validation environment. Work in a
 writable copy and choose local paths for inputs, outputs and caches.
 
 ```sh
-git clone --branch v2.0.0 https://github.com/qq492947833/tc-near-peak-moisture.git
+git clone --branch v2.1.0 https://github.com/qq492947833/tc-near-peak-moisture.git
 cd tc-near-peak-moisture
 python -m venv .venv
 # Activate .venv using the command appropriate for your operating system.
@@ -26,9 +47,10 @@ python fetch_release_data.py
 python verify_release.py --output validation/summary.json
 ```
 
-`fetch_release_data.py` downloads the versioned processed-input and figure-source
+`fetch_release_data.py` retains the pinned v2.0.0 base inputs and figure sources.
+The MWT extension has its own versioned assets and instructions. The base fetcher downloads the processed-input and figure-source
 assets, verifies archive/member SHA-256 values, and restores their relative paths.
-For an offline run, download the two assets from the Release page and pass each
+For an offline run, download the two assets from the [v2.0.0 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.0.0) and pass each
 with `--archive`. Existing matching files are reused; different local files are
 not overwritten. The release does not distribute the global ERA5 or IBTrACS raw
 archives, manuscript documents, private execution logs, or credentials.
@@ -47,7 +69,7 @@ stencil and original draw banks rather than repeat expensive extraction.
 | Humidity evolution and time/location or q/T decomposition | `src/raw_workflow/humidity.py`; `paper_2026/physics/production/` | Native field requests, fixed masks and saved common-support tables | Time/location and thermodynamic contributions |
 | Within-SID temporary departure versus decay, background/state adjustment | `paper_2026/physics/production/` | Actual paired-event ledger, geographical support and original weights | Unadjusted/adjusted contrasts, balance and valid-pair summaries |
 | Radial moisture, advection and moving-boundary exchange | `src/full/transport.py`; `paper_2026/physics/production/` and `water/` | Original centres, native fields, boundary nodes and valid-area masks | Signed gross in/out/net terms and constituent decompositions |
-| MWT storage, conversion, horizontal canonical-transfer contributions and layer input | `paper_2026/physics/direct_mwt/`, `mwt_statistics/`, `production/mwt/` | `direct_mwt/config/direct_diagnostics.json`; saved coefficients and per-SID values | Energy diagnostics, paired estimates and original statistical families |
+| MWT storage, conversion, canonical-transfer contributions and layer input | `paper_2026/physics/direct_mwt/`, `mwt_statistics/`, `production/mwt/`, `vertical_extension/` | `direct_mwt/config/direct_diagnostics.json`; saved coefficients and per-SID values | Energy diagnostics, paired estimates and original statistical families |
 | Actual reintensification and matched decay trajectories | `paper_2026/physics/rise_environment/` and production return-ascent scripts | Frozen return-ascent ledger, matched windows and saved inputs | Wind/environment/energy changes and matched contrasts |
 | Departure-time environments and 48-hour recovery | `paper_2026/physics/recovery/` | 2,231 eligible model records, fixed folds and original draws | Censored hazards, supported policy contrasts and sensitivities |
 | Basin, regional, latitude and historical comparisons | `paper_2026/newanalyses/history/agents/`, `spatial/agents/`; physics regional sources | Frozen cohort, identical support/reference distributions and joint environmental rows | Basin rates, global/basin trends and hemisphere recovery contrasts |
@@ -88,13 +110,18 @@ function bodies.
   normalization. The nominal windows are >16 days, 2–16 days and <2 days;
   these are transform-window boundaries, not sharp Fourier filters. The main
   storage diagnostic is at 700 hPa. Wind, temperature and geopotential use
-  13 levels, whereas observed omega is supplied only at 500/700/850 hPa.
+  13 levels. The base analysis uses direct omega at 500/700/850 hPa; the
+  vertical extension additionally uses 400/600/925-hPa derivative support from
+  the expanded direct-omega archive. Required fields are never filled with zeros.
   The reference state is shared between paired events and the shifted-window
   sensitivity. Vertical layer input uses 500–850-hPa boundary fluxes.
-* Horizontal canonical-transfer contributions, same-scale APE-to-KE conversion,
-  storage change and boundary input retain distinct definitions, units and
-  signs. This release does not imply a complete three-dimensional canonical
-  transfer or a closed surface-wind energy budget.
+* Horizontal and pressure-direction canonical-transfer contributions and their
+  sum are distinct from same-scale APE-to-KE conversion and boundary input.
+  The extension reports all-source transfer for the target window; donor-window
+  interactions have not been separated. The selected processes are not a closed
+  energy budget. The prespecified numerical comparisons retain the main KE/APE
+  signs; dry-APE magnitudes depend on the pressure discretization, and the finite
+  transform/derivative combination does not satisfy machine-precision conservation.
 
 ## From raw observations
 
@@ -120,11 +147,12 @@ fixed folds, draw counts, support rules and failure bookkeeping are preserved.
 `figure_map.csv` gives the current number, generating entry, required input and
 any final assembly step. Original numerical plot code and schematic geometry are
 included. Some final compositions reuse accepted high-resolution panel assets.
-The last layout-only changes to Fig. 7 and S5/S6/S7/S8/S31 crop pure whitespace
+The earlier layout-only changes to Fig. 7 and S5/S6/S7/S8/S31 (S31 is now S32) crop pure whitespace
 and translate complete panels without resampling; their composition sources and
 base assets are supplied. Arial is required for the original Arial-based styling
 and is not redistributed. Consult each source package for its export command.
-The release checks did not rerender the accepted manuscript figures.
+The MWT extension validates the new panels from saved statistics and preserves
+all other accepted panels. Earlier figure workflows retain their recorded validation scope.
 
 ## Verification and citation
 
@@ -133,7 +161,7 @@ and the distinction between deterministic reaggregation, local physical checks,
 and unexecuted full refits. This is not a claim that the complete global
 archive-to-manuscript workflow was rerun for packaging.
 
-Cite the fixed [v2.0.0 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.0.0)
+Cite the fixed [v2.1.0 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.0)
 and its commit shown on that page. [CHANGELOG.md](CHANGELOG.md) describes changes
 from the earlier code release. No repository-wide licence has been added or
 changed; existing third-party licences and attribution are preserved in

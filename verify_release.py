@@ -40,7 +40,7 @@ def main():
     check('E progress without rate gate default',config['lifecycle_parameters']['escalation_progress']==.25 and 'escalation_rate_threshold' not in config['lifecycle_parameters'])
     check('Current frozen lifecycle input paths',all(config[k].startswith('paper_2026/') for k in ['frozen_sid_table','frozen_record_table']))
     with (ROOT/'figure_map.csv').open(encoding='utf-8-sig',newline='')as f:figures=list(csv.DictReader(f))
-    check('Current 50-figure catalogue',len(figures)==50)
+    check('Current 51-figure catalogue',len(figures)==51 and len({r['figure'] for r in figures})==51)
     if not args.static_only:
         data=json.loads((ROOT/'release_data_manifest.json').read_text())
         count=0
@@ -52,6 +52,7 @@ def main():
             ('lifecycle', [str(ROOT/'paper_2026/lifecycle_figures/validate_saved.py'),'--output',str(work/'lifecycle.json')]),
             ('newanalyses',[str(ROOT/'paper_2026/newanalyses/validate_saved.py'),'--output',str(work/'newanalyses.json')]),
             ('direct_mwt',[str(ROOT/'paper_2026/physics/direct_mwt/verify.py'),'--output',str(work/'direct_mwt')]),
+            ('vertical_extension',[str(ROOT/'paper_2026/physics/vertical_extension/scripts/verify_saved_example.py'),'--output',str(work/'vertical_extension/VALIDATION.json')]),
             ('physics',[str(ROOT/'paper_2026/physics/verify_saved_results.py'),'--output',str(work/'physics')]),
             ('recovery_help',[str(ROOT/'paper_2026/physics/recovery/fit_policies_v6.py'),'--help']),
             ('latitude_help',[str(ROOT/'paper_2026/newanalyses/spatial/agents/latitude_risk/v2_fold_supported/fit_latitude_risk.py'),'--help']),

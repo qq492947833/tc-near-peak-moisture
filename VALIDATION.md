@@ -1,4 +1,38 @@
-# Validation scope for v2.0.0
+# Validation scope for v2.1.0
+
+The vertical-extension package was checked against the accepted sources and
+saved results. No population ERA5/MWT extraction, model refit or new bootstrap
+was performed for this release.
+
+| Component | Executed verification |
+|---|---|
+| Scientific implementation | Core function signatures and computational ASTs compared with the accepted implementations; configurable input/output routing checked separately |
+| Saved examples | 57 syntax, import, analytic, support and saved-value checks passed, including 14 predefined analytic checks; one saved SID event integration matched exactly |
+| Statistical sources | Saved 2,000-draw intervals, original P calculations and horizontal-plus-vertical additivity checked; complete scientific summary values retained |
+| Public result tables | 166,421 numeric cells and 454,113 non-path fields match their accepted sources exactly; only provenance paths made relative |
+| Figure reproduction | Figure 6, S29 and the standalone three-panel comparison in PNG/TIFF, plus the Fig. 6b tile: all seven reproduced rasters match the accepted pixels exactly |
+| Figure composition | All Figure 6 pixels outside the replaced b-panel rectangle remain unchanged; source resolution retained |
+
+Run the saved-example verifier and figure commands in
+paper_2026/physics/vertical_extension/README.md and plots/README.md.
+VALIDATION.json in that package records the executed example checks.
+Numerical sensitivity and finite-discretization qualifications remain part of
+the results: preserved directional signs do not imply invariant dry-APE
+magnitudes or machine-precision conservation. These implementation checks do
+not change those scientific qualifications.
+
+The versioned extension archive contains this package at its repository-relative
+path. Use it with the v2.1.0 checkout for the base production dependencies.
+The separate figure archive contains final figures and the unchanged base
+panels used by the composition command. Neither archive includes manuscript
+files or private execution records.
+
+## Previously executed base-workflow validation
+
+The following record concerns v2.0.0. Those expensive base workflows were not
+repeated for v2.1.0; their code and pinned input assets remain available.
+
+### Validation scope for v2.0.0
 
 The validation uses the released code, frozen inputs and preserved scientific
 settings. It distinguishes checks of implementation and saved outputs from a

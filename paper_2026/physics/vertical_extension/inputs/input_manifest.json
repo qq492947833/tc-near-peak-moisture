@@ -1,0 +1,90 @@
+{
+  "inputs": [
+    {
+      "path": "inputs/legacy_mwt/source_data/centres_frozen.csv",
+      "source_name": "centres_frozen.csv",
+      "sha256": "f8ccd874fbc4b66461cb1ad5ebac469500c7fe5c8c63211ea4ea8c7b7128ec1c",
+      "bytes": 1191540
+    },
+    {
+      "path": "inputs/legacy_mwt/source_data/events_frozen.csv",
+      "source_name": "events_frozen.csv",
+      "sha256": "918367439a2e70509bea03ba8a81d54a501dfa869bc5205143cd68b046b43d61",
+      "bytes": 82892
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/source_data/new_return_events.parquet",
+      "source_name": "new_return_events.parquet",
+      "sha256": "59d691495aa97b8c4663a48fd41a446f6b8b601821c17ba4cdf492d63e2ad352",
+      "bytes": 55526
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/source_data/new_intervals.parquet",
+      "source_name": "new_intervals.parquet",
+      "sha256": "77caf443c35f8da72a449f6d44fabf90a88e2b92ce1e002a65c4a487d454b0be",
+      "bytes": 1043936
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/source_data/rise_comparable_state_pairs.parquet",
+      "source_name": "rise_comparable_state_pairs.parquet",
+      "sha256": "9f9b74a59a2adda8d3ea29131ef44cc30fbff24ad426cc5814ac774f6eb83b21",
+      "bytes": 53258
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/source_data/rise_point_roles.parquet",
+      "source_name": "rise_point_roles.parquet",
+      "sha256": "1a2b4245d1a4af9c1d8b2c2012db07432dac2e9eb776131d4d63ea6ce164aae0",
+      "bytes": 64788
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/source_data/rise_unique_point_requests.csv",
+      "source_name": "rise_unique_point_requests.csv",
+      "sha256": "cfa35627ded3a43325679b43d4dcf1682cbd9a92c00bf303ef2c1e4c312c30b3",
+      "bytes": 705202
+    },
+    {
+      "path": "inputs/legacy_mwt/statistics/pre/effects.parquet",
+      "source_name": "effects.parquet",
+      "sha256": "100defa447fcfb0c059f8806b8460bd100976ec073e31fce2a8468d9818aa81f",
+      "bytes": 3015161
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/mwt_rise_statistics/run_14934f2ae8f2eb7c39af/summary.parquet",
+      "source_name": "summary.parquet",
+      "sha256": "48195fd525c9d2f224c2c4011ceeb707abde8d4503245257fc431a1eb4648e9b",
+      "bytes": 3633915
+    },
+    {
+      "path": "inputs/background/results/matched_covariates.parquet",
+      "source_name": "matched_covariates.parquet",
+      "sha256": "4a47592bb58b5a197e15685966cebde18ed56a0b3353ca16fdbee07d4c600216",
+      "bytes": 86060
+    },
+    {
+      "path": "inputs/background/results/request_values.parquet",
+      "source_name": "request_values.parquet",
+      "sha256": "ba0c0ba128ffd632d63bbd332ee2c176a15ad42651bd0daedc0cfbe77201aaa1",
+      "bytes": 65328
+    },
+    {
+      "path": "inputs/background/inputs_requests.parquet",
+      "source_name": "inputs_requests.parquet",
+      "sha256": "717e71cc6fd6df2a7fe1d0e208285801efce543f8520692f65681849a218bd63",
+      "bytes": 57354
+    },
+    {
+      "path": "inputs/background/results/BACKGROUND_POINT.json",
+      "source_name": "BACKGROUND_POINT.json",
+      "sha256": "fd1171b754874251fe7682e1e262616d18b8196540b4dd1b8712a8e14ba24696",
+      "bytes": 21897
+    },
+    {
+      "path": "inputs/background/cache/bootstrap_background.npz",
+      "source_name": "bootstrap_background.npz",
+      "sha256": "c1f5db6db3d40302bd65c7ec9ff823828cacf26bc991080b789278856a6591dd",
+      "bytes": 679948
+    }
+  ],
+  "example_sid": "1982005S10105",
+  "example_scope": "Saved regional request values, event integrals and saved summary draws; no raw reanalysis data."
+}

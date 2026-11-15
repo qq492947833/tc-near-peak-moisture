@@ -1,0 +1,717 @@
+{
+  "version": "2.1.0",
+  "source_scope": "Accepted direct-omega vertical-extension implementation",
+  "dependencies": {
+    "third_party": [
+      "numpy",
+      "pandas",
+      "scipy",
+      "h5py",
+      "pyarrow",
+      "matplotlib",
+      "Pillow"
+    ],
+    "existing_repository_inputs": [
+      "paper_2026/physics/mwt_statistics/inputs/rise"
+    ],
+    "existing_repository_raw_route": [
+      "paper_2026/physics/configure_production.py",
+      "paper_2026/physics/production/mwt/scripts/run_mwt_sid.py",
+      "paper_2026/physics/production/mwt/addendum_20261023/scripts/run_mwt_rise_increment.py"
+    ]
+  },
+  "files": [
+    {
+      "path": "scripts/_adjusted_legacy_helpers.py",
+      "accepted_source_id": "vertical_extension/scripts/_adjusted_legacy_helpers.py",
+      "accepted_source_sha256": "83da184f32ca078b33521bd45ffa6b7808f4979a7f018e309ed46d5bfcff8b46",
+      "distributed_sha256": "83da184f32ca078b33521bd45ffa6b7808f4979a7f018e309ed46d5bfcff8b46",
+      "functions": [
+        {
+          "function": "bh_fixed_family",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "2fe23924d36b0ee3a0dc029548982c7e8fdfd4ecf9943cb8292d0353e83cbaf7",
+          "distributed_AST_sha256": "2fe23924d36b0ee3a0dc029548982c7e8fdfd4ecf9943cb8292d0353e83cbaf7"
+        },
+        {
+          "function": "phase_support_fit",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "7a970345d2916aed576a14b6681d76d8df1349de113f1d11bbcad324241b7271",
+          "distributed_AST_sha256": "7a970345d2916aed576a14b6681d76d8df1349de113f1d11bbcad324241b7271"
+        },
+        {
+          "function": "joint_support_diagnostics",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "d60b14a8e81225a3f58a199ade8955d0632c6b72e024a2c9ce59ba92d71bb521",
+          "distributed_AST_sha256": "d60b14a8e81225a3f58a199ade8955d0632c6b72e024a2c9ce59ba92d71bb521"
+        },
+        {
+          "function": "target_estimable",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "42eb6a16b9100e9b9a17e955d63a55a4d8c382aae45bcae92871d4e24916b571",
+          "distributed_AST_sha256": "42eb6a16b9100e9b9a17e955d63a55a4d8c382aae45bcae92871d4e24916b571"
+        },
+        {
+          "function": "weighted_fit",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "ff54d8ed27a6f49566d383df8b480b40d6ae25bb5efd3bbc2b43cc64838b0c04",
+          "distributed_AST_sha256": "ff54d8ed27a6f49566d383df8b480b40d6ae25bb5efd3bbc2b43cc64838b0c04"
+        },
+        {
+          "function": "equal_weights",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "c68a75528c51f7325ab832b7f145aab9d15d2977326747a24073eb7549d06cb7",
+          "distributed_AST_sha256": "c68a75528c51f7325ab832b7f145aab9d15d2977326747a24073eb7549d06cb7"
+        },
+        {
+          "function": "summarize",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "076127e8a26842bb1d4035136a07e8ab09b37165a1c8971952f1e92df91c3826",
+          "distributed_AST_sha256": "076127e8a26842bb1d4035136a07e8ab09b37165a1c8971952f1e92df91c3826"
+        },
+        {
+          "function": "raw_calc",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "c6c71c13b42110f70300c0390832a0410c5cc83133407abfcdbddc4636705ed6",
+          "distributed_AST_sha256": "c6c71c13b42110f70300c0390832a0410c5cc83133407abfcdbddc4636705ed6"
+        },
+        {
+          "function": "adaptive",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "2e06c4564f96e93a8b9603290fa499645afe4a669ae93a5e7d021986dcc1060e",
+          "distributed_AST_sha256": "2e06c4564f96e93a8b9603290fa499645afe4a669ae93a5e7d021986dcc1060e"
+        },
+        {
+          "function": "balance",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "e485e59387a4d774f0ddbb65d1d153f9e114b0451ca291a9b3403e5336a9d2d7",
+          "distributed_AST_sha256": "e485e59387a4d774f0ddbb65d1d153f9e114b0451ca291a9b3403e5336a9d2d7"
+        }
+      ]
+    },
+    {
+      "path": "scripts/adjusted_statistics.py",
+      "accepted_source_id": "vertical_extension/scripts/adjusted_statistics.py",
+      "accepted_source_sha256": "7c4ccc314dc12887c620275edc7f9fed292e6a81707344ac061c85a63829fca7",
+      "distributed_sha256": "e600c3ee2ca5f7ad248953a88b5dff227b301e2723856ca49a405ff7667341be",
+      "functions": [
+        {
+          "function": "_clean",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "97418c3acc96695b00955cad87f26e4efebb972087c805212e4cbb3ebc4bc110",
+          "distributed_AST_sha256": "97418c3acc96695b00955cad87f26e4efebb972087c805212e4cbb3ebc4bc110"
+        },
+        {
+          "function": "_write_json",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "546a8f4333d7fc05dc282f2693bf1131a49206ebb9d81c3f2089b8bcf28f64a4",
+          "distributed_AST_sha256": "546a8f4333d7fc05dc282f2693bf1131a49206ebb9d81c3f2089b8bcf28f64a4"
+        },
+        {
+          "function": "_sha",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "d3115ae6e80323c2cdec01611c951006e97a88198338ab36d7f7fd15f7c85b7e",
+          "distributed_AST_sha256": "d3115ae6e80323c2cdec01611c951006e97a88198338ab36d7f7fd15f7c85b7e"
+        },
+        {
+          "function": "load_frozen_background",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "e4ef680bfc53d966c38b75dffa292a0a4054ee448c0a9b303f8f2e10339aea69",
+          "distributed_AST_sha256": "e4ef680bfc53d966c38b75dffa292a0a4054ee448c0a9b303f8f2e10339aea69"
+        },
+        {
+          "function": "_diagnostic_extra",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "c2c583c28d787c3afe23c26335949fcd5c149a67d00d609f88054fa3d58e79c0",
+          "distributed_AST_sha256": "c2c583c28d787c3afe23c26335949fcd5c149a67d00d609f88054fa3d58e79c0"
+        },
+        {
+          "function": "validate_original_background",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "30b61e37e4159b2f8a4693a1f35459899e104a4dd10c09e5eaca9dda15199933",
+          "distributed_AST_sha256": "30b61e37e4159b2f8a4693a1f35459899e104a4dd10c09e5eaca9dda15199933"
+        },
+        {
+          "function": "load_new_outcomes",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "2ccf403ec1f75162dc01dd91cb3ff82ec781b2c25160ca4019a632ae7b764626",
+          "distributed_AST_sha256": "2ccf403ec1f75162dc01dd91cb3ff82ec781b2c25160ca4019a632ae7b764626"
+        },
+        {
+          "function": "transfer_algebra",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "16ed83de9ee28a7c048e9ac4513de1449cf9936f84269e9be253999b144e0bc7",
+          "distributed_AST_sha256": "16ed83de9ee28a7c048e9ac4513de1449cf9936f84269e9be253999b144e0bc7"
+        },
+        {
+          "function": "_algebra_report",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "7a3fb87ee112012473847fff21475d0984a3e2f731646cc08d1e3e0168563f28",
+          "distributed_AST_sha256": "7a3fb87ee112012473847fff21475d0984a3e2f731646cc08d1e3e0168563f28"
+        },
+        {
+          "function": "_raw_statistics",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "7bf1762ae5302229f0376af3e37e8d8d86c5f414fab9ccd5d469010864345224",
+          "distributed_AST_sha256": "7bf1762ae5302229f0376af3e37e8d8d86c5f414fab9ccd5d469010864345224"
+        },
+        {
+          "function": "_old_support_comparison",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "9c78f04b13fbdc75783740c7227db7c75f8ae1defe1f9a09ebab5e264c254e4e",
+          "distributed_AST_sha256": "9c78f04b13fbdc75783740c7227db7c75f8ae1defe1f9a09ebab5e264c254e4e"
+        },
+        {
+          "function": "run_adjusted",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "3edbfea27a0df6bc2782b2d95bbb277cef2038a6c0b776821cb1d967ebea1c90",
+          "distributed_AST_sha256": "3edbfea27a0df6bc2782b2d95bbb277cef2038a6c0b776821cb1d967ebea1c90"
+        }
+      ]
+    },
+    {
+      "path": "scripts/curate_diagnostics.py",
+      "accepted_source_id": "vertical_extension/scripts/curate_diagnostics.py",
+      "accepted_source_sha256": "19a26209589a309abf673a6b37ac5fc5292de58a24498c8f297913825f0603bb",
+      "distributed_sha256": "d4948d0de43c6600265a619556451b5acbb4aeb3920ce046754f3931afd5959e",
+      "functions": [
+        {
+          "function": "clean",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "1eedbf0f71e14d77477e6040591f1fe4e27c7cad8eb83c5616ea6a4568e6c4e4",
+          "distributed_AST_sha256": "1eedbf0f71e14d77477e6040591f1fe4e27c7cad8eb83c5616ea6a4568e6c4e4"
+        },
+        {
+          "function": "save",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "32e21d5a92b5daa047f50a8c3a348248c31aaed19676beba6d5beb780e4b5614",
+          "distributed_AST_sha256": "32e21d5a92b5daa047f50a8c3a348248c31aaed19676beba6d5beb780e4b5614"
+        },
+        {
+          "function": "require_fields",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "08af8201d1a322a343cc44f3f0c73bdd2a059b86ec26e996d2873b5b882fd9b5",
+          "distributed_AST_sha256": "08af8201d1a322a343cc44f3f0c73bdd2a059b86ec26e996d2873b5b882fd9b5"
+        },
+        {
+          "function": "export_support_ledgers",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "9a162a6cc28a5af50897d7a9cca581cbb19c15c78ff41c52008e5a1e505b98af",
+          "distributed_AST_sha256": "9a162a6cc28a5af50897d7a9cca581cbb19c15c78ff41c52008e5a1e505b98af"
+        },
+        {
+          "function": "section",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "48f2766555249b28a2f0dee6631c5a7fdb6003f49b7930977d7988ea8bd6f2b2",
+          "distributed_AST_sha256": "48f2766555249b28a2f0dee6631c5a7fdb6003f49b7930977d7988ea8bd6f2b2"
+        },
+        {
+          "function": "main",
+          "scientific_body_AST_unchanged": false,
+          "original_AST_sha256": "67f9599a921105299aae5ddbbc0853a4fd30663d55c7a005a31b392fb722b36b",
+          "distributed_AST_sha256": "535de26c1b1ad9a301352182b07648cb2dc6938e8582ed7a09b04e3f80c877e7"
+        }
+      ]
+    },
+    {
+      "path": "scripts/derive_sensitivity.py",
+      "accepted_source_id": "vertical_extension/scripts/derive_sensitivity.py",
+      "accepted_source_sha256": "611575ee6d7c39cf94a1275e1adb2fbdb8aff3b80665faa79d92aab61040c926",
+      "distributed_sha256": "39e38630f121845f2d407f36169ba62a2985c933bd2d943dff723df34d36f590",
+      "functions": [
+        {
+          "function": "sensitivity_definitions",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "5fddc18ed65467e37ed243e8211569d9678ecad9218ea5ae895087736c6346d6",
+          "distributed_AST_sha256": "5fddc18ed65467e37ed243e8211569d9678ecad9218ea5ae895087736c6346d6"
+        },
+        {
+          "function": "load_complete_requests",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "1f8f9eb15539a296e836023f892df10a044a184d6a43b287203c219118a27fe5",
+          "distributed_AST_sha256": "1f8f9eb15539a296e836023f892df10a044a184d6a43b287203c219118a27fe5"
+        },
+        {
+          "function": "request_pairs",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "8298fb4804cd57856865360b7be93dbe09cbd90bf98fb50d4e0010d62f7eaa70",
+          "distributed_AST_sha256": "8298fb4804cd57856865360b7be93dbe09cbd90bf98fb50d4e0010d62f7eaa70"
+        },
+        {
+          "function": "reconstruct_units",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "6069c6b591b5ee648e258f6861b305f586f3d8cc2d12377f1c5a4e766dc66e53",
+          "distributed_AST_sha256": "6069c6b591b5ee648e258f6861b305f586f3d8cc2d12377f1c5a4e766dc66e53"
+        },
+        {
+          "function": "pair_units",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "c49e98859331999bb42b550987be6996356a0c4b39e896625382421cd85131f7",
+          "distributed_AST_sha256": "c49e98859331999bb42b550987be6996356a0c4b39e896625382421cd85131f7"
+        },
+        {
+          "function": "compare_saved_units",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "35cce148a6c2c1de9e9a9b62355581b4801b7d671f633460c98732397827a8a2",
+          "distributed_AST_sha256": "35cce148a6c2c1de9e9a9b62355581b4801b7d671f633460c98732397827a8a2"
+        },
+        {
+          "function": "run",
+          "scientific_body_AST_unchanged": false,
+          "original_AST_sha256": "ed1eb36d700a60efe762a87927b8b57beb723ddf8503550bb0b347ea2bca5a71",
+          "distributed_AST_sha256": "d663fa0c6795db9a2b104363eb77f5bad2b596dc86bcbc75517764a795472929"
+        }
+      ]
+    },
+    {
+      "path": "scripts/extract_vertical.py",
+      "accepted_source_id": "vertical_extension/scripts/extract_vertical.py",
+      "accepted_source_sha256": "0d1ea17dea8fc66b53b9767007fc82871ae7a50289a134830642028dd66f9382",
+      "distributed_sha256": "bc5585cb511422e055a70f17ce97d835dc6d4fef7b688c5f14470961e5c8ec8a",
+      "functions": [
+        {
+          "function": "save",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "390321a00bad3fe9761722610554b49b56c32da61f17865348884919e0e73ede",
+          "distributed_AST_sha256": "390321a00bad3fe9761722610554b49b56c32da61f17865348884919e0e73ede"
+        },
+        {
+          "function": "sha",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "c91b5c44d1aeff87bd9548c50e20d9ae87cf63881e5b7d05fcfca9c7aba68fe5",
+          "distributed_AST_sha256": "c91b5c44d1aeff87bd9548c50e20d9ae87cf63881e5b7d05fcfca9c7aba68fe5"
+        },
+        {
+          "function": "prepare_inputs",
+          "scientific_body_AST_unchanged": false,
+          "original_AST_sha256": "3695cbcd23f5bc11e53340de7256578a8f9056971c6439c7c1ccfaa9bcb169be",
+          "distributed_AST_sha256": "d80b63f39a3efed8acd267a98a60f75ff332b17e07863458b4514f4e2526e5bd"
+        },
+        {
+          "function": "get_coeff",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "2d504849fb2d3eebe0cde1fc9daa8807d2788abdfeea14916ad60cb351599702",
+          "distributed_AST_sha256": "2d504849fb2d3eebe0cde1fc9daa8807d2788abdfeea14916ad60cb351599702"
+        },
+        {
+          "function": "transformed",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "8711364ec090c138b0c60e7fb1f8a15a9bc7242bf7113f5f9260f027387eacea",
+          "distributed_AST_sha256": "8711364ec090c138b0c60e7fb1f8a15a9bc7242bf7113f5f9260f027387eacea"
+        },
+        {
+          "function": "run_sid",
+          "scientific_body_AST_unchanged": false,
+          "original_AST_sha256": "a8991061c0ec73cdcc7f1cc0e230ee670ee27cae0d9cfe67c3172b2435ddec4c",
+          "distributed_AST_sha256": "f1b66551c4acee986ff7e5720ec9c185734809e3e60a4c426f5a8c08a9169fe6"
+        },
+        {
+          "function": "main",
+          "scientific_body_AST_unchanged": false,
+          "original_AST_sha256": "adee3fd2f7fbd325311bc27f4e4a84530e1879b3e43f9765114ba1441d2ef272",
+          "distributed_AST_sha256": "ffd6dc9031bcdaf203afc76fed737a5f32ceafd49cfdb06a8202e1d10eedf335"
+        }
+      ]
+    },
+    {
+      "path": "scripts/raw_statistics.py",
+      "accepted_source_id": "vertical_extension/scripts/raw_statistics.py",
+      "accepted_source_sha256": "29715c9997f304ef0ed8f7be2ebcd3fad97c17d155af2a6d4bb29f09b1a1e4b1",
+      "distributed_sha256": "e8a78fd3d09a52020c2ae1856e148ae57424908857470ca7910d678a55aa1c06",
+      "functions": [
+        {
+          "function": "json_clean",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "8f506b41992c13c1c5940b71389a933e65e98fb6cf635df5fcd783e3991efdf0",
+          "distributed_AST_sha256": "8f506b41992c13c1c5940b71389a933e65e98fb6cf635df5fcd783e3991efdf0"
+        },
+        {
+          "function": "save_json",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "08219b9c2e5cec2f5d7775d54a9e0dcbc6c1bc30350402dd649be81f9ebc3736",
+          "distributed_AST_sha256": "08219b9c2e5cec2f5d7775d54a9e0dcbc6c1bc30350402dd649be81f9ebc3736"
+        },
+        {
+          "function": "utc_seconds",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "dd72062d7a05409b2032c895f32d6b810af70691cf431160e915dc446a5fe017",
+          "distributed_AST_sha256": "dd72062d7a05409b2032c895f32d6b810af70691cf431160e915dc446a5fe017"
+        },
+        {
+          "function": "load_frozen_templates",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "14baeac142f180092e5a00cfa6fafe1b58f0ebf882b63e3b53728453ca4f44c1",
+          "distributed_AST_sha256": "14baeac142f180092e5a00cfa6fafe1b58f0ebf882b63e3b53728453ca4f44c1"
+        },
+        {
+          "function": "enforce_gamma_support",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "ab0f5a3e75047855f8602c57c575e55977df2b3ce18da83e04d766704f89b147",
+          "distributed_AST_sha256": "ab0f5a3e75047855f8602c57c575e55977df2b3ce18da83e04d766704f89b147"
+        },
+        {
+          "function": "add_old_same_temporal_support",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "3b3fc5c050c28ea6372810b784656d42a573d9b0bdbdee0c67aee2500ecbd5e1",
+          "distributed_AST_sha256": "3b3fc5c050c28ea6372810b784656d42a573d9b0bdbdee0c67aee2500ecbd5e1"
+        },
+        {
+          "function": "series_values",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "f8c3c045cc2675102587cb9e87d1fd5db6ddc3dedf996857d887e95beb76eb3b",
+          "distributed_AST_sha256": "f8c3c045cc2675102587cb9e87d1fd5db6ddc3dedf996857d887e95beb76eb3b"
+        },
+        {
+          "function": "pre_event_values",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "e6561810edd11f68db5f14dbe5f1f15f5e88498fce40423754c45bfd6aed5698",
+          "distributed_AST_sha256": "e6561810edd11f68db5f14dbe5f1f15f5e88498fce40423754c45bfd6aed5698"
+        },
+        {
+          "function": "rise_values",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "31b33669122a1b40179c858a90861d0161a693ac7c4889b2d7f2972cafad658f",
+          "distributed_AST_sha256": "31b33669122a1b40179c858a90861d0161a693ac7c4889b2d7f2972cafad658f"
+        },
+        {
+          "function": "matched_values",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "26d962929a3f8343948a4ff4eec623fca61b6229f93dde7209fbad5d566f5dfe",
+          "distributed_AST_sha256": "26d962929a3f8343948a4ff4eec623fca61b6229f93dde7209fbad5d566f5dfe"
+        },
+        {
+          "function": "summarize_units",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "97b8a76b9eb0d42e8c1d4c5c4770e49a77f8123f671c1db93214b013ab43ae6c",
+          "distributed_AST_sha256": "97b8a76b9eb0d42e8c1d4c5c4770e49a77f8123f671c1db93214b013ab43ae6c"
+        },
+        {
+          "function": "family_definition",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "25c1efffbc62a4175250ff1747f3cfcaebbeaaca6c324e99d9d948243be8b7f1",
+          "distributed_AST_sha256": "25c1efffbc62a4175250ff1747f3cfcaebbeaaca6c324e99d9d948243be8b7f1"
+        },
+        {
+          "function": "apply_bh",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "b0653dee947952fc9cb4c9f94e27918616447d54d65ee72daf36cbe556d7ad42",
+          "distributed_AST_sha256": "b0653dee947952fc9cb4c9f94e27918616447d54d65ee72daf36cbe556d7ad42"
+        },
+        {
+          "function": "verify_additivity",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "8c1978a5a6ef1615446a75e106999e3095e9d24b1bf785687dbc15b1600a1de9",
+          "distributed_AST_sha256": "8c1978a5a6ef1615446a75e106999e3095e9d24b1bf785687dbc15b1600a1de9"
+        },
+        {
+          "function": "compare_old_outputs",
+          "scientific_body_AST_unchanged": false,
+          "original_AST_sha256": "42f7e399ae4c239c1203b7669a458dc5ebc9f13ad52cf30bb84a3a2674b8c48c",
+          "distributed_AST_sha256": "a791e5ed7785ecc570874379817a72a6289df89405e70d533ebaaadb9cf4b940"
+        },
+        {
+          "function": "run_statistics",
+          "scientific_body_AST_unchanged": false,
+          "original_AST_sha256": "d561cb11ca51e9a7c486961283165a9dd7ace79eaf0492a6f246551618b3bf5e",
+          "distributed_AST_sha256": "351029ea522107bdc2d683abf332b6720de0edd432528a96a5bf630c2aab388b"
+        }
+      ]
+    },
+    {
+      "path": "scripts/read_era5_fixed_block.py",
+      "accepted_source_id": "vertical_extension/scripts/read_era5_fixed_block.py",
+      "accepted_source_sha256": "34717f422179b8313170b4a49999a7b721369766ba21c44e174fef2742a50793",
+      "distributed_sha256": "4ac2371c63805d4c4312fa6f0703aec8d211e9c18b4e7fb060bf6434519b9e2c",
+      "functions": [
+        {
+          "function": "read_era5_fixed_block",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "be2dff3bc1bf30bf83729e0c56c65c2b2f1181dbf5a948705c8ba071c66af4ed",
+          "distributed_AST_sha256": "be2dff3bc1bf30bf83729e0c56c65c2b2f1181dbf5a948705c8ba071c66af4ed"
+        }
+      ]
+    },
+    {
+      "path": "scripts/test_vertical_terms.py",
+      "accepted_source_id": "vertical_extension/scripts/test_vertical_terms.py",
+      "accepted_source_sha256": "aba1f9b31a71d488576f3b6e671c52d36b75c3e89bc9fb6e12524eabdcb83768",
+      "distributed_sha256": "aba1f9b31a71d488576f3b6e671c52d36b75c3e89bc9fb6e12524eabdcb83768",
+      "functions": [
+        {
+          "function": "run_checks",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "0fff34d47c6c0582055419b16cba3d9c6ffe4ed063740c2eb9566661ac8ea643",
+          "distributed_AST_sha256": "0fff34d47c6c0582055419b16cba3d9c6ffe4ed063740c2eb9566661ac8ea643"
+        }
+      ]
+    },
+    {
+      "path": "scripts/theory_MWT_Atmosphere_Direct.py",
+      "accepted_source_id": "vertical_extension/scripts/theory_MWT_Atmosphere_Direct.py",
+      "accepted_source_sha256": "67bff749d95167a0c9bd5d771e136896f5b83c326b110b12df4144798b2a21d9",
+      "distributed_sha256": "fe6350aaef3c5f270b8437de3f23bbe9b1909a4ef7dc02f76ee87c59f16b17ea",
+      "functions": [
+        {
+          "function": "MWT_Atmosphere_Direct",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "85823c47dc5264c542c42d5c110d9bd29b6330db57903809da72d98bb4a04852",
+          "distributed_AST_sha256": "85823c47dc5264c542c42d5c110d9bd29b6330db57903809da72d98bb4a04852"
+        }
+      ]
+    },
+    {
+      "path": "scripts/vertical_terms.py",
+      "accepted_source_id": "vertical_extension/scripts/vertical_terms.py",
+      "accepted_source_sha256": "4833c0163393fa1d0f331e6e30ec7d9e5a0e03d2793a1a4ea0ee2ab4d9fc2c40",
+      "distributed_sha256": "3e2797d5ea93f100073f991497f85af6a94b47c34746b31a409bacd2c6889851",
+      "functions": [
+        {
+          "function": "pressure_derivative",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "4adbcf39620c9438ce65a9364e19217b00de6ad9f4fa1932730e0fe364b05b92",
+          "distributed_AST_sha256": "4adbcf39620c9438ce65a9364e19217b00de6ad9f4fa1932730e0fe364b05b92"
+        },
+        {
+          "function": "vertical_terms",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "9b4f46a03942edfcccbcc7e27780e592c93278d6867ecd088b74e8a5ff6a974f",
+          "distributed_AST_sha256": "9b4f46a03942edfcccbcc7e27780e592c93278d6867ecd088b74e8a5ff6a974f"
+        },
+        {
+          "function": "pressure_layer_mean",
+          "scientific_body_AST_unchanged": true,
+          "original_AST_sha256": "3a2549c261fc600571fe73bdfa6218dd5a26e374c6f68ee2a6cf1cbe8de8b2ae",
+          "distributed_AST_sha256": "3a2549c261fc600571fe73bdfa6218dd5a26e374c6f68ee2a6cf1cbe8de8b2ae"
+        }
+      ]
+    }
+  ],
+  "function_AST_summary": {
+    "identical_functions": 57,
+    "routing_or_export_wrapper_changes": [
+      "curate_diagnostics.py::main",
+      "derive_sensitivity.py::run",
+      "extract_vertical.py::prepare_inputs",
+      "extract_vertical.py::run_sid",
+      "extract_vertical.py::main",
+      "raw_statistics.py::compare_old_outputs",
+      "raw_statistics.py::run_statistics"
+    ],
+    "scope": "Only configuration/input path resolution, output initialization and removal of an administrative export wrapper differ in these functions. Numerical functions and all inference helper functions remain identical."
+  },
+  "verified_environment": {
+    "python": "3.11.7",
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "scipy": "1.11.4",
+    "h5py": "3.9.0",
+    "pyarrow": "14.0.2",
+    "matplotlib": "3.8.0",
+    "Pillow": "10.2.0"
+  },
+  "distributed_core_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "87afc1c2d172bf1e1d1c428f5cb7d2b55cdad369fc604735f07a57c54c3ca570",
+      "bytes": 48
+    },
+    {
+      "path": "config.example.json",
+      "sha256": "954a1631e19e78ee0c70ec1afb9ac63a04167b2c7a9395c2826adc23d91ea36a",
+      "bytes": 319
+    },
+    {
+      "path": "environment.example",
+      "sha256": "81350374ef4fc45bb6c849475db1ec240266a140cf15c9138346ea91d70c2f4b",
+      "bytes": 209
+    },
+    {
+      "path": "inputs/background/cache/bootstrap_background.npz",
+      "sha256": "c1f5db6db3d40302bd65c7ec9ff823828cacf26bc991080b789278856a6591dd",
+      "bytes": 679948
+    },
+    {
+      "path": "inputs/background/inputs_requests.parquet",
+      "sha256": "717e71cc6fd6df2a7fe1d0e208285801efce543f8520692f65681849a218bd63",
+      "bytes": 57354
+    },
+    {
+      "path": "inputs/example/accepted_event_integrals.parquet",
+      "sha256": "9b36ddfab4cf89c8e0f3879379e69c10566b6d8df3b71a7109202733a2c08d23",
+      "bytes": 15285
+    },
+    {
+      "path": "inputs/example/accepted_request_values.parquet",
+      "sha256": "658f2bd55190c0b8090f5d8f6f1c3b62448402bb8912d9dcea5f1ee175f4c3b6",
+      "bytes": 13375
+    },
+    {
+      "path": "inputs/example/common_support_saved_draws.npz",
+      "sha256": "563a11de048d69ec0445907ba548cc9363880287eb4911f53319c85de04df37c",
+      "bytes": 182945
+    },
+    {
+      "path": "inputs/example/common_support_summary.csv",
+      "sha256": "5260aaccf5cd5d902e5a8db24af7012fce30a4b419d664b214b5c033994ce62d",
+      "bytes": 5003
+    },
+    {
+      "path": "inputs/input_manifest.json",
+      "sha256": "0951295d34be49737d0ae091dfbdf3023c57e37c30336ef6166a17acaf275775",
+      "bytes": 3691
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/mwt_rise_statistics/run_14934f2ae8f2eb7c39af/summary.parquet",
+      "sha256": "48195fd525c9d2f224c2c4011ceeb707abde8d4503245257fc431a1eb4648e9b",
+      "bytes": 3633915
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/source_data/new_intervals.parquet",
+      "sha256": "77caf443c35f8da72a449f6d44fabf90a88e2b92ce1e002a65c4a487d454b0be",
+      "bytes": 1043936
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/source_data/new_return_events.parquet",
+      "sha256": "59d691495aa97b8c4663a48fd41a446f6b8b601821c17ba4cdf492d63e2ad352",
+      "bytes": 55526
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/source_data/rise_comparable_state_pairs.parquet",
+      "sha256": "9f9b74a59a2adda8d3ea29131ef44cc30fbff24ad426cc5814ac774f6eb83b21",
+      "bytes": 53258
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/source_data/rise_point_roles.parquet",
+      "sha256": "1a2b4245d1a4af9c1d8b2c2012db07432dac2e9eb776131d4d63ea6ce164aae0",
+      "bytes": 64788
+    },
+    {
+      "path": "inputs/legacy_mwt/addendum_20261023/source_data/rise_unique_point_requests.csv",
+      "sha256": "cfa35627ded3a43325679b43d4dcf1682cbd9a92c00bf303ef2c1e4c312c30b3",
+      "bytes": 705202
+    },
+    {
+      "path": "inputs/legacy_mwt/source_data/centres_frozen.csv",
+      "sha256": "f8ccd874fbc4b66461cb1ad5ebac469500c7fe5c8c63211ea4ea8c7b7128ec1c",
+      "bytes": 1191540
+    },
+    {
+      "path": "inputs/legacy_mwt/source_data/events_frozen.csv",
+      "sha256": "918367439a2e70509bea03ba8a81d54a501dfa869bc5205143cd68b046b43d61",
+      "bytes": 82892
+    },
+    {
+      "path": "inputs/legacy_mwt/statistics/latest_completed.json",
+      "sha256": "82212808ff3adad26fc288fe2d6ca8a6a6f8c72927e4d3ecebd69bed16369dab",
+      "bytes": 21
+    },
+    {
+      "path": "inputs/legacy_mwt/statistics/pre/effects.parquet",
+      "sha256": "100defa447fcfb0c059f8806b8460bd100976ec073e31fce2a8468d9818aa81f",
+      "bytes": 3015161
+    },
+    {
+      "path": "NUMERICAL_CHECKS.json",
+      "sha256": "51d65f5f5890dfdfc073d4c9990e0d1e86cadfa9546d26cceb9409492fe536ac",
+      "bytes": 2318
+    },
+    {
+      "path": "README.md",
+      "sha256": "74f6c83b81c311962e903a015e0d59f78fa192221736ea02bbf2434918eecbed",
+      "bytes": 10834
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "f63d279cc62eb11365ecf739cbf3d740a660d3a4422a6853370675c167d6938f",
+      "bytes": 174
+    },
+    {
+      "path": "scripts/_adjusted_legacy_helpers.py",
+      "sha256": "83da184f32ca078b33521bd45ffa6b7808f4979a7f018e309ed46d5bfcff8b46",
+      "bytes": 11126
+    },
+    {
+      "path": "scripts/adjusted_statistics.py",
+      "sha256": "e600c3ee2ca5f7ad248953a88b5dff227b301e2723856ca49a405ff7667341be",
+      "bytes": 21509
+    },
+    {
+      "path": "scripts/assemble_adjusted_requests.py",
+      "sha256": "0667eca183c0a77762f51c15e69646f67aeea34a0bd4b07e35bd807b756b6592",
+      "bytes": 1564
+    },
+    {
+      "path": "scripts/bind_cache.py",
+      "sha256": "0e4c419b2fec0ff60b8b3c0eb83c21ca3fb1d8afad82b03216e94e059fafbb49",
+      "bytes": 2679
+    },
+    {
+      "path": "scripts/configuration.py",
+      "sha256": "e2a68ab057deb6ef30a4ca635aeb2d8c58fa896a77cae4f0927e6d9c0d6f6415",
+      "bytes": 1897
+    },
+    {
+      "path": "scripts/curate_diagnostics.py",
+      "sha256": "d4948d0de43c6600265a619556451b5acbb4aeb3920ce046754f3931afd5959e",
+      "bytes": 15431
+    },
+    {
+      "path": "scripts/derive_sensitivity.py",
+      "sha256": "39e38630f121845f2d407f36169ba62a2985c933bd2d943dff723df34d36f590",
+      "bytes": 18072
+    },
+    {
+      "path": "scripts/extract_vertical.py",
+      "sha256": "bc5585cb511422e055a70f17ce97d835dc6d4fef7b688c5f14470961e5c8ec8a",
+      "bytes": 21307
+    },
+    {
+      "path": "scripts/preflight_inputs.py",
+      "sha256": "5902047823130ad975a3a95a9ea938f3399e95bc57ac35264bae8126f8e73b94",
+      "bytes": 2180
+    },
+    {
+      "path": "scripts/raw_statistics.py",
+      "sha256": "e8a78fd3d09a52020c2ae1856e148ae57424908857470ca7910d678a55aa1c06",
+      "bytes": 27311
+    },
+    {
+      "path": "scripts/read_era5_fixed_block.py",
+      "sha256": "4ac2371c63805d4c4312fa6f0703aec8d211e9c18b4e7fb060bf6434519b9e2c",
+      "bytes": 3496
+    },
+    {
+      "path": "scripts/test_vertical_terms.py",
+      "sha256": "aba1f9b31a71d488576f3b6e671c52d36b75c3e89bc9fb6e12524eabdcb83768",
+      "bytes": 3505
+    },
+    {
+      "path": "scripts/theory_MWT_Atmosphere_Direct.py",
+      "sha256": "fe6350aaef3c5f270b8437de3f23bbe9b1909a4ef7dc02f76ee87c59f16b17ea",
+      "bytes": 6322
+    },
+    {
+      "path": "scripts/verify_saved_example.py",
+      "sha256": "5a0ff656e086b15492151b39a6c7bac67e7d8cf70be915dcc66907c683ce9543",
+      "bytes": 4225
+    },
+    {
+      "path": "scripts/vertical_terms.py",
+      "sha256": "3e2797d5ea93f100073f991497f85af6a94b47c34746b31a409bacd2c6889851",
+      "bytes": 7696
+    },
+    {
+      "path": "VALIDATION.json",
+      "sha256": "91c750e4953477583b4dcae9cbf212f755db26fadd78b859f11ed8dfc676c2ec",
+      "bytes": 5796
+    }
+  ],
+  "verification": {
+    "status": "PASS",
+    "entry": "scripts/verify_saved_example.py",
+    "receipt": "VALIDATION.json",
+    "checks": 57,
+    "analytic_tests": 14,
+    "new_scientific_fits_or_resamples": 0
+  }
+}
