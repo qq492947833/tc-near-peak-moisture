@@ -1,3 +1,4 @@
+from scipy.integrate import trapezoid
 from process_v6 import *
 from rh_native_v6 import geometry,loadz,checked,means
 from types import SimpleNamespace
@@ -25,7 +26,7 @@ def main():
  for (sid,field,unit),g in raw.groupby(['sid','field','units']):
   cols=pd.MultiIndex.from_product([['internal','final'],['actual_track','fixed_t0']]);a=g.pivot(index='lag_h',columns=['event_class','center_kind'],values='value').reindex(index=range(-24,25,6),columns=cols).to_numpy(copy=True).reshape(9,2,2);common=np.isfinite(a).all((1,2));a[~common]=np.nan
   for j,policy in enumerate(['all_along','all_fixed']):
-   y=a[:,:,j];vals={'pre_mean':np.nanmean(y[:4],0) if common[:4].sum()>=3 else [np.nan,np.nan],'integral_0_24':np.trapezoid(y[4:],dx=.25,axis=0) if common[4:].all() else [np.nan,np.nan]}
+   y=a[:,:,j];vals={'pre_mean':np.nanmean(y[:4],0) if common[:4].sum()>=3 else [np.nan,np.nan],'integral_0_24':trapezoid(y[4:],dx=.25,axis=0) if common[4:].all() else [np.nan,np.nan]}
    for name,v in vals.items():pairs.append(dict(sid=sid,field=field,policy=policy,estimand=name,units=unit if name=='pre_mean' else 'g kg-1' if field=='q850_absolute_MFC' else '1e-5 s-1 day',internal=v[0],final=v[1],value=v[0]-v[1]))
  pd.DataFrame(pairs).to_csv(O/'centre_850_SID_pairs.csv',index=False);tab,piv,d,w=summary_table(pairs,['field','policy','estimand','units']);tab.to_csv(O/'centre_850_estimates.csv',index=False);np.savez_compressed(O/'centre_850_bootstrap.npz',sid=piv.index.to_numpy(str),targets=np.array([str(c) for c in piv.columns]),draws=d,weights=w)
  js(O/'centre_850_receipt.json',{'status':'COMPLETE','rows':len(raw),'missing':missing,'raw_reads':0,'seconds':time.perf_counter()-tick,'MFC_definition':'minus spherical divergence of native q850 times absolute horizontal850 wind; includes advective and convergence terms','convergence_definition':'minus archived d850; both850 diagnostics share finite native support','layer_support':'independent of700 budget; never combined into700 closure','integration':'dx=.25day; rate integral g/kg'})

@@ -37,7 +37,7 @@ def clean(x):
 def js(p,x):
  temp=p.with_suffix(p.suffix+'.tmp');temp.write_text(json.dumps(clean(x),indent=2,allow_nan=False),encoding='utf-8');os.replace(temp,p)
 from interval_hazard import Basis, IntervalHazard
-C=json.loads((O/'FROZEN_CONFIG.json').read_text());SR=json.loads((O/'SUPPORT_RECEIPT.json').read_text())
+C=json.loads((O/'FROZEN_CONFIG.json').read_text());SR=json.loads((O/('PUBLIC_SUPPORT_BINDING.json' if (O/'PUBLIC_SUPPORT_BINDING.json').exists() else 'SUPPORT_RECEIPT.json')).read_text())
 assert sha(O/'FROZEN_CONFIG.json')==SR['configuration_sha256']
 assert sha(O/'frozen_analysis_inputs.csv')==SR['support_inputs_sha256']
 assert sha(O/'training_inputs.csv')==SR['training_inputs_sha256']

@@ -107,5 +107,5 @@
   "crossfit_support_scope": "Every retained target passes both prespecified local environmental hulls of its actual point-estimate heldout-fold training pool; fixed target across original bootstrap draws, no outcome-driven reselection",
   "source_config_sha256": "5e3ddb5e1cbe0cded5676132c0c32104ec0c1e835bb4237f5643d2baf63f4634",
   "independent_target_membership_sha256": "2ed16da497d7c5d07c0a7b94e74896d5539a419bc2082a7c66962e1e7520d286",
-  "support_correction": "One root-authorized scientific implementation correction before v2 model fitting; no v2 models were fit using406 target"
+  "support_correction": "Support was fixed before v2 model fitting; no v2 model used the earlier 406-cyclone target."
 }

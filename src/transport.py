@@ -1,4 +1,5 @@
 """Moving-boundary moisture exchange, paired samples, and saved-fit reaggregation."""
+from scipy.integrate import trapezoid
 from pathlib import Path
 import json, hashlib
 import numpy as np
@@ -76,7 +77,7 @@ def t1(out):
         for window,lags in [('pre',np.arange(-24,1,6)),('post',np.arange(0,25,6))]:
             for name in [f'r{r}_{k}_kg_s' for r in [100,300] for k in ['in','out','net']]+['side_net_kg_s']:
                 values=z[name].reindex(lags).to_numpy(float)
-                val=np.trapezoid(values,lags*3600.) if np.isfinite(values).all() else np.nan
+                val=trapezoid(values,lags*3600.) if np.isfinite(values).all() else np.nan
                 result.append({'sid':row.sid,'event_class':row.event_class,'metric':window+'_'+name.replace('_kg_s',''),'value':val})
         for lag in [0,24]:
             result.append({'sid':row.sid,'event_class':row.event_class,'metric':f'stock_{lag}h','value':float(z.stock_kg.get(lag,np.nan))})

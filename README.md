@@ -7,9 +7,24 @@ departure and decay conditions, moisture transport, multiscale energy,
 reintensification and recovery, spatial contrasts, and historical duration changes.
 The figure catalogue follows the current **8 main and 43 supplementary figures**.
 
-**Stable version:** [v2.1.0](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.0)
-(16 November 2026). Older tags remain unchanged. This repository has no assigned
+**Stable version:** [v2.1.1](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.1)
+(19 November 2026). Older tags remain unchanged. This repository has no assigned
 paper DOI or software-archive DOI.
+
+## Duration statistics from the original draws
+
+Run the following command from the repository root:
+
+```sh
+python paper_2026/newanalyses/history/agents/C/replay_duration.py --output runs/duration
+```
+
+This entry point summarizes the saved standardized duration targets and paired
+contrasts on their original draw IDs. A rank-deficient fit can still have an
+estimable trend; the sample counts in these tables refer to estimable targets.
+See [duration definitions and recovery checks](paper_2026/newanalyses/history/agents/C/DURATION_REPLAY.md) for the full and recent periods and the optional original-draw check. The original input archives remain pinned. Their historical figure templates
+are separate from the [accepted Figure 7 PNG](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.1/Figure_07.png).
+The MWT figure bundle remains available under v2.1.0.
 
 ## MWT pressure-direction and layer diagnostics
 
@@ -25,7 +40,7 @@ Supplementary Figure 29 use identical spatial/temporal support: 122 SIDs and 132
 actual reintensification events, 0–300 km, 500–850 hPa and the nominal 2–16-day window.
 Their estimates are equal-SID averages of event integrals, in J kg⁻¹, with saved
 2,000-draw percentile intervals. The new high-resolution figures and unchanged
-base-panel assets are distributed with this Release.
+base-panel assets are distributed with the v2.1.0 figure bundle.
 
 The published extraction and statistical drivers are explicit computational
 routes; plotting from the released summary tables needs no atmospheric-field
@@ -38,7 +53,7 @@ Use Python 3.11 for the current scientific validation environment. Work in a
 writable copy and choose local paths for inputs, outputs and caches.
 
 ```sh
-git clone --branch v2.1.0 https://github.com/qq492947833/tc-near-peak-moisture.git
+git -c core.autocrlf=false clone --branch v2.1.1 https://github.com/qq492947833/tc-near-peak-moisture.git
 cd tc-near-peak-moisture
 python -m venv .venv
 # Activate .venv using the command appropriate for your operating system.
@@ -161,7 +176,7 @@ and the distinction between deterministic reaggregation, local physical checks,
 and unexecuted full refits. This is not a claim that the complete global
 archive-to-manuscript workflow was rerun for packaging.
 
-Cite the fixed [v2.1.0 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.0)
+Cite the fixed [v2.1.1 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.1)
 and its commit shown on that page. [CHANGELOG.md](CHANGELOG.md) describes changes
 from the earlier code release. No repository-wide licence has been added or
 changed; existing third-party licences and attribution are preserved in

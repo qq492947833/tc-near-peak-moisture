@@ -1,3 +1,4 @@
+from scipy.integrate import trapezoid
 from process_v6 import *
 from rh_native_v6 import geometry,loadz,checked,means
 from centre_complete_v6 import FIELDS
@@ -38,7 +39,7 @@ def main():
   for policy in ['all_along','all_fixed','historical_mixed']:
    y=a[:,:,0] if policy=='all_along' else a[:,:,1] if policy=='all_fixed' else np.concatenate([legacy[:4,:,1],a[4:,:,0]])
    y[~common]=np.nan
-   vals={'pre_mean':np.nanmean(y[:4],0) if common[:4].sum()>=3 else np.array([np.nan,np.nan]),'change_0_24':y[-1]-y[4] if common[[4,8]].all() else np.array([np.nan,np.nan]),'integral_0_24':np.trapezoid(y[4:],dx=6,axis=0) if common[4:].all() else np.array([np.nan,np.nan])}
+   vals={'pre_mean':np.nanmean(y[:4],0) if common[:4].sum()>=3 else np.array([np.nan,np.nan]),'change_0_24':y[-1]-y[4] if common[[4,8]].all() else np.array([np.nan,np.nan]),'integral_0_24':trapezoid(y[4:],dx=6,axis=0) if common[4:].all() else np.array([np.nan,np.nan])}
    if var in ['midRH','shear200_850','shear500_850','shear200_500','PI_headroom','Tang_Emanuel_ventilation']:
     direction=-1 if var in ['midRH','PI_headroom'] else 1;bad=direction*(y[4:]-vals['pre_mean'])>0;vals['adverse_hours_0_24']=np.sum(bad[:-1]&bad[1:],axis=0)*6. if common[4:].all() and np.isfinite(vals['pre_mean']).all() else np.array([np.nan,np.nan])
    for name,yy in vals.items():rows.append(dict(sid=sid,variable=var,policy=policy,estimand=name,units='h' if name.startswith('adverse') else FIELDS[var][2]+' h' if name.startswith('integral') else FIELDS[var][2],internal=yy[0],final=yy[1],difference=yy[0]-yy[1]))

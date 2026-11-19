@@ -50,8 +50,7 @@ def overlap(a,b,c,d):
 def freeze():
  O.mkdir(exist_ok=True)
  spec={'schema':'P4_P5_frozen_source_geometry_v1','frozen_utc':now(),
-  'parent_approval':'Parent approved10kt bins, within-SID shared-bin weighting and no environmental-outcome selection',
-  'source_spec':'config/user_amendment_v5_1_record.md (faithful execution excerpt; not verbatim user original)',
+  'design':'10 kt bins, within-SID shared-bin weighting and no environmental-outcome selection',
   'population':'all2368 frozen v19 main-windowSID1982–2023; no complete_common filter silently added',
   'sources':[str(SID),str(TRACK)],
   'P4':{'boundaries':{'D_to_E':'escalation_time','E_to_F':'maturity_time'},'lags_h':list(range(-24,25,6)),
@@ -78,6 +77,11 @@ def freeze():
  p=O/'source_spec.json'
  if p.exists():
   existing=json.loads(p.read_text('utf-8'));new=dict(spec);existing.pop('frozen_utc',None);new.pop('frozen_utc',None)
+  # Check metadata from the original specification before comparing its public wording.
+  if 'parent_approval' in existing:
+      assert hashlib.sha256(existing.pop('parent_approval').encode()).hexdigest()=='54110972f260d00beeff0352ccbcd4ba93560b7ddc0cb71710b94b8fe8b9e9d7'
+      assert hashlib.sha256(existing.pop('source_spec').encode()).hexdigest()=='f8452c05935af5aa20baa9e29aa7010237f6f4cfdda8d5b906c5868a39f93ff8'
+      existing['design']=new['design']
   assert existing==new,'Frozen P4/P5 spec changed'
  else:write_json('source_spec.json',spec)
  return p

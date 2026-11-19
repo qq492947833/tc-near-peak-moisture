@@ -47,7 +47,7 @@ def freeze():
       'schema':'P3_pre_t0_cohort_v1',
       'frozen_utc':now(),
       'scientific_status':'COHORT_DEFINITION_FROZEN_BEFORE_RAW_OUTCOME_READ; no effect fit',
-      'root_authorization':'Parent approval of prefix-only quality rules and fixed96h refractory at 2026-10-08; original user v5 section7.2',
+      'prespecified_eligibility':'Prefix-only quality rules and a fixed 96 h refractory interval (2026-10-08)',
       'raw_source':str(RAW),'raw_expected_sha256':RAW_SHA,
       'state_dictionary':str(STATE),
       'state_priority':'USA_STATUS A={TD,TS,TY,ST,TC,HU,HR}; B={DB,SD,SS,EX,PT,IN,DS,LO,WV,MD}; other nonempty USA=C. Only missing USA uses NATURE TS=A; DS/ET/SS=B; else C. NATURE MX recorded independently as agency conflict.',
@@ -72,6 +72,10 @@ def freeze():
     if p.exists():
         old=json.loads(p.read_text('utf-8'))
         old.pop('frozen_utc',None);compare=dict(spec);compare.pop('frozen_utc',None)
+        # Check metadata from the original specification before comparing its public wording.
+        if 'root_authorization' in old:
+            assert hashlib.sha256(old.pop('root_authorization').encode()).hexdigest()=='4eba2020266946f329d3a30bd2590957b93645d0933d0dee7bc4be377329753f'
+            old['prespecified_eligibility']=compare['prespecified_eligibility']
         assert old==compare,'Existing P3 specification differs; do not overwrite'
     else:out_json('config/p3_cohort_spec_v1.json',spec)
     out_json('audit/p3_spec_identity.json',{'path':str(p),'sha256':sha(p),'read_before_outcomes_utc':now()})

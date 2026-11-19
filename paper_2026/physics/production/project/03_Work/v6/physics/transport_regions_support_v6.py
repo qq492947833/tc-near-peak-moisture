@@ -1,3 +1,4 @@
+from scipy.integrate import trapezoid
 from process_v6 import *
 from rh_native_v6 import geometry,loadz,checked,means
 from functools import lru_cache
@@ -19,7 +20,7 @@ def p4():
    y=cube[j];units='1e-5 s-1' if field=='convergence850' else 'g kg-1 day-1'
    for k,lag in enumerate(range(-24,25,6)):rows.append(dict(sid=sid,boundary=event,field=field,estimand='lag_'+str(lag),units=units,value=y[k]))
    for name,sl in [('minus24_0',slice(0,5)),('0_24',slice(4,9))]:
-    yy=y[sl];val=np.trapezoid(yy,dx=.25) if np.isfinite(yy).all() else np.nan
+    yy=y[sl];val=trapezoid(yy,dx=.25) if np.isfinite(yy).all() else np.nan
     rows.append(dict(sid=sid,boundary=event,field=field,estimand='integral_'+name,units='1e-5 s-1 day' if field=='convergence850' else 'g kg-1',value=val))
  r=pd.DataFrame(rows);r.to_csv(O/'P4_transport_SID_sources.csv',index=False);tab,piv,d,w=summary_table(rows,['boundary','field','estimand','units']);tab.to_csv(O/'P4_transport_estimates.csv',index=False);np.savez_compressed(O/'P4_transport_bootstrap.npz',sid=piv.index.to_numpy(str),targets=np.array([str(c) for c in piv.columns]),draws=d,weights=w)
  js(O/'P4_transport_receipt.json',{'max_budget_identity_error_gkg_day':max(errs),'source':'v5 common-support instantaneous scalars','new_raw_reads':0,'n_start_sid':2368,'integrals':'five six-hour instantaneous values, trapezoid; complete temporal support; 850 terms are separate'})
@@ -95,7 +96,7 @@ def regions(limit=0):
   paired=[]
   for keys,g in r.groupby(['sid','region','sector','field','units']):
    z=g.pivot(index='lag_h',columns='event_class',values='value').reindex(range(-24,25,6)).reindex(columns=['internal','final']);a=z.to_numpy();joint=np.isfinite(a).all(1)
-   for name,value in [('pre_mean',np.mean(a[:4][joint[:4]],0) if joint[:4].sum()>=3 else [np.nan,np.nan]),('integral_0_24',np.trapezoid(a[4:],dx=.25,axis=0) if joint[4:].all() else [np.nan,np.nan])]:
+   for name,value in [('pre_mean',np.mean(a[:4][joint[:4]],0) if joint[:4].sum()>=3 else [np.nan,np.nan]),('integral_0_24',trapezoid(a[4:],dx=.25,axis=0) if joint[4:].all() else [np.nan,np.nan])]:
     record=dict(zip(['sid','region','sector','field','units'],keys));event_unit=record['units'];contrast_unit='pp' if record['field']=='RH700' else event_unit
     if name.startswith('integral'):
      contrast_unit=contrast_unit.removesuffix(' day-1') if contrast_unit.endswith(' day-1') else contrast_unit+' day'

@@ -1,0 +1,77 @@
+{
+  "source_tag": "v2.1.0",
+  "source_commit": "5d059c9f81dcbf7ca58fff73e3d327ccf91bc70c",
+  "scope": "Descriptive public-file editions and figure inventory. Original freeze/validation receipts retain the source identities; current latitude inputs use separate public bindings. Numerical data and third-party attributions are unchanged by these edits.",
+  "files": {
+    "paper_2026/lifecycle_figures/framework/dependencies/v62/analysis_spec_v62.json": {
+      "source_sha256": "fee98df11274c8b9d2f3142453f2fa42682ea7af9e9690944db8269bf2935df2",
+      "public_sha256": "9bc63b5bbca5b859442aa8ba85e691db4bcdcec82cdf2609301fcf82e58e0673",
+      "purpose": "Public description of the same prespecified analysis."
+    },
+    "paper_2026/physics/production/project/03_Work/v62/analysis_spec_v62.json": {
+      "source_sha256": "4792318fc7ebaa8636a94cc48c2b0cf1fdaf95718aa0a7694f16ffdbac51184a",
+      "public_sha256": "cda26370553d8d9f83b0a5ff3576c87b7bef3de62f1c39f960a8a9112e141ad7",
+      "purpose": "Public description of the same prespecified analysis."
+    },
+    "paper_2026/physics/config/main_definition_frozen.json": {
+      "source_sha256": "eb66b6601c0828cd3dafb63613c5218320c993bceac62dc7cf564f9c4e9c859b",
+      "public_sha256": "c27ad94ca62415fadc127e7c4422244897fb8ebc30363e63398052ad1d2ad833",
+      "purpose": "Public description of the same prespecified analysis."
+    },
+    "paper_2026/physics/production/mechanism_v5/config/p1_p2_technical_clarification_v5.json": {
+      "source_sha256": "242ae00efae9884c6d96d6a64fa2c096ab9338e28ca724c305006c80990c8bfe",
+      "public_sha256": "76b60495ddbe18ae4c3e4324d6e029d531549144bf904565252e073b8eb5319f",
+      "purpose": "Public description of the same prespecified analysis."
+    },
+    "paper_2026/physics/production/mechanism_v5/src/p1_p2_analysis_v5.py": {
+      "source_sha256": "75739f43c01ee84f4893d56243da6470e802cb525ed2248b999bd71667194f6a",
+      "public_sha256": "a5919d7ffd98f588557cb0a34477e0b097078f2928827fc4ccbbf543fe591ea2",
+      "purpose": "Public description of the same prespecified analysis."
+    },
+    "paper_2026/physics/production/mechanism_v5/src/p3_cohort.py": {
+      "source_sha256": "97f6f37fa0f93e4b0f2799f7a9a36ead50f934bb945ab4fe5a5eb3700ec51371",
+      "public_sha256": "c5ea5355d82e742d0de38c761d97b1b9bd1d66cb340379ef372fbec1f262b878",
+      "purpose": "Public description of the same prespecified analysis."
+    },
+    "paper_2026/physics/production/mechanism_v5/src/p4_p5_sources.py": {
+      "source_sha256": "e66f2f9211f7cfe346d38d2c73305ce392a333cc5cd913428842b45e2a0f58ac",
+      "public_sha256": "f00793d71f943cfceb6c25e0e2e06785dd8c9fe7017b3bd8f3eb18827f4b6058",
+      "purpose": "Public description of the same prespecified analysis."
+    },
+    "paper_2026/newanalyses/spatial/agents/latitude_risk/v2_fold_supported/FROZEN_CONFIG.json": {
+      "source_sha256": "523f090892834efdfe032a45ea4696fb7c4afd9ff8dad0efac626b3932e45345",
+      "public_sha256": "761daa0e77025fbe525c39db3f07de8b7c5109d9fc01e249c165da8480e1fc8f",
+      "purpose": "Public description of the same prespecified analysis."
+    },
+    "paper_2026/newanalyses/spatial/figures/LATITUDE/source_data/v2_FROZEN_CONFIG.json": {
+      "source_sha256": "523f090892834efdfe032a45ea4696fb7c4afd9ff8dad0efac626b3932e45345",
+      "public_sha256": "761daa0e77025fbe525c39db3f07de8b7c5109d9fc01e249c165da8480e1fc8f",
+      "purpose": "Public description of the same prespecified analysis."
+    },
+    "paper_2026/lifecycle_figures/validate_saved.py": {
+      "source_sha256": "9883daa1fda8c90d8d0bb06133501aae54ef3663ce570ddb9194a19e157d7200",
+      "public_sha256": "940997da82042218eeb5771f8ab23f0ca9d102f65bedd4d44054e7fd5f454ce5",
+      "purpose": "Check drive and user-profile literals without identifying a workstation account."
+    },
+    "paper_2026/newanalyses/spatial/agents/latitude_risk/v2_fold_supported/fit_latitude_risk.py": {
+      "source_sha256": "9785b06cf5ba8284cda19b0370e2132e46b9d81ed02d0c9e51613f05d6c03a08",
+      "public_sha256": "5fa373116870c7fbeaa8380e97f909fdb402472ee72c5967e4de4ac418b600be",
+      "purpose": "Use the edition-specific hash of the same support configuration when present."
+    },
+    "paper_2026/newanalyses/spatial/figures/LATITUDE/plot_latitude.py": {
+      "source_sha256": "69ad9af1ebe79d73811368a157cf854bd0895f030954ee5fb11e0d5a3b900577",
+      "public_sha256": "029566d37ca781c191bde9bfa99a58beaf7be34cd619f090407b8a46e74e3ef1",
+      "purpose": "Verify the edition-specific source hashes when present."
+    },
+    "figure_map.csv": {
+      "source_sha256": "343a747cfcc6676635bc2e06b76ed452be2ed01943de4d0bd6d4a2150bf1f949",
+      "public_sha256": "f15e056b6d65060dd85e2effd2309b7435322627e11cd8f2dbf3911a31fe9af9",
+      "purpose": "Bind the accepted Figure_07.png release asset without rendering."
+    },
+    "paper_2026/lifecycle_figures/figure_map.csv": {
+      "source_sha256": "555e0ddd640c6233095ac86e06aedc2745528fe2b56c3fe902a5bf398b0c50e5",
+      "public_sha256": "a107775b04e7b62e673f6d11d958fc95df63b7281b7abfd6613d5fe97e77a8ff",
+      "purpose": "Bind the accepted Figure_07.png release asset without rendering."
+    }
+  }
+}

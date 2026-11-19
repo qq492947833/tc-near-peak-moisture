@@ -4,6 +4,7 @@ The 32 x 64 equal-area nodes are spatial quadrature, not new observations. The
 original source remains 6-hourly. A common finite mask across both events and
 all five times must be applied before temporal integration (see integrate_pair).
 """
+from scipy.integrate import trapezoid
 import numpy as np
 import pandas as pd
 from .native_grid import spherical_gradient, vertical_advection_700
@@ -90,7 +91,7 @@ def integrate_pair(events,sid):
                         n_original_nodes=2048,n_joint_nodes=int(common.sum()),units='g kg-1')
             for k in fields:
                 means=np.array([np.mean(arrays[k][side,t][common]) for t in range(5)]) if fraction>=.9 else np.full(5,np.nan)
-                output['delta_q' if k=='q' else 'integral_'+k]=float(means[-1]-means[0]) if k=='q' else float(np.trapezoid(means,dx=.25))
+                output['delta_q' if k=='q' else 'integral_'+k]=float(means[-1]-means[0]) if k=='q' else float(trapezoid(means,dx=.25))
             output['endpoint_minus_integrated_nodes']=output['delta_q']-output['integral_moving_nodes']
             output['endpoint_minus_integrated_center']=output['delta_q']-output['integral_moving_center']
             output['endpoint_minus_endpointFD_nodes']=output['delta_q']-output['integral_moving_nodes_endpointFD']

@@ -1,7 +1,7 @@
 {
   "quick_workflow": {
     "python": "3.12.14",
-    "dependency_file": "requirements.txt",
+    "dependency_file": "docs/legacy_v1/requirements.txt",
     "loads_fitted_pickle": false
   },
   "primary_recovery_models": {

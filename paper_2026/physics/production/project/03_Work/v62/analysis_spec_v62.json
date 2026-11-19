@@ -8,7 +8,7 @@
     "write_whitelist": [
       "${PROJECT}/03_Work/v62/framework"
     ],
-    "execution_gate": "Approved in root analysis_spec_v62.json before any new A statistics",
+    "execution_gate": "Specified before module A statistics",
     "prior_knowledge": "Existing v6/v4 results are known. This is a fixed incremental specification, not blind preregistration.",
     "inputs": [
       {
@@ -464,11 +464,7 @@
     "version": "v6.2_module_B_proposal_1",
     "status": "FROZEN_FOR_EXECUTION",
     "created_utc": "2026-10-10T16:50:18.432411+00:00",
-    "specification_read": {
-      "path": "Codex_FLTCCF_v62_integrated.md",
-      "all_lines_read": 577,
-      "scope": "module B and its integration with A/C and existing v6 process evidence"
-    },
+    "scope": "module B and its integration with A/C and existing v6 process evidence",
     "inputs": {
       "accepted_sp_track": {
         "path": "${LEGACY_PROJECT}/ERA5_environment_v1/run_20260920_215821/review_completion_v3_2/sources/track_sp_qc_v3_2.parquet",
@@ -1265,7 +1261,7 @@
       "one compact main geography/process figure plus detailed supplementary source tables",
       "source SHA/receipts/tests and caption-ready support definitions"
     ],
-    "execution_gate": "Root approval bound before any regional tabulations or new regional models.",
+    "execution_gate": "Specified before regional tabulation or model fitting.",
     "regional_factor_precision": "Fixed OOF conditional uncertainty; do not interpret regional mean predictions as a regional causal refit.",
     "extraction_execution": "Exact local pre-event missing requests only, reuse verified caches by geometry/time/variable; preserve all originals; bound worker count using current resources and record launched PID identity.",
     "figure_alias": "MF-J (new); existing MF-H is occupied by recurrence representation and MF-I is new stage environment."

@@ -1,0 +1,171 @@
+{
+  "files": {
+    "full_joint_year_sid_draws.npz": {
+      "source": "joint_year_sid_draws.npz",
+      "source_sha256": "c7da3173605ebbb5f2be2664674a7e3ff92f2cba33e235a71088d1953500ae7b",
+      "sha256": "c7da3173605ebbb5f2be2664674a7e3ff92f2cba33e235a71088d1953500ae7b"
+    },
+    "full_D_design.npz": {
+      "sources": {
+        "common_support_D.csv": "9390c60a389b5ade0fc34bac6ae1d20dd71850dbaaaa50e54fc01670e58abf47",
+        "design_D.csv": "b6c20fa18a9d9f63437b37c634f55d5ecbf058d7063091e81e4e8488bb2f5a89",
+        "entry_environment_duration_associations.csv": "ed0777819fe460f794464cd8aeb42e8be51dab3ce305e873c43d902299fd6050",
+        "entry_environment_trends.csv": "db12895d636d189f27a656c695744fb6c07923a59a1061e79f6798dd2868728f",
+        "individual_environment_trend_products.csv": "8539d36e5be195e8f9632af2e156ee9dc43ed1d0b334c084909dea3b3c833ae1"
+      },
+      "sha256": "5be64b415058208738bffdeb108f156042d7985affdaa57bb5dfd0f9b7232c95"
+    },
+    "full_D_target_draws.npz": {
+      "source": "full_D_target_draws.npz",
+      "source_sha256": "47e9fd7e0c49ef1870412c489340337f9c8b99c92ebae254a25730d6445dfa67",
+      "sha256": "47e9fd7e0c49ef1870412c489340337f9c8b99c92ebae254a25730d6445dfa67"
+    },
+    "full_D_original_values.npz": {
+      "source": "model_bootstrap_D.npz",
+      "source_sha256": "92a274debb6a731652e769462b32e8466b836b931f165efb0997b4736fd06eff",
+      "sha256": "f5bbaeb51f85a69b5f2ee50638879a9a81a12b12584e7c2b268c331d0203e068"
+    },
+    "full_E_design.npz": {
+      "sources": {
+        "common_support_E.csv": "c72765afec649ffcfbe777b0ffffdbbc58bb7eea7312b288f035b6f0649035ba",
+        "design_E.csv": "ff85113528b835a9aedf2caba6ae50d4b1da33d555332a61259d459bc9cdf0c2",
+        "entry_environment_duration_associations.csv": "ed0777819fe460f794464cd8aeb42e8be51dab3ce305e873c43d902299fd6050",
+        "entry_environment_trends.csv": "db12895d636d189f27a656c695744fb6c07923a59a1061e79f6798dd2868728f",
+        "individual_environment_trend_products.csv": "8539d36e5be195e8f9632af2e156ee9dc43ed1d0b334c084909dea3b3c833ae1"
+      },
+      "sha256": "d68d7c280060ff1ac1338ebdd9ce92d9f7942dd7af6a3dd6e5efd0c5a23eb4f1"
+    },
+    "full_E_target_draws.npz": {
+      "source": "full_E_target_draws.npz",
+      "source_sha256": "a815dab35ed80a07c238892bd263d9ac10025c13c1e28aa25be3523fb0c32e2f",
+      "sha256": "a815dab35ed80a07c238892bd263d9ac10025c13c1e28aa25be3523fb0c32e2f"
+    },
+    "full_E_original_values.npz": {
+      "source": "model_bootstrap_E.npz",
+      "source_sha256": "7630fa7e99570c3dd42dab2018767225911ea5d474f6e9be29915d4a79b7aa51",
+      "sha256": "6632f0375caf23fb695409208b8511b903a51770be4dbefdc5bf90e3def92d08"
+    },
+    "full_F_design.npz": {
+      "sources": {
+        "common_support_F.csv": "2bcc4ebfebf482de0dce744cb69812303a02e6e705a5766e05d0250b56f86788",
+        "design_F.csv": "46e5e1cc728ffdcf17093bc703c7eef6fe9db00f53ba3fbb41c3dd31ac5637d6",
+        "entry_environment_duration_associations.csv": "ed0777819fe460f794464cd8aeb42e8be51dab3ce305e873c43d902299fd6050",
+        "entry_environment_trends.csv": "db12895d636d189f27a656c695744fb6c07923a59a1061e79f6798dd2868728f",
+        "individual_environment_trend_products.csv": "8539d36e5be195e8f9632af2e156ee9dc43ed1d0b334c084909dea3b3c833ae1"
+      },
+      "sha256": "1e6345a356722e44ff01fb1767f00e2a82122f2ae7a30b4e21f8a45a87479aa0"
+    },
+    "full_F_target_draws.npz": {
+      "source": "full_F_target_draws.npz",
+      "source_sha256": "3bd1abb808a36f5710e7ed30592c4f4d306130034a7d97e8ddc1bbcb082085be",
+      "sha256": "3bd1abb808a36f5710e7ed30592c4f4d306130034a7d97e8ddc1bbcb082085be"
+    },
+    "full_F_original_values.npz": {
+      "source": "model_bootstrap_F.npz",
+      "source_sha256": "b0a91bb89e244ddbe60bc0bf17135292c0b23aedc6a2e3b7ddf893a627ab7e2e",
+      "sha256": "e4763860b56d855dc71c5675087390418d7cff7910e3178976a7520718f756e9"
+    },
+    "full_Dec_design.npz": {
+      "sources": {
+        "common_support_Res.csv": "bba4cb2b1f5d9db9f4ef6455956077afc00a9874b231fcef7a4523e8dddf218c",
+        "design_Res.csv": "0fbf72377760be552c56d674d1824e8755847fa89c49f15b2b272b7b20196015",
+        "entry_environment_duration_associations.csv": "ed0777819fe460f794464cd8aeb42e8be51dab3ce305e873c43d902299fd6050",
+        "entry_environment_trends.csv": "db12895d636d189f27a656c695744fb6c07923a59a1061e79f6798dd2868728f",
+        "individual_environment_trend_products.csv": "8539d36e5be195e8f9632af2e156ee9dc43ed1d0b334c084909dea3b3c833ae1"
+      },
+      "sha256": "8c2bb77c0736489b175c5a7dd1eefa052bf96fec15b8a815b5b4d45088d812b6"
+    },
+    "full_Dec_target_draws.npz": {
+      "source": "full_Dec_target_draws.npz",
+      "source_sha256": "adc91ac0178928789bad9c9c45aedb4f6675fb41430a2096b22de0175c2738a8",
+      "sha256": "adc91ac0178928789bad9c9c45aedb4f6675fb41430a2096b22de0175c2738a8"
+    },
+    "full_Dec_original_values.npz": {
+      "source": "model_bootstrap_Res.npz",
+      "source_sha256": "c02dc7efd64d15589e2154694552ebabdf75590ba046801442fd16df0ace692a",
+      "sha256": "087d36f0b8f094295ed2d2c7e9088aadfcc49e26777cfdc5314b67590fcbd681"
+    },
+    "recent_joint_year_sid_draws.npz": {
+      "source": "recent_joint_year_sid_draws.npz",
+      "source_sha256": "1b49e709d3c78b2385fbb146576efb2d09287f943694dd378599a28cb21598a9",
+      "sha256": "3ac93ce71db7b9b360933336c12fffa882172b0d56f6ad6dece8d12b22b42efe"
+    },
+    "recent_D_design.npz": {
+      "sources": {
+        "recent_support_D.csv": "6712e901350fe79ff9349beaeb8b228fcf95e66ef093eded80ead35835f1ce68",
+        "recent_design_D.csv": "52cc975feb38d1b859d8dc6e773a00d311dc119b833f05b336a5c4f139a746da"
+      },
+      "sha256": "36f749b52e41059673ccacb3e540563590333211097058b9973dbaac09b4ca5e"
+    },
+    "recent_D_target_draws.npz": {
+      "source": "recent_D_target_draws.npz",
+      "source_sha256": "7fc1bd290b0db8d75dda43af16e96d72c825b93fd31210c6a5f06921161e898a",
+      "sha256": "7fc1bd290b0db8d75dda43af16e96d72c825b93fd31210c6a5f06921161e898a"
+    },
+    "recent_D_original_values.npz": {
+      "source": "recent_model_bootstrap_D.npz",
+      "source_sha256": "694d54dcb5e14d2fe49b60d569487a8bf9fc155db164a5d44426e92da6b8f3d4",
+      "sha256": "f14b07f698d4487e9e34b8e21326b158b5bdbda3d0f3192f396ce21d5c8c9a90"
+    },
+    "recent_E_design.npz": {
+      "sources": {
+        "recent_support_E.csv": "2178c4d84af0c4b24a41e5d5e7e5ed5398eb5a55434d9398bfe2a33d192cad17",
+        "recent_design_E.csv": "17f08959d84b75db6cabe83515fb2420539186803c013c6710a21a3cda3dde34"
+      },
+      "sha256": "b3d9d6ff76deb2dea8fab19abcf2c8aca5fb3b3f140476fb8cb6178492bc212c"
+    },
+    "recent_E_target_draws.npz": {
+      "source": "recent_E_target_draws.npz",
+      "source_sha256": "0ea685202b5fbc119eca13958bc3c1c27acc6c908da968163116efaff466d125",
+      "sha256": "0ea685202b5fbc119eca13958bc3c1c27acc6c908da968163116efaff466d125"
+    },
+    "recent_E_original_values.npz": {
+      "source": "recent_model_bootstrap_E.npz",
+      "source_sha256": "032931920030c8f6d9845dcc36faebeca0dd608eaa3a3efd8f11c2c1d6f1ce5f",
+      "sha256": "f27ff339aeb52beee0201a065230cd0d115c401e66347d353112649b6259bfbb"
+    },
+    "recent_F_design.npz": {
+      "sources": {
+        "recent_support_F.csv": "e1c7802cbf039fa8d44512db0560328c04e63772794cde88da9f28feb3a75f2c",
+        "recent_design_F.csv": "2a7aefd86aec6980841c1aaae067bb7d2f878291356de80f7c0cacab06bcf058"
+      },
+      "sha256": "95a61a12837e96152c476a4c0ada81feb67bbfc77ba80164b8bee5f4686bb477"
+    },
+    "recent_F_target_draws.npz": {
+      "source": "recent_F_target_draws.npz",
+      "source_sha256": "da41c1aa6737bf606b1da7b6536d96ce79235a6067501b0806b99f103eb85273",
+      "sha256": "da41c1aa6737bf606b1da7b6536d96ce79235a6067501b0806b99f103eb85273"
+    },
+    "recent_F_original_values.npz": {
+      "source": "recent_model_bootstrap_F.npz",
+      "source_sha256": "b2de0b58e697e7824d663d590f19863cfe8baf990015126c76a16f6ab0a1dd12",
+      "sha256": "f29cfc6e39a4f278abc2ee14054528e93de39bd94c8d81f6aade7ee47e1292ce"
+    },
+    "recent_Dec_design.npz": {
+      "sources": {
+        "recent_support_Res.csv": "980ed628078e9f5bed63beb25c63990ff868aa30748a74fde11b6ca860efd9d9",
+        "recent_design_Res.csv": "29da84c09066a3c75a0f8e60c69517cacc8fa0d99ec76bce15dc348c8728aad2"
+      },
+      "sha256": "b58a378b6b676bcc97436cda69b78eb547b323b7612e6732dcf8781ef350c993"
+    },
+    "recent_Dec_target_draws.npz": {
+      "source": "recent_Dec_target_draws.npz",
+      "source_sha256": "aa7900cbcf450b118e3b41d7124305fb4996409f436706d03067c7e3fd9c8ab2",
+      "sha256": "aa7900cbcf450b118e3b41d7124305fb4996409f436706d03067c7e3fd9c8ab2"
+    },
+    "recent_Dec_original_values.npz": {
+      "source": "recent_model_bootstrap_Res.npz",
+      "source_sha256": "40fffba1b2331da0fb5ccc220eb2de2f7ae02854f10e2002ba25626b08896ad2",
+      "sha256": "736de0bb38788d20b914fee31f2a8e0d498bfa856d78b62838b3b17b6d8cca7e"
+    },
+    "frozen_statistics.csv": {
+      "sources": {
+        "trend_summary.csv": "4985ae3efd8ca5232fb53dc194dd939e3fe8570b7c2043912847515507fc957b",
+        "S16c_S16d_S16i_latest.csv": "191110b2f6b5f535f0fd021f1421b329f743fd5a6399dc4464a56e7f030b31bf",
+        "internal_existing_environment_products.csv": "a9800fcff15592a172110f1733419ac834cc46f1dd674a6b0ea11ebe926459c1"
+      },
+      "sha256": "95088778dda9c964453b3eb50c3f7e4ad668ae856c61d6ba5d63fecfb9168f3d"
+    }
+  },
+  "contrast_solver_source_sha256": "7c78fe5398c75c10ed7700cd57fda3052a55ed790db654e9698024ddc1b0a3ec"
+}

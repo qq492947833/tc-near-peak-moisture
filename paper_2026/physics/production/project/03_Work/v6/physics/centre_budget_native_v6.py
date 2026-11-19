@@ -1,3 +1,4 @@
+from scipy.integrate import trapezoid
 from process_v6 import *
 from rh_native_v6 import geometry,loadz,checked,means
 from types import SimpleNamespace
@@ -43,7 +44,7 @@ def main():
   cols=pd.MultiIndex.from_product([['internal','final'],['actual_track','fixed_t0']]);a=g.pivot(index='lag_h',columns=['event_class','center_kind'],values='value').reindex(index=range(-24,25,6),columns=cols).to_numpy(copy=True).reshape(9,2,2);common=np.isfinite(a).all((1,2));a[~common]=np.nan
   for j,policy in enumerate(['all_along','all_fixed']):
    y=a[:,:,j]
-   vals={'pre_mean':np.nanmean(y[:4],0) if common[:4].sum()>=3 else [np.nan,np.nan],'integral_0_24':np.trapezoid(y[4:],dx=.25,axis=0) if common[4:].all() else [np.nan,np.nan]}
+   vals={'pre_mean':np.nanmean(y[:4],0) if common[:4].sum()>=3 else [np.nan,np.nan],'integral_0_24':trapezoid(y[4:],dx=.25,axis=0) if common[4:].all() else [np.nan,np.nan]}
    for name,v in vals.items():pairs.append(dict(sid=sid,field=field,policy=policy,estimand=name,internal=v[0],final=v[1],value=v[0]-v[1],units='g kg-1' if name.startswith('integral') else 'g kg-1 day-1'))
  pd.DataFrame(pairs).to_csv(O/'centre_budget_SID_pairs.csv',index=False);tab,piv,d,w=summary_table(pairs,['field','policy','estimand','units']);tab.to_csv(O/'centre_budget_estimates.csv',index=False);np.savez_compressed(O/'centre_budget_bootstrap.npz',sid=piv.index.to_numpy(str),targets=np.array([str(c) for c in piv.columns]),draws=d,weights=w)
  js(O/'centre_budget_receipt.json',{'status':'COMPLETE','request_rows':len(meta),'diagnostic_rows':len(raw),'missing_cache':missing,'raw_reads':0,'seconds':time.perf_counter()-t,'max_budget_identity_error':max(errors),'common_support':'all nine terms share finite native cells; both centres and events share SID-lag support; contemporaneous actual velocity standardizes storm-relative terms','integration':'five6h instantaneous samples, dx=.25day, rate integral g/kg'})

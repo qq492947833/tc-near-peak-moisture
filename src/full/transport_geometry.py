@@ -1,4 +1,5 @@
 """Spherical moving-control-volume geometry. SI units throughout."""
+from scipy.integrate import trapezoid
 import numpy as np
 A=6371000.0
 G0=9.80665
@@ -62,7 +63,7 @@ def column_integral(values,p_pa):
     if p_pa.ndim!=1 or len(p_pa)<2 or len(values)!=len(p_pa) or not np.isfinite(p_pa).all() or not np.all(np.diff(p_pa)>0):
         raise ValueError('Pressure must be strictly increasing with matching first data axis')
     if np.max(p_pa)<2000:raise ValueError('Pressure must be in Pa, not hPa')
-    return np.trapezoid(values,p_pa,axis=0)
+    return trapezoid(values,p_pa,axis=0)
 
 def vertical_exchange(q_top,q_bottom,omega_top,omega_bottom,da):
     return np.sum((q_top*omega_top-q_bottom*omega_bottom)*da)/G0

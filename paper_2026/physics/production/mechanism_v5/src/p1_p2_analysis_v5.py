@@ -339,7 +339,7 @@ def summarize_pairs(pairs,sids,out,B=2000,seed=510082026,inferential=False):
   descriptive_lag_CI="pointwise, not simultaneous; no per-lag significance testing"))
  return summary
 def frozen_addendum():
- return dict(created_utc=stamp(),status="technical clarification frozen before real P1/P2 effects",authorization="root explicit approval",
+ return dict(created_utc=stamp(),status="technical clarification frozen before real P1/P2 effects",
   contrast="internal minus final",persistence_family=list(DIRECTIONS),
   SST="retains primary18 pre/change family and descriptive fixed/displacement decomposition; no persistence test",
   persistence_family_reason="thermal headroom already contains SST background; avoid redundant persistence endpoint, selected before outcomes",

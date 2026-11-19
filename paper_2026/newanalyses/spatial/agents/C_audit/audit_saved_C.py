@@ -8,7 +8,7 @@ from release_paths import ADDENDUM, UNIFIED, PACKAGE, bootstrap
 from pathlib import Path
 import runpy,json,hashlib,shutil,os,sys,math
 from datetime import datetime,timezone
-OUT=Path(__file__).resolve().parent
+OUT=Path(os.environ.get('FLTCCF_DURATION_AUDIT_OUT', Path(__file__).resolve().parent)).resolve()
 bootstrap(OUT/'temp')
 import numpy as np,pandas as pd
 R1=PACKAGE/'history';C=R1/'agents/C'
@@ -67,6 +67,7 @@ checkpoint('source_hashes_and_original_precision_tables')
 bank=np.load(source(C/'joint_year_sid_draws.npz'));counts=bank['counts'];ym=bank['year_multiplicity'];sid=bank['sid'];sidix={s:i for i,s in enumerate(sid)};sidsha=hashlib.sha256('\n'.join(sid).encode()).hexdigest();sig=[]
 for b in range(len(counts)):sig.append(hashlib.sha256(counts[b].tobytes()+ym[b].tobytes()+sidsha.encode()).hexdigest())
 save(pd.DataFrame(dict(draw=np.arange(len(sig)),joint_bank_draw_sha256=sig,sid_order_sha256=sidsha)),'joint_draw_identity.csv')
+frozen=ctab('duration_targets/frozen_statistics.csv'); frozen=frozen.loc[frozen.period.eq('full')].set_index(['stage','target'])
 summaries=[];pairrows=[];drawrows=[];decrows=[];banks={}
 for st in STAGES:
  g=ctab('common_support_'+st+'.csv');d=ctab('design_'+st+'.csv');npz=np.load(source(C/f'model_bootstrap_{st}.npz'));banks[st]=npz;arr=npz['trends'];names=npz['names'].tolist();yc=g.genesis_year.to_numpy(int)-1982;ix=np.array([sidix[s]for s in g.sid]);nper=np.bincount(yc,minlength=42);weights=d.weight.to_numpy();ss=support[support.stage.eq(st)];status=statuses[statuses.stage.eq(st)].set_index('draw').reindex(range(2000));finite=np.all(np.isfinite(arr[:,:,0]),axis=1)
@@ -76,23 +77,35 @@ for st in STAGES:
  check('successful_status_matches_finite_bank_'+st,np.array_equal(finite,status.status.eq('ok').to_numpy()))
  cc=counts[:,ix].astype(float);wsum=np.column_stack([cc[:,yc==y].sum(axis=1)for y in range(42)]);unexpected=(ym>0)&(wsum==0);check('sampled_years_have_stage_support_'+st,not unexpected.any())
  check('all_targets_same_success_mask_'+st,all(np.array_equal(np.isfinite(arr[:,j,0]),finite)for j in range(4)))
+ stage='Dec' if st=='Res' else st
+ with np.load(source(C/'duration_targets'/f'full_{stage}_target_draws.npz')) as reviewed:
+  check('original_success_mask_'+st,np.array_equal(finite,reviewed['original_success']))
+  final=reviewed['trends'];aux=reviewed['auxiliary'];est=reviewed['estimable']
+  check('estimable_draw_contract_'+st,np.array_equal(est,np.isfinite(final[:,:,0])))
  for j,target in enumerate(TARGETS):
-  row=trends[(trends.stage==st)&(trends.target==target)].iloc[0];audit_interval(row,arr[:,j,0]);a=ann[(ann.stage==st)&(ann.target==target)].sort_values('genesis_year');check('saved_hour_predictions_slope_'+st+'_'+target,abs(slope(a.mean_h)-row.slope)<1e-11)
- for j,group in enumerate(['basin_season','entry_state','entry_environment']):audit_interval(contrib[(contrib.stage==st)&(contrib.removed_distribution==group)].iloc[0],arr[:,j,0]-arr[:,j+1,0])
+  row=trends[(trends.stage==st)&(trends.target==target)].iloc[0];audit_interval(row,final[:,j,0]);a=ann[(ann.stage==st)&(ann.target==target)].sort_values('genesis_year');check('saved_hour_predictions_slope_'+st+'_'+target,abs(slope(a.mean_h)-row.slope)<1e-11)
+ for j,group in enumerate(['basin_season','entry_state','entry_environment']):audit_interval(contrib[(contrib.stage==st)&(contrib.removed_distribution==group)].iloc[0],final[:,j+4,0])
  for ei,v in enumerate(ENV):
-  audit_interval(envhist[(envhist.stage==st)&(envhist.variable==v)].iloc[0],npz['environment_trends'][:,ei]);k=names.index(v);audit_interval(assoc[(assoc.stage==st)&(assoc.variable==v)].iloc[0],npz['coefficients'][:,k,0]/g[v].std(ddof=0))
+  audit_interval(envhist[(envhist.stage==st)&(envhist.variable==v)].iloc[0],aux[:,ei+3]);audit_interval(assoc[(assoc.stage==st)&(assoc.variable==v)].iloc[0],aux[:,ei])
  grow=gamma[gamma.stage.eq(st)].iloc[0];gd=np.load(source(C/f'gamma_duration_draws_{st}.npy'));audit_interval(grow,gd);gs=gstatus[gstatus.stage.eq(st)].set_index('draw').reindex(range(2000));check('Gamma_status_exact_'+st,np.array_equal(np.isfinite(gd),gs.status.eq('ok').to_numpy()))
- summaries.append(dict(stage='Dec'if st=='Res'else st,source_stage=st,full_cohort_n=2340,complete_case_n=int(ss.complete.sum()),common_support_n=len(g),n_years=42,year_min_n=int(nper.min()),year_max_n=int(nper.max()),weight_sum=float(weights.sum()),attempted_draws=2000,successful_draws=int(finite.sum()),failed_draws=int((~finite).sum()),Gamma_successful_draws=int(np.isfinite(gd).sum()),Gamma_failed_draws=int((~np.isfinite(gd)).sum()),reference='pooled same-support empirical distribution with each year total weight one',six_field_entry_qc_retained=True))
+ summaries.append(dict(stage='Dec'if st=='Res'else st,source_stage=st,full_cohort_n=2340,complete_case_n=int(ss.complete.sum()),common_support_n=len(g),n_years=42,year_min_n=int(nper.min()),year_max_n=int(nper.max()),weight_sum=float(weights.sum()),attempted_draws=2000,full_rank_successful_fits=int(finite.sum()),rank_deficient_fits=int((~finite).sum()),estimable_all_four_trends=int(est[:,:4].all(axis=1).sum()),Gamma_successful_draws=int(np.isfinite(gd).sum()),Gamma_failed_draws=int((~np.isfinite(gd)).sum()),reference='pooled same-support empirical distribution with each year total weight one',six_field_entry_qc_retained=True))
  for a,b,label in [(1,3,'fixed_basin_season_minus_fully_fixed'),(2,3,'fixed_basin_season_state_minus_fully_fixed_environment_only')]:
-  aa=trends[(trends.stage==st)&(trends.target==TARGETS[a])].iloc[0];bb=trends[(trends.stage==st)&(trends.target==TARGETS[b])].iloc[0];delta=arr[:,a,0]-arr[:,b,0];lo,hi=ci(delta);old=contrib[(contrib.stage==st)&(contrib.removed_distribution=='entry_environment')].iloc[0]if a==2 else None
-  pairrows.append(dict(stage='Dec'if st=='Res'else st,source_stage=st,comparison=label,n_sid=len(g),unit='h/decade',basic_target=TARGETS[a],fully_fixed_target=TARGETS[b],basic_slope=aa.slope,basic_ci_low=aa.ci_low,basic_ci_high=aa.ci_high,fully_fixed_slope=bb.slope,fully_fixed_ci_low=bb.ci_low,fully_fixed_ci_high=bb.ci_high,paired_difference=aa.slope-bb.slope,paired_ci_low=lo,paired_ci_high=hi,attempted=2000,valid_draws=int(finite.sum()),p_boot_existing=np.nan if old is None else old.p_boot,q_BH_existing=np.nan if old is None else old.q_BH_new_family,family='descriptive saved-draw aggregation; no new p/q'if old is None else old.family,derivation='paired within original draw identity; no refit'))
+  aa=trends[(trends.stage==st)&(trends.target==TARGETS[a])].iloc[0];bb=trends[(trends.stage==st)&(trends.target==TARGETS[b])].iloc[0];index=7 if a==1 else 6;target='basic_minus_fully_fixed' if a==1 else 'fixed_state_minus_fixed_environment';delta=final[:,index,0]; ref=frozen.loc[(stage,target)]
+  np.testing.assert_allclose(delta,final[:,a,0]-final[:,b,0],rtol=1e-10,atol=1e-11)
+  lo,hi=ci(delta);np.testing.assert_allclose([lo,hi],[ref.ci_low,ref.ci_high],rtol=1e-13,atol=1e-13)
+  check('paired_target_count_'+stage+target,int(est[:,index].sum())==ref.valid_draws)
+  np.testing.assert_allclose(aa.slope-bb.slope,ref.estimate,atol=1e-11,rtol=1e-11)
+  old=contrib[(contrib.stage==st)&(contrib.removed_distribution=='entry_environment')].iloc[0]if a==2 else None
+  pairrows.append(dict(stage='Dec'if st=='Res'else st,source_stage=st,comparison=label,n_sid=len(g),unit='h/decade',basic_target=TARGETS[a],fully_fixed_target=TARGETS[b],basic_slope=aa.slope,basic_ci_low=aa.ci_low,basic_ci_high=aa.ci_high,fully_fixed_slope=bb.slope,fully_fixed_ci_low=bb.ci_low,fully_fixed_ci_high=bb.ci_high,paired_difference=ref.estimate,paired_ci_low=lo,paired_ci_high=hi,attempted=2000,valid_draws=int(est[:,index].sum()),p_boot_existing=np.nan if old is None else old.p_boot,q_BH_existing=np.nan if old is None else old.q_BH_new_family,family='descriptive saved-draw aggregation; no new p/q'if old is None else old.family,derivation='paired within original draw identity; no refit'))
  for b in range(2000):
-  drawrows.append(dict(stage='Dec'if st=='Res'else st,draw=b,joint_bank_draw_sha256=sig[b],successful=bool(finite[b]),source_status=status.status.iloc[b],same_SID_count_vector=True,same_year_weight_vector=True,basic_composition_slope=arr[b,1,0],state_fixed_slope=arr[b,2,0],fully_fixed_slope=arr[b,3,0],basic_minus_fully_fixed=arr[b,1,0]-arr[b,3,0],state_fixed_minus_fully_fixed=arr[b,2,0]-arr[b,3,0]))
+  drawrows.append(dict(stage='Dec'if st=='Res'else st,draw=b,joint_bank_draw_sha256=sig[b],full_rank_fit=bool(finite[b]),all_four_targets_estimable=bool(est[b,:4].all()),source_status=status.status.iloc[b],same_SID_count_vector=True,same_year_weight_vector=True,basic_composition_slope=final[b,1,0],state_fixed_slope=final[b,2,0],fully_fixed_slope=final[b,3,0],basic_minus_fully_fixed=final[b,7,0],state_fixed_minus_fully_fixed=final[b,6,0]))
  if st=='Res':
   ds=ctab('duration_sensitivities.csv');ds=ds[(ds.stage==st)&(ds.scope=='effective_6h_wind_coverage_same_support')]
   for j,target in enumerate(TARGETS):
    er=trends[(trends.stage==st)&(trends.target==target)].iloc[0];cr=ds[ds.target==target].iloc[0];audit_interval(cr,arr[:,j,1]);lo,hi=ci(arr[:,j,0]-arr[:,j,1]);decrows.append(dict(stage='Dec',target=target,n_sid=len(g),elapsed_slope=er.slope,covered_slope=cr.slope,elapsed_minus_covered=er.slope-cr.slope,paired_ci_low=lo,paired_ci_high=hi,valid_draws=int(finite.sum()),unit='h/decade',family='descriptive saved-draw reaggregation; no new p/q'))
 save(pd.DataFrame(summaries),'stage_support_and_attempts.csv');save(pd.DataFrame(pairrows),'same_support_paired_trend_comparisons.csv');save(pd.DataFrame(drawrows),'paired_draw_identity_audit.csv');save(pd.DataFrame(decrows),'Dec_common_support_elapsed_minus_covered.csv');checkpoint('saved_draw_identity_intervals_and_pairing')
+if '--paired-only' in sys.argv:
+ print('Verified paired duration trends on original indexed draws.');sys.exit(0)
 
 fs=ctab('F_components_sid.csv');fa=ctab('F_components_annual.csv');fc=ctab('F_components_original_N1_replayed.csv');ff=read('agents/methods/F_forward_completeness.csv');first=read('agents/A/first_departure_reference.csv');ba=read('agents/methods/frozen_sid_boundary_audit.csv');missing=read('agents/methods/missing_wind_records.csv')
 check('F_2340_unique_sid',len(fs)==fs.sid.nunique()==2340)

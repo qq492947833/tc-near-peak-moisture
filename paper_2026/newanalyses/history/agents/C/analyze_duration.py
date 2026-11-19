@@ -1,3 +1,9 @@
+# The command-line route replays the accepted targets from the frozen draw banks.
+if __name__ == "__main__":
+    from replay_duration import main as replay_main
+    replay_main()
+    raise SystemExit(0)
+
 # Public path adapter; the scientific functions below retain their original implementation.
 import sys as _sys
 from pathlib import Path as _Path
@@ -137,4 +143,3 @@ def main():
  info=dict(status='C_STANDARDIZATION_ESTIMATED',elapsed_seconds=time.time()-t,models=audit,bootstrap=dict(B=B,seed=SEED,block_years=3,levels='joint circular genesis-year blocks then whole SIDs within selected year',all_stage_same_draw_bank=True,overlap='fixed four-period common marginal 1st--99th percentile intersection',failed_draws='reported; no replacement'),family_policy='Original seven primary and 30 H4 tests untouched; four separate new families of 16,12,12,12 tests',scientific_scope='Associational standardization in observed support; no causal mediation or explanation percentage',runtime=sys.version)
  (R/'MODEL_SPEC_AND_AUDIT.json').write_text(json.dumps(info,indent=2),encoding='utf8');(R/'CHECKPOINT.json').write_text(json.dumps(info,indent=2),encoding='utf8')
  print(pd.DataFrame(summaries).to_string(index=False));print(pd.DataFrame(envtrend).to_string(index=False));print(pd.DataFrame(coefs).to_string(index=False))
-if __name__=='__main__':main()

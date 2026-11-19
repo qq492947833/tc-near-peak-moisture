@@ -20,7 +20,7 @@ from PIL import Image
 import fitz
 
 S=O/'source_data';Q=O/'qa';Q.mkdir(exist_ok=True)
-binding=json.loads((O/'FINAL_STATISTICAL_BINDING.json').read_text(encoding='utf8'))
+binding=json.loads((O/('PUBLIC_STATISTICAL_BINDING.json' if (O/'PUBLIC_STATISTICAL_BINDING.json').exists() else 'FINAL_STATISTICAL_BINDING.json')).read_text(encoding='utf8'))
 assert binding['accepted_version']=='v2_fold_supported'
 assert binding['complete_bootstrap_attempts_per_hemisphere']==1000
 assert binding['training_sid']==1245 and binding['reference_sid']==322

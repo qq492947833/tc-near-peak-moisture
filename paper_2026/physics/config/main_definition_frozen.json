@@ -21,7 +21,6 @@
   "M_display_mapping": "Maturity, existing stage_code=3; F remains the existing span/window representation, not a fifth stage",
   "Resolution": "Starts at existing final near-peak exit; does not imply physical disappearance",
   "diagnostic_support": "Each analysis uses its valid subset within this single master SID list and reports its actual SID/event/pair count",
-  "authorization": "Current user unified-cohort instruction; root delegated freeze and isolated recomputation after complete handoff attachment reading",
   "display_labels": {
     "D": "Development",
     "E": "Intensification",

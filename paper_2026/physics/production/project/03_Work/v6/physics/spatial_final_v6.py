@@ -1,3 +1,4 @@
+from scipy.integrate import trapezoid
 from _release_paths import release_path as _release_path
 import os
 for k in ('OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','OMP_NUM_THREADS','NUMEXPR_NUM_THREADS'):os.environ[k]='1'
@@ -26,7 +27,7 @@ def centre():
    y=a[:,:,0] if policy=='all_along' else a[:,:,1] if policy=='all_fixed' else np.concatenate([a[:4,:,1],a[4:,:,0]])
    values={};values['pre_mean']=np.nanmean(y[:4],0) if common[:4].sum()>=3 else np.full(2,np.nan)
    values['change_0_24']=y[-1]-y[4] if common[[4,8]].all() else np.full(2,np.nan)
-   values['integral_0_24']=np.trapezoid(y[4:],dx=6,axis=0) if common[4:].all() else np.full(2,np.nan)
+   values['integral_0_24']=trapezoid(y[4:],dx=6,axis=0) if common[4:].all() else np.full(2,np.nan)
    if common[:4].sum()>=3 and common[4:].all():
     direction=-1 if var in ('midRH','PI_headroom','SST') else 1
     bad=direction*(y[4:]-values['pre_mean'])>0

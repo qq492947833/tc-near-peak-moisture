@@ -44,11 +44,12 @@ def main():
  f=read(c/'F_components_sid.csv');ck('F=R+L+B for every SID',len(f)==2340 and np.array_equal(f.T_R_h+f.T_L_h+f.T_B_h,f.T_F_h))
  for st in ['D','E','F','Res']:
   z=ct[ct.stage.eq(st)]
-  bank=np.load(c/f'model_bootstrap_{st}.npz');draws=bank['trends'][:,:,0]
+  label='Dec' if st=='Res' else st
+  bank=np.load(c/'duration_targets'/f'full_{label}_target_draws.npz');draws=bank['trends'][:,:4,0]
   for j,row in enumerate(z.itertuples()):
    d=draws[:,j];d=d[np.isfinite(d)];lo,hi=np.percentile(d,[2.5,97.5])
    ck('C interval from saved draws '+st+' '+row.target,len(d)==row.valid_draws and np.allclose([lo,hi],[row.ci_low,row.ci_high],rtol=0,atol=1e-11))
- lat=R/'spatial/agents/latitude_risk/v2_fold_supported';tr=read(lat/'training_inputs.csv');rr=read(lat/'frozen_analysis_inputs.csv');sr=json.loads((lat/'SUPPORT_RECEIPT.json').read_text())
+ lat=R/'spatial/agents/latitude_risk/v2_fold_supported';tr=read(lat/'training_inputs.csv');rr=read(lat/'frozen_analysis_inputs.csv');sr=json.loads((lat/('PUBLIC_SUPPORT_BINDING.json' if (lat/'PUBLIC_SUPPORT_BINDING.json').exists() else 'SUPPORT_RECEIPT.json')).read_text())
  ck('latitude training and fixed target support',len(tr)==tr.sid.nunique()==1245 and len(rr)==rr.sid.nunique()==322 and tr.target_reference.sum()==322 and set(rr.sid)==set(tr.loc[tr.target_reference,'sid']))
  ck('inherited five SID folds',set(tr.fold)==set(range(5)))
  for name,key in [('FROZEN_CONFIG.json','configuration_sha256'),('training_inputs.csv','training_inputs_sha256'),('frozen_analysis_inputs.csv','support_inputs_sha256')]:ck('latitude frozen hash '+name,hashlib.sha256((lat/name).read_bytes()).hexdigest()==sr[key])

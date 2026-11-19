@@ -1,5 +1,20 @@
 # Validation scope for v2.1.0
 
+## v2.1.1 focused checks
+
+The original draw replay was checked against 84 frozen duration statistics
+(924 field comparisons). Confidence bounds, P and q values, and draw counts
+agreed; the maximum absolute point-estimate difference was below 4.0e-13.
+The full-period E stage retained 1,915 full-rank fits and 2,000 estimable
+additive trend targets. The original Gamma sensitivity has its own support.
+
+The 12 expected MWT rate integrals matched the saved event exactly. Five
+negative fixtures exercised empty or mismatched event sets, missing metrics,
+duplicate keys and nonfinite values. The affected transport example agreed
+across NumPy 1.26.4 and 2.3.5 on 1,989 paired rows and two summary tables.
+The scientific discretization qualifications of the previous release still apply.
+
+
 The vertical-extension package was checked against the accepted sources and
 saved results. No population ERA5/MWT extraction, model refit or new bootstrap
 was performed for this release.

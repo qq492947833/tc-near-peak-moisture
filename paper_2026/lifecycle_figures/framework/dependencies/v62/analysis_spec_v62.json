@@ -3,16 +3,12 @@
     "version": "v6.2_module_B_proposal_1",
     "status": "FROZEN_FOR_EXECUTION",
     "created_utc": "2026-10-10T16:50:18.432411+00:00",
-    "specification_read": {
-      "path": "Codex_FLTCCF_v62_integrated.md",
-      "all_lines_read": 577,
-      "scope": "module B and its integration with A/C and existing v6 process evidence"
-    },
+    "scope": "module B and its integration with A/C and existing v6 process evidence",
     "authority": {
       "accepted": "review_completion_v3_2/e1/new_available plus sources/track_sp_qc_v3_2.parquet; confirmed by SP canonical validation, E1 COMPLETE and final acceptance receipt; not filename/mtime alone",
       "original_e1_implementation_hash_matches_execution_receipt": true,
       "historical_old_original_and_old_common": "reference only; do not mix with SP-QC main estimates",
-      "v6_release": "valid provenance/reproducibility index; full accepted E1 source remains the bound I-drive files",
+      "v6_release": "valid provenance/reproducibility index; full accepted E1 source remains the files identified by the source hashes",
       "catalog_live_hash_comparisons": [
         {
           "input": "accepted_sp_track",

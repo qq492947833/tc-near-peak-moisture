@@ -29,7 +29,7 @@ def main():
     for file in ROOT.rglob('*.py'):
         ast.parse(file.read_text(encoding='utf-8-sig'))
         check('python_syntax',True,file=file.relative_to(ROOT).as_posix())
-        check('portable_code',not re.search(r'[CHI]:[/\\]|Users[/\\]TBYC',file.read_text(encoding='utf-8-sig')),file=file.relative_to(ROOT).as_posix())
+        check('portable_code',not re.search(r'(?i)\b[A-Z]:[/\\]|(?<!\w)Users[/\\][\w.-]+',file.read_text(encoding='utf-8-sig')),file=file.relative_to(ROOT).as_posix())
     for file in ROOT.glob('figures/*/inputs.json'):
         for key,item in json.loads(file.read_text(encoding='utf-8-sig')).items():
             p=file.parent/item['relative_path']
