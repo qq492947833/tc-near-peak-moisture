@@ -5,11 +5,15 @@ tropical-cyclone storm identifiers (SIDs). The current release covers lifecycle
 classification and comparisons, environmental evolution, paired temporary
 departure and decay conditions, moisture transport, multiscale energy,
 reintensification and recovery, spatial contrasts, and historical duration changes.
-The figure catalogue follows the current **8 main and 43 supplementary figures**.
+The study has **8 main and 43 supplementary figures**. The historical catalogue and the current five-figure update map are supplied separately.
 
-**Stable version:** [v2.1.1](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.1)
-(19 November 2026). Older tags remain unchanged. This repository has no assigned
+**Stable version:** [v2.1.2](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.2)
+(20 November 2026). Older tags remain unchanged. This repository has no assigned
 paper DOI or software-archive DOI.
+
+## Figure updates
+
+The [v2.1.2 figure archive](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.2/tc-near-peak-moisture-v2.1.2-figures.zip) contains revised Figures 5, 6, 8, S25 and S26 at the archive root, with native source panels under `source_assets/`. See [the vector-scene reproduction command](paper_2026/lifecycle_figures/figures/Figure_08/REPRODUCE_FIGURE_08.md) and [the supplementary panel assembly command](paper_2026/physics/vertical_extension/plots/README.md). See the [native panel reordering commands](paper_2026/lifecycle_figures/layout/scripts/REPRODUCE_PANEL_ORDER.md). The [figure identity table](figure_updates.csv) lists the revised files separately from the historical catalogue.
 
 ## Duration statistics from the original draws
 
@@ -35,8 +39,7 @@ operator, reference state, event definitions and quantity-specific support.
 
 The new [vertical-extension package](paper_2026/physics/vertical_extension/README.md)
 contains scientific entry points, configurable input locations, full-precision
-summary tables and the figure scripts. The integrated Figure 6b and new
-Supplementary Figure 29 use identical spatial/temporal support: 122 SIDs and 132
+summary tables and the figure scripts. In v2.1.0, the integrated Figure 6b and Supplementary Figure 29 used identical spatial/temporal support: 122 SIDs and 132
 actual reintensification events, 0–300 km, 500–850 hPa and the nominal 2–16-day window.
 Their estimates are equal-SID averages of event integrals, in J kg⁻¹, with saved
 2,000-draw percentile intervals. The new high-resolution figures and unchanged
@@ -53,7 +56,7 @@ Use Python 3.11 for the current scientific validation environment. Work in a
 writable copy and choose local paths for inputs, outputs and caches.
 
 ```sh
-git -c core.autocrlf=false clone --branch v2.1.1 https://github.com/qq492947833/tc-near-peak-moisture.git
+git -c core.autocrlf=false clone --branch v2.1.2 https://github.com/qq492947833/tc-near-peak-moisture.git
 cd tc-near-peak-moisture
 python -m venv .venv
 # Activate .venv using the command appropriate for your operating system.
@@ -176,7 +179,7 @@ and the distinction between deterministic reaggregation, local physical checks,
 and unexecuted full refits. This is not a claim that the complete global
 archive-to-manuscript workflow was rerun for packaging.
 
-Cite the fixed [v2.1.1 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.1)
+Cite the fixed [v2.1.2 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.2)
 and its commit shown on that page. [CHANGELOG.md](CHANGELOG.md) describes changes
 from the earlier code release. No repository-wide licence has been added or
 changed; existing third-party licences and attribution are preserved in

@@ -13,7 +13,7 @@ python paper_2026/physics/vertical_extension/plots/plot_mwt_integrals.py \
   --output runs/vertical_figures
 ```
 
-This generates the standalone three-panel comparison, Supplementary Figure 29
+The v2.1.0 renderer generates the standalone three-panel comparison, Supplementary Figure 29
 and the Figure 6b tile, each directly at 900 dpi. Editable SVG and PDF exports
 are also produced. The three-panel comparison presents KE canonical transfer,
 dry-APE canonical transfer and selected KE terms. Supplementary Figure 29
@@ -49,3 +49,11 @@ Dependencies are NumPy, pandas, Matplotlib and Pillow. DejaVu Sans is the
 specified plotting font. Plotting geometry, colours, marker sizes, limits and
 tick locations are encoded in `plot_mwt_integrals.py`. Asset hashes and the
 public source-to-figure relationships are recorded in `SOURCE_MANIFEST.json`.
+
+## Current supplementary layout
+
+Download the [v2.1.0 MWT figure bundle](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.0/tc-near-peak-moisture-v2.1.0-mwt-figures.zip) and extract it into `prior_assets/`. From the repository root run:
+
+    python paper_2026/physics/vertical_extension/plots/compose_integrated_transfer_panels.py --source-dir prior_assets/figures --statistics paper_2026/physics/vertical_extension/plots/plot_source.csv --out runs/mwt_s26
+
+The command copies the native three-panel raster in its original order: KE transfer, dry APE transfer, then three selected KE terms. The output is Figure_S26.png, Figure_S26.tiff and Figure_S26_source.csv. The nine rows are time integrals in J kg⁻¹.

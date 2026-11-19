@@ -1,0 +1,27 @@
+[
+  {
+    "name": "energy_primary.csv",
+    "bytes": 2053,
+    "sha256": "7230ab0e22ccdb0b15532e7be7043f84a4537773bd85b6ee9eb4dd04172a41a1"
+  },
+  {
+    "name": "ascent_energy.csv",
+    "bytes": 92507,
+    "sha256": "42ba1a14ab80ca7e0ccded3754dcdba9db126eca588664e8f7aeb82272a1e06a"
+  },
+  {
+    "name": "ascent_environment.csv",
+    "bytes": 41959,
+    "sha256": "2dc99a41fa170cde756f87663db99679ffb203f2f59a95de512657f81c8a535b"
+  },
+  {
+    "name": "departure_environment.csv",
+    "bytes": 5810,
+    "sha256": "311e12e8ea1d41fd8c3dd0ab01901ebda435b24298cc36fa43fcee1576797e84"
+  },
+  {
+    "name": "radial_moisture.csv",
+    "bytes": 70042,
+    "sha256": "77c6f12c3be9405a26014907570fb7fa190b7ac2ee02436537ad23b611093ec7"
+  }
+]

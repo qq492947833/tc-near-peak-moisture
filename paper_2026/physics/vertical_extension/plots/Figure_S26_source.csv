@@ -1,0 +1,10 @@
+panel,row,metric,comparison,window,level,region,variant,unit,n_sid,n_events,n_estimable,estimate,ci_lower,ci_upper
+a,1,Gamma_K_h,rise_rate_integral,1,500-850,r0_300,joint_with_transfer,J kg-1,122,132,2000,13.382991997795127,7.8150917060304845,19.360411309391377
+a,2,Gamma_K_p,rise_rate_integral,1,500-850,r0_300,joint_with_transfer,J kg-1,122,132,2000,-22.316697633212513,-30.272968177314993,-15.8351706309305
+a,3,Gamma_K_total,rise_rate_integral,1,500-850,r0_300,joint_with_transfer,J kg-1,122,132,2000,-8.933705635417386,-14.503710971008896,-3.8167303315396581
+b,1,Gamma_A_h,rise_rate_integral,1,500-850,r0_300,joint_with_transfer,J kg-1,122,132,2000,-1.0018399384077012,-1.9181479133394406,-0.11252127897567174
+b,2,Gamma_A_p,rise_rate_integral,1,500-850,r0_300,joint_with_transfer,J kg-1,122,132,2000,4.7190766914703914,3.3119538437424558,6.2724819934354779
+b,3,Gamma_A_total,rise_rate_integral,1,500-850,r0_300,joint_with_transfer,J kg-1,122,132,2000,3.7172367530626902,2.38742543898756,5.1030365145681298
+c,1,C_A_to_K,rise_rate_integral,1,500-850,r0_300,joint_with_transfer,J kg-1,122,132,2000,25.647546987451342,16.157526177524545,35.859461579349464
+c,2,vertical_input_K_Wkg,rise_rate_integral,1,500-850,r0_300,joint_with_transfer,J kg-1,122,132,2000,4.6716986922455588,0.82622852467987618,8.4085688481249825
+c,3,Gamma_K_total,rise_rate_integral,1,500-850,r0_300,joint_with_transfer,J kg-1,122,132,2000,-8.933705635417386,-14.503710971008896,-3.8167303315396581

@@ -48,13 +48,13 @@ def evidence():
   energy_before_departure=energy.to_dict('records'),energy_during_return=select,departure_environment=env,inner_vertical_contribution=vert.to_dict('records'),outer_moisture=outer.to_dict('records'),
   module_results_map={'a':'MAIN paragraphs18–25; Fig1/Fig3; lifecycle arrows denote event order within one SID, Mature includes temporary weakening and return.','b':'MAIN paragraphs27–34; Figs4–7; temporary versus final departure raw paired contrasts, not a new adjusted causal effect.','c':'MAIN paragraphs35–40; Figs8–9; lower pre-departure stores/conversion/KE input and higher pressure input; APE-input uncertainty retained; actual ascent endpoint/integral evidence.','d':'MAIN paragraphs44–51; Fig11/S23; matched-wind RH contrast and undirected association with duration asymmetry.'},
   arrow_ledger={'a_stage_and_return':'Chronological sequence only, no proportional time','b_outward':'Gross outward direction; equal width/length, no inferred magnitude scaling','b_vertical_contrast':'Signed annotation only; positive paired vertical-advection contribution does not assert stronger upward air motion','b_decomposition':'Signed humidity and relative-normal-motion terms in exact product decomposition, not cyclone translation alone','c_conversion':'Positive actual APE-to-KE conversion; comparison labels from frozen pre-departure and ascent results','c_layer_KE':'Separate signed layer-input annotation, no arrow into 700-hPa KE; not a closed local KE budget','d_dotted':'Undirected association; no causal direction'},
-  semantic_colors={'blue_orange':'Temporary/final class only','teal':'Humidity/moisture quantities','slate':'Relative motion or neutral geometry','violet':'Energy pathways','stage_colors':'Local stage guide only'},
+  semantic_colors={'blue_orange':'Temporary/final class only','teal':'Humidity/moisture quantities','slate':'Relative motion or neutral geometry','green_node':'Dry APE','blue_node':'Horizontal KE','orange_arrow_in_panel_c':'APE-to-KE conversion','stage_colors':'Local stage guide only'},
   limitations_in_caption=['Stage and scene geometry schematic; arrows do not scale magnitude','Vertical-advection contribution is not a humidity profile','No inferred moisture-to-energy causal arrow','APE layer-input contrast spans zero','KE endpoint change during ascent spans zero and is not labelled an increase'])
  (OUT/'mechanism_evidence.json').write_text(json.dumps(ledger,ensure_ascii=False,indent=2,default=str),encoding='utf8')
 
 def reservoir(ax,x,y,label,sub=None):
- ax.add_patch(Ellipse((x,y),16,9,facecolor='#EEE8F5',edgecolor=ENERGY,lw=.8,zorder=3))
- text(ax,x,y,label,8,color=ENERGY,bold=True)
+ ax.add_patch(Ellipse((x,y),16,9,facecolor={'APE':'#E8F1ED','KE':'#E8F1F5'}[label],edgecolor={'APE':'#428C79','KE':'#167B9E'}[label],lw=.8,zorder=3))
+ text(ax,x,y,label,8,color='#233A46',bold=True)
  if sub:text(ax,x,y-7,sub,7,color=INK)
 
 def build(dpi):
@@ -99,18 +99,18 @@ def build(dpi):
  text(c,wc/2,71,'Before temporary vs final',7.2,bold=True)
  text(c,wc/2,66,'700 hPa · 2–16 days',7,color=GREY)
  reservoir(c,13,57,'APE','Lower');reservoir(c,46,57,'KE','Lower')
- arrow(c,(22,57),(37,57),'positive_APE_to_KE_before_departure',ENERGY,1.3,7)
- text(c,wc/2,43.5,'Lower APE → KE conversion',7.0,color=ENERGY)
- c.plot([2,wc-2],[38.5,38.5],color='#B6A9C8',lw=.8)
+ arrow(c,(22,57),(37,57),'positive_APE_to_KE_before_departure','#CC7445',1.3,7)
+ text(c,wc/2,43.5,'Lower APE → KE conversion',7.0,color='#233A46')
+ c.plot([2,wc-2],[38.5,38.5],color='#CAD6DC',lw=.8)
  text(c,wc/2,36,'500–850 hPa layer inputs',7.0,color=GREY)
  text(c,8.5,29.5,'APE\nUncertain',6.9);text(c,27.4,29.5,'KE\nLower',6.9);text(c,49.2,29.5,'Pressure\nHigher',6.9)
  c.plot([0,wc],[23,23],color='#D9E1E4',lw=.6)
  text(c,wc/2,19.8,'During near-peak return',7.2,color=BLUE,bold=True)
  reservoir(c,13,10,'APE');reservoir(c,46,10,'KE')
- arrow(c,(22,10),(37,10),'positive_ascent_APE_to_KE_integral',ENERGY,1.3,7)
- text(c,13,2.5,'Increase',7.0,color=ENERGY)
- text(c,29.6,16,'Conversion (+)',6.9,color=ENERGY)
- text(c,46,2.5,'Layer KE input (+)',6.6,color=ENERGY)
+ arrow(c,(22,10),(37,10),'positive_ascent_APE_to_KE_integral','#CC7445',1.3,7)
+ text(c,13,2.5,'Increase',7.0,color='#233A46')
+ text(c,29.6,16,'Conversion (+)',6.9,color='#233A46')
+ text(c,46,2.5,'Layer KE input (+)',6.6,color='#233A46')
  text(c,46,-2.0,'500–850 hPa',6.6,color=GREY)
  # The third Results section remains part of the synthesis, with an explicitly undirected link.
  text(d,0,34,'d  Before and after peak intensity',8.2,bold=True,ha='left')
