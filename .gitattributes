@@ -1,1 +1,3 @@
-# Preserve byte identities of checksum-bound public metadata and sources.
+# Keep frozen public replay inputs byte-identical on checkout.
+/paper_2026/newanalyses/history/agents/C/duration_targets/*.csv -text
+/paper_2026/newanalyses/history/agents/C/duration_targets/*.npz -text
