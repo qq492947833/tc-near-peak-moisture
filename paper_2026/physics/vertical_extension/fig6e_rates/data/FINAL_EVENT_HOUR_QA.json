@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "n_overlap_SIDs": 117,
+  "n_unique_recovered_times": 363,
+  "event_hours": 1188,
+  "valid_event_hours": 1178,
+  "status_counts": {
+    "valid frozen joint rate": 810,
+    "recovered valid rate": 368,
+    "recovered below 80% valid area": 8,
+    "cached but joint regional rates invalid": 1,
+    "no accepted center": 1
+  },
+  "max_abs_overlap_Wkg": 1.260385025514399e-18,
+  "max_abs_additivity_Wkg": 1.734723475976807e-18,
+  "rtol": 1e-12,
+  "atol_Wkg": 1e-13,
+  "csv_sha256": "5c5419aa0ac0c500461f481357e45fb5e5421cf4a73a5bd1750a8a99145ea66c"
+}

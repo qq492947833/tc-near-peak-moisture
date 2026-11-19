@@ -1,0 +1,4 @@
+*.csv -text
+*.json -text
+*.npz -text
+*.parquet -text

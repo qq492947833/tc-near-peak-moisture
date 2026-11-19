@@ -7,13 +7,25 @@ departure and decay conditions, moisture transport, multiscale energy,
 reintensification and recovery, spatial contrasts, and historical duration changes.
 The study has **8 main and 43 supplementary figures**. The historical catalogue and the current five-figure update map are supplied separately.
 
-**Stable version:** [v2.1.2](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.2)
+**Stable version:** [v2.1.3](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.3)
 (20 November 2026). Older tags remain unchanged. This repository has no assigned
 paper DOI or software-archive DOI.
 
 ## Figure updates
 
-The [v2.1.2 figure archive](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.2/tc-near-peak-moisture-v2.1.2-figures.zip) contains revised Figures 5, 6, 8, S25 and S26 at the archive root, with native source panels under `source_assets/`. See [the vector-scene reproduction command](paper_2026/lifecycle_figures/figures/Figure_08/REPRODUCE_FIGURE_08.md) and [the supplementary panel assembly command](paper_2026/physics/vertical_extension/plots/README.md). See the [native panel reordering commands](paper_2026/lifecycle_figures/layout/scripts/REPRODUCE_PANEL_ORDER.md). The [figure identity table](figure_updates.csv) lists the revised files separately from the historical catalogue.
+Figure 6e shows trough-aligned horizontal, pressure-direction and total KE canonical-transfer rates (W kg⁻¹; displayed in units of 10⁻⁴ W kg⁻¹). All nine six-hour observations from −24 to +24 h use the same 126 events in 117 cyclones, 0–300 km, 500–850 hPa and the nominal 2–16-day window. Pointwise 95% intervals use the original 2,000 cyclone-level draws. Some observations at positive lags fall after near-peak return. Supplementary Figure 26a retains the event-specific KE transfer integrals (J kg⁻¹) for 132 events in 122 cyclones.
+
+Download the [v2.1.3 figure archive](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.3/tc-near-peak-moisture-v2.1.3-figures.zip) and [SHA-256 checksum](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.3/SHA256SUMS.txt). From the repository root, with the ZIP in the working directory:
+
+```sh
+python -m zipfile -e tc-near-peak-moisture-v2.1.3-figures.zip runs/fig6-assets
+python paper_2026/physics/vertical_extension/fig6e_rates/plot_fig6e.py --out runs/fig6-rates
+python paper_2026/physics/vertical_extension/fig6e_rates/compose_figure06.py --base runs/fig6-assets/source_assets/v2.1.2/Figure_06.png --panel runs/fig6-rates/Figure_06e_KE_transfer_rate.png --out runs/fig6
+```
+
+The last command writes the full Figure 6 PNG and lossless TIFF. For pixel-identical assembly from the released native panel, pass `runs/fig6-assets/source_assets/Figure_06e_KE_transfer_rate.png` to `--panel`. The ZIP includes a SHA-256 manifest for its four images. The [rate package](paper_2026/physics/vertical_extension/fig6e_rates/README.md) documents the scientific inputs and the targeted coefficient recovery and saved-draw calculations.
+
+The [v2.1.2 figure archive](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.2/tc-near-peak-moisture-v2.1.2-figures.zip) contains the v2.1.2 versions of Figures 5, 6, 8, S25 and S26 at the archive root, with native source panels under `source_assets/`. See [the vector-scene reproduction command](paper_2026/lifecycle_figures/figures/Figure_08/REPRODUCE_FIGURE_08.md) and [the supplementary panel assembly command](paper_2026/physics/vertical_extension/plots/README.md). See the [native panel reordering commands](paper_2026/lifecycle_figures/layout/scripts/REPRODUCE_PANEL_ORDER.md). The [figure identity table](figure_updates.csv) lists the revised files separately from the historical catalogue.
 
 ## Duration statistics from the original draws
 
@@ -56,7 +68,7 @@ Use Python 3.11 for the current scientific validation environment. Work in a
 writable copy and choose local paths for inputs, outputs and caches.
 
 ```sh
-git -c core.autocrlf=false clone --branch v2.1.2 https://github.com/qq492947833/tc-near-peak-moisture.git
+git -c core.autocrlf=false clone --branch v2.1.3 https://github.com/qq492947833/tc-near-peak-moisture.git
 cd tc-near-peak-moisture
 python -m venv .venv
 # Activate .venv using the command appropriate for your operating system.
@@ -179,7 +191,7 @@ and the distinction between deterministic reaggregation, local physical checks,
 and unexecuted full refits. This is not a claim that the complete global
 archive-to-manuscript workflow was rerun for packaging.
 
-Cite the fixed [v2.1.2 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.2)
+Cite the fixed [v2.1.3 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.3)
 and its commit shown on that page. [CHANGELOG.md](CHANGELOG.md) describes changes
 from the earlier code release. No repository-wide licence has been added or
 changed; existing third-party licences and attribution are preserved in

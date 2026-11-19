@@ -1,0 +1,1249 @@
+{
+  "operator_sha256": "3933b4cf235faed44db65559f7efb20f3b54a27f4456fcb392a33d4abe6c171e",
+  "raw_inputs": [
+    {
+      "field": "u",
+      "level": 40000,
+      "path": "U-component-of-wind-400hpa-1980-2025.nc",
+      "units": "m s**-1",
+      "size": 108898745880,
+      "mtime_ns": 1789272470618418000
+    },
+    {
+      "field": "v",
+      "level": 40000,
+      "path": "V-component-of-wind-400hpa-1980-2025.nc",
+      "units": "m s**-1",
+      "size": 115428054108,
+      "mtime_ns": 1789368307161603700
+    },
+    {
+      "field": "omega",
+      "level": 40000,
+      "path": "Vertical-velocity-400hpa-1980-2025.nc",
+      "units": "Pa s**-1",
+      "size": 122520856226,
+      "mtime_ns": 1794488244510929200
+    },
+    {
+      "field": "u",
+      "level": 60000,
+      "path": "U-component-of-wind-600hpa-1980-2025.nc",
+      "units": "m s**-1",
+      "size": 109489340238,
+      "mtime_ns": 1789295119049412100
+    },
+    {
+      "field": "v",
+      "level": 60000,
+      "path": "V-component-of-wind-600hpa-1980-2025.nc",
+      "units": "m s**-1",
+      "size": 116586715875,
+      "mtime_ns": 1789399399443228100
+    },
+    {
+      "field": "omega",
+      "level": 60000,
+      "path": "Vertical-velocity-600hpa-1980-2025.nc",
+      "units": "Pa s**-1",
+      "size": 123814284077,
+      "mtime_ns": 1794554548156564700
+    },
+    {
+      "field": "u",
+      "level": 92500,
+      "path": "U-component-of-wind-925hpa-1980-2025.nc",
+      "units": "m s**-1",
+      "size": 117284035413,
+      "mtime_ns": 1789326552788286800
+    },
+    {
+      "field": "v",
+      "level": 92500,
+      "path": "V-component-of-wind-925hpa-1980-2025.nc",
+      "units": "m s**-1",
+      "size": 122136469867,
+      "mtime_ns": 1789442076543741800
+    },
+    {
+      "field": "omega",
+      "level": 92500,
+      "path": "Vertical-velocity-925hpa-1980-2025.nc",
+      "units": "Pa s**-1",
+      "size": 137442546109,
+      "mtime_ns": 1794609047276346800
+    }
+  ],
+  "sid_identity": {
+    "1982005S10105": {
+      "reference_sha256": "2e2ddb63a15f71c731bb0581364e8cedf3b986c7ffdfa3268f6d543273ddd08f",
+      "latitude_sha256": "0e56fbe22916f0dd7f48e77314247aae2cdcde5090f058569bdaba2baba0e495",
+      "longitude_sha256": "935cd97aceb8afa66221949885fe989945c420df0b6fd86f80e87cc42fb64dc2",
+      "omega_products": {
+        "omega_products_40000.npz": "7ef09108ae181d3d4d150dcd7cff9d15fafbf6bb394bc40e5032c04ba54ffd5a",
+        "omega_products_60000.npz": "be0c0d130bd0ea2376698ccca6ed68b76c32759187048f32111c8466bd678897",
+        "omega_products_92500.npz": "96763747d8f8302b41e1f3dacb91ee763c7354e2548e74bd3be18c45468fe424"
+      }
+    },
+    "1982257N17140": {
+      "reference_sha256": "071c1e983ed783744204ed532e5f1e9cfd02bbb2c879b18ef57daad783decef9",
+      "latitude_sha256": "7635fc6655fa6642c5d94d6d16a23c4d2738934c8276aabf90eef75316f49ba1",
+      "longitude_sha256": "07d21daf68dea13211b167d6e55938e083d8dec66a0ef30c7aee4cc871a54f2c",
+      "omega_products": {
+        "omega_products_40000.npz": "2800c679f603500d7c51387b8e1b92e22bd5ad9014de5bccf5365e7631b415e1",
+        "omega_products_60000.npz": "f732e72401a2da279e0da1705c0aed8de68db670cf5b2f71711f9d7679c0ade1",
+        "omega_products_92500.npz": "df019e782c7f3a31a628efcd33ada84046beffd50483b7873004b22bf3bea996"
+      }
+    },
+    "1982272N11156": {
+      "reference_sha256": "db5af5621d0f0cc975147861f491830d1aba25f0cdc07e314b4e251c5824b8d5",
+      "latitude_sha256": "203be8e22f4e57271de749bd43c2ce16317657559b91c63becbcdc54581ca02f",
+      "longitude_sha256": "625bfad134f701b707a971c436e014964bfedf6eff2145fbad35543fab5177db",
+      "omega_products": {
+        "omega_products_40000.npz": "3ad36e71b7ccd55aaa8b72784e71999e6524285b5a294f9272d3d879d0f9443c",
+        "omega_products_60000.npz": "f6836ceb4bc4de3f749949922521a6214fac6e71c2942e7e7e81abc594d314fa",
+        "omega_products_92500.npz": "568fbf3c685d5d54525102d5e01f1334818508e5ac5500aea90d39cdfc77cc49"
+      }
+    },
+    "1983271N18118": {
+      "reference_sha256": "64d5d54ff9b723c0e087aa967c9b0ff74f0c168cf80613ddad444325e7eff284",
+      "latitude_sha256": "31b3cd7823da99a7ced62639a735a58ee0fb82d46c5466ae5d655431c7c5b3a2",
+      "longitude_sha256": "e85c566817ccf08d0664b1d3d068ae3b8c3685094d1aaa82647bf9773c70543b",
+      "omega_products": {
+        "omega_products_40000.npz": "1d34853d1ccab7a9f054ab9a39c048a8cff4a4c2207eb193cbdf62a0e9307449",
+        "omega_products_60000.npz": "66fab8e72c57c8fbf539bae86aa077cc6a5a4e2c86502832ef6a0ba3a11793d0",
+        "omega_products_92500.npz": "6e04a51134fbaf975ea83d75a8c64a50edf38e9f73aeb5a0f0a6698225ee606e"
+      }
+    },
+    "1983281N12256": {
+      "reference_sha256": "488f9c706f9fae5a276af943bda8a092ea51430c02934c591e85d8f43fa85371",
+      "latitude_sha256": "d7c2c33d0736dd28fdf96677bd1d906dd84dd76946d0fdfefbab06c42ada495e",
+      "longitude_sha256": "26844473f37ad72a6cd6ead27aab891a02a1e90a8e2ecef1df549788db6d4b99",
+      "omega_products": {
+        "omega_products_40000.npz": "75c75bac498534621e3757f212a777ea1fe3393f2a3474cc09c8b5ea49cb57f6",
+        "omega_products_60000.npz": "7d4cd6b55da1a9caf94905c32e59dc606661954b747724442560d2da4d6d4560",
+        "omega_products_92500.npz": "cd89ff3ad4767ef684769cff17c16642769d02e2148d5d92fb33d2d590d5c881"
+      }
+    },
+    "1984214N12143": {
+      "reference_sha256": "8eee5ab29f42bc9a6ece5da700f8936e631a57d65ce4239a67610ace88c3e9ec",
+      "latitude_sha256": "f044bc6fd9e882195e5d408dd242577cabb6dd3958e29d89fc54760baf9c33b9",
+      "longitude_sha256": "f84f309635aa431c40f4bbd8d677cd140f6ba752546915abb76f48c8900cc9b0",
+      "omega_products": {
+        "omega_products_40000.npz": "690314fd26e2d5d043ea5ecc38e09090a06509b5d0afff9353d319182ec8a6a7",
+        "omega_products_60000.npz": "a63ef551d8070cc3766965b9fc51fd3e6da5d4bcd68d0b42ce571f7e849ffce7",
+        "omega_products_92500.npz": "e97d96a7ce17ce49f238b32f08d960f52b4c1ec4729abe8673f4e50ec0266b4a"
+      }
+    },
+    "1984259N19245": {
+      "reference_sha256": "338e7b9c3d43db124e33f39154ae3cd70555aa94656be3cbc51aaacbd4a025ab",
+      "latitude_sha256": "06e8351b3323696a4d41640aedb9aaa9e4af59ec2cbc9fd099bd9a7585b79d4b",
+      "longitude_sha256": "82eecf6e053bcfd3a17b8f35de56832b909e52c90534650316bab83076658c40",
+      "omega_products": {
+        "omega_products_40000.npz": "ce1f64a141bccba8d8f675df10a591747bb02d7f9a5f2be691d84fb73453c048",
+        "omega_products_60000.npz": "bfa5c81b6cd6550457e8d8f7fd63049f158ccdc0bfa6828ee8ff9f8bffb74f76",
+        "omega_products_92500.npz": "7f3ce74e414afd9455aec8530ec785d85ec169485855f3f2facc0f4e9289d41e"
+      }
+    },
+    "1984317N04164": {
+      "reference_sha256": "8f14f2956496c8a008164ac580689439f2c7aa7a003210032026994585c3b803",
+      "latitude_sha256": "d829211a5ddacc0c067b13d2c786a8f4aa2a53fd1335ec9075deaaf95677fe12",
+      "longitude_sha256": "d43ef96d00108dd8f53b860bf3c9410252af0890bc863121ac81773043c3bcfe",
+      "omega_products": {
+        "omega_products_40000.npz": "9509cbc7fb58353d2333122adb8ace4389a013606839e2769f348976008ef70d",
+        "omega_products_60000.npz": "12d8778bd6ba9e7531163b775e0a9456e090d8de9deef8c8a85e915c94e4dadb",
+        "omega_products_92500.npz": "c25664646e426b83b29ebc9e88ef08a141bd3e44959993d190728583d48dc00d"
+      }
+    },
+    "1985210N14257": {
+      "reference_sha256": "916baa71227156ff53e8779c25d597fd0b7011e4e99770d6640cee8832209524",
+      "latitude_sha256": "71099fbedfd0ce45eed066f69125ced37a61d92ab472dbe8911f387a3d7cbd0e",
+      "longitude_sha256": "37766bbd119480efcbf7dc6eac03a16182f853afa27f144355dea293250ee58b",
+      "omega_products": {
+        "omega_products_40000.npz": "dd4fb0ab4efd08262548079223b3f86fd6fed4bcf682083f004cd0e43d161e14",
+        "omega_products_60000.npz": "32cb88750e4b4de0286fa1da715994b3484b5e39fa1fcd03b186e2d7078fed15",
+        "omega_products_92500.npz": "a0503f0ac948e53bc45952b9073f2423bfdbb1c1bd75cef7f7ed78a9ebc0e90c"
+      }
+    },
+    "1985259N12262": {
+      "reference_sha256": "27da07eabfcd6d52820911080a83e51a3b39ab4a4475750cc46e3d1f398e0260",
+      "latitude_sha256": "aafdbfa214db254a3b7b3a0e8ced1975d084414fb350641edc1a55ba8a336a1a",
+      "longitude_sha256": "e28ee8c999751c756df6c19c7c438cd995184fcb7adf719ee8e3bc97a2c8be50",
+      "omega_products": {
+        "omega_products_40000.npz": "85ccbbf3384f9a5b8c7ad87ece858c665e18ac6069be69ef96e27af6e87eff22",
+        "omega_products_60000.npz": "90bd008eecfedb2965f45abb4f99dfe6244f7263a93364a5e02f266cd92401f8",
+        "omega_products_92500.npz": "07e2fc861e086fe7c193ca2eb5ff39d3d62ff06af9ecde9bfb1d68dca3a25a31"
+      }
+    },
+    "1985268N16126": {
+      "reference_sha256": "bbd79368cb6cc2982265050c6aac3efea03ff222ba5e4e8fb830bdf32b0a6d2c",
+      "latitude_sha256": "620597073a2d91582f6354e11398dcb73e0491b79f8a1628ec1f381a056b6661",
+      "longitude_sha256": "4a9249d05b84cdf6b754008fb425769feb34552d8a9f4ab0812187a4ef440e90",
+      "omega_products": {
+        "omega_products_40000.npz": "94c4790633ff3398d307497872b801bb8be651769b57b8fd22f04a3e41579d71",
+        "omega_products_60000.npz": "aeb35d33382868913edd8972b2c4f4195a4706ad472519a24b66226faa83cabf",
+        "omega_products_92500.npz": "0f77fc31a3d902f83701055cdd5ea24864c16bb1c4684198d466fc8f58e72902"
+      }
+    },
+    "1987058S10173": {
+      "reference_sha256": "c95457a3b3f8f08bdf4222f254d0a3cae5f3f3ab896c0136ffcb03acf897a93f",
+      "latitude_sha256": "70fadf60b212bee93fe765e65bda907a808da56e7280a27c79837e76e3be6144",
+      "longitude_sha256": "4844d4d63f353653c0477b9f8f5291caa5290a768ae6355d5d0064b2ace550f9",
+      "omega_products": {
+        "omega_products_40000.npz": "443e1c374d1edf8eb0a587fd4c6cd587481832bd4809d5eb69cd6a16b4da291c",
+        "omega_products_60000.npz": "77ab53ad2d9ca7101d18501b01d5f9342321ad92c7eaded8643e0c71d3c999dc",
+        "omega_products_92500.npz": "28e3311cb553de56731f57b67df5c2d0792ad1ff3e6d254fb45ea37b5631ce59"
+      }
+    },
+    "1987200N04191": {
+      "reference_sha256": "4bc53d4b584b86eec3a952204dc094810eff637bb80de705fc91df87c6d89ffb",
+      "latitude_sha256": "1d17cf7010e42f30989e7dbc36a22c24dad039d60ebcd2439a1c2d9d811a1f82",
+      "longitude_sha256": "47562ce1cfd377bfe7d56d44bb2637f2b4b1bcaf435efb7ebff07dc90710821b",
+      "omega_products": {
+        "omega_products_40000.npz": "1776428a257f84aa414b691af60389c02531b6ad9cc7052e763080e500b284b4",
+        "omega_products_60000.npz": "ec461b67f516aea876ac80fe9cff1864142e413752081194927bec7983bb7a97",
+        "omega_products_92500.npz": "eb159f8b57137641fcd0997e99a35d365e54f15c2701b1391ab69fe47b17269a"
+      }
+    },
+    "1987263N10241": {
+      "reference_sha256": "16d3c7d3e28b8d6ded197da5bca0d7a1c1c9cdb42161a9d58f3ff5793bdd531f",
+      "latitude_sha256": "70476bf613b534099842f255f73789754c2eb59e4a1ef1595f7c8cddd0d11bcb",
+      "longitude_sha256": "9874dc8466da933de609be25a40f3edfc8c28392d03d915f85741a6da2ed3a7f",
+      "omega_products": {
+        "omega_products_40000.npz": "0ef520e7d3444fad08819fa28ceb75e8a8a2cf587fc715a9a2054c37236ea69c",
+        "omega_products_60000.npz": "e819fc669387ee32808993bb529806464980b93fcebe615d7a00a5c231cb74a7",
+        "omega_products_92500.npz": "3c0adcc7e9d0389a5525f62448d96484b7a861cc2532ca995e00becb57d6405d"
+      }
+    },
+    "1988242N12215": {
+      "reference_sha256": "6f2f2418997706a29a0ed40596679e237cb9e6440e968705b38dd1d0c62b7e4c",
+      "latitude_sha256": "40fe120aadf5bc3de5adbbd6814b30a92b3ca7192b642b0e64ffef8c9cf28b8a",
+      "longitude_sha256": "1b67ed8fe81954b29526913b5df938a87e120e5cb356b3af507be70df19ea7d5",
+      "omega_products": {
+        "omega_products_40000.npz": "085dfc277842373d4b4259020dc9ecc164839698ac84616204f93f48eb874f44",
+        "omega_products_60000.npz": "7b24f26edd56839c0bc1b2f4fa9030f03b546cd3fcb37c2ca027cb1a61de2c08",
+        "omega_products_92500.npz": "28eba901dfaf41bb091dca5cb843af6e35e003c6940f945d709b031e62ee4aaf"
+      }
+    },
+    "1988310S08100": {
+      "reference_sha256": "815bc68b27e8050fdf8399e46123fddb07345a2014cc6fe2a217903d5a41a2e4",
+      "latitude_sha256": "0186fd7dc5de7aaccfcc37af9a0526c7f9b71c3c30f6333b685c2161a9f94062",
+      "longitude_sha256": "d6dc282d68dbb1a6e915521e496087209060e3475aea061971f1c392845761c7",
+      "omega_products": {
+        "omega_products_40000.npz": "27227f864af9076e23f5e2d1e65a4b70c89173d4669e78682e14618e2918538f",
+        "omega_products_60000.npz": "10c0ac08f3e474e3d032e02bbbd6de38fb9efc05881a67b631eafcbb99411e2e",
+        "omega_products_92500.npz": "f5d2b21e333f5184467bade2843dd55568de9d8d957f4f267bd8df82c2495137"
+      }
+    },
+    "1989201N11145": {
+      "reference_sha256": "0e6d08f4fb67d0075093476645a6b708c328e9ce589f48521b1793c0cb19ca87",
+      "latitude_sha256": "68d47f516133f7441e87aa3c799f3bb277f4395f2b1f7bee031f2f600d310b5c",
+      "longitude_sha256": "e26c363e2a631b523d23b70670b3d8224adb4596d4fc78dd08bca7c17e8ac9dd",
+      "omega_products": {
+        "omega_products_40000.npz": "b2727f343d5c4aa6ee810f81c03ed5ac9f0278404c5a0209da0eb5a33faaa34b",
+        "omega_products_60000.npz": "26f8308cb5b050c612983fadd7a4e49f035a3b92eec4adb1cd560e30b9643b57",
+        "omega_products_92500.npz": "a2f21cfb17819ac875fb4317c59de9f80f1999039fae096ba82c0d2f1419b7f5"
+      }
+    },
+    "1989254N13340": {
+      "reference_sha256": "b76ebc17eb9a9b4acc7790735c2bbc9fde983b382c1431bbe66794ee1b688d72",
+      "latitude_sha256": "99b92c0bb9702560b126749103155983aaa2b14414c4b1b04896b878aa8ae6b4",
+      "longitude_sha256": "352c6d22164abbcef3ddddec67bf40ffd8c9ef5ee660384d12f0c0be6d6fd97e",
+      "omega_products": {
+        "omega_products_40000.npz": "9721acfc3dbad7cb0abd1a2afe38507bb0ce4e6f900e8d5342c39a717e0d70e8",
+        "omega_products_60000.npz": "148c0242e476761b869e5868590eae50e6b1b8af070ca09d2bfb5beb5a078e5d",
+        "omega_products_92500.npz": "2f4a4f9dd1e9a62dfdc195347553bc3fe8014f0e3534ea89f0e035b48cb0f7fd"
+      }
+    },
+    "1990012S12131": {
+      "reference_sha256": "492e5974537d36535590d5d98c70fd020750226bbc9ab87a841d5bcb39c6cd82",
+      "latitude_sha256": "74c7ffad8ca2f85e0c1ea85931d32ec28b5eaa12aefb1b6ef1df0725e612c4ac",
+      "longitude_sha256": "394f9c12d692e914e6f1a9cfbf3b6d42899dfd4191ed9b655122845a28bbdb4d",
+      "omega_products": {
+        "omega_products_40000.npz": "834318c187842a44fab17c12ed247858a840abe87950f5d8ced7451b7ace2de1",
+        "omega_products_60000.npz": "7e61840c0b95d1b38be8bf2b86cc31a66d56bf376ee7ee4393fce7e9fee43948",
+        "omega_products_92500.npz": "e0cb4280740a8282f27d697d66d1cda3c961a44725cbf4135892206107d059ed"
+      }
+    },
+    "1990187N13258": {
+      "reference_sha256": "cabfe8645280b8c231b188acf6149ae518bbd321607250ff76e747a628106d4a",
+      "latitude_sha256": "587f08803afb51c57cfdfddc9f78037f3f4a493b617274d77735dc07bcaad002",
+      "longitude_sha256": "b73b92a6ddae3f9482ffd1bab170dc30256c94bbd3861da0de9b0d7cf7e18937",
+      "omega_products": {
+        "omega_products_40000.npz": "c048675c7a54fbfc59f13bfe1e808d89e57cdf3a8cbad94b5260f3b30bc4a354",
+        "omega_products_60000.npz": "7cac79a4e39b74cab67697be95369b65adae14006f2b42476b8fa19258890009",
+        "omega_products_92500.npz": "68efa70b843f481e764eb7f737d88c0a37b48bba3b7c873ed2489b6394776d33"
+      }
+    },
+    "1990247N07337": {
+      "reference_sha256": "0b83260158e70ad78f67f1f374af423aff077b3a110e95d7e35a4571d2aa9a95",
+      "latitude_sha256": "a13347e88ace660a85dd5227ddb7d04186f1d9dcd89269e0aa84d925f3c48582",
+      "longitude_sha256": "574fa5151cdb7d1597c8d5504c23362ff7ce9651193b322f4ca017241403d4fa",
+      "omega_products": {
+        "omega_products_40000.npz": "7e9f8b667ca45d963b327af6bbc6faa1a14efc9bab6aaee9a704ed9016cf5078",
+        "omega_products_60000.npz": "2c320c00b5d9fdcc4800de4246114bd4a367208eea12bf68bb6606b5372cecf1",
+        "omega_products_92500.npz": "d87ec0370b266146f6788205310c8f1aa2809d55210eeef3b5790ccefa521219"
+      }
+    },
+    "1990289N22300": {
+      "reference_sha256": "7473eeb804ebd81f23e3df6fef3b7d122d206031f512cd78065c93196f573d58",
+      "latitude_sha256": "8fa572212d970031068be9e79796442770790b90d13d0213a95b840af6d06f67",
+      "longitude_sha256": "7f2636ffbf57ba2e3cff1f3aff83811898fa4bd1c48b040ca7f4cee2c6763a56",
+      "omega_products": {
+        "omega_products_40000.npz": "1b79f7f8374a9b7923c8166393da6559926b1393c5dced33242e37227cbb1e40",
+        "omega_products_60000.npz": "2ee738b494d7d6846c06d494f22fe8bd253988d601cbd362f445b7a3f0fdaaea",
+        "omega_products_92500.npz": "8e662a8ac6e8768af92fbcff056e89168a3b49c169b439d75ce53a5246c7a03d"
+      }
+    },
+    "1992197N11266": {
+      "reference_sha256": "18869fcaa5efe09f6be821a2546af8e8ca0c918298e902488ec24b3f65b8549c",
+      "latitude_sha256": "eb8d82a38fc97f83baf485f9641a22357a0a5cb4ac11d8c97ad6b7ade15dc68e",
+      "longitude_sha256": "1de5da8908b5746cf6550c3ae755e8af9cd49fd22f00f391f02de039872ed577",
+      "omega_products": {
+        "omega_products_40000.npz": "226ff09fffc495220f0fcca4f4a9b032a3079c27af8428c2b87efc80f8892799",
+        "omega_products_60000.npz": "4ed5084cfeda279e241321702a4d803295a53a95587b046ccb3e3f4dc884b485",
+        "omega_products_92500.npz": "0c3bc2d3aef070d54aa7c353c762c6e6f44b10a7f16519e7ccaf46051cf76255"
+      }
+    },
+    "1992298N10188": {
+      "reference_sha256": "1daee6da01a3304c1d152e94ca567a2524683356856de2935fd51b71b6a81d8a",
+      "latitude_sha256": "b5daf94e3a5f9b8c2f9606ee11030b7deb992e4311f396b4981a1f14b09e14a8",
+      "longitude_sha256": "674b5aa4f071597561a1d1c9e26ff591e836e06826c231486632c35f457003e5",
+      "omega_products": {
+        "omega_products_40000.npz": "b169edbba5e0bd66518b7a78f263b351de45ada2bc064c930fc09cdfefb216d5",
+        "omega_products_60000.npz": "fd5c093204806754724e5e964a9008b57e1b7959cb142f656118c2ab0f87f39b",
+        "omega_products_92500.npz": "6a9165fabfd3a3d4b74e53fc5ad7b486cecfde0d30f285a5dc6a39aa0bf34e7a"
+      }
+    },
+    "1993064N03174": {
+      "reference_sha256": "455b2a900e4506fd3030d4e2b9c262176b4333657b3f2f8d8a827e99144291c8",
+      "latitude_sha256": "9ee8a4be8abb063e15c8bea93ffb710c5d969b7e2adc18972f72c3b2ec3583f6",
+      "longitude_sha256": "1f02b1b8916eacb2c3f4ece1ec6e8b60d1796dbba653f34b2641e70f19ec73a1",
+      "omega_products": {
+        "omega_products_40000.npz": "4c50cee762883798d90b8a8bce131d3f8b6a866a6414db811de6774f5e8e7f94",
+        "omega_products_60000.npz": "ee7380e8089509950d02348cd9150f123f5cdd316dc384404cd9b984b74ab0ab",
+        "omega_products_92500.npz": "2b02fef2d545584bb05bb142dea8bda0745b36695a09bdc3b7110ce578ddef02"
+      }
+    },
+    "1993360S04171": {
+      "reference_sha256": "70787ef73f5919290c10886e7463eab9368c71c1998adb133c79987be8018896",
+      "latitude_sha256": "595c1df140def659f4f1479fce0088c2d71f97f79bf77424b41ce5b7d884bf9f",
+      "longitude_sha256": "c03d1808e05e451e8f5a4c9ddbb77949dbc15eff4b7c1ec01b04d868b078320f",
+      "omega_products": {
+        "omega_products_40000.npz": "4e5dc285a05649b1b064449543934489a0361ff5cb4b7cee7006172f422d4807",
+        "omega_products_60000.npz": "9ffd3d6c7676d98d5cdfb06dbaa24350e5d842e7f651cfe97b0d616b321419ee",
+        "omega_products_92500.npz": "e993373be02d353d352651459bf4bbc17f2f0aeed10b7e347b9a3401e8ffd175"
+      }
+    },
+    "1994012S09075": {
+      "reference_sha256": "b109e4d036fc169c76db5fa6f8749d1a63525a39078b5ec3f20e064466c40e50",
+      "latitude_sha256": "22a0d2692a9e86b94dda3c02ff61dd1f1bc8a2721cc3f67294c7a78a31d41b61",
+      "longitude_sha256": "46a177e8e45ea8ad424c0725760ca352f8e8f6e9a15305d184ed4ffa2966444e",
+      "omega_products": {
+        "omega_products_40000.npz": "7866db2087b41b042535c59e1da9922eed065fb68cfd2d6c0fd76be370608b22",
+        "omega_products_60000.npz": "d47c7c256972a7576690e2266b056b7c8833b7faa33e1f0a02b97e9f0e2ad915",
+        "omega_products_92500.npz": "f6b573626a922b9e73691d3ce273a44cb2897a224755a7aaff681bf5e968d7dc"
+      }
+    },
+    "1994153N19113": {
+      "reference_sha256": "f34743b1805d9fd20a8336c282a96aaaa019c10e44f8d645f77a00ae9a7a3ab3",
+      "latitude_sha256": "d2db861667a76c08cf8071104ce697a516c42d9c1c792f92396ddb4f64d75457",
+      "longitude_sha256": "5610cb16f2778f890c31e477910c765f8bee980126ff229fe264bb670fc955b8",
+      "omega_products": {
+        "omega_products_40000.npz": "76ed85cbb8dc90bee6a2f947a5a4c600593b2bfcd25301c1ef2c17ebcd22e9a4",
+        "omega_products_60000.npz": "2c13947a4a87427c49a6a70e38ff635eb3b627c65bbb5a36946dd1c94e0f0b0f",
+        "omega_products_92500.npz": "f2c46ba0863c97633dd197b5f410881a3873bdaf461c48e5dc139f4b1af360d4"
+      }
+    },
+    "1995032S10074": {
+      "reference_sha256": "08be508a16a43d5579c5c7a905905b83479ae1dd346cd0300840ddaf6bb35d92",
+      "latitude_sha256": "ad4ee1d69876bb6156dcaead5181b34a6ada196e791b8d1bcabe20a9a3b7750b",
+      "longitude_sha256": "e7b225ad6e43d4c8eaa38414b574ab8d294ec311f41db26f06e7049ab933baaa",
+      "omega_products": {
+        "omega_products_40000.npz": "0a0a13254bd29dc8a24b5ba89f257d3fc3cca76d4c83573d6d2ea64c03ec9b4f",
+        "omega_products_60000.npz": "7a7239a8f3c34a3c28992a879b82988f654836ed1accdb073988d157328d1cec",
+        "omega_products_92500.npz": "23e0899346a95d013f2b2f61101c66e29f546c913a6b2437632828a852fde5f9"
+      }
+    },
+    "1995241N11333": {
+      "reference_sha256": "6a1f1a7c24da66a9e11efc8a1acc831db17b636912a75bc0b232479c46cf67f8",
+      "latitude_sha256": "bad4bfa5fef55e3b41354b63639224629964f33d2225aa86dea0e665830b3817",
+      "longitude_sha256": "6e06a713475c8eea8de9f1108e79f3b8e699c002ec1fb81a22148317751bf3ae",
+      "omega_products": {
+        "omega_products_40000.npz": "335bc5d44962964e304be1ada387f89af7f3d3b9aae587cae7a3723a304c36fb",
+        "omega_products_60000.npz": "a1a7d1dd41355b9acc23d47d207b8e6a262a8a72b7e408dd093f4106e77a2483",
+        "omega_products_92500.npz": "6b489a0202d708d740800a8f45f45cbfea375f5ac8d0dcc2b6c8efcca4741023"
+      }
+    },
+    "1995270N10322": {
+      "reference_sha256": "76e4cb45679618ec33b1e920c1a28f8a8ba2c87577e72998161a0f1e1cc2e1bb",
+      "latitude_sha256": "82a6d6a20d56266749a6f2d3c39eba66ec338f26790b2117add50866c9dd60f6",
+      "longitude_sha256": "ed1e230a6f48bfb222c3f73a615c6e6b6afdab134acfb9c702f33682f3d59492",
+      "omega_products": {
+        "omega_products_40000.npz": "e719563e38010b9d8fde889b0473111e22a5cdc4cf625f2b4d516345c7236704",
+        "omega_products_60000.npz": "6572df69c4379149253a8ba433b4c4e44118e0ad2941898c2734fd7f4d8593dd",
+        "omega_products_92500.npz": "87f4048508e506cc2d50c924132f02410b7253e71e7e189d75cb389649d8d501"
+      }
+    },
+    "1996207N12297": {
+      "reference_sha256": "a0bd1f844d0233e504eccdc0e63d81af93cb30e7f068572fc87873343650817f",
+      "latitude_sha256": "6e73fdd522f421b0f08a65f5ab62470b3a09001f7850abd4a025a116997b6606",
+      "longitude_sha256": "a218270ee73133340376976745caa7870b10e9fc433ec9a13e45dff777a8481d",
+      "omega_products": {
+        "omega_products_40000.npz": "261cb22740d92458d520478a0d4164b57590e8d5f706c30b6ee7ac859ab6717e",
+        "omega_products_60000.npz": "4729a4cb1df8d4da00d390b7f9c40a5904036cbe693efcdd432c070f8b3cb759",
+        "omega_products_92500.npz": "f9bcc1068a3f962022094430ed92a45e76d13766847427ff47232f186b913502"
+      }
+    },
+    "1996233N12340": {
+      "reference_sha256": "e30a047ee02ba381151fef44d56da507854dbada572a3ebc54c283be77d70336",
+      "latitude_sha256": "3226fb64fa613bdee9186ba45f89528b5e02f1e2bc73ec6eaf1270ed3d9ced24",
+      "longitude_sha256": "576133cfd96ad347eece0430f4cb187f46b770614aec4b46fe13c3230761718d",
+      "omega_products": {
+        "omega_products_40000.npz": "c0df01317b877d67274fca41735a379fbcdd568912da9d96e434dc5285ce4b84",
+        "omega_products_60000.npz": "6f3334df21adf7d2f108539dbd496eb8051cd657246f6fcb381e2565d0b22708",
+        "omega_products_92500.npz": "51e1879da795e466ebda85a7b26efb67dcf83ed0001da629f27a92321efd4439"
+      }
+    },
+    "1996260N19107": {
+      "reference_sha256": "3e64c583c7094c313cb44dda6f72e3fc00e453886a22fac9e138347e6219cd03",
+      "latitude_sha256": "54b9ac2dbc8cf5b949572c62d0252d7d3a809a21d88c6a911d38ce155cdb796e",
+      "longitude_sha256": "6e56419bf95fc19de1f96d87d6b4421b78a38541c1ce94ba99fcdbe862dc6fbd",
+      "omega_products": {
+        "omega_products_40000.npz": "f7eaab831d5c32e99564be0e7d4bf1e3a6e2585056e6bedafb2fc4745a1ba56b",
+        "omega_products_60000.npz": "ec18af44db4f882e7d1384040855d467eb6467a475b3784762add10e10bced07",
+        "omega_products_92500.npz": "db9256f59c9cf913545b9fd9fcc345e69e135b212789bc29d7878724961dbb62"
+      }
+    },
+    "1996261N08184": {
+      "reference_sha256": "af5bc17cc1a6646d420ee52e7d10e21ba495c21eacbae0a12803954fe9e3677a",
+      "latitude_sha256": "69983a81d6cac9e23797d2f642bb73a3837b7ba008fb213dfcb94a8b63ad75b5",
+      "longitude_sha256": "7ccc7d3326ff7a2fb58c229e14b823604dbabc960f22bd5ac6b983a13da121bd",
+      "omega_products": {
+        "omega_products_40000.npz": "46380360cc4c6cca513f325f7462562e53edced6c3345f17f38b97585d705bcd",
+        "omega_products_60000.npz": "dc635206feeb00f13f8061689462edcd459a78808a05609c5e8745dddbbcd788",
+        "omega_products_92500.npz": "c7462dff5345c9cdce4ed94b6decf904d132c32ded57fdf4e196fd28b2506e6b"
+      }
+    },
+    "1997198N27267": {
+      "reference_sha256": "98696d56ccc8e04d2f11a7481abd6f6d7b3280e8ed5884cea2899ba4dd55ea92",
+      "latitude_sha256": "ad421f913fdb277c3ae4b2e4691434f19b64e559b979a8b753c136c46ebbb6da",
+      "longitude_sha256": "3a8fb2e9dff655e8dbd9c487a2b3388c2542678fb02930520a5b5d784a7426db",
+      "omega_products": {
+        "omega_products_40000.npz": "44534364103bb5545246b524dcd61f4748b1a35ce8004bf9bb953a71d73b2d1b",
+        "omega_products_60000.npz": "75a9f7acc77e59433156fa6bfcb626b8cf3e015331e7f02e689e207f526359ac",
+        "omega_products_92500.npz": "d3f501c24ae4f1ad42861d6a846a50b2e0c6d7c0fa2c7f687214009ff00e005a"
+      }
+    },
+    "1997279N12263": {
+      "reference_sha256": "e1f90a00835df2422d6d18d8f75e7396daf436b16dbeafec042d06d880003917",
+      "latitude_sha256": "40c95e2b6b4fd9242e00fbbe503ccdcc6b99e19f8fe66a8d71fe269e9b88d03c",
+      "longitude_sha256": "2f8b2797968e7fa16a9912d731602afa6ba483310dce2e0e753cbd83184163ac",
+      "omega_products": {
+        "omega_products_40000.npz": "f134b0e0e4f954e667fe0bd894474b752030115f0ac5c65190fcbd21d02d7aa5",
+        "omega_products_60000.npz": "163b7d02624f44e887f09ae1ff6e87197e198b24e9e65dc8d751689bc2bd9739",
+        "omega_products_92500.npz": "6ce31b3ffb86a6dca35e118d32539a817e79e1d1addbfe2769e79abcfbd322d0"
+      }
+    },
+    "1997284N04179": {
+      "reference_sha256": "1fd4caa1ccb99a6cb5ed81e4910605b8555d9e9f2e450c02121c70dcaddd0e04",
+      "latitude_sha256": "5496e799ae756c43a4c139fae80c549d9c338b36ecc4542e12e0bc029a5f9ac5",
+      "longitude_sha256": "aeb90b7431f59da9b9d50e51163f61643fbda3bc33699be6ae21e8d148286ba6",
+      "omega_products": {
+        "omega_products_40000.npz": "8aa4e7c30fdbf33758649d86b04d0c9116cdbee067733b03df5c90f77a8a2cb5",
+        "omega_products_60000.npz": "cf795530a1f0d75d922ca0e728828b4c584ebab910b5618bab10faff954c873b",
+        "omega_products_92500.npz": "a8fbdf2a187e94dc3d9974e0c0546480fa88ae8758778eefdeb86cd326e24989"
+      }
+    },
+    "1997298N06140": {
+      "reference_sha256": "772af151e4e8c52b820e011c79db1b878cea02d322889477bc16d7a89dee0031",
+      "latitude_sha256": "c09165d862abf4c18542e0f8ae45f277fd67480922c973af1c0bec34203c44a4",
+      "longitude_sha256": "64614eb3a6bd12b26dd9daa8300e775c33fd4ca760f6ca46e055c0afdcaa5eab",
+      "omega_products": {
+        "omega_products_40000.npz": "946a6c7e0b197a39b4dd5ec970379d78d7269d559118b134f98cad660e7dc7c7",
+        "omega_products_60000.npz": "81d204856b7bcb746543bda27eee77d5c286e7b3494fe5a6b17cde88faebb8ff",
+        "omega_products_92500.npz": "dc03c6e77f87d88f0b61f22efd650e427047915d18a652b88dd354439d75dea3"
+      }
+    },
+    "1997299N07169": {
+      "reference_sha256": "9cd15b76fb0ee9b8a1f4a05c7d1bac0f614e1511ad317668ee22baa1eb61e256",
+      "latitude_sha256": "c3274e39e66f0f9544860c0c4db08ce1beafb1907aafee7617f7eb0ed19ae8ab",
+      "longitude_sha256": "ef97210adda8eed34d32f97c53c947c596d06fff2247b7659365dec1a597a06c",
+      "omega_products": {
+        "omega_products_40000.npz": "d45394c80a1b4d5f3eb8ae3ce41facac5ba444a670ea1618846c33dfef772cd4",
+        "omega_products_60000.npz": "08caa4d23b8a38475ea21a545df3cb2fd6bfa3886d65cda8201f1cd3411fd584",
+        "omega_products_92500.npz": "4d45e9f32375f90d5fb3d61d2e72e270c641d26296ede31a49ed035ef11617a8"
+      }
+    },
+    "1997360S12111": {
+      "reference_sha256": "013df64274c1aee09dad87792bff09bcee95bfe80c6e76ac46408dd139e5621c",
+      "latitude_sha256": "e8f715876bcebfd4ac0931d2c0b8f0f2a504dd4e21b64cc5dd63c7c009879dd0",
+      "longitude_sha256": "53fe650786cb47e6dbedf75c72a55f74aab2074d051fa3909da3dc3539ce56ae",
+      "omega_products": {
+        "omega_products_40000.npz": "f7cb7f1ea738a86de3d7449b25b4f72b6ad0031d6201db92e3c40e624f4876d3",
+        "omega_products_60000.npz": "264878cdf0f430e74093e6ae22da8b1ba6557389e20202d783ff2a8a09838f09",
+        "omega_products_92500.npz": "02f0fbc2119f35d4e3357c2825176515f3d2276c5fc81796902ff95f48de57ea"
+      }
+    },
+    "1998022S15125": {
+      "reference_sha256": "7b3823ee27ea9a021625fdb414d23a7bf00bdf131d1af86c7944a96cebad01b7",
+      "latitude_sha256": "918bce44087913c53a53dd5f9fdb8fe17454723a7829398bad441faeed931014",
+      "longitude_sha256": "8a4e282734496a263ddbae466d5ca6a15ff683052cc72c8c63a094f4d40c861a",
+      "omega_products": {
+        "omega_products_40000.npz": "5f856336d40fd7c3631ce8a0c30c127d067d7ceef36cd14af5f86fb0ed7e39b4",
+        "omega_products_60000.npz": "547c7eb8dfe3c32496f4e3bb7b4939e022b5123424ce3da09bddc6c63a33982e",
+        "omega_products_92500.npz": "93f4cba9940e59919137d0d01ad443c429428b792f2ccef60257b4b8d90713ef"
+      }
+    },
+    "1998203N11253": {
+      "reference_sha256": "7512f3378ca1602d7780bc2f2ed2459bf460ab93c66f1ca9fa8932956946d53f",
+      "latitude_sha256": "76183b5d6752a88f5ed984d62ade3c5343ba9357a4ef3d0211fb86864044b76a",
+      "longitude_sha256": "332330267aa1126c830a457d2b2bb83c6f8cef9527536bc7f6f492be2c2eebe8",
+      "omega_products": {
+        "omega_products_40000.npz": "d31a81f0949413ccefed240280ac8b21b35eb01ca06e00ee64ec0c7912ecc9c8",
+        "omega_products_60000.npz": "1f42d05d0449c248d4dc8a6175003aa8968d8ac2710ce70ff12475034d85c5c2",
+        "omega_products_92500.npz": "e51146b4a490c8379b2028618b4cba6e7878d6460896fd7e50554fb92dd6593b"
+      }
+    },
+    "1998236N13326": {
+      "reference_sha256": "324a23fb01017841f4f3c4d7e1030a86bb4fd965630b815798289a033701fa0f",
+      "latitude_sha256": "07f25a4233922ca4018eed27a84dab244a0dd3da20ba1e3d4f280bffd995d3f5",
+      "longitude_sha256": "8ba0f68ca2dc96a3c002d9bb8cb7b9ba10f36e480b90c9d80e17488a46eabe87",
+      "omega_products": {
+        "omega_products_40000.npz": "369cb8fcf2be7a3ef0699892757bb5b35f765e325790a5905e166b11797581b8",
+        "omega_products_60000.npz": "02bb7ca53b469e5ff6c22868d39c65d409db4b72ab688ce8d85fffcd6a81f2cb",
+        "omega_products_92500.npz": "bf33c6c5bc4c0e3b9f0d3311c3b0bc88be0e5f5c8c8b4e85eeee8a2e1ab0302e"
+      }
+    },
+    "1999255N13336": {
+      "reference_sha256": "1f668b958a9b87800eeb395f6ae17feb6497be72f5947ddb75f64d749947083d",
+      "latitude_sha256": "bfda5ef6ed7b7a9b0f5574f9d235743b6796e7f9fa840419bb8775642e77b28e",
+      "longitude_sha256": "5284e0f28187b878316cdc6d4184c0bb16b265b5c3d6820773704457222d22b1",
+      "omega_products": {
+        "omega_products_40000.npz": "575a4c9cca6735ce9ab5d34f916a9ce997bc0d1c949d14e464d783a257358f9e",
+        "omega_products_60000.npz": "d339f5d7fa188ec0d066d280e5bb40d0fb670fe721ec34ad5ac44253e61d78cb",
+        "omega_products_92500.npz": "f064a8c64e460228ebca9b99545761f6869adde8b82ad5cb3f71b20045261fd6"
+      }
+    },
+    "2000023S15172": {
+      "reference_sha256": "04037ed76c1064bf4d206e9d216c6b8ab9371b7b8ca01c8a57659be5e5150300",
+      "latitude_sha256": "3a9714482ddb1f236af9c17f0628e8b4af698986eda6ccd1162b90f4949921d8",
+      "longitude_sha256": "82f902e6d3878fa84bf98f1e39d9bafb9a12e20e196c19f5fab554e16d7b356e",
+      "omega_products": {
+        "omega_products_40000.npz": "9030fe3331b3391727599c81ef1af539326528299b9b1e6eed139d97a68eaed5",
+        "omega_products_60000.npz": "35ee29de74c7954d3ca4c7762c61c3f56f49e6146b471a223bcc25694da2aecb",
+        "omega_products_92500.npz": "505eb25770051cfb76fabaaabed7df8f94ad0d2df5906c9944d32dfefc776504"
+      }
+    },
+    "2000205N10260": {
+      "reference_sha256": "7b0f051723fbf62b6ab7e0c8eafd6758c880fe2165dc13bc2b8a6e7def10e28b",
+      "latitude_sha256": "f2524dbb77185a46b094a8fa75f76906a76a9167926f9e15a4592c136a50dc35",
+      "longitude_sha256": "5f05b245c9a412cf147e885dd6e922dbd4df38bafc2d4401eaccdc72d5e18c60",
+      "omega_products": {
+        "omega_products_40000.npz": "929209727e1da9d37e92a975cd115c51a733ec365f7ebc24ec1f1b73d3d1005a",
+        "omega_products_60000.npz": "c0aa5e8c4c390fab2a5c912fe493137564a823501413d8ba6d2985cda7174265",
+        "omega_products_92500.npz": "052be9e0cea36b7ebb67a276f3ca891fa6774dd078ff1c165b6612cf105be5fc"
+      }
+    },
+    "2000248N18126": {
+      "reference_sha256": "e6778cfbd75161db3e8e4af24cda8eeb157a2492443b2ef7bc309325e1cc648f",
+      "latitude_sha256": "0e38638bd91a6206ad441d756c204c8113c9ed1abfa58875ac37ae8324a607aa",
+      "longitude_sha256": "87d7975101bd3711d7dbaa557d1ef388997ae2b7c2c0c0ca9daf989900bc5318",
+      "omega_products": {
+        "omega_products_40000.npz": "0897b5f68ce38fa39fbc18087af977ede4860504b1de885b0d1c1c2119c30d21",
+        "omega_products_60000.npz": "99bf37f0d65690e2b9b0d8454a54ced708aedfa1392fcab481d8d76de7c3b95c",
+        "omega_products_92500.npz": "55b798936280d423879016023650f3ba99edc7ad58952d4c51e6cc77055e32b7"
+      }
+    },
+    "2000260N15308": {
+      "reference_sha256": "3df1d194ec81fa2c73f0d21ac814e0e76a135c78bf8656c60eee0b93dd3337d1",
+      "latitude_sha256": "de0ac2f2da69bd6a07a40585a9d4efd528b0abeb87cc57fd1d38e83ec1e46c8f",
+      "longitude_sha256": "bcc2440a2a21fba6feabda1f732d1f9b7b13d4e6d9e7e658b319c28c690dc583",
+      "omega_products": {
+        "omega_products_40000.npz": "6aef080685ac452d24e675b265ac11c744b4d64491d43a1fe95f9c09d4a0060f",
+        "omega_products_60000.npz": "11a78604ccf1eef7aa4cc5bb85462ead81f7beb1857c8c22a94adfb953b80402",
+        "omega_products_92500.npz": "ddb0a97d2e9441df159468b92373f44d082ebf9e93434a4bb196597e3abe582b"
+      }
+    },
+    "2000277N15257": {
+      "reference_sha256": "6e302ef877a344e81d0d997b3875f9141a683f870202e262ec0c7a9bd9bf518b",
+      "latitude_sha256": "7719e0850aea8230ca1ea6fe52c4b428da32023c153aadb8ff17b32e38a80813",
+      "longitude_sha256": "7c474138a4fafdd8ea91bb3ee63d5e3e9c03ea1702ed4da3b6ed60251138cea0",
+      "omega_products": {
+        "omega_products_40000.npz": "76e0f5cb54349333246251f869d3aeb9139fb5a005a26411e6b07497a95e7054",
+        "omega_products_60000.npz": "05e48436cab29a50e320115e5f3a81dc68c92dc03faf526897edc86bd0b836f8",
+        "omega_products_92500.npz": "58615e5b65811c462c2d6feafeee06a462908421ba3285cb62ca228af22de743"
+      }
+    },
+    "2001212N10158": {
+      "reference_sha256": "39beda41cc74750484e02eea87e3eecec09d3879eda0a43947075d9ea36129d1",
+      "latitude_sha256": "1fa2a8ddf0d3324213c35ad9362bb71e627152751b93c8ef4be480173c366e13",
+      "longitude_sha256": "ee6ac5636776c2ed1267f13922bcbbe77d612538803cff6796d960654acee747",
+      "omega_products": {
+        "omega_products_40000.npz": "feafb8e0b20b041dd86211894f284219ab28d98460053e4b3cbdea1c81205a36",
+        "omega_products_60000.npz": "e062de1ebfc3a3c0198833d95160b0f55587080f4226f965b134f8fbaa0078c4",
+        "omega_products_92500.npz": "34587fee7eda42c91e28a902f7574f77257925927362f2b5c955c8e99697b292"
+      }
+    },
+    "2001227N13323": {
+      "reference_sha256": "f0fb40ff4a85da1106e025a27994a348d53c2b60b4c4aa10cf133cf4b0d2472f",
+      "latitude_sha256": "038b0a5d09ab99464a03f4ee673b84cc86ed3bf25a0039459bf747f57fc4726a",
+      "longitude_sha256": "f151faa49ccdc20f84209315bd8531ceef83da33c19b137ee1aa2ab5e9acddc8",
+      "omega_products": {
+        "omega_products_40000.npz": "c027e2170f0db64dcd6b9457ac15e60aa291ea53fcc2d8168b206c1bb26fab4c",
+        "omega_products_60000.npz": "c076fa4b79dbc6a19714ae7054dddc7a2f57d463f88b83918ff1570cc29256fe",
+        "omega_products_92500.npz": "9cd2d36c7c480d997480b21a531647594106e1ee278abf50d8e4e6a3844b7668"
+      }
+    },
+    "2002122S07063": {
+      "reference_sha256": "896d9424cc47b407d8610c8d7616a407b0a5873b88d77f71cf986f3dbfb051ac",
+      "latitude_sha256": "f5d6f2b28b010e5f037fbc25830069c1010b3d6c1a50825c2ab9dd7418638344",
+      "longitude_sha256": "7569ececd0c2bfbb959093815ad1e2257d79af3044fa49111267753b4a1ec7cb",
+      "omega_products": {
+        "omega_products_40000.npz": "65263e2fd587d75cd357af91535649ecac96651d714842a9fe3865496e5379b0",
+        "omega_products_60000.npz": "a86329700b015209fa64473d1718be93b6587b301f6d7301e98118b9f740c125",
+        "omega_products_92500.npz": "99b106e569cf77a0abf31f41d79579fc044998da48be12ab23f9bea1397c7b0f"
+      }
+    },
+    "2002237N10202": {
+      "reference_sha256": "ba79d836fb9f3db32a216f2f618eb6a186781153326f2e8a812e5409f22a3530",
+      "latitude_sha256": "11167d261458962dfd2ede232056e9181019b67dcd666841bc9bbd2dfb838cc8",
+      "longitude_sha256": "de80d3acb4176806429c01e73a3163ca9212ddfb5cc43a1b8d2ce6c2838e4beb",
+      "omega_products": {
+        "omega_products_40000.npz": "fb5b22adea8cb6499661b5ec199c27bc9dd51f7f1bda02148ce68b5a904bf0a6",
+        "omega_products_60000.npz": "f98e007c3d1dff9e4d04ef0fa3b453e8e80b413045608c58e764d83e5921ea47",
+        "omega_products_92500.npz": "09b4c72eef2709c38fa97745a35f23ff20d95317ccf6f0c2b2360bb424931c11"
+      }
+    },
+    "2002297N09206": {
+      "reference_sha256": "6d0be05c1313231c16a52b8374b2cbfe1538ef164cfa4e57885832d59b323621",
+      "latitude_sha256": "6bf08b53de7acc8db910ee4c80df8018269224938e61e8d3bf0e16fccc01f97d",
+      "longitude_sha256": "4070700169f160751344699963d725e59125c56e1d7f33dfd74729ee8477681c",
+      "omega_products": {
+        "omega_products_40000.npz": "b0b42e9382c79e5063fd374a38eef3b640bc04c507bf6416f4204ec1a6d8db41",
+        "omega_products_60000.npz": "1ec34456d494d33a878dfe2a2e9ff6577b1ac6781041e5dafc5b7ae5e177d777",
+        "omega_products_92500.npz": "05bdbdb0b96a6d8c54fd1ce57da86f5726b007558f80b4e13be903de500843fc"
+      }
+    },
+    "2003098N03159": {
+      "reference_sha256": "b3ee9cc5cbdad8dde7b87483bea145b9a3d4a581502fab1afebe1080198842b4",
+      "latitude_sha256": "19d398c38da7ad9d5318b613227c082546116cb4f0ed7d3a01c20f46e031f74f",
+      "longitude_sha256": "720103dd6d27f157282750c76ff5e32151c8dc205c22a8806e628404490ada0f",
+      "omega_products": {
+        "omega_products_40000.npz": "3e7cd5c01261afa204ca2f551ac1df1763c2c9e9b7a85bead789dbd19910b6e9",
+        "omega_products_60000.npz": "e093e9c579aa257eabd07ee7a8d496ee381de10756af2e5550622130c6482deb",
+        "omega_products_92500.npz": "65480e0a7b76a806ab09d060858870d89fdb392673ba6fd7a13a1e379d32c5dc"
+      }
+    },
+    "2003226N07156": {
+      "reference_sha256": "d4efb5ea7f87b16c17b2a459bdfbe76f5ba1dc3f7087b8d50893dc01b6425d9d",
+      "latitude_sha256": "d5822dde2736514555d7302f7ed5aca8264758112bc3518a5fcbe86649af918f",
+      "longitude_sha256": "a44c5e6758bfd8ea73c55b80db6a1b4eb0f89caab2ecf7555c65ca8ef79aea54",
+      "omega_products": {
+        "omega_products_40000.npz": "ce597d2052d0e8ae9472d3b9635e75b8b6a2a3527ced8049637a32882d52dc40",
+        "omega_products_60000.npz": "b3dd2c861d15eb3cb6e1742c14a6f2e0afd340ee79fa6e95d5bcb3f3d7e2b28a",
+        "omega_products_92500.npz": "868f608203339e774c0d2e9a11d08334dff4a18dc3058dd8b33d10051653e86d"
+      }
+    },
+    "2003249N14329": {
+      "reference_sha256": "96ca3294615313ac4f0ed2a8015c707835cc5bbac5eb8847cdd0dc8f9a5db4a8",
+      "latitude_sha256": "b40c19e8fa93bca880dc3329d9e7ab6aa9f8c94bcacdc5c34297a2f4d7ac6b72",
+      "longitude_sha256": "063b1cc0f7308c3bf7c7aa065bd024f922e6c90780ce962bfd89375e526d6eba",
+      "omega_products": {
+        "omega_products_40000.npz": "09e5e6db9461b591578b9698e7b97633c170993be65ce0700356fb8e12185019",
+        "omega_products_60000.npz": "d122993054b736742c3e0b592a60d015b16841b3f8214d5ccd60efd1d7ef8931",
+        "omega_products_92500.npz": "79f90d1199f1aa83b37c8a6fe595f2756621bcab239a1dbc6b1957c1116b70a4"
+      }
+    },
+    "2003316N11141": {
+      "reference_sha256": "82d52dd45acc893d4c5ae6f677d6b4fc6638028a0ff798139a62aef70bea33a9",
+      "latitude_sha256": "a2d9d3d045033b96101668635127089f37d06c6de8f2f31b5d355cceec437f5f",
+      "longitude_sha256": "e93672d8be065fb492321b93439363dd4010959afff9bb961cfa95ab7cce5195",
+      "omega_products": {
+        "omega_products_40000.npz": "f356e58d4ae702a3778c1200a47b0b5c02da4c99d87347d97bf5955e3c37f189",
+        "omega_products_60000.npz": "15330a17ffd2d75cb4f8880b82936a35c512515ada743cfbc236e58b4bcaa65a",
+        "omega_products_92500.npz": "ca1320a0948df67473b27d513cf594754fdcbf1a6d0055f91be5244acf5b852b"
+      }
+    },
+    "2003338S09065": {
+      "reference_sha256": "6c629959b5c6b258a72d63eb59abb9032b0b907e7a09c5cec68c8aa0baac76f5",
+      "latitude_sha256": "5b46b903b9054ff6ccd36c5406cbc5596b2ac3add3956bab8bf5bb5499e5b2ec",
+      "longitude_sha256": "6c677678494ce0cd4af68a2455a7cbbf72321333848ec79efb611b90726111ae",
+      "omega_products": {
+        "omega_products_40000.npz": "459532ef3bf523c873a7c3c4f9c3e0ee91c3112ce502f6f699af92db3eee2fc3",
+        "omega_products_60000.npz": "45f4e81f184fa54899f59f4b58e561f8b6b693359fe1f250fde4f0d92a480954",
+        "omega_products_92500.npz": "537c1713f0071c35dec7419be531b8e725b05deec08ed1191dab884ab9f4664e"
+      }
+    },
+    "2004072S11146": {
+      "reference_sha256": "2ffe833b20a122466336526c6b6843132a91b1973d4cef04809a06a9f2683ea7",
+      "latitude_sha256": "d714524269c3ca3712c9d497a76ec24667b1af577417d1b63f379d84d618e1dc",
+      "longitude_sha256": "e3da084c97ab45b1ac0a62d81b97a91c9de48dd3162a46cd7fea3e5895c882b4",
+      "omega_products": {
+        "omega_products_40000.npz": "f93670e5e881653e701edc373414246085b9bdec97a281c2ccbc0df6b47f63c2",
+        "omega_products_60000.npz": "533aa488b6c7cca29ced8c88be7d73ffab58a89d2074349f611228134ac06199",
+        "omega_products_92500.npz": "e7b0e7ca6e1bfada71023909a22572f458716d3400cd343bcb328e4e13d48cb2"
+      }
+    },
+    "2004093N07154": {
+      "reference_sha256": "3d4507cf96ec30a5926ccd0de3d18b047b950287c6cc47168d80bfbfc639b072",
+      "latitude_sha256": "b2a8da517f62c1ed31a92869d6f91d52e95e947d17213cd20a86fc1ac070961c",
+      "longitude_sha256": "581e5ae1c564fe1955bc4ccc05d2b90ded463ea0728c76cac638a57c1827f189",
+      "omega_products": {
+        "omega_products_40000.npz": "3f1d24c32de265a88f9584b5d4827f1b1c5d8fec0a8bb55ee0073f61c8989db2",
+        "omega_products_60000.npz": "153667d46254bf0f81c14d0462c5e1e1389ed412c914c0f4ea210c36ba3ebbac",
+        "omega_products_92500.npz": "f7957fb8531cd83c681b0b1c4ebd037159cc5f980ea45a5c295b9d8b2b613bab"
+      }
+    },
+    "2004230N09172": {
+      "reference_sha256": "d7370c09c70bbb670dd7d145f69e2518080f1b9907d57fa17e4ae9dc6aa3f55f",
+      "latitude_sha256": "3345cacdbf3e88f446807a8131d6a88b864c61e0095e341ef52ed076cd014050",
+      "longitude_sha256": "d016627ce2b9179a9d1185a8f91adc4678e7c56b05ce7eae85f90382e14fa17b",
+      "omega_products": {
+        "omega_products_40000.npz": "194d691da50e5f738d18a228d4b95356d9f6e5cefd75e55ae94b6f632560d5c8",
+        "omega_products_60000.npz": "e061b914682be233cfcba23b61f16e46643233ed3540a49c23f5173cdda27fdd",
+        "omega_products_92500.npz": "96aa9fcb2580b1b6deaa89e1504f2e2f5bba5d484ace586c0accfde2cf7063c1"
+      }
+    },
+    "2004239N11171": {
+      "reference_sha256": "7ecb0422249423067d2a828b9701e61eac97bc7ab6b617ad95c5396cd4234500",
+      "latitude_sha256": "66a800b9ce5ba8c9195b68f0a62042079ba47a1eac39d98d2d4cc8556917ec51",
+      "longitude_sha256": "53948b765a624a66f911de0345b899570518614cc71b84ad55af4e7285247fda",
+      "omega_products": {
+        "omega_products_40000.npz": "c66656e176d23dd6e06de1f1d9928d80101be3b120bb4b71e02afc7ce6f39ebc",
+        "omega_products_60000.npz": "c09cd623d84091b218a4a46ddf4a4403f1ee55e4fc7f4f445ea11dae8ab4d64c",
+        "omega_products_92500.npz": "ad7073e0f6c31b5eb4f34d8821781668436c7fa64417b1e9f80abc5696a62ea2"
+      }
+    },
+    "2004247N10332": {
+      "reference_sha256": "ab81c74cadcca09e8f76e9317170dccf52fdf1c86bdf5769b3ece4c38c9554fa",
+      "latitude_sha256": "fe74ea39ad66c61d52bcaa4578b1767c36844e0d5e36f29fdb1fccf46c9ad955",
+      "longitude_sha256": "998b283d601372a5c8110d97933c794b8611c7f9cf800423ac273d1511693c23",
+      "omega_products": {
+        "omega_products_40000.npz": "13b44f5d2c9c7dff4e073d4004b3f8a68974f2509debb69fb2bdcedc1379a22e",
+        "omega_products_60000.npz": "e953bf667f26d6c7606ecb3923e94322a7760ce5ae5470cda2ae04875ac34423",
+        "omega_products_92500.npz": "b17f9b7eb16fd88e731b35549cf3905c3cdac8fa95828461d1368210baeeb0c0"
+      }
+    },
+    "2005063S12141": {
+      "reference_sha256": "8f59e9d177f93694da0b7f160aaa34ceb6403f7108aac6be04744992e848b218",
+      "latitude_sha256": "9f6acfd09d46253cb8fdd5b826dd14324ebf390630e2f41f864d64e89fd92b2e",
+      "longitude_sha256": "9915c7db972f9097cf6b59cd651726483dc8979fd042d7ccbfaa28716b2de0c8",
+      "omega_products": {
+        "omega_products_40000.npz": "d7156d662ad2789bd8caa3a110fcbf524cccef456a2c5e45b1f973d359cfa73e",
+        "omega_products_60000.npz": "ce12594b1b46e4f2a697524ebad8d072df017d2c73bd49a5274fc13feaef83fd",
+        "omega_products_92500.npz": "3b58f46f5dffb5c85bd1023c13cfcd2dfd10d74a7c8bd7f6ab771628eb68e441"
+      }
+    },
+    "2005186N12299": {
+      "reference_sha256": "581707d882a195150e51956792091b8f43662cf4a5879f283407778c6eb85840",
+      "latitude_sha256": "f748fb7457499aee8489fdec4bff1b31078eab8d33f90046bed48a42bec04c26",
+      "longitude_sha256": "c4a09bd770d4d4310f8cb2d04074a928239d35147cb3fbb106d874c546303941",
+      "omega_products": {
+        "omega_products_40000.npz": "8d3ed82d84b3a5551707d3377afbc48c654fd554c8eec3a750d7b234605b7c70",
+        "omega_products_60000.npz": "3f3fe7ea43db9369b042251d9ce0e6d75464af70dfedaf69c8bd3b321dc1936c",
+        "omega_products_92500.npz": "6f62852543ae1d8e6602f446b730a4c4db5e985a2852aff6bc5c1400489a62e8"
+      }
+    },
+    "2005249N26281": {
+      "reference_sha256": "e3b6d3891c68e0108a144911acf872244093d67c47bd704e1f86af2478663426",
+      "latitude_sha256": "a8fc0ad65c46f7efb94d167dc1d5ae23c68440d02ff6a872ec47348708e9efa6",
+      "longitude_sha256": "a3087bc4d70e2c052e0729dc952239fe5571bc37c8a9352cfda7e54e20b30862",
+      "omega_products": {
+        "omega_products_40000.npz": "96a1921d95f1892f02d9a574d5abefaffeab2e0a4d99905eae677c38647ab9be",
+        "omega_products_60000.npz": "58c7660e6aec9603e846e30651e3adfb6991ba7efe4486bbe3af43d56e11f539",
+        "omega_products_92500.npz": "01914e077466d6c8b7b7b7d0581f65086ba36f4db3978b83789a384528c48e5f"
+      }
+    },
+    "2005364N24324": {
+      "reference_sha256": "26a8751afefa3de986fda0ab47ea28399c9b5a32e35db5c503a6a45e341ef9af",
+      "latitude_sha256": "1d4ff9358ff0bdd1f6796a0e63dd642252da21a3177999a667e58b7feaedf7ae",
+      "longitude_sha256": "93d8ce3d20ab2a05cb2bc152c329465a3e95db2a4b1b94184f917db7b9342769",
+      "omega_products": {
+        "omega_products_40000.npz": "6e2c93778a284c4150ab3999bdc7b63345c44291ef24cc7319164378698a461e",
+        "omega_products_60000.npz": "d40124187d24eb464ea7876698444e5cbc1027966c03856b04fa23f615f778be",
+        "omega_products_92500.npz": "dac600aab0c949f8f6061c64179174e9f5c5e05029f0b2fe8c623335ca6477fb"
+      }
+    },
+    "2006203N12257": {
+      "reference_sha256": "a6dbc4abc4e9d29e043b9a2e3ccb1ad603c07282459f72804f50dd87aacf06d6",
+      "latitude_sha256": "20853b4a0246c7ed50fc0bf9a87e44bf2188d1433167803f6792df3e09442a7c",
+      "longitude_sha256": "e1bf945acf8617bbb18f1fe762baea41d30b7e763343a712deeb00d04acf01ad",
+      "omega_products": {
+        "omega_products_40000.npz": "049315e0f29c5f215ed2bf6ee2e903cce681e531261b252ec9664650b21e344b",
+        "omega_products_60000.npz": "599448f6ab55420bdcbf3fa5fb28fc426c562da4c9278a640c281d1ac2cdf8f9",
+        "omega_products_92500.npz": "c97f55712143ecb852f6e898e4e292064cd35ff27809dbff69d84827a02d375b"
+      }
+    },
+    "2006340N08142": {
+      "reference_sha256": "d2bc11ab1626a3605379b2e951836aa7fb85e3fd1f3983cb09ddab4af8dd96ae",
+      "latitude_sha256": "d093158c851d802e8cbc5991866ae17121b7467505bf30b684109be933a025ec",
+      "longitude_sha256": "642dc152c70950bcc9c3ce9b46ee49dedf20703e6e822b45b74ba21b6c69da14",
+      "omega_products": {
+        "omega_products_40000.npz": "52e60197af3de456c99bbf2adb99a9dc908ee5d5f5f41a49728636eacc629019",
+        "omega_products_60000.npz": "2b152bfbafa7c72283a7c9f7cd25e31f05ff8b7f3dc25848f83140303e0b3a50",
+        "omega_products_92500.npz": "1e0b0aa078a2ad26441346fb4b8c99ba9ba7c7a2ee24afd4ac7f5953bbca14d5"
+      }
+    },
+    "2007085S11085": {
+      "reference_sha256": "c74ee6920cd572d5b16d588f9ae9247c3e2ac50dc11edbee5ff194a46ab302b3",
+      "latitude_sha256": "2c3cf7b0a46f1d8519e870719607effc2f80813a66dff55ffe2d08b1d63a1353",
+      "longitude_sha256": "a28bcd17f71b80b2871eeb00965669ec126d7f8d342c91332582b9f0c22d1374",
+      "omega_products": {
+        "omega_products_40000.npz": "b77f4831db66164b70d2b612212baa702c8d6279180683ea3c5fdbab107b9c7a",
+        "omega_products_60000.npz": "e386f53268e22cee0cd3822758adfca8aa7fd9d294ddf5b9eecfe2929ff4fd97",
+        "omega_products_92500.npz": "f439582f1f98b2f83c30f4be2d27b92baebf59b5cbad787f189eaf1b0dcf1eab"
+      }
+    },
+    "2007240N17153": {
+      "reference_sha256": "6deddb5908e6dd192bbb4f3b07895947f380438ed279525502107e5a3fec87a6",
+      "latitude_sha256": "df0c88a007bd79a0b243de2d44f7a6e37c6d18b6152f1e8bbfe468d988785da4",
+      "longitude_sha256": "c0bf8b7d6b26dc6bd00d20ce007618b7545313e572f9128de8a5e0be0cc97abf",
+      "omega_products": {
+        "omega_products_40000.npz": "3bc4205ead82c4f0f677fa8662fb062a9183334b00c0e959de7fc23d99bdd7a3",
+        "omega_products_60000.npz": "0fc168625db2b9b2f424d1164359d4078fa662d1956f4530fcbc30160d41e401",
+        "omega_products_92500.npz": "0473255869b1a87f6df9515a4f355afb1a071597bece3844cf6f05fc449bfd48"
+      }
+    },
+    "2007244N12303": {
+      "reference_sha256": "9be3b3aa31b37df5be0585e43caa22bab7eba8a3bdce5878354f25f1b1cab21a",
+      "latitude_sha256": "d5f92801e184d7741843e184b7239cfcf0c65b74552f10ec9634cfef1e4d0d83",
+      "longitude_sha256": "09fbb81511c1910c99aa6cdeb8f03a322a7244ebe84e0e81c5e19afe207f1bcf",
+      "omega_products": {
+        "omega_products_40000.npz": "cd85da3103cd13e0749d69252b9297db2a016eba888afca76f8dc5acb68dc74a",
+        "omega_products_60000.npz": "f059b3152a32248afb24730c610cabf27be09c07cfe02bbaa0ce19facad047d0",
+        "omega_products_92500.npz": "e927ebd1b8c19cc6e4c32483a8497b6f2de0ebf8c69db7c789d9f580fa128704"
+      }
+    },
+    "2009227N12328": {
+      "reference_sha256": "2c641c62711ea78f3cebbde8589df068d1337b2ba5c629eba635bc02620411e9",
+      "latitude_sha256": "661604148bb3eef08d42b2353aeea3e6f5ea2d3313a2fd3b4a315efebff74a27",
+      "longitude_sha256": "fa15bcf919d635027a6aaeb4f906c49a2c3d520937572980671d888b788261d1",
+      "omega_products": {
+        "omega_products_40000.npz": "7b2b3cba7e0533e6681fda45bca8164afa2fa3d2228b2914d9add1a24237fe9c",
+        "omega_products_60000.npz": "6bc07a7a32dd4c495b307ac829714da4ab6cbd60525f83e363f837947136fd5d",
+        "omega_products_92500.npz": "80ae2a0091390927527939860f06618eafd695f17f12205043ee3be96de2b18a"
+      }
+    },
+    "2009325N06148": {
+      "reference_sha256": "82e97ed48a689936c9ba7232b625a2e87fb8180f30cf927c62d3165456a79495",
+      "latitude_sha256": "ceed935afcf4d39f0a1a9c540f8e3047599ab9991dde8281b75ec7cf13cfdef3",
+      "longitude_sha256": "c6da9d388b9d0d343d588e248f4313ad899c303738ff7ff65ac01188dc559740",
+      "omega_products": {
+        "omega_products_40000.npz": "dd0fc9d4851b72a47a2b5f43fbb093cfb94f3ed156f19c1afda51aa76ad79435",
+        "omega_products_60000.npz": "ea8f62bd104748b9e6baff929280809dbf7b0441dd6de3baf65f24f4eed93ede",
+        "omega_products_92500.npz": "0107b0ce3cfbc04bce92e1a17c4a678bd77191da356f1db18c40cb7dabd7e7b6"
+      }
+    },
+    "2012018S16041": {
+      "reference_sha256": "778672e7f304ea9ec3711eb7b0c36a52c975b228c8dea985fdd0af07a77a75c2",
+      "latitude_sha256": "2cd53d1c82f6488424f85a0087a78cb465d72409c8c2cebae937bb73ee8cb143",
+      "longitude_sha256": "6ff95fe809fd6725c17604400f7df852af0f30ed134449a9f5e1fa24b971da4a",
+      "omega_products": {
+        "omega_products_40000.npz": "a94ce7ba8dc67beff4e7de1cd60175444783634dda0667bbe8c4bdacff851c04",
+        "omega_products_60000.npz": "681809317679f1a259985a96a1d7e23c8c3330ef4da071cb5c7946658d721468",
+        "omega_products_92500.npz": "60cd4a385e45f0257eac7070db142aaf7e53e900704c731a2bd416a8332c8dfa"
+      }
+    },
+    "2013093S08074": {
+      "reference_sha256": "ce6b012b8a57f42cc0658813ac6f752ff5395e2a1132f069e88e10f7ac8fa950",
+      "latitude_sha256": "5caf192319db64af7df27b03a751ad64b7dc368ebaf9dfed76be1171c2d33de2",
+      "longitude_sha256": "ba3443873bdafa7fa6f7c82a1a8ceefe01bd6533c5c9f576f4dc16e1dc96d4f1",
+      "omega_products": {
+        "omega_products_40000.npz": "90d3b572b22ae4b06f2082f5fab91b877dabbf236b73f228cd18b5318f83d411",
+        "omega_products_60000.npz": "e9e247699c2e2f7f755de0a87a53158bae82e38e22ac6d2e8071db4e50ca2d5d",
+        "omega_products_92500.npz": "7590426dc6d1eef6d04113a8c168ffd8966f440fb9b5e87dcc058d1469fa5324"
+      }
+    },
+    "2013269N15118": {
+      "reference_sha256": "6f733ea5a98a6d9723e781ce4101fafb16e6b9f14cf03617f753dc009aff38e2",
+      "latitude_sha256": "3de7e5b3b733719eab53a9b088e9517af848c3d04ba9d03eb8513d1210cdbccc",
+      "longitude_sha256": "575b7de6817ca4747b2a30e3b3282fce61f57c9512dd9f06563d86a8bc6761e1",
+      "omega_products": {
+        "omega_products_40000.npz": "4ee006fc8a0fd71e1b5273915486c96b78a11b129fbb75fac6937c515f424b72",
+        "omega_products_60000.npz": "3b1e072044a590c7b9604fd2ce91baa6bb4be1daf05d420abb41f45d29947233",
+        "omega_products_92500.npz": "123397b1912b426dd0cbd9b192bddd7cc15926d3d3d3fbf2227e7348ea23ee5d"
+      }
+    },
+    "2014356S08101": {
+      "reference_sha256": "c4531d125953338a84ad5e86f78f206366c92c53af1c46d0ffa5817bc81965eb",
+      "latitude_sha256": "f8ce6a6936d2b0a235d13268013c3cff52730bef40de8aec89e916dece95ea1c",
+      "longitude_sha256": "2fa0262d397a01e5577d3cf47c1e25df5186ad14220aa4f157eff0c2be640748",
+      "omega_products": {
+        "omega_products_40000.npz": "5f2cfa9974486d4e719ea07280763b640e63a002976549b425698fc4afa3c07f",
+        "omega_products_60000.npz": "6467599991d107c8ca3d3abe03c930cf52037a86745b58736665663bcf921ff5",
+        "omega_products_92500.npz": "af85b9488a9f07a04e25ba5dd1851d029aa2f99a84f45d2ac0804143e3ab3f5b"
+      }
+    },
+    "2015009S19054": {
+      "reference_sha256": "9ef6136490ef06e1a25b08ccfe341b1d7f5f04fdfac3a46ad880969454c61411",
+      "latitude_sha256": "f96347aff25c40a5f27a0330420cf15c47066fb3beaf0f4bf20d00933300730e",
+      "longitude_sha256": "943d72aaabcfadc3ebcd481bed6d71fa3eee31ff6136107d2d691aa905e194a6",
+      "omega_products": {
+        "omega_products_40000.npz": "f5a7b46e830399b662033598a0c4f4e95922138c4c3f4012cecffaa762b652a6",
+        "omega_products_60000.npz": "4cebde60616b76016402700bcbdf5e9580676071e2e8af88e58e0c4269eb4bea",
+        "omega_products_92500.npz": "beae564623f0c19f603fdd0977d6a587a97e8a3e2808f2319d4f054e537b6772"
+      }
+    },
+    "2015092S18074": {
+      "reference_sha256": "f547eafbb3c0e6f32a87ae476a23c198e3ff1b62448b9ee838a7771ddedeb366",
+      "latitude_sha256": "07db1a2fb464f842056528a9718b3300f8fa1958a5460204a772970ff942a331",
+      "longitude_sha256": "ed5ac253facb20eab8b8235efd95dd68e2c98766d4e3a79c629ba822d69216a6",
+      "omega_products": {
+        "omega_products_40000.npz": "b8d4284adbbc0a36eacc53064db5147b4a2707d7ecdbb4e3c3729f73d23a5543",
+        "omega_products_60000.npz": "0cc01c1fde50061480a5e05dca5b61d7337782c540a224208ee7f4974ddf805d",
+        "omega_products_92500.npz": "28a012a704a980ecaf97aeac0ba45ab00d59afe67092ba4de7728c3d34bdcf70"
+      }
+    },
+    "2015188N08194": {
+      "reference_sha256": "52ae11c6a02269cb6aa3d89a9b35a52c2335b1107a7a1e9731e7c468193e3d4c",
+      "latitude_sha256": "7f29c8183f24c6ab4c4c9de4d1a0138812f41be7e555aa32f233ada63a991a76",
+      "longitude_sha256": "4c5ded00930300b2012d6b86fa3be2230a494e02c440f74236a9a8b31fcafca2",
+      "omega_products": {
+        "omega_products_40000.npz": "d031cb6400ef804575cabf7a30047fee35cf78e351ff75557c015f61e420d74d",
+        "omega_products_60000.npz": "ede32aed9ad973763a4fb0078fb0f0c49e85ba91da8183b806b4c9baac067354",
+        "omega_products_92500.npz": "86dda642f4419437e14b888c68ab73b9de729a5b5b6827b2b001d7d4843cbaa7"
+      }
+    },
+    "2015226N12151": {
+      "reference_sha256": "aa8f5623295bb27be2fdc789a0e3cb840dfc41146f707637c1a9a70abc04e294",
+      "latitude_sha256": "ae5fd9ac4fca26f5600fc4f2b5d50cdd84706078ab9f87eaf98a7ed6f4ff7844",
+      "longitude_sha256": "ca9888dc9f86b7707333debe83a5780341332f9fd8b2344423f6c72c5f99a874",
+      "omega_products": {
+        "omega_products_40000.npz": "fe9ce1ad8e07f0e79f5bdc790ea81822e36bc1aee3a4d2e2f01c8286fb5c0a09",
+        "omega_products_60000.npz": "552b192d9959e80279b1d4c63e6d0b671c4d765eb5db39410771d56b704e1d04",
+        "omega_products_92500.npz": "a5f6838e25e421ada7506017bd83b396d6e471f06edb5627a72a10f5a1840930"
+      }
+    },
+    "2015238N10255": {
+      "reference_sha256": "049f619ef5ed51fd55799354787eaaa440c6427314f15fdde0176490c9ea8349",
+      "latitude_sha256": "c05a92e5ea479007ce176bf08cb35dcaeb4c931f541e389cb1ac81c8045434dd",
+      "longitude_sha256": "d922f0bda7164afbf24ec341853616ba5d3b0de6ed337aac7487bcdca33deb0f",
+      "omega_products": {
+        "omega_products_40000.npz": "026ec5c54d5ff6e74d256e2ef0633c0624895eb283bb9e2833ce46fa14e9916f",
+        "omega_products_60000.npz": "633b5c367a8f0e385d60d7da9c079b66dcb3038727538338b80afee08048b882",
+        "omega_products_92500.npz": "6bc5740209812353d4d50bea63e59054b3c2c98e4ad4eedba698f05040375aef"
+      }
+    },
+    "2015344N07145": {
+      "reference_sha256": "5ee7afdb2fa716c6c161143e0eff1d7158b89e3ba21eedba31828f901e2a72e8",
+      "latitude_sha256": "8934bb8629fd0fb64705d8cf28c81a42364fb6b875ec1959308b1bfe1acdcf00",
+      "longitude_sha256": "6329b0d010d308306104576f30ac9bb5ef7b157b4ef78eb6c82c795c61cd5afb",
+      "omega_products": {
+        "omega_products_40000.npz": "6def41d381826c09a3620190d0a1ad02374d47b4f5500f42bbc15d1078090947",
+        "omega_products_60000.npz": "d236a26b4e421e6fa141b82e4901ef640e3683823ed734ac42dbb4d4cd9acea3",
+        "omega_products_92500.npz": "c94913b4ebc037f480463e32a27ef513c463e4ddeb31a1804fccd9c531968578"
+      }
+    },
+    "2016197N14256": {
+      "reference_sha256": "0eedd0badde811319a78e1ff33af8383981ec4e1f886d3b43d72fc7478cbc693",
+      "latitude_sha256": "b9c4d67bea0ee3f8315bbcef87d879d6a78ecfadfbf3893eba3908bce232b380",
+      "longitude_sha256": "c271332483b6c31efa166d54cb06c7325acad08b8d0660311c6b54fe548c6f18",
+      "omega_products": {
+        "omega_products_40000.npz": "b21b091fcb0a5a875f342ff305bf1c50ff2ef5969e01bdc80228ba6daedcc1e0",
+        "omega_products_60000.npz": "2ea6002224f01acc82af148e66ad5c878193dae1d621e0b6dd72ec91486314b3",
+        "omega_products_92500.npz": "e802ccd0d8f61d817992d3579c2684ba1d07f366995b5f9ec4ab5081959f944a"
+      }
+    },
+    "2016235N11341": {
+      "reference_sha256": "f317f721c1c36f8e9fbdc8d2244ec797694eee81129eefb5c5b99fa0d3901311",
+      "latitude_sha256": "afff4097d65e95f50904194e8b5a3d0bc3dce1c85d2d81a39a5f9752655539b3",
+      "longitude_sha256": "1351424128bf5e502f20c2c0bfdf1f2d07a1aaf029090a7fff153a46154898c5",
+      "omega_products": {
+        "omega_products_40000.npz": "51ae3d39c8760ce33e22f9f3147a337ea245ef2a72cee6e631452bd552bd5f75",
+        "omega_products_60000.npz": "15960817ae62c5245770aa67140da86f98c66c0ba0211620f9e8365ef0ebd89f",
+        "omega_products_92500.npz": "8fa10746b5957445213e94b2892c2377c0472f4e5170d32a21dcdbd0855802c2"
+      }
+    },
+    "2016256N12146": {
+      "reference_sha256": "a64c4ffde6f20602c24181eb8140a5c31cbdfc6e7a204aca919ffff2e3139448",
+      "latitude_sha256": "2cea71ec643df8eae4ecb8676407f781af2ed8e85b35def0be98808102c18dcd",
+      "longitude_sha256": "6f0b79f99fb7c378c8860769b3bf00c5c2f44a51e5f84cce33b3863c0d2e3ef8",
+      "omega_products": {
+        "omega_products_40000.npz": "7b72f5db4652e179a3e3c3c2042ca87ca069636b0a44d80e9487046d978b06f4",
+        "omega_products_60000.npz": "094c2c7eb62f393143edc88e44943f753512849b53bc6e8c95e8ffc88b3b63f6",
+        "omega_products_92500.npz": "04a64f390da60d18824c930f3971581b06b9dd07e7f4d7066c1f94a2be064b3a"
+      }
+    },
+    "2017242N16333": {
+      "reference_sha256": "2a2dfb25fd8c7c1ce116c35e9f9b2a6e9439c7e25cd19d6d9428a9198021d764",
+      "latitude_sha256": "1afe0dabc50ab1a82df3181bfc6035304238561a2cf75a452ce298ab6cad0412",
+      "longitude_sha256": "ad19585f371f2ac2e21668a6a13f5b35bb5bfed038fc40bb2f9bb3b96e96955b",
+      "omega_products": {
+        "omega_products_40000.npz": "32eff046e24bd9626a76c9d41b339d81352dbc551455192575a9efd2217b2bcc",
+        "omega_products_60000.npz": "b1ee0963649141e0c073cf06e234590b0014afcb68dcdd6bbf5734109ab1292b",
+        "omega_products_92500.npz": "d412aef916d8e89c950b398c7e6fc013bce75ce8c481f4931ae5641f5a188e19"
+      }
+    },
+    "2018025S09080": {
+      "reference_sha256": "d45af74092752e18ec2d8dc307e45c20c326171cd90ceb849a1430f0c07efe9a",
+      "latitude_sha256": "70afcdd54e934d5d1f365429713a0d40fd185230d3a627e23d574165b000509b",
+      "longitude_sha256": "a9a93862d9c38885a05bdaf337c6c4ee98b06a5ba3c5f1450c8f3eb7dd827121",
+      "omega_products": {
+        "omega_products_40000.npz": "ddc31384241a84f5fb48a4bf83c411edd9e69577dd04f4d76efaed80df4806be",
+        "omega_products_60000.npz": "fbb2b366e83b3ec0ef17e5427ac2857a3f103edbeb2701f39efca28a7de733b3",
+        "omega_products_92500.npz": "dbb857c02dd5e56c3d8c34fb54f5fc1af769b1acf9f33638f936a7ae7851989b"
+      }
+    },
+    "2018227N11145": {
+      "reference_sha256": "55941446fa6511658cbca2618fc9fe523dab1d372945ddcac8c8646c2e2d2b2d",
+      "latitude_sha256": "5ac9e621f0722fe52b0415d6d3fcb2a146dd7097b51160286ad4bbf35103f13f",
+      "longitude_sha256": "8a4f8b7efd2473415ed6b2a7d4d505504b6bc554cea33693fe5cb395e99d2262",
+      "omega_products": {
+        "omega_products_40000.npz": "ae6b901f7a29e2c5e6c8032bbfd5ae5f00f68b523d1086a9b1bcacc9b89db792",
+        "omega_products_60000.npz": "ab6d11736b2e24db8ad8c48ac359ca8dd21a81af958c0ce09136556212da9e0c",
+        "omega_products_92500.npz": "d799a9b8ecea5a5c15fcb492a2dc9fee14466af0e5558cfadef71854294c45ad"
+      }
+    },
+    "2018294N08161": {
+      "reference_sha256": "4347d2d996cb0c01df01cf742881ae98898a13503b2abb5e4f981a5358963435",
+      "latitude_sha256": "9727dc9ffc7152e0550041d4810fb7ee46ae951472ef287fc824de7ae0199e89",
+      "longitude_sha256": "0a50a24ec3071b25d0219c0f0193e1027886e163ca6e1f6509154bd255516c1a",
+      "omega_products": {
+        "omega_products_40000.npz": "d4935152b3c2b0dc325f298dee002f81e50c82d1760f81b1adbeaa819da26c73",
+        "omega_products_60000.npz": "893e14cc32f3df7c15c97ab6709dcb4d16245bd2276fff38b13be8a27297af4b",
+        "omega_products_92500.npz": "60cf072491ddc7a82d286a3bdf2b390cb0e6ad86dd4dd523061c70d57cf068ae"
+      }
+    },
+    "2018324N04156": {
+      "reference_sha256": "ea8e30d6c0f6ec97d238f9f430b9f624f5a4c5a51ff773e479753705c5fff4b0",
+      "latitude_sha256": "8b10b87d2d5b302ba73a5d8bd9228d182ff5cab5aa895d61d6e429ab85b521cb",
+      "longitude_sha256": "58c3b3ee5448b29d75fc29d762f074fdb802888a95dd5732e237f0a797a53056",
+      "omega_products": {
+        "omega_products_40000.npz": "5eb93f5ed283b4e8bdb54ab3a82e2885ea92171e0ddd7fbe1eba24766019a991",
+        "omega_products_60000.npz": "5c21e7d1bf207fcb7942159a224526a09405c45a3719d22db450286ae1064162",
+        "omega_products_92500.npz": "79e89b8618769263cd6efa1f46621c1305bfc9b3009546e69611c94e8706a41b"
+      }
+    },
+    "2018334S09156": {
+      "reference_sha256": "a2da21717ea10a97ae54dcad4e7739e932613e447823db85eaf06725fb79c55b",
+      "latitude_sha256": "55fad7764d73c4070e700e70f45474ec9a232a83232f508fc314b399b78a4fc7",
+      "longitude_sha256": "7ae65669577c09b8281565f3c91eca0b1b73997ecb5be54229a58abb47b5c4e5",
+      "omega_products": {
+        "omega_products_40000.npz": "bfd7c1d2d871a28466999bb2fc9f62e3db7b13e5c86bd160b9d2ec20947c8d04",
+        "omega_products_60000.npz": "9f7adae239c629dff978e12d13255d923ce256bea20c5833fe76652a5966d6c2",
+        "omega_products_92500.npz": "621d9dcb735dabe5c3ce859cdf91b04c6f588a1ffaff312bf8349e62e7e743af"
+      }
+    },
+    "2019001S10162": {
+      "reference_sha256": "5973bbc77ba9de2bda93c51f9d9e2d5f4afdacb9c2e217113602e9d0861af55e",
+      "latitude_sha256": "d7d5932c2ca5842cd571f24fdac530c216fb798af1645d2a60ecee2c98d941ad",
+      "longitude_sha256": "78471d229299db4227ecaeda828e363bfd0fc11608fc98615633b0eeb67eb779",
+      "omega_products": {
+        "omega_products_40000.npz": "a1a02d05ea8d961c1fb67b5b4bd7e8f4a63c73ae2e0c1738d7277b8d8b753e71",
+        "omega_products_60000.npz": "71f577c6c9ed7690dff862b24f0449fbb1b6477871cf89b453b433e3deab0dd7",
+        "omega_products_92500.npz": "e65e44e9ac4b40f04e0c49de1c4f0973779fd3b9b811ff259bdb7387ba53a884"
+      }
+    },
+    "2019050N05163": {
+      "reference_sha256": "344d8955fa0a25cb67a0594464b8021959d74cdd1b054896723409de29097787",
+      "latitude_sha256": "50d7570f405f16c266cfa509a6ad1f3f211df24f0f5d7b5638013874f6d2fc7b",
+      "longitude_sha256": "f3944c504cf9ecee0e2786ca2598fa7cad4c1fa5d3df580138a405bbb00ad93b",
+      "omega_products": {
+        "omega_products_40000.npz": "ef03630514372c298cac24a452da372b0dc0393a4c4f9d1353c505d0f5279731",
+        "omega_products_60000.npz": "e3bad66a9fae7d0b89628dda96dc9892b170f26c38ae73cf455841defec0ab03",
+        "omega_products_92500.npz": "da0bbbc8627863900bc0c440f38aa1fd829b53d317bd239bf09e55ae83487475"
+      }
+    },
+    "2019336S06055": {
+      "reference_sha256": "ba9dc8e68869039b1b3b9faf54dfc8b717144a700f9e3d5c077c05681d3fdc4e",
+      "latitude_sha256": "93ed9060894c44fb5843400d0bd71ba5872661411f0b23b7deec6cd5dea12fd9",
+      "longitude_sha256": "bb1665f7e83f102ad2dbddef39c6faac4719d2d51fe55a917826e470ab21dbc5",
+      "omega_products": {
+        "omega_products_40000.npz": "f8034812b1b0b6ea183443882ffce6afcd8b72bc97783a4e3a26de2038d30b6e",
+        "omega_products_60000.npz": "03c93ae41e4842f44a6b5d0e6de84fce6b094a3e1e4b0489a79e432a5ac5dedf",
+        "omega_products_92500.npz": "1bdd0c7736dd992fdc73073aae33fb6e11a5a226f2732aa854bc62bd59f72078"
+      }
+    },
+    "2020053S12119": {
+      "reference_sha256": "f0378e71504d6d59e31fbc4eee0e51db84ccbb4eaabfd0383e37cacb8357f48f",
+      "latitude_sha256": "1e4c175ddab1cf79fbafe3e2f22e5032141a0e5bcfbf595652a3e9c2b40ed944",
+      "longitude_sha256": "de51e00cedff92a629334617893f56a132abf9c5926f83cdbde46dd4ae155443",
+      "omega_products": {
+        "omega_products_40000.npz": "521628e2f1d79a0bc48c1d2029e8d73b9681b1ef40d29f79de0e9b901ab39a76",
+        "omega_products_60000.npz": "4f58fc54300c01bd2772551f9a3fdcae56735c60929affce66e8e86d694459d0",
+        "omega_products_92500.npz": "41b16ffbd391e755128410e94f9deeaed59c7e0ded4dc95f7b98902bf49554ed"
+      }
+    },
+    "2020154N19269": {
+      "reference_sha256": "cee3ce9d6c87cfa6d9cf7a7d1ed5a25e53365f13ff949d0f99dc4e9c09bc22c1",
+      "latitude_sha256": "7c6d0e9e95ce69d75c8d4003ee0c03027a65d7f49e90c9617ba1a3b8b05ccc29",
+      "longitude_sha256": "ed50cb31db695351ce2e1685c4fd7d1c5a2afef3efe7da72142f45ac137ad90d",
+      "omega_products": {
+        "omega_products_40000.npz": "2f9e81acbac815556258859e264af201663a4eb49d23aa80c55313b7a80def22",
+        "omega_products_60000.npz": "9c164f7626065325dfd162e061d0cbf1f998aae7ee36aac5fe1436a45f59b4af",
+        "omega_products_92500.npz": "962a1283274166d7f826cefe3d99a2b811318a54f9e9766235f11ccaabdebf24"
+      }
+    },
+    "2020277N21141": {
+      "reference_sha256": "37f729cea5da96a6e5eaa5bae762bfc60ad598b3e6024dc0938ea86dfe81e471",
+      "latitude_sha256": "1823b916a5e966b82bc2bf11eeb95f5c3b55d857463d04ada32fbc4f6e8f0b98",
+      "longitude_sha256": "64ef28f2ac5dbf855b2029ebda4d5bb6bc06477a2126d3539986f478518abab4",
+      "omega_products": {
+        "omega_products_40000.npz": "21f4e105bb30888bb4834292a2c5fef85182b3344a17c4b2409460381e213118",
+        "omega_products_60000.npz": "c822f4b7045586838d481ec279a20d35bf844afcb45d99bc77144609229d0bec",
+        "omega_products_92500.npz": "873d73358481ac7fc40f7eb64b8b76d8c3d8c1e55dc581b1bf1b7ed9d5734821"
+      }
+    },
+    "2020303N05149": {
+      "reference_sha256": "13c73e88d152b808dd4390b319ce99161a3115cae7475326acf5e75f7a37aa42",
+      "latitude_sha256": "068ff8ec63229485b7f7cd01d5904f220af83ce46c19f75d127b877b6e0c5862",
+      "longitude_sha256": "099a5c23a51c2de84bd9eaab3c1b03bacb9e2800fc5749e211025628a9acf063",
+      "omega_products": {
+        "omega_products_40000.npz": "e8f92f8be21f6a16a4ded3f67dac59aaf80155dcf9a1e87f1c07bc59f35f34c7",
+        "omega_products_60000.npz": "0cd69b33813743c4d98dde5ab83d1536e49c9b1c1b0c8a3f4e68d37b41cca6ab",
+        "omega_products_92500.npz": "ab96143620ca0ddb9488b661dd4231dc98124f8d82a272e4609811f91acb5352"
+      }
+    },
+    "2020366S12073": {
+      "reference_sha256": "2e67aa21af3ceef0ec2b3ce53d4e39994da4d2d4a8fcf7a1f337eaf48cef85cc",
+      "latitude_sha256": "2f3cc4b5c4acdd69ba46b5b818837c9dd5dd9034fe76dbaa2822f9c87df6ec61",
+      "longitude_sha256": "b83d9e448c6a59fed0f69c0922035d9cf06f3cc461598dde361548aebd707ba7",
+      "omega_products": {
+        "omega_products_40000.npz": "d0b7935650998165c2995b48db612b9de09e168f5ef832a916e3e2d1c61ba41b",
+        "omega_products_60000.npz": "4fc4549c1397f9b4417cb3cd396c36e297da91e97cbaf69082176959866c2894",
+        "omega_products_92500.npz": "2cad3b96aedd39b24ea9cdb37d4c733b70aa2698a913b9bf124699eed3cc2799"
+      }
+    },
+    "2021029S16171": {
+      "reference_sha256": "5f82888853a7b3526f416c54ce706b4cd54ec138fe86093999ded5b9393f01e2",
+      "latitude_sha256": "d75e37f80964c0cca0d449c57469db486da40af907f1c8577ca45e9f1d6a23c3",
+      "longitude_sha256": "c11cb3848fa919958825a2b093f56baa162cc19510688e08ecf4a87ffe5574df",
+      "omega_products": {
+        "omega_products_40000.npz": "b1e13f6c3537fe0d7a0aca84edf99f87a73b92def42cb4eb38f60e19214f338d",
+        "omega_products_60000.npz": "41d89fa292c7b532749731b6bd0cef13aa23b24bf3d344c61877bbf8127d5e7f",
+        "omega_products_92500.npz": "d3609456f161905c580d99cbca44470d82cb500c032bb47d4b286d54881c95f8"
+      }
+    },
+    "2021053S13128": {
+      "reference_sha256": "3016b6862a61bf4dfc70fca0559880035cf5b2cb6aaefc7de35bc4e0bc915d14",
+      "latitude_sha256": "fb4a8a09e446ef740550065373ae02d9abfc1b52db75ba41b3f6633cebc364d3",
+      "longitude_sha256": "4756e0033ba35b0dd96ec27e701ab525e7536cce5d47261237ce48306808100b",
+      "omega_products": {
+        "omega_products_40000.npz": "9b6d502c0a7146331a9b51567930961c6eb39624d62945f6674e49d93f254fd3",
+        "omega_products_60000.npz": "215adaa1a123be3bf851db2ce7afa4f4c394a3ad65fe18874f25dd4b107d5bd6",
+        "omega_products_92500.npz": "3dcaa06d4875477ed8eb34bafef49f9eaf2d5808b2be5186b301e4a3ce32b5a4"
+      }
+    },
+    "2021248N11131": {
+      "reference_sha256": "d6dc362674ed900e338b2482044668456c2a9c9e5edd4bedf5a031c59780faea",
+      "latitude_sha256": "8b9f0ecc9074a3f8ec6b2ca2d42956c524cec57669ba9de29f817927019ebab9",
+      "longitude_sha256": "f55f0afec177b7b43efd0393e82ac53823aa9cded6504abe4102512b888648a9",
+      "omega_products": {
+        "omega_products_40000.npz": "b99947f70abf81fbf35a0ee0863cdd8924428c39a2c3b938149dbd5d6bea1e17",
+        "omega_products_60000.npz": "93563f77a5559590f981dbc6dced040cb15bbc24332d513e8ed50e5a37a2f521",
+        "omega_products_92500.npz": "7592ee0050c21e89ebe9576014590ee3eeb33f2e96cd9af97b0d2f6b0d7b3528"
+      }
+    },
+    "2021266N10327": {
+      "reference_sha256": "baaf3ff682e5b130dc50b2b4e6efc722cbf65b21ffc622a72d81486054aec97e",
+      "latitude_sha256": "d97520243eecb87186172a5c0ba96824fd6ed775d74a84fdd0698b2d64df09e2",
+      "longitude_sha256": "d522fae0e72ba3b0b673792d7838239512d3f0b4dd901eb4814e90f2aff01bc7",
+      "omega_products": {
+        "omega_products_40000.npz": "28472156be449dd09070ca74c8ef4e9974ed25f42c3d6c219f2f6327e7ee96b1",
+        "omega_products_60000.npz": "f1c75daf66bc25ea1ae313a85d474d4e890ccbaa0e2ba9c7a1a7062ce199ef29",
+        "omega_products_92500.npz": "e5c155a52f5ade8f22f241b3c02bbd481e601bb84a65ed6aa3d4fa76c064d6e4"
+      }
+    },
+    "2021267N18094": {
+      "reference_sha256": "536cc303751d7fec89e8146cd867d17bfcad725d5fcbd712c3e1526213f5729c",
+      "latitude_sha256": "d04a9af3b639a4ebcc47bf3ff8b258b79cea32ac0074d51e0287a2b0af3b7111",
+      "longitude_sha256": "12c5150a8ca6dc10843c0900af9bc054d401b3aee2872cfb22b9dce169dc3f1d",
+      "omega_products": {
+        "omega_products_40000.npz": "4153b1dc000fb155a5090ba563818fddc34c98cf2cb072d9752957bc69f159ec",
+        "omega_products_60000.npz": "24d557b4e2b16c7e463917de096bcb3496c873f1331804d249163ea2fa81066d",
+        "omega_products_92500.npz": "476afae58465197c8438b4d4c0795b9825791ec60e64b6f6dc9f8c5e51998440"
+      }
+    },
+    "2021282N16165": {
+      "reference_sha256": "91e848cd4deb919c0712e12ea3c42121735e4b8f49a8e1a8d1af3d1eee1abc7a",
+      "latitude_sha256": "ce8aeb578650573162a9580ea8e4640c710c34560728088dbb4a8ff50f7e1d22",
+      "longitude_sha256": "71c2adbb553c99f0538dd2eac8f74b848b3c4573600bbdd854030ea3ac75153e",
+      "omega_products": {
+        "omega_products_40000.npz": "eca076ad6329a28040965fbf82b1f291aa39a7021cc4e89c69387be6be49bcc0",
+        "omega_products_60000.npz": "3d9878753b2b4b9b86759b6503d349e172d6e47ea4b2019e5a63952318894a1a",
+        "omega_products_92500.npz": "76bc133a6d053a5b2d748f805458d2a5bd523900c52f141240f0841213dd5ab8"
+      }
+    },
+    "2021346N05145": {
+      "reference_sha256": "71095e82366e38122addb132f5249ddae7644e4879cf0227821d8a3478c3fa01",
+      "latitude_sha256": "5d6cd4181288c4483c16470cdea3af8ae14a918f18d07a837278598c7f455d60",
+      "longitude_sha256": "0bfce864f2f04064eee4ba222645b77541e791f7826b332d2fcdb964453c03ad",
+      "omega_products": {
+        "omega_products_40000.npz": "30b083de8b5453baafb51d00c68515a9b0683aef8cd54d63ac577705a8bb3509",
+        "omega_products_60000.npz": "80808cbcef0bc89551a000a67d753e83338818c624f4fa7345a916f36dca5d4c",
+        "omega_products_92500.npz": "3359b524cbf50a2754c0e52f0b0071649ced2ecdfbeac47afbbea18d43d5dba3"
+      }
+    },
+    "2022126N07095": {
+      "reference_sha256": "ca5c7b8d740455acfa69bc50bcbbd4956044b7da81d6274e67584397e440a18f",
+      "latitude_sha256": "2feb5ca07b94aac17ea188183caf07307692a2607b8d14b1d7360e7946f9cce1",
+      "longitude_sha256": "76e21c3408b02e6fa3610db1bd4638f6d98b850ca77bb1edac8ab9f24392f172",
+      "omega_products": {
+        "omega_products_40000.npz": "c72afa80e3aca389cef9a473e8bdaa8aef6048b75fd7ab40ab0b806d330bace2",
+        "omega_products_60000.npz": "75cc7690129ce118af0e89169e2682e2d14fa69aa25fb5f9bba38f3005cc33ec",
+        "omega_products_92500.npz": "146f0b8b97b73154bb8dd4ac1735e259854c6d49e2ec57f7d8c4f63b82f86313"
+      }
+    },
+    "2022165N14258": {
+      "reference_sha256": "e234dcafc4af30c60570e2dfa0f3cb6c327d04427f35a333c2bd6940373898d5",
+      "latitude_sha256": "1a83513c55300599a3b10dc9ed18c919584b5b47c21fec134a1016bf4b0ba876",
+      "longitude_sha256": "75b27e3b3f5d847828ccae328f7ae1eae71a2d2fdcf5702b0eb0f2fe4fab3965",
+      "omega_products": {
+        "omega_products_40000.npz": "a8195556d632c33b948fa6158ae3769d40c6ac8bd614a456da501bb7bd9d43d8",
+        "omega_products_60000.npz": "a8447e5ffb5c1ab92fe6853a77230e79ce59b265c174c5bff8e339414b0e4725",
+        "omega_products_92500.npz": "af3f279d35e0699251ce16eff18481bfb7581d833e193102afeb7f8fffb962de"
+      }
+    },
+    "2023213N14257": {
+      "reference_sha256": "b11a9390ac4edd2b07fc90007a7dfe8af20029edd8c4a90b9ebbe5ad90494840",
+      "latitude_sha256": "20901c64b6985734afd3d9422cd07050f72249b0be0117f4e924ad6f4b7219b7",
+      "longitude_sha256": "d929c834278ad43bf191edce48ec90af45a0a782ff132589fca94f14e0fe68cd",
+      "omega_products": {
+        "omega_products_40000.npz": "7866710c31374fcd6b469297b7b732ff7d2a0906ead01bc78ac761656b6db782",
+        "omega_products_60000.npz": "a2e282f64a034f1abc2aa2c73e64585b87813937d4c6e9a12d1842330712c2de",
+        "omega_products_92500.npz": "fd233dddf2a884977f1f583b791fdf010f3810e74be2133a345fbb6da2531d31"
+      }
+    },
+    "2023228N12259": {
+      "reference_sha256": "120308dc3f45ea31afec434c3fc958105c1b531c11f26ef752f9aace4c9f00e1",
+      "latitude_sha256": "d8c648a970ed316a828a3f4977a15121e32c80a203055169cd962b4f1afd5c57",
+      "longitude_sha256": "1e9151692b0de59f8e457e57a8f6e34344a6b3a744cc7266713d08b67e66e15a",
+      "omega_products": {
+        "omega_products_40000.npz": "8794ad0634774b573db12919cdde42f18da7da10dea58633446c1382aa10c7ee",
+        "omega_products_60000.npz": "beee937d89ce75975172a8f52623652a77f1a12b084e35d25c5703f465e1d17d",
+        "omega_products_92500.npz": "6bc2cf545f9480e7efda3c841a7f7eeb3897b17bb9626b13d0802fb1a40973e4"
+      }
+    },
+    "2023266N16323": {
+      "reference_sha256": "3b7d2dd3184befaf457cb9ea72ed0539dd8d2db69e965f40a6495d3f23692c3a",
+      "latitude_sha256": "ac4eb20d90288556ccd5cd16e8a1f8af4bd1ca86e43f29a329c24402d42aa2a2",
+      "longitude_sha256": "ac12b5de6cde314bb162a187e39eebcb908aba24f17cdee9ca5e9cd32f02f7a8",
+      "omega_products": {
+        "omega_products_40000.npz": "18ea8defed4311f5479ff8faa87b9a333f7f8a79735e30a0a62905941745a314",
+        "omega_products_60000.npz": "fadcd6e6f5a59d66f5a8cddcf05e7c62730e62693066322ddaac9a4606cf8bf4",
+        "omega_products_92500.npz": "5b1724fbf9454260e1a17759ab5445fc5de8f65a55dd2c2bafae0a5393a2b4df"
+      }
+    },
+    "2023271N14144": {
+      "reference_sha256": "f46b7ac4628f260225775e575e0ef7238f56a8afde655485ce922b8f33094edd",
+      "latitude_sha256": "b1bc27a5282bf7600f31dc325db1a52d55f19ecfaa8dbea955ae50648cbe7abc",
+      "longitude_sha256": "595e4c16533d0ca7f5b734cb1fc4b295249777a4a7bf13b24c7e8d469a6d53c4",
+      "omega_products": {
+        "omega_products_40000.npz": "e98bf47004a0ebd260ff93318969a0e6945fd4f76bf1161811613fa20e3d66d1",
+        "omega_products_60000.npz": "074b809b70857d3a9500a3f5677f8cd281d9aae7fe90112166f0801f36ad85ba",
+        "omega_products_92500.npz": "7ea1a2a637f9b81860fc4880e9c9f809995b7ab937213b78ae9dba0af984a1b4"
+      }
+    },
+    "2023302N10267": {
+      "reference_sha256": "8342231dcdda0a05750d2abaafac715db96d65ce0065954f6fc0ba9feca3976c",
+      "latitude_sha256": "989131c3faee8ffa27f463627a29ba814b8b412c21501314b96d922a98c8ac7a",
+      "longitude_sha256": "4528024f0acc6b8ad96c70adef9e4b62ad15db2438a81aec2c4f9ac5ff582dea",
+      "omega_products": {
+        "omega_products_40000.npz": "9ab7b7f195558413c67e4687169c532b72fa6f850f1fda71218e8b8cf9766088",
+        "omega_products_60000.npz": "75d51511b2323533d3289e6997c49dd96a4dca9987a5ed790507ebcf7b3aba8e",
+        "omega_products_92500.npz": "93452c1272f38e1b9030c68aa1360ea94dd720918ce7c75ea1a130eb3fa7b8bc"
+      }
+    }
+  }
+}

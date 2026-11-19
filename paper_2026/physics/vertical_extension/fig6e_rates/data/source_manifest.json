@@ -1,0 +1,27 @@
+{
+  "sources": {
+    "COMPLETE_LAGS_ONLY_RATES.csv": "345977690042b2b600cc340bf80361ef29e90eb1edaf852383ed0cf84f900e76",
+    "CURVE_STATISTICS_QA.json": "0a78453f40ced116183d4be4c4874e849155dba692a205c516868d433d9a32c1",
+    "EVENT_HOUR_RATE_COVERAGE.csv": "a9fc70c236253e93cf6680d09ab3463803ca26e8e449af9aa2453555d6c02276",
+    "existing_centres.parquet": "93775fc4acbfbb863dba0a6b131f9178e5a46347cf4a82be00ed9a6bf4a7bce4",
+    "existing_request_values.parquet": "721dab8aeba2b5c863b19ab4e503f82fafb8422b62309e50fa6fcb546ef119c5",
+    "FIG6E_RATE_ESTIMATES.csv": "531b3b80221ad1af7abd9c4ad8491178999df5a55216c37c01e86c8efba17391",
+    "FINAL_EVENT_HOUR_QA.json": "03ff0739d67580230db26bc93b1ad68bd003c62ca0ba4bbe14f2945f355f9174",
+    "FINAL_EVENT_HOUR_RATES.csv": "5c5419aa0ac0c500461f481357e45fb5e5421cf4a73a5bd1750a8a99145ea66c",
+    "FIXED_NINE_EVENT_MEMBERSHIP.csv": "1148005be3ffdd56178abc3c508ede67e112a99757ec56da21c7d2138c26d0d2",
+    "MISSING_NATIVE_PRODUCT_REQUESTS.csv": "bcab7e330719de626ac70b453935c4b5a097b47a86d25ca8d5b9545b324d736c",
+    "native_input_identity.json": "fdc7a9118264cd8140242507ec18176f7357788434b04b89134f83f6da62e2b0",
+    "ORIGINAL_SID_DRAW_INDICES.npz": "0a8f303af255616df3dfce4aa32df08b15191261e7a72868b09f77f4664fd8d4"
+  },
+  "native_implementation": {
+    "recover_native.py": "89f59b3da3191fe728d74a528849d461d51872d2b3e15cf893c46b83fae1a48d",
+    "diagnose_rates.py": "6fa99d1e883b586cee2e9df8bb081751ae43bd9169246ab4e454812ffda80ce9",
+    "summarize_curve.py": "a9e558643c83ed7bf4b0a4c4feae9eee7d6205034a18aaefe78c87faf6a7dd84",
+    "plot_fig6e.py": "6b90904a500185d0ff0f471169f96c23a13180d26d5508bf305383128355204d"
+  },
+  "extension_functions": {
+    "read_era5_fixed_block.py": "34717f422179b8313170b4a49999a7b721369766ba21c44e174fef2742a50793",
+    "theory_MWT_Atmosphere_Direct.py": "67bff749d95167a0c9bd5d771e136896f5b83c326b110b12df4144798b2a21d9",
+    "vertical_terms.py": "4833c0163393fa1d0f331e6e30ec7d9e5a0e03d2793a1a4ea0ee2ab4d9fc2c40"
+  }
+}
