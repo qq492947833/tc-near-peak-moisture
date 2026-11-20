@@ -5,26 +5,18 @@ tropical-cyclone storm identifiers (SIDs). The current release covers lifecycle
 classification and comparisons, environmental evolution, paired temporary
 departure and decay conditions, moisture transport, multiscale energy,
 reintensification and recovery, spatial contrasts, and historical duration changes.
-The reading set contains **8 main and 17 supplementary figures**. The [panel map](paper_2026/selected_evidence/panel_map.csv) traces the previous figure identities to the selected figures or data resources.
+The reading set contains eight main figures, seventeen supplementary figures and ten core tables. The supplementary information includes the estimates, confidence intervals and support needed for the reported comparisons, including the 700-hPa scale-boundary contrasts in Table S5. The [statistical archive guide](paper_2026/selected_evidence/layout/DATA_DICTIONARY.md) identifies frozen matrices, historical row identifiers and units. The workbook is an optional research archive, not a required separate submission file.
 
-**Stable version:** [v2.1.4](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.4)
-(20 November 2026). Older tags remain unchanged. This repository has no assigned
-paper DOI or software-archive DOI.
+Download the [current figure pairs](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/tc-near-peak-moisture-v2.1.5-figures.zip), [full frozen statistics](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/Supplementary_Data_1_CSV.zip), [optional archive workbook](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/Supplementary_Data_1.xlsx) and [checksums](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/SHA256SUMS.txt). See the [panel identity map](paper_2026/selected_evidence/layout/panel_identity.csv), [original-to-current crosswalk](paper_2026/selected_evidence/panel_map.csv) and [figure file checksums](paper_2026/selected_evidence/figure_files.csv).
 
-## Selected figures and full statistics
-
-Download the [final figure pairs](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.4/tc-near-peak-moisture-v2.1.4-figures.zip), [native source panels](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.4/tc-near-peak-moisture-v2.1.4-figure-sources.zip) and the [Supplementary Data workbook](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.4/Supplementary_Data_1.xlsx) with its [full CSV package](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.4/Supplementary_Data_1_CSV.zip). The final pairs contain all eight main and 17 selected supplementary figures. For the previous figure numbering and full historical displays, use v2.1.3.
-
-In the workbook, use **Table directory** (block_id, legacy) to find original tables; **Saved estimates** (record_id) and **Native catalog** (dataset) point to Native_statistics.csv and native/<dataset>.csv in the CSV package. **Figure display crosswalk** (result_id, original, display_position) maps the panels. **Figure inputs** identifies the frozen files by name and SHA-256. Native CSVs retain source fields and precision; values available only as printed in the original table are identified separately.
-
-To regenerate the amended Fig. 4 and all 17 selected supplementary figures, extract the native source archive, then run from the repository root with Python, NumPy, pandas, SciPy, Pillow and Matplotlib (DejaVu Sans installed; tested with Python 3.11.7, NumPy 1.26.4, pandas 2.1.4, SciPy 1.11.4, Pillow 10.2.0, and Matplotlib 3.8.0; see requirements-current.txt):
+The ten revised figures use frozen inputs and dedicated axes at their intended reading width. With the project's Python plotting dependencies installed, run from the repository root:
 
 ```sh
-python -m zipfile -e tc-near-peak-moisture-v2.1.4-figure-sources.zip source_art
-python paper_2026/selected_evidence/build_selected_figures.py --source source_art/native --data paper_2026/selected_evidence/data --output generated/selected
+python paper_2026/selected_evidence/layout/group_a/render_reading_panels.py --inputs paper_2026/selected_evidence/layout/group_a/inputs --output generated/selected
+python paper_2026/selected_evidence/layout/group_b/render_selected.py --output-dir generated/selected
 ```
 
-The script retains the native panels and uses frozen source statistics for the limited series edits. Figure 4d contains the full, restricted and adjusted net-inward estimates with their saved 95% intervals. Figure 6e retains the nine transfer-rate points on 117 SIDs/126 events, while selected Supplementary Figure 13b shows event-specific cumulative transfer on 122 SIDs/132 events. The accompanying [file manifest](paper_2026/selected_evidence/figure_files.csv) gives native pixel dimensions and SHA-256 checksums. The figure reorganization does not change the scientific validation status or the original inference families.
+For the unchanged selected figures, use the [previously published native artwork](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.4/tc-near-peak-moisture-v2.1.4-figure-sources.zip) and the original assembly script with `--numbers 0 1 9 10 12 13 16 17`. All unchanged final images are in the current figure archive. Figure 6e shows nine trough-relative transfer rates; Supplementary Fig. 13b shows integrals over the actual trough-to-return intervals. The inference families and numerical qualifications remain unchanged.
 
 ## Historical v2.1.3 figure updates
 
@@ -206,7 +198,7 @@ and the distinction between deterministic reaggregation, local physical checks,
 and unexecuted full refits. This is not a claim that the complete global
 archive-to-manuscript workflow was rerun for packaging.
 
-Cite the fixed [v2.1.3 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.3)
+Cite the fixed [v2.1.5 Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.5)
 and its commit shown on that page. [CHANGELOG.md](CHANGELOG.md) describes changes
 from the earlier code release. No repository-wide licence has been added or
 changed; existing third-party licences and attribution are preserved in

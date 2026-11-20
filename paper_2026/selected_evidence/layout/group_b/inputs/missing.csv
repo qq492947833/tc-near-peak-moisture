@@ -1,0 +1,15 @@
+policy,outcome,offset,units,scenario,estimate,_source_csv_row_index,_source_csv_line
+midRH,48,-2,log_odds,policy_specific_missing_outcome_offset_among_shifted,-0.73452692564327304,0,2
+midRH,48,-1,log_odds,policy_specific_missing_outcome_offset_among_shifted,-0.35808838430786605,1,3
+midRH,48,-0.5,log_odds,policy_specific_missing_outcome_offset_among_shifted,-0.040158981202545449,2,4
+midRH,48,0,log_odds,policy_specific_missing_outcome_offset_among_shifted,0.39826570129826971,3,5
+midRH,48,0.5,log_odds,policy_specific_missing_outcome_offset_among_shifted,0.9820359717152678,4,6
+midRH,48,1,log_odds,policy_specific_missing_outcome_offset_among_shifted,1.7288500492322643,5,7
+midRH,48,2,log_odds,policy_specific_missing_outcome_offset_among_shifted,3.70533579775456,6,8
+shear200_850,48,-2,log_odds,policy_specific_missing_outcome_offset_among_shifted,1.3477071720190215,12,14
+shear200_850,48,-1,log_odds,policy_specific_missing_outcome_offset_among_shifted,1.8727342502599387,13,15
+shear200_850,48,-0.5,log_odds,policy_specific_missing_outcome_offset_among_shifted,2.3167559172364101,14,16
+shear200_850,48,0,log_odds,policy_specific_missing_outcome_offset_among_shifted,2.9257822737767958,15,17
+shear200_850,48,0.5,log_odds,policy_specific_missing_outcome_offset_among_shifted,3.7264741328072106,16,18
+shear200_850,48,1,log_odds,policy_specific_missing_outcome_offset_among_shifted,4.730188639675891,17,19
+shear200_850,48,2,log_odds,policy_specific_missing_outcome_offset_among_shifted,7.2739732183281598,18,20

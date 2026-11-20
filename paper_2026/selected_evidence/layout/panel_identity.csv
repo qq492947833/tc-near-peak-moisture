@@ -1,0 +1,107 @@
+﻿series,figure,panel_v214,panel_v215,source_panel,diagnostic
+Main,1,a,a,1a,Full lifecycle on one wind history
+Main,1,b,b,1b,Return locations and event order
+Main,1,c,c,1c,Within-basin returning-cyclone proportions
+Main,2,a,a,2a,Four-stage mean environments
+Main,2,b,b,2b,E minus D
+Main,2,c,c,2c,F minus E
+Main,2,d,d,2d,Decay minus F
+Main,3,a,a,3a,Pre-/post-event RH class means
+Main,3,b,b,3b,Deep shear class means
+Main,3,c,c,3c,PI minus wind class means
+Main,3,d,d,3d,Paired RH trajectory
+Main,3,e,e,3e,Paired shear trajectory
+Main,3,f,f,3f,Paired PI minus wind trajectory
+Main,3,g,g,3g,RH contrast under successive adjustment
+Main,4,a,a,4a,Class means of gross and net exchange
+Main,4,b,b,4b,Native pressure-interval net class means
+Main,4,c,c,4c,Raw gross inward/outward contrasts only
+Main,4,d,d,4d,Original and adjusted net inward contrasts
+Main,5,a,a,5a,Horizontal KE
+Main,5,b,b,5b,Dry APE
+Main,5,c,c,5c,APE-to-KE conversion
+Main,5,d,d,5d,Vertical pressure flux input
+Main,5,e,e,5e,Vertical KE flux input
+Main,5,f,f,5f,Vertical APE flux input
+Main,6,a,a,6a,Trough-aligned wind
+Main,6,b,b,6b,700 hPa KE
+Main,6,c,c,6c,700 hPa dry APE
+Main,6,d,d,6d,700 hPa conversion
+Main,6,e,e,6e,Layer KE canonical-transfer rate
+Main,6,f,f,6f,Vertical KE input
+Main,6,g,g,6g,Wind-matched dry APE at three scales
+Main,7,a,a,7a,D standardized trends
+Main,7,b,b,7b,E standardized trends
+Main,7,c,c,7c,F standardized trends
+Main,7,d,d,7d,Dec standardized trends
+Main,7,e,e,7e,"R,L,B duration trends"
+Main,7,f,f,7f,Terminal wind-coverage sensitivity
+Main,8,a,a,8a,Stage framework and humidity movement
+Main,8,b,b,8b,Paired moisture structures/exchange
+Main,8,c,c,8c,Energy processes
+Main,8,d,d,8d,Matched-intensity asymmetry
+SI,1,a,a,S1a,LMI-aligned history
+SI,1,b,b,S1b,Restart after redevelopment
+SI,1,c,c,S1c,Continuous mature interval
+SI,1,d,d,S1d,Retained full lifecycle
+SI,2,a,a,S2a,Stage duration distributions
+SI,2,b,b,S2b,Basin mean fractions
+SI,2,c,c,S3a,Peak-relative covered/uncovered time
+SI,2,d,d,S3b,Signed asymmetry distribution
+SI,2,e,e,S3c,Unadjusted whole-cohort stage duration trends
+SI,3,a,a,S4a,Durations: full cohort
+SI,3,b,b,S4b,Durations: recurrent subset
+SI,3,c,c,S5a,18 threshold combinations
+SI,3,d,d,S5b,Threshold sensitivity of later occupancy and bridges
+SI,4,a,a,S7c,Basin returns per thousand opportunity hours
+SI,4,b,b,S32b,Global/basin recurrence trends
+SI,4,c,c,S33e,Actual vs fixed environment trends
+SI,4,d,d,S33f,Paired actual-minus-fixed slopes
+SI,5,a,a,S8c,RH differences under representations
+SI,5,b,b,S8d,Shear differences under representations
+SI,5,c,d,S9d,Shear held-out RMSE difference
+SI,5,d,c,S9e,Humidity held-out RMSE difference
+SI,6,a,a,S10a,Specific humidity: observed/background/anomaly
+SI,6,b,b,S10b,Time/location humidity contributions
+SI,6,c,c,S11d,Along-track RH anomaly
+SI,6,d,d,S10d,PI-minus-wind components
+SI,7,a,a,S12a,Annular pre-event humidity contrasts
+SI,7,b,d,S12b,Following-day annular budget
+SI,7,c,b,S13a,Shear-relative specific humidity
+SI,7,d,c,S13b,Shear-relative cyclonic tangential wind
+SI,8,a,a,S15c,Fixed-frame tendency and translation
+SI,8,b,b,S16d,Net inward flux at five times
+SI,8,c,c,S16f,Pressure-resolved outward humidity/motion components
+SI,9,a,a,S20a,Humidity versus relative-motion terms
+SI,9,b,b,S20b,Gross outward pre/post pairs
+SI,9,c,c,S20c,Net inward pre/post pairs
+SI,10,a,a,S22b,Alternative 500 and 850 hPa dry APE cells
+SI,10,b,b,S23a,KE sensitivity
+SI,10,c,c,S23b,Dry APE sensitivity
+SI,10,d,d,S23c,Conversion sensitivity
+SI,10,e,e,S23d,Net vertical KE input sensitivity
+SI,11,a,a,S24b,Mid-level RH by lag
+SI,11,b,b,S24c,Shear by lag
+SI,11,c,c,S24e,PI by lag
+SI,11,d,d,S24f,PI minus wind by lag
+SI,12,a,a,S25a,Inner-ring integrated moisture processes
+SI,12,b,b,S25b,Outer-ring integrated moisture processes
+SI,12,c,c,S25c,Inner-ring humidity at comparable winds
+SI,12,d,d,S25d,Outer-ring humidity at comparable winds
+SI,13,a,a,S26c,Integrated conversion and vertical KE boundary input
+SI,13,b,b,S26a,Cumulative horizontal/vertical/total KE canonical transfer
+SI,13,c,c,S26b,Cumulative dry-APE canonical transfer
+SI,14,a,a,S27a,48 h recovery probability contrasts
+SI,14,b,b,S27b,24 h wind response contrasts
+SI,14,c,c,S27c,Exposure support and effective sample size
+SI,15,a,a,S28a,48 h outcome support
+SI,15,b,b,S28c,Recovery calibration
+SI,15,c,c,S29b,Intervention-only missing-outcome offsets
+SI,16,a,a,S30a,Actual return latitudes
+SI,16,b,b,S30b,First departure latitudes by 48 h outcome
+SI,16,c,c,S30c,Northern supported probability
+SI,16,d,d,S30d,Southern supported probability
+SI,17,a,a,S31a,Pre-/post-peak matched wind RH
+SI,17,b,b,S31b,RH contrast versus signed A
+SI,17,c,c,S31c,Geographic adjustment of five contrasts
+SI,17,d,d,S31d,Conditional slopes versus A

@@ -1,0 +1,50 @@
+{
+  "annulus_state": {
+    "source_file": "77c6f12c3be9_fig6_regions.csv",
+    "sha256": "77c6f12c3be9405a26014907570fb7fa190b7ac2ee02436537ad23b611093ec7"
+  },
+  "sector_state": {
+    "source_file": "fe391e451467_77c6f12c3b_fig6_regions.csv",
+    "sha256": "fe391e451467ff75510085a50c9a6f248cc2be52c0997e984a00436fc0dcbe2b"
+  },
+  "budget": {
+    "source_file": "484764fd030711f24d95.csv",
+    "sha256": "484764fd030711f24d950b37b603caee05483a048fa6bcd14345cd099f7a946c"
+  },
+  "frame": {
+    "source_file": "86eb20298253869096f6.csv",
+    "sha256": "86eb20298253869096f664cfe2934561616f44056489b0f04a28038305acf990"
+  },
+  "time_flux": {
+    "source_file": "559e9d78416d32c19222.csv",
+    "sha256": "559e9d78416d32c19222bd50c23522ea3c8ef8111527ee9d1b8ceea6ea599646"
+  },
+  "layer_flux": {
+    "source_file": "45a285f8f15db3a9efb3.csv",
+    "sha256": "45a285f8f15db3a9efb386407b8fa221833a7f8e16eec475fc45b3ac677c2cf4"
+  },
+  "history": {
+    "source_file": "7305487db34f928594ef.csv",
+    "sha256": "7305487db34f928594ef2f9bbd3982d43c60485203ae285d9f42d32f17137e3c"
+  },
+  "effect": {
+    "source_file": "fb4a8fa3900e_fig7_effects.csv",
+    "sha256": "fb4a8fa3900ed79bb73c2fb25ed6a14a06097821f169e044edf498fe71bceb2e"
+  },
+  "support": {
+    "source_file": "95230873a0d6_fig7_diagnostics.csv",
+    "sha256": "95230873a0d6ecf2222d9583f61ade83d6de7c424cd8655c7e1f64e9f97a7428"
+  },
+  "counts": {
+    "source_file": "e2cb114f041915db556b.csv",
+    "sha256": "e2cb114f041915db556b966f7ae7e517ed22eed4a7c980f1b79e515d47ce26b5"
+  },
+  "cal": {
+    "source_file": "7b766b1e69b6ae8305f4.csv",
+    "sha256": "7b766b1e69b6ae8305f48ebc2b51dc7531deeb5011d0680c35528572582e329f"
+  },
+  "missing": {
+    "source_file": "dac768bb85b369232587.csv",
+    "sha256": "dac768bb85b36923258746a46601c3358c23291e343479437eafea16325b1119"
+  }
+}

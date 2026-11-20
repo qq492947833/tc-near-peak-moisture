@@ -1,0 +1,70 @@
+{
+  "duration": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S02/input/S2_a_duration.csv",
+    "sha256": "aecb23dbdd35d985fa3ec830acd76259463bda54ad177eac0f9e8e517c6686ac"
+  },
+  "fractions": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S02/input/S2_b_stage_fraction.csv",
+    "sha256": "534b34f786bde06a532d052fb6e23bdd6e1ea69d41f675c6b60161998e91c186"
+  },
+  "phases": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S03/input/S2_e_time_allocation.csv",
+    "sha256": "4bf7df538029f7760a3fa034c88d97d3834dcd7b55ba2381232843b2f492a845"
+  },
+  "cdf": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S03/input/S2_f_time_asymmetry.csv",
+    "sha256": "1a58d93e27a1bb76fe9923d4a3d268d107f140e514339c367578f2409df7b0de"
+  },
+  "trends": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S03/input/primary_trends.csv",
+    "sha256": "6451371f3436a992038e9180243b906243cfa1bcf78add76d317657f467be26f"
+  },
+  "windows": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S04/inputs/12d8cdbe19_main_durations.csv",
+    "sha256": "4607b65d5bf5eb775e9ec653f740eab4f2eae6000576d69bdbc819391f20c943"
+  },
+  "counts": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S11/inputs/3928be4370_manifest.csv",
+    "sha256": "3928be43707c476538c6fbf696781e4e8c3339ba0abd5f76c73c802998cb8991"
+  },
+  "sensitivity": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S11/inputs/f238cd830c_duration_summaries.csv",
+    "sha256": "f238cd830c7a3d4ac667c3759f1a761b00aeb699bce29af3a324e814d0212c03"
+  },
+  "contrasts": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S09/input/A2_paired_contrasts.csv",
+    "sha256": "5f97e9163d316933cc5d18434cde3ddfd9bd650af62b86db06739a119af74b4f"
+  },
+  "losses": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S10/inputs/05f152b893_A3_paired_contrasts.csv",
+    "sha256": "05f152b89313778fcd1ed6849d1d4bb0908ff19a482963d6fd83f26eaed4feef"
+  },
+  "humidity": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S13/input/fig3_background.csv",
+    "sha256": "f0ebf485d1622fed2db7468185a83da032b18ccafce66d5d715582348b7725ba"
+  },
+  "rh": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S13/input/fig3_rh.csv",
+    "sha256": "e7ae65ecc8afab5d9cc32803475a0f6f139f6c6b20b988c852d169f74af3a174"
+  },
+  "pi": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S13/input/fig3_PI.csv",
+    "sha256": "6fbceb53d3802652bd58c0a10450d70114fb0d315337d58834d8f417f96ad8ad"
+  },
+  "anomaly": {
+    "source": "paper_2026/lifecycle_figures/figures/Figure_S14/inputs/64ad083c13_P4_raw_climate_anomaly_CI_n.csv",
+    "sha256": "64ad083c1350ecc4bd5b0c9f4c841272e6f701f8d5b4669eb124b82d2bdbeb02"
+  },
+  "basins": {
+    "source": "paper_2026/newanalyses/history/figures/SA_BASIN/source_data/basin_estimates_ci.csv",
+    "sha256": "6dc0bee3842e35c3d8f0b353ab0f348b7cbcc9d87e85336b47e1d6f937df87bb"
+  },
+  "annual": {
+    "source": "paper_2026/newanalyses/history/figures/NEW_HISTORY/annual_trends_and_basin_interactions.csv",
+    "sha256": "1dd0a2385b4e3af2a7b55a31606c890b80353966441da589ecbda1367993c3be"
+  },
+  "envtrend": {
+    "source": "paper_2026/newanalyses/history/figures/SB_HISTORY/source_data/same_model_environment_only_trends.csv",
+    "sha256": "ab6c8346aeeba8f7518c61e7dc5bf4446c529aa10b4a56257611e9d027a3bc08"
+  }
+}
