@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.1.4 — Selected supplementary evidence and data index
+
+The reading set now contains eight main and 17 selected supplementary figures. Overlapping series have one graphical home; frozen results and their original inferential families remain in the accompanying data. Figure 4 retains the original paired net-inward estimates and their 95% intervals; Supplementary Figure 13 distinguishes rate integrals from Fig. 6e rates. No ERA5 processing, model fitting or resampling was performed.
+
 ## v2.1.3 — Trough-aligned KE canonical-transfer rates
 
 Figure 6e shows the horizontal and pressure-direction contributions to kinetic-energy canonical transfer and their sum. The rates (W kg⁻¹) are averaged over 0–300 km and 500–850 hPa in the nominal 2–16-day window. Every six-hour point from −24 to +24 h uses the same 126 events in 117 cyclones. Events are averaged within cyclone, with equal weight per cyclone and pointwise percentile 95% intervals from the original 2,000 cyclone-level draws. Some positive-lag observations occur after the cyclone has returned to near-peak intensity.
