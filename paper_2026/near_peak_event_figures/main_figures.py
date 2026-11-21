@@ -160,7 +160,7 @@ def draw1():
     for i,m,c,lab in [(1,"o",BLUE,"First"),(2,"D",RUST,"Second"),(3,"^","#725B91","Third or later")]:
         z=ev[ev.return_order.eq(i) if i<3 else ev.return_order.ge(i)]
         b.scatter(z.return_lon%360,z.return_lat,c=c,marker=m,s=11 if i==1 else 20,edgecolors="white",linewidths=.35,label=lab)
-    for basin,x,y in [("NA",335,42),("EP",243,5),("WP",150,48),("NI",74,37),("SI",68,-41),("SP",205,-40)]:
+    for basin,x,y in [("NA",335,42),("EP",243,5),("WP",158.0,43.0),("NI",74,37),("SI",68,-41),("SP",205,-40)]:
         b.text(x,y,basin,fontsize=9,color="#60777E",ha="center",va="center")
     b.set(xlim=(0,360),ylim=(-60,65),aspect="equal",xticks=[0,90,180,270,360],xticklabels=["0°","90°E","180°","90°W","0°"],yticks=[-60,0,60],yticklabels=["60°S","0°","60°N"])
     title(b,"b","Near-peak return locations");b.legend(loc="upper center",bbox_to_anchor=(.50,-.19),ncol=3,columnspacing=.9,handletextpad=.2)
@@ -297,6 +297,22 @@ def draw5():
         timing(a,row==1,"Time from trough (h)");a.set_ylabel(unit,labelpad=-1 if col else 3)
         a.yaxis.set_major_locator(MaxNLocator(nbins=4))
         if i>=3: zero(a)
+        if metric=="rates":
+            # Keep the time-origin guide below the legend and end the zero-rate
+            # guide at the last observed lag, within the panel's right boundary.
+            f.canvas.draw()
+            renderer=f.canvas.get_renderer()
+            legend=a.get_legend().get_window_extent(renderer)
+            frame=a.get_window_extent(renderer)
+            top_fraction=(legend.y0-frame.y0-1.1*f.dpi/25.4)/frame.height
+            time_guides=[ln for ln in a.lines if list(ln.get_xdata())==[0,0] and list(ln.get_ydata())==[0,1]]
+            rate_guides=[ln for ln in a.lines if list(ln.get_ydata())==[0,0] and list(ln.get_xdata())==[0,1]]
+            assert len(time_guides)==len(rate_guides)==1
+            assert .65<top_fraction<1
+            time_guides[0].set_ydata([0.,top_fraction])
+            first,last=a.get_xlim()
+            rate_guides[0].set_xdata([0.,(float(rates.relative_hour.max())-first)/(last-first)])
+
     g=axis(f,15,109,162,28);g.tick_params(axis="y",pad=1.4);title(g,"g","Wind-matched dry APE")
     assert list(gvals.window)==[0,1,2] and set(gvals.n_sid)=={108} and set(gvals.n_events)=={115}
     bars(g,gvals[["estimate","lower","upper"]].values,[">16 d","2–16 d","<2 d"],"Reintensification − decay\n(J kg$^{-1}$)")
