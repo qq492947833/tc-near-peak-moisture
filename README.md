@@ -1,13 +1,20 @@
-# FLTCCF: tropical-cyclone lifecycle and near-peak processes
+# Near-peak tropical cyclone departures and returns
+
+The [event figure release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/figures-20261121-r02) contains six main and eleven supplementary figures. The seven reading tables summarize event support, moisture exchange, energy diagnostics and sensitivity, and the 48-h recovery check. The illustrations, figure scripts and display mapping are versioned independently of the [v2.1.5 analysis and statistical archive](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.5).
+
+[Reproduce the figures](paper_2026/near_peak_event_figures/README.md) · [Data and worksheet index](paper_2026/near_peak_event_figures/statistical_archive.json) · [Download the 34 image files](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/figures-20261121-r02/near-peak-event-figures.zip)
+
+## Archived v2.1.5 analysis and figure organization
+
 
 Code, configurations and processed inputs for the 1982–2023 study of 2,340
-tropical-cyclone storm identifiers (SIDs). The current release covers lifecycle
+tropical-cyclone storm identifiers (SIDs). The v2.1.5 analysis release covers lifecycle
 classification and comparisons, environmental evolution, paired temporary
 departure and decay conditions, moisture transport, multiscale energy,
 reintensification and recovery, spatial contrasts, and historical duration changes.
 The reading set contains eight main figures, seventeen supplementary figures and ten core tables. The supplementary information includes the estimates, confidence intervals and support needed for the reported comparisons, including the 700-hPa scale-boundary contrasts in Table S5. The [statistical archive guide](paper_2026/selected_evidence/layout/DATA_DICTIONARY.md) identifies frozen matrices, historical row identifiers and units. The workbook is an optional research archive, not a required separate submission file.
 
-Download the [current figure pairs](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/tc-near-peak-moisture-v2.1.5-figures.zip), [full frozen statistics](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/Supplementary_Data_1_CSV.zip), [optional archive workbook](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/Supplementary_Data_1.xlsx) and [checksums](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/SHA256SUMS.txt). See the [panel identity map](paper_2026/selected_evidence/layout/panel_identity.csv), [original-to-current crosswalk](paper_2026/selected_evidence/panel_map.csv) and [figure file checksums](paper_2026/selected_evidence/figure_files.csv).
+Download the [v2.1.5 figure pairs](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/tc-near-peak-moisture-v2.1.5-figures.zip), [full frozen statistics](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/Supplementary_Data_1_CSV.zip), [optional archive workbook](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/Supplementary_Data_1.xlsx) and [checksums](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/SHA256SUMS.txt). See the [panel identity map](paper_2026/selected_evidence/layout/panel_identity.csv), [original-to-current crosswalk](paper_2026/selected_evidence/panel_map.csv) and [figure file checksums](paper_2026/selected_evidence/figure_files.csv).
 
 The ten revised figures use frozen inputs and dedicated axes at their intended reading width. With the project's Python plotting dependencies installed, run from the repository root:
 
@@ -16,7 +23,7 @@ python paper_2026/selected_evidence/layout/group_a/render_reading_panels.py --in
 python paper_2026/selected_evidence/layout/group_b/render_selected.py --output-dir generated/selected
 ```
 
-For the unchanged selected figures, use the [previously published native artwork](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.4/tc-near-peak-moisture-v2.1.4-figure-sources.zip) and the original assembly script with `--numbers 0 1 9 10 12 13 16 17`. All unchanged final images are in the current figure archive. Figure 6e shows nine trough-relative transfer rates; Supplementary Fig. 13b shows integrals over the actual trough-to-return intervals. The inference families and numerical qualifications remain unchanged.
+For the unchanged selected figures, use the [previously published native artwork](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.4/tc-near-peak-moisture-v2.1.4-figure-sources.zip) and the original assembly script with `--numbers 0 1 9 10 12 13 16 17`. All unchanged final images are in the v2.1.5 figure archive. Figure 6e shows nine trough-relative transfer rates; Supplementary Fig. 13b shows integrals over the actual trough-to-return intervals. The inference families and numerical qualifications remain unchanged.
 
 ## Historical v2.1.3 figure updates
 

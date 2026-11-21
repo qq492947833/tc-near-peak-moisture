@@ -1,0 +1,25 @@
+display,number,v2_1_5_display,content
+main,1,1,Event annotations on frozen illustrative wind history; map and basin counts retained
+main,2,3,Frozen panel estimates
+main,3,4,Frozen panel estimates
+main,4,5,Frozen panel estimates
+main,5,6,Frozen panel estimates
+main,6,8,"Near-peak sequence, moisture comparison and scale-resolved energy synthesis"
+supplementary,1,1,Retain the two mature-stage definitions and same-SID near-peak event definition; remove peak-alignment-only comparison
+supplementary,2,3,Frozen threshold eligibility counts
+supplementary,3,7,Radial moisture and subsequent budget
+supplementary,4,8,Frozen panel estimates
+supplementary,5,9,Frozen panel estimates
+supplementary,6,10,Frozen panel estimates
+supplementary,7,11,Frozen panel estimates
+supplementary,8,12,Frozen panel estimates
+supplementary,9,13,Frozen panel estimates
+supplementary,10,14,Frozen panel estimates
+supplementary,11,15,Frozen panel estimates
+table,1,1,Cohorts and event definitions
+table,2,2,Moisture exchange and decomposition
+table,3,3,Shortest subsequent near-peak episode sensitivity
+table,4,4,Discretization sensitivity
+table,5,5,"Energy sensitivity by level, scale and adjustment"
+table,6,6,48-h recovery cohorts
+table,7,10,Local numerical checks on three cyclone records
