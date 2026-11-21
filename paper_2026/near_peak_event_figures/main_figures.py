@@ -79,11 +79,26 @@ def save(f,num):
         args.qa.mkdir(exist_ok=True,parents=True)
         r=f.canvas.get_renderer()
         bounds=[list(np.round(np.array(a.get_window_extent(r).extents)/f.dpi*25.4,5)) for a in f.axes]
-        constraints={1:[(0,1,0),(1,2,0)],2:[(0,2,1),(0,4,3),(1,3,1),(1,5,3),(0,1,0),(2,3,0),(4,5,2),(1,6,0),(5,6,2)],3:[(1,3,0),(2,3,2),(1,2,3),(1,2,1)],4:[(0,2,1),(0,4,3),(1,3,1),(1,5,3),(6,8,1),(8,10,3),(0,6,0),(4,10,2)],5:[(0,1,1),(1,2,3),(3,4,1),(4,5,3),(0,3,0),(2,5,2),(3,6,0),(5,6,2)]}[num]
+        constraints={1:[(0,1,0),(1,2,0)],2:[(0,2,1),(0,4,3),(1,3,1),(1,5,3),(0,1,0),(2,3,0),(4,5,2),(1,6,0),(5,6,2)],3:[(0,1,0),(0,3,2),(1,2,3),(1,2,1),(2,3,3),(2,3,1)],4:[(0,2,1),(0,4,3),(1,3,1),(1,5,3),(6,8,1),(8,10,3),(0,6,0),(4,10,2)],5:[(0,1,1),(1,2,3),(3,4,1),(4,5,3),(0,3,0),(2,5,2),(3,6,0),(5,6,2)]}[num]
         # Map and the basin chart differ in width; their left edges belong to different columns.
         if num==1:constraints=[(0,1,0),(1,2,1),(1,2,3)]
         deviations=[abs(bounds[i][edge]-bounds[j][edge]) for i,j,edge in constraints]
         assert max(deviations)<=.3,(name,bounds,deviations)
+        if num==1:
+            text=next(t for t in f.texts if t.get_gid()=="event-title")
+            title_box=text.get_window_extent(r);legend_box=f.legends[0].get_window_extent(r);plot_box=f.axes[0].get_window_extent(r)
+            mm=lambda box:(np.asarray(box.extents)/f.dpi*25.4).tolist()
+            assert title_box.y0>legend_box.y1 and legend_box.y0>plot_box.y1
+            values["event_header_geometry_mm"]=dict(title=mm(title_box),legend=mm(legend_box),axes=mm(plot_box),reference_map_left=mm(f.axes[1].get_window_extent(r))[0])
+        if num==3:
+            anchor=lambda ax:float(ax._left_title.get_window_extent(r).x0/f.dpi*25.4)
+            delta=max(abs(bounds[0][0]-bounds[1][0]),abs(bounds[0][2]-bounds[3][2]),abs(anchor(f.axes[0])-anchor(f.axes[1])))
+            arrows=[p for p in f.axes[0].patches if p.__class__.__name__=="FancyArrowPatch"]
+            extent=lambda p:np.asarray(p.get_window_extent(r).extents)/f.dpi*25.4
+            visible=(min(extent(p)[0] for p in arrows),max(extent(p)[2] for p in arrows))
+            assert abs(visible[0]-bounds[1][0])<=1.5 and abs(visible[1]-bounds[3][2])<=1.5,visible
+            assert delta<=.3
+            values["exchange_title_geometry_mm"]=dict(a_title=anchor(f.axes[0]),b_title=anchor(f.axes[1]),a_axis=bounds[0],b_axis=bounds[1],c_axis=bounds[2],d_axis=bounds[3],visible_arrow_edges_mm=visible,max_error=delta)
         if num==5:
             ax=f.axes[4];frame=ax.get_window_extent(r);key=ax.get_legend().get_window_extent(r)
             overflow=max(frame.x0-key.x0,key.x1-frame.x1,frame.y0-key.y0,key.y1-frame.y1,0)*25.4/f.dpi
@@ -118,8 +133,8 @@ def draw1():
     bas=read(root/"Figure_01/input/basin_recurrence_proportions.csv",keep_default_na=False).query("mode=='new'")
     assert len(ev)==133 and ev.sid.nunique()==123 and bas.eligible_SID.sum()==2340 and bas.recurrent_SID.sum()==123
     f=fig(119)
-    a=axis(f,13,12,158,43)
-    title(a,"a","Event definitions")
+    a=axis(f,13,17,158,38)
+    header=f.text(13/180,1-1.4/119,r"$\mathbf{a}$  Event definitions",fontsize=9,ha="left",va="top");header.set_gid("event-title")
     a.plot(s.hours,s.wind_kt,c=INK,marker="o",ms=3,zorder=4)
     level=k["I090_kt"];increments=np.diff(s.hours);assert np.all(increments==6)
     dt=int(increments[0]);last=int(s.hours.iloc[-1]);trough=k["valley_h"]
@@ -133,15 +148,9 @@ def draw1():
     a.text(0,level+2,"Near-peak threshold",fontsize=9,color=INK)
     a.scatter([first_lmi],[k["lmi_kt"]],s=23,color=INK,zorder=5)
     a.annotate("First LMI",(first_lmi,k["lmi_kt"]),xytext=(0,5),textcoords="offset points",ha="center",va="bottom")
-    a.annotate("Trough",(trough,k["valley_kt"]),xytext=(0,-7),textcoords="offset points",ha="center",va="top")
     a.annotate("Return",(returned[0],s.set_index("hours").loc[returned[0],"wind_kt"]),xytext=(0,5),textcoords="offset points",ha="center",va="bottom")
-    a.text((reference[0]+reference[1])/2,120,"LMI episode",ha="center",va="center",color="#385F52")
-    for at,name in [(reference[1],"Temporary\ndeparture"),(k["Decay_onset_h"],"Final\ndeparture")]:
-        wind=float(s.set_index("hours").loc[at,"wind_kt"])
-        a.plot([at,at],[64,wind-2],ls=":",lw=.68,c=GREY,zorder=1)
-        a.text(at,56,name,ha="center",va="center",fontsize=9,linespacing=1.02)
-    a.set(xlim=(-2,last+1),ylim=(29,125),xticks=[0,12,24,36,48,60,72],yticks=[35,60,85,100],xlabel="Time from 35-kt start (h)",ylabel="Wind speed (kt)")
-    a.legend(loc="lower right",ncol=4,handlelength=1.0,columnspacing=.8,handletextpad=.4,borderpad=.15)
+    a.set(xlim=(-2,last+1),ylim=(29,115),xticks=[0,12,24,36,48,60,72],yticks=[35,60,85,100],xlabel="Time from 35-kt start (h)",ylabel="Wind speed (kt)")
+    f.legend(*a.get_legend_handles_labels(),loc="upper left",bbox_to_anchor=(13/180,1-7/119),ncol=4,handlelength=1.0,columnspacing=.9,handletextpad=.42,borderpad=.05,borderaxespad=0)
     values["shaded_left_intervals_hours"]=intervals
     mapwidth=93;mapheight=mapwidth*125/360
     b=axis(f,13,71,mapwidth,mapheight)
@@ -218,17 +227,17 @@ def draw3():
     adj=fdata(4,"inputs/direct/exchange_background80.csv")
     where="cohort=='original_post80' and window=='0_24h' and factor==1 and sector=='all'"
     allz=pair.query(where+" and layer=='all'")
-    f=fig(143);a=axis(f,11,7,158,34);title(a,"a","Moving-boundary exchange (10$^{12}$ kg)")
-    a.set(xlim=(0,160),ylim=(0,40),aspect="equal");a.axis("off")
+    f=fig(110);a=axis(f,24,7,151,151*40/131);title(a,"a","Moving-boundary exchange (10$^{12}$ kg)")
+    a.set(xlim=(12.5,143.5),ylim=(0,40),aspect="equal");a.axis("off")
     for x,which,col,lab in [(40,"temporary",BLUE,"Temporary departure"),(117,"final",RUST,"Decay")]:
         q=allz[allz.quantity==which].set_index("kind").estimate/1e12
         a.add_patch(Circle((x,19),11,facecolor="#F5F8FA",edgecolor=col,lw=1.1))
         a.text(x,36,lab,ha="center",c=col,weight="bold")
         a.text(x,20,f"300 km\nNet {q['net']:.2f}",ha="center",va="center")
         for k,yy,left,right in [("in",26,x-27,x-8.5),("out",12,x+8.5,x+27)]:
-            mean=q[k];a.add_patch(FancyArrowPatch((left,yy),(right,yy),arrowstyle="-|>",mutation_scale=mean*1.2,lw=mean*.36,color=col))
+            mean=q[k];a.add_patch(FancyArrowPatch((left,yy),(right,yy),arrowstyle="-|>",shrinkA=0,shrinkB=0,mutation_scale=mean*1.2,lw=mean*.36,color=col))
             a.text((left+right)/2+(-2 if k=="in" else 2),yy+2.6,("In " if k=="in" else "Out ")+f"{mean:.2f}",ha="center")
-    b=axis(f,28,54,38,32);title(b,"b","Net inward by layer")
+    b=axis(f,24,61,31,32);title(b,"b","Layer net inward")
     p=pressure.query(where+" and kind=='net' and quantity in ['temporary','final']")
     order=["500-600_hPa","600-700_hPa","700-850_hPa","850-925_hPa"]
     z=p.pivot(index="layer",columns="quantity",values="estimate").loc[order,["temporary","final"]].to_numpy()/1e12
@@ -236,15 +245,17 @@ def draw3():
     b.imshow(z,vmin=-3.4,vmax=3.4,cmap=cmap,aspect="auto")
     for i in range(4):
         for j in range(2): b.text(j,i,f"{z[i,j]:.2f}".replace("-","−"),ha="center",va="center",size=9)
-    b.set(xticks=[0,1],xticklabels=["Temporary","Decay"],yticks=range(4),yticklabels=[l.replace("_hPa","").replace("-","–") for l in order],ylabel="Layer (hPa)",xlabel="Net inward (10$^{12}$ kg)");b.tick_params(length=0)
-    c=axis(f,113,54,57,32);title(c,"c","Gross exchange differences")
+    b.set(xticks=[0,1],xticklabels=["Temp.","Decay"],yticks=range(4),yticklabels=[l.replace("_hPa","").replace("-","–") for l in order],ylabel="Layer (hPa)",xlabel="Net inward (10$^{12}$ kg)");b.tick_params(length=0)
+    c=axis(f,77,61,33,32);title(c,"c","Gross exchange")
     cd=allz.query("quantity=='difference'").set_index("kind").loc[["in","out"],["estimate","low","high"]]/1e12
-    forests(c,cd.values,["Gross inward","Gross outward"],"Temporary − decay (10$^{12}$ kg)")
-    d=axis(f,28,109,142,23);title(d,"d","Net inward exchange over 0–24 h")
+    forests(c,cd.values,["Inward","Outward"],"Temporary − decay\n(10$^{12}$ kg)")
+    c.xaxis.set_major_locator(MaxNLocator(nbins=3))
+    d=axis(f,139,61,36,32);title(d,"d","Net inward, 0–24 h")
     q=adj[adj.metric=="post_r300_net"];raw=q[q.model=="geographical"].set_index("target")
     dd=pd.concat([raw.loc[["original80_raw","restricted_raw","balanced"]],q[(q.model=="geographical_state")&(q.target=="balanced")].set_index("target")])
     assert list(dd.n_target)==[80,74,74,74]
-    forests(d,dd[["estimate","low","high"]].values/1e12,["All pairs","Common support","Geo-season","+Storm state"],"Temporary − decay (10$^{12}$ kg)")
+    forests(d,dd[["estimate","low","high"]].values/1e12,["All pairs","Common support","Geo-season","+Storm state"],"Temporary − decay\n(10$^{12}$ kg)")
+    d.set_xticks([-1,0,1])
     values["gross_diff_CI"]=cd.values.tolist();values["net_diff_CI"]=(dd[["estimate","low","high"]].values/1e12).tolist();save(f,3)
 def draw4():
     p=root/"Figure_05";meta=json.loads((p/"inputs.json").read_text())

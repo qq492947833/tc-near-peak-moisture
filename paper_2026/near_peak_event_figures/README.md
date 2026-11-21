@@ -2,6 +2,8 @@
 
 The presentation version figures-20261121-r04 uses the frozen v2.1.5 analyses of near-peak departures and returns. The reading set contains six main figures, ten supplementary figures and seven supplementary tables.
 
+Figure 1 uses a six-hourly schematic to distinguish the reference near-peak episode, the subsequent weakening and reintensification, and final decay. Figure 3 uses matched panel bounds to compare moving-boundary moisture exchange.
+
 ## Rendering
 
 Use Python with the plotting dependencies from the repository, including NumPy, pandas, matplotlib, Pillow and pyshp. Figures use Arial at the exported display width. Run from the repository root in a checkout of this figure tag:
