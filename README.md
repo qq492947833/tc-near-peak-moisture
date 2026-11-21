@@ -1,8 +1,8 @@
 # Near-peak tropical cyclone departures and returns
 
-The [event figure release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/figures-20261121-r02) contains six main and eleven supplementary figures. The seven reading tables summarize event support, moisture exchange, energy diagnostics and sensitivity, and the 48-h recovery check. The illustrations, figure scripts and display mapping are versioned independently of the [v2.1.5 analysis and statistical archive](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.5).
+The [event figure release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/figures-20261121-r03) contains six main and ten supplementary figures. The seven reading tables summarize event support, moisture exchange, energy diagnostics and sensitivity, and the 48-h recovery check. The illustrations, figure scripts and display mapping are versioned independently of the [v2.1.5 analysis and statistical archive](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.5).
 
-[Reproduce the figures](paper_2026/near_peak_event_figures/README.md) · [Data and worksheet index](paper_2026/near_peak_event_figures/statistical_archive.json) · [Download the 34 image files](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/figures-20261121-r02/near-peak-event-figures.zip)
+[Reproduce the figures](paper_2026/near_peak_event_figures/README.md) · [Data and worksheet index](paper_2026/near_peak_event_figures/statistical_archive.json) · [Download the 32 image files](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/figures-20261121-r03/near-peak-event-figures.zip)
 
 ## Archived v2.1.5 analysis and figure organization
 

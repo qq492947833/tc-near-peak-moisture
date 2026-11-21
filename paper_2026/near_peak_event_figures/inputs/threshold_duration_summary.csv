@@ -1,0 +1,13 @@
+scope,metric,statistic,estimate,ci_low,ci_high,n_sid,unit,B_planned,B_valid,B_failed,P,q,test_family,estimand
+beta085_native_multi,L,mean,17.12,14.8,19.60199999999999,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_native_multi,B,mean,34.88,29.12,41.28,150,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta085_fixed90_multi_main,L,mean,16.29268292682927,14.145121951219512,18.390243902439025,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_main,B,mean,36.19512195121951,30.146341463414632,43.41463414634146,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,L,mean,16.73170731707317,13.706097560975609,19.902439024390244,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta085_fixed90_multi_alternate,B,mean,29.853658536585368,23.803658536585367,37.31707317073171,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_native_multi,L,mean,14.256880733944953,12.220183486238533,16.678899082568808,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_native_multi,B,mean,35.22935779816514,28.23715596330275,43.43119266055046,109,h,2000,2000,0,,,none; prespecified C1 sensitivity,threshold-native recurrence; not a pure threshold comparison
+beta095_fixed90_multi_main,L,mean,16.29268292682927,14.145121951219512,18.390243902439025,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_main,B,mean,36.19512195121951,30.146341463414632,43.41463414634146,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,L,mean,9.414634146341463,7.658536585365853,11.21951219512195,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID
+beta095_fixed90_multi_alternate,B,mean,27.951219512195124,21.31463414634146,36.246341463414616,123,h,2000,2000,0,,,none; prespecified C1 sensitivity,fixed main90 recurrence; common physical SID

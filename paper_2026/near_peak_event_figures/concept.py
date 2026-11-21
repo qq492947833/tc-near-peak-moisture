@@ -1,5 +1,6 @@
 from pathlib import Path
-import argparse,json,csv,hashlib
+import argparse,json,csv,hashlib,sys
+import numpy as np
 import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
@@ -30,49 +31,87 @@ def load_evidence(source):
  assert result['shear']['row']['original_raw']<0 and result['humidity']['row']['estimate']>0
  assert all(result[k]['row']['estimate']<0 for k in ('outward','D_pre','D_post','1','2'))
  assert all(result[k]['row']['estimate']>0 for k in ('0','conversion'));return result
-def draw(source,out):
- out.mkdir(exist_ok=True,parents=True); evidence=load_evidence(source)
-
- mpl.rcParams.update({'font.family':'Arial','pdf.fonttype':42,'svg.fonttype':'none','axes.unicode_minus':True})
- fig,axes=plt.subplots(1,3,figsize=(180/25.4,80/25.4),gridspec_kw=dict(wspace=.12))
- fig.subplots_adjust(left=.014,right=.985,bottom=.055,top=.965)
- for a,c,title in zip(axes,'abc',['Near-peak sequence','Departure and decay','Multiscale energetics']):
-  a.set(xlim=(0,1),ylim=(0,1));a.axis('off')
-  label(a,0,.965,c,ha='left',weight='bold',fontsize=10);label(a,.11,.965,title,ha='left',weight='bold',fontsize=9.6)
-  a.plot([0,1],[.90,.90],color=GRAY,lw=.8)
- a,b,c=axes
- for y,t,face,edge in [(.76,'Episode containing first LMI','#ECF4F1',TEAL),(.59,'Temporary departure','#EEF3F5',GRAY),(.42,'Trough and reintensification','#F4F7F8',GRAY),(.25,'Near-peak return','#ECF4F1',TEAL),(.08,'Final departure','#F7F3EE',GRAY)]:
-  box(a,.037,y,.926,.087,t,face,edge)
- for y in [.75,.58,.41,.24]:arrow(a,.50,y,.50,y-.058)
- label(b,.5,.81,'Temporary departure',weight='bold')
- label(b,.5,.735,'relative to decay onset')
- for x,outer,name,wid in [(.25,'#66A697','Temporary',.11),(.74,'#A6B9BE','Decay',.20)]:
-  b.add_patch(Ellipse((x,.51),.32,.25,fc='white',ec=outer,lw=2))
-  b.add_patch(Ellipse((x,.51),.14,.11,ec='#637E84',fc='#EDF3F4',lw=.9))
-  for direct in [-1,1]:
-   arrow(b,x+direct*.042,.51,x+direct*(.052+wid),.51,color='#5B7582',lw=1.3)
-  label(b,x,.327,name,fontsize=8.3)
- label(b,.5,.222,'Weaker deep-layer shear')
- label(b,.5,.151,'Higher outer-annulus humidity')
- label(b,.5,.080,'Smaller gross outward exchange')
- label(c,.5,.81,'Dry APE at matched winds',weight='bold')
- label(c,.5,.736,'Reintensification − decay')
- for y,window,i in [(.62,'>16 d',0),(.52,'2–16 d',1),(.42,'<2 d',2)]:
-  label(c,.13,y,window,ha='left')
-  pos=evidence[str(i)]['row']['estimate']>0
-  label(c,.62,y,'Higher' if pos else 'Lower',ha='left',weight='bold',color=TEAL if pos else INK)
- c.plot([.09,.91],[.335,.335],color=GRAY,lw=.8)
- label(c,.5,.263,'2–16 d conversion during ascent',fontsize=8.4)
- box(c,.02,.07,.39,.104,'Dry APE','#E8F1ED',TEAL)
- box(c,.69,.07,.285,.104,'KE','#E8F1F5',BLUE)
- arrow(c,.435,.122,.663,.122,color=OCHRE,lw=2)
- stem=out/'Figure_06'
- for ext in ['png']:
-  fig.savefig(stem.with_suffix('.'+ext),dpi=900,facecolor='white')
- plt.close(fig)
- with Image.open(stem.with_suffix('.png')) as im: rgb=im.convert('RGB')
- rgb.save(stem.with_suffix('.png'),dpi=(900,900));rgb.save(stem.with_suffix('.tiff'),compression='tiff_lzw',dpi=(900,900))
-
+def draw(source,out,qa=None):
+    """Use the published cyclone and reservoir vector shapes at their original proportions."""
+    evidence=load_evidence(source)
+    sys.path.insert(0,str(source/'Figure_08'/'code'))
+    import scene_20261026_preserved as symbols
+    import scene as original
+    d=source/'Figure_08'/'input'
+    flux=pd.read_csv(d/'paired_flux_components.csv')
+    sel=flux[(flux.kind=='out')&(flux.layer=='all')&(flux.sector=='all')&(flux.factor==1)&
+             (flux.cohort=='original_post80')&(flux.window=='0_24h')].set_index('quantity')
+    assert sel.loc['humidity','estimate']>0 and sel.loc['relative_motion','estimate']<0
+    pre=pd.read_csv(d/'energy_primary.csv').set_index('metric')
+    assert all(pre.loc[k,'estimate']<0 for k in ('KE','APE','C_A_to_K'))
+    joint_path=source.parent.parent/'physics/vertical_extension/plots/Figure_S26_source.csv'
+    joint=pd.read_csv(joint_path,float_precision='round_trip').query("panel=='c' and window==1 and region=='r0_300' and variant=='joint_with_transfer'").set_index('row')
+    assert list(joint.index)==[1,2,3] and joint.level.eq('500-850').all()
+    assert joint.n_events.eq(132).all() and joint.n_sid.eq(122).all()
+    assert joint.estimate.iloc[0]>0 and joint.estimate.iloc[1]>0 and joint.estimate.iloc[2]<0
+    evidence['layer_integrals']=dict(file=joint_path.name,sha256=hashlib.sha256(joint_path.read_bytes()).hexdigest(),rows=joint[['metric','estimate','ci_lower','ci_upper','unit','n_events','n_sid']].to_dict('records'))
+    out.mkdir(exist_ok=True,parents=True)
+    mpl.rcParams.update({'font.family':'Arial','font.size':8.5,'pdf.fonttype':42,'svg.fonttype':'none','axes.unicode_minus':True})
+    width,height=180,112
+    f=plt.figure(figsize=(width/25.4,height/25.4))
+    def canvas(name,x,y,w,h):
+        ax=f.add_axes([x/width,y/height,w/width,h/height]);ax.set_gid(name)
+        ax.set(xlim=(0,w),ylim=(0,h));ax.axis('off')
+        return ax
+    a=canvas('a',3,87,174,23);b=canvas('b',3,3,98,79);c=canvas('c',107,3,70,79)
+    def txt(ax,x,y,words,**kw):
+        return ax.text(x,y,words,fontsize=kw.pop('size',8.3),weight=kw.pop('weight','normal'),
+                       color=kw.pop('color',INK),ha=kw.pop('ha','center'),va='center',linespacing=1.1,zorder=24,**kw)
+    for ax,letter,heading,H in [(a,'a','Near-peak sequence',23),(b,'b','Moving-boundary moisture exchange',79),(c,'c','Multiscale energetics',79)]:
+        txt(ax,0,H-1.8,f'{letter}  {heading}',weight='bold',size=9,ha='left')
+    labels=[('Reference near-peak\nepisode',TEAL),('Temporary\ndeparture',BLUE),('Wind trough',INK),
+            ('Near-peak\nreturn',TEAL),('Final\ndeparture',OCHRE)]
+    stations=[12,51,86,122,157]
+    for i,(x,(words,color)) in enumerate(zip(stations,labels)):
+        a.scatter([x],[4],s=24,c=color,zorder=5,edgecolors='white',linewidths=.3)
+        txt(a,x,10,words,color=color)
+        if i+1<len(stations):original.arrow(a,(x+2,4),(stations[i+1]-2,4),'sequence_'+str(i),GRAY,.9,6)
+    for x,cat,col,outer,loss,delta in [(24,'Temporary',BLUE,'Moister outer annulus','Less gross export',5.5),
+                                       (74,'Decay',OCHRE,'Drier outer annulus','More gross export',10.)]:
+        txt(b,x,69,cat,weight='bold',color=col)
+        txt(b,x,63.5,'Weaker shear' if cat=='Temporary' else 'Stronger shear')
+        original.arrow(b,(x-5,58),(x+delta,58),cat+'_shear','#627A85',1.0,6)
+        b.add_patch(Ellipse((x,29),42,10.5,facecolor='#D8E8E2',edgecolor='#AAC8C0',lw=.7,zorder=0))
+        symbols.cylinder(b,x,50,31,10.5,col,cat)
+        sign=-1 if cat=='Temporary' else 1
+        original.arrow(b,(x+sign*9,34.2),(x+sign*19,34.2),cat+'_normal_velocity',col,1.25,7)
+        txt(b,x,20.7,outer,size=8.15);txt(b,x,15,loss,color=col,size=8.15)
+    txt(b,49,53.3,'300 km boundary',size=8)
+    txt(b,49,45,'(u − c) · n',size=8);txt(b,49,39.5,'Outward normal',size=8)
+    txt(b,49,8.3,'Annuli: 100–300 km and 300–800 km',color='#4F7072',size=8)
+    txt(b,49,2.3,'Gross outward contrast: humidity (+), relative motion (−)',size=8.05)
+    txt(c,35,69,'Before departure · 700 hPa',weight='bold',size=8.6)
+    txt(c,35,62.7,'Temporary − decay, 2–16 d',size=8.1)
+    txt(c,35,57.1,'Lower dry APE, KE and conversion',size=8.1)
+    c.plot([2,68],[53,53],color=GRAY,lw=.75)
+    txt(c,35,48.1,'During reintensification',weight='bold',size=8.6)
+    txt(c,35,42.7,'500–850 hPa · 2–16 d',size=8.1)
+    original.reservoir(c,15,34,'APE');original.reservoir(c,55,34,'KE')
+    original.arrow(c,(24,34),(46,34),'positive_conversion',OCHRE,1.4,7)
+    txt(c,35,38,'Conversion (+)',size=8)
+    txt(c,35,26.7,'Vertical KE input (+) · Total KE transfer (−)',size=8.0)
+    c.plot([2,68],[22.8,22.8],color=GRAY,lw=.75)
+    txt(c,35,18.4,'Wind-matched dry APE · 700 hPa',weight='bold',size=8.6)
+    txt(c,35,12.6,'Reintensification − decay',size=8.1)
+    for x,period,sign in [(11,'>16 d','Higher'),(35,'2–16 d','Lower'),(59,'<2 d','Lower')]:
+        txt(c,x,7.4,period,size=8.1);txt(c,x,2.25,sign,color=TEAL if sign=='Higher' else INK,weight='bold',size=8.1)
+    f.canvas.draw();renderer=f.canvas.get_renderer()
+    boxes={ax.get_gid():(np.array(ax.get_window_extent(renderer).extents)/f.dpi*25.4).tolist() for ax in f.axes}
+    error=max(abs(boxes['b'][i]-boxes['c'][i]) for i in (1,3));assert error<=.3
+    if qa:
+        qa.mkdir(parents=True,exist_ok=True);f.savefig(qa/'Figure_06.pdf',dpi=180);f.savefig(qa/'Figure_06.svg')
+        (qa/'Figure_06_geometry.json').write_text(json.dumps(dict(size_mm=[width,height],axes_mm=boxes,max_edge_error_mm=error),indent=2))
+        (qa/'Figure_06_data.json').write_text(json.dumps(evidence,indent=2,default=str))
+    stem=out/'Figure_06';f.savefig(stem.with_suffix('.png'),dpi=900,facecolor='white');plt.close(f)
+    with Image.open(stem.with_suffix('.png')) as im:rgb=im.convert('RGB')
+    rgb.save(stem.with_suffix('.png'),dpi=(900,900));rgb.save(stem.with_suffix('.tiff'),compression='tiff_lzw',dpi=(900,900))
+    print(stem.name,rgb.size)
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('source',type=Path);p.add_argument('output',type=Path);a=p.parse_args();draw(a.source,a.output)
+    p=argparse.ArgumentParser();p.add_argument('source',type=Path);p.add_argument('output',type=Path);p.add_argument('--qa',type=Path)
+    args=p.parse_args();draw(args.source,args.output,args.qa)
 
