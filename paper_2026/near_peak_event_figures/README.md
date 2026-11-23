@@ -1,16 +1,18 @@
 # Near-peak cyclone events: figure reproduction
 
-The presentation version figures-20261124-fig6-r01 uses the frozen v2.1.5 analyses of near-peak departures and returns. The reading set contains six main figures, ten supplementary figures and seven supplementary tables.
+The presentation version figures-20261124-fig6-r02 uses the frozen v2.1.5 analyses of near-peak departures and returns. The reading set contains six main figures, ten supplementary figures and seven supplementary tables.
 
 Figure 1 uses a six-hourly schematic to distinguish the reference near-peak episode, the subsequent weakening and reintensification, and final decay. Figure 3 uses matched panel bounds to compare moving-boundary moisture exchange.
 
-This revision redraws only Figure 6. The wind sequence uses the existing schematic observations. Moving control volumes use the original Python vector cylinder and cloud components. The energy panel distinguishes pre-departure contrasts, the 132-event/122-cyclone recovery integrals, and the wind-matched 700 hPa dry APE difference at three temporal windows. The signed bars share one linear scale and use the original 115-event/108-cyclone estimates. The remaining fifteen PNG/TIFF pairs are unchanged.
+Only Figure 6 is revised in this version. The radius labels include km, and the 700 hPa comparisons sit inside the 500–850 hPa layer boundary. The negative KE-transfer label sits above its outward arrow. In the wind-matched comparison, the upward conversion symbol belongs to the >16 d window. The signed bars retain the 700 hPa dry APE means for 115 events in 108 cyclones; the middle module summarizes actual recovery integrals for 132 events in 122 cyclones. The other fifteen PNG/TIFF pairs retain their previous bytes.
 
 Render Figure 6 only (from the tagged repository root):
 
 ```sh
 python paper_2026/near_peak_event_figures/concept.py paper_2026/lifecycle_figures/figures generated/figure6 --qa generated/figure6/qa
 ```
+
+Figure 6 was rendered with Python 3.11.7, Matplotlib 3.8.0, NumPy 1.26.4, pandas 2.1.4, Pillow 10.2.0 and Arial. Rendering uses the schematic CSV/JSON in `paper_2026/lifecycle_figures/figures/Figure_01/input`, the vector cylinder and cloud functions in `Figure_08/code/scene_20261026_preserved.py` under the same figures directory, and `inputs/wind_matched_dry_APE.csv` alongside this renderer. All are included in this tag.
 
 The script writes a 180 × 112 mm PNG, an RGB/LZW TIFF and a vector PDF with embedded fonts. The source datasets, presentation mapping and delivered checksums are listed in `figure_sources.csv`, `display_map.csv` and `figure_files.csv`. The release ZIP and the separate vector PDF are verified by the downloadable SHA256SUMS.txt.
 
@@ -43,6 +45,6 @@ The source trees `paper_2026/lifecycle_figures`, `paper_2026/selected_evidence` 
 
 Figure 5e shows KE canonical-transfer rates at nine six-hour lags relative to the wind trough on a fixed set of 117 SIDs and 126 events (10⁻⁴ W kg⁻¹). Supplementary Figure 8b shows event-specific integrals over the trough-to-return interval in 122 SIDs and 132 events (J kg⁻¹). The supporting data use the pre-existing SID-level summaries and uncertainty intervals.
 
-[Display map](display_map.csv) · [Image checksums](figure_files.csv) · [Frozen statistical archive index](statistical_archive.json) · [Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/figures-20261123-final-r01)
+[Display map](display_map.csv) · [Image checksums](figure_files.csv) · [Frozen statistical archive index](statistical_archive.json) · [Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/figures-20261124-fig6-r02)
 
 [Supplementary figure sources and duration definitions](SUPPLEMENTARY_FIGURES.md) · [Supplementary figure crosswalk](supplementary_figure_mapping.csv) · [Complete plotting input index](figure_sources.csv)

@@ -80,13 +80,12 @@ def draw_moisture(ax, scene):
     badge(55.1,15.6,21.5,'(u−c)·n (−)','#F3F8F6','#81ABA0')
     # Local moistening contrast at 700 hPa. The arrow is not vertical wind velocity.
     directed((16.3,29.0),(16.3,36.8),teal,1.45,8,'inner_vertical_advection')
-    leader([16.3,16.3,14.5],[27.5,24.1,22.5])
-    text(14.5,19.7,'Vert. adv. (+)',color=teal)
+    text(10.0,23.1,'Vert. adv. (+)',color=teal)
     # The two leaders touch the inner and outer annuli, respectively, on the same base.
     leader([73.4,74.2,76.6],[29.4,25.6,23.9])
-    text(78.5,21.4,'100–300')
-    leader([86.4,89.0,89.0,85.9],[30.2,28.2,17.8,16.2])
-    text(79.9,15.2,'300–800')
+    text(77.0,21.1,'100–300 km')
+    leader([86.4,89.0,89.0,86.8],[30.2,28.2,16.8,15.2])
+    text(76.7,15.2,'300–800 km')
 
 
 
@@ -104,26 +103,28 @@ def draw_energy(ax, csv_path):
         ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle=f'round,pad=0,rounding_size={rad}',
                                     facecolor=fc,edgecolor=ec,lw=lw,zorder=3))
     def flow(x,y,xx,yy,col,lw,ms):
-        ax.add_patch(FancyArrowPatch((x,y),(xx,yy),arrowstyle='-|>',mutation_scale=ms,
-                                    shrinkA=0,shrinkB=0,color=col,lw=lw,zorder=4))
+        artist=FancyArrowPatch((x,y),(xx,yy),arrowstyle='-|>',mutation_scale=ms,
+                              shrinkA=0,shrinkB=0,color=col,lw=lw,zorder=4)
+        ax.add_patch(artist);return artist
     def capsule(x,w,t):
         box(x,55.8,w,5.8,'#FFFFFF','#AABFC1',2.8,.65)
         txt(x+w/2,58.7,t)
     # The gray brace stops at the Recovery row. Its labels do not apply to the 700-hPa bars.
-    txt(26.8,77.1,'500–850 hPa',bold=True)
-    txt(54.5,77.1,'2–16 d',bold=True)
+    txt((.6+73)/2,77.1,'500–850 hPa · 2–16 d',bold=True)
     path(72.3,73.8,75,73.8); path(75,73.8,75,24.7);path(75,24.7,72.3,24.7)
     path(.6,50.5,73,50.5); path(.6,23.0,73,23.0)
     txt(.8,70.6,'Pre','left',True)
-    box(.9,53.5,39.4,14.0,'#F4F8F8','#A4B7BA',1.0)
+    box(.45,52.6,44.1,15.5,'#F4F8F8','#8BA5A8',1.0)
+    # The inset groups only the pressure-level comparisons, away from the layer interface.
+    box(1.45,54.35,38.25,12.3,'#FFFFFF','#C7D6D7',.8,.55)
     txt(20.6,64.4,'700 hPa')
     capsule(1.9,12,'APE ↓');capsule(14.7,10.5,'KE ↓');capsule(26,13.2,'Conv. ↓')
     # Side port represents the layer integral across both pressure boundaries.
-    path(40.6,55.9,40.6,63.5,blue,1.05)
-    flow(50.2,63.0,40.6,63.0,teal,1.8,7.8)
-    txt(55.4,67.0,'Pressure flux (+)')
-    flow(40.6,56.2,50.2,56.2,ochre,1.0,6.8)
-    txt(59.5,55.1,'Vert. KE (−)')
+    path(44.55,55.9,44.55,63.5,blue,1.05)
+    flow(53,63.0,42.5,63.0,teal,1.8,7.8)
+    txt(58.7,67.0,'Pressure flux (+)')
+    flow(42.5,56.2,53,56.2,ochre,1.0,6.8)
+    txt(62.3,55.1,'Vert. KE (−)')
     txt(.8,47.3,'Recovery','left',True)
     txt(38.3,42.2,'Conversion (+)')
     box(13,33.4,15.3,7.8,'#E8F1ED',teal,2)
@@ -131,9 +132,12 @@ def draw_energy(ax, csv_path):
     txt(20.65,37.3,'Dry APE');txt(54.75,37.3,'KE')
     flow(1.4,37.3,13,37.3,teal,1.0,6.6)
     flow(28.4,37.3,48.85,37.3,teal,2.35,8.8)
-    flow(60.65,37.3,72.65,37.3,ochre,1.6,7.6)
+    sink=flow(60.65,37.3,72.65,37.3,ochre,1.6,7.6)
     flow(54.75,25.4,54.75,33.3,teal,1.0,6.6)
-    txt(10,31.0,'Transfer (+)');txt(64.0,31.0,'Transfer (−)')
+    txt(10,31.0,'Transfer (+)')
+    ax.figure.canvas.draw()
+    bounds=sink.get_path().get_extents()
+    txt((bounds.x0+bounds.x1)/2,43.25,'Transfer (−)')
     txt(52,26.5,'Vert. input (+)','right')
     txt(.8,19.8,'Wind-matched','left',True)
     txt(73,19.8,'700 hPa','right')
@@ -145,14 +149,13 @@ def draw_energy(ax, csv_path):
     vals=[float(r['estimate']) for r in rows]
     y0,mm_per_unit=8.3,2.03
     path(13.0,y0,73.1,y0,'#7D919B',.75)
-    txt(.8,y0,'ΔAPE','left')
+    txt(10.4,y0,'ΔAPE','right')
     for x,val,t in zip([28,48,66],vals,['>16 d','2–16 d','<2 d']):
         color=teal if val>0 else ochre
         ax.add_patch(Rectangle((x-3.75,y0),7.5,val*mm_per_unit,ec='none',fc=color,zorder=3))
         txt(x,2.15,t)
-    # A local arrow next to the slow window, separated from the recovery layer above.
-    txt(12.4,14.9,'+Conv.')
-    flow(8.0,11.7,17.1,11.7,teal,1.0,6.6)
+    # Conversion at matched wind speed in the slow window, distinct from the layer integral.
+    txt(28,y0+vals[0]*mm_per_unit+3.1,'Conv. ↑')
     return {'matched_values_J_kg':vals, 'matched_n_sid':108,'matched_n_events':115,
             'bar_zero_mm':y0,'bar_mm_per_J_kg':mm_per_unit}
 
