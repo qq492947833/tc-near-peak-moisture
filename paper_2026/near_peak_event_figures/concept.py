@@ -8,110 +8,193 @@ from matplotlib.patches import FancyBboxPatch,Circle,Ellipse,FancyArrowPatch
 from PIL import Image
 import pandas as pd
 INK='#233A46'; TEAL='#428C79'; BLUE='#167B9E'; OCHRE='#CC7445'; GRAY='#CAD6DC'
-def label(a,x,y,s,**kw):
- a.text(x,y,s,color=kw.pop('color',INK),fontsize=kw.pop('fontsize',8.6),ha=kw.pop('ha','center'),va='center',**kw)
-def box(a,x,y,w,h,s,face,edge):
- a.add_patch(FancyBboxPatch((x,y),w,h,boxstyle='round,pad=0.012,rounding_size=0.022',fc=face,ec=edge,lw=1))
- label(a,x+w/2,y+h/2,s,fontsize=9)
-def arrow(a,x,y,X,Y,color=INK,style='-|>',lw=1.3):
- a.add_patch(FancyArrowPatch((x,y),(X,Y),arrowstyle=style,mutation_scale=9,linewidth=lw,color=color,shrinkA=0,shrinkB=0))
-def load_evidence(source):
- d=source/'Figure_08'/'input'; result={}
- def row(path,selector):
-  f=pd.read_csv(path); k=f.loc[selector(f)]; assert len(k)==1,(path,len(k))
-  return dict(file=path.name,sha256=hashlib.sha256(path.read_bytes()).hexdigest(),row=k.iloc[0].dropna().to_dict())
- result['shear']=row(d/'departure_environment.csv',lambda x:(x.variable=='shear200_850')&(x.model=='geographical')&(x.coverage=='coverage_116'))
- result['humidity']=row(d/'radial_moisture.csv',lambda x:(x.region=='300_800km')&(x.sector=='whole')&(x.field=='q700')&(x.estimand=='pre_mean'))
- result['outward']=row(d/'paired_flux_components.csv',lambda x:(x.kind=='out')&(x.layer=='all')&(x.sector=='all')&(x.quantity=='difference')&(x.cohort=='original_post80')&(x.factor==1)&(x.window=='0_24h'))
- for w in ['D_pre','D_post']:
-  result[w]=row(d/'common_prepost.csv',lambda x:(x.kind=='out')&(x.quantity==w))
- result['conversion']=row(d/'ascent_energy.csv',lambda x:(x.content_id=='SI_RISE_ENERGY_rates')&(x.scheme=='main')&(x.support_mode=='native_diagnostic')&(x.metric=='C_A_to_K')&(x.level.astype(str)=='700')&(x.window==1)&(x.region=='r0_300')&(x.estimand=='rise_rate_integral')&(x['sample']=='all_events'))
- for i in range(3):
-  result[str(i)]=row(source/'Figure_06'/'inputs'/'panel_g_source_rows.csv',lambda x:(x.metric=='APE')&(x.window==i))
- assert result['shear']['row']['original_raw']<0 and result['humidity']['row']['estimate']>0
- assert all(result[k]['row']['estimate']<0 for k in ('outward','D_pre','D_post','1','2'))
- assert all(result[k]['row']['estimate']>0 for k in ('0','conversion'));return result
+def draw_wind_sequence(ax, source):
+    base = source / 'Figure_01/input'
+    df = pd.read_csv(base/'lifecycle_schematic.csv')
+    k = json.loads((base/'lifecycle_schematic.json').read_text())
+    vm = k['genesis_kt'] + .90*(k['lmi_kt']-k['genesis_kt'])
+    assert vm == k['I090_kt']
+    reference, returned = k['episode_ranges_h']
+    t = df.hours.to_numpy(); v = df.wind_kt.to_numpy()
+    # Display the near-peak part of the original illustrative six-hour history.
+    keep = t >= reference[0]; t,v = t[keep],v[keep]
+    assert t[np.argmin(abs(t-k['valley_h']))]==k['valley_h']
+    assert np.array_equal(v>=vm,[True,True,False,False,True,True,False,False])
+    # Linear segments cross the threshold exactly once between adjacent samples.
+    crosses=[t[i]+(vm-v[i])*(t[i+1]-t[i])/(v[i+1]-v[i])
+             for i in range(len(t)-1) if (v[i]>=vm)!=(v[i+1]>=vm)]
+    down,up,final = crosses
+    assert down < k['valley_h'] < up < final
+    X=lambda h: 9+(np.asarray(h)-t[0])*158/(t[-1]-t[0])
+    Y=lambda s: 3.2+(np.asarray(s)-65)*.42
+    ax.plot([8,170],[Y(vm)]*2,ls=(0,(3.,2.4)),lw=.8,color='#99A9AC',zorder=1)
+    for u,z,col in [(t[0],down,INK),(down,k['valley_h'],BLUE),(k['valley_h'],up,TEAL),(up,final,INK),(final,t[-1],OCHRE)]:
+        h=np.r_[u,t[(t>u)&(t<z)],z]; ax.plot(X(h),Y(np.interp(h,t,v)),lw=1.65,color=col,
+            solid_joinstyle='round',solid_capstyle='round',zorder=3)
+    for x,y,s,col in [(65,19.4,'Temporary departure',BLUE),(86,4.2,'Reintensification',TEAL),
+                      (139,4.8,'Final decay',OCHRE),(170,18.0,'Near-peak',INK)]:
+        ax.text(x,y,s,ha='right' if s=='Near-peak' else 'center',va='center',fontsize=8.5,color=col)
+    return dict(hours=t.tolist(),wind_kt=v.tolist(),threshold_kt=vm,illustrative_crossings_h=crosses,
+                trough_h=k['valley_h'],first_return_observation_h=returned[0],final_departure_observation_h=k['Decay_onset_h'])
+
+
+
+
+def draw_moisture(ax, scene):
+    """Qualitative comparison of two equal-sized moving control volumes (local mm)."""
+    from matplotlib.patches import Ellipse, FancyArrowPatch, FancyBboxPatch
+    ink, teal, blue, orange = '#233A46', '#428C79', '#167B9E', '#CC7445'
+    def text(x, y, s, **k):
+        return ax.text(x, y, s, ha=k.pop('ha','center'), va='center', color=k.pop('color',ink),
+                       fontfamily='Arial', fontsize=8.5, zorder=22, **k)
+    def directed(start, end, col, lw, ms, gid):
+        p=FancyArrowPatch(start, end, arrowstyle='-|>', color=col, lw=lw,
+                          mutation_scale=ms, shrinkA=0, shrinkB=0, zorder=15,
+                          capstyle='round', joinstyle='round')
+        p.set_gid(gid); ax.add_patch(p)
+    def leader(x, y):
+        ax.plot(x,y,color='#8CA2A6',lw=.65,zorder=11,solid_capstyle='round')
+    def badge(cx, y, width, s, fc, ec):
+        ax.add_patch(FancyBboxPatch((cx-width/2,y-2.85),width,5.7,
+                     boxstyle='round,pad=0,rounding_size=2.65',fc=fc,ec=ec,lw=.9,zorder=15))
+        text(cx,y,s)
+    # Cylinder's bottom and its two radius markers mark 300 and 100 km.
+    top, base, radius = 55.4, 31.2, 12.0
+    for x, name, edge, ring, rim in [(22,'Temporary',blue,'#A9CFC2','#74A998'),
+                                      (70,'Decay',orange,'#E9F2EE','#BBCFC7')]:
+        text(x,72.4,name,weight='bold',color=edge)
+        ax.add_patch(Ellipse((x,base),40.4,12.2,fc=ring,ec=rim,lw=.75,zorder=0))
+        ax.add_patch(Ellipse((x,base),2*radius,2*.28*radius,fc='white',ec='none',zorder=.5))
+        scene.cylinder(ax,x,top,base,radius,edge,name)
+    # Same direction of environmental shear, ordinal lengths only.
+    text(46,65.1,'Shear')
+    directed((16.4,65.1),(27.6,65.1),ink,1.25,7.2,'temporary_shear')
+    directed((59.7,65.1),(80.3,65.1),ink,1.25,7.2,'decay_shear')
+    # An identical 300-km boundary is identified once, at the sides of the volumes.
+    text(46,46.6,'300 km')
+    leader([34.7,39],[45.6,46.2]); leader([53,57.3],[46.2,45.6])
+    # Both exports leave the volume; the gross outward paired contrast is unadjusted.
+    directed((30.8,30.0),(39.5,21.8),orange,1.15,7.6,'temporary_export')
+    directed((61.2,30.0),(52.5,21.8),orange,2.55,10.2,'decay_export')
+    badge(36.9,15.6,10.8,'q (+)','#FBF9F3','#CABE9E')
+    badge(55.1,15.6,21.5,'(u−c)·n (−)','#F3F8F6','#81ABA0')
+    # Local moistening contrast at 700 hPa. The arrow is not vertical wind velocity.
+    directed((16.3,29.0),(16.3,36.8),teal,1.45,8,'inner_vertical_advection')
+    leader([16.3,16.3,14.5],[27.5,24.1,22.5])
+    text(14.5,19.7,'Vert. adv. (+)',color=teal)
+    # The two leaders touch the inner and outer annuli, respectively, on the same base.
+    leader([73.4,74.2,76.6],[29.4,25.6,23.9])
+    text(78.5,21.4,'100–300')
+    leader([86.4,89.0,89.0,85.9],[30.2,28.2,17.8,16.2])
+    text(79.9,15.2,'300–800')
+
+
+
+def draw_energy(ax, csv_path):
+    """Layer (Pre and Recovery) and pressure-surface wind-matched contrasts; lengths in mm."""
+    import csv
+    from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Rectangle
+    ink, teal, blue, ochre, gray = '#233A46', '#428C79', '#167B9E', '#CC7445', '#CAD6DC'
+    def txt(x,y,t,ha='center',bold=False,color=ink):
+        return ax.text(x,y,t,ha=ha,va='center',family='Arial',fontsize=8.5,
+                       color=color,weight='bold' if bold else 'normal',zorder=6)
+    def path(x,y,xx,yy,color=gray,lw=.7):
+        ax.plot([x,xx],[y,yy],color=color,lw=lw,solid_capstyle='round',zorder=2)
+    def box(x,y,w,h,fc,ec,rad=1.3,lw=.75):
+        ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle=f'round,pad=0,rounding_size={rad}',
+                                    facecolor=fc,edgecolor=ec,lw=lw,zorder=3))
+    def flow(x,y,xx,yy,col,lw,ms):
+        ax.add_patch(FancyArrowPatch((x,y),(xx,yy),arrowstyle='-|>',mutation_scale=ms,
+                                    shrinkA=0,shrinkB=0,color=col,lw=lw,zorder=4))
+    def capsule(x,w,t):
+        box(x,55.8,w,5.8,'#FFFFFF','#AABFC1',2.8,.65)
+        txt(x+w/2,58.7,t)
+    # The gray brace stops at the Recovery row. Its labels do not apply to the 700-hPa bars.
+    txt(26.8,77.1,'500–850 hPa',bold=True)
+    txt(54.5,77.1,'2–16 d',bold=True)
+    path(72.3,73.8,75,73.8); path(75,73.8,75,24.7);path(75,24.7,72.3,24.7)
+    path(.6,50.5,73,50.5); path(.6,23.0,73,23.0)
+    txt(.8,70.6,'Pre','left',True)
+    box(.9,53.5,39.4,14.0,'#F4F8F8','#A4B7BA',1.0)
+    txt(20.6,64.4,'700 hPa')
+    capsule(1.9,12,'APE ↓');capsule(14.7,10.5,'KE ↓');capsule(26,13.2,'Conv. ↓')
+    # Side port represents the layer integral across both pressure boundaries.
+    path(40.6,55.9,40.6,63.5,blue,1.05)
+    flow(50.2,63.0,40.6,63.0,teal,1.8,7.8)
+    txt(55.4,67.0,'Pressure flux (+)')
+    flow(40.6,56.2,50.2,56.2,ochre,1.0,6.8)
+    txt(59.5,55.1,'Vert. KE (−)')
+    txt(.8,47.3,'Recovery','left',True)
+    txt(38.3,42.2,'Conversion (+)')
+    box(13,33.4,15.3,7.8,'#E8F1ED',teal,2)
+    box(49.0,33.4,11.5,7.8,'#E8F1F5',blue,2)
+    txt(20.65,37.3,'Dry APE');txt(54.75,37.3,'KE')
+    flow(1.4,37.3,13,37.3,teal,1.0,6.6)
+    flow(28.4,37.3,48.85,37.3,teal,2.35,8.8)
+    flow(60.65,37.3,72.65,37.3,ochre,1.6,7.6)
+    flow(54.75,25.4,54.75,33.3,teal,1.0,6.6)
+    txt(10,31.0,'Transfer (+)');txt(64.0,31.0,'Transfer (−)')
+    txt(52,26.5,'Vert. input (+)','right')
+    txt(.8,19.8,'Wind-matched','left',True)
+    txt(73,19.8,'700 hPa','right')
+    with open(csv_path, encoding='utf-8-sig', newline='') as f:
+        rows=sorted((r for r in csv.DictReader(f) if r['level']=='700' and r['metric']=='APE'),
+                    key=lambda r:int(r['window']))
+    assert [r['window'] for r in rows]==['0','1','2']
+    assert all((r['region'],r['n_sid'],r['n_events'],r['units'])==('r0_300','108','115','J kg-1') for r in rows)
+    vals=[float(r['estimate']) for r in rows]
+    y0,mm_per_unit=8.3,2.03
+    path(13.0,y0,73.1,y0,'#7D919B',.75)
+    txt(.8,y0,'ΔAPE','left')
+    for x,val,t in zip([28,48,66],vals,['>16 d','2–16 d','<2 d']):
+        color=teal if val>0 else ochre
+        ax.add_patch(Rectangle((x-3.75,y0),7.5,val*mm_per_unit,ec='none',fc=color,zorder=3))
+        txt(x,2.15,t)
+    # A local arrow next to the slow window, separated from the recovery layer above.
+    txt(12.4,14.9,'+Conv.')
+    flow(8.0,11.7,17.1,11.7,teal,1.0,6.6)
+    return {'matched_values_J_kg':vals, 'matched_n_sid':108,'matched_n_events':115,
+            'bar_zero_mm':y0,'bar_mm_per_J_kg':mm_per_unit}
+
+
+
+def collect_visible_labels(f):
+    import re
+    strings=[t.get_text() for a in f.axes for t in a.texts if t.get_visible() and t.get_alpha()!=0 and t.get_text().strip()]
+    assert all('$' not in s for s in strings)
+    return dict(labels=strings,english_words=sum(len(re.findall('[A-Za-z]+',s)) for s in strings),nonspace_chars=sum(len(''.join(s.split())) for s in strings))
+
 def draw(source,out,qa=None):
-    """Use the published cyclone and reservoir vector shapes at their original proportions."""
-    evidence=load_evidence(source)
-    sys.path.insert(0,str(source/'Figure_08'/'code'))
+    from matplotlib.font_manager import FontProperties,findfont
+    source=Path(source).resolve()
+    sys.path.insert(0,str(source/'Figure_08/code'))
     import scene_20261026_preserved as symbols
-    import scene as original
-    d=source/'Figure_08'/'input'
-    flux=pd.read_csv(d/'paired_flux_components.csv')
-    sel=flux[(flux.kind=='out')&(flux.layer=='all')&(flux.sector=='all')&(flux.factor==1)&
-             (flux.cohort=='original_post80')&(flux.window=='0_24h')].set_index('quantity')
-    assert sel.loc['humidity','estimate']>0 and sel.loc['relative_motion','estimate']<0
-    pre=pd.read_csv(d/'energy_primary.csv').set_index('metric')
-    assert all(pre.loc[k,'estimate']<0 for k in ('KE','APE','C_A_to_K'))
-    joint_path=source.parent.parent/'physics/vertical_extension/plots/Figure_S26_source.csv'
-    joint=pd.read_csv(joint_path,float_precision='round_trip').query("panel=='c' and window==1 and region=='r0_300' and variant=='joint_with_transfer'").set_index('row')
-    assert list(joint.index)==[1,2,3] and joint.level.eq('500-850').all()
-    assert joint.n_events.eq(132).all() and joint.n_sid.eq(122).all()
-    assert joint.estimate.iloc[0]>0 and joint.estimate.iloc[1]>0 and joint.estimate.iloc[2]<0
-    evidence['layer_integrals']=dict(file=joint_path.name,sha256=hashlib.sha256(joint_path.read_bytes()).hexdigest(),rows=joint[['metric','estimate','ci_lower','ci_upper','unit','n_events','n_sid']].to_dict('records'))
-    out.mkdir(exist_ok=True,parents=True)
-    mpl.rcParams.update({'font.family':'Arial','font.size':8.5,'pdf.fonttype':42,'svg.fonttype':'none','axes.unicode_minus':True})
+    font_path=findfont(FontProperties(family='Arial'),fallback_to_default=False)
+    mpl.rcParams.update({'font.family':'Arial','font.size':8.5,'pdf.fonttype':42,'axes.unicode_minus':True,'savefig.bbox':None})
     width,height=180,112
-    f=plt.figure(figsize=(width/25.4,height/25.4))
+    f=plt.figure(figsize=(width/25.4,height/25.4),facecolor='white')
     def canvas(name,x,y,w,h):
-        ax=f.add_axes([x/width,y/height,w/width,h/height]);ax.set_gid(name)
-        ax.set(xlim=(0,w),ylim=(0,h));ax.axis('off')
-        return ax
-    a=canvas('a',3,87,174,23);b=canvas('b',3,3,98,79);c=canvas('c',107,3,70,79)
-    def txt(ax,x,y,words,**kw):
-        return ax.text(x,y,words,fontsize=kw.pop('size',8.3),weight=kw.pop('weight','normal'),
-                       color=kw.pop('color',INK),ha=kw.pop('ha','center'),va='center',linespacing=1.1,zorder=24,**kw)
-    for ax,letter,heading,H in [(a,'a','Near-peak sequence',23),(b,'b','Moving-boundary moisture exchange',79),(c,'c','Multiscale energetics',79)]:
-        txt(ax,0,H-1.8,f'{letter}  {heading}',weight='bold',size=9,ha='left')
-    labels=[('Reference near-peak\nepisode',TEAL),('Temporary\ndeparture',BLUE),('Wind trough',INK),
-            ('Near-peak\nreturn',TEAL),('Final\ndeparture',OCHRE)]
-    stations=[12,51,86,122,157]
-    for i,(x,(words,color)) in enumerate(zip(stations,labels)):
-        a.scatter([x],[4],s=24,c=color,zorder=5,edgecolors='white',linewidths=.3)
-        txt(a,x,10,words,color=color)
-        if i+1<len(stations):original.arrow(a,(x+2,4),(stations[i+1]-2,4),'sequence_'+str(i),GRAY,.9,6)
-    for x,cat,col,outer,loss,delta in [(24,'Temporary',BLUE,'Moister outer annulus','Less gross export',5.5),
-                                       (74,'Decay',OCHRE,'Drier outer annulus','More gross export',10.)]:
-        txt(b,x,69,cat,weight='bold',color=col)
-        txt(b,x,63.5,'Weaker shear' if cat=='Temporary' else 'Stronger shear')
-        original.arrow(b,(x-5,58),(x+delta,58),cat+'_shear','#627A85',1.0,6)
-        b.add_patch(Ellipse((x,29),42,10.5,facecolor='#D8E8E2',edgecolor='#AAC8C0',lw=.7,zorder=0))
-        symbols.cylinder(b,x,50,31,10.5,col,cat)
-        sign=-1 if cat=='Temporary' else 1
-        original.arrow(b,(x+sign*9,34.2),(x+sign*19,34.2),cat+'_normal_velocity',col,1.25,7)
-        txt(b,x,20.7,outer,size=8.15);txt(b,x,15,loss,color=col,size=8.15)
-    txt(b,49,53.3,'300 km boundary',size=8)
-    txt(b,49,45,'(u − c) · n',size=8);txt(b,49,39.5,'Outward normal',size=8)
-    txt(b,49,8.3,'Annuli: 100–300 km and 300–800 km',color='#4F7072',size=8)
-    txt(b,49,2.3,'Gross outward contrast: humidity (+), relative motion (−)',size=8.05)
-    txt(c,35,69,'Before departure · 700 hPa',weight='bold',size=8.6)
-    txt(c,35,62.7,'Temporary − decay, 2–16 d',size=8.1)
-    txt(c,35,57.1,'Lower dry APE, KE and conversion',size=8.1)
-    c.plot([2,68],[53,53],color=GRAY,lw=.75)
-    txt(c,35,48.1,'During reintensification',weight='bold',size=8.6)
-    txt(c,35,42.7,'500–850 hPa · 2–16 d',size=8.1)
-    original.reservoir(c,15,34,'APE');original.reservoir(c,55,34,'KE')
-    original.arrow(c,(24,34),(46,34),'positive_conversion',OCHRE,1.4,7)
-    txt(c,35,38,'Conversion (+)',size=8)
-    txt(c,35,26.7,'Vertical KE input (+) · Total KE transfer (−)',size=8.0)
-    c.plot([2,68],[22.8,22.8],color=GRAY,lw=.75)
-    txt(c,35,18.4,'Wind-matched dry APE · 700 hPa',weight='bold',size=8.6)
-    txt(c,35,12.6,'Reintensification − decay',size=8.1)
-    for x,period,sign in [(11,'>16 d','Higher'),(35,'2–16 d','Lower'),(59,'<2 d','Lower')]:
-        txt(c,x,7.4,period,size=8.1);txt(c,x,2.25,sign,color=TEAL if sign=='Higher' else INK,weight='bold',size=8.1)
-    f.canvas.draw();renderer=f.canvas.get_renderer()
-    boxes={ax.get_gid():(np.array(ax.get_window_extent(renderer).extents)/f.dpi*25.4).tolist() for ax in f.axes}
-    error=max(abs(boxes['b'][i]-boxes['c'][i]) for i in (1,3));assert error<=.3
+        ax=f.add_axes([x/width,y/height,w/width,h/height]);ax.set_gid(name);ax.set(xlim=(0,w),ylim=(0,h));ax.axis('off');return ax
+    a=canvas('a',3,87,174,23);b=canvas('b',3,3,92,79);c=canvas('c',101,3,76,79)
+    for ax,t,h in [(a,'a',23),(b,'b',79),(c,'c',79)]:ax.text(0,h-.25,t,va='top',ha='left',color=INK,fontsize=8.5,weight='bold')
+    wind=draw_wind_sequence(a,source);draw_moisture(b,symbols)
+    bars=draw_energy(c,Path(__file__).resolve().parent/'inputs/wind_matched_dry_APE.csv')
+    f.canvas.draw()
+    boxes={ax.get_gid():(ax.get_window_extent().extents/f.dpi*25.4).tolist() for ax in f.axes}
+    assert max(abs(boxes['b'][i]-boxes['c'][i]) for i in (1,3))<1e-6
+    assert max(abs(boxes['a'][0]-boxes['b'][0]),abs(boxes['a'][2]-boxes['c'][2]),abs(boxes['c'][0]-boxes['b'][2]-6))<1e-6
+    out=Path(out);out.mkdir(exist_ok=True,parents=True)
     if qa:
-        qa.mkdir(parents=True,exist_ok=True);f.savefig(qa/'Figure_06.pdf',dpi=180);f.savefig(qa/'Figure_06.svg')
-        (qa/'Figure_06_geometry.json').write_text(json.dumps(dict(size_mm=[width,height],axes_mm=boxes,max_edge_error_mm=error),indent=2))
-        (qa/'Figure_06_data.json').write_text(json.dumps(evidence,indent=2,default=str))
-    stem=out/'Figure_06';f.savefig(stem.with_suffix('.png'),dpi=900,facecolor='white');plt.close(f)
+        qa=Path(qa);qa.mkdir(exist_ok=True,parents=True)
+        data=dict(canvas_mm=[width,height],axes_mm=boxes,wind=wind,matched=bars,text=collect_visible_labels(f),Arial_sha256=hashlib.sha256(Path(font_path).read_bytes()).hexdigest(),matplotlib=mpl.__version__,numpy=np.__version__,pandas=pd.__version__)
+        (qa/'figure6_render.json').write_text(json.dumps(data,indent=2,ensure_ascii=False),encoding='utf-8')
+    stem=out/'Figure_06'
+    f.savefig(stem.with_suffix('.png'),dpi=900,facecolor='white',bbox_inches=None)
+    f.savefig(stem.with_suffix('.pdf'),facecolor='white',bbox_inches=None,metadata={'CreationDate':None,'ModDate':None})
     with Image.open(stem.with_suffix('.png')) as im:rgb=im.convert('RGB')
-    rgb.save(stem.with_suffix('.png'),dpi=(900,900));rgb.save(stem.with_suffix('.tiff'),compression='tiff_lzw',dpi=(900,900))
-    print(stem.name,rgb.size)
+    rgb.save(stem.with_suffix('.png'),dpi=(900,900));rgb.save(stem.with_suffix('.tiff'),dpi=(900,900),compression='tiff_lzw')
+    plt.close(f)
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('source',type=Path);p.add_argument('output',type=Path);p.add_argument('--qa',type=Path)
-    args=p.parse_args();draw(args.source,args.output,args.qa)
+    a=p.parse_args();draw(a.source,a.output,a.qa)
 

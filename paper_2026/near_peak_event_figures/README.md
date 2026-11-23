@@ -1,10 +1,20 @@
 # Near-peak cyclone events: figure reproduction
 
-The presentation version figures-20261123-final-r01 uses the frozen v2.1.5 analyses of near-peak departures and returns. The reading set contains six main figures, ten supplementary figures and seven supplementary tables.
+The presentation version figures-20261124-fig6-r01 uses the frozen v2.1.5 analyses of near-peak departures and returns. The reading set contains six main figures, ten supplementary figures and seven supplementary tables.
 
 Figure 1 uses a six-hourly schematic to distinguish the reference near-peak episode, the subsequent weakening and reintensification, and final decay. Figure 3 uses matched panel bounds to compare moving-boundary moisture exchange.
 
-This revision changes four images: Figure 2g (bar spacing), Figure 5g (three pressure levels), Supplementary Figure 2 (aligned colour bars), and Supplementary Figure 7b (an independent vertical axis). The other twelve image pairs are unchanged. Panels a–f of Figures 2 and 5 reuse original-resolution crops of their r04 images; `inputs/upper_panels_provenance.json` identifies the originals and crop bounds. Both g panels are rendered from estimates, not cropped from a final image.
+This revision redraws only Figure 6. The wind sequence uses the existing schematic observations. Moving control volumes use the original Python vector cylinder and cloud components. The energy panel distinguishes pre-departure contrasts, the 132-event/122-cyclone recovery integrals, and the wind-matched 700 hPa dry APE difference at three temporal windows. The signed bars share one linear scale and use the original 115-event/108-cyclone estimates. The remaining fifteen PNG/TIFF pairs are unchanged.
+
+Render Figure 6 only (from the tagged repository root):
+
+```sh
+python paper_2026/near_peak_event_figures/concept.py paper_2026/lifecycle_figures/figures generated/figure6 --qa generated/figure6/qa
+```
+
+The script writes a 180 × 112 mm PNG, an RGB/LZW TIFF and a vector PDF with embedded fonts. The source datasets, presentation mapping and delivered checksums are listed in `figure_sources.csv`, `display_map.csv` and `figure_files.csv`. The release ZIP and the separate vector PDF are verified by the downloadable SHA256SUMS.txt.
+
+The preceding revision (figures-20261123-final-r01) changed four images: Figure 2g (bar spacing), Figure 5g (three pressure levels), Supplementary Figure 2 (aligned colour bars), and Supplementary Figure 7b (an independent vertical axis). The other twelve image pairs are unchanged. Panels a–f of Figures 2 and 5 reuse original-resolution crops of their r04 images; `inputs/upper_panels_provenance.json` identifies the originals and crop bounds. Both g panels are rendered from estimates, not cropped from a final image.
 
 Figure 5g uses the original wind-matched ascent-minus-decay dry APE contrasts at 0–300 km: 500, 700 and 850 hPa for each of >16 d, 2–16 d and <2 d. Bars show means in J kg⁻¹ and whiskers the saved 95% cyclone-bootstrap intervals for 115 events in 108 cyclones. `inputs/wind_matched_dry_APE.csv` preserves the nine source records from `native/ENERGY_ADJ.csv` in the v2.1.5 statistical archive. These are the original matched estimates, not the common-support or adjusted estimates.
 
@@ -15,7 +25,7 @@ python paper_2026/near_peak_event_figures/main_figures.py --repo . --figures 2 5
 python paper_2026/near_peak_event_figures/supplementary_figures.py --repo . --figures 2 7 --out generated/final
 ```
 
-[Main figure checks](main_reproduction.json) · [Supplementary figure checks](supplementary_reproduction.json). The release ZIP includes the complete 16 PNG/TIFF pairs, `figure_files.csv` and `SHA256SUMS`; the separate `SHA256SUMS.txt` identifies the ZIP itself.
+[Main figure checks](main_reproduction.json) · [Supplementary figure checks](supplementary_reproduction.json). The current release ZIP contains all 16 PNG/TIFF pairs, the vector Figure_06.pdf, the figure manifest and the internal checksum list.
 
 ## Rendering
 
