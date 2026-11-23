@@ -195,7 +195,7 @@ def bars(ax,rows,labels,ylabel):
     ax.margins(y=.13);ax.yaxis.set_label_coords(-.059,.5)
     ax.yaxis.set_major_locator(MaxNLocator(nbins=4))
     assert ax.get_ylim()[0]<min(lo) and ax.get_ylim()[1]>max(hi)
-def draw2():
+def draw2_r04():
     tr=fdata(3,"inputs/direct/fig5_trajectories.csv")
     env=fdata(3,"inputs/direct/environmental_contrasts.csv")
     f=fig(148);cols=[15,74,133];w=41
@@ -285,7 +285,7 @@ def draw4():
     f.text(.52,1-10.5/144,"700 hPa  ·  2–16 d",ha="center",va="center",color=INK,weight="bold")
     f.text(.52,1-76/144,"500–850 hPa layer  ·  2–16 d",ha="center",va="center",color=INK,weight="bold")
     save(f,4)
-def draw5():
+def draw5_r04():
     t=fdata(6,"inputs/MAIN_RISE_COMPARISON_source.csv")
     gvals=fdata(6,"inputs/panel_g_source_rows.csv").sort_values("window")
     rates=read(args.repo/"paper_2026/physics/vertical_extension/fig6e_rates/data/FIG6E_RATE_ESTIMATES.csv").query("support=='nine_time_common'")
@@ -329,6 +329,15 @@ def draw5():
     bars(g,gvals[["estimate","lower","upper"]].values,[">16 d","2–16 d","<2 d"],"Reintensification − decay\n(J kg$^{-1}$)")
     values["g"]=gvals[["window","estimate","lower","upper","n_events","n_sid"]].values.tolist()
     values["e"]=rates[["relative_hour","metric","n_events","n_sid","estimate","ci_lower","ci_upper"]].values.tolist();save(f,5)
+def draw2():
+    from final_lower_panels import render
+    render(2,args,fig,axis,title,zero,BLUE,INK)
+
+def draw5():
+    # Three native pressure levels for each of the three time windows.
+    from final_lower_panels import render
+    render(5,args,fig,axis,title,zero,BLUE,INK)
+
 if __name__=="__main__":
     for n in args.figures:
         sources.clear();values.clear()

@@ -1,0 +1,62 @@
+{
+  "figures": [
+    {
+      "figure": "Figure_S02",
+      "pixels": [
+        6377,
+        4003
+      ],
+      "png_sha256": "7beb4cf198a26566231ff427c649ae4ac8a96b13d1010d39bb5f89e5f84e5223",
+      "tiff_sha256": "70a5213b35298ed4b0cadafe2fc59d501389eb5a83bf3732d88467ff66cb415c",
+      "reproduced_png_matches_manuscript_bytes": true,
+      "tiff_compression": "LZW",
+      "tiff_pixels_equal_png": true,
+      "dpi_at_180mm": 899.8655555555555
+    },
+    {
+      "figure": "Figure_S07",
+      "pixels": [
+        6377,
+        4145
+      ],
+      "png_sha256": "033aba09b9d166f2a8cbcf2bfc4d9850cc98f3e39bd3505db2d5a5c9c72b53c1",
+      "tiff_sha256": "fe5e28c86f5e9a5d801da7927cb5751ebbf2a0a5946b780571162d197b10d5df",
+      "reproduced_png_matches_manuscript_bytes": true,
+      "tiff_compression": "LZW",
+      "tiff_pixels_equal_png": true,
+      "dpi_at_180mm": 899.8655555555555
+    }
+  ],
+  "figure_inputs": [
+    {
+      "figure": "S2",
+      "source": "paper_2026/selected_evidence/layout/group_b/inputs/annulus_state.csv",
+      "sha256": "77c6f12c3be9405a26014907570fb7fa190b7ac2ee02436537ad23b611093ec7"
+    },
+    {
+      "figure": "S2",
+      "source": "paper_2026/selected_evidence/layout/group_b/inputs/budget.csv",
+      "sha256": "484764fd030711f24d950b37b603caee05483a048fa6bcd14345cd099f7a946c"
+    },
+    {
+      "figure": "S7",
+      "source": "paper_2026/lifecycle_figures/figures/Figure_S28/inputs/RISE_MOISTURE_PROCESS_integrals_source.csv",
+      "sha256": "6c4cffaa4d2f30ef27963c457580e1e638d15f0356cc8a1d550b05cef9adfa05"
+    },
+    {
+      "figure": "S7",
+      "source": "paper_2026/lifecycle_figures/figures/Figure_S28/inputs/RISE_MOISTURE_PROCESS_states_source.csv",
+      "sha256": "eacbc04bc376a19040c66afc59edbeb39d16ed2c26f518267936ecb939729a2b"
+    }
+  ],
+  "renderer": "paper_2026/near_peak_event_figures/supplementary_figures.py",
+  "render_environment": {
+    "python": "3.11.7",
+    "matplotlib": "3.8.0",
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "pillow": "10.2.0",
+    "backend": "Agg"
+  },
+  "command": "python paper_2026/near_peak_event_figures/supplementary_figures.py --repo . --figures 2 7 --out output/supplementary"
+}

@@ -87,14 +87,15 @@ def radial():
   b.rings(ax);ax.set(xlim=(-850,850),ylim=(-850,850))
   label=' / '.join(f'{v:+.2f}'.replace('-','−') for v in vv);b.txt(f,center,43,label,ha='center',fontsize=8.5)
  b.txt(f,90,49,'100–300 / 300–800 km',ha='center',fontsize=8.5)
- b.CB(f,'cb_a',60,53,60,norm,b.LIGHT,np.linspace(-.6,.6,5),'Specific humidity difference (g kg⁻¹)')
+ cbar_left, cbar_width = 60, 60  # mm in the final 180 mm figure
+ b.CB(f,'cb_a',cbar_left,53,cbar_width,norm,b.LIGHT,np.linspace(-.6,.6,5),'Specific humidity difference (g kg⁻¹)')
  b.title(f,'b',7,72,'Moisture-budget integral, 0–24 h: Temporary − decay');a=b.ax(f,'b',31,78,127,13);cats=['horizontal_advection','vertical_advection','residual','moving_tendency']
  q=np.array([[b.row(data['budget'],region=r,field=k).estimate for k in cats] for r in b.REG]);assert data['budget'].n_sid.eq(105).all()
  a.pcolormesh(np.arange(5)-.5,np.arange(3)-.5,q,cmap=b.LIGHT,norm=TwoSlopeNorm(0,-1,1),edgecolors='white',linewidth=1.)
  a.set(xticks=range(4),xticklabels=['Horizontal','Vertical','Residual','Net tendency'],yticks=range(2),yticklabels=['100–300 km','300–800 km'],ylim=(1.5,-.5));a.tick_params(length=0)
  for sp in a.spines.values():sp.set_visible(False)
  for i,j in np.ndindex(q.shape):a.text(j,i,f'{q[i,j]:.2f}'.replace('-','−'),va='center',ha='center')
- b.CB(f,'cb_b',64.5,99,60,TwoSlopeNorm(0,-1,1),b.LIGHT,np.linspace(-1,1,5),'Integrated difference (g kg⁻¹)')
+ b.CB(f,'cb_b',cbar_left,99,cbar_width,TwoSlopeNorm(0,-1,1),b.LIGHT,np.linspace(-1,1,5),'Integrated difference (g kg⁻¹)')
  return f
 
 
@@ -162,7 +163,14 @@ def rise_moisture():
  for j,(r,region) in enumerate([('inner','100–300 km'),('outer','300–800 km')]):
   a=rect(f,'ab'[j],'Rise integrals · '+region,17+85*j,14,59,30)
   q=di[di.radial.eq(r)&di.estimand.eq('rise_rate_integral')&di['sample'].eq('all_events')].set_index('metric').loc[['horizontal_advection','vertical_advection','residual','moving_tendency']]
-  y=q.estimate.to_numpy();a.bar(range(4),y,.58,color=['#7C8C95','#428C79','#AB685E','white'],edgecolor=['none','none','none','#233A46'],linewidth=.85);a.set_ylim(-5.1,5.7)
+  y=q.estimate.to_numpy();a.bar(range(4),y,.58,color=['#7C8C95','#428C79','#AB685E','white'],edgecolor=['none','none','none','#233A46'],linewidth=.85)
+  if r == 'outer':
+   assert q.n_sid.eq(121).all() and q.n_events.eq(130).all()
+   assert q.lower.ge(-1).all() and q.upper.le(1).all()
+   a.set_ylim(-1, 1)
+   a.set_yticks([-1, -.5, 0, .5, 1], labels=['−1', '−0.5', '0', '0.5', '1'])
+  else:
+   a.set_ylim(-5.1,5.7)
   a.errorbar(range(4),y,yerr=[y-q.lower,q.upper-y],fmt='none',ecolor=b.INK,capsize=2,lw=.8);b.zero(a)
   a.set(ylabel='Integral (g kg⁻¹)',xticks=range(4),xticklabels=['Horiz.\nadv.','Vert.\nadv.','Residual','Moving\ntendency'])
   a=rect(f,'cd'[j],'Wind-matched humidity · '+region,17+85*j,71,59,30)
@@ -224,7 +232,7 @@ def save(f,n):
   align('bc',[1,2,3]);align('de',[1,2,3]);align('bd',[0,2]);align('ce',[0,2]);assert abs(boxes['a'][0]-boxes['b'][0])<.3 and abs(boxes['a'][0]+boxes['a'][2]-boxes['c'][0]-boxes['c'][2])<.3
  if n==7:align('ab',[1,2,3]);align('cd',[1,2,3]);align('ac',[0,2]);align('bd',[0,2])
  if n==2:
-  align(['a0','a1','a2'],[1,2,3]);align(['cb_a','cb_b'],[2]);assert abs(boxes['cb_a'][0]+boxes['cb_a'][2]/2-boxes['a1'][0]-boxes['a1'][2]/2)<.3 and abs(boxes['cb_b'][0]+boxes['cb_b'][2]/2-boxes['b'][0]-boxes['b'][2]/2)<.3
+  align(['a0','a1','a2'],[1,2,3]);align(['cb_a','cb_b'],[0,2,3]);assert abs(boxes['cb_a'][0]+boxes['cb_a'][2]/2-boxes['a1'][0]-boxes['a1'][2]/2)<.3
  if qa is not None: (qa/(name+'_geometry.json')).write_text(json.dumps(boxes,indent=2),encoding='utf8')
  if qa is not None:
   f.savefig(qa/(name+'.pdf'));f.savefig(qa/(name+'_preview.png'),dpi=145)

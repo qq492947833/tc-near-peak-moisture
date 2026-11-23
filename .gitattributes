@@ -2,3 +2,5 @@
 /paper_2026/newanalyses/history/agents/C/duration_targets/*.csv -text
 /paper_2026/newanalyses/history/agents/C/duration_targets/*.npz -text
 /paper_2026/near_peak_event_figures/inputs/threshold_duration_*.csv -text
+/paper_2026/near_peak_event_figures/inputs/wind_matched_dry_APE.csv -text
+/paper_2026/near_peak_event_figures/figure_files.csv -text

@@ -1,0 +1,57 @@
+{
+  "versions": {
+    "python": "3.11.7",
+    "matplotlib": "3.8.0",
+    "numpy": "1.26.4",
+    "pillow": "10.2.0",
+    "pandas": "2.1.4"
+  },
+  "renders": {
+    "Figure_02": {
+      "pixels": [
+        6377,
+        5031
+      ],
+      "reproduced_png_sha256": "89699821ee51c848c17e9b40ae32bb3fb0662cc2cc2bf4e36063aa7137bb0518",
+      "reproduced_tiff_sha256": "62e814d1fa468b128c72b585ea9504891b4dd7f92891a2d9eebb7d9e999470cd",
+      "matches_manuscript_png_bytes": true,
+      "rgb_lzw_tiff_same_pixels": true,
+      "effective_dpi": 899.8655555555555
+    },
+    "Figure_05": {
+      "pixels": [
+        6377,
+        5208
+      ],
+      "reproduced_png_sha256": "b4b2220fa41f1db9565d89a645443fe9ddf06eee74cfcac173bdca83e3c383aa",
+      "reproduced_tiff_sha256": "93ba8ff07c4fb46771eca95bc698cac6eea223bd34558af416310f45d02c1a13",
+      "matches_manuscript_png_bytes": true,
+      "rgb_lzw_tiff_same_pixels": true,
+      "effective_dpi": 899.8655555555555
+    }
+  },
+  "source_verification": {
+    "public_archive": "Supplementary_Data_1_CSV.zip/native/ENERGY_ADJ.csv",
+    "native_csv_sha256": "1bd3a254540841365db646df0c9d46e237bac881af068715415c70e03c6e89cd",
+    "record_ids": "ENERGY_ADJ:00101\u2013ENERGY_ADJ:00109",
+    "all_csv_fields_match_original_rows": true,
+    "source_subset_sha256": "1a13e3d8da4978b53c0f1336c0870769f0ca2af2e0c7cdeea3a3308a678929cc",
+    "levels_hpa": [
+      500,
+      700,
+      850
+    ],
+    "windows_days": [
+      ">16",
+      "2\u201316",
+      "<2"
+    ],
+    "sample": {
+      "cyclones": 108,
+      "events": 115
+    },
+    "native_700hpa_slow_mean": "3.898006021438687",
+    "contrast": "matched reintensification minus decay",
+    "units": "J kg-1"
+  }
+}

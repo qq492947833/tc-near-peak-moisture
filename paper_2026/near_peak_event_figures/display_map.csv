@@ -3,7 +3,7 @@ main,1,1,Near-peak event intervals and basin-specific observed fractions
 main,2,3,Paired departure environments and 95% intervals across RH adjustment sets
 main,3,4,Moving-boundary gross and net moisture exchange
 main,4,5,"Pre-departure reservoirs, conversion and boundary inputs"
-main,5,6,Fixed-lag transfer rates and matched-wind dry APE across three time windows
+main,5,6,Fixed-lag transfer rates and matched-wind dry APE at 500/700/850 hPa across three time windows
 main,6,8,"Event sequence, moving moisture boundaries and multiscale energetics"
 supplementary,1,3,Later near-peak occupancy and weakening–recovery bridge durations at alternative thresholds
 supplementary,2,7,Radial moisture and subsequent budget

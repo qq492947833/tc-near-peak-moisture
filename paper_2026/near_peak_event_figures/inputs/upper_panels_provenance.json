@@ -1,0 +1,24 @@
+{
+  "Figure_02": {
+    "release": "figures-20261121-r04",
+    "original_png_sha256": "0b4944d2f61b44259648cd76f46fa69fb5bbdcacc3151cf1667364482f09da3b",
+    "upper_panel_crop_xyxy": [
+      0,
+      0,
+      6377,
+      3519
+    ],
+    "crop_png_sha256": "d1e7437bb0ff0c9c66d69589c189c28824fdeb496b4d1ab5206b9726e260eab1"
+  },
+  "Figure_05": {
+    "release": "figures-20261121-r04",
+    "original_png_sha256": "20813f64e5a22cab2f97ef258945f03e0f683513ea3b1fa7baae5be325175086",
+    "upper_panel_crop_xyxy": [
+      0,
+      0,
+      6377,
+      3519
+    ],
+    "crop_png_sha256": "0702b608c3663097cf089fabae2c5a50ebe96e89c262708035b358e6c2679440"
+  }
+}
