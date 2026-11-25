@@ -20,72 +20,115 @@ def draw_wind_sequence(ax, source):
     keep = t >= reference[0]; t,v = t[keep],v[keep]
     assert t[np.argmin(abs(t-k['valley_h']))]==k['valley_h']
     assert np.array_equal(v>=vm,[True,True,False,False,True,True,False,False])
-    # Linear segments cross the threshold exactly once between adjacent samples.
-    crosses=[t[i]+(vm-v[i])*(t[i+1]-t[i])/(v[i+1]-v[i])
-             for i in range(len(t)-1) if (v[i]>=vm)!=(v[i+1]>=vm)]
-    down,up,final = crosses
-    assert down < k['valley_h'] < up < final
-    X=lambda h: 9+(np.asarray(h)-t[0])*158/(t[-1]-t[0])
-    Y=lambda s: 3.2+(np.asarray(s)-65)*.42
+    # Event times are six-hour observations; interpolation locates no event boundary.
+    td=float(t[(t>reference[1]) & (v<vm)][0]);tr=float(k['valley_h'])
+    ret=float(returned[0]);fd=float(k['Decay_onset_h']);end=float(t[-1])
+    assert td<tr<ret<fd<end and all(x in t for x in (td,tr,ret,fd))
+    cols=['#5C6BC0','#2A9D6F','#C96A3A']
+    X=lambda h: 9+(np.asarray(h)-t[0])*158/(end-t[0])
+    Y=lambda kts: 4.1+(np.asarray(kts)-65)*.37
+    for left,right,col in [(td,tr,cols[0]),(tr,ret,cols[1]),(fd,end,cols[2])]:
+        ax.add_patch(mpl.patches.Rectangle((X(left),2.1),X(right)-X(left),16.4,
+                                           fc=col,ec='none',alpha=.12,zorder=0))
     ax.plot([8,170],[Y(vm)]*2,ls=(0,(3.,2.4)),lw=.8,color='#99A9AC',zorder=1)
-    for u,z,col in [(t[0],down,INK),(down,k['valley_h'],BLUE),(k['valley_h'],up,TEAL),(up,final,INK),(final,t[-1],OCHRE)]:
-        h=np.r_[u,t[(t>u)&(t<z)],z]; ax.plot(X(h),Y(np.interp(h,t,v)),lw=1.65,color=col,
-            solid_joinstyle='round',solid_capstyle='round',zorder=3)
-    for x,y,s,col in [(65,19.4,'Temporary departure',BLUE),(86,4.2,'Reintensification',TEAL),
-                      (139,4.8,'Final decay',OCHRE),(170,18.0,'Near-peak',INK)]:
-        ax.text(x,y,s,ha='right' if s=='Near-peak' else 'center',va='center',fontsize=8.5,color=col)
-    return dict(hours=t.tolist(),wind_kt=v.tolist(),threshold_kt=vm,illustrative_crossings_h=crosses,
-                trough_h=k['valley_h'],first_return_observation_h=returned[0],final_departure_observation_h=k['Decay_onset_h'])
+    for left,right,col in [(t[0],td,INK),(td,tr,cols[0]),(tr,ret,cols[1]),(ret,fd,INK),(fd,end,cols[2])]:
+        sel=(t>=left)&(t<=right)
+        ax.plot(X(t[sel]),Y(v[sel]),lw=1.65,color=col,solid_joinstyle='round',solid_capstyle='round',zorder=3)
+    for time,col in zip([td,tr,ret,fd],[cols[0],cols[1],cols[1],cols[2]]):
+        ax.plot(X(time),Y(v[t==time][0]),'o',ms=3.5,mec='white',mew=.45,mfc=col,zorder=5)
+    # Short leader binds the departure label to the first observed below-threshold wind.
+    ax.annotate('Temporary departure',xy=(X(td),Y(v[t==td][0])),xytext=(X(td)-6,21),
+                ha='center',va='center',fontsize=8.5,color=cols[0],
+                arrowprops=dict(arrowstyle='-',lw=.65,color=cols[0],shrinkA=0,shrinkB=2))
+    for x,y,label,col in [((X(tr)+X(ret))/2,4.25,'Reintensification',cols[1]),
+                          ((X(fd)+X(end))/2,20.8,'Final decay',cols[2]),(25.5,Y(vm)-3.1,'Near-peak',INK)]:
+        ax.text(x,y,label,ha='right' if label=='Near-peak' else 'center',va='center',fontsize=8.5,color=col)
+    return dict(hours=t.tolist(),wind_kt=v.tolist(),threshold_kt=vm,
+                observed_events_h=[td,tr,ret,fd],band_edges_h=[[td,tr],[tr,ret],[fd,end]])
 
 
+def _bc_text(ax, x, y, s, *, ha='center', weight='normal', color='#233A46', va='center'):
+    return ax.text(x,y,s,ha=ha,va=va,weight=weight,color=color,fontfamily='Arial',
+                   fontsize=8.5,zorder=22,clip_on=False)
 
 
-def draw_moisture(ax, scene):
-    """Qualitative comparison of two equal-sized moving control volumes (local mm)."""
-    from matplotlib.patches import Ellipse, FancyArrowPatch, FancyBboxPatch
-    ink, teal, blue, orange = '#233A46', '#428C79', '#167B9E', '#CC7445'
-    def text(x, y, s, **k):
-        return ax.text(x, y, s, ha=k.pop('ha','center'), va='center', color=k.pop('color',ink),
-                       fontfamily='Arial', fontsize=8.5, zorder=22, **k)
-    def directed(start, end, col, lw, ms, gid):
-        p=FancyArrowPatch(start, end, arrowstyle='-|>', color=col, lw=lw,
-                          mutation_scale=ms, shrinkA=0, shrinkB=0, zorder=15,
-                          capstyle='round', joinstyle='round')
-        p.set_gid(gid); ax.add_patch(p)
-    def leader(x, y):
-        ax.plot(x,y,color='#8CA2A6',lw=.65,zorder=11,solid_capstyle='round')
-    def badge(cx, y, width, s, fc, ec):
-        ax.add_patch(FancyBboxPatch((cx-width/2,y-2.85),width,5.7,
-                     boxstyle='round,pad=0,rounding_size=2.65',fc=fc,ec=ec,lw=.9,zorder=15))
-        text(cx,y,s)
-    # Cylinder's bottom and its two radius markers mark 300 and 100 km.
-    top, base, radius = 55.4, 31.2, 12.0
-    for x, name, edge, ring, rim in [(22,'Temporary',blue,'#A9CFC2','#74A998'),
-                                      (70,'Decay',orange,'#E9F2EE','#BBCFC7')]:
-        text(x,72.4,name,weight='bold',color=edge)
-        ax.add_patch(Ellipse((x,base),40.4,12.2,fc=ring,ec=rim,lw=.75,zorder=0))
+def _bc_arrow(ax,x,y,X,Y,color,lw,ms):
+    from matplotlib.patches import FancyArrowPatch
+    arrow=FancyArrowPatch((x,y),(X,Y),arrowstyle='-|>',color=color,linewidth=lw,
+                         mutation_scale=ms,shrinkA=0,shrinkB=0,joinstyle='round',zorder=14)
+    ax.add_patch(arrow)
+
+
+def draw_environment(ax,scene):
+    """Pre-departure outer moisture and shear; following-day inner moistening."""
+    from matplotlib.patches import Ellipse
+    ink,teal,blue,ochre='#233A46','#428C79','#5C6BC0','#C96A3A'
+    _bc_text(ax,4.3,43.75,'Environment and moisture',ha='left',weight='bold',va='top')
+    for x,name,col,rim,fill,shear,sw in [
+            (22,'Temporary',blue,'#74A998','#A9CFC2','Weaker shear',10.0),
+            (68,'Decay',ochre,'#BBCFC7','#E9F2EE','Stronger shear',17.6)]:
+        _bc_text(ax,x,36.4,name,weight='bold',color=col)
+        _bc_text(ax,x,31.5,shear)
+        _bc_arrow(ax,x-sw/2,28.5,x+sw/2,28.5,ink,1.05,6.7)
+        top,base,radius=22.5,9.4,10.4
+        ax.add_patch(Ellipse((x,base),35.2,10.5,fc=fill,ec=rim,lw=.7,zorder=0))
         ax.add_patch(Ellipse((x,base),2*radius,2*.28*radius,fc='white',ec='none',zorder=.5))
-        scene.cylinder(ax,x,top,base,radius,edge,name)
-    # Same direction of environmental shear, ordinal lengths only.
-    text(46,65.1,'Shear')
-    directed((16.4,65.1),(27.6,65.1),ink,1.25,7.2,'temporary_shear')
-    directed((59.7,65.1),(80.3,65.1),ink,1.25,7.2,'decay_shear')
-    # An identical 300-km boundary is identified once, at the sides of the volumes.
-    text(46,46.6,'300 km')
-    leader([34.7,39],[45.6,46.2]); leader([53,57.3],[46.2,45.6])
-    # Both exports leave the volume; the gross outward paired contrast is unadjusted.
-    directed((30.8,30.0),(39.5,21.8),orange,1.15,7.6,'temporary_export')
-    directed((61.2,30.0),(52.5,21.8),orange,2.55,10.2,'decay_export')
-    badge(36.9,15.6,10.8,'q (+)','#FBF9F3','#CABE9E')
-    badge(55.1,15.6,21.5,'(u−c)·n (−)','#F3F8F6','#81ABA0')
-    # Local moistening contrast at 700 hPa. The arrow is not vertical wind velocity.
-    directed((16.3,29.0),(16.3,36.8),teal,1.45,8,'inner_vertical_advection')
-    text(10.0,23.1,'Vert. adv. (+)',color=teal)
-    # The two leaders touch the inner and outer annuli, respectively, on the same base.
-    leader([73.4,74.2,76.6],[29.4,25.6,23.9])
-    text(77.0,21.1,'100–300 km')
-    leader([86.4,89.0,89.0,86.8],[30.2,28.2,16.8,15.2])
-    text(76.7,15.2,'300–800 km')
+        scene.cylinder(ax,x,top,base,radius,col,name)
+    _bc_arrow(ax,15.7,8.2,15.7,14.6,teal,1.3,7.4)
+    _bc_text(ax,20.2,2.3,'Vert. adv. (+) · 0–24 h',color=teal)
+    # The first anchor lies between the core and 300-km rim; the second on the outer annulus.
+    ax.plot([63.0,61.2,58.9],[7.9,5.1,4.1],c='#8CA2A6',lw=.55,zorder=11)
+    ax.plot([80.9,82.5,82.5],[7.3,5.6,4.2],c='#8CA2A6',lw=.55,zorder=11)
+    _bc_text(ax,56.2,2.1,'100–300 km');_bc_text(ax,81.5,2.1,'300–800 km')
+
+
+def draw_exchange(ax,source):
+    """Original matched 80-pair, full-layer 0–24 h moving-boundary totals (kg)."""
+    from pathlib import Path
+    from matplotlib.patches import Polygon, Rectangle
+    import pandas as pd
+    path=Path(source)/'Figure_08/input/paired_flux_components.csv'
+    df=pd.read_csv(path,float_precision='round_trip')
+    f=df[(df.cohort=='original_post80')&(df.window=='0_24h')&(df.factor==1)&
+         (df.layer=='all')&(df.sector=='all')].set_index(['kind','quantity'],verify_integrity=True)
+    def lookup(kind,quantity):
+        row=f.loc[(kind,quantity)]
+        assert row.n==80 and row.finite_n==80 and row.units=='kg'
+        return float(row.estimate)
+    values={cat:{k:lookup(k,cat)/1e12 for k in ['in','out','net']} for cat in ['temporary','final']}
+    deltas={k:lookup(k,'difference')/1e12 for k in ['in','out','net']}
+    for k in deltas:assert abs(values['temporary'][k]-values['final'][k]-deltas[k])<1e-12
+    parts={k:lookup('out',k)/1e12 for k in ['humidity','relative_motion']}
+    assert abs(sum(parts.values())-deltas['out'])<1e-12
+    # Positive gross exchange values retain their physical direction in both classes.
+    _bc_text(ax,4.3,33.75,'Boundary exchange / 300 km',ha='left',weight='bold',va='top')
+    colx=[33.,55.,78.]
+    for x,t in zip(colx,['Gross inward','Gross outward','Net inward']):_bc_text(ax,x,27.1,t)
+    width_per_Tkg=.19   # shaft thickness in mm per 10^12 kg; one scale for all six totals
+    def horizontal(x,y,sgn,h,col):
+        pts=[(-7.6,-h/2),(4.6,-h/2),(4.6,-h/2-.72),(7.6,0),(4.6,h/2+.72),(4.6,h/2),(-7.6,h/2)]
+        ax.add_patch(Polygon([(x+sgn*u,y+v) for u,v in pts],closed=True,fc=col,ec='none',zorder=3))
+    # Short meridians mark the moving boundary; left is the control-volume interior.
+    for x in colx:
+        ax.plot([x,x],[13.,24.2],color='#ACBFBE',lw=.8,zorder=1)
+    for cat,title,y,edge in [('temporary','Temporary',21.5,'#5C6BC0'),('final','Decay',15.8,'#C96A3A')]:
+        _bc_text(ax,1.0,y,title,ha='left',weight='bold',color=edge)
+        for x,k,sgn,col in zip(colx,['in','out','net'],[-1,1,-1],['#438E87','#C88153','#167B9E']):
+            horizontal(x,y,sgn,values[cat][k]*width_per_Tkg,col)
+    ax.plot([.8,91.1],[12.3,12.3],color='#CAD6DC',lw=.7)
+    _bc_text(ax,1.,6.15,'Export contrast',ha='left',weight='bold')
+    # Signed rectangular bars denote outward-contrast contributions, not transport directions.
+    base=8.7; mm_per_Tkg=5.7
+    ax.plot([34.,69.],[base,base],color='#83999C',lw=.75,zorder=2)
+    for x,key,label,tx in [(38,'humidity','q (+)',46.9),(64,'relative_motion','(u−c)·n (−)',78.0)]:
+        length=parts[key]*mm_per_Tkg
+        ax.add_patch(Rectangle((x-2.3,base),4.6,length,facecolor='#5D8893' if length>0 else '#427E78',
+                               edgecolor='none',zorder=3))
+        _bc_text(ax,tx,5.45,label)
+    return dict(source='Figure_08/input/paired_flux_components.csv',support_pairs=80,
+                window_hours=[0,24],layer_hPa=[500,925],unit='10^12 kg',values=values,
+                contrasts=deltas,outward_components=parts,shaft_mm_per_Tkg=width_per_Tkg,
+                decomposition_mm_per_Tkg=mm_per_Tkg)
 
 
 
@@ -125,19 +168,22 @@ def draw_energy(ax, csv_path):
     txt(58.7,67.0,'Pressure flux (+)')
     flow(42.5,56.2,53,56.2,ochre,1.0,6.8)
     txt(62.3,55.1,'Vert. KE (−)')
-    txt(.8,47.3,'Recovery','left',True)
-    txt(38.3,42.2,'Conversion (+)')
-    box(13,33.4,15.3,7.8,'#E8F1ED',teal,2)
-    box(49.0,33.4,11.5,7.8,'#E8F1F5',blue,2)
-    txt(20.65,37.3,'Dry APE');txt(54.75,37.3,'KE')
-    flow(1.4,37.3,13,37.3,teal,1.0,6.6)
-    flow(28.4,37.3,48.85,37.3,teal,2.35,8.8)
-    sink=flow(60.65,37.3,72.65,37.3,ochre,1.6,7.6)
-    flow(54.75,25.4,54.75,33.3,teal,1.0,6.6)
-    txt(10,31.0,'Transfer (+)')
+    txt(.8,48.1,'Recovery','left',True)
+    y_flow=37.3; y_label=43.0; box_h=7.8
+    box(13,y_flow-box_h/2,15.3,box_h,'#E8F1ED',teal,2)
+    box(49,y_flow-box_h/2,11.5,box_h,'#E8F1F5',blue,2)
+    txt(20.65,y_flow,'Dry APE');txt(54.75,y_flow,'KE')
+    flows=[(flow(3.8,y_flow,13,y_flow,teal,1.0,6.6),'Transfer (+)'),
+           (flow(28.4,y_flow,48.85,y_flow,teal,2.35,8.8),'Conversion (+)'),
+           (flow(60.65,y_flow,72.65,y_flow,ochre,1.6,7.6),'Transfer (−)')]
+    flow(54.75,25.4,54.75,y_flow-box_h/2-.1,teal,1.0,6.6)
     ax.figure.canvas.draw()
-    bounds=sink.get_path().get_extents()
-    txt((bounds.x0+bounds.x1)/2,43.25,'Transfer (−)')
+    alignment={}
+    for arrow,label in flows:
+        bbox=arrow.get_path().get_extents()
+        mid=(bbox.x0+bbox.x1)/2
+        tx=ax.text(mid,y_label,label,ha='center',va='baseline',fontsize=8.5,color=ink,zorder=6)
+        alignment[label]=dict(x_mid_mm=float(mid),y_label_baseline_mm=y_label,y_flow_mm=y_flow)
     txt(52,26.5,'Vert. input (+)','right')
     txt(.8,19.8,'Wind-matched','left',True)
     txt(73,19.8,'700 hPa','right')
@@ -157,7 +203,7 @@ def draw_energy(ax, csv_path):
     # Conversion at matched wind speed in the slow window, distinct from the layer integral.
     txt(28,y0+vals[0]*mm_per_unit+3.1,'Conv. ↑')
     return {'matched_values_J_kg':vals, 'matched_n_sid':108,'matched_n_events':115,
-            'bar_zero_mm':y0,'bar_mm_per_J_kg':mm_per_unit}
+            'flow_alignment':alignment,'bar_zero_mm':y0,'bar_mm_per_J_kg':mm_per_unit}
 
 
 
@@ -178,18 +224,20 @@ def draw(source,out,qa=None):
     f=plt.figure(figsize=(width/25.4,height/25.4),facecolor='white')
     def canvas(name,x,y,w,h):
         ax=f.add_axes([x/width,y/height,w/width,h/height]);ax.set_gid(name);ax.set(xlim=(0,w),ylim=(0,h));ax.axis('off');return ax
-    a=canvas('a',3,87,174,23);b=canvas('b',3,3,92,79);c=canvas('c',101,3,76,79)
-    for ax,t,h in [(a,'a',23),(b,'b',79),(c,'c',79)]:ax.text(0,h-.25,t,va='top',ha='left',color=INK,fontsize=8.5,weight='bold')
-    wind=draw_wind_sequence(a,source);draw_moisture(b,symbols)
-    bars=draw_energy(c,Path(__file__).resolve().parent/'inputs/wind_matched_dry_APE.csv')
+    a=canvas('a',3,87,174,23);b=canvas('b',3,38,92,44);c=canvas('c',3,3,92,34);d=canvas('d',101,3,76,79)
+    for ax,t,h in [(a,'a',23),(b,'b',44),(c,'c',34),(d,'d',79)]:
+        ax.text(0,h-.25,t,va='top',ha='left',color=INK,fontsize=8.5,weight='bold')
+    wind=draw_wind_sequence(a,source);draw_environment(b,symbols)
+    exchange=draw_exchange(c,source)
+    bars=draw_energy(d,Path(__file__).resolve().parent/'inputs/wind_matched_dry_APE.csv')
     f.canvas.draw()
     boxes={ax.get_gid():(ax.get_window_extent().extents/f.dpi*25.4).tolist() for ax in f.axes}
-    assert max(abs(boxes['b'][i]-boxes['c'][i]) for i in (1,3))<1e-6
-    assert max(abs(boxes['a'][0]-boxes['b'][0]),abs(boxes['a'][2]-boxes['c'][2]),abs(boxes['c'][0]-boxes['b'][2]-6))<1e-6
+    for i in (0,2): assert abs(boxes['b'][i]-boxes['c'][i])<1e-6
+    assert abs(boxes['b'][3]-boxes['d'][3])+abs(boxes['c'][1]-boxes['d'][1])<1e-6
     out=Path(out);out.mkdir(exist_ok=True,parents=True)
     if qa:
         qa=Path(qa);qa.mkdir(exist_ok=True,parents=True)
-        data=dict(canvas_mm=[width,height],axes_mm=boxes,wind=wind,matched=bars,text=collect_visible_labels(f),Arial_sha256=hashlib.sha256(Path(font_path).read_bytes()).hexdigest(),matplotlib=mpl.__version__,numpy=np.__version__,pandas=pd.__version__)
+        data=dict(canvas_mm=[width,height],axes_mm=boxes,wind=wind,boundary_exchange=exchange,matched=bars,text=collect_visible_labels(f),Arial_sha256=hashlib.sha256(Path(font_path).read_bytes()).hexdigest(),matplotlib=mpl.__version__,numpy=np.__version__,pandas=pd.__version__)
         (qa/'figure6_render.json').write_text(json.dumps(data,indent=2,ensure_ascii=False),encoding='utf-8')
     stem=out/'Figure_06'
     f.savefig(stem.with_suffix('.png'),dpi=900,facecolor='white',bbox_inches=None)

@@ -1,10 +1,12 @@
 # Near-peak cyclone events: figure reproduction
 
-The presentation version figures-20261124-fig6-r02 uses the frozen v2.1.5 analyses of near-peak departures and returns. The reading set contains six main figures, ten supplementary figures and seven supplementary tables.
+The presentation version figures-20261125-fig6-r01 uses the frozen v2.1.5 analyses of near-peak departures and returns. The reading set contains six main figures, ten supplementary figures and seven supplementary tables.
 
 Figure 1 uses a six-hourly schematic to distinguish the reference near-peak episode, the subsequent weakening and reintensification, and final decay. Figure 3 uses matched panel bounds to compare moving-boundary moisture exchange.
 
-Only Figure 6 is revised in this version. The radius labels include km, and the 700 hPa comparisons sit inside the 500–850 hPa layer boundary. The negative KE-transfer label sits above its outward arrow. In the wind-matched comparison, the upward conversion symbol belongs to the >16 d window. The signed bars retain the 700 hPa dry APE means for 115 events in 108 cyclones; the middle module summarizes actual recovery integrals for 132 events in 122 cyclones. The other fifteen PNG/TIFF pairs retain their previous bytes.
+Figure 6 has four panels. The top row marks temporary departure, trough, return and final departure at the original six-hourly observations. The upper-left cylinders compare pre-departure shear and outer moisture; inner-ring vertical advection refers to 700 hPa over the subsequent 0–24 h. The lower-left panel shows gross inward, gross outward and net inward exchange across the 300 km boundary (500–925 hPa, 0–24 h), using the unadjusted, within-cyclone comparison of 80 pairs. Both outward-transport decomposition bars use one linear scale. The right column separates pre-departure pressure-surface and layer diagnostics, trough-to-return energy integrals (132 events, 122 cyclones) and wind-matched 700 hPa dry APE differences (115 events, 108 cyclones). The remaining fifteen PNG/TIFF pairs are unchanged.
+
+For the boundary-exchange panel, the frozen input is `paper_2026/lifecycle_figures/figures/Figure_08/input/paired_flux_components.csv`. Select `cohort=original_post80`, `window=0_24h`, `factor=1`, `layer=all`, and `sector=all`. Class means use `quantity=temporary/final` for `kind=in/out/net`. The signed decomposition uses `kind=out` and `quantity=humidity/relative_motion`; all estimates are in kg and use the same unadjusted support. Signs refer to temporary minus final departure. Adjusted estimates are reported separately in Figure 3d and Table S2.
 
 Render Figure 6 only (from the tagged repository root):
 
@@ -45,6 +47,6 @@ The source trees `paper_2026/lifecycle_figures`, `paper_2026/selected_evidence` 
 
 Figure 5e shows KE canonical-transfer rates at nine six-hour lags relative to the wind trough on a fixed set of 117 SIDs and 126 events (10⁻⁴ W kg⁻¹). Supplementary Figure 8b shows event-specific integrals over the trough-to-return interval in 122 SIDs and 132 events (J kg⁻¹). The supporting data use the pre-existing SID-level summaries and uncertainty intervals.
 
-[Display map](display_map.csv) · [Image checksums](figure_files.csv) · [Frozen statistical archive index](statistical_archive.json) · [Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/figures-20261124-fig6-r02)
+[Display map](display_map.csv) · [Image checksums](figure_files.csv) · [Frozen statistical archive index](statistical_archive.json) · [Release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/figures-20261125-fig6-r01)
 
 [Supplementary figure sources and duration definitions](SUPPLEMENTARY_FIGURES.md) · [Supplementary figure crosswalk](supplementary_figure_mapping.csv) · [Complete plotting input index](figure_sources.csv)
