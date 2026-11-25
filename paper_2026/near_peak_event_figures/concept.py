@@ -8,6 +8,7 @@ from matplotlib.patches import FancyBboxPatch,Circle,Ellipse,FancyArrowPatch
 from PIL import Image
 import pandas as pd
 INK='#233A46'; TEAL='#428C79'; BLUE='#167B9E'; OCHRE='#CC7445'; GRAY='#CAD6DC'
+TEMPORARY_COLOR='#2F6B9A'
 def draw_wind_sequence(ax, source):
     base = source / 'Figure_01/input'
     df = pd.read_csv(base/'lifecycle_schematic.csv')
@@ -24,7 +25,7 @@ def draw_wind_sequence(ax, source):
     td=float(t[(t>reference[1]) & (v<vm)][0]);tr=float(k['valley_h'])
     ret=float(returned[0]);fd=float(k['Decay_onset_h']);end=float(t[-1])
     assert td<tr<ret<fd<end and all(x in t for x in (td,tr,ret,fd))
-    cols=['#5C6BC0','#2A9D6F','#C96A3A']
+    cols=[TEMPORARY_COLOR,'#2A9D6F','#C96A3A']
     X=lambda h: 9+(np.asarray(h)-t[0])*158/(end-t[0])
     Y=lambda kts: 4.1+(np.asarray(kts)-65)*.37
     for left,right,col in [(td,tr,cols[0]),(tr,ret,cols[1]),(fd,end,cols[2])]:
@@ -36,13 +37,12 @@ def draw_wind_sequence(ax, source):
         ax.plot(X(t[sel]),Y(v[sel]),lw=1.65,color=col,solid_joinstyle='round',solid_capstyle='round',zorder=3)
     for time,col in zip([td,tr,ret,fd],[cols[0],cols[1],cols[1],cols[2]]):
         ax.plot(X(time),Y(v[t==time][0]),'o',ms=3.5,mec='white',mew=.45,mfc=col,zorder=5)
-    # Short leader binds the departure label to the first observed below-threshold wind.
-    ax.annotate('Temporary departure',xy=(X(td),Y(v[t==td][0])),xytext=(X(td)-6,21),
-                ha='center',va='center',fontsize=8.5,color=cols[0],
-                arrowprops=dict(arrowstyle='-',lw=.65,color=cols[0],shrinkA=0,shrinkB=2))
-    for x,y,label,col in [((X(tr)+X(ret))/2,4.25,'Reintensification',cols[1]),
-                          ((X(fd)+X(end))/2,20.8,'Final decay',cols[2]),(25.5,Y(vm)-3.1,'Near-peak',INK)]:
-        ax.text(x,y,label,ha='right' if label=='Near-peak' else 'center',va='center',fontsize=8.5,color=col)
+    # Band-centred labels sit outside the shaded intervals. The top pair share a baseline.
+    for left,right,y,label,col in [(td,tr,20.89,'Temporary departure',cols[0]),
+                                   (tr,ret,-2.40,'Reintensification',cols[1]),
+                                   (fd,end,20.89,'Final decay',cols[2])]:
+        ax.text((X(left)+X(right))/2,y,label,ha='center',va='baseline',fontsize=8.5,color=col)
+    ax.text(25.5,Y(vm)-3.1,'Near-peak',ha='right',va='center',fontsize=8.5,color=INK)
     return dict(hours=t.tolist(),wind_kt=v.tolist(),threshold_kt=vm,
                 observed_events_h=[td,tr,ret,fd],band_edges_h=[[td,tr],[tr,ret],[fd,end]])
 
@@ -62,7 +62,7 @@ def _bc_arrow(ax,x,y,X,Y,color,lw,ms):
 def draw_environment(ax,scene):
     """Pre-departure outer moisture and shear; following-day inner moistening."""
     from matplotlib.patches import Ellipse
-    ink,teal,blue,ochre='#233A46','#428C79','#5C6BC0','#C96A3A'
+    ink,teal,blue,ochre='#233A46','#428C79',TEMPORARY_COLOR,'#C96A3A'
     _bc_text(ax,4.3,43.75,'Environment and moisture',ha='left',weight='bold',va='top')
     for x,name,col,rim,fill,shear,sw in [
             (22,'Temporary',blue,'#74A998','#A9CFC2','Weaker shear',10.0),
@@ -111,7 +111,7 @@ def draw_exchange(ax,source):
     # Short meridians mark the moving boundary; left is the control-volume interior.
     for x in colx:
         ax.plot([x,x],[13.,24.2],color='#ACBFBE',lw=.8,zorder=1)
-    for cat,title,y,edge in [('temporary','Temporary',21.5,'#5C6BC0'),('final','Decay',15.8,'#C96A3A')]:
+    for cat,title,y,edge in [('temporary','Temporary',21.5,TEMPORARY_COLOR),('final','Decay',15.8,'#C96A3A')]:
         _bc_text(ax,1.0,y,title,ha='left',weight='bold',color=edge)
         for x,k,sgn,col in zip(colx,['in','out','net'],[-1,1,-1],['#438E87','#C88153','#167B9E']):
             horizontal(x,y,sgn,values[cat][k]*width_per_Tkg,col)
