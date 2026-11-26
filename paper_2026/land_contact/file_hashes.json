@@ -1,0 +1,10 @@
+{
+  "inputs/energy_wind_bin_pairs.csv": "9b9a5c1d5cc0bec0bc48b3b4e314abdaf4b504cdd85c0c85f40ba74dc56c59bc",
+  "inputs/event_windows.csv": "db76fa8b56836c5a69fc7fd05403b0b660052cb9de237430059d9b01cb8c9cee",
+  "inputs/ibtracs_v04r01_tracks.csv.gz": "56ccfc586d3fb14c54bb854e766315733b96f504d9de78fe1282baf2f32371b8",
+  "inputs/resampling.json": "12aeff41b11458925014b2eac12f6a37a3efbf3a30fd3b045d7cd43ddb8328cf",
+  "inputs/water_members.csv": "6d4caf07d1ad316908a5d2993a42b1cb9d5d63dbdcdf9aa27434246b53d3bf5b",
+  "inputs/water_values_kg.csv": "bf1070dc2cbfd0ff7ba15eaa3131b4c1a133355b9fd168de55e87e6400340a74",
+  "reference/core_estimates.csv": "72d3ad1a9ad569940990c9bc64ddbf4269faa1fda2c62693e3b85825c0f9e579",
+  "reference/event_states.csv": "4d75a1492948f37adc90bb86f65561d655709e5cbb028266531415a1122322d1"
+}

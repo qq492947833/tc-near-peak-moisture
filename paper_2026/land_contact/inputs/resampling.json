@@ -1,0 +1,14 @@
+{
+  "seed": 650117,
+  "draws": 2000,
+  "water_original_bank_little_endian_int64_sha256": "018a5d51fe9fc9b54e7fe80fa1f09a4dd0caef418ab5a01f85bcd05a965a42c2",
+  "water_original_bank_initial_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 233591255978440318693960768350491582307,
+      "inc": 269580925443111596688050814722364026335
+    },
+    "has_uint32": 0,
+    "uinteger": 3734371208
+  }
+}

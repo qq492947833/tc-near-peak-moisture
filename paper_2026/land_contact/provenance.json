@@ -1,0 +1,36 @@
+{
+  "scientific_baseline": "v2.1.5",
+  "scientific_commit": "f671fd9ee41f67bff5de514306ed6c5eb5eee842",
+  "archive_version": "v2.1.6",
+  "frozen_source_sha256": {
+    "ibtracs.ALL.list.v04r01.csv": "85d421e69e6e963ae4e6025d3e270d8c3e5edf81b981fa06bc7b753aa62fc5a3",
+    "original80_paired_flux_components_0_24.csv": "cb2e1aaed81a2c1ddb9397c9357296b2985fe9a9f86e0a73c5181eba5533e412",
+    "fixed_draw_identity.npz": "fdb5b68351bfa5e93494617cbe241138f25bf263ac79d1a136b8b8a584cc4de1",
+    "frozen_energy_request_values.parquet": "ba0c0ba128ffd632d63bbd332ee2c176a15ad42651bd0daedc0cfbe77201aaa1",
+    "water_bootstrap_function_file": "b2ff2e53aafd22171cb2c734943d100e0bb1d29c4e0ce361c767397663a0e77d",
+    "energy_statistics_function_file": "dcf4d9dca6cbb5ce9e0b3f7cd3682b4dc2259ffdaf0f7151581299d6a07373d7",
+    "v2.1.5_return_events_git_bytes": "69dc4bad43c232b3360796a64a8a272c9c7cb5446ddae610b3d78009393ddc7f"
+  },
+  "source_run": {
+    "completed_utc": "2026-11-26T13:51:17.180434+00:00",
+    "python": "3.11.7",
+    "numpy": "1.26.4",
+    "pandas": "2.1.4"
+  },
+  "ibtracs": {
+    "release": "v04r01",
+    "dataset": "https://doi.org/10.25921/82ty-9e16",
+    "methods": "https://doi.org/10.1175/2009BAMS2755.1",
+    "rows": 12325,
+    "SIDs": 123,
+    "columns": [
+      "SID",
+      "ISO_TIME",
+      "TRACK_TYPE",
+      "LAT",
+      "LON",
+      "DIST2LAND",
+      "LANDFALL"
+    ]
+  }
+}

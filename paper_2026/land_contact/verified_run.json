@@ -1,0 +1,31 @@
+{
+  "release": "v2.1.6",
+  "base_science": "v2.1.5",
+  "python": "3.11.7",
+  "numpy": "1.26.4",
+  "pandas": "2.1.4",
+  "native_reports": 12325,
+  "return_events": 133,
+  "return_SIDs": 123,
+  "water_pairs": [
+    80,
+    75
+  ],
+  "energy_SIDs": [
+    108,
+    71
+  ],
+  "energy_events": [
+    115,
+    74
+  ],
+  "energy_wind_bin_pairs": [
+    165,
+    110
+  ],
+  "past24_covariates_reproduced": 160,
+  "table_S3_adjusted_water_pairs": 54,
+  "bootstrap_draws_per_target_sample": 2000,
+  "exact_estimate_and_interval_cells": 36,
+  "max_abs_difference": 0.0
+}

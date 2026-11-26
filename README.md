@@ -1,8 +1,12 @@
 # Near-peak tropical cyclone departures and returns
 
-The [event figure release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/figures-20261125-fig6-r02) contains six main and ten supplementary figures. The seven reading tables summarize event support, moisture exchange, energy diagnostics and sensitivity, and the 48-h recovery check. The illustrations, figure scripts and display mapping are versioned independently of the [v2.1.5 analysis and statistical archive](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.5).
+The [event figure release](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/figures-20261125-fig6-r02) contains six main and ten supplementary figures. The seven reading tables summarize event support, moisture exchange, energy diagnostics and sensitivity, and the 48-h recovery check. The illustrations, figure scripts and display mapping retain their own version. The [v2.1.6 scientific archive](https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.6) includes the v2.1.5 analyses and the retrospective land-contact sensitivity check.
 
 [Reproduce the figures](paper_2026/near_peak_event_figures/README.md) · [Data and worksheet index](paper_2026/near_peak_event_figures/statistical_archive.json) · [Download the figure package](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/figures-20261125-fig6-r02/near-peak-event-figures.zip)
+
+## Land-contact sensitivity in v2.1.6
+
+The unadjusted moisture analysis retains 75 of the original 80 cyclone pairs after checking both departure windows from −24 to +24 h. The wind-matched energy analysis retains 71 cyclones, 74 events and 110 wind-bin pairs after checking each full recovery and final-decay stage. The [workbook](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.6/Supplementary_Data_1.xlsx) and [CSV tables](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.6/Supplementary_Data_1_CSV.zip) include the complete event ledger, sample accounting, estimates and intervals. See the [Python replay instructions](paper_2026/land_contact/README.md), [standalone replay package](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.6/land-contact-replay-v2.1.6.zip) and [asset checksums](https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.6/SHA256SUMS.txt).
 
 ## Archived v2.1.5 analysis and figure organization
 

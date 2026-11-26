@@ -1,8 +1,8 @@
 {
-  "analysis_release": "v2.1.5",
+  "analysis_release": "v2.1.6",
   "workbook": {
-    "url": "https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/Supplementary_Data_1.xlsx",
-    "sha256": "13ee4f0b9ceb66c62d39b7676174edb470364b0a60e7151bbf025e072ec8de2f",
+    "url": "https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.6/Supplementary_Data_1.xlsx",
+    "sha256": "c322db0d11faf47759c5aff5f6935a06783783b1e89badc7d57973ca22412c56",
     "sheets": [
       "Start here",
       "Table directory",
@@ -27,12 +27,15 @@
       "Ascent environment",
       "Ascent energy",
       "Regional diagnostics",
-      "MWT input anchors"
+      "MWT input anchors",
+      "Land contrasts",
+      "Land sample support",
+      "Land event audit"
     ]
   },
   "csv_archive": {
-    "url": "https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.5/Supplementary_Data_1_CSV.zip",
-    "sha256": "ffb5f61e21ea894f9f1ee26e09d4a6f796f64f5a68caf7d9c8f9552b270e2edc",
+    "url": "https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.6/Supplementary_Data_1_CSV.zip",
+    "sha256": "212223cc04dea8a9989652669ac18454a9fbe84b37e11ca5c41ae76f46c0936f",
     "members": [
       "Figure_display_crosswalk.csv",
       "Figure_source_index.csv",
@@ -330,7 +333,18 @@
       "native/U_THRESHOLD_stability_vs_master_baseline.csv",
       "native/WATER_ADJ.csv",
       "README.txt",
-      "SHA256SUMS.txt"
+      "SHA256SUMS.txt",
+      "land_sensitivity/README.txt",
+      "land_sensitivity/SHA256SUMS.txt",
+      "land_sensitivity/land_core_contrasts.csv",
+      "land_sensitivity/land_event_audit.csv",
+      "land_sensitivity/land_sample_support.csv"
     ]
+  },
+  "original_analysis_release": "v2.1.5",
+  "land_contact_replay": {
+    "path": "paper_2026/land_contact",
+    "url": "https://github.com/qq492947833/tc-near-peak-moisture/releases/download/v2.1.6/land-contact-replay-v2.1.6.zip",
+    "sha256": "6b904ab6afcd07c1fef17034d8132f7fd96d3030d76db8a66ac1fb8c57cb9ce8"
   }
 }

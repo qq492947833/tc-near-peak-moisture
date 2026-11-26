@@ -1,8 +1,8 @@
 # Cite this software version
 
 Repository: qq492947833/tc-near-peak-moisture.
-Version: v2.1.5 (20 November 2026).
-Persistent version URL: https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.5
+Version: v2.1.6 (26 November 2026).
+Persistent version URL: https://github.com/qq492947833/tc-near-peak-moisture/releases/tag/v2.1.6
 
 Use the commit shown on this Release for an exact source reference. No software
 DOI, paper DOI, publication status or additional author attribution is assigned
